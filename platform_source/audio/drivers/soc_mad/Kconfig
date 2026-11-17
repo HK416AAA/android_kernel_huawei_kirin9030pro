@@ -1,0 +1,7 @@
+config SOC_MAD
+	tristate "audio mad support"
+config MAD_STATE_CHECK
+	tristate "support mad state check"
+	depends on SOC_MAD
+	default n
+source "platform_source/audio/drivers/soc_mad/mad_extension/Kconfig"

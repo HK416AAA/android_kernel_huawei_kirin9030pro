@@ -1,0 +1,10 @@
+menu "vddmin_debug options"
+
+config VDDMIN_DEBUG
+	depends on IPC_MAILBOX
+	bool "VDDMIN debug"
+	default n
+	help
+	  vddmin debug drivers
+
+endmenu

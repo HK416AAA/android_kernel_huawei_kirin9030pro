@@ -1,0 +1,1 @@
+obj-$(CONFIG_AUDIO_WAKEUP_INFO) += audio_wakeup_info.o

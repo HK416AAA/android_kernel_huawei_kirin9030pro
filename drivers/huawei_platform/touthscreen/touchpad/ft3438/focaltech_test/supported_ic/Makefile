@@ -1,0 +1,1 @@
+obj-$(CONFIG_HUAWEI_TOUCHPAD) += focaltech_test_ft5452.o

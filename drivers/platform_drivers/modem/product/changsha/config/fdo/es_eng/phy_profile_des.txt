@@ -1,0 +1,5 @@
+profileName                         condition                           收益描述
+phy_lphy.proftxt                nashville es lte 4cc       hl1c收益10.50%，ll1d收益3.92%，ll1u收益5.64%
+phy_nphy_hl1c.proftxt           nashville es nsa mmw 1cc
+phy_nphy_ll1d.proftxt           nashville es nsa mmw 1cc
+phy_nphy_comm.proftxt           nashville es nsa mmw 1cc

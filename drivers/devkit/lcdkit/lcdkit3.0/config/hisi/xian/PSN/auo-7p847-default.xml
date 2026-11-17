@@ -1,0 +1,90 @@
+<hwlcd>
+	<PanelEntry>
+		<PanelXres>1084</PanelXres>
+		<PanelYres>2412</PanelYres>
+		<MipiDsiTimingSupport>1</MipiDsiTimingSupport>
+		<!--/* 0:DSI0 1:DSI1 2:DSI2 */ -->
+		<ConnectorId0>0</ConnectorId0>
+		<!--/* Max connector number is 2 */ -->
+		<ConnectorNum>1</ConnectorNum>
+		<!--Ldi config start-->
+		<MipiDsiTimingSupport>1</MipiDsiTimingSupport>
+		<!--Mipi Horizontal sync area -->
+		<MipiHSyncArea>4</MipiHSyncArea>
+		<!--Mipi Horizontal back porch -->
+		<MipiHBackPorch>16</MipiHBackPorch>
+		<!--Mipi Horizontal line time -->
+		<MipiHLineTime>344</MipiHLineTime>
+		<!--Mipi Dpi horizontal size -->
+		<MipiDpiHSize>308</MipiDpiHSize>
+		<!--Mipi Vertical sync area -->
+		<MipiVSyncArea>8</MipiVSyncArea>
+		<!--Mipi Vertical back porch -->
+		<MipiVBackPorch>110</MipiVBackPorch>
+		<!--Mipi Vertical front porch -->
+		<MipiVFrontPorch>106</MipiVFrontPorch>
+		<!--Panel information config start-->
+		<!--Panel type:8-video mode, 16-command mode-->
+		<PanelCmdType>16</PanelCmdType>
+		<IsFakePanel>1</IsFakePanel>
+        <!--Pixel clock-->
+		<PanelPxlClk>192</PanelPxlClk>
+		<!--Pixel clock division ratio-->
+		<PanelPxlClkDiv>1</PanelPxlClkDiv>
+		<!--Ifbc type:0-none, 1-orise2x, 2-orise3x, 3-himax2x,
+		4-rsp2x, 5-rsp3x, 6-vesa2x single, 7-vesa3x single
+		8-vesa2x dual, 9-vesa3x dual, 10-vesa3.75x dual-->
+		<PanelIfbcType>5</PanelIfbcType>
+		<VesaSliceWidth>542</VesaSliceWidth>
+		<VesaSliceHeight>18</VesaSliceHeight>
+        <!--0-ver1.1, 1-ver1.2-->
+		<VesaDscVersion>0</VesaDscVersion>
+		<!--0-RGB, 1-YUV, 2-YUV420, 3-YUV422, 4-YUV-444-->
+		<VesaDscFormat>0</VesaDscFormat>
+		<AlignAdjustSupport>1</AlignAdjustSupport>
+		<!--bit per pixel-->
+		<VesaDscBpp>8</VesaDscBpp>
+		<!--bit per component-->
+		<VesaDscBpc>10</VesaDscBpc>
+		<!--block pred enable-->
+		<VesaDscBlkPredEn>1</VesaDscBlkPredEn>
+		<!--line buff depth-->
+		<VesaDscLineBuffDepth>11</VesaDscLineBuffDepth>
+        <!--Mipi dsi default clock-->
+		<MipiDsiBitClk>510</MipiDsiBitClk>
+		<!--event send
+		event, data, delay
+		event:0-NONE, 1-VCI, 2-IOVCC, 3-VSP, 4-VSN, 5-RESET, 6-MIPI, 7-TS early-event, 8-TS later-event, 9-vdd
+		data:0-power off, 1-power on
+		delay:ms/TS:0-no-sync 1-sync
+		-->
+		<!--Power on timming-->
+		<PowerOnStage>"0, 0, 0"</PowerOnStage>
+		<LPOnStage>"0, 0, 0"</LPOnStage>
+		<HSOnStage>"0, 0, 0"</HSOnStage>
+ 
+		<!--Power off timming-->
+		<HSOffStage>"0, 0, 0"</HSOffStage>
+		<LPOffStage>"0, 0, 0"</LPOffStage>
+		<PowerOffStage>"0, 0, 0"</PowerOffStage>
+		<!--Power timming config end-->
+		<!--Tp color support-->
+		<TpColorDefault>210</TpColorDefault>
+		<!--Backlight max nit-->
+		<!--Power timming config start-->
+		<!--event define
+		mode, number, amplitude
+		mode:0-none, 1-regulator, 2-gpio
+		number:gpio num or ldo num
+		amplitude:3100000-3.1v, 1850000-1.85v, 5500000-5.5v
+		-->
+		<LcdVci>"0, 0, 0"</LcdVci>
+		<LcdIovcc>"0, 0, 0"</LcdIovcc>
+		<LcdVdd>"0, 0, 0"</LcdVdd>
+		<LcdVsp>"0, 0, 0"</LcdVsp>
+		<LcdVsn>"0, 0, 0"</LcdVsn>
+		<LcdReset>"0, 0, 0"</LcdReset>
+		<LcdTe0>"0, 0, 0"</LcdTe0>
+		<LcdBacklight>"0, 0, 0"</LcdBacklight>
+	</PanelEntry>
+</hwlcd>

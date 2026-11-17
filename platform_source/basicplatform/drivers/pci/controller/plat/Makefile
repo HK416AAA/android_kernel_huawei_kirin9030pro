@@ -1,0 +1,18 @@
+obj-$(CONFIG_HIPCIE_IDLE) += hi_pcie_idle.o
+obj-$(CONFIG_HIPCIE_OCT) += hi_pcie_oct.o
+obj-$(CONFIG_HIPCIE_OCT) += hi_pcie_oct_common.o
+obj-$(CONFIG_HIPCIE_NSV) += hi_pcie_nsv.o
+obj-$(CONFIG_HIPCIE_XN) += hi_pcie_xn.o
+obj-$(CONFIG_HIPCIE_CHS) += hi_pcie_chs.o
+obj-$(CONFIG_HIPCIE_NCH) += hi_pcie_nch.o
+obj-$(CONFIG_HIPCIE_CHD) += hi_pcie_chd.o
+
+ifeq ($(CONFIG_HIPCIE_NSV), y)
+EXTRA_CFLAGS += -I$(srctree)/drivers/hwspinlock
+endif
+
+ifeq ($(CONFIG_HIPCIE_IDLE), y)
+EXTRA_CFLAGS += -I$(srctree)/drivers/platform_drivers/ap/platform/common/lowpm/
+endif
+
+obj-$(CONFIG_HIPCIE_VM_OCT) += hi_pcie_oct_common.o

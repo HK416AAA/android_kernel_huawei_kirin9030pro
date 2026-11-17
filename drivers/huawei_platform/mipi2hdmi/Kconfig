@@ -1,0 +1,6 @@
+config HW_MIPI2HDMI_CONNECTOR
+       bool "Huawei mipi2hdmi connector driver support"
+       default n
+       depends on DKMD_DPU_MIPI_DSI
+       help
+           Say yes here to support the huawei mipi2hdmi connector driver

@@ -1,0 +1,58 @@
+#ifndef DPU_DSC_H
+#define DPU_DSC_H 
+#include "soc_dpu_interface.h"
+#include "soc_dpu_define.h"
+struct dpu_dsc_params {
+ DPU_DSC_VERSION_UNION dsc_version;
+ DPU_DSC_PPS_IDENTIFIER_UNION dsc_pps_indentifier;
+ DPU_DSC_EN_UNION dsc_en;
+ DPU_DSC_CTRL_UNION dsc_ctrl;
+ DPU_DSC_PIC_SIZE_UNION dsc_pic_size;
+ DPU_DSC_SLICE_SIZE_UNION dsc_slice_size;
+ DPU_DSC_CHUNK_SIZE_UNION dsc_chunk_size;
+ DPU_DSC_INITIAL_DELAY_UNION dsc_initial_delay;
+ DPU_DSC_RC_PARAM0_UNION dsc_rc_param0;
+ DPU_DSC_RC_PARAM1_UNION dsc_rc_param1;
+ DPU_DSC_RC_PARAM2_UNION dsc_rc_param2;
+ DPU_DSC_RC_PARAM3_UNION dsc_rc_param3;
+ DPU_DSC_FLATNESS_PARAM_UNION dsc_flatness_param;
+ DPU_DSC_RC_PARAM4_UNION dsc_rc_param4;
+ DPU_DSC_RC_PARAM5_UNION dsc_rc_param5;
+ DPU_DSC_RC_BUF_THRESH0_UNION dsc_rc_buf_thresh0;
+ DPU_DSC_RC_BUF_THRESH1_UNION dsc_rc_buf_thresh1;
+ DPU_DSC_RC_BUF_THRESH2_UNION dsc_rc_buf_thresh2;
+ DPU_DSC_RC_BUF_THRESH3_UNION dsc_rc_buf_thresh3;
+ DPU_DSC_RC_RANGE_PARAM0_UNION dsc_rc_range_param0;
+ DPU_DSC_RC_RANGE_PARAM1_UNION dsc_rc_range_param1;
+ DPU_DSC_RC_RANGE_PARAM2_UNION dsc_rc_range_param2;
+ DPU_DSC_RC_RANGE_PARAM3_UNION dsc_rc_range_param3;
+ DPU_DSC_RC_RANGE_PARAM4_UNION dsc_rc_range_param4;
+ DPU_DSC_RC_RANGE_PARAM5_UNION dsc_rc_range_param5;
+ DPU_DSC_RC_RANGE_PARAM6_UNION dsc_rc_range_param6;
+ DPU_DSC_RC_RANGE_PARAM7_UNION dsc_rc_range_param7;
+ DPU_DSC_ADJUSTMENT_BITS_UNION dsc_adjustment_bits;
+ DPU_DSC_BITS_PER_GRP_UNION dsc_bits_per_grp;
+ DPU_DSC_MULTI_SLICE_CTL_UNION dsc_multi_slice_ctl;
+ DPU_DSC_OUT_CTRL_UNION dsc_out_ctrl;
+ DPU_DSC_CLK_SEL_UNION dsc_clk_sel;
+ DPU_DSC_CLK_EN_UNION dsc_clk_en;
+ DPU_DSC_MEM_CTRL_UNION dsc_mem_ctrl;
+ DPU_DSC_ST_DATAIN_UNION dsc_st_datain;
+ DPU_DSC_ST_DATAOUT_UNION dsc_st_dataout;
+ DPU_DSC_ST_SLC_POS_UNION dsc_st_slc_pos;
+ DPU_DSC_ST_PIC_POS_UNION dsc_st_pic_pos;
+ DPU_DSC_ST_FIFO_UNION dsc_st_fifo;
+ DPU_DSC_ST_LINEBUF_UNION dsc_st_linebuf;
+ DPU_DSC_ST_ITFC_UNION dsc_st_itfc;
+ DPU_DSC_REG_DEBUG_UNION dsc_reg_debug;
+ DPU_DSC_12_UNION dsc_12;
+ DPU_DSC_DATAPACK_CTRL_UNION dsc_datapack_ctrl;
+ DPU_DSC_DATAPACK_SIZE_UNION dsc_datapack_size;
+ DPU_DSC_RD_SHADOW_UNION dsc_rd_shadow;
+ DPU_DSC_REG_DEFAULT_UNION dsc_reg_default;
+ DPU_DSC_TOP_CLK_SEL_UNION dsc_top_clk_sel;
+ DPU_DSC_TOP_CLK_EN_UNION dsc_top_clk_en;
+ DPU_DSC_REG_CTRL_UNION dsc_reg_ctrl;
+ DPU_DSC_REG_CTRL_FLUSH_EN_UNION dsc_reg_ctrl_flush_en;
+};
+#endif

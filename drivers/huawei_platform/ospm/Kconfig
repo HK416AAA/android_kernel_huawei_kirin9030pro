@@ -1,0 +1,13 @@
+#
+# ospm driver configuration
+#
+ 
+config ARMPC_OSPM
+	bool "armpc ospm drvier"
+	depends on I2C
+	default n
+	help
+	  ospm handle all os power managerment by 2012-BIOS
+ 
+source "drivers/huawei_platform/ospm/echub/Kconfig"
+source "drivers/huawei_platform/ospm/usb/multi_port/cs32g050/Kconfig"

@@ -1,0 +1,58 @@
+HDR_PATH := $(srctree)/$(src)
+ifeq ($(srctree),.)
+    HDR_PATH := $(src)
+endif
+
+obj-m := TongTu_DPA_Data_Plane.o
+TongTu_DPA_Data_Plane-y += ../framework/data_struct/list.o
+TongTu_DPA_Data_Plane-y += ../framework/data_struct/stack_rb_tree.o
+TongTu_DPA_Data_Plane-y += ../framework/data_struct/ring.o
+TongTu_DPA_Data_Plane-y += ../framework/log/stack_log.o
+TongTu_DPA_Data_Plane-y += ../framework/protocols/ip6_addr.o
+TongTu_DPA_Data_Plane-y += ../framework/protocols/ip_addr.o
+TongTu_DPA_Data_Plane-y += socket/dpa_inet_socket.o
+TongTu_DPA_Data_Plane-y += socket/sbr_prot_com.o
+TongTu_DPA_Data_Plane-y += socket/sbr_protocol_api.o
+TongTu_DPA_Data_Plane-y += socket/sbr_res_mgr.o
+TongTu_DPA_Data_Plane-y += socket/sbr_socket.o
+TongTu_DPA_Data_Plane-y += socket/sbr_tcp.o
+TongTu_DPA_Data_Plane-y += socket/sbr_udp.o
+TongTu_DPA_Data_Plane-y += msg/bridge_msg_consumer.o
+TongTu_DPA_Data_Plane-y += msg/bridge_msg_producer.o
+TongTu_DPA_Data_Plane-y += msg/bridge_msg_wait_queue.o
+TongTu_DPA_Data_Plane-y += sys/acpu/runtime.o
+TongTu_DPA_Data_Plane-y += sys/acpu/sys_msg.o
+TongTu_DPA_Data_Plane-y += sys/sys_log.o
+TongTu_DPA_Data_Plane-y += sys/stack_thread.o
+TongTu_DPA_Data_Plane-y += init/init.o
+TongTu_DPA_Data_Plane-y += cooperation/cooperation.o
+TongTu_DPA_Data_Plane-y += dfx/chr_stats.o
+ccflags-y := -DMODULE_NAME=\"TongTu_DPA_Data_Plane\"
+ccflags-y += -I$(HDR_PATH)
+ccflags-y += -I$(HDR_PATH)/../framework
+ccflags-y += -I$(HDR_PATH)/../framework/data_struct
+ccflags-y += -I$(HDR_PATH)/../framework/log
+ccflags-y += -I$(HDR_PATH)/../framework/protocols
+ccflags-y += -I$(HDR_PATH)/socket
+ccflags-y += -I$(HDR_PATH)/
+ccflags-y += -I$(HDR_PATH)/sys
+ccflags-y += -I$(HDR_PATH)/sys/acpu
+ccflags-y += -I$(HDR_PATH)/dfx
+ccflags-y += -I$(HDR_PATH)/../../platform/HuaweiSecureC/include
+ccflags-y += -DRTP_FORCE_INTRINSICS=1
+ccflags-y += -DUSE_48BIT_ADDR
+ccflags-y += -DSPL_IPV6=1
+ccflags-y += -DSPL_LINGER=1
+ccflags-y += -DSPL_REUSEPORT=1
+ccflags-y += -DSPL_TCP_DEFER_ACCEPT=0
+ccflags-y += -DSPL_STATS=1
+ccflags-y += -DSPL_NETIF_STATS=1
+ccflags-y += -DSPL_NETIFIP_STATS=0
+ccflags-y += -DSPL_TCP_STATS=1
+ccflags-y += -DSPL_IP6_STATS=1
+ccflags-y += -DSPL_ND6_STATS=1
+ccflags-y += -DSPL_MLD6_STATS=1
+ccflags-y += -DLINUX_NSTACK
+ccflags-y += -DBUILD_BRIDGE
+#ccflags-y += -DOH_MODE
+ccflags-y += -Werror -Wno-declaration-after-statement -include $(HDR_PATH)/../framework/compile_config.h

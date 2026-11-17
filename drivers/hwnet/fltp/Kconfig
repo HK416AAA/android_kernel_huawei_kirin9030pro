@@ -1,0 +1,5 @@
+config HW_FL_PROTCOL
+    bool "Huawei hml trans proto support"
+    default n
+    help
+    Say yes here to support fltp

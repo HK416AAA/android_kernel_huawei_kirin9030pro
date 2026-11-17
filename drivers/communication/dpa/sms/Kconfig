@@ -1,0 +1,54 @@
+#
+# dpa smart_selection configuration
+#
+
+comment "dpa smart_selection"
+
+config DPA_WHITE_LIST
+	bool "support dpa white list"
+	depends on DPA_DRIVERS
+	default n
+	help
+		This is dpa white list
+
+config DPA_WHITE_LIST_NODE
+	bool "support dpa white list node"
+	depends on DPA_WHITE_LIST
+	default n
+	help
+		This is dpa white list node
+
+config DPA_NETDEV
+	bool "support dpa net dev sync"
+	depends on DPA_DRIVERS
+	default n
+	help
+		This is dpa netdev
+
+config DPA_SMS_GRO
+	bool "support dpa gro"
+	depends on DPA_DRIVERS
+	default n
+	help
+		This is dpa gro
+
+config DPA_SMS_GSO
+	bool "support dpa tx gso csum"
+	depends on DPA_DRIVERS
+	default n
+	help
+		This is dpa sms tx
+
+config DPA_SMS_FILTER
+	bool "support dpa filter"
+	depends on DPA_DRIVERS
+	default n
+	help
+		This is dpa sms filter
+
+config DPA_SMS
+	bool "support dpa sms"
+	depends on DPA_DRIVERS
+	default n
+	help
+		This is dpa sms

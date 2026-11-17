@@ -1,0 +1,810 @@
+#
+# Enhanced options for scheduler
+#
+
+config SCHED_WALT
+	bool "Support window based load tracking"
+	depends on SMP
+	select IRQ_TIME_ACCOUNTING
+	help
+	  This feature will allow the scheduler to maintain a tunable window
+	  based set of metrics for tasks and runqueues. These metrics can be
+	  used to guide task placement as well as task frequency requirements
+	  for cpufreq governors.
+
+if SCHED_WALT
+
+config SCHED_WALT_WINDOW_SIZE_TUNABLE
+	bool "Make WALT window size tunable"
+	default n
+	help
+	  Make walt_ravg_window tunable in early param.
+
+config SCHED_WALT_DYNAMIC_WINDOW_SIZE
+	bool "Dynamically adjust WALT window size"
+	depends on SCHED_WALT_WINDOW_SIZE_TUNABLE
+	default n
+	help
+	  Make walt_ravg_window tunable whenever.
+
+config SCHED_CALC_CUM_WINDOW_DEMAND
+	bool "WALT calculate cum window demand"
+	default n
+	help
+	  This option caculates WALT's cum_window_demand, which is not used
+	  currently.
+
+config SCHED_CHECK_IRQLOAD
+	bool "Scheduler check irqload when select task's cpu"
+	default y
+	help
+	  WALT caculates an irqload for each cpu and scheduler will avoid
+	  placing task on a high irqload cpu (if WALT enabled).
+	  Default disabled because we haven't tested to find out which
+	  threshold is the best.
+
+config SCHED_DOWNMIGRATE_LOWER_LOAD
+	bool "Schedutil governor use lower load when task downmigrate"
+	depends on CPU_FREQ_GOV_SCHEDUTIL
+	default n
+	help
+	  Schedutil governor migrate cpu busy time when task migrate. This
+	  option will recaculate a lower load for task downmigrate to
+	  prevent little core's frequency increase too much.
+
+config SCHED_MIGRATE_SPREAD_LOAD
+	bool "Spread task's load when inter-cluster migration"
+	default y
+	help
+	  In inter-cluster migration, this option will spread task's
+	  prev_window/curr_window to all cpus that the task has been
+	  running on before in a window. If disabled, task's whole load
+	  will move to dest cpu and that will make dest cpu's cpu load
+	  very high in same cases.
+
+config SCHED_TOP_TASK
+	bool "Maintain the top task load of each cpu"
+	default y
+	help
+	  Schedutil governor may use the top task load as a guide to
+	  frequency evaluation.
+
+config SCHED_TOP_TASK_SKIP_HISPEED_LOGIC
+	bool "Let top task ignore above_hipeed_delay"
+	depends on SCHED_TOP_TASK
+	default y
+	help
+	  For schedutil governor, this option skips hispeed logic when
+	  ADD_TOP_TASK event triggers freq update.
+
+config SCHED_PRED_LOAD
+	bool "Calculate predicted load for each task"
+	default y
+	depends on CPU_FREQ_GOV_SCHEDUTIL_OPT
+	depends on !CFS_BANDWIDTH || HW_USERSPACE_THROTTLE
+	help
+	  Another signal to improve schedutil. This will help to ramp up
+	  cpufreq quickly.
+	  To enable this signal, say yes here and set predl_enable to 1
+	  in init rc.
+
+config SCHED_PRED_LOAD_FINE_GRAN
+	bool "Support the load prediction for reading apps and video apps"
+	default n
+	depends on SCHED_PRED_LOAD
+	help
+	  When you use predl but not do_predict, say N.
+	  When you set predl_do_predict_ctrl, say Y. We really should turn
+	  predl_busy_buckets into pointer in the future to get rid of
+	  its side effect of memory usage and then delete this macro.
+
+config MIGRATION_NOTIFY
+	bool "task migration notify freq change"
+	depends on CPU_FREQ_GOV_SCHEDUTIL_OPT
+	default n
+	help
+	  tasks migration notify frequency change.
+
+config ED_TASK
+	bool "early detection tasks for freq guidance"
+	depends on CPU_FREQ_GOV_SCHEDUTIL_OPT
+	default n
+	help
+	  early detection tasks for frequency guidance.
+
+config ED_TASK_RESET_AT_UPMIGRATION
+	bool "Reset ed task's run/wait time when migrate to faster cpu"
+	depends on ED_TASK
+	default n
+	help
+	  This feature reset an ed task's last_wake_ts/last_wake_wait_sum if
+	  task migrate to faster cpu. This prevents little core's ed task
+	  boost big core's freq when it upmigrate.
+	  However, it might be confusing if a task become ed task on big core
+	  by its earlier running time on little core. Disable this feature
+	  and do not reset ed task on migration is a better choice.
+
+config SCHED_WALT_IGNORE_SMALL_LOAD
+	bool "Save the overhead of walt update for small delta"
+	default n
+	help
+	  This feature reduces walt overhead but also lowers down the walt
+	  load of cfs tasks and the walt_cpu_util_freq.
+
+endif # SCHED_WALT
+
+config SCHED_RUNNING_AVG
+	bool "per-rq and per-cluster running average statistics"
+	default n
+
+config MULTI_MARGIN
+	bool "EAS multiple margin"
+	default n
+	help
+	  Allow each cluster has its own capacity_margin/sd_capacity_margin.
+
+config SCHED_PER_SD_OVERUTILIZED
+	bool "Platform 'overutilized' flag set in each sched domain"
+	default n
+	help
+	  This extends the functionality of existing EAS scheduling.
+
+config SCHED_RTG
+	bool "related threads group"
+	depends on SCHED_WALT
+	default n
+	help
+	  set ux related threads into a group.
+
+config SCHED_RTG_UTIL_NO_TL
+	bool "Derectly map rtg util to freq and apply no target load"
+	depends on SCHED_RTG
+	default n
+
+config SCHED_RTG_DEBUG
+	bool "related threads group debug"
+	depends on SCHED_RTG
+	depends on DFX_DEBUG_FS
+	default n
+	help
+	  related threads group debugfs.
+
+config SCHED_CGROUP_RTG
+	bool "related threads group of cgroup"
+	depends on SCHED_RTG
+	depends on UCLAMP_TASK_GROUP
+	default n
+	help
+	  set cgroup tasks into a rtg.
+
+config SCHED_FRAME_NO_FORCE_FAST_DOWN
+	bool "Schedutil frame_update do not force skip_min_sample_time"
+	depends on SCHED_RTG
+	default n
+	help
+	  Boosted scene like appstart do not want cpu to fast ramp
+	  down. Frame sched should not break it. This option won't
+	  set skip_min_sample_time for freq update marked by
+	  sched_set_group_normalized_util() if userspace has
+	  configured fast_ramp_down to 0.
+	  Please say Y.
+
+config SCHED_RUNNING_TASK_ROTATION
+	bool "Rotate running tasks between clusters"
+	default n
+	depends on ED_TASK && !ED_TASK_RESET_AT_UPMIGRATION
+	select SCHED_RUNNING_AVG
+	help
+	  When there are 8 big tasks running parallelly, e.g. geekbench
+	  multicore, tasks which were initially run on big cores will
+	  finish its job very soon and then there will be 6 or less tasks
+	  left.
+	  Rotate the tasks, or in other words exchange them between
+	  little cores and big cores randomly, will improve fairness and
+	  parallelism.
+
+config SCHED_POWER_LIMIT_MAXFREQ
+	bool "limit clusters max freq"
+	default n
+	depends on SCHED_RUNNING_AVG
+
+config SCHED_STAT_YIELD
+	bool "Report task's cumulative_yield_time"
+	depends on PERF_CTRL
+	default n
+
+config SCHED_YIELD_LOWPOWER
+	bool "Insert wfe in sched_yield syscall when no one to yield to"
+	depends on SCHED_STAT_YIELD
+	default n
+	help
+	  Userspace usually busy-wait like this (e.g. UE games):
+	  while (!check_condition())
+	          sched_yield();
+	  The sched_yield() in this case should better be lowpower.
+	  Note that our current implementation depends on wfxt cpu feature
+	  to make the udelay() really lowpower. So that this feature is
+	  meaningless (not lowpower) without wfxt. Better not enable it on
+	  old platforms who don't support wfxt.
+
+config TASK_RAVG_SUM
+	bool "task normalized running time sum"
+	depends on SCHED_WALT
+	default n
+	help
+	  Sum all normalized running time for each task.
+
+config SCHED_CPULOAD
+	bool "Calculated utilization-based cpuload for each task and cpu"
+	depends on TASK_RAVG_SUM
+	default n
+	help
+	  Cpuload is a scaled runtime of regular (non-idle) tasks.
+	  The scaling is utilization based, and that provides cpuload
+	  of tasks on different CPUs and frequencies may be compared
+	  each other.
+
+config RENDER_RT
+	bool "render realted thread"
+	depends on SCHED_WALT
+	depends on TASK_RAVG_SUM
+	default n
+	help
+	  Render Related Thread
+
+config RENDER_RT_DEBUG
+	bool "render realted thread test"
+	depends on RENDER_RT
+	depends on DFX_DEBUG_FS
+	default n
+	help
+	  Render Related Thread debug trace
+
+config RENDER_RT_GLOBAL
+	bool "Global render realted thread identify mechanism"
+	depends on RENDER_RT
+	select BINDER_TASK_MARK
+	default n
+	help
+	  Global render related thread identify mechanism, which can trace
+	  a collection of related threads when given a target thread id.
+	  The related threads could be global, not in a specific process.
+
+config RENDER_RT_FIX
+	bool "Obviously we missed the in_interrupt() check when add waker"
+	depends on RENDER_RT
+	default n
+
+config BINDER_TASK_MARK
+	bool "Mark a task when it registered binder looper"
+	default n
+
+config CPU_ISOLATION_OPT
+	bool "cpu isolation optimization"
+	depends on SMP
+	default n
+	help
+	  This option enables cpu isolation, which implement an interface to
+	  userspace to isolate cpu dynamically, the isolated cpu will be
+	  unavailable to scheduler and load balancer, and all its non-pinned
+	  timers, IRQs and tasks will be migrated to other cpus, only pinned
+	  kthread and IRQS are still allowed to run, this achieve similar
+	  effect as hotplug but at lower latency cost.
+
+config CPU_ISOLATION_STRICT
+	bool "cpu isolation strict"
+	depends on CPU_ISOLATION_OPT
+	default n
+	help
+	  This option controls isolation policy of pinned user thread, if
+	  this option is enabled, pinned user threads on an isolated cpu will
+	  be migrated to other unisolated cpu, otherwise they can still running
+	  on isolated cpu.
+
+config CORE_CTRL
+	bool "core control"
+	depends on CPU_ISOLATION_OPT
+	select SCHED_RUNNING_AVG
+	default n
+	help
+	  This option enables the core control functionality in
+	  the scheduler. Core control automatically isolate and
+	  unisolate cores based on cpu load and utilization.
+
+config CORE_CTRL_IMPROVE
+	bool "fix things right so that we can lower down the offline_delay"
+	depends on CORE_CTRL
+	default n
+
+config SCHED_TRACEPOINT
+	bool "Tracepoints for cfs"
+	default y
+	help
+	  This option provides tracepoints for load balance and task rq
+	  selection.
+
+config HUAWEI_SCHED_VIP
+	bool "vip sched user. Don't care the version of vip implemented"
+	default n
+	depends on SCHED_VIP
+
+config FRAME_VIP_SCHED
+	bool "offer vip-set interface for frame draw"
+	default n
+	depends on SCHED_VIP
+
+config RT_CAS
+	bool "RT capacity-aware scheduling"
+	depends on HISI_EAS_SCHED
+	depends on SCHED_INFO
+	default n
+
+config RT_ENERGY_EFFICIENT_SUPPORT
+	bool "Support energy efficient flag for rt tasks"
+	depends on RT_CAS
+	default n
+	help
+	  Let some rt tasks able to be extremly energy efficient.
+	  SCHED_VIP implements interface for vip while
+	  RT_ENERGY_EFFICIENT_SUPPORT implements the scheduling
+	  behaviour for vip.
+
+config RT_SYNC_OPT
+	bool "Optimize wake_sync logic for rt"
+	depends on RT_CAS
+	select BINDER_TASK_MARK
+	default n
+
+config SCHED_DYNAMIC_PRIO
+	bool "Support set and backup a task's priority temporarily/dynamically"
+	default n
+
+config RT_SWITCH_CFS_IF_TOO_LONG
+	bool "Drop rt priority until next sleep if has been running too long"
+	depends on RT_CAS
+	depends on SCHED_DYNAMIC_PRIO
+	default n
+
+config RT_LONG_PREEMPT_OPTIMIZATION
+       bool "Improve RT scheduling during long preempt-off execution"
+       depends on RT_CAS
+       default n
+       help
+         Enable an optimization which tries to avoid placing RT tasks on CPUs
+	 occupied by long nonpreemptible tasks.
+
+config VIP_RAISE_BINDED_KTHREAD
+	bool "If a vip preempts binded kthread for a while, raise the kthread"
+	depends on SCHED_DYNAMIC_PRIO
+	depends on SCHED_VIP
+	default n
+
+config RT_PRIO_EXTEND_VIP
+	bool "Shift rt priority for vip priority"
+	depends on SCHED_DYNAMIC_PRIO
+	default n
+	help
+	  SCHED_DYNAMIC_PRIO helps to unmap rt priority for some syscalls so
+	  that we depend on it for simplicity.
+
+config SCHED_VIP
+	bool "Vip sched v2.0"
+	depends on RT_CAS
+	depends on RT_PRIO_EXTEND_VIP
+	depends on RT_ENERGY_EFFICIENT_SUPPORT
+	depends on SCHED_DYNAMIC_PRIO
+	depends on !SCHED_VIP_OLD
+	imply HUAWEI_SCHED_VIP
+	imply FRAME_VIP_SCHED
+	imply RT_SWITCH_CFS_IF_TOO_LONG
+	imply RT_SYNC_OPT
+	imply VIP_RAISE_BINDED_KTHREAD
+	imply SCHED_VIP_CFS_LB_OPT
+	default n
+	help
+	  Vip sched acts like RT sched, but with two differences:
+	  1. Threads in vip sched usually run heavily. Typically UI/Render.
+	  2. As a result of 1, better energy efficiency is more important
+	     than lower schedule latency.
+	  That is distinguished by two thread info flags, implemented by
+	  RT_ENERGY_EFFICIENT_SUPPORT.
+
+config SCHED_VIP_PI
+	bool "Vip priority inheritance"
+	depends on SCHED_VIP
+	default n
+
+config SCHED_VIP_CGROUP
+	bool "Support setting vip prio for cgroup"
+	depends on SCHED_VIP_PI
+	default n
+
+config SCHED_VIP_CFS_LB_OPT
+	bool "Improve cfs load balance to be aware of vip tasks"
+	depends on SCHED_VIP
+	default n
+
+config SCHED_VIP_FALLBACK_WORKAROUND
+	bool "Act like the old vip sched"
+	depends on SCHED_VIP
+	default n
+	help
+	  If unsure, say N.
+
+config SCHED_HISI_TASK_MIN_UTIL
+	bool "Support boosting a task to a specified opp"
+	depends on SCHED_HISI_UTIL_CLAMP
+	default n
+	help
+	  Same value as SCHED_HISI_UTIL_CLAMP but SCHED_HISI_UTIL_CLAMP
+	  is more recommended in your code.
+
+config SCHED_HISI_UTIL_CLAMP
+	bool "Support userspace constraints on a task's min/max opp use"
+	depends on HISI_EAS_SCHED
+	depends on UCLAMP_TASK
+	select SCHED_HISI_TASK_MIN_UTIL
+	default n
+	help
+	  Note that hisi uclamp doens't constraint uclamp.min <= uclamp.max.
+	  The clamped util would be max(min(util, uclamp.max), uclamp.min).
+
+config MIPS_LOAD_TRACKING
+	bool "Support mips load tracking"
+	default n
+	depends on PHASE_PERF
+
+config CPU_FREQ_PID_MIPS
+	bool "pid control update cpu freq"
+	default n
+	depends on MIPS_LOAD_TRACKING
+
+config SCHED_INDICATE_FCM_IDLE
+	bool "Report a total_nr_running to help fcm idle predicting"
+	default n
+	help
+	  Report if the system has no tasks on all runqueues. Together
+	  with hardirq predicting and timer, we can predict fcm idle
+	  time in the cpuidle governor.
+	  We can easily get total_nr_running by summing rq->nr_running
+	  up, which is nr_running() in core.c. But we still have a
+	  little bit more code for it in order to:
+	  1. help to trigger HRTIMER_SOFT_EXPIRE_SYNC.
+	  2. take ipc (i.e. RPROC_SYNC_SEND) as non-idle.
+	  Note: it depends on sched feat TTWU_QUEUE disabled.
+
+config HRTIMER_SOFT_EXPIRE_SYNC
+	bool "Sync soft expired hrtimers"
+	default n
+	depends on SCHED_INDICATE_FCM_IDLE
+	depends on HIGH_RES_TIMERS
+	help
+	  The timer slack or in other word the hrtimer range helps to
+	  trigger soft expired hrtimers at once which benefits power
+	  and performance.
+	  But hrtimers are designed per-cpu in Linux so that we have
+	  to trigger soft expired hrtimers on all cpus at once when
+	  necessary.
+
+config OPT_TIMER_ENERGY_EFFICIENCY
+	bool "Optimize timer users to be friendly for fcm idle"
+	default n
+	imply HRTIMER_SOFT_EXPIRE_SYNC
+	help
+	  The fcm idle friendly means less unnecessary fcm power up
+	  and longer fcm power down.
+	  This option optimizes timer users (including kernel and
+	  userspace, timer and hrtimer) and the above option optimizes
+	  hrtimer mechanism.
+	  Specifically this option:
+	  1. Turn some delayed_work into deferrable_work.
+	  2. Introduce larger timer_slack in some syscalls who use
+	     hrtimer. See relative_slack_ns().
+	  3. Optimize rcu timers.
+
+config SOFTWARE_PREFETCH_TTWU
+	bool "Software prefetch in try_to_wake_up function"
+	default n
+	depends on SOFTWARE_PREFETCH
+	help
+	  To insert prefetch memory instructions in try_to_wake_up function.
+
+config SOFTWARE_PREFETCH_SCHEDULE
+	bool "Software prefetch in __schedule function"
+	default n
+	depends on SOFTWARE_PREFETCH
+	help
+	  To insert prefetch memory instructions in __schedule function.
+
+config DFX_STATS
+	bool "dfx stats function"
+	default n
+	depends on SCHED_INFO
+	help
+	  statistical rt/vip/cfs thread runnable/block/iowait time and count.
+	  statistical app runnable/block/iowait time and count.
+	  statistical cpu rt/vip running time and switch times.
+	  statistical irq/preempt' time of thread.
+
+config SCHED_DEADLINE_ENABLE
+	bool "Support deadline scheduler switch"
+	default n
+	help
+	  To avoid task_struct expanded when deadline scheduler is rarely used.
+
+config SCHED_CFS_WORKAROUND
+	bool "A workaround: Optimize the CFS mechanism."
+	depends on SCHEDSTATS || TASK_DELAY_ACCT
+	default n
+	help
+	  Reduce system reset caused by low-priority CFS threads obtaining too few time slices.
+
+config SEPARATE_SCHED_TUNE_AND_GROUP_SCHED
+	bool "Separate group sched from cpu cgroup subsys"
+	default n
+	depends on FAIR_GROUP_SCHED
+	depends on !SCHED_FAIR_GROUP_SHARE_BYPASS
+	help
+	  Keep cpu cgrp_subsys for schedtune and introduce groupsched
+	  cgrp_subsys for groupsched.
+	  See comment in uclamp_group_def.h for introduction.
+
+config SCHED_COLOC_GROUP
+	bool "To colocate a group of tasks like one task in scheduling"
+	default n
+	depends on SCHED_WALT
+	depends on HISI_EAS_SCHED
+	help
+	  It colocates the serial load of its tasks and affects task fitness
+	  and cpufreq.
+
+config RT_CAS_OPT
+	bool "Rt improvements opened for new platforms"
+	default y
+	depends on RT_CAS
+	help
+	  Improvements of RT_CAS, no bugfixes. To avoid power issues on old
+	  platforms, we define a new macro.
+
+config GICD_MISS_PPI_WAKE_REQ_WORKAROUND
+	bool "Our own workaround for arm errata 1717652"
+	default n
+	help
+	  Errata 1717652: Wake_request may not be delivered if multiple
+	  cores are woken by PPI block at the same time.
+	  1. Too hard to implement the workaround that arm suggested.
+	     We must take an alternative way.
+	  2. We can tolerate a one-time miss of a wakeup. But when there's
+	     a miss of an IPI, the future IPIs with same type will be omitted
+	     by software. See the cpumask_ipi for IPI_FUNCTION_CALL and
+	     the need_resched flag check for IPI_RESCHEDULE.
+	     So, we just implement workaround for IPI_FUNCTION_CALL and
+	     IPI_RESCHEDULE, and do nothing for other SGIs or PPIs.
+
+config SCHED_DFX
+	bool "Yet another DFX_STATS, but default enabled"
+	default n
+	help
+	  For long preempt-off.
+	  The default threshold is for performance issues, not for stabilily
+	  issues.
+	  Better be disabled on FPGA for less bothering.
+
+config LONG_IRQ_DFX
+	bool "Dfx for long irq, default disabled"
+	default n
+	help
+	  For long irq, including hrtimer handlers.
+	  Since we can't rely on jiffies or hres_jiffies when a cpu got stuck
+	  in irq-off context (likely all cpus are stuck), this feature must
+	  bring overhead of ktime_get(). So we'd better disable it by default
+	  and enable it by shell.
+
+config LONG_IRQ_OFF_DFX
+	bool "Dfx for long irq off by thread context, default enabled"
+	default n
+	help
+	  There're two kinds of irq off: 1. disabling irq in thread context
+	  2. an irq itself. A check in scheduler tick is helpful for 1 since
+	  pending irqs will be handled when enabling irq or spin_unlock_irq-
+	  restore. In this way we won't introduce any overhead so that it
+	  can be default enabled similar to SCHED_DFX.
+	  Note that this feature is not implemented.
+
+config SCHED_PRIORITY_INVERSION_OPT
+	bool "Help to resolve priority inversion caused by kernelspace locks"
+	default n
+	help
+	  We temporarily apply a vruntime_offset for all cfs tasks (in cgroup
+	  with this feature enabled) that are holding any kernel lock.
+	  Conceptly it can be understood as assigning low latency_nice for
+	  tasks in kernelspace critical section, in an extremly low overhead
+	  way.
+	  Note that for priority inversion issues the best solution is always
+	  priority inheritance. This solution is to help when priority
+	  inheritance can't work. For example it's hard and ugly to do PI for
+	  rwsem and RCU. The main issue in the real world is critical tasks
+	  blocking by kernel rwsem which is held by a background task.
+	  So we treat all bg tasks holding any kernel lock prior to other bg
+	  tasks, while not breaking fairness. And I think it's also ok if we
+	  do that for tasks other than bg. But let's only enable bg now and
+	  see if we need more work.
+
+config SCHED_PI_DEBUG_LOCK_NESTING
+	bool "Check if SCHED_PRIORITY_INVERSION_OPT can work correctly"
+	default n
+	depends on SCHED_PRIORITY_INVERSION_OPT
+	help
+	  By manually enabling sysctl_debug_lock_nesting (default disabled),
+	  it will print log for unmatched critical_section_enter/exit().
+
+config ENHANCED_CGROUP_RWSEM_PI_OPT
+	bool "Enhanced priority inversion solution for cgroup_threadgroup_rwsem"
+	default n
+	depends on SCHED_PRIORITY_INVERSION_OPT
+	depends on SCHED_VIP_PI
+	help
+	  The ciritical_section_enter/exit() is not good enough for the
+	  cgroup_threadgroup_rwsem which is a bit special. This feature
+	  simply boost all cgroup_threadgroup_rwsem holders to hisi vip,
+	  with the support of vip low-overhead deferred boost interfaces.
+
+config CGROUP_THDGROUP_RWSEM_OPT
+	bool "cgroup_threadgroup_rwsem optimization"
+	default n
+	depends on SCHED_VIP_PI
+	depends on !SCHED_PRIORITY_INVERSION_OPT
+	help
+	  if set, the thread holding the lock critical section will be set to VIP.
+
+config CPU_MICROARCH_PERF_CTRL
+	bool "Cpu microarch level control when we want more cap than max cap"
+	default n
+
+config CPU_MAX_PERF_REQ_LINK_MEM_TEMPORARY
+	bool "Link memory max freq when critical"
+	default n
+	depends on CPU_MICROARCH_PERF_CTRL
+	help
+	  Don't use it. From any perspective this is what mips-mem must
+	  have done well on its own.
+	  And there shouldn't be any one link max memory freq though
+	  mips-mem instead of pm_qos in devfreq.
+	  In general I think,
+	  1. Don't tell mips-mem, let mips-mem read it.
+	  2. If have to do this in microarch perf ctrl, use pm_qos.
+	  3. Most importantly I don't think we need to do this since we rarely
+	     observe performance gap by it. Mips-mem has already done good
+	     enough and we can also improve mips-mem itself in the future.
+	  So just enable it on a single platform as a temporary solution.
+
+config PID_SCHED_CTRL
+	bool "sched control of process"
+	default n
+	help
+	  for camera AI.
+
+config SCHED_SETSCHEDULER_EXTEND_CUSTOM_EVENT
+	bool "Extended/customized events in the sched scheduler syscall"
+	default n
+	help
+	  1. In the case we want frequent userspace to kernelspace message
+	     so that we need a way faster than writing a file.
+	  2. In the case we want no security limit in the thirdparty app.
+
+config TASK_COMM_STATIC_WHITELIST
+	bool "Infrastructure for whitelist of task comm"
+	default n
+	help
+	  1. For static whitelist that don't change after boot.
+	  2. Update task property bit when its comm changes (and at fork).
+
+config THERMAL_INTELLIGENT_FREQ_CTRL
+	bool "Cpu freq limit for unimportant tasks, based on shell_frame"
+	default n
+	depends on SCHED_SETSCHEDULER_EXTEND_CUSTOM_EVENT
+	depends on TASK_COMM_STATIC_WHITELIST
+
+config FRAME_VIP_SCHED_OPT
+	bool "Implement select_task_rq for frame hwvip tasks"
+	default n
+	help
+	  Before, hwvip tasks use the same select_task_rq like normal cfs
+	  tasks. But it should use rt select_task_rq. So we implement a
+	  single find_hwvip_cpu(), which is the same thing as rt_energy_
+	  aware_wake_cpu() (Note that there's no need to combine the two
+	  functions as one. All find cpu logic should have its own function
+	  based on find_best_candidate()).
+	  And since static/dynamic hwvip is much more than frame vip (the
+	  vip uclamp cgroup), we only do this for frame vips which is helpful
+	  for performance.
+
+config FRAME_VIP_FULL_WINDOW_BOOST
+	bool "Boost frame vip task's util when it runs full walt window"
+	default n
+	help
+	  Originally we did it for hwvip tasks who have WALT_PREDICT_VIP_BOOST
+	  in walt predl as a part of the logic of predicting sudden load.
+	  This feature is weaker in performance, but better for energy.
+
+config FRAME_VIP_IO_IS_BUSY
+	bool "Account iowait as busy for frame vip tasks"
+	default n
+
+config WALT_HYBRID_WINDOW
+	bool "Introduce FREQ_STAT_VIP_ACC_TASK for frame_vip tasks in schedutil"
+	depends on SCHED_PRED_LOAD
+	select FRAME_WINDOW
+	default n
+	help
+	  This feature default enables predl_enable and FREQ_STAT_VIP_ACC_TASK
+	  and predl_window_size_sync_with_frame (and also make predl_enable
+	  not allowed to turn off). So in simple terms it add an independent
+	  signal to schedutil that tracks frame_vip tasks's load in frame
+	  window size, and this signal supports FRAME_VIP_FULL_WINDOW_BOOST
+	  and FRAME_VIP_IO_IS_BUSY.
+	  With predl_enable, all kinds of predict load are calculated.
+	  With FREQ_STAT_VIP_ACC_TASK, schedutil takes predl_max_vip_util(rq)
+	  into consideration, which is the max of predl_vip_accelerated_task.
+	  And with FREQ_STAT_VIP_ACC_TASK, scheduler takes task_pred_util(p)
+	  of predl_vip_accelerated_task into consideration.
+	  And predl_vip_accelerated_task is is_frame_vip(p) or specifically
+	  marked task (static vip WALT_PREDICT_VIP_BOOST_STATE).
+	  With predl_window_size_sync_frame, predl_window_size follows frame
+	  window size and nobody should write predl_window_size. If someone
+	  need to change predl_window_size, remember to turn the sync_frame off.
+
+config SCHED_UNI_TASK_ATTR_CONFIG_INTERFACE
+	bool "Unified iterfaces for setting any property of speficied tasks"
+	depends on HISI_EAS_SCHED
+	default n
+	help
+	  When you need something like a whitelist of tasks, this is it.
+	  We introduce sysfs interfaces like set_task_prop_by_thread_name /
+	  set_task_prop_by_process_name / set_task_prop_by_uid /
+	  set_task_prop_by_<whatever> in /sys/kernel/eas/.
+	  Format: <property> <value_for_the_property> <list of names/uids/..>
+	  (separated by spaces).
+	  In detail we apply changes in the ttwu hook, so the whitelists
+	  are checked at each wakeup of each task.
+
+config MICROVISOR_DYNAMIC_SHARED_CPU
+	bool "Support computing power sharing between RDA and noRDA"
+	default n
+	help
+	  if set, kernel will identify the shared core of RDA.
+
+config SCHED_CHIP_INFO
+	bool "Support sched chip info"
+	default n
+
+config SCHED_THERMAL_REPORT
+	bool "Support sched thermal report"
+	default n
+
+config INDEPENDENT_FAIR_SLEEPER_BONUS
+	bool "An independent config of vruntime bonus for cfs place_entity"
+	default n
+	help
+	  1. Export the fair sleeper bonus as an important config similar to
+	  sched_wakeup_granularity_ns/sched_min_granularity_ns.
+	  2. Default set it as a reasonable value, correct the upstream's
+	  default behavior on our platform.
+	  In general, we don't want too much meaningless wakeup preemption.
+	  The upstream design is good for Linux server but very bad for
+	  mobile devices, which is a very different user interactive pattern
+	  and performance requirement.
+	  This feature makes things right (reduce meaningless wakeup
+	  preemption and improves ipc/throughput), but still must use with
+	  care since it affects too much.
+
+config CPUIDLE_STATE_NOTIFY
+	bool "Notify which C-state CPU entered"
+	default n
+	help
+	  Register the notifier to monitor the C-sate of CPU if interested.
+
+source "kernel/sched/phase/Kconfig"
+source "kernel/sched/smt/Kconfig"
+source "kernel/sched/hw_graded_sched/Kconfig"
+source "kernel/sched/ffrt/Kconfig"

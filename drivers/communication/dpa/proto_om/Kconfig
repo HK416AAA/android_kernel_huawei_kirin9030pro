@@ -1,0 +1,19 @@
+#
+# dpa proto om configuration
+#
+
+comment "dpa proto_om"
+
+config DPA_PROTO_OM
+	bool "support dpa proto_om"
+	depends on DPA_DRIVERS
+	default n
+	help
+		This is dpa proto om
+
+config DPA_OM_FUZZY_OFF
+	bool "support dpa fuzzy disable"
+	depends on DPA_DRIVERS
+	default n
+	help
+		This is dpa proto om hids

@@ -1,0 +1,107 @@
+#ifndef AAE_WDFC_H
+#define AAE_WDFC_H 
+#include "soc_aae_interface.h"
+#include "soc_dpu_define.h"
+struct dpu_wdfc_reg {
+ AAE_WDFC_REG_DEFAULT_UNION reg_default;
+ AAE_WDFC_CH_RD_SHADOW_UNION ch_rd_shadow;
+ AAE_WDFC_CH_SW_END_REQ_UNION ch_sw_end_req;
+ AAE_WDFC_CH_CLK_SEL_UNION ch_clk_sel;
+ AAE_WDFC_CH_CLK_EN_UNION ch_clk_en;
+ AAE_WDFC_CH_DBG0_UNION ch_dbg0;
+ AAE_WDFC_CH_DBG1_UNION ch_dbg1;
+ AAE_WDFC_CH_DBG2_UNION ch_dbg2;
+ AAE_WDFC_CH_DBG3_UNION ch_dbg3;
+ AAE_WDFC_CH_DBG4_UNION ch_dbg4;
+ AAE_WDFC_CH_DBG5_UNION ch_dbg5;
+ AAE_WDFC_CH_DBG6_UNION ch_dbg6;
+};
+struct dpu_wdfc_dfc {
+ AAE_WDFC_DFC_DISP_SIZE_UNION disp_size;
+ AAE_WDFC_DFC_PIX_IN_NUM_UNION pix_in_num;
+ AAE_WDFC_DFC_GLB_ALPHA01_UNION glb_alpha01;
+ AAE_WDFC_DFC_DISP_FMT_UNION disp_fmt;
+ AAE_WDFC_DFC_CLIP_CTL_HRZ_UNION clip_ctl_hrz;
+ AAE_WDFC_DFC_CLIP_CTL_VRZ_UNION clip_ctl_vrz;
+ AAE_WDFC_DFC_CTL_CLIP_EN_UNION ctl_clip_en;
+ AAE_WDFC_DFC_ICG_MODULE_UNION icg_module;
+ AAE_WDFC_DFC_DITHER_ENABLE_UNION dither_enable;
+ AAE_WDFC_DFC_PADDING_CTL_UNION padding_ctl;
+ AAE_WDFC_DFC_GLB_ALPHA23_UNION glb_alpha23;
+ AAE_WDFC_DFC_GLB_ALPHA_UNION glb_alpha;
+ AAE_WDFC_DFC_ALPHA_CTL_UNION alpha_ctl;
+ AAE_WDFC_DFC_ALPHA_THD_UNION alpha_thd;
+};
+struct dpu_wdfc_bitext {
+ AAE_WDFC_BITEXT_CTL_UNION bitext_ctl;
+ AAE_WDFC_BITEXT_REG_INI0_0_UNION bitext_reg_ini0_0;
+ AAE_WDFC_BITEXT_REG_INI0_1_UNION bitext_reg_ini0_1;
+ AAE_WDFC_BITEXT_REG_INI0_2_UNION bitext_reg_ini0_2;
+ AAE_WDFC_BITEXT_REG_INI0_3_UNION bitext_reg_ini0_3;
+ AAE_WDFC_BITEXT_REG_INI1_0_UNION bitext_reg_ini1_0;
+ AAE_WDFC_BITEXT_REG_INI1_1_UNION bitext_reg_ini1_1;
+ AAE_WDFC_BITEXT_REG_INI1_2_UNION bitext_reg_ini1_2;
+ AAE_WDFC_BITEXT_REG_INI1_3_UNION bitext_reg_ini1_3;
+ AAE_WDFC_BITEXT_REG_INI2_0_UNION bitext_reg_ini2_0;
+ AAE_WDFC_BITEXT_REG_INI2_1_UNION bitext_reg_ini2_1;
+ AAE_WDFC_BITEXT_REG_INI2_2_UNION bitext_reg_ini2_2;
+ AAE_WDFC_BITEXT_REG_INI2_3_UNION bitext_reg_ini2_3;
+ AAE_WDFC_BITEXT_POWER_CTRL_C_UNION bitext_power_ctrl_c;
+ AAE_WDFC_BITEXT_POWER_CTRL_SHIFT_UNION bitext_power_ctrl_shift;
+ AAE_WDFC_BITEXT_FILT_00_UNION bitext_filt_00;
+ AAE_WDFC_BITEXT_FILT_01_UNION bitext_filt_01;
+ AAE_WDFC_BITEXT_FILT_02_UNION bitext_filt_02;
+ AAE_WDFC_BITEXT_FILT_10_UNION bitext_filt_10;
+ AAE_WDFC_BITEXT_FILT_11_UNION bitext_filt_11;
+ AAE_WDFC_BITEXT_FILT_12_UNION bitext_filt_12;
+ AAE_WDFC_BITEXT_FILT_20_UNION bitext_filt_20;
+ unsigned int rsv[2];
+ AAE_WDFC_BITEXT_FILT_21_UNION bitext_filt_21;
+ AAE_WDFC_BITEXT_FILT_22_UNION bitext_filt_22;
+ AAE_WDFC_BITEXT_THD_R0_UNION bitext_thd_r0;
+ AAE_WDFC_BITEXT_THD_R1_UNION bitext_thd_r1;
+ AAE_WDFC_BITEXT_THD_G0_UNION bitext_thd_g0;
+ AAE_WDFC_BITEXT_THD_G1_UNION bitext_thd_g1;
+ AAE_WDFC_BITEXT_THD_B0_UNION bitext_thd_b0;
+ AAE_WDFC_BITEXT_THD_B1_UNION bitext_thd_b1;
+ AAE_WDFC_BITEXT0_DBG0_UNION bitext0_dbg0;
+};
+struct dpu_wdfc_dither {
+ AAE_WDFC_DITHER_CTL1_UNION ctl1;
+ AAE_WDFC_DITHER_TRI_THD10_UNION tri_thd10;
+ AAE_WDFC_DITHER_TRI_THD10_UNI_UNION tri_thd10_uni;
+ AAE_WDFC_BAYER_CTL_UNION bayer_ctl;
+ AAE_WDFC_BAYER_MATRIX_PART1_UNION bayer_matrix_part1;
+ AAE_WDFC_BAYER_MATRIX_PART0_UNION bayer_matrix_part0;
+};
+struct dpu_wdfc_clip {
+ AAE_WDFC_CLIP_DISP_SIZE_UNION disp_size;
+ AAE_WDFC_CLIP_CTL_HRZ_UNION clip_ctl_hrz;
+ AAE_WDFC_CLIP_CTL_VRZ_UNION clip_ctl_vrz;
+ AAE_WDFC_CLIP_EN_UNION clip_en;
+};
+struct dpu_wdfc_csc_coef {
+ AAE_WDFC_CSC_IDC0_UNION idc0;
+ AAE_WDFC_CSC_IDC2_UNION idc2;
+ AAE_WDFC_CSC_ODC0_UNION odc0;
+ AAE_WDFC_CSC_ODC2_UNION odc2;
+ AAE_WDFC_CSC_P00_UNION p00;
+ AAE_WDFC_CSC_P01_UNION p01;
+ AAE_WDFC_CSC_P02_UNION p02;
+ AAE_WDFC_CSC_P10_UNION p10;
+ AAE_WDFC_CSC_P11_UNION p11;
+ AAE_WDFC_CSC_P12_UNION p12;
+ AAE_WDFC_CSC_P20_UNION p20;
+ AAE_WDFC_CSC_P21_UNION p21;
+ AAE_WDFC_CSC_P22_UNION p22;
+};
+struct dpu_wdfc_csc {
+ struct dpu_wdfc_csc_coef csc_coef;
+ AAE_WDFC_CSC_ICG_MODULE_UNION csc_icg_module;
+};
+struct dpu_wdfc_wrap_ctrl {
+ AAE_WDFC_REG_CTRL_UNION reg_ctrl;
+ AAE_WDFC_REG_CTRL_FLUSH_EN_UNION reg_ctrl_flush_en;
+ AAE_WDFC_REG_CTRL_DEBUG_UNION reg_ctrl_debug;
+};
+#endif

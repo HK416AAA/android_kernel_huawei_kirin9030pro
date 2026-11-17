@@ -1,0 +1,11 @@
+menuconfig HUAWEI_EXTERNAL_CAMERA
+	bool "huawei external CAMERA device control"
+	default n
+	help
+	Say yes here to support external CAMERA device control.
+
+menuconfig HUAWEI_EXTERNAL_CAMERA_MGR
+	bool "huawei mgr external CAMERA device control"
+	default n
+	help
+	Say yes here to support mgr external CAMERA device control.

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<suite_config>
+	<hvht_case name="hvht">
+		<modem_soc_dpa-cp_psa_serdes_hvht exec_time="600" bypass="0">
+			<case name="modem dpa-cp dataloop init" bypass="0">
+				<before_run>
+					<command type="AT" timeout="10" verify="false">
+						AT^TMODE=3
+					</command>
+				</before_run>
+			</case>
+			<case name="modem tsp hvht" bypass="0">
+				<start>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.start_sys_bus_press
+					</command>
+				</start>
+				<status>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.status_sys_bus_press
+					</command>
+				</status>
+				<stop>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.stop_sys_bus_press
+					</command>
+				</stop>
+			</case>
+			<case name="modem dpa-cp dataloop hvht" bypass="0">
+				<start>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.dpa_cp_data_trans_packet_drop
+					</command>
+					<command type="it" timeout="5" verify="false">
+						dpa_slt.dpa_cp_data_trans_packet_drop
+					</command>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.start_dpa_cp_data_trans
+					</command>
+				</start>
+				<status>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.status_ap_cp_data_trans
+					</command>
+				</status>
+				<stop>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.stop_ap_cp_data_trans
+					</command>
+				</stop>
+			</case>
+			<case name="modem psa hvht" bypass="0">
+				<start>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.start_uphy_psa_aging
+					</command>
+				</start>
+				<status>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.status_uphy_psa_aging
+					</command>
+				</status>
+				<stop>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.stop_uphy_aging
+					</command>
+				</stop>
+			</case>
+			<case name="modem serdes hvht" bypass="0">
+				<start>
+					<command type="AT" timeout="5" verify="false">
+						at+cfun=0
+					</command>
+					<command type="AT" timeout="5" verify="false">
+						at+cfun?
+					</command>
+					<command type="AT" timeout="5" verify="false">
+						at^tmode=1
+					</command>
+					<command type="AT" timeout="5" verify="false" pass_flag="OK" fail_flag="ERROR">
+						at^stmtest=0
+					</command>
+					<command type="AT" timeout="5" verify="false" pass_flag="OK" fail_flag="ERROR">
+						at^stmtest=18,0
+					</command>
+					<command type="AT" timeout="5" verify="false" pass_flag="0">
+						at^stmtest?
+					</command>
+					<command type="AT" timeout="5" verify="false" pass_flag="OK" fail_flag="ERROR">
+						at^stmtest=14,4
+					</command>
+					<command type="AT" timeout="5" verify="false" pass_flag="OK" fail_flag="ERROR">
+						AT^FSERDESRT=200
+					</command>
+				</start>
+				<status>
+					<command type="AT" timeout="5" verify="false" pass_flag="0">
+						AT^FSERDESRT?
+					</command>
+				</status>
+				<stop>
+				</stop>
+			</case>
+			<case name="modem dpa-cp dataloop reset" bypass="0">
+				<after_run name="modem reset" bypass="0">
+					<command type="AT" timeout="10" verify="false">
+						AT^TMODE=3
+					</command>
+				</after_run>
+			</case>
+		</modem_soc_dpa-cp_psa_serdes_hvht>
+		<modem_bbp_tsp_hvht exec_time="600" bypass="0">
+			<case name="bbp hvht init" bypass="0">
+				<before_run>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.start_bbp_aging_setnv
+					</command>
+					<command type="AT" timeout="10" verify="false">
+						AT^TMODE=3
+					</command>
+				</before_run>
+			</case>
+			<case name="modem bbp hvht" bypass="0">
+				<start>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.start_bbp_aging_mem_apply
+					</command>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.start_tsp_aging_stim_start
+					</command>
+				</start>
+				<status>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.status_bbp_aging_stim_status
+					</command>
+				</status>
+				<stop>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.stop_bbp_aging_stim_stop
+					</command>
+				</stop>
+			</case>
+			<case name="modem tsp hvht" bypass="0">
+				<start>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.start_sys_bus_press
+					</command>
+				</start>
+				<status>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.status_sys_bus_press
+					</command>
+				</status>
+				<stop>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.stop_sys_bus_press
+					</command>
+				</stop>
+			</case>
+			<case name="bbp hvht reset" bypass="0">
+				<after_run name="modem reset" bypass="0">
+					<command type="it" timeout="5" verify="true">
+						modem_hvht_test.stop_bbp_aging_resetnv
+					</command>
+					<command type="AT" timeout="10" verify="false">
+						AT^TMODE=3
+					</command>
+				</after_run>
+			</case>
+		</modem_bbp_tsp_hvht>
+		<modem_serdes_psa_tsp_hvht exec_time="1200" bypass="0">
+			<case name="modem psa pde hvht" bypass="0">
+				<before_run>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.stop_bbp_aging_resetnv
+					</command>
+					<command type="AT" timeout="10" verify="false">
+						AT^TMODE=3
+					</command>
+				</before_run>
+				<start>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.start_uphy_psa_pde_aging
+					</command>
+				</start>
+				<status>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.status_uphy_psa_pde_aging
+					</command>
+				</status>
+				<stop>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.stop_uphy_aging
+					</command>
+				</stop>
+			</case>
+			<case name="modem serdes hvht" bypass="0">
+				<start>
+					<command type="AT" timeout="5" verify="false">
+						at+cfun=0
+					</command>
+					<command type="AT" timeout="5" verify="false">
+						at+cfun?
+					</command>
+					<command type="AT" timeout="5" verify="false">
+						at^tmode=1
+					</command>
+					<command type="AT" timeout="5" verify="false" pass_flag="OK" fail_flag="ERROR">
+						at^stmtest=0
+					</command>
+					<command type="AT" timeout="5" verify="false" pass_flag="OK" fail_flag="ERROR">
+						at^stmtest=18,0
+					</command>
+					<command type="AT" timeout="5" verify="false" pass_flag="0">
+						at^stmtest?
+					</command>
+					<command type="AT" timeout="5" verify="false" pass_flag="OK" fail_flag="ERROR">
+						at^stmtest=14,4
+					</command>
+					<command type="AT" timeout="5" verify="false" pass_flag="OK" fail_flag="ERROR">
+						AT^FSERDESRT=400
+					</command>
+				</start>
+				<status>
+					<command type="AT" timeout="5" verify="false" pass_flag="0">
+						AT^FSERDESRT?
+					</command>
+				</status>
+				<stop>
+				</stop>
+			</case>
+			<case name="modem tsp hvht" bypass="0">
+				<start>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.start_sys_bus_press
+					</command>
+				</start>
+				<status>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.status_sys_bus_press
+					</command>
+				</status>
+				<stop>
+					<command type="it" timeout="5" verify="false">
+						modem_hvht_test.stop_sys_bus_press
+					</command>
+				</stop>
+			</case>
+		</modem_serdes_psa_tsp_hvht>
+	</hvht_case>
+	<ipverify_case>
+		<modem_avs bypass="0">
+			<case name="modem perchip avs" bypass="0">
+				<status>
+					<command type="it" timeout="100" verify="true">
+						mdm_avs_test.perchip_update_test
+					</command>
+				</status>
+			</case>
+		</modem_avs>
+		<modem_tsp bypass="0">
+			<case name="modem tsp rtosck" bypass="0">
+				<status>
+					<command type="it" timeout="100" verify="true">
+						rtosck*
+					</command>
+					<command type="it" timeout="100" verify="true">
+						rtosck*
+					</command>
+					<command type="it" timeout="100" verify="true">
+						rtosck*
+					</command>
+				</status>
+			</case>
+		</modem_tsp>
+		<modem_pfa_l2dle_ficc bypass="0">
+			<case name="modem pfa l2dle" bypass="0">
+				<start>
+					<command type="it" timeout="100" verify="true">
+						modem_ip_test.get_testcase_ready
+					</command>
+				</start>
+				<status>
+					<command type="AT" timeout="5" verify="false">
+						at+cfun=0
+					</command>
+					<command type="it" timeout="100" verify="true">
+						pfa.*
+					</command>
+					<command type="it" timeout="100" verify="true">
+						pfa_tsp.*
+					</command>
+					<command type="it" timeout="100" verify="true">
+						l2dle_v210_slt.l2dle_slt_diu
+					</command>
+					<command type="it" timeout="100" verify="true">
+						l2dle_v210_slt.l2dle_slt_lte_9drb_um
+					</command>
+					<command type="it" timeout="100" verify="true">
+						l2dle_v210_slt.l2dle_slt_cp_mem
+					</command>
+					<command type="it" timeout="100" verify="true">
+						l2dle_v210_slt.l2dle_slt_test_mem
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_ficc_init.dpa_ficc_init_bd5
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_ficc_init.dpa_ficc_init_bd6
+					</command>
+				</status>
+			</case>
+		</modem_pfa_l2dle_ficc>
+		<modem_odt bypass="0">
+			<case name="modem odt acore" bypass="0">
+				<status>
+					<command type="it" timeout="100" verify="true">
+						odt_acore_test.chip_test_chan_enable
+					</command>
+					<command type="it" timeout="100" verify="true">
+						odt_acore_test.chip_test_chan_disable
+					</command>
+					<command type="it" timeout="100" verify="true">
+						odt_acore_test.chip_test_chan_bypass
+					</command>
+					<command type="it" timeout="100" verify="true">
+						odt_acore_test.chip_test_chan_data_type
+					</command>
+					<command type="it" timeout="100" verify="true">
+						odt_acore_test.chip_test_chan_image_ptr
+					</command>
+					<command type="it" timeout="100" verify="true">
+						odt_acore_test.chip_test_chan_list_mode
+					</command>
+					<command type="it" timeout="100" verify="true">
+						odt_acore_test.chip_test_int_head_error
+					</command>
+					<command type="it" timeout="100" verify="true">
+						odt_acore_test.chip_test_int_head_error_mask
+					</command>
+					<command type="it" timeout="100" verify="true">
+						odt_acore_test.chip_test_int_encdst_tfr
+					</command>
+					<command type="it" timeout="100" verify="true">
+						odt_acore_test.chip_test_int_encdst_tfr_mask
+					</command>
+				</status>
+			</case>
+			<case name="modem odt ccore" bypass="0">
+				<status>
+					<command type="it" timeout="100" verify="true">
+						odt_ccore_test.it_test_int_rd_complete
+					</command>
+					<command type="it" timeout="100" verify="true">
+						odt_ccore_test.it_test_int_rd_mask
+					</command>
+				</status>
+			</case>
+		</modem_odt>
+		<modem_dra bypass="0">
+			<case name="modem dra" bypass="0">
+				<status>
+					<command type="it" timeout="100" verify="true">
+						dra.*
+					</command>
+				</status>
+			</case>
+		</modem_dra>
+		<modem_fipc bypass="0">
+			<case name="modem fipc" bypass="0">
+				<status>
+					<command type="it" timeout="100" verify="true">
+						fipc_ap2modem_base_send*
+					</command>
+					<command type="it" timeout="100" verify="true">
+						ficc_ap2modem_base_recv*
+					</command>
+					<command type="it" timeout="100" verify="true">
+						ficc_ap2modem_base_send*
+					</command>
+					<command type="it" timeout="100" verify="true">
+						fipc_ap2modem_base_recv*
+					</command>
+				</status>
+			</case>
+		</modem_fipc>
+		<modem_bus bypass="0">
+			<case name="modem bus" bypass="0">
+				<status>
+					<command type="it" timeout="100" verify="true">
+						buserr_ccore.buserr_write_trigger
+					</command>
+				</status>
+			</case>
+		</modem_bus>
+		<modem_lp_stress bypass="0">
+			<case name="modem lp stress" bypass="0">
+				<status>
+					<command type="AT" timeout="5" verify="false">
+						at+cfun=0
+					</command>
+					<command type="shell" timeout="5" verify="false">
+						ecall c_sr_stress_start
+					</command>
+				</status>
+			</case>
+		</modem_lp_stress>
+		<modem_dpa_it_case bypass="0">
+			<case name="modem dpa core case" bypass="0">
+				<status>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.slt_coremark
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.slt_dhrystone
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.slt_maxpower
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.slt_count
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.slt_ocd
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.slt_bus_ddr
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.slt_bus_ap_reg
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.slt_reg_scan
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.dcc_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.dcc_int_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.pcc_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.dcc_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.dcc_int_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.pcc_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.dcc_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.dcc_int_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.pcc_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.dcc_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.dcc_int_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.pcc_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.dcc_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.dcc_int_test
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.pcc_test
+					</command>
+				</status>
+			</case>
+			<case name="modem dpa ficc case" bypass="0">
+				<status>
+					<command type="it" timeout="100" verify="true">
+						dpa_ficc_send.dpa_ficc_send_bd5
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_ficc_recv.dpa_ficc_recv_bd5
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_ficc_send.dpa_ficc_send_bd6
+					</command>
+					<command type="it" timeout="100" verify="true">
+						dpa_ficc_recv.dpa_ficc_recv_bd6
+					</command>
+				</status>
+			</case>
+			<case name="modem dpa gso case" bypass="0">
+				<status>
+					<command type="it" timeout="100" verify="true">
+						dpa_slt.gso_slt_test_testcase
+					</command>
+				</status>
+			</case>
+		</modem_dpa_it_case>
+	</ipverify_case>
+	<nv_config>
+		<modem_nv bypass="0">
+			<case name="NV" bypass="0">
+				<nv_config>
+					<command type="AT" nv_id="53549" modem_id="0" nv_size="20">
+						00 00 00 00 1E 00 00 00 0F 00 00 00 78 00 00 00 00 00 00 00
+					</command>
+					<command type="AT" nv_id="4756" modem_id="0" nv_size="8">
+						07 00 01 00 00 00 00 00
+					</command>
+					<command type="AT" nv_id="56402" modem_id="0" nv_size="4">
+						01 00 00 00
+					</command>
+					<command type="AT" nv_id="9012" modem_id="0" nv_size="4">
+						01 00 00 00
+					</command>
+					<command type="AT" nv_id="9012" modem_id="1" nv_size="4">
+						01 00 00 00
+					</command>
+					<command type="AT" nv_id="9012" modem_id="2" nv_size="4">
+						01 00 00 00
+					</command>
+				</nv_config>
+			</case>
+		</modem_nv>
+	</nv_config>
+</suite_config>

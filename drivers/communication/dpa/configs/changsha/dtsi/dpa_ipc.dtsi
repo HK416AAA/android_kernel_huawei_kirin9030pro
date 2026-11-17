@@ -1,0 +1,23 @@
+/*
+ * Hisilicon Ltd Balong SOC
+ */
+
+
+dpa_ipc_device {
+	/* remote_id、interrupts、hwirq、recv_mailbox4个属性对应位置上相关联，注意修改顺序 */
+	compatible = "modem,dpa_ipc_device";
+	#address-cells = <1>;
+	#size-cells = <1>;
+	version = <0x1>;
+	reg = <0xFF2E0000 0x10000>;
+	local_id = <0x1>; /* acore id */
+	remote_id = <0x20 0x4>; /* dpa id, m3 id */
+	dpa_ipc_device_name = "dpa_ipc_dev0";
+	interrupts = <0 519 4>, <0 453 4>;
+	hwirq = <551 485>;
+	send_mailbox = <0x35>;
+	recv_mailbox = <0x34 0xd>;
+};/* dpa_ipc_device */
+
+
+

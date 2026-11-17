@@ -1,0 +1,62 @@
+config TEELOG
+	bool "Secure Execution Log Driver"
+	default n
+	depends on TZDRIVER
+	help
+	  TEEOS log
+
+config TEE_LOG_ACHIVE_PATH
+	string "Tee log achive path"
+	default "/data/log/tee/last_teemsg"
+	depends on TEELOG
+	help
+	  Last tee msg log path
+
+choice
+	prompt "Log Exception Info"
+	default TEE_DISABLE_LOG_EXCEPTION
+	depends on TEELOG
+ 
+config TEE_LOG_EXCEPTION
+	bool "Log Exception Info"
+ 
+	depends on TEELOG
+	help
+	  Log exception info for double_frame
+ 
+config TEE_LOG_EXCEPTION_SINGLE
+	bool "Log Exception Info"
+	depends on TEELOG
+	help
+	  Log exception info for single_frame
+
+config TEE_DISABLE_LOG_EXCEPTION
+	bool "Disable Log Exception Info"
+	depends on TEELOG
+	help
+	  Log exception info for disable
+endchoice
+
+choice
+	prompt "Register tee log Mem"
+	default PAGES_MEM
+	depends on TEELOG
+
+config RDR_MEM
+	bool "Register rdr log mem"
+	depends on DFX_BB
+	help
+	  Register rdr log mem
+
+config BBOX_MEM
+	bool "Register bbox log mem"
+	depends on MNTN
+	help
+	  Register bbox log mem
+
+config PAGES_MEM
+	bool "Register pages log mem"
+	help
+	  Register pages log mem
+
+endchoice

@@ -1,0 +1,122 @@
+/* Copyright (c) Huawei Technologies Co., Ltd. 2025-2025. All rights reserved. 
+   extract macros used in imocu from the global_ddr_map and iomcu_ddr_map header files
+*/
+
+#ifndef __IOMCU_MEM_H__
+#define __IOMCU_MEM_H__
+
+#ifdef CONFIG_HEADER_FILE_REPLACE_EXTRACT
+
+#define RESERVED_SENSORHUB_SHMEMEXT_PHYMEM_BASE     0x26500000
+#define RESERVED_SENSORHUB_SHMEMEXT_PHYMEM_SIZE     (0x600000)
+#define RESERVED_SENSORHUB_SHMEM_PHYMEM_BASE        0x26B00000
+#define RESERVED_SENSORHUB_SHMEM_PHYMEM_SIZE        (0x40000)
+#define RESERVED_SENSORHUB_SHARE_MEM_PHYMEM_BASE    0x26B40000
+#define RESERVED_SENSORHUB_SHARE_MEM_PHYMEM_SIZE    (0x80000)
+#define RESERVED_SENSORHUB_PHYMEM_BASE              0x26BC0000
+#define RESERVED_SENSORHUB_PHYMEM_SIZE              (0xA00000)
+#define RESERVED_NPU_TINY_PHYMEM_BASE               0x22C00000
+#define RESERVED_NPU_TINY_PHYMEM_SIZE               (0x800000)
+#define SOC_IOMCU_M7_MID                            (0xC)
+#define SOC_IOMCU_DMA_MID                           (0x1A)
+
+#define DDR_SHMEMEXT_ADDR_AP                RESERVED_SENSORHUB_SHMEMEXT_PHYMEM_BASE
+#define DDR_SHMEMEXT_SIZE                   RESERVED_SENSORHUB_SHMEMEXT_PHYMEM_SIZE
+
+#define DDR_FLP_BASE_AP                   DDR_SHMEMEXT_ADDR_AP
+#define DDR_FLP_SIZE                      (0x200000)
+#define DDR_FLP_END_AP                    (DDR_SHMEMEXT_ADDR_AP + DDR_FLP_SIZE)
+
+#define OFFLINE_CELL_MMAP_SIZE            (0x180000)
+
+#define DDR_DUMP_BASE_AP                   DDR_FLP_END_AP
+#define DDR_DUMP_SIZE                      (0x100000)
+#define DDR_DUMP_END_AP                    (DDR_DUMP_BASE_AP + DDR_DUMP_SIZE)
+
+#define DDR_AOD_BASE_AP                    DDR_DUMP_END_AP
+#define DDR_AOD_SIZE                       (0x300000)
+#define DDR_AOD_END_AP                     (DDR_AOD_BASE_AP + DDR_AOD_SIZE)
+
+#define DDR_SHMEM1_ADDR_AP                  RESERVED_SENSORHUB_SHMEM_PHYMEM_BASE
+#define DDR_SHMEM1_SIZE                     RESERVED_SENSORHUB_SHMEM_PHYMEM_SIZE
+
+#define DDR_DTS_CONFIG_ADDR_AP              DDR_SHMEM1_ADDR_AP
+#define DDR_DTS_CONFIG_SIZE                 (0x2000)
+
+#define DDR_THERMAL_SHMEM_PHYMEM_BASE_AP    (DDR_DTS_CONFIG_ADDR_AP + DDR_DTS_CONFIG_SIZE)
+#define DDR_THERMAL_SHMEM_PHYMEM_SIZE       (0x1C00)
+
+#define DDR_LOADMONITOR_PHYMEM_BASE_AP      (DDR_THERMAL_SHMEM_PHYMEM_BASE_AP + DDR_THERMAL_SHMEM_PHYMEM_SIZE)
+#define DDR_LOADMONITOR_PHYMEM_SIZE         (0x1000)
+
+#define DDR_SHMEM_LARGE_BLK_BASE_AP         (DDR_LOADMONITOR_PHYMEM_BASE_AP + DDR_LOADMONITOR_PHYMEM_SIZE)
+#define DDR_SHMEM_LARGE_BLK_SIZE            (DDR_SHMEM1_ADDR_AP + DDR_SHMEM1_SIZE - DDR_SHMEM_LARGE_BLK_BASE_AP)
+
+#define DDR_SHMEM_CH_SEND_ADDR_AP           DDR_SHMEM_LARGE_BLK_BASE_AP
+#define DDR_SHMEM_CH_SEND_SIZE              (DDR_SHMEM_LARGE_BLK_SIZE / 2)
+#define DDR_SHMEM_AP_SEND_ADDR_AP           (DDR_SHMEM_CH_SEND_ADDR_AP + DDR_SHMEM_CH_SEND_SIZE)
+#define DDR_SHMEM_AP_SEND_SIZE              (DDR_SHMEM_LARGE_BLK_SIZE / 2)
+
+#define DDR_SHMEM_ADDR_AP                   RESERVED_SENSORHUB_SHARE_MEM_PHYMEM_BASE
+#define DDR_SHMEM_SIZE                      RESERVED_SENSORHUB_SHARE_MEM_PHYMEM_SIZE
+
+#define DDR_SHMEM_END_AP                   (DDR_SHMEM_ADDR_AP + DDR_SHMEM_SIZE)
+
+#define DDR_CONFIG_SIZE                    (0x1000)
+#define DDR_CONFIG_ADDR_AP                 (DDR_SHMEM_END_AP - DDR_CONFIG_SIZE)
+
+#define DDR_SHELL_DBG_SIZE                 (0x1000)
+#define DDR_SHELL_DBG_ADDR_AP              (DDR_CONFIG_ADDR_AP - DDR_SHELL_DBG_SIZE)
+
+#define DDR_IOMCU_RESERVED_SIZE            (0x1000)
+#define DDR_IOMCU_RESERVED_ADDR_AP         (DDR_SHELL_DBG_ADDR_AP - DDR_IOMCU_RESERVED_SIZE)
+
+#define DDR_LOG_BUFF_SIZE                  (DDR_IOMCU_RESERVED_ADDR_AP - DDR_SHMEM_ADDR_AP)
+#define DDR_LOG_BUFF_ADDR_AP               (DDR_SHMEM_ADDR_AP)
+
+#define DDR_RESERVE_ADDR_AP                 RESERVED_SENSORHUB_PHYMEM_BASE
+#define DDR_RESERVE_SIZE                    RESERVED_SENSORHUB_PHYMEM_SIZE
+
+#define DDR_IMAGE_BASE_AP                  (DDR_RESERVE_ADDR_AP)
+#define DDR_IMAGE_SIZE                     (0x4FF000)
+#define DDR_IMAGE_END_AP                   (DDR_IMAGE_BASE_AP + DDR_IMAGE_SIZE)
+
+#define DDR_F2L_CONFIG_ADDR_AP             DDR_IMAGE_END_AP
+#define DDR_F2L_CONFIG_SIZE                (0x1000)
+#define DDR_F2L_END_AP                     (DDR_F2L_CONFIG_ADDR_AP + DDR_F2L_CONFIG_SIZE)
+
+#define DDR_CODE_BASE_AP                   DDR_F2L_END_AP
+#define DDR_CODE_SIZE                      (0x300000)
+#define DDR_CODE_END_AP                    (DDR_CODE_BASE_AP + DDR_CODE_SIZE)
+
+#define DDR_HEAP_START_AP                  DDR_CODE_END_AP
+#define DDR_HEAP_SIZE                      (0x70000)
+#define DDR_HEAP_END_AP                    (DDR_HEAP_START_AP + DDR_HEAP_SIZE)
+
+#define DDR_IPC_SHMEM_CH_TEE_BASE_AP       DDR_HEAP_END_AP
+#define DDR_IPC_SHMEM_CH_TEE_SIZE          (0x10000)
+#define DDR_IPC_SHMEM_CH_TEE_END_AP        (DDR_IPC_SHMEM_CH_TEE_BASE_AP + DDR_IPC_SHMEM_CH_TEE_SIZE)
+
+#define DDR_IPC_SHMEM_CH_SEND_TEE_ADDR_AP  DDR_IPC_SHMEM_CH_TEE_BASE_AP
+#define DDR_IPC_SHMEM_CH_SEND_TEE_SIZE     (0xB000)
+#define DDR_IPC_SHMEM_TEE_SEND_CH_ADDR_AP  (DDR_IPC_SHMEM_CH_SEND_TEE_ADDR_AP + DDR_IPC_SHMEM_CH_SEND_TEE_SIZE)
+#define DDR_IPC_SHMEM_TEE_SEND_CH_SIZE     (0x5000)
+
+#define DDR_FP_IMAGE_BASE_AP               DDR_IPC_SHMEM_CH_TEE_END_AP
+#define DDR_FP_IMAGE_SIZE                  (0x80000)
+#define DDR_FP_IMAGE_END_AP                (DDR_FP_IMAGE_BASE_AP + DDR_FP_IMAGE_SIZE)
+
+#define DDR_TP_BASE_AP                     DDR_FP_IMAGE_END_AP
+#define DDR_TP_SIZE                        (0x100000)
+#define DDR_TP_END_AP                      (DDR_TP_BASE_AP + DDR_TP_SIZE)
+
+#define DDR_RESERVED_USED_END              DDR_TP_END_AP
+#if DDR_RESERVED_USED_END > (DDR_RESERVE_ADDR_AP + DDR_RESERVE_SIZE)
+	#error "DDR_RESERVED_USED overflow"
+#endif
+
+#define DDR_TINY_RESERVE_ADDR_AP            RESERVED_NPU_TINY_PHYMEM_BASE
+#define DDR_TINY_RESERVE_SIZE               RESERVED_NPU_TINY_PHYMEM_SIZE
+
+#endif
+#endif

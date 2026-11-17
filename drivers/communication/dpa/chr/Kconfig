@@ -1,0 +1,21 @@
+#
+# dpa chr configuration
+#
+
+comment "dpa chr"
+
+config DPA_CHR
+	bool "support dpa chr"
+	depends on DPA_DRIVERS
+	default n
+	help
+		This is dpa chr
+
+comment "dpa web chr"
+ 
+config DPA_CHR_WEB
+	bool "support dpa web chr"
+	depends on DPA_DRIVERS
+	default n
+	help
+		This is dpa web chr

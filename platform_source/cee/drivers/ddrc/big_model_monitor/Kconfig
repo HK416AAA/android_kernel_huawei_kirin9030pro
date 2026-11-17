@@ -1,0 +1,19 @@
+config BIG_MODEL_MONITOR
+	bool "big model monitor"
+	default n
+	help
+	  big model monitor driver
+
+menuconfig BIG_MODEL_MONITOR_GPU
+	bool "big model monitor with gpuload"
+	default n
+	depends on BIG_MODEL_MONITOR
+	help
+	  big model monitor gpuload driver
+
+menuconfig BIG_MODEL_MONITOR_CPU
+	bool "big model monitor with cpuload"
+	default n
+	depends on BIG_MODEL_MONITOR
+	help
+	  big model monitor cpuload driver

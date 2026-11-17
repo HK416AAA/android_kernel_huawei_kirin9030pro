@@ -1,0 +1,11 @@
+#
+# dpa compile demo
+#
+
+comment "kernel dpa compile demo"
+
+config DPA_COMPILE_DEMO
+	tristate "support dpa compile demo"
+	default n
+	help
+		this is DPA_COMPILE_DEMO

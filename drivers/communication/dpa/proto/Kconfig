@@ -1,0 +1,23 @@
+#
+# dpa proto configuration
+#
+
+comment "dpa proto"
+
+config DPA_PROTO
+	bool "support dpa proto"
+	default n
+	help
+		This is dpa proto
+
+config DPA_LWIPSTACK
+	bool "dpa lwip proto"
+	depends on DPA_PROTO
+	help
+		The proto is lwip stack
+
+config DPA_NSTACK
+	bool "dpa nstack proto"
+	depends on DPA_PROTO
+	help
+		The proto is nstack

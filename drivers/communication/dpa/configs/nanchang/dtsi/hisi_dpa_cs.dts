@@ -1,0 +1,30 @@
+/dts-v1/;
+/plugin/;
+
+&hisi_dpa_parent {
+        compatible = "dpa,demo";
+        dma_mask_bit = <64>;
+        status = "ok";
+        #address-cells = <1>;
+        #size-cells = <1>;
+        interrupt-parent = <&gic>;
+        /include/ "dpa_fipc.dtsi"
+        /include/ "mem_layout.dtsi"
+        /include/ "dpa_pm.dtsi"
+        /include/ "dpa_ipc.dtsi"
+        /include/ "dpa_msg.dtsi"
+        /include/ "nmi.dtsi"
+        /include/ "syscount.dtsi"
+        /include/ "reset.dtsi"
+        /include/ "dump.dtsi"
+        /include/ "dpa_ocd.dtsi"
+        /include/ "dpa_watchdog.dtsi"
+        /include/ "mdmperi_busprobe.dtsi"
+        /include/ "dpa_busprobe.dtsi"
+        /include/ "mdmperi_dpa_qic.dtsi"
+        /include/ "mdmperi_dpa_pdlock.dtsi"
+        /include/ "dra.dtsi"
+        /include/ "sc_gid_ctrl.dtsi"
+        /include/ "dpa_sampler.dtsi"
+        /include/ "dpa_boot.dtsi"
+};

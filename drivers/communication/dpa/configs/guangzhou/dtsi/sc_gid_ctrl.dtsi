@@ -1,0 +1,12 @@
+gid_ctrl_peri {
+    compatible = "gid_ctrl_peri";
+    reg = <0xE6802000 0x1000>;
+
+    /* arhint awhint arcache awcache domain*/
+    sc-mode-cfg = <0x0 0x0 0xf 0xf 0x2>;
+    sc_gid_phone_used = <20 21 22 23>; /* dump use cmo */
+
+    gid-ctrl-sc-mode-idx = <1>;
+    gid-ctrl-entry-start = <16>;
+    gid-ctrl-max-entry-num  = <32>;
+};

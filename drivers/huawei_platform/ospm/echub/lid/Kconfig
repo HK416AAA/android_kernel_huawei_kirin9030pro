@@ -1,0 +1,18 @@
+#
+# lid moudule
+#
+
+config ARMPC_ECHUB_LID
+        bool "ec lid func"
+        depends on ARMPC_ECHUB
+        default n
+        help
+          This driver provides support for Lid function
+          via GPIO.
+
+config ARMPC_ECHUB_LID_TEST
+        bool "lid production test"
+        depends on ARMPC_ECHUB
+        default n
+        help
+          This config provides support for Lid production test.

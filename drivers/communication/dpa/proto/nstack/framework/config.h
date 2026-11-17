@@ -1,0 +1,241 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2017-2019. All rights reserved.
+ */
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#ifndef SPL_INT_MAX
+#define SPL_INT_MAX 0x7fffffff
+#endif
+
+#ifndef SPL_UINT_MAX
+#define SPL_UINT_MAX 0xffffffffU
+#endif
+
+#ifndef SPL_USHRT_MAX
+#define SPL_USHRT_MAX 0xffffU
+#endif
+
+#ifndef NONBLOCK_MODE_FOR_ALG
+#define NONBLOCK_MODE_FOR_ALG 2 /* it is possible to get fail */
+#endif
+
+#ifndef BLOCK_MODE_FOR_ALG
+#define BLOCK_MODE_FOR_ALG 1 /* will block till success */
+#endif
+
+#ifndef NONBLOCK_MODE_NOT_FOR_ALG
+#define NONBLOCK_MODE_NOT_FOR_ALG 0
+#endif
+
+#ifndef NSTACK_MAX_U32_NUM
+#define NSTACK_MAX_U32_NUM ((u32)0xffffffffU)
+#endif
+
+#ifndef NSTACK_MAX_U64_NUM
+#define NSTACK_MAX_U64_NUM ((u64)0xffffffffffffffffULL)
+#endif
+
+#ifndef SPL_MAX_S16_NUM
+#define SPL_MAX_S16_NUM ((s16)0x7fff)
+#endif
+
+#ifndef SPL_MAX_U16_NUM
+#define SPL_MAX_U16_NUM ((u16)0xFfff)
+#endif
+
+#ifndef SPL_MAX_U32_NUM
+#define SPL_MAX_U32_NUM ((u32)0xffffffffU)
+#endif
+
+/* resource */
+#define SPL_ROUTE_INFO_MAX 128
+#define SPL_RESUE_PORT_CB_NUM 64
+
+#define MBOX_RING_SIZE 8192
+#define MSG_BOX_SIZE 4096
+#define CONTROL_BOX_SIZE 2048
+#define DIRECT_BOX_SIZE 4096
+#define BRIDGE_BOX_SIZE 4096
+
+#define SHARED_INFO_LEN 320 /* MUST be the same as SKB_DATA_ALIGN(sizeof(struct skb_shared_info)) */
+
+#define UDP_RECV_THRESHOLD ((RX_BUF_POOL_SIZE) >> 4)
+
+#define VLAN_PRIO_MAX   0x8
+#define VLAN_QOS_MAX    0x8
+
+#define ZERO_COPY 0
+
+#define RX_RING_SIZE 512
+
+#define SPL_MEM_ALIGNMENT 4U
+
+#define SPL_GSO_ENABLE 0
+
+#define TX_ENQ_THRESHOLD_MAX    32
+#define GLOBAL_TX_ENQ_THRES     16
+
+/* ip */
+#define IP_TMR_INTERVAL 1000
+#define IP_FRAG_OFFSET_UNIT 8U
+#define IP_FRAG_DEFAULT_TIMER 15U
+
+#define IP_FRAG_DATA_LEN_MASK 0xfff8U
+#define IP6_FRAG_DATA_LEN_MASK 0xfff8U
+#define IP6_FRAG_DATA_LEN_MULTIPLIER 8
+
+/* mtu */
+#define FRAME_MTU 1500U
+
+/* udp gso */
+#define PKT_BURST 32
+
+/* thread */
+#define NSTACK_MAX_THREAD_NUM 1U
+#define GLOBAL_THREAD_INDEX 0U
+#define TASK_BURST 32
+
+/* arp */
+#define SPL_MANUAL_ARP_TABLE_SIZE (SPL_ARP_TABLE_SIZE / 4)
+#define ARP_HASH_TABLE_SIZE (SPL_ARP_TABLE_SIZE * 2)
+#define ARP_STALE_TIME 300U
+
+/* ttl */
+#define SPL_IP_DEFAULT_TTL 255U
+#define SPL_ICMP_TTL (SPL_IP_DEFAULT_TTL)
+#define SPL_TCP_TTL (SPL_IP_DEFAULT_TTL)
+
+/* header len */
+#define VLAN_TAG_LEN 4
+#define ETHER_HLEN 14U
+#define IP_HLEN 20U
+#define IP6_HLEN 40U
+#define TCP_HLEN 20U
+#define TCP_MAX_OPTION_LEN 40U
+#define UDP_HLEN 8U
+#define ICMP_HLEN 8U
+#define IPV4_UDP_SEND_MAX_LEN (0xFFFF)
+#define MAX_HEAD_LEN 128U
+
+/* ipv6 */
+#define IP6_FRAG 8U
+#define IP6_MIN_FRAME_MTU 1280
+#define TCP_DEF_IPV6_MSS (IP6_MIN_FRAME_MTU - IP6_HLEN - TCP_HLEN)
+#define SPL_IPV6_REASS_MAXAGE 60000
+#define SPL_IPV6_REASS_MAX_SBUFS 128
+#define SPL_IPV6_ND_CACHE_NUM 128
+#define SPL_IPV6_REASS_DATA_NUM 64
+#define MAX_IF6_ADDR_NUM (2 * SPL_NETIF_NUM)
+
+#define IP6_DEFAULT_REACHABLE_TIME 300000  // 300s
+
+/* tcp */
+#define TCP_SEND_MAX_SEG_PER_MSG 16
+
+#define TCP_DEF_MSS ((FRAME_MTU - IP_HLEN) - TCP_HLEN)
+#define TCP_DEF_PEER_MSS 536
+
+#define SBUF_LIMIT_MAX_MSS (SBUF_DATA_MAX_LEN - (TCP_HLEN + IP_HLEN + ETHER_HLEN))
+#define SBUF_LIMIT_IPV6_MAX_MSS (SBUF_DATA_MAX_LEN - (TCP_HLEN + IP6_HLEN + ETHER_HLEN))
+
+#define WS_OPTION_MAX_NUM 14U
+#define WS_OPTION_NUM 7U
+#define WS_NUM (1U << WS_OPTION_NUM)
+
+#define CONN_TCP_WMEM_MIN_LINE 32
+
+#define SYS_TCP_RMEM_OVERLOAD_LINE 16384
+#define SYS_TCP_RMEM_PRESSURE_CNT  4096
+#define SYS_TCP_RMEM_HPRESSURE_CNT 0
+
+#define CONN_TCP_RMEM_MIN_LINE 32
+#define CONN_TCP_RMEM_DEF_LINE 128
+#define CONN_TCP_RMEM_MAX_LINE 512
+
+#define SPL_TCP_SYN_RTX_INTVAL 1000U
+#define SPL_TCP_SYNMAXRTX 6U
+#define SPL_TCP_MAXRTX 12
+#define SPL_TCP_D2ARTX 3U
+#define SPL_TCP_CONGESTION_CONTROL "cubic"
+#define SPL_TCP_TS_ENABLE 1
+#define SPL_TCP_SYN_FLOOD_LIMIT_RATE 0
+#define SPL_TCP_PER_ADDR_CONN_NUM_LIMIT 0
+#define SPL_TCP_MAX_SYN_BACKLOG 64
+
+#define TCP_HTABLE_SIZE 64
+
+#define SPL_TCP_WND ((1024 * TCP_DEF_MSS) / (WS_NUM))
+#define SPL_TCP_FINMAXRTX 4U
+#define SPL_TCP_DEFAULT_LISTEN_BACKLOG RX_RING_SIZE
+#define SPL_TCP_WND_UPDATE_THRESHOLD (SPL_TCP_WND / 16U)
+
+#define TCP_DEFAULT_PACING_SHIFT 8
+
+#define TX_DRA_CACHE_LIMIT 30000
+#define RX_DRA_CACHE_LIMIT 20000
+
+#ifndef DPA_MODE
+/* resource */
+#define SBUF_DATA_MAX_LEN 1536
+#define TCP_PCB_TX_SBUF_POOL_SIZE 128
+#define UDP_PCB_TX_SBUF_POOL_SIZE 128
+
+#define GLOBAL_TX_BUF_POOL_SIZE 8192
+#define RX_BUF_POOL_SIZE 8192
+#define ACK_BUF_POOL_SIZE 2048
+
+#define SPL_NETIF_NUM 64U
+
+/* ip */
+#define MAX_IP_SEG_INFO_CNT 32U
+#define MAX_IP_SEG_NODE_CNT (MAX_IP_SEG_INFO_CNT * 45U)
+
+/* socket num */
+#define SOCKET_NUM 256
+#define TCP_PCB_NUM 128
+#define UDP_PCB_NUM 128
+
+/* arp */
+#define SPL_ARP_TABLE_SIZE 512
+#define ARP_QUEUE_NUM 1024
+
+/* ipv6 */
+#define IP6_NEIGHBOR_NUMS 32
+#else
+/* resource */
+#define SBUF_DATA_MAX_LEN 1536
+#define TCP_PCB_TX_SBUF_POOL_SIZE 128
+#define UDP_PCB_TX_SBUF_POOL_SIZE 128
+
+#define GLOBAL_TX_BUF_POOL_SIZE 2048
+#define RX_BUF_POOL_SIZE 4096
+#define ACK_BUF_POOL_SIZE 1024
+
+#define SPL_NETIF_NUM 32U
+
+/* ip */
+#define MAX_IP_SEG_INFO_CNT 4U
+#define MAX_IP_SEG_NODE_CNT (MAX_IP_SEG_INFO_CNT * 4U)
+
+/* socket num */
+#define SOCKET_NUM 256
+#define TCP_PCB_NUM 128
+#define UDP_PCB_NUM 128
+
+/* arp */
+#define SPL_ARP_TABLE_SIZE 32
+#define ARP_QUEUE_NUM 32
+
+/* ipv6 */
+#define IP6_NEIGHBOR_NUMS 16
+#endif
+
+#define UDP_TX_BUF_MAX_NUM (GLOBAL_TX_BUF_POOL_SIZE + UDP_PCB_TX_SBUF_POOL_SIZE)
+#define TCP_OOS_MAX_NUM RX_BUF_POOL_SIZE
+#define TCP_OOS_LEN (RX_BUF_POOL_SIZE / 5)
+
+#define TCP_DEF_ACPU_RCVBUF (4 * 1024 * 1024)
+
+#define ROUTE_QUERY_GAP 200 /* ms */
+#endif

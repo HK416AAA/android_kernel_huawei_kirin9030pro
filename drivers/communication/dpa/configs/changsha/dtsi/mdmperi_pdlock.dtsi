@@ -1,0 +1,33 @@
+
+pdlock {
+    compatible = "mdmperi_pdlock";
+    pdlock_config_cnt = <3>; /* pdlock_enable cnt + pdlock_maskoff cnt */
+    /* format: <base_addr offset start_bit end_bit> */
+    pdlock_config = <0xE6801000 0x760 0 0  1>, /* MDMPERI:APB  使能防挂死 */
+                    <0xE6801000 0x764 0 0  1>, /* MDMPERI:AHB  使能防挂死 */
+                    <0xE6800000 0xA08 0 15 0>; /* MDMPERI_CRG:AHB/APB  0: 不屏蔽了防挂死条件，实现防挂死 */
+};
+
+pdlock_apb_err_info {
+    compatible = "pdlock_info";
+    chipid = <0x36D00000>;
+    /* 错误寄存器偏移 */
+    pdlock_err_reg_num = <2>;
+
+    /* bit 0 */
+    mdmperi_apb_err {
+        sysctrl_base = <0xE6801000 0x1000>;
+        err_name     = "mdmperi_apb_err";
+        err_reg      = <0x7C0>;
+        err_addr     = <0x7C4>;
+        srst_reg     = <0x760 4 4>;  /*  tzrs[1] 非安全寄存器 */
+    };
+    /* bit 1 */
+    mdmperi_ahb_err {
+        sysctrl_base = <0xE6801000 0x1000>;
+        err_name     = "mdmperi_ahb_err";
+        err_reg      = <0x7C8>;
+        err_addr     = <0x7CC>;
+        srst_reg     = <0x764 4 4>;  /*  tzrs[1] 非安全寄存器 */
+    };
+};

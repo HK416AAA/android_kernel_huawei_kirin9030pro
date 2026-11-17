@@ -1,0 +1,47 @@
+{
+    "SymbolType": {
+        "code": [
+            ".*\\.text"
+        ],
+        "pubData": [
+            ".*\\.single\\.data"
+        ],
+        "instPrivData": [
+            ".*\\.inst_priv\\.data"
+        ],
+        "threadPrivData": [
+            ".*\\.thread_priv\\.data"
+        ]
+    },
+    "memtype": {
+        "L2MEM": {
+            "base": [],
+            "idle": [],
+            "conn": [
+                ".*\\.prio0\\..*",
+                "\\.ivt\\.text"
+            ],
+            "mini": [
+                ".*\\.mini\\..*"
+            ]
+        },
+        "SYNCBUFFER": {
+            "base": [],
+            "idle": [],
+            "conn": [],
+            "mini": []
+        },
+        "DDR": {
+            "base": [],
+            "idle": [],
+            "conn": [
+                ".*\\.prio[48]\\..*"
+            ],
+            "mini": []
+        }
+    },
+    "uncache": [
+        ".*\\.noncache\\..*"
+    ],
+    "fs_path_name": "hing_phy_fs3"
+}

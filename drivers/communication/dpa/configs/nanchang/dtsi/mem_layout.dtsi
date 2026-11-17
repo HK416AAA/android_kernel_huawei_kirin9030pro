@@ -1,0 +1,34 @@
+mem_layout{
+	compatible = "dpa,mem_layout";
+
+	/* size */
+	block_static_ddr = <0x980000>; // 9.5MB
+	block_static_ddr_shr = <0x80000>; //0.5MB
+
+	block_cma_img = <0x1000000>; // 16MB
+	block_cma_cache = <0x100000>; // 1MB
+	block_cma_uncache = <0x600000>; // 6MB
+	block_cma_acpu_dpa_shr = <0x400000>; // 4MB
+	block_cma_dfa_dpa_shr = <0x200000>; // 2MB
+	block_cma_user_pfa = <0x80000>;
+	block_cma_user_udx = <0>;
+
+	actrl = <0xFDB22000 0x1000>;
+	sctrl = <0xFDB23000 0x1000>;
+	pctrl = <0xFF00C000 0x2000>;
+	bisr_ctrl = <0xFDB4E000 0x1000>;
+	mdm_peri_crg = <0xE6800000 0x1000>;
+	mdm_peri_sysctrl = <0xE6801000 0x1000>;
+	peri_crg = <0xFFB85000 0x1000>;
+	tsp_reg = <0xE7200000 0x200000>;
+	dpa_sysctrl_reg = <0xE6C01000 0x1000>;
+	dpa_crg_reg = <0xE6C00000 0x1000>;
+	dss0_l1itcm_global = <0xE7A00000 0x28000>;
+	dss0_l1dtcm_global = <0xE7800000 0x28000>;
+	dss0_l1itcm_local = <0xE7480000 0x28000>;
+	dss0_l1dtcm_local = <0xE7400000 0x28000>;
+
+	memory-region = <&modem_dpa_cma>;
+};
+
+

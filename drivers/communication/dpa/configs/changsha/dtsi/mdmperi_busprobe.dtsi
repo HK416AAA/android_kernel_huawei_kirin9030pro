@@ -1,0 +1,27 @@
+/**************************
+ * err_type select for this
+ * enum buserr_type {
+ *     BUS_ERROR_AHB_APB_AXI = 0,
+ *     BUS_ERROR_NOC = 1,
+ *     BUS_ERROR_QIC = 2,
+ *     BUS_ERROR_MINIBUS = 3,
+ *     BUS_ERROR_DMCQIC = 4,
+ *     BUS_ERROR_DDR = 5,
+ *     BUS_ERROR_BUTT,
+ * };
+*****************************/
+
+mdmperi_busprobe {
+    compatible               = "mdmperi_busprobe";
+    interrupts               = <0 221 4>;
+    sysctrl_base_address     = <0xE6801000>;
+    err_state_reg_sum        = <0x1>;
+    sc_top_stat4 {
+        err_state_reg_id     = <0>;
+        err_state_reg_offset = <0x948>;
+        err_state_bit_sum    = <3>;
+        err_type             = <2>, <0>, <0>;
+        err_state_bit        = <0>, <1>, <2>;
+        err_name             = "qic_intr_em_rec_mdmperi", "hslv_err", "pslv_err";
+    };
+};

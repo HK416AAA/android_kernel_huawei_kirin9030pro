@@ -1,0 +1,9 @@
+menu "Codec Driver"
+
+config RDA_CODEC_DRV
+	bool "rda codec driver support"
+	default n
+	help
+	  rda codec driver
+
+endmenu

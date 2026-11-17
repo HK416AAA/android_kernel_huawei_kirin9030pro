@@ -1,0 +1,32 @@
+
+
+
+qic_errprobe {
+    compatible = "mdmperi_dpa_qic,dpa";
+    chipid = <0x36E00000>;
+    em_cnt = <2>;
+    peri_qic_em {
+        qic_name = "peri_qic_em";
+        irq_reg  = <0xE6801000 0x948>;
+        irq_bit  = <0>;
+        base     = <0xE6B00000 0x1000>; /* em addr */
+        qic_ibq_cnt = <8>;
+        /* 0 : 'SYS2MDMPERI', 1 : 'IB_DPA2MDMPERI', 2 : 'IB_SPPM',  3 :'IB_MAA' ,
+            4 : 'IB_EICC',     5 : 'IB_SOCP',        6 : 'IB_SNE',   7 : 'IB_MDMPERI_HTS_MST',
+        */
+        qic_ibq_base = <0xE6B08000>, <0xE6B01000>, <0xE6B07000>, <0xE6B03000>,
+                        <0xE6B02000>, <0xE6B06000>, <0xE6B05000>, <0xE6B04000>;
+    };
+
+    dpa_qic_em {
+        qic_name = "dpa_qic_em";
+        irq_reg  = <0xE6C01000 0x984>;
+        irq_bit  = <4>;
+        powerdown_check = <1>; /* check the bus is powerdown */
+        base     = <0xE6F08000 0x1000>;
+        qic_ibq_cnt = <5>;
+        /* 0: IB_SYS2DPA  1: IB_DPA_S2  2:IB_DPA_R2  3:IB_DPA_EICC  4:IB_DPA_EPSD */
+        qic_ibq_base = <0xE6F0D000>, <0xE6F0C000>, <0xE6F0B000>, <0xE6F09000>, <0xE6F0A000>;
+    };
+};
+

@@ -1,0 +1,7 @@
+menu "rda display Kernel Configuration"
+
+source "platform_source/display/drivers/cdc_rda/drm/Kconfig"
+source "platform_source/display/drivers/cdc_rda/indep_rst/Kconfig"
+source "platform_source/display/drivers/cdc_rda/vfb/Kconfig"
+
+endmenu

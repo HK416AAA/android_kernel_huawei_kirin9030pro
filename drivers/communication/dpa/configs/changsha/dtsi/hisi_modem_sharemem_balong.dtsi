@@ -1,0 +1,141 @@
+shared_unsec_mem{
+    compatible = "shared_unsec_mem";
+    addr = <0x1EE00000>;
+    size = <0xC0000>;
+    dts_info_size = <0x1000>;
+    usshm_pin{
+        mem-names = "usshm_pinctrl";
+        size = <0x1800>;
+    };
+    usshm_product{
+        mem-names = "usshm_product";
+        size = <0x800>;
+    };
+    usshm_msg_mid{
+        mem-names = "usshm_msg_mid";
+        size = <0x4000>;
+    };
+    usshm_nv{
+        mem-names = "usshm_nv";
+        size = <0x400>;
+    };
+    usshm_diag{
+        mem-names = "usshm_diag";
+        size = <0x4>;
+    };
+    usshm_reset{
+        mem-names = "usshm_reset";
+        size = <0x400>;
+    };
+    usshm_dpa_cma{
+        mem-names = "usshm_dpa_cma";
+        size = <0x40>;
+    };
+    usshm_dpa_profile{
+        mem-names = "usshm_dpa_profile";
+        size = <0x4>;
+    };
+    usshm_dpa_dra{
+        mem-names = "usshm_dpa_dra";
+        size = <0x8>;
+    };
+    usshm_dpa_mo_size{
+        mem-names = "usshm_dpa_mo_size";
+        size = <0x4>;
+    };
+    usshm_dpa_ate{
+        mem-names = "usshm_dpa_ate";
+        size = <0x4>;
+    };
+    usshm_test{
+        mem-names = "usshm_test";
+        size = <0x300>;
+    };
+    usshm_test1{
+        mem-names = "usshm_test1";
+        size = <0x200>;
+    };
+};
+shared_nsro{
+    compatible = "shared_nsro_mem";
+    addr = <0x1E001000>;
+    size = <0xD4F000>;
+    dts_info_size = <0x1000>;
+    nsroshm_nv{
+        mem-names = "nsroshm_nv";
+        size = <0xB00000>;
+    };
+    nsroshm_version{
+        mem-names = "nsroshm_version";
+        size = <0x1c0>;
+    };
+    nsroshm_debug_on_reset{
+        mem-names = "nsroshm_debug_on_reset";
+        size = <0x10>;
+    };
+    nsroshm_memory_layout{
+        mem-names = "nsroshm_memory_layout";
+        size = <0x800>;
+    };
+    nsroshm_adc{
+        mem-names = "nsroshm_adc";
+        size = <0xc00>;
+    };
+    nsroshm_msg_mid{
+        mem-names = "nsroshm_msg_mid";
+        size = <0x4000>;
+    };
+    nsroshm_dump_base{
+        mem-names = "nsroshm_dump_base";
+        size = <0x8>;
+    };
+    nsroshm_dump{
+        mem-names = "nsroshm_dump";
+        size = <0x30>;
+    };
+    nsroshm_lpmcu_para{
+        mem-names = "nsroshm_lpmcu_para";
+        size = <0x2000>;
+    };
+    nsroshm_avs_trim{
+        mem-names = "nsroshm_avs_trim";
+        size = <0x300>;
+    };
+    nsroshm_test{
+        mem-names = "nsroshm_test";
+        size = <0x300>;
+    };
+    nsroshm_test1{
+        mem-names = "nsroshm_test1";
+        size = <0x200>;
+    };
+};
+shared_sec_mem{
+    compatible = "shared_sec_mem";
+    addr = <0xABC80000>;
+    size = <0x80000>;
+    dts_info_size = <0x1000>;
+    /* 安全os无法申请DMA内存，所以使用共享内存，这块内存有对齐要求 */
+    seshm_secos_fipcptr{
+        mem-names = "seshm_secos_fipcptr";
+        size = <0x800>;
+    };
+    /* 安全os无法申请DMA内存，所以使用共享内存，这块内存有对齐要求 */
+    seshm_secos_msgdma{
+        mem-names = "seshm_secos_msgdma";
+        size = <0x2800>;
+    };
+    /* mtee eicc通道的ringbuf和推送地址,起始地址8字节对齐 */
+    seshm_ficc_dma{
+        mem-names = "seshm_ficc_dma";
+        size = <0x208>;
+    };
+    seshm_test{
+        mem-names = "seshm_test";
+        size = <0x300>;
+    };
+    seshm_test1{
+        mem-names = "seshm_test1";
+        size = <0x200>;
+    };
+};

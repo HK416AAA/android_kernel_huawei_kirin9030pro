@@ -1,0 +1,280 @@
+/*
+ * echub/hmi.h
+ *
+ * echub hmi function interface & definition
+ *
+ * Copyright (c) 2024-2024 Huawei Technologies Co., Ltd.
+ *
+ * This software is licensed under the terms of the GNU General Public
+ * License version 2, as published by the Free Software Foundation, and
+ * may be copied, distributed, and modified under those terms.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ */
+
+#ifndef _ARMPC_HMI
+#define _ARMPC_HMI
+
+#include <linux/notifier.h>
+
+/* define blocking notifier type for hmi module */
+enum hmi_event_type {
+	HMI_START_EVENT = 0,
+	HMI_KEYBOARD_EVENT,
+	HMI_PD_EVENT,
+	HMI_BATTERY_EVENT,
+	HMI_WAKEUP_EVENT,
+	HMI_POPPIN_EVENT,
+	HMI_EVENT_END,
+};
+
+enum hmi_poppin_event_list {
+    NOTIFY_POPPIN_GET_KBD_EVENT = 0x60,
+};
+
+enum hmi_keyboard_event_list {
+	FN_P_TURBO_OFF = 0x14,
+	FN_P_TURBO_ON,
+	FN_P_TURBO_ON_FAIL,
+	SMART_VOICE_BALL_CTR,
+	FN_R_LCD_REFRESH_RATE_CHANGE,
+	CAMERA_OPEN,
+	CAMERA_CLOSE,
+	SEARCH_KEYSTROKE_MSG = 0x25,
+	GET_KEYBOARD_LOG = 0x26,
+	REBOOT_FASTBOOT = 0xCF,
+};
+
+enum hmi_pd_event_list {
+	NOTIFY_GET_PD_DFX_DATA = 0x42,
+	NOTIFY_ADAPTER_POWER_LOW,
+	NOTIFY_PDPHY_IRQ,
+};
+
+enum hmi_battery_event_list {
+	QEVENT_BATTERY_NORMAL_TEMP_RE_CHG = 0x9E,
+	QEVENT_BATTERY_HIGH_TEMP_STOP_CHG = 0x9F,
+	AC_STATUS_CHANGE,
+	BATTERY_STATUS_CHANGE,
+	BATTERY_STATIC_INFO_CHANGE,
+	FN_F16_STOP_CHARGING,
+	S_FAST_ADAPTER_POWER_CHANGE,
+	BATTERY_TEMP_ABNORMAL,
+	CELL_OVER_VOLTAGE,
+	BATTERY_ABNORMAL,
+	CELL_VOLTAGE_IMBALANCE,
+	QEVENT_BATT_DIAGNOSIS,
+	FN_F15_FULL_BATTERY_CAP = 0xB1,
+	CHARGE_STATUS_ABNORMAL,
+	CHARGE_PROCHOT_STATUS,
+	CHARGE_BAT_JUMP,
+	CHARGE_RATE,
+	ACTIVE_DISCHARGE_REPORT_QEVENT = 0xBF,
+};
+
+enum hmi_wakeup_event_list {
+	WAKEUP_AC_IN = 0xAA,
+	WAKEUP_LID_OPEN,
+	WAKEUP_KEYBOERD_POWER_BUTTON,
+	WAKEUP_DOCK_DEVICE,
+	WAKEUP_RESERVE,
+	WAKEUP_POWER_BUTTON,
+};
+
+struct hmi_qevent_notify_table {
+	u8 event_type;
+	u8 qevent_number;
+};
+
+static const struct hmi_qevent_notify_table g_qevent_notify_map[] = {
+    { HMI_KEYBOARD_EVENT, FN_P_TURBO_OFF },
+    { HMI_KEYBOARD_EVENT, FN_P_TURBO_ON },
+    { HMI_KEYBOARD_EVENT, FN_P_TURBO_ON_FAIL },
+    { HMI_KEYBOARD_EVENT, SMART_VOICE_BALL_CTR },
+    { HMI_KEYBOARD_EVENT, FN_R_LCD_REFRESH_RATE_CHANGE },
+    { HMI_KEYBOARD_EVENT, CAMERA_OPEN },
+    { HMI_KEYBOARD_EVENT, CAMERA_CLOSE },
+    { HMI_KEYBOARD_EVENT, SEARCH_KEYSTROKE_MSG },
+	{ HMI_KEYBOARD_EVENT, GET_KEYBOARD_LOG },
+    { HMI_KEYBOARD_EVENT, REBOOT_FASTBOOT },
+    { HMI_PD_EVENT, NOTIFY_GET_PD_DFX_DATA },
+    { HMI_PD_EVENT, NOTIFY_ADAPTER_POWER_LOW },
+    { HMI_PD_EVENT, NOTIFY_PDPHY_IRQ},
+    { HMI_BATTERY_EVENT, QEVENT_BATTERY_NORMAL_TEMP_RE_CHG },
+    { HMI_BATTERY_EVENT, QEVENT_BATTERY_HIGH_TEMP_STOP_CHG },
+    { HMI_BATTERY_EVENT, AC_STATUS_CHANGE },
+    { HMI_BATTERY_EVENT, BATTERY_STATUS_CHANGE },
+    { HMI_BATTERY_EVENT, BATTERY_STATIC_INFO_CHANGE },
+    { HMI_BATTERY_EVENT, FN_F16_STOP_CHARGING },
+    { HMI_BATTERY_EVENT, S_FAST_ADAPTER_POWER_CHANGE },
+    { HMI_BATTERY_EVENT, BATTERY_TEMP_ABNORMAL },
+    { HMI_BATTERY_EVENT, CELL_OVER_VOLTAGE },
+    { HMI_BATTERY_EVENT, BATTERY_ABNORMAL },
+    { HMI_BATTERY_EVENT, CELL_VOLTAGE_IMBALANCE },
+    { HMI_BATTERY_EVENT, QEVENT_BATT_DIAGNOSIS },
+    { HMI_BATTERY_EVENT, FN_F15_FULL_BATTERY_CAP },
+    { HMI_BATTERY_EVENT, CHARGE_STATUS_ABNORMAL },
+    { HMI_BATTERY_EVENT, CHARGE_PROCHOT_STATUS },
+    { HMI_BATTERY_EVENT, CHARGE_BAT_JUMP },
+    { HMI_BATTERY_EVENT, CHARGE_RATE },
+    { HMI_BATTERY_EVENT, ACTIVE_DISCHARGE_REPORT_QEVENT },
+    { HMI_WAKEUP_EVENT, WAKEUP_AC_IN },
+    { HMI_WAKEUP_EVENT, WAKEUP_LID_OPEN },
+    { HMI_WAKEUP_EVENT, WAKEUP_KEYBOERD_POWER_BUTTON },
+    { HMI_WAKEUP_EVENT, WAKEUP_DOCK_DEVICE },
+    { HMI_WAKEUP_EVENT, WAKEUP_RESERVE },
+    { HMI_WAKEUP_EVENT, WAKEUP_POWER_BUTTON },
+    { HMI_POPPIN_EVENT, NOTIFY_POPPIN_GET_KBD_EVENT }
+};
+
+#define ENABLE_FLAOT_MODE 0x55
+#define DISABLE_FLAOT_MODE 0x5A
+
+enum hmi_ec_cmd_index {
+	/* Get Charger Lifetime Data Block */
+	GET_CHARGER_LIFETIME_DATA_BL1 = 0,
+	GET_CHARGER_LIFETIME_DATA_BL2,
+	GET_CHARGER_LIFETIME_DATA_BL3,
+	GET_CHARGER_LIFETIME_DATA_BL4,
+	GET_CHARGER_LIFETIME_DATA_BL5,
+	GET_CHARGER_LIFETIME_DATA_BL6,
+	GET_CHARGER_LIFETIME_DATA_BL7,
+	GET_CHARGER_LIFETIME_DATA_BL8,
+	GET_CHARGER_LIFETIME_DATA_BL9,
+	GET_CHARGER_LIFETIME_DATA_BL10,
+	GET_CHARGER_LIFETIME_DATA_BL11,
+	GET_CHARGER_LIFETIME_DATA_BL12,
+	GET_CHARGER_DASTATUS2,
+	/* Get charge Mode */
+	GET_CHARGE_MODE,
+	/* Set Charge Mode */
+	SET_CHARGE_HOME_MODE,
+	SET_CHARGE_OFFICE_MODE,
+	SET_CHARGE_TRAVEL_MODE,
+	SET_CHARGE_SMART_MODE1,
+	SET_CHARGE_SMART_MODE2,
+	SET_CHARGE_SMART_MODE3,
+	/* Get BATTERY INFO */
+	GET_BATTERY_HEATLTH_STATUS,
+	GET_BATTERY_SAFETY_STATUS,
+	GET_BATTERY_PF_STATUS,
+	GET_BATTERY_OPERATION_STATUS,
+	GET_CHAERING_STATUS,
+	GET_NVM_CHAERING_STATUS,
+	GET_GPU_POWER_CONSUMPTION_NVM,
+	GET_BATTERY_USE_TIME_CURRENT_POLICY,
+	GET_BATTERY_FCCR,
+	GET_BATTERY_CHG_V_SET,
+	GET_BATTERY_SBAT_SOC,
+	GET_BATTERY_EBAT_SOC,
+	GET_BATTERY_MAX_DELTA_CVOLT,
+	GET_BATTERY_AC_PRESENT_STATUS,
+	GET_BATTERY_CURRENT_STATUS,
+	GET_BATTERY_OEM_INFO,
+	SET_FLOATE_CHARGE_MODE,
+	SET_START_CHARGE_PERCENT,
+	SET_STOP_CHARGE_PERCENT,
+	GET_START_CHARGE_PERCENT,
+	GET_STOP_CHARGE_PERCENT,
+	/*lid status */
+	GET_LID_STATUS,
+	/* Get ec log */
+	GET_DFX_LOG,
+	GET_EC_TRACE_LOG,
+	GET_EC_FINGER_PRINT_LOG,
+	GET_PD_DFX_LOG,
+	GET_BATTART_DFX_LOG,
+	GET_CHARGE_DFX_LOG,
+	GET_EC_QEVENT_ID,
+	HMI_CMD_END,
+};
+struct hmi_transfer_data_arg {
+	int cmd; /* EC transfer cmd 0x280/0x0281/04A0 */
+	u8 sub_cmd; /* data byte0, 0xff means no need subcmd */
+	int rev_len; /* need ec return data len */
+	u8 input_para_len; /* additional parameter len, generally 0 */
+};
+
+static const struct hmi_transfer_data_arg g_hmi_ec_cmd_table[HMI_CMD_END] = {
+    /* Get Charger Lifetime Data Block */
+    [GET_CHARGER_LIFETIME_DATA_BL1] = { 0x0281, 0x01, 34, 0 },
+    [GET_CHARGER_LIFETIME_DATA_BL2] = { 0x0281, 0x02, 34, 0 },
+    [GET_CHARGER_LIFETIME_DATA_BL3] = { 0x0281, 0x03, 34, 0 },
+    [GET_CHARGER_LIFETIME_DATA_BL4] = { 0x0281, 0x04, 34, 0 },
+    [GET_CHARGER_LIFETIME_DATA_BL5] = { 0x0281, 0x05, 34, 0 },
+    [GET_CHARGER_LIFETIME_DATA_BL6] = { 0x0281, 0x06, 34, 0 },
+    [GET_CHARGER_LIFETIME_DATA_BL7] = { 0x0281, 0x07, 34, 0 },
+    [GET_CHARGER_LIFETIME_DATA_BL8] = { 0x0281, 0x08, 34, 0 },
+    [GET_CHARGER_LIFETIME_DATA_BL9] = { 0x0281, 0x09, 34, 0 },
+    [GET_CHARGER_LIFETIME_DATA_BL10] = { 0x0281, 0x0A, 34, 0 },
+    [GET_CHARGER_LIFETIME_DATA_BL11] = { 0x0281, 0x0B, 34, 0 },
+    [GET_CHARGER_LIFETIME_DATA_BL12] = { 0x0281, 0x0C, 34, 0 },
+    [GET_CHARGER_DASTATUS2] = { 0x029E, 0x01, 18, 0 },
+    /* Get charge Mode */
+    [GET_CHARGE_MODE] = { 0x02E4, 0xFF, 4, 0 },
+    /* Set Charge Mode */
+    [SET_CHARGE_HOME_MODE] = { 0x02E3, 0x01, 0, 3 },
+    [SET_CHARGE_OFFICE_MODE] = { 0x02E3, 0x02, 0, 3 },
+    [SET_CHARGE_TRAVEL_MODE] = { 0x02E3, 0x03, 0, 3 },
+    [SET_CHARGE_SMART_MODE1] = { 0x02E3, 0x04, 0, 3 },
+    [SET_CHARGE_SMART_MODE2] = { 0x02E3, 0x05, 0, 3 },
+    [SET_CHARGE_SMART_MODE3] = { 0x02E3, 0x06, 0, 3 },
+    /* Get BATTERY INFO */
+    [GET_BATTERY_HEATLTH_STATUS] = { 0x0282, 0x01, 4, 0 },
+    [GET_BATTERY_SAFETY_STATUS] = { 0x0282, 0x02, 4, 0 },
+    [GET_BATTERY_PF_STATUS] = { 0x0282, 0x03, 4, 0 },
+    [GET_BATTERY_OPERATION_STATUS] = { 0x0282, 0x04, 4, 0 },
+    [GET_CHAERING_STATUS] = { 0x0282, 0x05, 4, 0 },
+    [GET_NVM_CHAERING_STATUS] = { 0x0282, 0x06, 4, 0 },
+    [GET_GPU_POWER_CONSUMPTION_NVM] = { 0x0282, 0x07, 4, 0 },
+    [GET_BATTERY_USE_TIME_CURRENT_POLICY] = { 0x0282, 0x08, 4, 0 },
+    [GET_BATTERY_FCCR] = { 0x0282, 0x09, 4, 0 },
+    [GET_BATTERY_CHG_V_SET] = { 0x0282, 0x0A, 4, 0 },
+    [GET_BATTERY_SBAT_SOC] = { 0x0282, 0x0B, 4, 0 },
+    [GET_BATTERY_EBAT_SOC] = { 0x0282, 0x0C, 4, 0 },
+    [GET_BATTERY_MAX_DELTA_CVOLT] = { 0x0282, 0x0D, 4, 0 },
+    [GET_BATTERY_AC_PRESENT_STATUS] = { 0x0280, 0x81, 1, 0 },
+    [GET_BATTERY_CURRENT_STATUS] = { 0x0280, 0x82, 1, 0 },
+    [GET_BATTERY_OEM_INFO] = { 0x0280, 0x83, 1, 0 },
+    /*CHARGE_MODE para enable: ENABLE_FLAOT_MODE disable:DISABLE_FLAOT_MODE*/
+    [SET_FLOATE_CHARGE_MODE] = { 0x0268, 0x03, 0, 1 },
+    [SET_START_CHARGE_PERCENT] = { 0x0268, 0x01, 0, 1 },
+    [SET_STOP_CHARGE_PERCENT] = { 0x0268, 0x02, 0, 1 },
+    [GET_START_CHARGE_PERCENT] = { 0x0269, 0x01, 1, 0 },
+    [GET_STOP_CHARGE_PERCENT] = { 0x0269, 0x02, 1, 0 },
+    /*lid status */
+    [GET_LID_STATUS] = { 0x0280, 0x80, 1, 0 },
+    /* log */
+    [GET_DFX_LOG] = { 0x02B7, 0x01, 253, 1 }, /* need another one byte for log index */
+    [GET_EC_TRACE_LOG] = { 0x02B7, 0x02, 253, 1 },
+    [GET_EC_FINGER_PRINT_LOG] = { 0x02B7, 0x03, 253, 1 },
+    [GET_PD_DFX_LOG] = { 0x02B7, 0x07, 253, 1 },
+    [GET_BATTART_DFX_LOG] = { 0x02B7, 0x08, 253, 1 },
+    [GET_CHARGE_DFX_LOG] = { 0x02B7, 0x09, 253, 1 },
+    [GET_EC_QEVENT_ID] = { 0x0684, 0xFF, 1, 0 },
+};
+
+#ifdef CONFIG_ARMPC_ECHUB_HMI
+int hmi_event_bnc_unregister(unsigned int type, struct notifier_block *nb);
+int hmi_event_bnc_register(unsigned int type, struct notifier_block *nb);
+int hmi_transfer(int cmd_index, u8 *data_buf, int data_len, u8 *rev_buf, int rev_buf_len);
+#else
+static inline int hmi_event_bnc_unregister(unsigned int type, struct notifier_block *nb)
+{
+	return -EOPNOTSUPP;
+};
+static inline int hmi_event_bnc_register(unsigned int type, struct notifier_block *nb)
+{
+	return -EOPNOTSUPP;
+};
+static inline int hmi_transfer(int cmd_index, u8 *data_buf, int data_len, u8 *rev_buf, int rev_buf_len)
+{
+	return -EOPNOTSUPP;
+};
+#endif /* CONFIG_ARMPC_ECHUB_HMI */
+
+#endif /* _ARMPC_HMI */

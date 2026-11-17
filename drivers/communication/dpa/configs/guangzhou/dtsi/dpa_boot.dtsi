@@ -1,0 +1,4 @@
+dpa_boot{
+    compatible = "dpa,boot";
+    dump_size = <0x710>;
+};

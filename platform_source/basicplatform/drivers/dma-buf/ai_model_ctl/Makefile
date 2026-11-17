@@ -1,0 +1,1 @@
+obj-y += ai_model_ctl.o

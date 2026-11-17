@@ -1,0 +1,43 @@
+/* MSG通道配置 */
+/*
+    mode:
+        <0x100: normal>         fipc默认通道
+        <0x101: transparent>    fipc透传通道(HIFI产品线)
+        <0x102: mega_data>      fipc大数据通道(NV、Rfile)
+
+        <0x200: normal>         ipcmsg默认通道
+        <0x201: transparent>    ipcmsg透传通道(C1C2、Sensorhub)
+    dir:
+        <1: send>
+        <2: recv>
+        <3: send&recv>
+    send_chnid: 发送通道枚举值
+    recv_chnid: 接收通道枚举值
+ */
+dpa_msg_event{
+	compatible = "modem,dpa_msg_device";
+	version = <0x1>;
+	dpa_msg_dev_name = "dpa_msg_dev0";
+
+	msg_cid_dpa: msg_cid_dpa {
+            cpuid = <1>;                /* DPA_MSG_CORE_1 */
+			chnl_num = <2>;
+            /* 物理通道属性 */
+            phy-dpa-0x00 {
+                mode = <0x100>;
+                dir = <1>;
+                chnid = <0x1>;         /* DPA_FIPC_TEST_COMMON_SEND_1 */
+                smsg_sz = <0x800>;
+                buf_sz = <0x800>;
+                index = <0>;
+            };
+            phy-dpa-0x01 {
+                mode = <0x100>;
+                dir = <2>;
+                chnid = <0x0>;         /* DPA_FIPC_TEST_COMMON_RECV_1 */
+                smsg_sz = <0x800>;
+                buf_sz = <0x800>;
+                index = <1>;
+            };
+        };
+};/* dpa_msg_device */

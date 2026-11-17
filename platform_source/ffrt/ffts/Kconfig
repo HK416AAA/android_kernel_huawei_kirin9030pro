@@ -1,0 +1,13 @@
+config FFRT_FFTS
+	tristate "FFRT_FFTS"
+	default n
+
+config FFRT_FFTS_VERSION
+    string "FFRT_FFTS_VERSION"
+    default ""
+	depends on FFRT_FFTS
+ 
+config FFTS_NOT_SEND_EVENT_TO_RTB
+	bool "FFTS_NOT_SEND_EVENT_TO_RTB"
+	default n
+	depends on FFRT_FFTS

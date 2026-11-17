@@ -1,0 +1,37 @@
+menu "Hifimisc driver serve HIFI dsp"
+
+if RDA_AUDIO_DRIVERS
+
+config HIFI_DSP_ONE_TRACK
+     bool "hifi low power play device support"
+     help
+          hifi lpp device provide service for HIFI and AP, in case of HIFI ultra-low power audio play.
+
+config AUDIO_DEBUG
+    bool "support audio debug function"
+    help
+        support audio debug function
+
+config AUDIO_NRDA_RESET
+    bool "nrda audio reset support"
+
+config RDA_HIFI_DSP_DRV
+     bool "rda hifi dsp support"
+     help
+          rda hifi dsp.
+
+config HIFI_MEMORY_21M
+    bool "hifi memory is 21M"
+    help
+         hifi memory is 21M
+
+config AUDIO_RELOAD_HIFI_ON_TZSP
+    bool "for rda, reload hifi on tzsp"
+    depends on PLATDRV_SUPPORT_FFA
+    default n
+    help
+        audio reload hifi on tzsp.
+
+endif
+
+endmenu

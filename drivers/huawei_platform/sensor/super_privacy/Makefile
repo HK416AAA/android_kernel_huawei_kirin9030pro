@@ -1,0 +1,1 @@
+obj-$(CONFIG_SUPER_PRIVACY) += super_privacy.o

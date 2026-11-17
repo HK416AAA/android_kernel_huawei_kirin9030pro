@@ -1,0 +1,1 @@
+obj-y += mergeirq_hck_funcs.o

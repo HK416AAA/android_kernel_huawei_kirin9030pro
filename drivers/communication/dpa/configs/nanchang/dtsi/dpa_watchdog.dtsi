@@ -1,0 +1,17 @@
+watchdog_dpa {
+    compatible = "watchdog,dpa";
+    #address-cells = <1>;
+    #size-cells = <1>;
+    wdt_num = <2>;
+    ranges;
+    dpa_wdt0 {
+        interrupts = <0 520 4>;
+        reg = <0xE6C21000 0x1000>;
+        index = <0>;
+    };
+    dpa_wdt1 {
+        interrupts = <0 521 4>;
+        reg = <0xE6C22000 0x1000>;
+        index = <1>;
+    };
+};

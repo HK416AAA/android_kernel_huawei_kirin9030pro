@@ -1,0 +1,13 @@
+#
+# Copyright (c) Hisilicon Technologies Co., Ltd. 2024-2024. All rights reserved.
+#
+
+INCLUDE_DIR += \
+	-I$(HVGR_PATH)/ffrt/ffts \
+	-I$(srctree)/include/platform_include/ffrt/uniform_id \
+	-I$(srctree)/include/platform_include/ffrt/ffts
+
+SRC += \
+	$(HVGR_ROOT)/ffrt/ffts/hvgr_ffts_issueq.c \
+	$(HVGR_ROOT)/ffrt/ffts/hvgr_issueq_sched.c \
+	$(HVGR_ROOT)/ffrt/ffts/hvgr_issueq_debug.c

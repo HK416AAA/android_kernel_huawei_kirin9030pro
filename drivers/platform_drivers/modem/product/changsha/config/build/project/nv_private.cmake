@@ -1,0 +1,7 @@
+set(nv_private.dir ${GBB_MODEM_DIR}/nv/private/build)
+set(nv_private.stage STAGE_COMPILE)
+set(nv_private.sec default)
+set(nv_private.sec_file nv_modem/nv_modem.bin nv_cust_udp)
+set(nv_private.release_mode "libs")
+set(nv_private.release_libs_dir ${GBB_MODEM_RELEASE_DIR})
+set(nv_private.out board_stat nv_cust_udp nv.db nv_modem/nv_modem.bin)

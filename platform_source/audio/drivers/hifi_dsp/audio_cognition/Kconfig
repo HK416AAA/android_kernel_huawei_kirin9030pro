@@ -1,0 +1,38 @@
+config AUDIO_COGNITION
+	bool "notify audio cognition data to user"
+	default n
+
+config AUDIO_BLOW_COGNITION
+	bool "support audio blow cognition driver"
+	depends on AUDIO_COGNITION
+	default n
+	help
+		support audio blow cognition driver
+
+config AUDIO_ENV_SOUND_COGNITION
+	bool "support audio enviroment cognition driver"
+	depends on AUDIO_COGNITION
+	default n
+	help
+		support audio enviroment cognition driver
+
+config AUDIO_EMOTION_COGNITION
+	bool "support audio emotion cognition driver"
+	depends on AUDIO_COGNITION
+	default n
+	help
+		support audio emotion cognition driver
+
+config AUDIO_NOISE_SOUND_COGNITION
+	bool "support audio noise sound cognition driver"
+	depends on AUDIO_COGNITION
+	default n
+	help
+		support audio noise sound cognition driver
+
+config AUDIO_ENV_NOISE_COGNITION
+	bool "support audio enviroment noise cognition driver"
+	depends on AUDIO_COGNITION
+	default n
+	help
+		support audio enviroment noise cognition driver

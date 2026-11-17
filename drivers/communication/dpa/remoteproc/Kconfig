@@ -1,0 +1,109 @@
+menu "DPA REMOTEPROC"
+
+config DPA_DMI
+	tristate "support dpa dmi"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'm', it will be compiled as a module.
+		If you choose 'n', it will not be compiled.
+
+config DPA_DRA
+	tristate "support dpa dra"
+    default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+
+config DRA_PAGE
+	tristate "support dra page"
+    default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+
+config DPA_DRA_SMMU
+	tristate "support dpa dra smmu"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+
+config DSHELL_HOST
+	tristate "support dpa shell"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'm', it will be compiled as a module.
+		If you choose 'n', it will not be compiled.
+
+config DPA_SC_GID_CTRL
+	tristate "support dpa syscache"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'm', it will be compiled as a module.
+		If you choose 'n', it will not be compiled.
+
+config DPA_NET_OM
+	tristate "support dpa netom"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'm', it will be compiled as a module.
+		If you choose 'n', it will not be compiled.
+
+config DPA_DFA
+	tristate "support dpa dfa"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'm', it will be compiled as a module.
+		If you choose 'n', it will not be compiled.
+
+config DPA_PM
+	tristate "support dpa rpm"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'm', it will be compiled as a module.
+		If you choose 'n', it will not be compiled.
+
+config DPA_RESET
+	tristate "support dpa reset"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'm', it will be compiled as a module.
+		If you choose 'n', it will not be compiled.
+
+config DPA_RESET_DEBUG
+	tristate "support dpa reset debug"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'm', it will be compiled as a module.
+		If you choose 'n', it will not be compiled.
+
+config DPA_MDM_RESET_AGENT
+	tristate "support dpa mdm reset agent"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'm', it will be compiled as a module.
+		If you choose 'n', it will not be compiled.
+
+config DPA_SAMPLER
+	tristate "support dpa sampler"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'm', it will be compiled as a module.
+		If you choose 'n', it will not be compiled.
+
+config DPA_SEC_CALL
+	tristate "support sec call"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'm', it will be compiled as a module.
+		If you choose 'n', it will not be compiled.
+
+endmenu

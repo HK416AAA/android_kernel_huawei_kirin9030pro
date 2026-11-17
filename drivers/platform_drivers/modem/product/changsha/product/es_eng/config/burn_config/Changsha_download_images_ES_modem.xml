@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<configurations checksum="0xFFFFFFFF">
+    <configuration ap_platform="changsha" modem_platform="N/A" product_id="N/A" version="N/A" checked="NO">
+        <update_solution_version>
+            <solution_ver>1.0</solution_ver>
+        </update_solution_version>
+        <drvimage checksum = "0xFFFFFFFF">
+            <image name = "MTP" address = "0xFFFFFFFF" identifier = "mtp">mtp.tar.gz</image>
+            <image name = "DRV_ST_TESTCASE" address = "0xFFFFFFFF" identifier = "drv_st_testcase">build_drv_st_testcase_pkg.tar.gz</image>
+            <image name = "AP_IMAGEID" address = "0xFFFFFFFF" identifier = "ap_imageid">ap_imageid.ini</image>
+        </drvimage>
+        <modemimage>
+            <image name="BOOT" address="0xFFFFFFFF" identifier="boot">boot.img</image>
+            <image name="MODEM_DRIVER" address="0xFFFFFFFF" identifier="modem_driver">modem_driver.img</image>
+            <image name="MODEM_VENDOR" address="0xFFFFFFFF" identifier="modem_vendor">modem_vendor.img</image>
+            <image name="MODEM_FW" address="0xFFFFFFFF" identifier="modem_fw">modem_fw.img</image>
+            <image name="MODEMNVM_CUST" address="0xFFFFFFFF" identifier="modemnvm_cust">nv_cust.bin</image>
+            <image name="MODEMNVM_UPDATE" address="0xFFFFFFFF" identifier="modemnvm_update">nv_modem.bin</image>
+            <image name="DPA_VENDOR" address="0xFFFFFFFF" identifier="dpa_vendor">dpa.img</image>
+            <image name="DPA_VENDOR_ENG" address="0xFFFFFFFF" identifier="dpa_vendor_eng">dpa_eng.img</image>
+            <image name="MODEM_DRIVER_ENG" address="0xFFFFFFFF" identifier="modem_driver_eng">modem_driver_eng.img</image>
+        </modemimage>
+        <extraimage>
+            <image name = "KTFRUN" address = "0xFFFFFFFF" identifier = "ktfrun">ktfrun</image>
+        </extraimage>
+    </configuration>
+</configurations>

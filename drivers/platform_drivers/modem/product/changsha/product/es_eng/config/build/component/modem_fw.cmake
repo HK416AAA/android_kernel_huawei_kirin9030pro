@@ -1,0 +1,25 @@
+set(modem_fw_signed_bin_sets
+    modem_tsp.bin
+    modem_mtee.bin
+    lpmcu_modem.bin
+    modem_dt.img
+    l2dle.bin
+    pde_pdf.bin
+    modem_psa.bin
+    modem_psa_factory.bin
+    modem_simlock_cust.bin
+    rf_type4.bin
+    rf_type6.bin
+    rf_type7.bin
+    dpa_fw.bin
+    ps_mfg.mo
+    ps_mfg_header.bin
+)
+
+set(modem_fw_basic_bin_sets
+    buildinfo.txt
+    bba_stm_nr_data.bin
+    slt_pdf.bin
+    bbp_aging_pde.bin
+    bbp_aging_pdea.bin
+)

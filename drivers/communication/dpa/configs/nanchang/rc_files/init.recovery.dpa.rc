@@ -1,0 +1,8 @@
+on fs && property:ro.boot.hota.mode=0 && property:ro.boot.modem_enable=1
+	wait /dev/block/by-name/dpa_vendor
+	mount ext4 /dev/block/by-name/dpa_vendor /vendor/communication/dpa ro
+
+	insmod /vendor/communication/dpa/module/dpa.ko
+	wait /sys/class/remoteproc/remoteproc_dpa/state 30
+	write /sys/class/remoteproc/remoteproc_dpa/state start
+

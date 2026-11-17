@@ -1,0 +1,81 @@
+# Copyright (c) 2022 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//build/ohos.gni")
+import("$product_path/version_config.gni")
+
+source_set("connectivity_mpxx") {
+  sources = [
+    "bfgx/bfgx_data_parse.c",
+    "bfgx/bfgx_dev.c",
+    "bfgx/bfgx_platform_msg_handle.c",
+    "bfgx/mpxx_dev.c",
+    "platform/board/board.c",
+    "platform/driver/plat_uart.c",
+    "platform/driver/plat_ipc.c",
+    "platform/driver/plat_debug_cmd.c",
+    "platform/main/plat_main.c",
+    "platform/main/plat_oam.c",
+    "platform/main/plat_sys_msg.c",
+    "platform/main/mpxx_oam.c",
+    "platform/oal/oal_completion.c",
+    "platform/oal/oal_mutex.c",
+    "platform/oal/oal_semaphore.c",
+    "platform/oal/oal_net.c",
+    "platform/pm/plat_pm.c",
+    "platform/excep/plat_exception_rst.c",
+  ]
+
+  include_dirs = [
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/platform/inc/oal",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/bfgx",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/common/inc",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/platform/board",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/platform/driver",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/platform/inc",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/platform/inc/oam",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/platform/inc/pm",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/platform/main",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/platform/oal",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/platform/pm",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/platform/excep",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform/component/platdrv/connectivity_mpxx/include",
+    "$LITEOSTOPDIR/drivers/base/include",
+    "//vendor/huawei/base/hiviewdfx/dfx_wear/include/interfaces/innerkits/hilog",
+    "//vendor/huawei/base/hiviewdfx/dfx_wear/include/interfaces/innerkits/hiErrorCode",
+    "//vendor/huawei/base/hiviewdfx/dfx_wear/include/interfaces/innerkits/hiEvent",
+    "//vendor/huawei/domains/wearable/common/event_errorcode",
+    "//vendor/huawei/base/hiviewdfx/dfx_wear/include/frameworks/hilog_lite/include",
+    "//vendor/huawei/base/miscservices/misc_wear/interfaces/innerkits",
+    "//vendor/huawei/foundation/distributedschedule/samgr_lite/interfaces/kits/samgr",
+    "//third_party/mbedtls/include",
+    "//vendor/huawei/domains/glasses/platform_adapt/device_adapt/bt_adapter/inc/",
+  ]
+  if (board_toolchain_type == "iccarm") {
+    cflags = [
+      "--diag_suppress=Pe068",
+    ]
+  }
+
+  deps = [
+    "//vendor/hisi/confidential/contexthub/basesrc/platform:sensorhub_inner_config",
+    "//vendor/hisi/confidential/contexthub/basesrc/platform:sensorhub_public_config",
+  ]
+
+  defines = [
+    "BETA_VERSIOIN=4",
+    "RELEASE_VERSION=2",
+    "IDE_CONF_LOG_LEVEL=${LOG_LEVEL}",
+    "PLATFORM_DEBUG_ENABLE=1",
+  ]
+}

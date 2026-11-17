@@ -1,0 +1,12 @@
+#ifndef __XPU_STAGE_H__
+#define __XPU_STAGE_H__ 
+enum stage_id {
+ STAGE_XLOADER,
+ STAGE_XPU_START,
+ STAGE_FASTBOOT,
+ STAGE_HIBENCH,
+ STAGE_LPMCU,
+ STAGE_KERNEL,
+ STAGE_MAX = 32,
+};
+#endif

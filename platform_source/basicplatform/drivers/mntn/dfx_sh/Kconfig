@@ -1,0 +1,39 @@
+config DFX_SH
+	bool "DFX sh driver"
+	default n
+	help
+		Say 'Y' here if you want to use enable dfx sh
+
+config DFX_SH_DDR
+	bool "DFX sh ddr driver"
+	depends on DFX_SH
+	default n
+	help
+		Say 'Y' here if you want to use enable dfx sh ddr
+		
+config DFX_SH_TBC
+	bool "DFX sh time based compensation"
+	depends on DFX_SH
+	default n
+	help
+		Say 'Y' here if you want to enable time based compensation
+
+config DFX_SH_HFRC
+	bool "DFX sh time based compensation"
+	depends on DFX_SH
+	default n
+	help
+	Say 'Y' here if you want to enable time based compensation
+
+config DFX_SH_LU
+	bool "DFX sh lu driver"
+	depends on DFX_SH
+	default n
+	help
+		Say 'Y' here if you want to use enable dfx lu sh
+config DFX_SH_AHBTIEMOUT
+	bool "DFX sh for ahb_timeout"
+	depends on DFX_SH
+	default n
+	help
+		Say 'Y' here if you want to use enable dfx ahb_timeout sh

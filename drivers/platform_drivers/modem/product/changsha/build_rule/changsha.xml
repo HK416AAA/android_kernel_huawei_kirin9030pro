@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<build_rule>
+        <!--each version's products to be compiled-->
+        <CHANGSHA>
+            <buildgroup name="changsha_es_user_ohos_kernel_modem_hm_kernel" weight="2" producttype="phone">
+                <rule productname="changsha" added_condition=" tmpfs_out=true target_os=ohos choose_variant=user chip_type=es ohos_args='--gn-args is_use_check_deps=false --gn-args USE_HM_KERNEL=true --gn-args kernel_modem_independent=true --gn-args DEBUG_SYMBOL_HM_KERNEL=false --gn-args remote_ccache=true'" addname="es_user_ohos_kernel_modem_hm_kernel" target="device_soc_hisi:modem_driver"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_ohos_kernel_modem_hm_kernel" weight="2" producttype="phone">
+                <rule productname="changsha" added_condition=" tmpfs_out=true target_os=ohos choose_variant=root chip_type=es ohos_args='--gn-args is_use_check_deps=false --gn-args USE_HM_KERNEL=true --gn-args kernel_modem_independent=true --gn-args DEBUG_SYMBOL_HM_KERNEL=false --gn-args remote_ccache=true'" addname="es_ohos_kernel_modem_hm_kernel" target="device_soc_hisi:modem_driver"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_ohos_dpa_hm" weight="2" producttype="phone">
+                <rule productname="changsha" added_condition=" tmpfs_out=true target_os=ohos choose_variant=root chip_type=es ohos_args='--gn-args is_use_check_deps=false --gn-args USE_HM_KERNEL=true --gn-args enable_lto_O0=true --gn-args kernel_dpa_independent=true --gn-args DEBUG_SYMBOL_HM_KERNEL=false --gn-args remote_ccache=true'" addname="es_ohos_dpa_hm" target="dpa"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_user_ohos_dpa_hm" weight="2" producttype="phone">
+                <rule productname="changsha" added_condition=" tmpfs_out=true target_os=ohos choose_variant=user chip_type=es ohos_args='--gn-args is_use_check_deps=false --gn-args USE_HM_KERNEL=true --gn-args enable_lto_O0=true --gn-args kernel_dpa_independent=true --gn-args DEBUG_SYMBOL_HM_KERNEL=false --gn-args remote_ccache=true'" addname="es_user_ohos_dpa_hm" target="dpa"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_ohos_dpa_singleap_hm" weight="2" producttype="phone">
+                <rule productname="changsha" added_condition=" tmpfs_out=true target_os=ohos choose_variant=root chip_type=es ohos_args='--gn-args singleap=true --gn-args is_use_check_deps=false --gn-args USE_HM_KERNEL=true --gn-args enable_lto_O0=true --gn-args kernel_dpa_independent=true --gn-args DEBUG_SYMBOL_HM_KERNEL=false --gn-args remote_ccache=true'" addname="es_ohos_dpa_singleap_hm" target="dpa"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_ohos_dpa_hm_balong" weight="2" producttype="phone">
+                <rule productname="changsha" added_condition=" tmpfs_out=true target_os=ohos choose_variant=root chip_type=es ohos_args='--gn-args is_use_check_deps=false --gn-args USE_HM_KERNEL=true --gn-args kernel_dpa_independent=true --gn-args DEBUG_SYMBOL_HM_KERNEL=false --gn-args remote_ccache=true'" addname="es_ohos_dpa_hm_balong" target="dpa"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_ohos_vendor_ap_hm_kernel" weight="2"  producttype="phone" >
+                <rule productname="changsha" added_condition="chip_type=es target_os=ohos choose_variant=root ohos_args='--gn-args is_use_check_deps=false --build-target make_all --gn-args USE_HM_KERNEL=true --gn-args uefi_enable=true --gn-args enable_notice_collection=false --gn-args load_test_config=false --gn-args modem_separate=true --gn-args skip_generate_module_list_file=true'" addname="es_ohos_vendor_ap_hm_kernel" target="" />
+            </buildgroup>
+            <buildgroup name="changsha_es_user_ohos_vendor_ap_hm_kernel" weight="2"  producttype="phone" >
+                <rule productname="changsha" added_condition="chip_type=es target_os=ohos choose_variant=user ohos_args='--gn-args is_use_check_deps=false --build-target make_all --gn-args USE_HM_KERNEL=true --gn-args uefi_enable=true --gn-args enable_notice_collection=false --gn-args load_test_config=false --gn-args modem_separate=true --gn-args skip_generate_module_list_file=true --root-perf-main root_main'" addname="es_user_ohos_vendor_ap_hm_kernel" target="" />
+            </buildgroup>
+            <buildgroup name="changsha_es_user_ohos_bootimage_hm_kernel" weight="2" producttype="phone">
+                <rule productname="changsha" added_condition="chip_type=es tmpfs_out=true target_os=ohos choose_variant=user ohos_args='--gn-args is_use_check_deps=false --gn-args USE_HM_KERNEL=true --gn-args enable_lto_O0=true --gn-args split_build=true  --gn-args DEBUG_SYMBOL_HM_KERNEL=false --gn-args remote_ccache=true --skip-partlist-check --single-build'" addname="es_user_ohos_bootimage_hm_kernel" target="device_soc_hisi:repack hmoshiviewdfx:kernel_fire device_soc_hisi:modem_driver"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_ohos_vendor_modem" weight="2"  producttype="phone" >
+                <rule productname="changsha" added_condition="chip_type=es target_os=ohos choose_variant=root ohos_args='--gn-args split_build=true --skip-partlist-check --single-build --gn-args enable_notice_collection=false --gn-args USE_HM_KERNEL=true --gn-args load_test_config=false'" target="device_soc_hisi:modem_vendor" addname="es_ohos_vendor_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_es_ohos_vendor_modem_platform" weight="2"  producttype="phone" >
+                <rule productname="changsha" added_condition="chip_type=es target_os=ohos choose_variant=root ohos_args='--gn-args split_build=true --skip-partlist-check --single-build --gn-args enable_notice_collection=false --gn-args USE_HM_KERNEL=true --gn-args load_test_config=false --gn-args modem_version_mode=plat_llt'" target="device_soc_hisi:modem_vendor" addname="es_ohos_vendor_modem_platform" />
+            </buildgroup>
+            <buildgroup name="changsha_es_ohos_user_vendor_modem" weight="2"  producttype="phone" >
+                <rule productname="changsha" added_condition="chip_type=es target_os=ohos choose_variant=user ohos_args='--gn-args split_build=true --skip-partlist-check --single-build --gn-args enable_notice_collection=false --gn-args USE_HM_KERNEL=true --gn-args load_test_config=false'" target="device_soc_hisi:modem_vendor" addname="es_ohos_user_vendor_modem" />
+            </buildgroup>
+            <!-- changsha ohos modem_ps_user_libs build_rule -->
+            <buildgroup name="changsha_es_ohos_modem_ps_user_libs" weight="2"  producttype="phone" >
+                <rule productname="changsha" added_condition="choose_variant=root target_os=ohos ohos_args='--skip-partlist-check --single-build --abi-type generic_generic_arm_64only --device-type hisi_changsha_phone_standard --product-type --gn-args enable_notice_collection=false --gn-args load_test_config=false --gn-args chip_type=es --gn-args split_build=true --gn-args USE_HM_KERNEL=true --gn-args cfg_modem_ps_user_libs=true --build-target vendor/hisi/modem/ap/phone/build/ohos/modem_ps_user_libs:ohos_modem_ps_user_libs'" target="" addname="es_ohos_modem_ps_user_libs" />
+            </buildgroup>
+            <buildgroup name="changsha_es_user_ohos_modem_ps_user_libs" weight="2"  producttype="phone" >
+                <rule productname="changsha" added_condition="choose_variant=user target_os=ohos ohos_args='--skip-partlist-check --single-build --abi-type generic_generic_arm_64only --device-type hisi_changsha_phone_standard --product-type --gn-args enable_notice_collection=false --gn-args load_test_config=false --gn-args chip_type=es --gn-args split_build=true --gn-args USE_HM_KERNEL=true --gn-args cfg_modem_ps_user_libs=true --build-target vendor/hisi/modem/ap/phone/build/ohos/modem_ps_user_libs:ohos_modem_ps_user_libs'" target="" addname="es_user_ohos_modem_ps_user_libs" />
+            </buildgroup>
+            <!-- changsha ohos modem_ps_user_libs build_rule -->
+
+            <buildgroup name="changsha_es_slt_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true accurate_transfer=true gbb_build_root=root_slt chip_type=es" addname ="es_slt_tsp" target= " ccore_libs" />
+            </buildgroup>
+            <buildgroup name="changsha_es_plat_slt_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true accurate_transfer=true gbb_build_root=plat_slt chip_type=es" addname ="es_plat_slt_tsp" target= "ccore_libs" />
+            </buildgroup>
+            <buildgroup name="changsha_modem_patch" weight="5" producttype="phone"   >
+                <rule productname="changsha" added_condition=" dirty_check=true mk_sub_sys=true" addname="modem_patch" target="modem_patch" />
+            </buildgroup>
+            <buildgroup name="changsha_rtt_tsp_drv" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true cust_config=cust_rtt separate_modem=drv " addname ="rtt_tsp_drv" target= " hitsp " />
+            </buildgroup>
+            <buildgroup name="changsha_rtt_tsp_phy" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true cust_config=cust_rtt separate_modem=phy " addname ="rtt_tsp_phy" target= " hitsp " />
+            </buildgroup>
+            <buildgroup name="changsha_tsp_rtt_config" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true cust_config=cust_rtt " addname ="tsp_rtt_config" target= " hitsp_image " />
+            </buildgroup>
+            <buildgroup name="changsha_rtt_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true gbb_cust_name=cs_rtt separate_modem=drv_phy accurate_transfer=true " addname ="rtt_tsp" target= " sub_tsp " />
+            </buildgroup>
+            <buildgroup name="changsha_es_rtt_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true cust_config=cust_rtt separate_modem=drv_phy accurate_transfer=true chip_type=es " addname ="es_rtt_tsp" target= " sub_tsp " />
+            </buildgroup>
+            <buildgroup name="changsha_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" gbb_cust_name=cs_eng dirty_check=true accurate_transfer=true " addname ="tsp" target= " sub_tsp " />
+            </buildgroup>
+            <buildgroup name="changsha_es_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true accurate_transfer=true chip_type=es" addname ="es_tsp" target= " sub_tsp " />
+            </buildgroup>
+            <buildgroup name="changsha_rtt_pkg" weight="5" producttype="package"   >
+                <rule productname="changsha" added_condition=" gbb_cust_name=cs_rtt dirty_check=true  mk_sub_sys=true cust_config=cust_rtt " target=" vacuous_pkg " addname="rtt_pkg" />
+            </buildgroup>
+            <buildgroup name="changsha_es_rtt_pkg" weight="5" producttype="package"   >
+                <rule productname="changsha" added_condition=" dirty_check=true  mk_sub_sys=true cust_config=cust_rtt chip_type=es" target=" vacuous_pkg " addname="es_rtt_pkg" />
+            </buildgroup>
+            <buildgroup name="changsha_rtt" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true cust_config=cust_rtt separate_modem=drv_phy " addname ="rtt" target= "sub_rtt" />
+            </buildgroup>
+            <buildgroup name="changsha_es_rtt" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition="dirty_check=true cust_config=cust_rtt separate_modem=drv_phy chip_type=es" addname="es_rtt" target="sub_rtt" />
+            </buildgroup>
+            <buildgroup name="changsha_rtt_config" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition="gbb_cust_name=cs_rtt dirty_check=true accurate_transfer=true" addname ="rtt_config" target= " sub_modem_lite  " />
+            </buildgroup>
+            <buildgroup name="changsha_es_rtt_config" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition="cust_config=cust_rtt dirty_check=true accurate_transfer=true chip_type=es " addname ="es_rtt_config" target= " sub_modem_lite  " />
+            </buildgroup>
+            <buildgroup name="changsha_config" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" gbb_cust_name=cs_eng dirty_check=true accurate_transfer=true " addname ="config" target= " sub_modem_lite  " />
+            </buildgroup>
+            <buildgroup name="changsha_es_config" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true accurate_transfer=true chip_type=es" addname ="es_config" target= " sub_modem_lite  " />
+            </buildgroup>
+            <buildgroup name="changsha_rfdsp" weight="5" producttype="phone"   >
+                <rule productname="changsha" added_condition=" gbb_cust_name=cs_eng dirty_check=true mk_sub_sys=true accurate_transfer=true " target="sub_rfdsp" addname="rfdsp" />
+            </buildgroup>
+            <buildgroup name="changsha_es_rfdsp" weight="5" producttype="phone"   >
+                <rule productname="changsha" added_condition=" dirty_check=true mk_sub_sys=true accurate_transfer=true chip_type=es" target="sub_rfdsp" addname="es_rfdsp" />
+            </buildgroup>
+            <buildgroup name="changsha_tools_modem" weight="5" producttype="phone"   >
+                <rule productname="changsha" added_condition=" dirty_check=true accurate_transfer=true" target="hids " addname="tools_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_es_tools_modem" weight="5" producttype="phone"   >
+                <rule productname="changsha" added_condition=" dirty_check=true accurate_transfer=true chip_type=es" target="hids " addname="es_tools_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_es_hids_update" weight="5" producttype="phone"   >
+                <rule productname="changsha" added_condition=" dirty_check=true accurate_transfer=true chip_type=es" target="hids " addname="es_hids_update" />
+            </buildgroup>
+            <buildgroup name="changsha_es_kernel_modem" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition=" use_klto=false dirty_check=true linux_version=linux-4.14 llt_mdrv=y ko_sig=false  link_kernel=false chip_type=es" addname="es_kernel_modem" target="kernel_modem"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_factory_kernel_modem" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="factory=true use_klto=false dirty_check=true linux_version=linux-4.14 llt_mdrv=y ko_sig=false  link_kernel=false chip_type=es" addname="es_factory_kernel_modem" target="kernel_modem"/>
+            </buildgroup>
+             <buildgroup name="changsha_es_kernel_modem_cfi_check" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition=" cfi_check=true dirty_check=true linux_version=linux-4.14 ko_sig=false use_ccache=false  link_kernel=false chip_type=es" addname="es_kernel_modem_cfi_check" target="kernel_modem_cfi "/>
+            </buildgroup>
+            <buildgroup name="changsha_es_kernel_modem_5_10" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition=" use_klto=false dirty_check=true linux_version=linux-5.10 llt_mdrv=y ko_sig=false  link_kernel=false chip_type=es" addname="es_kernel_modem_5_10" target="kernel_modem"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_dpa_linux" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="use_klto=false dirty_check=true linux_version=linux-5.10 ko_sig=false  link_kernel=false TARGET_CHIPSET_WORKAROUND=true chip_type=es " addname="es_dpa_linux" target="dpaimage"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_dpa_linux_balong" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="dirty_check=true linux_version=linux-5.10 ko_sig=false  link_kernel=false TARGET_CHIPSET_WORKAROUND=true chip_type=es " addname="es_dpa_linux_balong" target="dpaimage"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_dpa_singleap_linux" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="singleap=true use_klto=false dirty_check=true linux_version=linux-5.10 ko_sig=false  link_kernel=false TARGET_CHIPSET_WORKAROUND=true chip_type=es " addname="es_dpa_singleap_linux" target="dpaimage"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_user_dpa_linux" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="choose_variant=user gbb_cust_name=es_user use_klto=false dirty_check=true linux_version=linux-5.10 ko_sig=false  link_kernel=false TARGET_CHIPSET_WORKAROUND=true chip_type=es " addname="es_user_dpa_linux" target="dpaimage"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_factory_kernel_modem_5_10" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="factory=true use_klto=false dirty_check=true linux_version=linux-5.10 llt_mdrv=y ko_sig=false  link_kernel=false chip_type=es" addname="es_factory_kernel_modem_5_10" target="kernel_modem"/>
+            </buildgroup>
+             <buildgroup name="changsha_es_kernel_modem_cfi_check_5_10" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition=" cfi_check=true dirty_check=true linux_version=linux-5.10 ko_sig=false use_ccache=false  link_kernel=false chip_type=es" addname="es_kernel_modem_cfi_check_5_10" target="kernel_modem_cfi "/>
+            </buildgroup>
+            <buildgroup name="changsha_es_kernel_modem_klto_5_10" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition=" chip_type=es dirty_check=true linux_version=linux-5.10 ko_sig=false  link_kernel=false" addname="es_kernel_modem_klto_5_10" target="kernel_modem"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_vendor_modem" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition=" dirty_check=true TARGET_CHIPSET_WORKAROUND=true chip_type=es " target=" modemvendorimage " addname="es_vendor_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_es_platfrom_vendor_modem" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition=" dirty_check=true TARGET_CHIPSET_WORKAROUND=true chip_type=es modem_version_mode=plat_llt" target=" modemvendorimage " addname="es_platfrom_vendor_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_es_user_vendor_modem" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="choose_variant=user gbb_cust_name=es_user dirty_check=true TARGET_CHIPSET_WORKAROUND=true chip_type=es " target=" modemvendorimage " addname="es_user_vendor_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_es_ohos_asan_vendor_ap_hm_kernel" weight="2"  producttype="phone" >
+                <rule productname="changsha" added_condition="chip_type=es target_os=ohos choose_variant=root ohos_args='--gn-args is_use_check_deps=false --build-target make_all --gn-args USE_HM_KERNEL=true --gn-args uefi_enable=true --gn-args enable_notice_collection=false --gn-args load_test_config=false --gn-args modem_separate=true --gn-args skip_generate_module_list_file=true --gn-args modem_sanitizer=true'" addname="es_ohos_asan_vendor_ap_hm_kernel" target="" />
+            </buildgroup>
+            <buildgroup name="changsha_es_ohos_asan_vendor_modem" weight="2"  producttype="phone" >
+                <rule productname="changsha" added_condition="chip_type=es target_os=ohos choose_variant=root ohos_args='--gn-args split_build=true --skip-partlist-check --single-build --gn-args enable_notice_collection=false --gn-args USE_HM_KERNEL=true --gn-args load_test_config=false --gn-args modem_sanitizer=true --gn-args gbb_cust_name=es_asan'" target="device_soc_hisi:modem_vendor" addname="es_ohos_asan_vendor_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_es_asan_vendor_modem" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="gbb_cust_name=es_asan dirty_check=true TARGET_CHIPSET_WORKAROUND=true chip_type=es modem_sanitizer=true" target=" modemvendorimage " addname="es_asan_vendor_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_es_factory_vendor_modem" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="factory=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true chip_type=es " target=" modemvendorimage " addname="es_factory_vendor_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_es_ohos_factory_vendor_modem" weight="2"  producttype="phone" >
+                <rule productname="changsha" added_condition="chip_type=es target_os=ohos choose_variant=root ohos_args='--gn-args split_build=true --skip-partlist-check --single-build --gn-args enable_notice_collection=false --gn-args USE_HM_KERNEL=true --gn-args load_test_config=false --gn-args factory=true'" target="device_soc_hisi:modem_vendor" addname="es_ohos_factory_vendor_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_es_user_ohos_factory_vendor_modem" weight="2"  producttype="phone" >
+                <rule productname="changsha" added_condition="chip_type=es target_os=ohos choose_variant=user ohos_args='--gn-args split_build=true --skip-partlist-check --single-build --gn-args enable_notice_collection=false --gn-args USE_HM_KERNEL=true --gn-args load_test_config=false --gn-args factory=true'" target="device_soc_hisi:modem_vendor" addname="es_user_ohos_factory_vendor_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_es_asan_vendor_ap" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="ALLOW_NINJA_ENV=true MODEMVENDOR_SEPARATE=true DPA_SEPARATE=true subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false use_klto=false chip_type=es keylibs_depchk=false uefi_enable=true  modem_sanitizer=true" target=" vendor_ap " addname="es_asan_vendor_ap" ddk_addname="ddk" />
+            </buildgroup>
+            <buildgroup name="changsha_es_vendor_ap" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="ALLOW_NINJA_ENV=true MODEMVENDOR_SEPARATE=true DPA_SEPARATE=true subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false use_klto=false chip_type=es keylibs_depchk=false uefi_enable=true" target=" vendor_ap " addname="es_vendor_ap" ddk_addname="ddk" />
+            </buildgroup>
+            <buildgroup name="changsha_es_user_vendor_ap" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="choose_variant=user gbb_cust_name=es_user ALLOW_NINJA_ENV=true MODEMVENDOR_SEPARATE=true DPA_SEPARATE=true subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false use_klto=false chip_type=es keylibs_depchk=false uefi_enable=true" target=" vendor_ap " addname="es_user_vendor_ap" ddk_addname="ddk" />
+            </buildgroup>
+            <buildgroup name="changsha_es_separate_vendor_ap" weight="2"  producttype="phone"  >
+                <rule productname="changsha" added_condition="ALLOW_NINJA_ENV=true MODEMVENDOR_SEPARATE=true DPA_SEPARATE=true subproduct=F2FS sec_img=true TARGET_CHIPSET_WORKAROUND=true use_hash_log=false separate=true use_klto=false chip_type=es keylibs_depchk=false"  target=" vendor_images mtp_acore " addname="es_separate_vendor_ap" ddk_addname="ddk" />
+            </buildgroup>
+            <buildgroup name="changsha_es_platform_vendor_ap" weight="2"  producttype="phone"  >
+                <rule productname="changsha" added_condition="ALLOW_NINJA_ENV=true MODEMVENDOR_SEPARATE=true DPA_SEPARATE=true subproduct=F2FS sec_img=true TARGET_CHIPSET_WORKAROUND=true use_hash_log=false separate=true use_klto=false chip_type=es keylibs_depchk=false"  target=" vendor_ap " addname="es_platform_vendor_ap" ddk_addname="ddk" />
+            </buildgroup>
+            <buildgroup name="changsha_es_modem_driver" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false use_klto=false chip_type=es" target=" modem_driver " addname="es_modem_driver" />
+            </buildgroup>
+            <buildgroup name="changsha_es_modem_driver_balong" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false chip_type=es" target=" modem_driver " addname="es_modem_driver_balong" />
+            </buildgroup>
+            <buildgroup name="changsha_es_user_modem_driver" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="choose_variant=user gbb_cust_name=es_user subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false use_klto=false chip_type=es" target=" modem_driver mtp_acore " addname="es_user_modem_driver" />
+            </buildgroup>
+            <buildgroup name="changsha_es_modem_driver_cfi_check" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="cfi_check=true linux_version=linux-4.14 subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false chip_type=es" target=" modem_driver_cfi " addname="es_modem_driver_cfi_check" />
+            </buildgroup>
+            <buildgroup name="changsha_es_modem_driver_cfi_check_5_10" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="cfi_check=true linux_version=linux-5.10 subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false chip_type=es" target="modem_driver_cfi " addname="es_modem_driver_cfi_check_5_10" />
+            </buildgroup>
+            <buildgroup name="changsha_es_separate_modem_driver" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="MODEMVENDOR_SEPARATE=true subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true separate=true use_hash_log=false use_klto=false chip_type=es" target=" modemdriverimage " addname="es_separate_modem_driver" />
+            </buildgroup>
+            <buildgroup name="changsha_es_platform_modem_driver" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="MODEMVENDOR_SEPARATE=true subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true separate=true use_hash_log=false use_klto=false chip_type=es" target=" modem_driver " addname="es_platform_modem_driver" />
+            </buildgroup>
+            <buildgroup name="changsha_es_platform_modem_driver_plat" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="MODEMVENDOR_SEPARATE=true subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true separate=true use_hash_log=false use_klto=false chip_type=es" target=" modem_driver " addname="es_platform_modem_driver_plat" />
+            </buildgroup>
+            <buildgroup name="changsha_es_platform_modem_driver_dt" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="MODEMVENDOR_SEPARATE=true subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true separate=true use_hash_log=false use_klto=false chip_type=es" target=" phone_modem_driver_dtimage  " addname="es_platform_modem_driver_dt" />
+            </buildgroup>
+            <buildgroup name="changsha_es_platform_modem_fw_dt" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="MODEMVENDOR_SEPARATE=true subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true separate=true use_hash_log=false use_klto=false chip_type=es" target=" phone_modem_fw_dtb_image " addname="es_platform_modem_fw_dt" />
+            </buildgroup>
+            <buildgroup name="changsha_es_cp_all" weight="5"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="sec_img=true dirty_check=true chip_type=es CCACHE_DIRECT_MODEM=true" addname="es_cp_all" target="core=ccore pkg"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_user_cp_all" weight="5"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="choose_variant=user gbb_cust_name=es_user sec_img=true dirty_check=true chip_type=es CCACHE_DIRECT_MODEM=true" addname="es_user_cp_all" target="core=ccore pkg"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_user_kernel_modem_5_10" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="choose_variant=user gbb_cust_name=es_user use_klto=false dirty_check=true linux_version=linux-5.10 llt_mdrv=y ko_sig=false  link_kernel=false chip_type=es" addname="es_user_kernel_modem_5_10" target="kernel_modem"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_factory_cp_all" weight="5"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="factory=true sec_img=true dirty_check=true chip_type=es CCACHE_DIRECT_MODEM=true" addname="es_factory_cp_all" target="core=ccore pkg"/>
+            </buildgroup>
+            <buildgroup name="changsha_rtt_separate_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true cust_config=cust_rtt separate_modem=drv accurate_transfer=true" addname ="rtt_separate_tsp" target= " sub_tsp " />
+            </buildgroup>
+            <buildgroup name="changsha_es_rtt_separate_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true cust_config=cust_rtt separate_modem=drv accurate_transfer=true chip_type=es" addname ="es_rtt_separate_tsp" target= " sub_tsp " />
+            </buildgroup>
+            <buildgroup name="changsha_es_separate_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true  separate_modem=drv accurate_transfer=true chip_type=es" addname ="es_separate_tsp" target= " sub_tsp " />
+            </buildgroup>
+            <buildgroup name="changsha_rtt_separate_pkg" weight="5" producttype="package"   >
+                <rule productname="changsha" added_condition=" dirty_check=true mk_sub_sys=true  " target=" vacuous_pkg " addname="rtt_separate_pkg" />
+            </buildgroup>
+            <buildgroup name="changsha_es_rtt_separate_pkg" weight="5" producttype="package"   >
+                <rule productname="changsha" added_condition=" dirty_check=true mk_sub_sys=true chip_type=es " target=" vacuous_pkg " addname="es_rtt_separate_pkg" />
+            </buildgroup>
+            <buildgroup name="changsha_rtt_platform_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true cust_config=cust_rtt separate_modem=drv accurate_transfer=true" addname ="rtt_platform_tsp" target= " sub_tsp " />
+            </buildgroup>
+            <buildgroup name="changsha_es_rtt_platform_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true cust_config=cust_rtt separate_modem=drv accurate_transfer=true chip_type=es" addname ="es_rtt_platform_tsp" target= " sub_tsp " />
+            </buildgroup>
+            <buildgroup name="changsha_es_platform_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" dirty_check=true  separate_modem=drv accurate_transfer=true chip_type=es" addname ="es_platform_tsp" target= " sub_plat_llt_tsp " />
+            </buildgroup>
+            <buildgroup name="changsha_rtt_platform_pkg" weight="5" producttype="package"   >
+                <rule productname="changsha" added_condition=" dirty_check=true mk_sub_sys=true  " target=" vacuous_pkg " addname="rtt_platform_pkg" />
+            </buildgroup>
+            <buildgroup name="changsha_es_rtt_platform_pkg" weight="5" producttype="package"   >
+                <rule productname="changsha" added_condition=" dirty_check=true mk_sub_sys=true chip_type=es " target=" vacuous_pkg " addname="es_rtt_platform_pkg" />
+            </buildgroup>
+            <buildgroup name="changsha_modem_balong_pkg" weight="2"  producttype="package"  >
+                <rule productname="changsha" added_condition=" gbb_cust_name=cs_eng " addname="modem_balong_pkg" target=" modem_fw_pkg "/>
+            </buildgroup>
+            <buildgroup name="changsha_es_modem_balong_pkg" weight="2"  producttype="package"  >
+                <rule productname="changsha" added_condition=" chip_type=es " addname="es_modem_balong_pkg" target=" modem_fw_pkg "/>
+            </buildgroup>
+            <buildgroup name="changsha_es_balong_pkg" weight="2"  producttype="package"  >
+                <rule productname="changsha" added_condition="modem_pkg=true split_transfer=true mk_sub_sys=true chip_type=es gbb_build_root=root_llt" addname="es_balong_pkg" target=" vb_pkg "/>
+            </buildgroup>
+            <buildgroup name="changsha_es_separate_balong_pkg" weight="2"  producttype="package"  >
+                <rule productname="changsha" added_condition="separate=true modem_pkg=true split_transfer=true mk_sub_sys=true chip_type=es" addname="es_separate_balong_pkg" target=" vb_pkg "/>
+            </buildgroup>
+            <buildgroup name="changsha_es_platform_balong_pkg" weight="2"  producttype="package"  >
+                <rule productname="changsha" added_condition="separate=true modem_pkg=true split_transfer=true mk_sub_sys=true chip_type=es gbb_build_root=plat_llt " addname="es_platform_balong_pkg" target=" vb_pkg "/>
+            </buildgroup>
+            <buildgroup name="changsha_es_vb_balong" weight="2"  producttype="package"  >
+                <rule productname="changsha" added_condition=" " addname="es_vb_balong" target=" vb_pkg "/>
+            </buildgroup>
+            <buildgroup name="changsha_rtoscklibs" weight="2" producttype="phone" >
+                <rule productname="changsha" target="libs_rtosck" added_condition="dirty_check=true dep_gen_modem=true chip_type=es" addname="rtoscklibs" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_es_rtoscklibs" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition="chip_type=es dirty_check=true dep_gen_modem=true" target="libs_rtosck" addname="es_rtoscklibs" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_nrbalonglibs" weight="2" producttype="libs"  >
+                <rule productname="changsha" target="libs_ps" added_condition="dirty_check=true dep_gen_modem=true" addname="nrbalonglibs" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_es_nrbalonglibs" weight="2" producttype="libs"  >
+                <rule productname="changsha" target="libs_ps" added_condition="chip_type=es dirty_check=true dep_gen_modem=true" addname="es_nrbalonglibs" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_rfdsplibs" weight="2" producttype="libs"  >
+                <rule productname="changsha" target="libs_rfdsp" added_condition="dirty_check=true dep_gen_modem=true" addname="rfdsplibs" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_es_rfdsplibs" weight="2" producttype="libs"  >
+                <rule productname="changsha" target="libs_rfdsp" added_condition="chip_type=es dirty_check=true dep_gen_modem=true" addname="es_rfdsplibs" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_tsplibs" weight="2" producttype="libs"  >
+                <rule productname="changsha" target="libs_tsp" added_condition="dirty_check=true dep_gen_modem=true" addname="tsplibs" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_es_tsplibs" weight="2" producttype="libs"  >
+                <rule productname="changsha" added_condition="chip_type=es dirty_check=true dep_gen_modem=true" target="libs_tsp" addname="es_tsplibs" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_tsp_incmemory" weight="5" producttype="inc_chk"   >
+                <rule productname="changsha" added_condition=" inc_chk=incmemory inc_chk_version=3.0 sc_interrupt=true dirty_check=true " target="sub_tsp" addname="tsp_incmemory" />
+            </buildgroup>
+            <buildgroup name="changsha_es_tsp_incmemory" weight="5" producttype="inc_chk"   >
+                <rule productname="changsha" added_condition=" inc_chk=incmemory inc_chk_version=3.0 sc_interrupt=true dirty_check=true chip_type=es " target="sub_tsp" addname="es_tsp_incmemory" />
+            </buildgroup>
+            <buildgroup name="changsha_tsp_sc" weight="2"  producttype="inc_chk"  >
+                <rule productname="changsha"  added_condition=" inc_chk=compile,pclint,cppcheck sc_interrupt=true" addname="tsp_sc" target="hitsp "/>
+            </buildgroup>
+            <buildgroup name="changsha_tsp_pclint" weight="2"  producttype="inc_chk"  >
+                <rule productname="changsha"  added_condition=" inc_chk=pclint sc_interrupt=true" addname="tsp_pclint" target="hitsp "/>
+            </buildgroup>
+            <buildgroup name="changsha_tsp_warning" weight="2"  producttype="inc_chk"  >
+                <rule productname="changsha"  added_condition="inc_chk=compile inc_chk_version=3.0 sc_interrupt=true" addname="tsp_warning" target="hitsp "/>
+            </buildgroup>
+            <buildgroup name="changsha_tsp_codemars" weight="2"  producttype="inc_chk"  >
+                <rule productname="changsha"  added_condition=" inc_chk=codemars sc_interrupt=true" addname="tsp_codemars" target="hitsp "/>
+            </buildgroup>
+            <buildgroup name="changsha_rfdsp_sc" weight="2"  producttype="inc_chk"  >
+                <rule productname="changsha"  added_condition=" inc_chk=compile,pclint,cppcheck sc_interrupt=true" addname="rfdsp_sc" target="sub_rfdsp "/>
+            </buildgroup>
+            <buildgroup name="changsha_rfdsp_pclint" weight="2"  producttype="inc_chk"  >
+                <rule productname="changsha"  added_condition=" inc_chk=pclint sc_interrupt=true" addname="rfdsp_pclint" target="sub_rfdsp "/>
+            </buildgroup>
+            <buildgroup name="changsha_rfdsp_warning" weight="2"  producttype="inc_chk"  >
+                <rule productname="changsha"  added_condition="inc_chk=compile inc_chk_version=3.0 sc_interrupt=true" addname="rfdsp_warning" target="sub_rfdsp "/>
+            </buildgroup>
+            <buildgroup name="changsha_rfdsp_codemars" weight="2"  producttype="inc_chk"  >
+                <rule productname="changsha"  added_condition=" inc_chk=codemars sc_interrupt=true" addname="rfdsp_codemars" target="sub_rfdsp "/>
+            </buildgroup>
+            <buildgroup name="changsha_tsp_secbrella" weight="2" producttype="inc_chk"   >
+                <rule productname="changsha" added_condition=" inc_chk=secbrella inc_chk_version=3.0 llt_mdrv_enable=n" addname="tsp_secbrella" target= "sub_tsp"/>
+            </buildgroup>
+            <buildgroup name="changsha_rfdsp_secbrella" weight="2" producttype="inc_chk"   >
+                <rule productname="changsha" added_condition=" inc_chk=secbrella inc_chk_version=3.0  mk_sub_sys=true" addname="rfdsp_secbrella" target= "sub_rfdsp"/>
+            </buildgroup>
+            <buildgroup name="changsha_config_secbrella" weight="2" producttype="inc_chk"   >
+                <rule productname="changsha" added_condition=" inc_chk=secbrella inc_chk_version=3.0  mk_sub_sys=true" addname="config_secbrella" target= "sub_modem_lite"/>
+            </buildgroup>
+            <buildgroup name="changsha_kernel_modem_secbrella" weight="2" producttype="inc_chk" >
+                <rule productname="changsha" added_condition=" inc_chk=secbrella inc_chk_version=3.0 use_klto=false linux_version=linux-4.14 ko_sig=false link_kernel=false" addname ="kernel_modem_secbrella" target= " kernel_modem " />
+            </buildgroup>
+            <buildgroup name="changsha_tsp_compile_warning" weight="2"  producttype="inc_chk"  >
+                <rule productname="changsha"  added_condition="inc_chk=compile inc_chk_version=5.0 use_ccache=false chip_type=es" addname="tsp_compile_warning" target="sub_tsp"/>
+            </buildgroup>
+            <buildgroup name="changsha_rfdsp_compile_warning" weight="2"  producttype="inc_chk"  >
+                <rule productname="changsha"  added_condition="inc_chk=compile inc_chk_version=5.0 use_ccache=false chip_type=es" addname="rfdsp_compile_warning" target="sub_rfdsp"/>
+            </buildgroup>
+            <buildgroup name="changsha_config_compile_warning" weight="2"  producttype="inc_chk"  >
+                <rule productname="changsha"  added_condition="inc_chk=compile inc_chk_version=5.0 use_ccache=false chip_type=es" addname="config_compile_warning" target="sub_modem_lite"/>
+            </buildgroup>
+            <buildgroup name="changsha_kernel_modem_compile_warning" weight="2" producttype="inc_chk" >
+                <rule productname="changsha" added_condition=" inc_chk=compile inc_chk_version=5.0 use_ccache=false use_klto=false linux_version=linux-4.14 ko_sig=false link_kernel=false chip_type=es" addname ="kernel_modem_compile_warning" target= " kernel_modem " />
+            </buildgroup>
+            <buildgroup name="changsha_tsp_drv_pclintplus" weight="2" producttype="inc_chk" >
+                <rule productname="changsha" added_condition=" inc_chk=pclintplus inc_chk_version=5.0 compiler=clang-tsp use_ccache=false" addname ="tsp_drv_pclintplus" target= " sub_tsp_drv " />
+            </buildgroup>
+            <buildgroup name="changsha_tsp_psopen_pclintplus" weight="2" producttype="inc_chk" >
+                <rule productname="changsha" added_condition=" inc_chk=pclintplus inc_chk_version=5.0 compiler=clang-tsp use_ccache=false" addname ="tsp_psopen_pclintplus" target= " sub_tsp_ps_open " />
+            </buildgroup>
+            <buildgroup name="changsha_tsp_pskey_pclintplus" weight="2" producttype="inc_chk" >
+                <rule productname="changsha" added_condition=" inc_chk=pclintplus inc_chk_version=5.0 compiler=clang-tsp use_ccache=false" addname ="tsp_pskey_pclintplus" target= " sub_tsp_ps_key " />
+            </buildgroup>
+            <buildgroup name="changsha_tsp_phy_pclintplus" weight="2" producttype="inc_chk" >
+                <rule productname="changsha" added_condition=" inc_chk=pclintplus inc_chk_version=5.0 compiler=clang-tsp use_ccache=false" addname ="tsp_phy_pclintplus" target= " sub_tsp_phy " />
+            </buildgroup>
+            <buildgroup name="changsha_rfdsp_llvm_pclintplus" weight="2" producttype="inc_chk" >
+                <rule productname="changsha" added_condition=" inc_chk=pclintplus inc_chk_version=5.0 compiler=clang-udsp use_ccache=false" addname ="rfdsp_llvm_pclintplus" target= " sub_rfdsp " />
+            </buildgroup>
+            <buildgroup name="changsha_rfdsp_xtensa_pclintplus" weight="2" producttype="inc_chk" >
+                <rule productname="changsha" added_condition=" inc_chk=pclintplus inc_chk_version=5.0 compiler=xt-xcc-phy use_ccache=false" addname ="rfdsp_xtensa_pclintplus" target= " sub_rfdsp " />
+            </buildgroup>
+                 <buildgroup name="changsha_kernel_modem_pclintplus" weight="2" producttype="inc_chk" >
+                <rule productname="changsha" added_condition=" inc_chk=pclintplus inc_chk_version=5.0 compiler=gcc use_ccache=false use_ccache=false use_klto=false linux_version=linux-4.14 ko_sig=false link_kernel=false" addname ="kernel_modem_pclintplus" target= " kernel_modem " />
+            </buildgroup>
+       <!--vsc check start-->
+            <buildgroup name="codemars_changsha_modem_fullversion" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" CODEMARS=true online_check=true" addname="modem_fullversion_codemars" target= ""/>
+            </buildgroup>
+            <buildgroup name="cppcheck_changsha_modem_fullversion" weight="2" producttype="phone"  >
+                <rule productname="changsha" added_condition=" CPPCHECK=true " addname="modem_fullversion_cppcheck" target= ""/>
+            </buildgroup>
+            <buildgroup name="warning_changsha_modem_fullversion" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" warn_check=true use_klto=false linux_version=linux-4.14 ko_sig=false link_kernel=false" addname="modem_fullversion_warning" target= "sub_tsp sub_rfdsp sub_modem_lite kernel_modem"/>
+            </buildgroup>
+            <buildgroup name="warning_changsha_es_tsp" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" warn_check=true is_fullversion=false chip_type=es" addname="es_tsp_warning" target= "sub_tsp"/>
+            </buildgroup>
+            <buildgroup name="warning_changsha_es_rfdsp" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" warn_check=true is_fullversion=false chip_type=es" addname="es_rfdsp_warning" target= "sub_rfdsp"/>
+            </buildgroup>
+            <buildgroup name="warning_changsha_es_config" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" warn_check=true is_fullversion=false chip_type=es" addname="es_config_warning" target= "sub_modem_lite"/>
+            </buildgroup>
+            <buildgroup name="warning_changsha_es_modem_driver" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" warn_check=true chip_type=es is_fullversion=false MODEMVENDOR_SEPARATE=true subproduct=F2FS TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false use_klto=false" addname="es_modem_driver_warning" target= "modem_driver mtp_acore"/>
+            </buildgroup>
+            <buildgroup name="warning_changsha_es_vendor_modem" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" warn_check=true chip_type=es is_fullversion=false TARGET_CHIPSET_WORKAROUND=true" addname="es_vendor_modem_warning" target= "modemvendorimage"/>
+            </buildgroup>
+            <buildgroup name="warning_changsha_es_lpmcu_modem" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" warn_check=true is_fullversion=false chip_type=es" addname="es_lpmcu_modem_warning" target= "sub_lpm3_modem"/>
+            </buildgroup>
+            <buildgroup name="cmetrics_changsha_modem_fullversion" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" CMETRICS=true" addname="modem_fullversion_cmetrics" target= ""/>
+            </buildgroup>
+            <buildgroup name="secbrella_changsha_tsp" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" SECBRELLA=true llt_mdrv_enable=n chip_type=es" addname="tsp_secbrella" target= "sub_tsp"/>
+            </buildgroup>
+            <buildgroup name="secbrella_changsha_rfdsp" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" SECBRELLA=true  mk_sub_sys=true chip_type=es" addname="rfdsp_secbrella" target= "sub_rfdsp"/>
+            </buildgroup>
+            <buildgroup name="secbrella_changsha_config" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" SECBRELLA=true  mk_sub_sys=true chip_type=es" addname="config_secbrella" target= "sub_modem_lite"/>
+            </buildgroup>
+            <buildgroup name="secbrella_changsha_kernel_modem" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" SECBRELLA=true use_klto=false linux_version=linux-4.14 ko_sig=false link_kernel=false chip_type=es" addname ="kernel_modem_secbrella" target= " kernel_modem" />
+            </buildgroup>
+            <buildgroup name="pclintplus_changsha_tsp" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" PCLINTPLUS=true sc_transfer=true compiler=clang-tsp use_ccache=false" addname ="tsp_pclintplus" target= " sub_tsp " />
+            </buildgroup>
+            <buildgroup name="pclintplus_changsha_rfdsp_llvm" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" PCLINTPLUS=true sc_transfer=true compiler=clang-udsp use_ccache=false" addname ="rfdsp_llvm_pclintplus" target= " sub_rfdsp " />
+            </buildgroup>
+            <buildgroup name="pclintplus_changsha_rfdsp_xtensa" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" PCLINTPLUS=true sc_transfer=true compiler=xt-xcc-phy use_ccache=false" addname ="rfdsp_xtensa_pclintplus" target= " sub_rfdsp " />
+            </buildgroup>
+            <buildgroup name="pclintplus_changsha_kernel_modem" weight="2" producttype="phone" >
+                <rule productname="changsha" added_condition=" PCLINTPLUS=true sc_transfer=true compiler=gcc use_ccache=false use_klto=false linux_version=linux-4.14 ko_sig=false link_kernel=false" addname ="kernel_modem_pclintplus" target= " kernel_modem" />
+            </buildgroup>
+            <buildgroup name="bcodecheck_changsha_fullversion" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" chip_type=es CODECHECK=true use_ccache=false sc_transfer=true" addname="fullversion_bcodecheck" target= "ccore_libs"/>
+            </buildgroup>
+            <buildgroup name="bep_changsha_fullversion" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" BEP=true sc_transfer=true" addname="fullversion_samepath_original_bep" target= "core=ccore pkg"/>
+                <rule productname="changsha" added_condition=" BEP=true sc_transfer=true" addname="fullversion_samepath_rebuild_bep" target= "core=ccore pkg"/>
+            </buildgroup>
+            <buildgroup name="bep_changsha_nrbalonglibs" weight="2" producttype="phone" >
+                <rule productname="changsha" target= "libs_ps" added_condition="BEP=true" addname="nrbalonglibs_original_bep" />
+                <rule productname="changsha" target= "libs_ps" added_condition="BEP=true" addname="nrbalonglibs_rebuild_bep" />
+            </buildgroup>
+            <buildgroup name="bep_changsha_rfdsplibs" weight="2" producttype="phone" >
+                <rule productname="changsha" target= "libs_rfdsp" added_condition="BEP=true" addname="rfdsplibs_original_bep" />
+                <rule productname="changsha" target= "libs_rfdsp" added_condition="BEP=true" addname="rfdsplibs_rebuild_bep" />
+            </buildgroup>
+            <buildgroup name="bep_changsha_tsplibs" weight="2" producttype="phone" >
+                <rule productname="changsha" target= "libs_tsp" added_condition="BEP=true" addname="tsplibs_original_bep" />
+                <rule productname="changsha" target= "libs_tsp" added_condition="BEP=true" addname="tsplibs_rebuild_bep" />
+            </buildgroup>
+            <buildgroup name="bep_changsha_vpplibs" weight="2" producttype="phone" >
+                <rule productname="changsha" target= "libs_vpp" added_condition="BEP=true" addname="vpplibs_original_bep" />
+                <rule productname="changsha" target= "libs_vpp" added_condition="BEP=true" addname="vpplibs_rebuild_bep" />
+            </buildgroup>
+            <buildgroup name="bep_changsha_visplibs" weight="2" producttype="phone" >
+                <rule productname="changsha" target= "libs_visp" added_condition="BEP=true" addname="visplibs_original_bep" />
+                <rule productname="changsha" target= "libs_visp" added_condition="BEP=true" addname="visplibs_rebuild_bep" />
+            </buildgroup>
+            <buildgroup name="bep_changsha_rtoscklibs" weight="2" producttype="phone" >
+                <rule productname="changsha" target= "libs_rtosck" added_condition="BEP=true" addname="rtoscklibs_original_bep" />
+                <rule productname="changsha" target= "libs_rtosck" added_condition="BEP=true" addname="rtoscklibs_rebuild_bep" />
+            </buildgroup>
+            <buildgroup name="bep_changsha_toollibs" weight="2" producttype="phone" >
+                <rule productname="changsha" target= "libs_tool" added_condition="BEP=true" addname="toollibs_original_bep" />
+                <rule productname="changsha" target= "libs_tool" added_condition="BEP=true" addname="toollibs_rebuild_bep" />
+            </buildgroup>
+            <buildgroup name="bep_changsha_mdrvlibs" weight="2" producttype="phone" >
+                <rule productname="changsha" target= "libs_mdrv" added_condition="BEP=true" addname="mdrvlibs_original_bep" />
+                <rule productname="changsha" target= "libs_mdrv" added_condition="BEP=true" addname="mdrvlibs_rebuild_bep" />
+            </buildgroup>
+            <!--vsc check end-->
+            <!-- csec start -->
+            <buildgroup name="filecoding_changsha_modem_fullversion" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" FILECODING=true" addname="modem_fullversion_filecoding" target= ""/>
+            </buildgroup>
+            <buildgroup name="secmissile_changsha_modem_fullversion" weight="2" producttype="phone"   >
+                <rule productname="changsha" added_condition=" SECMISSILE=true" addname="modem_fullversion_secmissile" target= ""/>
+            </buildgroup>
+            <buildgroup name="changsha_toollibs" weight="2" producttype="libs"  >
+                <rule productname="changsha" target="libs_tool" added_condition="dirty_check=true dep_gen_modem=true chip_type=es" addname="toollibs" buildtype="release" />
+            </buildgroup>
+            <!-- csec end -->
+            <buildgroup name="changsha_lpmcu_modem" weight="2" producttype="phone"  >
+                <rule productname="changsha" target= "sub_lpm3_modem"  added_condition=" gbb_cust_name=cs_eng dirty_check=true " addname="lpmcu_modem" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_mdrvlibs" weight="2" producttype="libs" >
+                <rule productname="changsha" added_condition="dirty_check=true dep_gen_modem=true" target="libs_mdrv" addname="mdrvlibs" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_es_lpmcu_modem" weight="2" producttype="phone"  >
+                <rule productname="changsha" target= "sub_lpm3_modem"  added_condition="chip_type=es dirty_check=true " addname="es_lpmcu_modem" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_es_mdrvlibs" weight="2" producttype="libs" >
+                <rule productname="changsha" added_condition="chip_type=es dirty_check=true dep_gen_modem=true" target="libs_mdrv" addname="es_mdrvlibs" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_es_vpplibs" weight="2" producttype="libs"  >
+                <rule productname="changsha" target="libs_vpp" added_condition="chip_type=es dirty_check=true dep_gen_modem=true" addname="es_vpplibs" buildtype="release" />
+            </buildgroup>
+            <buildgroup name="changsha_es_visplibs" weight="2" producttype="libs"  >
+                <rule productname="changsha" target="libs_visp" added_condition="chip_type=es dirty_check=true dep_gen_modem=true" addname="es_visplibs" buildtype="release" />
+            </buildgroup>
+            <!-- libfuzz start -->
+            <buildgroup name="changsha_pam_libfuzzer" weight="2"  producttype="libfuzzer"  >
+                <rule productname="changsha" added_condition= "libfuzz=true component_dir=vendor/hisi/llt/pam/build use_cmake_modem=false" addname="pam_libfuzzer" target= "pam_mut_libfuzzer"/>
+            </buildgroup>
+            <!-- libfuzz end -->
+            <!-- clean-code start -->
+            <buildgroup name="changsha_es_vendor_modem_cleancode" weight="2"  producttype="phone">
+                <rule productname="changsha" buildscript="../clean_code/scripts/clean_code_build.sh" added_condition="  TARGET_CHIPSET_WORKAROUND=true chip_type=es " target=" modemvendorimage " addname="es_vendor_modem_cleancode" buildtype="noclean"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_cp_all_cleancode" weight="5"  producttype="phone"  >
+                <rule productname="changsha" buildscript="../clean_code/scripts/clean_code_build.sh" added_condition="sec_img=true  chip_type=es CCACHE_DIRECT_MODEM=true" addname="es_cp_all_cleancode" target="core=ccore pkg" buildtype="noclean"/>
+            </buildgroup>
+            <!-- clean-code end -->
+            <buildgroup name="changsha_es_kernel_modem_klto" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition=" chip_type=es dirty_check=true linux_version=linux-4.14 ko_sig=false  link_kernel=false" addname="es_kernel_modem_klto" target="kernel_modem"/>
+            </buildgroup>
+
+            <!-- changsha modem_ps_user_libs build_rule -->
+            <buildgroup name="changsha_es_modem_ps_user_libs" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="dirty_check=true TARGET_CHIPSET_WORKAROUND=true chip_type=es CFG_MODEM_PS_USER_LIBS=true" target="modem_ps_user_libs" addname="es_modem_ps_user_libs" />
+            </buildgroup>
+            <buildgroup name="changsha_es_user_modem_ps_user_libs" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="choose_variant=user gbb_cust_name=es_user dirty_check=true TARGET_CHIPSET_WORKAROUND=true chip_type=es CFG_MODEM_PS_USER_LIBS=true" target="modem_ps_user_libs" addname="es_user_modem_ps_user_libs" />
+            </buildgroup>
+            <buildgroup name="changsha_modem_ps_user_libs" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition=" dirty_check=true TARGET_CHIPSET_WORKAROUND=true CFG_MODEM_PS_USER_LIBS=true" target="modem_ps_user_libs" addname="modem_ps_user_libs" />
+            </buildgroup>
+            <buildgroup name="changsha_user_modem_ps_user_libs" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="choose_variant=user gbb_cust_name=cs_user dirty_check=true TARGET_CHIPSET_WORKAROUND=true CFG_MODEM_PS_USER_LIBS=true" target="modem_ps_user_libs" addname="user_modem_ps_user_libs" />
+            </buildgroup>
+            <!-- changsha modem_ps_user_libs build_rule -->
+
+            <!-- CHANGSHA CS AP Eng build_rule -->
+            <buildgroup name="changsha_cp_all" weight="5"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="sec_img=true dirty_check=true CCACHE_DIRECT_MODEM=true" addname="cp_all" target="core=ccore pkg"/>
+            </buildgroup>
+            <buildgroup name="changsha_kernel_modem" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition=" use_klto=false dirty_check=true linux_version=linux-4.14 llt_mdrv=y ko_sig=false  link_kernel=false" addname="kernel_modem" target="kernel_modem"/>
+            </buildgroup>
+            <buildgroup name="changsha_kernel_modem_5_10" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition=" use_klto=false dirty_check=true linux_version=linux-5.10 llt_mdrv=y ko_sig=false  link_kernel=false" addname="kernel_modem_5_10" target="kernel_modem"/>
+            </buildgroup>
+            <buildgroup name="changsha_vendor_modem" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition=" dirty_check=true TARGET_CHIPSET_WORKAROUND=true " target=" modemvendorimage " addname="vendor_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_factory_kernel_modem" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="factory=true use_klto=false dirty_check=true linux_version=linux-4.14 llt_mdrv=y ko_sig=false  link_kernel=false " addname="factory_kernel_modem" target="kernel_modem"/>
+            </buildgroup>
+             <buildgroup name="changsha_kernel_modem_cfi_check" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition=" cfi_check=true dirty_check=true linux_version=linux-4.14 ko_sig=false use_ccache=false  link_kernel=false " addname="kernel_modem_cfi_check" target="kernel_modem_cfi "/>
+            </buildgroup>
+            <buildgroup name="changsha_kernel_modem_cfi_check_5_10" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition=" cfi_check=true dirty_check=true linux_version=linux5.10 ko_sig=false use_ccache=false  link_kernel=false " addname="kernel_modem_cfi_check_5_10" target="kernel_modem_cfi "/>
+            </buildgroup>
+            <buildgroup name="changsha_kernel_modem_klto_5_10" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition=" dirty_check=true linux_version=linux-5.10 ko_sig=false  link_kernel=false" addname="kernel_modem_klto_5_10" target="kernel_modem"/>
+            </buildgroup>
+            <buildgroup name="changsha_factory_vendor_modem" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="factory=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true " target=" modemvendorimage " addname="factory_vendor_modem" />
+            </buildgroup>
+            <buildgroup name="changsha_vendor_ap" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="ALLOW_NINJA_ENV=true MODEMVENDOR_SEPARATE=true DPA_SEPARATE=true subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false use_klto=false keylibs_depchk=false" target=" vendor_ap " addname="vendor_ap" ddk_addname="ddk" />
+            </buildgroup>
+            <buildgroup name="changsha_separate_vendor_ap" weight="2"  producttype="phone"  >
+                <rule productname="changsha" added_condition="ALLOW_NINJA_ENV=true MODEMVENDOR_SEPARATE=true DPA_SEPARATE=true subproduct=F2FS sec_img=true TARGET_CHIPSET_WORKAROUND=true use_hash_log=false separate=true use_klto=false keylibs_depchk=false"  target=" vendor_images mtp_acore " addname="separate_vendor_ap" ddk_addname="ddk" />
+            </buildgroup>
+            <buildgroup name="changsha_platform_vendor_ap" weight="2"  producttype="phone"  >
+                <rule productname="changsha" added_condition="ALLOW_NINJA_ENV=true MODEMVENDOR_SEPARATE=true DPA_SEPARATE=true subproduct=F2FS sec_img=true TARGET_CHIPSET_WORKAROUND=true use_hash_log=false separate=true use_klto=false keylibs_depchk=false"  target=" vendor_ap " addname="platform_vendor_ap" ddk_addname="ddk" />
+            </buildgroup>
+            <buildgroup name="changsha_modem_driver" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false use_klto=false " target=" modem_driver mtp_acore " addname="modem_driver" />
+            </buildgroup>
+            <buildgroup name="changsha_modem_driver_cfi_check" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="cfi_check=true linux_version=linux-4.14 subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false " target=" modem_driver_cfi " addname="modem_driver_cfi_check" />
+            </buildgroup>
+            <buildgroup name="changsha_modem_driver_cfi_check_5_10" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="cfi_check=true linux_version=linux-5.10 subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true  use_hash_log=false " target=" modem_driver_cfi " addname="modem_driver_cfi_check_5_10" />
+            </buildgroup>
+            <buildgroup name="changsha_separate_modem_driver" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="MODEMVENDOR_SEPARATE=true subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true separate=true use_hash_log=false use_klto=false" target=" modemdriverimage " addname="separate_modem_driver" />
+            </buildgroup>
+            <buildgroup name="changsha_platform_modem_driver" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="MODEMVENDOR_SEPARATE=true subproduct=F2FS sec_img=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true separate=true use_hash_log=false use_klto=false " target=" modem_driver mtp_acore " addname="platform_modem_driver" />
+            </buildgroup>
+            <!-- CHANGSHA CS AP Eng build_rule -->
+
+            <!-- CHANGSHA CS AP Factory build_rule -->
+            <buildgroup name="changsha_factory_cp_all" weight="5"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="factory=true sec_img=true dirty_check=true CCACHE_DIRECT_MODEM=true" addname="factory_cp_all" target="core=ccore pkg"/>
+            </buildgroup>
+            <buildgroup name="changsha_factory_kernel_modem" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="factory=true use_klto=false dirty_check=true linux_version=linux-4.14 llt_mdrv=y ko_sig=false  link_kernel=false" addname="factory_kernel_modem" target="kernel_modem"/>
+            </buildgroup>
+            <buildgroup name="changsha_factory_vendor_modem" weight="2"  producttype="phone">
+                <rule productname="changsha" added_condition="factory=true dirty_check=true TARGET_CHIPSET_WORKAROUND=true " target=" modemvendorimage " addname="factory_vendor_modem" />
+            </buildgroup>
+            <!-- CHANGSHA CS AP Factory build_rule -->
+
+            <!-- CHANGSHA CS AP CleanCode build_rule -->
+            <buildgroup name="changsha_cp_all_cleancode" weight="5"  producttype="phone"  >
+                <rule productname="changsha" buildscript="../clean_code/scripts/clean_code_build.sh" added_condition="sec_img=true CCACHE_DIRECT_MODEM=true" addname="cp_all_cleancode" target="core=ccore pkg" buildtype="noclean"/>
+            </buildgroup>
+            <buildgroup name="changsha_kernel_modem_cleancode" weight="2"  producttype="phone"  >
+                <rule productname="changsha" buildscript="../clean_code/scripts/clean_code_build.sh" added_condition="use_klto=false dirty_check=true linux_version=linux-4.14 llt_mdrv=y ko_sig=false  link_kernel=false" addname="kernel_modem_cleancode" target="kernel_modem"/>
+            </buildgroup>
+            <buildgroup name="changsha_vendor_modem_cleancode" weight="2"  producttype="phone">
+                <rule productname="changsha" buildscript="../clean_code/scripts/clean_code_build.sh" added_condition="  TARGET_CHIPSET_WORKAROUND=true " target=" modemvendorimage " addname="vendor_modem_cleancode" buildtype="noclean"/>
+            </buildgroup>
+            <!-- CHANGSHA CS AP CleanCode build_rule -->
+            <buildgroup name="changsha_es_kernel_modem_pack" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="dirty_check=true linux_version=linux-5.10 llt_mdrv=y use_klto=false ko_sig=false link_kernel=false modem_driver_packed=true transfer=false chip_type=es" addname="es_kernel_modem_pack" target="kernel_modem_pack mtp_acore"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_user_kernel_modem_pack" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="choose_variant=user gbb_cust_name=es_user dirty_check=true linux_version=linux-5.10 llt_mdrv=y use_klto=false ko_sig=false link_kernel=false modem_driver_packed=true transfer=false chip_type=es" addname="es_user_kernel_modem_pack" target="kernel_modem_pack mtp_acore"/>
+            </buildgroup>
+            <buildgroup name="changsha_kernel_modem_pack" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="dirty_check=true linux_version=linux-5.10 llt_mdrv=y use_klto=false ko_sig=false link_kernel=false modem_driver_packed=true transfer=false" addname="kernel_modem_pack" target="kernel_modem_pack mtp_acore"/>
+            </buildgroup>
+            <buildgroup name="changsha_user_kernel_modem_pack" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="choose_variant=user gbb_cust_name=cs_user dirty_check=true linux_version=linux-5.10 llt_mdrv=y use_klto=false ko_sig=false link_kernel=false modem_driver_packed=true  transfer=false" addname="user_kernel_modem_pack" target="kernel_modem_pack mtp_acore"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_platform_kernel_modem_pack" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="dirty_check=true linux_version=linux-5.10 llt_mdrv=y use_klto=false ko_sig=false link_kernel=false modem_driver_packed=true transfer=false MODEMVENDOR_SEPARATE=true separate=true chip_type=es" addname="es_platform_kernel_modem_pack" target="kernel_modem_pack mtp_acore"/>
+            </buildgroup>
+            <buildgroup name="changsha_es_user_platform_kernel_modem_pack" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="choose_variant=user gbb_cust_name=es_user dirty_check=true linux_version=linux-5.10 llt_mdrv=y use_klto=false ko_sig=false link_kernel=false modem_driver_packed=true transfer=false MODEMVENDOR_SEPARATE=true separate=true chip_type=es" addname="es_user_platform_kernel_modem_pack" target="kernel_modem_pack mtp_acore"/>
+            </buildgroup>
+            <buildgroup name="changsha_platform_kernel_modem_pack" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="dirty_check=true linux_version=linux-5.10 llt_mdrv=y use_klto=false ko_sig=false link_kernel=false modem_driver_packed=true transfer=false MODEMVENDOR_SEPARATE=true separate=true" addname="platform_kernel_modem_pack" target="kernel_modem_pack mtp_acore"/>
+            </buildgroup>
+            <buildgroup name="changsha_user_platform_kernel_modem_pack" weight="2"  producttype="phone"  >
+                <rule productname="changsha"  added_condition="choose_variant=user gbb_cust_name=cs_user dirty_check=true linux_version=linux-5.10 llt_mdrv=y use_klto=false ko_sig=false link_kernel=false modem_driver_packed=true transfer=false MODEMVENDOR_SEPARATE=true separate=true" addname="user_platform_kernel_modem_pack" target="kernel_modem_pack mtp_acore"/>
+            </buildgroup>
+        </CHANGSHA>
+</build_rule>

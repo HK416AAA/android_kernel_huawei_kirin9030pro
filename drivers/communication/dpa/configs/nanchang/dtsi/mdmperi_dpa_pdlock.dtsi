@@ -1,0 +1,69 @@
+
+pdlock {
+    compatible = "mdmperi_pdlock,dpa";
+    pdlock_config_cnt = <3>; /* pdlock_enable cnt + pdlock_maskoff cnt */
+    /* format: <base_addr offset start_bit end_bit> */
+    pdlock_config = <0xE6801000 0x760 0 0  1>, /* MDMPERI:APB  使能防挂死 */
+                    <0xE6801000 0x764 0 0  1>, /* MDMPERI:AHB  使能防挂死 */
+                    <0xE6800000 0xA08 0 15 0>; /* MDMPERI_CRG:AHB/APB  0: 不屏蔽了防挂死条件，实现防挂死 */
+};
+
+pdlock_dpa_config {
+    compatible = "dpa_pdlock,dpa";
+    pdlock_config_cnt = <5>; /* pdlock_enable cnt + pdlock_maskoff cnt */
+    pdlock_config = <0xE6C01000 0x704 0 0  1>, /* DPA:APB */
+                    <0xE6C01000 0x704 3 3  1>, /* DPA:AHB */
+                    <0xE6C01000 0x708 2 2  1>, /* DPA:APB_TIMER */
+                    <0xE6C00000 0xA08 0 31 0>, /* DPA_CRG:DPA_AHB&DPA_TIMER_APB   0: 不屏蔽了防挂死条件，实现防挂死 */
+                    <0xE6C00000 0xA0C 0 15 0>; /* DPA_CRG:DPA_APB   0: 不屏蔽了防挂死条件，实现防挂死 */
+};
+
+pdlock_apb_err_info {
+    compatible = "pdlock_info,dpa";
+    chipid = <0x36E00000>;
+    /* 错误寄存器偏移 */
+    pdlock_err_reg_num = <5>;
+
+    /* bit 0 */
+    mdmperi_apb_err {
+        sysctrl_base = <0xE6801000 0x1000>;
+        err_name     = "mdmperi_apb_err";
+        err_reg      = <0x7C0>;
+        err_addr     = <0x7C4>;
+        srst_reg     = <0x760 4 4>;  /*  tzrs[1] 非安全寄存器 */
+    };
+    /* bit 1 */
+    mdmperi_ahb_err {
+        sysctrl_base = <0xE6801000 0x1000>;
+        err_name     = "mdmperi_ahb_err";
+        err_reg      = <0x7C8>;
+        err_addr     = <0x7CC>;
+        srst_reg     = <0x764 4 4>;  /*  tzrs[1] 非安全寄存器 */
+    };
+
+    /* dpa */
+    dpa_pslv_err_int {
+        sysctrl_base = <0xE6C01000 0x1000>;
+        err_name     = "dpa_pslv_err";
+        err_reg      = <0x780>;
+        err_addr     = <0x784>;
+        srst_reg     = <0x704 4 4>;  /*  tzrs[1] 非安全寄存器 */
+        powerdown_check = <1>; /* check the bus is powerdown */
+    };
+    dpa_timer_pslv_err_int {
+        sysctrl_base = <0xE6C01000 0x1000>;
+        err_name     = "dpa_timer_pslv_err";
+        err_reg      = <0x788>;
+        err_addr     = <0x78C>;
+        srst_reg     = <0x708 1 1>;  /*  tzrs[1] 非安全寄存器 */
+        powerdown_check = <1>; /* check the bus is powerdown */
+    };
+    dpa_hslv_err_int {
+        sysctrl_base = <0xE6C01000 0x1000>;
+        err_name     = "dpa_hslv_err";
+        err_reg      = <0x7AC>;
+        err_addr     = <0x7B0>;
+        srst_reg     = <0x704 4 4>;  /*  tzrs[1] 非安全寄存器 */
+        powerdown_check = <1>; /* check the bus is powerdown */
+    };
+};

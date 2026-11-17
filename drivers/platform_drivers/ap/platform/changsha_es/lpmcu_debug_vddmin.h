@@ -1,0 +1,4 @@
+#ifndef LPMCU_DEBUG_VDDMIN_H
+#define LPMCU_DEBUG_VDDMIN_H 
+#define VDDMIN_VOLT_ADDR 0xFDB23484
+#endif

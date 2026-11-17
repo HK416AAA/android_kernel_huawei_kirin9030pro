@@ -1,0 +1,5 @@
+config DPU_INDEP_RST_VM_CTRL
+    bool "dpu indep rst vm control"
+    default n
+    help
+        This config controls dpu indep rst on the system.

@@ -1,0 +1,2 @@
+obj-$(CONFIG_HW_MCU_DRIVER) += mcu/
+obj-$(CONFIG_HW_LT6911GXD_DRIVER) += dp2mipi/

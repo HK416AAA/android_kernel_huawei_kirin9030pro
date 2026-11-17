@@ -1,0 +1,19 @@
+config SECURITY_INFO
+	bool "Support security info"
+	default n
+	help
+	security info support
+
+config CRYPTO_HICRYPTO_CCZ
+	tristate "Support security info call tee to set hicrypto ccz key"
+	depends on SECURITY_INFO
+	default n
+	help
+	  Call tee to set hicrypto ccz key
+
+config CRYPTO_HICRYPTO_TEE_OEM_MAC
+	tristate "Support hicrypto throught security info call tee to calculate oem mac"
+	depends on SECURITY_INFO
+	default n
+	help
+	  Call tee to calculate oem mac

@@ -1,0 +1,6 @@
+config DPA_API
+	bool "support dpa interface"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'n', it will not be compiled.

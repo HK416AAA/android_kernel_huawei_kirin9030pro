@@ -1,0 +1,61 @@
+/*
+ * Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2021-2023. All rights reserved.
+ * 功能说明 : linux ioctl配置命令
+ * 作    者 :
+ * 创建日期 : 2012年12月10日
+ */
+#ifndef WAL_HIPRIV_CHBA_H
+#define WAL_HIPRIV_CHBA_H
+
+#ifdef _PRE_WLAN_CHBA_MGMT
+#include "mac_chba_common.h"
+#include "hmac_chba_function.h"
+#include "hmac_chba_common_function.h"
+#include "hmac_chba_coex.h"
+#include "hmac_chba_ps.h"
+#include "hmac_chba_chan_switch.h"
+#include "hmac_chba_sync.h"
+#include "wal_linux_netdev_ops.h"
+#include "wal_config.h"
+#include "wal_linux_ioctl.h"
+#if (defined _PRE_WLAN_FEATURE_NBW) && (defined _PRE_WLAN_NBW_DEMO)
+#include "hmac_nbw_sync.h"
+#endif
+
+/* 信道切换打桩命令 */
+uint32_t wal_hipriv_chba_chan_switch(oal_net_device_stru *pst_net_dev, int8_t *pc_param);
+
+uint32_t wal_hipriv_chba_module_init(oal_net_device_stru *net_dev, int8_t *pc_param);
+
+uint32_t wal_hipriv_set_coex_chan_info(oal_net_device_stru *net_dev, int8_t *pc_param);
+uint32_t wal_hipriv_set_chba_battery(oal_net_device_stru *net_dev, int8_t *pc_param);
+
+/* 设置CHBA 自动调整低功耗bitmap开关，0：关闭自动调整，1：打开自动调整 */
+uint32_t wal_hipriv_chba_set_auto_bitmap(oal_net_device_stru *net_dev, int8_t *pc_param);
+/* 设置CHBA user bitmap */
+uint32_t wal_hipriv_chba_set_user_bitmap(oal_net_device_stru *net_dev, int8_t *pc_param);
+/* 设置CHBA vap bitmap */
+uint32_t wal_hipriv_chba_set_vap_bitmap(oal_net_device_stru *net_dev, int8_t *pc_param);
+
+uint32_t wal_hipriv_chba_log_level(oal_net_device_stru *net_dev, int8_t *param);
+
+uint32_t wal_hipriv_chba_set_ps_thres(oal_net_device_stru *net_dev, int8_t *param);
+
+uint32_t wal_hipriv_chba_island_chan_switch(oal_net_device_stru *net_dev, int8_t *param);
+/* 设置chba特性开关 */
+uint32_t wal_hipriv_set_chba_feature_switch(oal_net_device_stru *pst_net_dev, int8_t *pc_param);
+uint32_t wal_hipriv_rx_mgmt_remain_on_channel(oal_net_device_stru *net_dev, int8_t *param);
+uint32_t wal_hipriv_cancel_same_chan_remain_on_chan(oal_net_device_stru *net_dev, int8_t *param);
+uint32_t wal_hipriv_chba_service_user_ps_update(mac_vap_stru *mac_vap, uint32_t *params);
+uint32_t wal_hipriv_chba_service_ask_user_all_awake(mac_vap_stru *mac_vap, uint32_t *params);
+uint32_t wal_hipriv_chba_set_virtual_connect_cfg(mac_vap_stru *mac_vap, uint32_t *params);
+#endif
+#if (defined _PRE_WLAN_FEATURE_NBW) && (defined _PRE_WLAN_NBW_DEMO)
+uint32_t wal_hipriv_nbw_pwr_switch(mac_vap_stru *mac_vap, uint32_t *params);
+uint32_t hmac_hipriv_domain_merge_trigger(mac_vap_stru *mac_vap, uint32_t *param);
+uint32_t hmac_hipriv_domain_split_trigger(mac_vap_stru *mac_vap, uint32_t *param);
+#endif
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(4, 1, 0))
+uint32_t wal_hipriv_chba_mgmt_tx_cmd(oal_net_device_stru *net_device, int8_t *param);
+#endif
+#endif

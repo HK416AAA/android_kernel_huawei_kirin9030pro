@@ -1,0 +1,11 @@
+switch,comment,es_eng,es_rtt,es_asan:es_eng,es_user,es_sdatp:es_eng
+CFG_PRODUCT_CFG_CHIP_SOLUTION_NAME,,"""Balong""","""Balong""",,"""Balong""",
+CFG_BUILD_TYPE,,RELEASE,RELEASE,,RELEASE,
+CFG_PRODUCT_VERSION,,V100R001C00B010,V100R001C00B010,,V100R001C00B010,
+CFG_PRODUCT_VERSION_STR,,"""V100R001C00B010""","""V100R001C00B010""",,"""V100R001C00B010""",
+CFG_PRODUCT_FULL_VERSION_STR,修改版本号前8个字符需知会工具组同事，B版本号由版本经理修改，代码中不要直接使用该宏，请调用version相关接口,"""Changsha V100R001C10SPC129""","""Changsha V100R001C10SPC129""",,"""Changsha V100R001C10SPC129""",
+CFG_PRODUCT_DLOAD_SOFTWARE_VER,，B版本号由版本经理修改，代码中不要直接使用该宏，请调用version相关接口,"""21C10SPC129CP0000""","""21C10SPC129CP0000""",,"""21C10SPC129CP0000""",
+CFG_PLATFORM,,changsha,changsha,,changsha,
+CFG_PLATFORM_HISI_BALONG,,changsha,changsha,,changsha,
+CFG_MODEM_FUSION_VERSION,modem融合架构打开为true,TRUE,TRUE,,TRUE,
+CFG_NV_VERSION,,changsha,changsha,,changsha,

@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: GPL-2.0
+#
+# huawei reverse charge protocol drivers
+#
+
+config REVERSE_CHARGE_PROTOCOL
+	bool "reverse charge protocol"
+	depends on REVERSE_CHARGE
+	default n
+	help
+	  Say Y here to enable reverse charge protocol driver.
+	  This driver provides a unified interface to the reverse charge protocol.
+	  Currently supported protocols as below:
+	  Huawei SCP protocol.
+
+config REVERSE_PROTOCOL_SCP
+	bool "huawei reverse charge protocol with scp"
+	depends on REVERSE_CHARGE_PROTOCOL
+	default n
+	help
+	  Say Y here to enable reverse charge scp protocol driver.
+	  The reverse charge protocol is used to communicate between a slave
+	  device and a master device over a d+/d- bus. The protocol driver is
+	  meant to be used to configure, control and read the status of
+	  a master device.
+
+config REVERSE_PROTOCOL_UFCS
+	bool "huawei reverse charge protocol with ufcs"
+	depends on REVERSE_CHARGE_PROTOCOL
+	default n
+	help
+	  Say Y here to enable reverse charge ufcs protocol driver.
+	  The reverse charge protocol is used to communicate between a slave
+	  device and a master device over a d+/d- bus. The protocol driver is
+	  meant to be used to configure, control and read the status of
+	  a master device.

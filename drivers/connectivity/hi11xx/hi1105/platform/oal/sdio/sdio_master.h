@@ -1,0 +1,14 @@
+/**
+ * Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2023-2023. All rights reserved.
+ *
+ * Description:sdio_master.c header file
+ * Author: platform drivers
+ */
+
+#ifndef SDIO_MASTER_DRIVER_H
+#define SDIO_MASTER_DRIVER_H
+#include "sdio/oal_sdio_host_if.h"
+
+int32_t sdio_master_ip_init(struct oal_sdio *sdio);
+#endif
+

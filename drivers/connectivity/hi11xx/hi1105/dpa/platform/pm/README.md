@@ -1,0 +1,1 @@
+hisi/dpa/firmware/service/connectivity/platform/pm

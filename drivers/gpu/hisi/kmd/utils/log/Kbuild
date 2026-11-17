@@ -1,0 +1,12 @@
+#
+# Copyright (c) Hisilicon Technologies Co., Ltd. 2021-2021. All rights reserved.
+#
+
+DEFINES += -DHVGR_TRACE_INCLUDE_PATH=$(HVGR_ROOT)/utils/log
+
+SRC += \
+	$(HVGR_ROOT)/utils/log/hvgr_log.c
+
+ifneq ($(HVGR_NSV_PCIE), 1)
+	SRC += $(HVGR_ROOT)/utils/log/hvgr_trace.c
+endif

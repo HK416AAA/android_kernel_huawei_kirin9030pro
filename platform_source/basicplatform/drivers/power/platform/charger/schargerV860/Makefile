@@ -1,0 +1,1 @@
+obj-y += scharger_v860_dc.o scharger_v860_adc.o scharger_v860_efuse.o scharger_v860_log.o scharger_v860_irq.o

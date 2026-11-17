@@ -1,0 +1,30 @@
+config SMART_THERMAL
+	bool "smart thermal driver config"
+	default n
+	select SMART_THERMAL_SYSFS
+	help
+	  Driver for Smart thermal
+
+config SMART_THERMAL_SYSFS
+	bool "smart thermal driver config"
+	depends on SMART_THERMAL
+	default n
+	help
+	  Enable sysfs for Smart thermal
+
+config SMART_THERMAL_IOCTL
+	bool "smart thermal ioctl"
+	depends on SMART_THERMAL
+	default n
+	help
+	  Enable Smart thermal ioctl
+
+config THERMAL_AI_SCHED
+	bool "enable thermal ai sched"
+	depends on IPA_THERMAL
+	depends on SMART_THERMAL_IOCTL
+	default n
+	help
+	  Enable thermal ai sched
+
+source "platform_source/cee/drivers/thermal_platform/smart_thermal/margin_thermal/Kconfig"

@@ -1,0 +1,36 @@
+set(CFG_PSP_CCORE_PHY
+    uphy_boot_psa.o
+    uphy_psa.o
+    ul1m.o
+    neun.o
+    fess.o
+    gphy.o
+    wphy.o
+    lphy_comm.o
+    lphy_hl1c.o
+    lphy_ml1c.o
+    lphy_ll1d.o
+    lphy_ll1u.o
+    nphy_comm.o
+    nphy_hl1c.o
+    nphy_ml1c.o
+    nphy_ll1d.o
+    nphy_ll1u.o
+    sphy.o
+    slcomm.o
+    v2xl.o
+    d2dl.o
+    psa_sec_c.o
+    ncun.o
+    csxw1_hl1c.o
+    csxw1_ll1c.o
+    csxw1_pub.o
+    csxw2_comm.o
+    csxw2_hl1c.o
+    csxw2_ml1c.o
+    csxw2_ll1d.o
+    csxw2_ll1u.o
+    satellite_lib.o
+)
+
+list(TRANSFORM CFG_PSP_CCORE_PHY PREPEND phy_psa/)

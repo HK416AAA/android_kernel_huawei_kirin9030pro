@@ -1,0 +1,120 @@
+/*
+ * Hisilicon Ltd Balong SOC
+ */
+
+
+dpa_fipc_device{
+	compatible = "modem,dpa_fipc_device";
+	version = <0x1>;
+	reg = <0xE6D00000 0x8000>;
+	phy_chnl_num = <10>; /*配置的物理通道数量*/
+	pipepair_cnt = <32>; /* 该fipc设备有32对pipe */
+	dpa_fipc_dev_name = "dpa_fipc_dev0";
+	cpu_int_map_str = "acpu&teeos:0-2","dpa:3-6";
+	/*
+	irq_bundle-0x0 {
+		cpu_id = <0x0>;
+		interrupts = <0 494 4>, <0 491 4>;
+		hwirq_opipe = <526>;
+		hwirq_ipipe = <523>;
+	};
+	*/
+	irq_bundle-0x01 {
+		cpu_id = <0x1>;
+		interrupts = <0 495 4>, <0 492 4>;
+		hwirq_opipe = <527>;
+		hwirq_ipipe = <524>;
+	};
+	irq_bundle-0x2 {
+		cpu_id = <0x2>;
+		interrupts = <0 496 4>, <0 493 4>;
+		hwirq_opipe = <528>;
+		hwirq_ipipe = <525>;
+	};
+
+	dpa_fipc_clk {
+		dpa_fipc_crg_base = <0xE6C00000 0x8000>;
+		dpa_fipc_clk_en = <0x0000>;
+		dpa_fipc_clk_dis = <0x0004>;
+		dpa_fipc_clk_mask = <0x0080>;
+	};
+
+	channel-0x0 {
+		pipe_id = <0x0>; /* 唯一编码，见mdrv_fipc.h 软件初始化可以做检查 防止dts错误的重复配置 */
+		core_id = <0x1>;
+		chn_type = <1> ; /* 通道类型，0为send，1为recv*/
+		depth = <0x800>;
+		/* user_chnl没有配置，为通用通道*/
+		status = "ok";
+	};
+	channel-0x1 {
+		pipe_id = <0x1>; /* 唯一编码，见mdrv_fipc.h 软件初始化可以做检查 防止dts错误的重复配置 */
+		core_id = <0x1>;
+		chn_type = <0> ; /* 通道类型，0为send，1为recv*/
+		depth = <0x800>;
+		/* user_chnl没有配置，为通用通道*/
+		status = "ok";
+	};
+
+	channel-0x2 {
+		pipe_id = <0x2>; /* 唯一编码，见mdrv_fipc.h 软件初始化可以做检查 防止dts错误的重复配置 */
+		core_id = <0x1>;
+		chn_type = <1> ; /* 通道类型，0为send，1为recv*/
+		depth = <0x800>;
+		/* user_chnl没有配置，为通用通道*/
+		status = "ok";
+	};
+	channel-0x3 {
+		pipe_id = <0x3>; /* 唯一编码，见mdrv_fipc.h 软件初始化可以做检查 防止dts错误的重复配置 */
+		core_id = <0x1>;
+		chn_type = <0> ; /* 通道类型，0为send，1为recv*/
+		depth = <0x800>;
+		/* user_chnl没有配置，为通用通道*/
+		status = "ok";
+	};
+	channel-0x4 {
+		pipe_id = <0x4>; /* 唯一编码，见mdrv_fipc.h 软件初始化可以做检查 防止dts错误的重复配置 */
+		core_id = <0x1>;
+		chn_type = <1> ; /* 通道类型，0为send，1为recv*/
+		depth = <0x800>;
+		status = "ok";
+	};
+	channel-0x5 {
+		pipe_id = <0x5>; /* 唯一编码，见mdrv_fipc.h 软件初始化可以做检查 防止dts错误的重复配置 */
+		core_id = <0x1>;
+		chn_type = <0> ; /* 通道类型，0为send，1为recv*/
+		depth = <0x800>;
+		status = "ok";
+	};
+	channel-0x6 {
+		pipe_id = <0x6>; /* 唯一编码，见mdrv_fipc.h 软件初始化可以做检查 防止dts错误的重复配置 */
+		core_id = <0x2>;
+		chn_type = <1> ; /* 通道类型，0为send，1为recv*/
+		depth = <0x800>;
+		status = "ok";
+	};
+	channel-0x7 {
+		pipe_id = <0x7>; /* 唯一编码，见mdrv_fipc.h 软件初始化可以做检查 防止dts错误的重复配置 */
+		core_id = <0x2>;
+		chn_type = <0>; /* 通道类型，0为send，1为recv*/
+		depth = <0x800>;
+		status = "ok";
+	};
+	channel-0x8 {
+		pipe_id = <0x8>; /* 唯一编码，见mdrv_fipc.h 软件初始化可以做检查 防止dts错误的重复配置 */
+		core_id = <0x2>;
+		chn_type = <1> ; /* 通道类型，0为send，1为recv*/
+		depth = <0x800>;
+		status = "ok";
+	};
+	channel-0x9 {
+		pipe_id = <0x9>; /* 唯一编码，见mdrv_fipc.h 软件初始化可以做检查 防止dts错误的重复配置 */
+		core_id = <0x2>;
+		chn_type = <0>; /* 通道类型，0为send，1为recv*/
+		depth = <0x800>;
+		status = "ok";
+	};
+};/* dpa_fipc_device */
+
+
+

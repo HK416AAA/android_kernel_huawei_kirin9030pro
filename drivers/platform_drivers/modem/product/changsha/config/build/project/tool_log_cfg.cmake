@@ -1,0 +1,7 @@
+set(tool_log_cfg.dir ${GBB_TOPDIR}/tools/modem/diag_tools_common/build/tool_log_cfg)
+set(tool_log_cfg.stage STAGE_COMPILE)
+set(tool_log_cfg.libs_dir ${tool_cfg_libs_dir})
+set(tool_log_cfg.release_mode "libs")
+set(tool_log_cfg.out tool_logcfg/)
+set(tool_log_cfg.release_libs_dir ${release_libs_dir})
+set(tool_log_cfg.warning_allowed true)

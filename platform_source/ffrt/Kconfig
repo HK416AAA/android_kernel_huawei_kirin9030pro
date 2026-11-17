@@ -1,0 +1,11 @@
+menu "FFRT Kernel Configuration"
+
+config FFRT_DEBUG
+	tristate "FFRT_DEBUG"
+	default n
+
+-source "platform_source/ffrt/ffts/Kconfig"
+-source "platform_source/ffrt/hts/Kconfig"
+-source "platform_source/ffrt/uniform_id/Kconfig"
+
+endmenu

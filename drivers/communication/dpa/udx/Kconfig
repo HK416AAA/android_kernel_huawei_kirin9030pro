@@ -1,0 +1,36 @@
+comment "Unified Datapath Extension"
+
+config UDX_HTTP
+	bool "support udx http service"
+	depends on DPA_DRIVERS
+	default n
+	help
+		Unified Datapath Extension HTTP Service
+
+config UDX_SERVER
+	bool "support udx server"
+	depends on DPA_DRIVERS
+	default n
+	help
+		Unified Datapath Extension Server
+
+config UDX_BUFFER
+	bool "support udx buffer"
+	depends on DPA_DRIVERS
+	default n
+	help
+		Unified Datapath Extension Buffer
+
+config UDX_DFS
+	bool "support udx dfs"
+	depends on DPA_DRIVERS
+	default n
+	help
+		Unified Datapath Extension DFS
+
+config UDX_DSS
+	bool "support udx dss"
+	depends on DPA_DRIVERS
+	default n
+	help
+		Unified Datapath Extension DSS

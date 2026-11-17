@@ -1,0 +1,1 @@
+obj-$(CONFIG_WATCH_IOMCU_DUMP_TIME) += mcudump_sync.o

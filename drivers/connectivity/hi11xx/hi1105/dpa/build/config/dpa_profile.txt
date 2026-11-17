@@ -1,0 +1,5917 @@
+cpuidle_loop:1086764:1086764
+ 9: 132
+ 11: record_idle_step:210
+  2: 63
+  3: bsp_get_slice_value:66
+   2: bsp_get_slice_value_u64:66
+    4: 66
+ 12: 1557 DRB_TaskIrqLock:1385 OsHwiDispatcher:9 HwiCommonHandle:8 OsTskContextLoad:7 _IrqVector:2
+ 13: record_idle_step:67
+  3: bsp_get_slice_value:67
+   2: bsp_get_slice_value_u64:67
+    4: 67
+ 14: cpuidle_prepare:3428
+  3: 122
+  4: 3306 mdrv_spin_unlock_irqrestore:2322 cpuidle_time_rec_enter:903
+ 15: record_idle_step:315
+  2: 254
+  3: bsp_get_slice_value:61
+   2: bsp_get_slice_value_u64:61
+    4: 61
+ 16: wake_lock_can_sleep:12570
+  3: 8813 SRE_SplIrqLock:8697
+  4: wake_lock_get_cnt:1824
+   5: 1824
+  5: 86
+  14: 1780 mdrv_spin_unlock_irqrestore:1718
+ 23: 1063248
+ 25: record_idle_step:86
+  2: 51
+  3: bsp_get_slice_value:35
+   2: bsp_get_slice_value_u64:35
+    4: 35
+ 26: cpuidle_complete:2836
+  3: 112
+  4: 2724 cpuidle_time_rec_exit:1316 mdrv_spin_unlock_irqrestore:1294
+ 27: record_idle_step:207
+  2: 107
+  3: bsp_get_slice_value:46
+   2: bsp_get_slice_value_u64:46
+    4: 46
+ 28: 833 mdrv_sched_unlock:731
+ 29: record_idle_step:1275
+  2: 1207
+  3: bsp_get_slice_value:68
+   2: bsp_get_slice_value_u64:68
+    4: 68
+OsIdleTaskExe:1074273:1074273
+ 6: 1074273 cpuidle_loop:1068372 OsTskContextLoad:2473 HwiCommonHandle:1403 OsHwiDispatcher:1255 _IrqVector:770
+dra_free:228160:228160
+ 1: 2865
+ 7: 35949
+ 13: 8573
+ 18: 637
+ 19: dra_unmap_tab:85927
+  5: 716
+  6: 233
+  13: 465
+  21: 2750
+  22: 203
+  23: 426
+  24: dra_free_tcpip:68682
+   4: osl_get_core_id:59439
+    2: mdrv_get_core_id:59439
+     2: OsGetCoreID:59439
+      3: 59439
+   5: 831
+   10: dra_free_mem:8412
+    7: mdrv_int_lock:1115
+     4: 243
+     5: 657
+     6: 215
+    8: 2013
+    9: 31
+    10: 221
+    16: 873
+    17: 1111
+    18: 1128
+    26: 1495
+    27: mdrv_int_unlock:425
+     4: 425
+  26: 2623
+  27: dra_free_own:9829
+   5: osl_get_core_id:442
+    2: mdrv_get_core_id:442
+     2: OsGetCoreID:442
+      3: 442
+   14: 457
+   18: 1331
+   20: dra_free_mem:7362
+    7: mdrv_int_lock:642
+     4: 233
+     5: 209
+     6: 200
+    8: 2117
+    10: 202
+    16: 924
+    17: 1389
+    18: 1131
+    26: 545
+    27: mdrv_int_unlock:412
+     4: 412
+   119: 237
+ 21: 10003 dra_free_msg_buf:9346 _IrqVector:2 HwiDispatch:2 OsHwiDispatcher:2 OsHwiTail:1 OsHwiRet:1
+ 23: 15167 dra_free_dpa_buf:14166
+ 28: 21918 DRBI_FusionTaskSelf:21076 OsHwiRet:1 _IrqVector:1
+ 29: 788
+ 32: osl_get_core_id:763
+  2: mdrv_get_core_id:763
+   2: OsGetCoreID:763
+    3: 763
+ 35: 2291
+hmac_host_ring_tx:183318:183318
+ 0: 243
+ 1: 1200
+ 9: 460
+ 12: oal_sbuf_cb:1479
+  2: 1479 get_userdata:1251 _IrqVector:1
+ 13: dpe_get_tx_tid_info:32348
+  2: dpe_wlan_user_get:30620
+   6: 1139
+   11: 29481
+  3: 704
+  4: 518
+  9: dpe_wlan_is_multi_user_not_support_ampdu:506
+   3: 506
+ 19: oal_spin_lock_irq_save:23882
+  2: 23882 SRE_SplIrqLock:23626
+ 21: oal_atomic_read:272
+  2: dpa_atomic_read:272
+   2: 272
+ 28: hmac_tx_ring_alloced:8156
+  2: hal_host_tx_ring_alloced:2056
+   2: 2056
+  444: 244
+ 33: dpe_tx_ring_switch_enabled:466
+  2: 466
+ 34: 3071 hmac_tid_ring_switch_list_enqueue:2753
+ 37: 672
+ 38: oal_netbuf_next:4741
+  2: 4741 get_sbuf_next:972
+ 39: 80104 hmac_tx_ring_push_msdu:78791
+ 59: 14315 hmac_host_ring_tx_suspend:10675
+ 61: oal_spin_unlock_irq_restore:7311
+  2: 7311 mdrv_spin_unlock_irqrestore:6598
+ 63: 1417
+gso_process_bd:175122:175122
+ 0: 199
+ 1: 681
+ 4: 241
+ 17: 457
+ 19: 540
+ 25: 1443
+ 30: 452
+ 31: 1014
+ 35: 446
+ 39: 999
+ 40: gso_main_process:94979
+  4: 94979 gso_linearize_and_csum:92719 OsHwiRet:260 OsHwiDispatcher:252 HwiDispatch:178 _IrqVector:144 HwiCommonHandle:97 OsHwiTail:45
+ 44: bsp_dmi_msg_free:70952
+  8: 2469
+  9: 638
+  14: bsp_dra_shm_cache_invalid:27017
+   4: 27017 DRB_DcacheInv:24890 DRBI_FusionCacheInv:1696 OsHwiRet:4 OsHwiDispatcher:3 HwiDispatch:2 OsHwiTail:2 _IrqVector:2 HwiCommonHandle:1
+  15: bsp_dra_free_msg:40828
+   3: 40828 dra_free:40160 OsHwiRet:65 OsHwiDispatcher:62 _IrqVector:38 HwiDispatch:25 HwiCommonHandle:20 OsHwiTail:13
+ 45: 1838
+ 50: 881
+gso_linearize_and_csum:129725:129725
+ 0: 185
+ 1: 1140
+ 10: 1329
+ 16: 15380
+ 23: gso_get_header_len:9028
+  9: spl_ntohs:6131
+   2: spl_htons:6131
+    2: htons_asm:6131
+     3: 6131
+  11: 426
+  12: 218
+  13: 571
+  33: 847
+ 29: 2288
+ 30: 178
+ 33: 2941
+ 36: 626
+ 37: 1622
+ 43: 786
+ 44: 37805
+ 50: 406
+ 57: 5970
+ 58: 3284
+ 59: 215
+ 63: 773
+ 64: 3284
+ 65: 39395 _gso_linearize_and_csum:36797 OsHwiRet:74 OsHwiDispatcher:55 HwiDispatch:27 _IrqVector:26 OsHwiTail:20 HwiCommonHandle:7
+ 66: 1978
+ 82: 240
+ 91: 872
+dpe_rx_ring_data_event_async:129247:129247
+ 0: 60
+ 1: 410
+ 7: 10
+ 11: 223
+ 14: 402
+ 20: 92
+ 21: oal_netbuf_list_empty:485
+  2: 485 sbuf_queue_empty:369
+ 26: oal_netbuf_list_empty:19
+  2: 19 sbuf_queue_empty:4
+ 30: oal_netbuf_list_head_init_nolock:15
+  2: 15 sbuf_queue_head_init:11
+ 32: dpe_rx_mpdu_que_pop_designate_list:22831
+  4: 1
+  8: oal_netbuf_list_empty:8
+   2: 8 sbuf_queue_empty:5
+  10: hal_host_rx_mpdu_que_pop:3
+   7: oal_netbuf_queue_splice_tail_init:3
+    2: 3 sbuf_queue_splice_tail_init:2
+  13: oal_netbuf_list_empty:9
+   2: 9 sbuf_queue_empty:8
+  17: oal_netbuf_next:590
+   2: 590 get_sbuf_next:205
+  18: 19356
+  23: oal_netbuf_delist_nolock:1652
+   2: oal_netbuf_delist_head_nolock:1652
+    2: 1652 sbuf_dequeue:1520
+  25: oal_netbuf_list_tail_nolock:933
+   2: oal_netbuf_addlist_tail_nolock:933
+    2: 933 sbuf_enqueue_tail:755 OsHwiDispatcher:1
+ 34: oal_netbuf_list_empty:25
+  2: 25 sbuf_queue_empty:6
+ 42: dpe_rx_data_comp_dma_init:1251
+  3: 3
+  6: 1
+  7: 163
+  9: 80
+  12: 159
+  13: oal_netbuf_list_head_init_nolock:845
+   2: 845 sbuf_queue_head_init:353 OsHwiTail:1
+ 43: 16615 dpe_dma_cpy_list:16570 OsHwiRet:3 _IrqVector:1 OsHwiDispatcher:1 HwiDispatch:1 OsHwiTail:1
+ 54: 5
+ 61: dpe_rx_data_dma_to_reorder:84256
+  0: 15083
+  11: oal_netbuf_list_head_init_nolock:13
+   2: 13 sbuf_queue_head_init:3
+  12: 377
+  13: oal_netbuf_list_empty:604
+   2: 604 sbuf_queue_empty:496
+  16: oal_netbuf_list_len:806
+   2: 806 sbuf_queue_len:342
+  18: oal_netbuf_peek:2163
+   2: oal_netbuf_head_next:2163
+    2: 2163 sbuf_peek:649
+  25: oal_netbuf_tail:1284
+   2: oal_netbuf_tail_next:851
+    2: 851 sbuf_peek_tail:703
+   5: 274 set_sbuf_next:145
+  27: oal_netbuf_list_head_init_nolock:1810
+   2: 1810 sbuf_queue_head_init:1105
+  29: 301
+  30: 55283 hmac_host_rx_mpdu_proc:52274 _IrqVector:11 OsHwiRet:10 OsHwiDispatcher:7 HwiDispatch:2 HwiCommonHandle:1
+  36: oal_netbuf_list_len:24
+   2: 24 sbuf_queue_len:4
+  37: hmac_rx_rpt_netbuf:5313
+   3: 5313 hmac_rx_enqueue_list:5171 OsHwiDispatcher:1 HwiCommonHandle:1 _IrqVector:1 HwiDispatch:1
+ 63: 56
+ 66: 2
+ 69: hal_rx_data_need_scheduled:783
+  8: mdrv_get_core_id:2
+   2: OsGetCoreID:2
+    3: 2
+  9: 5
+  12: oal_mdrv_int_lock:387
+   2: mdrv_int_lock:387
+    4: 385
+    6: 2
+  13: 4
+  16: 4
+  18: 352
+  23: 8
+  30: 2
+  32: 16
+  33: oal_mdrv_int_unlock:3
+   2: mdrv_int_unlock:3
+    4: 3
+ 74: 27 DRBI_FiberQueSend:22
+ 83: 143
+_gso_linearize_and_csum:128663:128663
+ 0: 1225
+ 3: 1096
+ 12: 430
+ 17: 25024 gso_build_header:23660 OsHwiDispatcher:104 OsHwiRet:77 _IrqVector:46 HwiCommonHandle:34 HwiDispatch:28 OsHwiTail:15
+ 24: gso_build_pseudo_header:9973
+  11: spl_ntohs:1814
+   2: spl_htons:1814
+    2: htons_asm:1814
+     3: 1814
+  12: spl_ipv4_psd_chksum:6040
+   12: 405
+   13: 650
+   15: 386
+   19: spl_ntohs:648
+    2: spl_htons:648
+     2: htons_asm:438
+      3: 438
+     3: 210
+   22: calculate_16b_sum:3717
+    7: 1265
+    11: 2075
+    21: 377
+  17: 192
+  25: 207
+  31: 221
+  32: 229
+ 32: gso_test_print_seq:1226
+  2: 1226
+ 33: gso_tmp_print_header:4701
+  6: 3595
+  7: 1106
+ 34: memcpy_s:8279
+  2: 2112
+  3: 6167 memcpy:5759 OsHwiRet:6 OsHwiDispatcher:3 _IrqVector:2 OsHwiTail:1 HwiDispatch:1
+ 42: gso_build_gatherlist:12143
+  4: 11899 bsp_ficc_dma_cd_alloc_and_fill:11210 OsHwiRet:89 OsHwiDispatcher:46 _IrqVector:28 HwiDispatch:26 OsHwiTail:12 HwiCommonHandle:8
+  5: 244
+ 53: 241
+ 54: gso_build_gatherlist:11245
+  4: 11046 bsp_ficc_dma_cd_alloc_and_fill:10562 OsHwiRet:16 OsHwiDispatcher:16 _IrqVector:13 HwiCommonHandle:12 HwiDispatch:8 OsHwiTail:1
+  5: 199
+ 55: 1483
+ 60: 398
+ 84: 838
+ 92: gso_build_gatherlist:11738
+  4: 11459 bsp_ficc_dma_cd_alloc_and_fill:10678 OsHwiRet:32 HwiDispatch:27 OsHwiDispatcher:21 _IrqVector:11 HwiCommonHandle:10 OsHwiTail:7
+  10: 279
+ 93: 3328
+ 94: 242
+ 100: 196
+ 109: 517
+ 111: 30055 gso_build_tx_bd_and_cb:28866 OsHwiDispatcher:165 OsHwiRet:134 _IrqVector:58 HwiDispatch:37 HwiCommonHandle:22 OsHwiTail:15
+ 112: 1239
+dmi_msg_recv_proc:128555:128555
+ 0: 600
+ 1: 1705
+ 3: 147
+ 6: 259
+ 10: 246
+ 14: dmi_msg_recv_cbk:116927
+  3: 884
+  9: bsp_ficc_chn_recv_raw:34103
+   3: ficc_channel_get_by_hdl:2692
+    6: 2692
+   5: 696
+   10: ficc_read_payload_raw:30715
+    7: 1961
+    11: 1712
+    12: ipipe_used_space_get:2521
+     3: 709
+     4: 75
+     5: 1737
+    13: 666
+    21: ipipe_get_from_ringbuf:17383
+     3: 900
+     5: 207
+     6: 185
+     9: cache_sync:209
+      2: 209
+     10: 8888
+     23: 586
+     26: 1152
+     27: memcpy_s:4668
+      2: 2246
+      3: 2422 memcpy:2044 OsHwiDispatcher:1
+     31: 588
+    23: 415
+    24: ficc_ipipe_rptr_update:4425
+     2: writel:2875
+      2: cache_sync:2555
+       2: 2555
+      3: writel_relaxed:320
+       2: 320
+     3: cache_sync:1296
+      2: 1296
+    25: 1196
+  10: 13606
+  17: 424
+  18: 799
+  23: bsp_dra_shm_cache_invalid:23787
+   3: 583
+   4: 23204 DRB_DcacheInv:21241 DRBI_FusionCacheInv:1560 OsHwiRet:3 _IrqVector:1 OsHwiDispatcher:1
+  25: 407
+  26: 42917 dmi_service_msg_read_cb:42160 OsHwiRet:56 OsHwiDispatcher:54 HwiDispatch:26 _IrqVector:20 OsHwiTail:7 HwiCommonHandle:6
+ 16: 742
+ 18: 6135 bsp_ficc_channel_int_en:5041 OsHwiRet:4 OsHwiDispatcher:4 _IrqVector:3 HwiDispatch:2 HwiCommonHandle:1 OsHwiTail:1
+ 25: 625
+ 29: 1169
+hmac_host_rx_mpdu_proc:122837:122837
+ 2: 856
+ 3: 415
+ 6: dpe_is_support_rx_dma_async:264
+  2: 264
+ 18: hal_host_rx_get_mpdu_link:36721
+  2: 1745
+  3: hal_rx_get_mpdu_link:34282
+   2: oal_sbuf_cb:536
+    2: 536 get_userdata:428 _IrqVector:1
+   4: mac_chip_get_hal_dev_num:11980
+    2: 11980
+   9: 96
+   11: 21670 hal_get_host_device:3223 _IrqVector:2 OsHwiDispatcher:1
+  836: 128
+ 19: 217
+ 25: hmac_host_rx_proc_dev_routine:43846
+  7: hmac_host_rx_mpdu_build_cb:6263
+   5: 1142
+   9: 130
+   10: oal_netbuf_next:459
+    2: 459 get_sbuf_next:245 OsHwiDispatcher:1
+   11: oal_sbuf_cb:645
+    2: 645 get_userdata:220
+   16: 567
+   18: hmac_rx_netbuf_check_status:239
+    2: 116
+    3: 123
+   23: 519
+   24: 757
+   27: 180
+   30: hmac_rx_netbuf_check_cb_is_valid:928
+    2: 928
+   35: 313
+   38: 105
+   378: 279
+  10: hmac_host_build_rx_context:33250
+   3: oal_sbuf_cb:831
+    2: 831 get_userdata:722
+   10: 5319 dpe_wlan_vap_get:4461 HwiDispatch:2 OsHwiRet:2 OsHwiDispatcher:1
+   16: dpe_wlan_host_rx_lut_get_user:23642
+    4: 623
+    7: 1047
+    8: 21972 dpe_wlan_user_get:21686 OsHwiRet:5 _IrqVector:3 OsHwiDispatcher:3 OsHwiTail:2 HwiDispatch:2 HwiCommonHandle:1
+   20: hmac_host_rx_update_cb_user_idx:3057
+    5: 209
+    9: 100
+    11: oal_netbuf_next:761
+     2: 761 get_sbuf_next:208
+    12: oal_sbuf_cb:436
+     2: 436 get_userdata:326
+    13: 1105
+   21: 93
+   22: 105
+   23: 106
+   24: 97
+  13: hmac_host_rx_pre_abnormal_filter:4333
+   11: 211
+   21: hmac_is_hal_vap_valid:2079
+    4: 411
+    9: dpe_mac_chip_get_hal_max_vap_num:1135
+     2: 1135
+    15: 114
+    16: 106
+   22: hmac_is_tid_valid:739
+    9: mac_get_frame_type_and_subtype:209
+     2: 209
+    10: 105
+    14: 425
+   34: hmac_host_rx_filter_abnormal_amsdu:1196
+    5: 1196
+ 35: hmac_rx_route_print:319
+  2: 319
+ 36: 39588 hmac_rx_common_proc:38986 OsHwiRet:15 OsHwiDispatcher:6 HwiDispatch:4 HwiCommonHandle:3 _IrqVector:3 OsHwiTail:1
+ 39: 498
+dpe_wlan_xmit_list_from_acpu:117214:117214
+ 1: 1384
+ 7: 183
+ 10: oal_netbuf_list_head_init_nolock:1301
+  2: 1301 sbuf_queue_head_init:294
+ 11: 39772
+ 12: oal_netbuf_build:246
+  2: 246
+ 16: oal_sbuf_cb:827
+  2: 827 get_userdata:584
+ 17: 4977 memcpy_s:3418
+ 19: hal_dpe_wlan_xmit_netbuf_init_msdu_dscr:224
+  6: 224
+ 20: 6318 dpe_tx_msdu_info_clear_check:6002
+ 21: oal_netbuf_addlist_tail_nolock:3471
+  2: 3471 sbuf_enqueue_tail:1653 _IrqVector:1
+ 23: 14991 dpe_wlan_xmit_from_acpu_proc:14733 _IrqVector:1
+ 24: 526
+OsFiberActiveDispatcher:112808:112808
+ 0: 90
+ 1: 401
+ 8: 58
+ 10: 120
+ 12: OsGetRMB:236
+  3: 236
+ 13: 522
+ 17: OsFiberRdyPop:1637
+  8: 66
+  9: 388
+  10: 62
+  12: 80
+  13: 300
+  14: 72
+  15: 70
+  16: OsFiberQueGetNextPos:59
+   2: 59
+  18: 207
+  21: 269
+ 18: OsFiberGetCb:61
+  2: 61
+ 19: 71
+ 20: 130
+ 21: 3139 dump_arch_fiber_entry_hook:1846
+ 23: OsFiberSwitchHookCaller:1336
+  8: 1161
+  9: 175
+ 24: OsFiberHandleOne:26967
+  4: 991
+  12: OsIntUnLock:87
+   2: DRB_IntUnlock:87
+    2: ArchUnlockInterrupt:87
+     5: 87
+  13: OsFiberHandler:25629
+   2: 25629 dmi_msg_recv_proc:19154 dma_done_event:5062 hmac_rx_comp_thread:837 timer_fiber:172 hmac_tx_comp_thread:66 OsHwiRet:17 HwiDispatch:8 OsHwiDispatcher:7 _IrqVector:6 dpe_rx_data_thread:2 sms_gro_process_rx_queue:1
+  14: OsIntLock:260
+   2: DRB_IntLock:260
+    2: ArchLockInterrupt:260
+     4: 127
+     5: 74
+     6: 59
+ 26: 149
+ 30: OsFiberDispatcher:73087
+  10: OsGetRMB:73
+   3: 73
+  11: 2814
+  12: OsFiberRdyPop:5583
+   8: 237
+   9: 1459
+   10: 242
+   12: 231
+   13: 1025
+   14: 255
+   15: 225
+   16: OsFiberQueGetNextPos:250
+    2: 250
+   18: 714
+   21: 732
+  13: OsFiberGetCb:611
+   2: 611
+  14: 232
+  15: OsFiberSwitchHookCaller:948
+   8: 483
+   9: 465
+  16: OsFiberHandleOne:61754
+   4: 241
+   12: OsIntUnLock:275
+    2: DRB_IntUnlock:275
+     2: ArchUnlockInterrupt:275
+      5: 275
+   13: OsFiberHandler:59549
+    2: 59549 dmi_msg_recv_proc:37165 dma_done_event:5104 bsp_dmi_chn_recv:4975 gso_process_bd_fiber:3639 hmac_tid_schedule_thread:3342 dpe_rx_data_thread:1490 hmac_tx_comp_thread:1171 hmac_rx_comp_thread:1092 timer_fiber:226 OsHwiRet:214 OsHwiDispatcher:139 _IrqVector:103 HwiDispatch:70 OsHwiTail:34 HwiCommonHandle:30 sms_gro_complete_timeout:2
+   14: OsIntLock:1689
+    2: DRB_IntLock:1689
+     2: ArchLockInterrupt:1689
+      4: 1193
+      5: 248
+      6: 248
+  18: 517
+  22: OsGetRMB:264
+   3: 264
+ 31: 276
+ 32: 82
+ 33: OsFiberSwitchHookCaller:332
+  8: 188
+  9: 144
+ 34: 3651 dump_arch_fiber_exit_hook:2096
+ 35: 401
+hmac_tx_complete_tid_ring_process:108881:108881
+ 0: 215
+ 1: 10
+ 4: 1
+ 10: hmac_tx_ring_rw_ptr_check:385
+  3: 111
+  5: hal_tx_rw_ptr_compare:239
+   2: 3
+   6: 222
+   7: 11
+   9: 3
+  6: hal_tx_rw_ptr_compare:30
+   6: 25
+   7: 4
+   9: 1
+  8: 5
+ 18: hmac_tx_complete_msdu_info_process:107106
+  9: oal_netbuf_list_head_init_nolock:61
+   2: 61 sbuf_queue_head_init:60
+  11: hal_tx_rw_ptr_compare:2198
+   0: 12
+   2: 268
+   6: 1918
+  12: hmac_tx_complete_netbuf_process:73652
+   4: hmac_tx_ring_get_netbuf:2033
+    5: 738
+    10: 1295
+   10: oal_sbuf_cb:2628
+    2: 2628 get_userdata:2033
+   20: hmac_tid_ring_tx_opt:254
+    2: oal_atomic_read:254
+     2: dpa_atomic_read:254
+      2: 254
+   21: hmac_tx_ring_release_netbuf_info:59843
+    6: 37494
+    9: hmac_tx_msdu_update_free_cnt:22349
+     2: oal_atomic_dec:5711
+      2: dpa_atomic_dec:5711
+       2: dpa_atomic_sub:5711
+        4: 5711
+     3: oal_atomic_dec:16638
+      2: dpa_atomic_dec:16638
+       2: dpa_atomic_sub:16638
+        4: 16638
+   22: oal_netbuf_list_tail_nolock:8206
+    2: oal_netbuf_addlist_tail_nolock:8206
+     2: 8206 sbuf_enqueue_tail:2055
+  16: hmac_tx_reset_msdu_info:2547
+   2: 516
+   3: hal_host_tx_reset_msdu_ring:2031
+    2: 2031
+  17: hmac_tx_msdu_ring_inc_release_ptr:6005
+   2: 240
+   4: hmac_tx_rw_ptr_inc:2732
+    2: 1742
+    4: 990
+  23: hal_host_clear_netbuf_list:22643
+   6: oal_netbuf_delist_nolock:4900
+    2: oal_netbuf_delist_head_nolock:4900
+     2: 4900 sbuf_dequeue:4201
+   7: oal_netbuf_free:17539
+    2: 17539 sbuf_free:15702 free_sbuf:265
+ 20: hmac_host_ring_tx_resume:937
+  7: dpe_vap_get_net_device:272
+   4: dpe_wlan_vap_get:18
+    3: 18
+   8: 252
+   11: 2
+  8: 11
+  12: hmac_ring_tx_resume_th:647
+   2: hal_host_tx_tid_ring_depth_get:453
+    2: 440
+    3: 13
+  13: oal_atomic_read:2
+   2: dpa_atomic_read:2
+    2: 2
+ 30: 1
+ 31: hmac_tx_mode_h2d_switch_process:185
+  3: oal_atomic_read:184
+   2: dpa_atomic_read:184
+    2: 184
+ 33: 5
+ 82: 20
+hmac_tx_ring_push_msdu:103637:103637
+ 1: 1265
+ 2: hmac_tx_set_msdu_info_to_ring:57850
+  5: hmac_tid_ring_full:1026
+   2: 254
+   3: 251
+   5: 521
+  9: hal_host_tx_get_devva:20722
+   12: 478
+   25: pcie_if_hostca_to_devva:13295
+    2: hcc_bus_slave_address_switch:13295
+     7: 720
+     11: 1451
+     15: 11124 oal_pcie_slave_address_switch:10904
+   26: hal_host_tx_get_msdu_dscr_len:6708
+    2: 5063 sbuf_data_iova:1520
+    3: 1645 mp17c_host_tx_get_msdu_dscr_len:1210
+  14: hmac_tx_set_msdu_info:27728
+   3: oal_sbuf_cb:1959
+    2: 1959 get_userdata:484
+   4: 246
+   7: hmac_tx_set_msdu_info_from_netbuf:9206
+    3: 745
+    5: oal_netbuf_len:701
+     2: 701 sbuf_len:480
+    6: 1165
+    14: 216
+    19: 607
+    22: 1469
+    24: 3564
+    30: 739
+   8: 4999
+   10: hal_host_tx_set_ddr_ring:11053
+    3: 477
+    4: 10576 mp17c_host_tx_set_ddr_ring:8855
+   11: 265
+  15: hmac_record_netbuf_addr:1661
+   2: 907
+   4: 754
+  16: hmac_tx_msdu_ring_inc_write_ptr:6713
+   2: 257
+   4: hmac_tx_rw_ptr_inc:4809
+    2: 2903
+    4: 1906
+ 6: hmac_tx_ring_push_msdu_post_proc:43849
+  5: hmac_tx_update_statistics:43849
+   2: oal_atomic_inc:19532
+    2: dpa_atomic_inc:19532
+     2: dpa_atomic_add:19532
+      4: 19532
+   3: oal_atomic_inc:2983
+    2: dpa_atomic_inc:2983
+     2: dpa_atomic_add:2983
+      4: 2983
+   4: oal_atomic_inc:11834
+    2: dpa_atomic_inc:11834
+     2: dpa_atomic_add:11834
+      4: 11834
+   5: 9500
+ 9: 673
+build_sbuf:101249:101249
+ 1: 2457
+ 3: sbuf_malloc_rx_zero_copy:98117
+  3: 2928
+  6: rx_sbuf_alloc:81904
+   4: stack_alloc_sbuf:81904
+    5: bsp_dra_alloc:26672
+     2: dra_alloc:26672
+      13: osl_get_core_id:572
+       2: mdrv_get_core_id:572
+        2: OsGetCoreID:572
+         3: 572
+      25: dra_alloc_mem:7649
+       7: mdrv_int_lock:3178
+        4: 220
+        5: 234
+        6: 2724
+       8: 1469
+       14: 1089
+       15: 461
+       16: 464
+       17: writel_relaxed:13
+        2: 13
+       19: 541
+       20: mdrv_int_unlock:219
+        4: 219
+      26: 692
+      27: 1 bsp_record_hash:1
+      30: 6104 DRBI_FusionTaskSelf:5881
+      31: 214
+      34: dra_dbg_cnt_alloc:9949
+       0: 832
+       2: dra_get_dbg_cnt_idx:8475
+        2: OsGetCoreID:829
+         3: 829
+        5: 5244
+        8: 2402
+       3: 642
+    7: 1 bsp_record_hash:1
+    16: memset_s:54541
+     3: 54541 memset:53797 _IrqVector:1
+    18: 236
+    19: 224
+    20: sbuf_refcnt_set:230
+     2: 230
+  11: 349
+  12: 195
+  13: 458
+  14: 513
+  15: 8259
+  16: 2769
+  17: 231
+  20: 511
+ 8: 675
+default_sbuf_free_cb:98341:98341
+ 1: 1675
+ 2: 984
+ 3: 688
+ 4: stack_maa_free:92659
+  3: free_data:92659
+   2: mdrv_dra_free:92659
+    2: bsp_dra_free:92659
+     2: 92659 dra_free:91916
+ 5: 241
+ 8: 1421
+ 18: 673
+hmac_rx_common_proc:93597:93597
+ 1: 1382
+ 2: hmac_host_rx_static_proc:17047
+  2: 123
+  3: 119
+  6: oal_netbuf_next:747
+   2: 747 get_sbuf_next:545
+  7: hmac_stat_vap_rx_netbuf:2974
+   2: dpe_wlan_vap_stat_get:946
+    2: 777
+    6: 169
+   8: 778
+   9: oal_netbuf_len:928
+    2: 928 sbuf_len:194
+  8: hmac_stat_device_rx_msdu:2247
+   2: dpe_wlan_device_stat_get:111
+    2: 111
+   3: 126
+   4: 791
+  9: oal_sbuf_cb:329
+   2: 329 get_userdata:205
+  10: dpe_wlan_stat_user_rx_netbuf:2649
+   2: dpe_wlan_user_stat_get:310
+    2: 190
+    7: 120
+   8: 752
+   9: oal_netbuf_len:1213
+    2: 1213 sbuf_len:220
+  13: 1473
+  14: oal_atomic_inc:5394
+   2: dpa_atomic_inc:5394
+    2: dpa_atomic_add:5394
+     4: 5394
+ 3: hmac_rx_proc_feature:74117
+  0: 96
+  2: 109
+  4: hmac_host_rx_feature_filter:15480
+   2: 746 get_userdata:619 OsHwiDispatcher:1
+   8: oal_sbuf_cb:218
+    2: 218
+   12: 450
+   18: hmac_rx_qos_data_need_drop:5631
+    0: 133
+    2: 109
+    9: hmac_rx_is_qos_data_frame:719
+     2: mac_get_frame_type_and_subtype:719
+      2: 719
+    12: 225
+    13: 368
+    19: dpe_get_tid_ba_info:2335
+     2: dpe_wlan_user_get:1373
+      6: 718
+      11: 655
+     3: 320
+     4: 429
+     9: dpe_wlan_is_multi_user_not_support_ampdu:213
+      3: 213
+    23: 118
+    24: 1402
+   22: hmac_rx_netbuf_get_ether_type:8260
+    3: oal_netbuf_len:877
+     2: 877 sbuf_len:412
+    4: 433 get_userdata:224
+    5: dpe_get_rx_netbuf_hdr_addr:6311
+     4: hal_host_get_rx_msdu_dscr_len:6311
+      2: 1136
+      3: 5175 mp17c_host_get_rx_msdu_dscr_len:5066 OsHwiRet:3 _IrqVector:3 OsHwiDispatcher:2
+    11: mac_rx_data_get_ether_type:639
+     4: 560
+     17: 79
+   23: hmac_11i_ether_type_filter:96
+    2: 96
+  8: 860
+  24: hmac_rx_defrag:1604
+   7: 190
+   11: oal_sbuf_cb:889
+    2: 889 get_userdata:309
+   12: 525
+  31: oal_sbuf_cb:338
+   2: 338 get_userdata:153 OsHwiRet:1
+  34: hmac_rx_context_prepare_msdu_list_to_eth:8843
+   3: 67
+   7: 77
+   11: oal_netbuf_list_head_init_nolock:434
+    2: 434 sbuf_queue_head_init:201
+   12: 212
+   13: oal_netbuf_next:423
+    2: 423 get_sbuf_next:206
+   14: oal_sbuf_cb:571
+    2: 571 get_userdata:363
+   15: 836
+   26: 301
+   29: oal_netbuf_list_tail_nolock:1541
+    2: oal_netbuf_addlist_tail_nolock:1541
+     2: 1541 sbuf_enqueue_tail:1333
+   33: oal_netbuf_list_empty:2348
+    2: 2348 sbuf_queue_empty:1521 OsHwiTail:1
+   39: oal_netbuf_tail:1182
+    2: oal_netbuf_tail_next:504
+     2: 504 sbuf_peek_tail:436
+    5: 599 set_sbuf_next:507 OsHwiDispatcher:1
+   40: oal_netbuf_peek:764
+    2: oal_netbuf_head_next:764
+     2: 764 sbuf_peek:517
+  39: dpe_rx_get_eth_da:2039
+   3: dpe_get_rx_netbuf_hdr_addr:2039
+    4: hal_host_get_rx_msdu_dscr_len:2039
+     2: oal_sbuf_cb:459
+      2: 459 get_userdata:316
+     3: 656 mp17c_host_get_rx_msdu_dscr_len:458
+  42: 955
+  44: hmac_rx_mcast_frame:1
+   4: dpe_rx_set_delivery_sbuf_to_host:1
+    4: hmac_rx_skb_netif_rpt:1
+     21: 1 hmac_rx_get_input_netbuf_from_waitlist:1
+  58: hmac_rx_proc_netbuf:42974
+   5: 77
+   7: hal_host_rx_tcp_udp_checksum:636
+    2: 636
+   12: oal_netbuf_list_head_init_nolock:757
+    2: 757 sbuf_queue_head_init:576
+   13: 19240 hmac_rx_proc_reorder:18849 OsHwiRet:6 OsHwiDispatcher:4 _IrqVector:3 OsHwiTail:2 HwiDispatch:2
+   18: hmac_rx_context_netbuf_add_to_list:185
+    5: 76
+    8: 109
+   21: oal_netbuf_list_head_init_nolock:397
+    2: 397 sbuf_queue_head_init:304
+   22: 181
+   27: oal_netbuf_queue_splice_tail_init:1897
+    2: 1897 sbuf_queue_splice_tail_init:1656 HwiDispatch:1 OsHwiRet:1
+   29: oal_netbuf_list_len:1101
+    2: 1101 sbuf_queue_len:674
+   31: 93
+ 6: 1051
+hmac_tx_complete_process_tid_tx_list:89345:89345
+ 1: 52
+ 5: oal_spin_lock_irq_save:2453
+  2: 2453 SRE_SplIrqLock:2444
+ 6: hmac_tx_complete_process_tid_tx_list_nolock:86208
+  2: 876 dpe_wlan_user_get:850
+  7: hmac_tx_complete_tid_info_process_nolock:85332
+   2: hmac_tx_ring_alloced:901
+    2: hal_host_tx_ring_alloced:857
+     2: dpa_atomic_read:13
+      2: 13
+     3: 700 mp17c_host_tx_ring_alloced:690
+   9: hmac_tx_complete_update_ring_rptr:1220
+    2: 10
+    5: 1210 hmac_tx_complete_update_mlink_ring_rptr:1208
+   22: 82940 hmac_tx_complete_tid_ring_process:82933
+   24: hmac_tid_sche_allowed:161
+    2: oal_netbuf_list_len:158
+     2: 158 sbuf_queue_len:6
+    3: oal_atomic_read:3
+     2: dpa_atomic_read:3
+      2: 3
+ 7: oal_spin_unlock_irq_restore:597
+  2: 597 mdrv_spin_unlock_irqrestore:521
+ 9: 35
+SRE_SplIrqLock:84819:84819
+ 7: OsIntLock:3053
+  2: DRB_IntLock:3053
+   2: ArchLockInterrupt:3053
+    4: 1308
+    5: 889
+    6: 856
+ 8: OsGetRunQueue:859
+  3: 859
+ 9: OsSplLock:25983
+  2: OsSplLockNoManage:25983
+   3: 799
+   5: 25184
+ 11: 52528
+hmac_tid_push_netbuf_list_to_host_ring_proc:80646:80646
+ 2: 54
+ 9: oal_netbuf_list_head_init_nolock:67
+  2: 67 sbuf_queue_head_init:60
+ 10: hmac_tid_push_netbuf_list_to_host_ring_before_dma:7718
+  7: oal_netbuf_delist_nolock:4814
+   2: oal_netbuf_delist_head_nolock:4814
+    2: 4814 sbuf_dequeue:4508 _IrqVector:3 HwiDispatch:1 OsHwiTail:1 OsHwiRet:1
+  16: oal_netbuf_list_tail_nolock:2679
+   2: oal_netbuf_addlist_tail_nolock:2679
+    2: 2679 sbuf_enqueue_tail:1758 OsHwiDispatcher:2 _IrqVector:1
+ 14: hmac_tid_push_netbuf_list_to_host_ring:72531
+  0: 24
+  5: 450 dpe_wlan_user_get:231 OsHwiDispatcher:1
+  12: oal_netbuf_delist_nolock:4669
+   2: oal_netbuf_delist_head_nolock:4669
+    2: 4669 sbuf_dequeue:4065 OsHwiDispatcher:1
+  13: 55979 hmac_host_ring_tx:54844 OsHwiDispatcher:55 OsHwiRet:53 _IrqVector:26 HwiDispatch:18 OsHwiTail:12 HwiCommonHandle:9
+  22: oal_atomic_read:264
+   2: dpa_atomic_read:264
+    2: 264
+  24: hal_host_tx_update_msdu_ring:592
+   2: 50
+   3: 542 mp17c_host_tx_update_msdu_ring:541
+  25: hmac_tx_reg_write_ring_info:1372
+   3: hmac_reg_write_enque_ring_info:1372
+    3: hmac_tx_reg_read_sw_wptr:51
+     3: 9
+     4: 3
+     5: 1
+     8: hal_host_tx_ring_get_ops:13
+      2: 7
+      3: mp17c_host_tx_ring_get_ops:4
+       12: mp17c_host_tx_get_sw_wptr:4
+        3: 4
+     295: 25
+    4: 4
+    6: hal_tx_rw_ptr_compare:392
+     2: 2
+     6: 390
+    10: hmac_tx_reg_write_wptr:925
+     2: 1
+     3: 2
+     6: 5
+     9: hal_host_tx_ring_update_ops:917
+      2: 9
+      3: 908 mp17c_host_tx_ring_update_ops:901
+  26: hmac_tx_sched_trigger:1627
+   2: dpe_wlan_vap_get:15
+    3: 15
+   4: hmac_tx_trig_device_softirq:1605
+    2: 23
+    7: 962 hal_get_host_device:684
+    8: 1
+    12: 619 hal_host_writel:615 _IrqVector:1
+  30: 1160
+  31: hal_host_tx_update_msdu_ring:1686
+   2: 66
+   3: 1620 mp17c_host_tx_update_msdu_ring:1610 OsHwiRet:1
+  32: hmac_tx_reg_write_ring_info:3318
+   3: hmac_reg_write_enque_ring_info:3318
+    3: hmac_tx_reg_read_sw_wptr:153
+     2: 16
+     3: 27
+     4: 13
+     5: 8
+     8: hal_host_tx_ring_get_ops:45
+      2: 28
+      3: mp17c_host_tx_ring_get_ops:7
+       12: mp17c_host_tx_get_sw_wptr:7
+        3: 7
+     295: 44
+    4: 19
+    6: hal_tx_rw_ptr_compare:889
+     2: 5
+     6: 884
+    10: hmac_tx_reg_write_wptr:2257
+     2: 6
+     3: 9
+     5: 9
+     6: 10
+     9: hal_host_tx_ring_update_ops:2223
+      2: 30
+      3: 2193 mp17c_host_tx_ring_update_ops:2178 OsHwiRet:1
+ 15: oal_netbuf_queue_splice_tail_init:179
+  2: 179 sbuf_queue_splice_tail_init:146
+ 24: 97
+gso_build_tx_bd_and_cb:80340:80340
+ 2: 1934
+ 10: 24198 bsp_dra_alloc:21706 OsHwiRet:93 OsHwiDispatcher:66 _IrqVector:37 HwiDispatch:32 HwiCommonHandle:18 OsHwiTail:9
+ 11: 216
+ 16: 8614 bsp_dra_map:5929 OsHwiRet:14 OsHwiDispatcher:7 _IrqVector:6 HwiCommonHandle:4 OsHwiTail:4 HwiDispatch:2
+ 22: 231
+ 23: 1949
+ 31: gso_build_tx_bd:19109
+  3: 664
+  4: 1693
+  5: memcpy_s:6480
+   2: 1482
+   3: 4998 memcpy:4717 OsHwiRet:27 OsHwiDispatcher:13 HwiDispatch:11 _IrqVector:7 HwiCommonHandle:4 OsHwiTail:2
+  9: 3099
+  10: 760
+  11: 2440
+  13: 1822
+  14: 408
+ 39: 255
+ 40: 1717
+ 41: 19525 bsp_ficc_dma_chn_gather_submit_async:18603 OsHwiRet:62 OsHwiDispatcher:38 _IrqVector:33 HwiDispatch:20 HwiCommonHandle:6 OsHwiTail:4
+ 44: 597
+ 47: 1132
+ 61: 863
+memset:75269:75269
+ 0: 75269
+OsHwiHookDispatcher:72407:72407
+ 1: 149
+ 12: 6783 dump_arch_int_entry_hook:4233
+ 15: OsHwiHandleActive:58685
+  16: 58522 ficc_localrecv_handler:26327 ficc_localsend_handler:16144 OsSchedHandleIpc:14551 oal_pcie_intx_ete_isr:857 timer_irq_callback:247 OsSmpSchIsr:53
+  21: 163
+ 20: 6380 dump_arch_int_exit_hook:3849
+ 22: 410
+hal_get_skb_from_ring_entry:63424:63424
+ 2: 575
+ 4: 178
+ 10: 101
+ 16: 440
+ 22: pcie_if_devva_to_hostca:5186
+  2: hcc_bus_slave_address_switch:5186
+   7: 771
+   11: 631
+   15: 3784 oal_pcie_slave_address_switch:3396
+ 23: 333
+ 29: oal_spin_lock_irq_save:9746
+  2: 9746 SRE_SplIrqLock:9416
+ 30: hal_alloc_list_delete_netbuf:23080
+  8: oal_netbuf_next:874
+   2: 874 get_sbuf_next:560
+  9: oal_sbuf_cb:447
+   2: 447 get_userdata:337
+  14: 824
+  16: oal_netbuf_delete_nolock:19980
+   2: 19980 sbuf_unlink:19697
+  20: 1
+ 31: oal_spin_unlock_irq_restore:23229
+  2: 23229 mdrv_spin_unlock_irqrestore:22898
+ 38: 456
+sms_tx_line_and_csum_cb:62663:62663
+ 1: 1051
+ 4: 413
+ 5: 419
+ 6: 1457
+ 8: 2087
+ 9: 406
+ 10: 429
+ 12: 1091
+ 14: 475
+ 18: 1246
+ 19: 49174 dpe_wlan_xmit_list_from_acpu:48975 OsHwiDispatcher:1
+ 20: 1004
+ 21: 162
+ 24: sms_tx_resch_process:1780
+  2: 281
+  5: 633
+  6: 60
+  8: 27
+  9: 779 DRBI_FiberQueSend:586
+ 40: 1469
+bsp_ficc_dma_chn_gather_submit_async:57643:57643
+ 0: 627
+ 2: 438
+ 9: 1230
+ 10: 7424
+ 12: _dma_chn_prepare_vdesc:4573
+  4: ficc_dma_vdesc_malloc:2734
+   8: 198
+   9: 194
+   10: 1105
+   11: 195
+   12: 825
+   15: 217
+  9: 1402
+  10: 437
+ 18: 42136 bsp_ficc_chn_blks2oneblk_send_with_checksum:38846 OsHwiRet:67 OsHwiDispatcher:49 _IrqVector:41 HwiDispatch:17 HwiCommonHandle:13 OsHwiTail:7
+ 23: 411
+ 30: bsp_get_slice_value:218
+  2: bsp_get_slice_value_u64:218
+   4: 218
+ 34: 374
+bsp_dra_alloc:57064:57064
+ 1: 1088
+ 2: dra_alloc:55005
+  7: 15384
+  9: osl_get_core_id:2263
+   2: mdrv_get_core_id:2263
+    2: OsGetCoreID:2263
+     3: 2263
+  25: dra_alloc_mem:7892
+   7: mdrv_int_lock:1844
+    4: 325
+    5: 1164
+    6: 355
+   8: 1061
+   14: 1923
+   15: 679
+   16: 624
+   17: writel_relaxed:23
+    2: 23
+   19: 1130
+   20: mdrv_int_unlock:327
+    4: 327
+  26: 324
+  30: 8921 DRBI_FusionTaskSelf:8533 OsHwiDispatcher:15 OsHwiRet:13 _IrqVector:8 HwiDispatch:7 HwiCommonHandle:4 OsHwiTail:1
+  31: 327
+  34: dra_dbg_cnt_alloc:18303
+   0: 1935
+   2: dra_get_dbg_cnt_idx:15384
+    2: OsGetCoreID:1202
+     3: 1202
+    5: 10242
+    8: 3940
+   3: 984
+  204: 729
+dpe_dma_cpy_list:52009:52009
+ 1: 312
+ 3: dpe_dma_get_netbuf_list:252
+  2: 74
+  5: 178
+ 8: dpe_dma_peer_list_build:31353
+  0: 7
+  3: 59
+  5: dpe_rx_add_buff_dma_list_build:13052
+   6: oal_netbuf_next:563
+    2: 563 get_sbuf_next:191
+   7: 9776
+   8: oal_netbuf_data:445
+    2: 445 sbuf_data:353
+   9: hal_host_get_rx_msdu_dscr_len:1124
+    2: 1039
+    3: 85
+  8: dpe_rx_data_comp_dma_list_build:18235
+   5: hal_host_get_rx_msdu_dscr_len:81
+    2: 40
+    3: 41
+   7: 1
+   10: oal_netbuf_next:1168
+    2: 1168 get_sbuf_next:433 OsHwiDispatcher:1
+   11: 5722 dpa_sms_sbuf_alloc_tcm_header:5315 OsHwiDispatcher:4 OsHwiRet:1
+   12: oal_netbuf_data:952
+    2: 952 sbuf_data:456 OsHwiRet:1
+   14: 628
+   17: 176
+   19: 2
+   20: 95
+   23: dpe_is_support_tx_no_dma:125
+    2: 125
+   24: 772
+   25: oal_netbuf_data:910
+    2: 910 sbuf_data:408
+   26: 125
+ 14: dpe_dma_cpy_mem_flush:5570
+  5: 144
+  7: oal_netbuf_next:649
+   2: 649 get_sbuf_next:304
+  8: 3516 dpa_sms_sbuf_get_tcm_header:801 OsHwiDispatcher:1
+ 16: dpe_dma_cpy_list_async:14492
+  2: 44
+  7: 90
+  8: dpe_dma_cpy_submit_async:14358
+   4: 184
+   5: 14162 bsp_dma_chn_memcpy_submit_async:13954 OsHwiDispatcher:3 OsHwiRet:2
+   7: 11
+   10: 1
+ 17: 30
+dpe_wlan_xmit_from_acpu_proc:51755:51755
+ 1: 873
+ 10: oal_netbuf_list_head_init_nolock:354
+  2: 354 sbuf_queue_head_init:267
+ 11: oal_netbuf_next:3206
+  2: 3206 get_sbuf_next:950
+ 12: oal_sbuf_cb:1479
+  2: 1479 get_userdata:440
+ 14: oal_netbuf_delete_nolock:2861
+  2: 2861 sbuf_unlink:1971
+ 16: 665
+ 17: 1297 sbuf_enqueue_tail:938
+ 22: 227
+ 30: 1
+ 35: 2080
+ 41: oal_netbuf_list_empty:886
+  2: 886 sbuf_queue_empty:670
+ 42: oal_netbuf_addlist_tail_nolock:1308
+  2: 1308 sbuf_enqueue_tail:840
+ 43: dpe_wlan_xmit_cb_info_set:446
+  2: 239
+  3: 109
+  4: 98
+ 46: dpe_wlan_xmit_cb_info_set:228
+  2: 228
+ 47: 893
+ 59: oal_netbuf_list_empty:572
+  2: 572 sbuf_queue_empty:321
+ 60: 30738 hmac_host_tx_data:27822 dpe_wlan_xmit_from_acpu_ring_tx:2776 OsHwiDispatcher:12 OsHwiRet:9 HwiCommonHandle:3 _IrqVector:2 HwiDispatch:1
+ 62: 501
+DRB_DcacheInv:51015:51015
+ 1: 851
+ 7: 5302 OsCacheCheckPhyPara:4864 OsHwiDispatcher:4 OsHwiRet:4 _IrqVector:3 HwiDispatch:2 HwiCommonHandle:1 OsHwiTail:1
+ 8: 818
+ 12: OsCacheDcsoGetPara:827
+  3: 437
+  4: 390
+ 14: OsCacheDcso:42460
+  5: OsIntLock:1226
+   2: DRB_IntLock:1226
+    2: ArchLockInterrupt:1226
+     4: 374
+     5: 429
+     6: 423
+  7: 401
+  8: 826
+  11: OsCacheDcsoControlSizeReg:411
+   2: 411
+  13: 371
+  15: OsIntRestore:35504
+   2: DRB_IntRestore:35504
+    2: ArchRestoreInterrupt:35504
+     4: 35504
+ 17: 757
+mp17c_host_rx_get_msdu_info_dscr:50371:50371
+ 2: 327
+ 3: mp17c_host_rx_cb_set:38953
+  2: dpe_get_rx_msdu_dscr_addr:26649
+   3: 21431 dpa_sms_sbuf_get_tcm_header:21010 OsHwiDispatcher:4 HwiDispatch:4 OsHwiRet:4 _IrqVector:2 HwiCommonHandle:2
+   7: hal_host_get_rx_msdu_dscr_len:2742
+    2: 2128
+    3: 614 mp17c_host_get_rx_msdu_dscr_len:432
+   8: dpe_get_sbuf_cb_wifi_info:449
+    2: oal_sbuf_cb:449
+     2: 449 get_userdata:270
+  7: 82
+  9: 396
+  11: mp17c_host_rx_cb_set_first_msdu:7637
+   2: 696
+   3: 312
+   5: 275
+   6: 608
+   7: 290
+   8: 478
+   9: 282
+   10: 269
+   11: 264
+   12: 244
+   13: 354
+   14: 286
+   15: 269
+   16: 460
+   17: 406
+   18: 84
+   19: 361
+   20: 161
+   21: 289
+   22: 388
+   23: 316
+   24: 162
+   25: 383
+  12: 374
+  13: mp17c_hw_vap_id_to_hal_vap_id:266
+   4: 168
+   5: 98
+  16: hal_rx_is_frag_frm:100
+   4: 100
+  22: 479
+  23: 175
+  24: 259
+  25: 294
+  26: 276
+  28: 265
+  29: 282
+  30: 247
+  31: 276
+  33: 192
+  34: 402
+ 4: 5857 dpa_sms_sbuf_free_tcm_header:5757 OsHwiRet:3 HwiDispatch:1 _IrqVector:1
+ 7: hal_rx_adjust_netbuf_len:4928
+  3: oal_sbuf_cb:676
+   2: 676 get_userdata:567
+  8: hal_host_get_rx_msdu_dscr_len:1666
+   2: 997
+   3: 669 mp17c_host_get_rx_msdu_dscr_len:495
+  9: oal_netbuf_pull:1349
+   2: 1349 sbuf_pull:1166 OsHwiDispatcher:2
+  11: 564
+  12: 271
+  18: oal_netbuf_trim:402
+   2: 402 sbuf_trim:207
+ 11: 306
+dmi_service_msg_read_cb:50278:50278
+ 1: 835
+ 7: 398
+ 12: 181
+ 13: 351
+ 18: 540
+ 29: 10104 gso_recv_msg_cb:8098 OsHwiRet:9 conn_dmi_service_request:5 OsHwiDispatcher:2 g_tid_update_list:2 HwiDispatch:1 g_powerup_res:1
+ 44: 895
+ 51: 36974
+hal_host_rx_add_buff_alloc_after_dma:50186:50186
+ 2: 183
+ 7: 5
+ 10: oal_netbuf_delist_nolock:2115
+  2: oal_netbuf_delist_head_nolock:2115
+   2: 2115 sbuf_dequeue:1809
+ 11: oal_sbuf_cb:441
+  2: 441 get_userdata:321
+ 14: pcie_if_hostca_to_devva:26437
+  2: hcc_bus_slave_address_switch:26437
+   7: 226
+   11: 861
+   15: 25350 oal_pcie_slave_address_switch:25123 OsHwiRet:3 _IrqVector:2 HwiDispatch:1
+ 22: oal_spin_lock_irq_save:11997
+  2: 11997 SRE_SplIrqLock:11787
+ 23: oal_netbuf_list_tail_nolock:1053
+  2: oal_netbuf_addlist_tail_nolock:1053
+   2: 1053 sbuf_enqueue_tail:947
+ 24: oal_spin_unlock_irq_restore:3555
+  2: 3555 mdrv_spin_unlock_irqrestore:3358
+ 25: hal_ring_set_entries:3363
+  4: 307
+  8: 306
+  12: hal_ring_is_full:681
+   2: 579
+   3: 102
+  17: 474
+  19: 972
+  22: 341
+  25: 176
+ 26: 95
+ 28: 27
+ 29: hal_ring_set_sw2hw:210
+  6: 4
+  7: hal_host_writel:203
+   3: hal_host_pcpu_access_device_allowed:1
+    2: 1
+   4: writel:201
+    2: cache_sync:3
+     2: 3
+    3: writel_relaxed:198
+     2: 198
+ 31: 65
+ 403: 83
+hmac_host_tx_data:50113:50113
+ 0: 511
+ 1: 2098
+ 5: 203
+ 17: 332
+ 18: oal_sbuf_cb:624
+  2: 624 get_userdata:290
+ 23: dpe_get_tx_tid_info:2217
+  2: dpe_wlan_user_get:1724
+   6: 1195
+   11: 529
+  3: 290
+  9: dpe_wlan_is_multi_user_not_support_ampdu:203
+   3: 203
+ 25: 688
+ 28: hmac_host_tx_tid_enqueue:43030
+  7: hmac_tid_info_inited:102
+   2: oal_atomic_read:102
+    2: dpa_atomic_read:102
+     2: 102
+  19: oal_netbuf_list_head_init_nolock:1729
+   2: 1729 sbuf_queue_head_init:282
+  20: 461
+  21: oal_netbuf_next:1122
+   2: 1122 get_sbuf_next:529
+  22: oal_sbuf_cb:1483
+   2: 1483 get_userdata:820
+  23: dpe_wlan_stat_all_tx_netbuf:16115
+   6: hmac_stat_device_tx_msdu:3192
+    2: dpe_wlan_device_stat_get:241
+     2: 241
+    3: 201
+    4: 1692
+   7: hmac_stat_vap_tx_netbuf:6004
+    2: dpe_wlan_vap_stat_get:1650
+     2: 1650
+    8: 1462
+    9: oal_netbuf_len:1914
+     2: 1914 sbuf_len:434
+   8: hmac_stat_user_tx_netbuf:6476
+    2: dpe_wlan_user_stat_get:2052
+     2: 1681
+     7: 371
+    8: 1578
+    9: oal_netbuf_len:2125
+     2: 2125 sbuf_len:410
+  24: 713
+  25: oal_netbuf_list_tail_nolock:2576
+   2: oal_netbuf_addlist_tail_nolock:2576
+    2: 2576 sbuf_enqueue_tail:1966
+  37: dpe_tid_queue_lock_irq_save:7209
+   3: oal_spin_lock_irq_save:7209
+    2: 7209 SRE_SplIrqLock:7020
+  38: oal_netbuf_queue_splice_tail_init:2191
+   2: 2191 sbuf_queue_splice_tail_init:1985
+  39: dpe_tid_queue_unlock_irq_restore:3310
+   3: oal_spin_unlock_irq_restore:3310
+    2: 3310 mdrv_spin_unlock_irqrestore:3117
+  41: hmac_tx_ring_switching:906
+   2: oal_netbuf_list_len:770
+    2: dpa_atomic_read:110
+     2: 110
+   3: oal_atomic_read:98
+    2: dpa_atomic_read:98
+     2: 98
+  42: 4649 hmac_tid_schedule:4327
+ 32: 410
+dpe_rx_data_thread:50097:50097
+ 1: 91
+ 7: oal_mdrv_int_lock:8
+  2: mdrv_int_lock:8
+   4: 5
+   5: 3
+ 10: 13
+ 14: 3
+ 15: oal_mdrv_int_unlock:6
+  2: mdrv_int_unlock:6
+   4: 6
+ 17: 8
+ 18: dpe_rx_data_event_process:49917
+  0: 145
+  5: 259
+  6: hal_get_host_device:193
+   2: mac_chip_get_hal_dev_num:188
+    2: 188
+   3: 5
+  8: 1
+  10: 166
+  12: 3
+  14: 25306 dpe_rx_ring_data_event_async:24907 dpe_dma_rx_ring_data_event:95 HwiDispatch:3 OsHwiDispatcher:2 OsHwiRet:2 OsHwiTail:1
+  16: 153
+  17: 23625 dpe_rx_ring_data_event_async:23574 OsHwiRet:6 dpe_dma_rx_ring_data_event:5 HwiDispatch:3 _IrqVector:3 OsHwiDispatcher:3 HwiCommonHandle:1
+  18: 8
+  22: 3
+  38: 55
+ 20: 51
+alloc_sbuf:46949:46949
+ 0: 95
+ 1: 555
+ 4: alloc_data:27349
+  2: 99
+  5: mdrv_dra_alloc:27250
+   5: 27250 bsp_dra_alloc:26777 _IrqVector:2 HwiDispatch:1 OsHwiRet:1
+ 5: 109
+ 8: sbuf_malloc_rx_zero_copy:17552
+  6: rx_sbuf_alloc:16262
+   4: 16168 stack_alloc_sbuf:11844 OsHwiRet:2 OsHwiDispatcher:1
+   6: 94 bsp_record_hash:68
+  8: 98 bsp_record_hash:86
+  11: 178
+  12: 103
+  13: 212
+  16: 199
+  17: 73
+  18: 107
+  19: 112
+  20: 208
+ 10: free_data:975
+  2: mdrv_dra_free:975
+   2: bsp_dra_free:975
+    2: 975 dra_free:781
+ 14: 314
+bsp_ficc_chn_blks2oneblk_send_with_checksum:46146:46146
+ 2: 2008
+ 7: ficc_chn_dmatrans_async:29649
+  4: ficc_channel_get_by_hdl:1505
+   6: 1505
+  5: 542
+  9: 616
+  13: 211
+  16: 1662
+  20: 3227 ficc_hdr_fill_bd5:2764 OsHwiRet:9 OsHwiDispatcher:4 HwiCommonHandle:2 _IrqVector:2 HwiDispatch:1
+  22: opipe_put_to_ringbuf:12712
+   0: 191
+   3: 1056
+   4: 239
+   5: 420
+   6: 657
+   10: 646
+   26: 1088
+   30: 1244
+   31: memcpy_s:6278
+    2: 1320
+    3: 4958 memcpy:4494 OsHwiDispatcher:9 OsHwiRet:7 OsHwiTail:4 _IrqVector:2 HwiCommonHandle:2
+   34: 680
+   45: 213
+  27: ficc_opipe_wptr_update:7868
+   2: writel:5190
+    2: cache_sync:2473
+     2: 2473
+    3: writel_relaxed:2717
+     2: 2717
+   3: cache_sync:2678
+    2: 2678
+  28: 454
+dpa_sms_filter_input_list:45816:45816
+ 0: 108
+ 1: 113
+ 10: 23
+ 17: 14
+ 20: 366
+ 26: dpa_sms_filter_input_each_pkt:36507
+  6: 219
+  8: 26105 dpa_sms_filter_cfg_wlan:14141 OsHwiDispatcher:3 OsHwiRet:2 _IrqVector:2 HwiDispatch:1 HwiCommonHandle:1
+  18: 108
+  19: 8801 bsp_pfa_config_td:8447 OsHwiDispatcher:3 OsHwiRet:2 HwiDispatch:1 HwiCommonHandle:1
+  24: 1274
+ 30: 7983 sbuf_free:7746 OsHwiRet:2 OsHwiDispatcher:2 OsHwiTail:1
+ 35: 661
+ 40: 23
+ 47: 18
+mdrv_spin_unlock_irqrestore:45697:45697
+ 1: 887
+ 5: OsSplUnlock:7518
+  2: OsSplUnlockNoManage:7518
+   2: 5805
+   3: 1713
+ 6: OsTskUnlock:32411
+  3: OsGetRunQueue:23208
+   3: 23208
+  6: 2837
+  8: 1042
+  9: OsTskUnlockIsNeedResched:1215
+   2: 1215
+  10: OsHwiTriggerByMask:1796
+   2: OsGetMpRegBase:176
+    3: 104
+    5: 72
+   3: 122
+   5: OsCoreMaskLogical2Phy:1198
+    4: OsGetRMB:63
+     3: 63
+    9: 555
+    10: 580
+   8: 252
+  17: 687
+ 7: OsIntRestore:1121
+  2: DRB_IntRestore:1121
+   2: ArchRestoreInterrupt:1121
+    4: 1121
+ 8: 3760
+dpe_wlan_rx_sms_filter_input:44424:44424
+ 0: 477
+ 1: 277
+ 5: oal_sbuf_cb:17
+  2: 17 get_userdata:9
+ 7: 10
+ 12: 5
+ 13: oal_netbuf_next:780
+  2: 780 get_sbuf_next:378
+ 15: dpe_wlan_rx_filter_user_data_set:29
+  2: oal_sbuf_cb:6
+   2: 6 get_userdata:2
+  3: oal_sbuf_cb:7
+   2: 7 get_userdata:3
+  5: 5
+  6: 4
+  7: 7
+ 16: oal_set_netbuf_ifindex:960
+  2: 960 sbuf_set_ifindex:109
+ 18: 318
+ 21: dpe_is_support_rx_filter_list:28
+  2: 28
+ 22: dpe_wlan_filter_input_list:15609
+  8: 15478 dpa_sms_filter_input_list:15461 OsHwiDispatcher:2 _IrqVector:1 OsHwiRet:1 OsHwiTail:1
+  9: 39
+  10: 92
+ 26: 228
+dma_done_event:42225:42225
+ 1: 317
+ 6: 37
+ 10: 39
+ 11: 257
+ 18: dma_done_proc:30179
+  10: 37
+  11: 64
+  12: 38
+  18: 415
+  20: ficc_dma_vdesc_get_used_head:687
+   8: 134
+   9: 307
+   10: 113
+   13: 133
+  21: 141
+  26: 1073
+  27: 19393 dpe_comm_dma_cbk_async:9812 sms_tx_line_and_csum_cb:9279 hcc_dma_cbk:8 dpe_comm_dma_cbk_sync:7 OsHwiRet:5 HwiDispatch:4 _IrqVector:4 OsHwiDispatcher:2 HwiCommonHandle:2
+  28: 218
+  35: 1621
+  36: 148
+  37: ficc_dma_cd_used_head_free:1108
+   7: 290
+   12: 818
+  38: ficc_dma_vdesc_used_head_free:4942
+   5: 250
+   10: 138
+   11: 678
+   16: 570
+   17: memset_s:3306
+    3: 3306 memset:2609
+ 20: 5622 ficc_dma_done_int_en:5335 HwiDispatch:1
+ 21: bsp_get_slice_value:39
+  2: bsp_get_slice_value_u64:39
+   4: 39
+ 22: 74
+ 27: 195
+memcpy_s:41753:41753
+ 1: 2249
+ 2: 10052
+ 3: 26322 memcpy:21594 OsHwiDispatcher:5 OsHwiTail:1
+ 8: 3130
+memcpy:40500:40500
+ 0: 40500
+sbuf_free:40408:40408
+ 1: 1361
+ 5: 317
+ 9: 2277
+ 14: 3536
+ 19: 329
+ 24: sbuf_refcnt_dec:1635
+  3: 1635
+ 33: 342
+ 35: sbuf_conn_free:949
+  2: 631
+  3: 318
+ 38: 2374
+ 43: 3065
+ 44: 6771 default_sbuf_free_cb:6425 _IrqVector:1 sms_gro_sbuf_free_ext:1 HwiCommonHandle:1
+ 46: tx_maa_leak_check:2577
+  3: 2577
+ 47: sbuf_enqueue:13215
+  5: 690
+  6: 10861 dra_free:10517 OsHwiDispatcher:3 OsHwiRet:3 OsTskContextLoad:1 _IrqVector:1
+  7: stack_free_sbuf:347
+   3: 347
+  8: 1317
+ 49: 316
+ 52: 1344
+dra_dbg_cnt_free:40134:40134
+ 0: 3984
+ 1: 4209
+ 2: dra_get_dbg_cnt_idx:29646
+  5: 19518
+  8: 10128
+ 3: 2295
+oal_pcie_slave_address_switch:39423:39423
+ 2: 4360
+ 4: get_pcie_res:20950
+  2: 20950
+ 5: 706
+ 10: 457
+ 12: 2274
+ 17: 790
+ 21: oal_pcie_host_slave_address_switch:8906
+  3: 2653
+  7: oal_pcie_host_slave_address_switch_mp17c:5791
+   3: 439
+   4: 2013
+   5: 717
+   6: 1048
+   11: 661
+   13: 111
+   14: 802
+ 22: 980
+DRBI_FusionTaskSelf:38233:38233
+ 9: 2844
+ 12: OsIntLock:4373
+  2: DRB_IntLock:4373
+   2: ArchLockInterrupt:4373
+    4: 1390
+    5: 1534
+    6: 1449
+ 13: OsGetRunQueue:1431
+  3: 1431
+ 17: 5231
+ 18: 20130
+ 19: OsIntRestore:1345
+  2: DRB_IntRestore:1345
+   2: ArchRestoreInterrupt:1345
+    4: 1345
+ 24: 11
+ 34: 1
+ 35: OsIntRestore:4
+  2: DRB_IntRestore:4
+   2: ArchRestoreInterrupt:4
+    4: 4
+ 41: 1394
+ 81: 1469
+dpe_rx_data_comp_dma_cb:34583:34583
+ 1: 124
+ 7: hal_get_host_device:61
+  2: mac_chip_get_hal_dev_num:54
+   2: 54
+  3: 7
+ 15: oal_netbuf_list_len:113
+  2: 113 sbuf_queue_len:111
+ 16: oal_netbuf_list_head_init_nolock:172
+  2: 172 sbuf_queue_head_init:167
+ 17: 93
+ 19: oal_netbuf_list_empty:604
+  2: 604 sbuf_queue_empty:294
+ 23: oal_netbuf_delist_head_nolock:1666
+  2: 1666 sbuf_dequeue:1579 OsHwiRet:1
+ 25: hal_rx_get_next_sub_msdu:6518
+  3: 861
+  4: mp17c_rx_get_next_sub_msdu:5453
+   2: dpe_get_rx_msdu_dscr_addr:4405
+    3: 1143 dpa_sms_sbuf_get_tcm_header:951
+    7: hal_host_get_rx_msdu_dscr_len:1730
+     2: 1135
+     3: 595 mp17c_host_get_rx_msdu_dscr_len:490 _IrqVector:1 OsHwiTail:1
+    8: dpe_get_sbuf_cb_wifi_info:200
+     2: oal_sbuf_cb:200
+      2: 200 get_userdata:151
+   5: 371
+   10: 677
+ 31: dpe_rx_data_dma_process:23922
+  0: 63
+  5: oal_sbuf_cb:334
+   2: 334 get_userdata:110 _IrqVector:1
+  11: 269
+  13: hal_host_rx_get_msdu_info_dscr:19709
+   3: 518
+   4: 19191 mp17c_host_rx_get_msdu_info_dscr:19001 OsHwiRet:5 OsHwiDispatcher:4 HwiDispatch:3 _IrqVector:2 HwiCommonHandle:2
+  16: 295
+  21: oal_netbuf_addlist_tail_nolock:1655
+   2: 1655 sbuf_enqueue_tail:1492 _IrqVector:2 HwiDispatch:1 OsHwiRet:1
+  22: 75
+  26: 491
+  30: 266
+  31: 560
+ 51: oal_netbuf_list_empty:26
+  2: 26 sbuf_queue_empty:4
+ 60: hal_rx_data_need_scheduled:627
+  8: mdrv_get_core_id:333
+   2: OsGetCoreID:333
+    3: 333
+  9: 34
+  12: oal_mdrv_int_lock:3
+   2: mdrv_int_lock:3
+    4: 2
+    5: 1
+  13: 1
+  16: 1
+  18: 236
+  23: 10
+  32: 6
+  33: oal_mdrv_int_unlock:3
+   2: mdrv_int_unlock:3
+    4: 3
+ 65: 33 DRBI_FiberQueSend:28 OsHwiRet:1
+ 68: 8
+sbuf_dequeue:33434:33434
+ 2: sbuf_peek:4800
+  2: 2224
+  3: 2576
+ 3: 1243
+ 4: sbuf_unlink:25815
+  5: 2414
+  6: 1243
+  7: 3582
+  9: 1336
+  10: 17240
+ 6: 1576
+hmac_tid_push_netbuf_to_host_ring:33104:33104
+ 1: 731
+ 8: hmac_tid_push_ring_allowed:153
+  2: oal_atomic_read:153
+   2: dpa_atomic_read:153
+    2: 153
+ 11: hal_pm_try_wakeup_forbid_sleep:3035
+  11: oal_atomic_inc:2304
+   2: dpa_atomic_inc:2304
+    2: dpa_atomic_add:2304
+     4: 2304
+  12: 731
+ 12: 5141 hal_pm_try_check_dev_state:4256 _IrqVector:20 HwiDispatch:10 OsHwiRet:10 OsHwiDispatcher:4 HwiCommonHandle:3 OsHwiTail:1
+ 16: hmac_tid_get_ring_avail_size:1306
+  2: hal_host_tx_tid_ring_depth_get:132
+   2: dpa_atomic_read:35
+    2: 35
+ 20: 4435 hmac_tid_get_netbuf_list:4352 OsHwiRet:25 OsHwiDispatcher:11 HwiDispatch:10 _IrqVector:5 HwiCommonHandle:4 OsHwiTail:1
+ 21: oal_netbuf_list_empty:96
+  2: 96 sbuf_queue_empty:45 HwiDispatch:1
+ 22: 31
+ 25: 8821 hmac_tid_push_netbuf_list_to_host_ring_proc:8318 OsHwiDispatcher:2 _IrqVector:2
+ 27: 1931 hal_pm_try_wakeup_allow_sleep:1908 OsHwiRet:1
+ 32: hmac_tid_set_chr_report_param:7337
+  2: bsp_get_elapse_ms:7319
+   2: bsp_get_slice_value:29
+    2: bsp_get_slice_value_u64:29
+     4: 29
+  3: 10
+ 37: 27
+stack_alloc_sbuf:32974:32974
+ 1: 216
+ 5: bsp_dra_alloc:13394
+  2: dra_alloc:13394
+   13: osl_get_core_id:188
+    2: mdrv_get_core_id:188
+     2: OsGetCoreID:188
+      3: 188
+   25: dra_alloc_mem:2883
+    7: mdrv_int_lock:635
+     4: 120
+     5: 119
+     6: 396
+    8: 746
+    9: 19
+    10: mdrv_int_unlock:10
+     4: 10
+    14: 496
+    15: 205
+    16: 229
+    17: writel_relaxed:10
+     2: 10
+    19: 316
+    20: mdrv_int_unlock:117
+     4: 117
+   26: 193
+   27: 782 bsp_record_hash:777
+   30: 2805 DRBI_FusionTaskSelf:2711
+   31: 96
+   34: dra_dbg_cnt_alloc:6241
+    0: 380
+    2: dra_get_dbg_cnt_idx:5556
+     2: OsGetCoreID:382
+      3: 382
+     5: 3655
+     8: 1519
+    3: 305
+ 7: 223 bsp_record_hash:207
+ 16: memset_s:17730
+  3: 17730 memset:17434 HwiDispatch:1
+ 17: 93
+ 18: 86
+ 19: 98
+ 20: sbuf_refcnt_set:127
+  2: 127
+ 22: 1007
+bsp_ficc_dma_cd_alloc_and_fill:32450:32450
+ 0: 621
+ 1: 933
+ 8: 1874
+ 12: ficc_dma_malloc_cd:11999
+  6: 4358
+  10: 3216
+  12: 1258
+  16: 1881
+  18: 1286
+ 18: 612
+ 20: 4640
+ 22: bsp_ficc_blks2oneblk_blk_head_fill_expand:10524
+  5: 6145
+  10: 1229
+  11: 1262
+  12: 1237
+  13: 651
+ 30: 1247
+oal_pcie_transfer_ete_done:31548:31548
+ 1: 218
+ 8: 194
+ 15: 234
+ 19: readl:3
+  2: 3
+ 20: readl:5
+  2: 5
+ 21: readl:4
+  2: 4
+ 25: 12059
+ 27: 5
+ 28: writel:19
+  2: cache_sync:2
+   2: 2
+  3: writel_relaxed:17
+   2: 17
+ 30: 25
+ 31: 3
+ 33: 8
+ 37: 56
+ 40: 64
+ 45: 36
+ 49: oal_pcie_process_ete_host_intr:11689
+  3: 29
+  8: 502
+  9: 53
+  10: 17
+  11: 39
+  12: 10960 mp17c_mac_irq_host_all:5763 mp17c_mac_comm_irq_host_all:4446
+  13: 82
+  17: 7
+ 54: oal_pcie_process_ete_trans_intr:384
+  5: oal_pcie_process_ete_trans_tx:11
+   4: 2
+   17: 1
+   22: oal_ete_sched_hcc_thread:7
+    3: hcc_master_tx_sched_transfer:7
+     2: hcc_sched_transfer:7
+      2: 7 DRBI_FusionKeventSend:7
+   29: 1
+  6: 324
+  8: oal_pcie_process_ete_trans_rx:4
+   4: 4
+  9: 45
+ 59: oal_pcie_process_ete_dre_intr:22
+  5: 15
+  6: 7
+ 65: 18
+hmac_rx_comp_thread:30982:30982
+ 1: 133
+ 7: oal_mdrv_int_lock:6
+  2: mdrv_int_lock:6
+   4: 1
+   5: 1
+   6: 4
+ 10: 12
+ 14: 17
+ 15: oal_mdrv_int_unlock:32
+  2: mdrv_int_unlock:32
+   4: 32
+ 17: 6
+ 18: dpe_rx_comp_thread_process:30734
+  0: 120
+  3: 26
+  4: 8
+  6: dpe_dma_rx_add_buff_event:9339
+   3: dpe_is_support_rx_dma_async:5
+    2: 5
+   4: dpe_rx_comp_add_buf_process_async:9334
+    3: 50
+    4: hal_get_host_device:131
+     2: mac_chip_get_hal_dev_num:51
+      2: 51
+     3: 80
+    30: dpe_rx_add_buff_event_proc:9153
+     6: 111
+     10: oal_mdrv_int_lock:98
+      2: mdrv_int_lock:98
+       4: 1
+       5: 96
+       6: 1
+     11: oal_netbuf_list_empty:4
+      2: 4 sbuf_queue_empty:3
+     12: oal_mdrv_int_unlock:3
+      2: mdrv_int_unlock:3
+       4: 3
+     15: 1
+     21: 8936 dpe_dma_cpy_list:5268 dpe_rx_add_buff_dma_prepare:3617 OsHwiDispatcher:2 HwiDispatch:1 OsHwiRet:1
+  8: 27
+  10: dpe_dma_rx_add_buff_event:21190
+   3: dpe_is_support_rx_dma_async:8
+    2: 8
+   4: dpe_rx_comp_add_buf_process_async:21180
+    3: 104
+    4: hal_get_host_device:218
+     2: mac_chip_get_hal_dev_num:55
+      2: 55
+     3: 163
+    10: 190
+    11: 7693 hal_host_get_rx_add_buff_num:7685 OsHwiDispatcher:1
+    14: 176
+    23: dpe_rx_add_buff_event_proc:12799
+     6: 7
+     10: oal_mdrv_int_lock:299
+      2: mdrv_int_lock:299
+       4: 3
+       5: 294
+       6: 2
+     11: oal_netbuf_list_empty:5
+      2: 5 sbuf_queue_empty:5
+     12: oal_mdrv_int_unlock:5
+      2: mdrv_int_unlock:5
+       4: 5
+     15: 2
+     21: 12481 dpe_dma_cpy_list:7943 dpe_rx_add_buff_dma_prepare:4524 OsHwiDispatcher:2 OsHwiRet:1
+  14: 3
+  24: 21
+ 20: 42
+hmac_rx_proc_reorder:30743:30743
+ 0: 243
+ 2: 896
+ 10: 513
+ 13: hmac_ba_check_rx_aggrate:1568
+  4: 269
+  9: mac_get_frame_type_and_subtype:405
+   2: 405
+  11: 99
+  17: 449
+  18: 346
+ 17: dpe_get_tid_ba_info:5388
+  2: dpe_wlan_user_get:796
+   6: 89
+   11: 707
+  3: 342
+  4: 4026
+  9: dpe_wlan_is_multi_user_not_support_ampdu:224
+   3: 224
+ 21: 116
+ 22: 745
+ 26: 624
+ 29: hmac_rx_data_wnd_proc:13413
+  4: 107
+  6: 1050
+  8: 9321 hmac_ba_rx_data_release:8669 OsHwiRet:173 OsHwiDispatcher:124 _IrqVector:73 HwiCommonHandle:38 HwiDispatch:28 OsHwiTail:26
+  11: 2818 hmac_ba_rx_data_buffer:2762 HwiCommonHandle:1
+  19: 117
+ 35: 490
+dpe_wlan_vap_get:30205:30205
+ 1: 2961
+ 3: 552
+ 4: 23383
+ 8: 3309
+ficc_localrecv_handler:28886:28886
+ 1: 537
+ 6: readl:52
+  2: 52
+ 7: 2972
+ 8: 3789
+ 9: 2843
+ 10: ficc_ipipe_irq_handler:17890
+  4: ficc_ipipe_devint_stat:82
+   2: readl:82
+    2: 82
+  5: 297
+  6: ficc_ipipe_devint_clr:3698
+   2: writel:2835
+    2: cache_sync:60
+     2: 60
+    3: writel_relaxed:2775
+     2: 2775
+   3: cache_sync:863
+    2: 863
+  10: 239
+  11: ficc_debug_info_update_recv:3964
+   3: 2792
+   6: 357
+   7: bsp_get_slice_value:40
+    2: bsp_get_slice_value_u64:40
+     4: 40
+  12: ficc_common_event_notify:8747
+   3: 51
+   8: 65
+   9: 52
+   11: 158
+   12: dmi_msg_recv_notify:8331
+    2: 183
+    6: 183
+    11: 55
+    15: 181
+    18: 36
+    20: 2046 DRBI_FiberQueGetMsgNumByTid:1785
+    21: 169
+    24: 45
+    25: 13 bsp_record_hash:13
+    28: bsp_ficc_channel_int_dis:4358
+     0: 88
+     5: ficc_channel_get_by_hdl:427
+      0: 135
+      4: 39
+      6: 253
+     6: 97
+     13: _ficc_channel_int_dis:3746
+      11: 285
+      14: ficc_ipipe_devint_dis:3193
+       4: readl:54
+        2: 54
+       5: 296
+       6: writel:2843
+        2: cache_sync:63
+         2: 63
+        3: writel_relaxed:2780
+         2: 2780
+    33: 186
+    34: 800 DRBI_FiberQueSend:761
+    35: 30
+  14: 31
+  18: 115
+ 17: 621
+hmac_rx_enqueue_list:28631:28631
+ 0: 5
+ 1: 372
+ 8: oal_netbuf_list_head_init_nolock:12
+  2: 12 sbuf_queue_head_init:7
+ 11: oal_netbuf_next:541
+  2: 541 get_sbuf_next:215
+ 12: oal_netbuf_delete_nolock:2080
+  2: 2080 sbuf_unlink:979
+ 20: 2203 sbuf_enqueue_tail:1677 OsHwiDispatcher:1 OsHwiRet:1
+ 24: oal_sbuf_cb:408
+  2: 408 get_userdata:285
+ 25: 19729 dpe_wlan_vap_get:19077 OsHwiRet:4 HwiDispatch:2 HwiCommonHandle:2 _IrqVector:1
+ 26: 108
+ 32: oal_netbuf_list_empty:413
+  2: 413 sbuf_queue_empty:296
+ 33: oal_netbuf_list_tail_nolock:36
+  2: oal_netbuf_addlist_tail_nolock:36
+   2: 36 sbuf_enqueue_tail:17
+ 34: 3
+ 38: 319
+ 47: oal_netbuf_list_empty:19
+  2: 19 sbuf_queue_empty:9
+ 48: oal_netbuf_tail:23
+  2: oal_netbuf_tail_next:12
+   2: 12 sbuf_peek_tail:12
+  5: 10 set_sbuf_next:9
+ 49: oal_sbuf_cb:14
+  2: oal_netbuf_head_next:8
+   2: 8 sbuf_peek:7
+ 50: oal_netbuf_peek:314
+  2: oal_netbuf_head_next:314
+   2: 314 sbuf_peek:154 OsHwiTail:1
+ 52: 159
+OsFiberQueSend:27998:27998
+ 1: 1497
+ 7: OsGetHwThreadId:378
+  3: 378
+ 8: 412
+ 9: 391
+ 10: 676
+ 13: OsFiberQueOuterSend:4351
+  2: OsFiberIpcCallSend:4351
+   3: 4351 OsSchedSendIpcCall:2575
+ 17: OsFiberGetCb:1219
+  2: 1219
+ 26: 3231
+ 31: OsGetRunQueue:395
+  3: 395
+ 32: 2388
+ 37: OsFiberQueInnerSend:10294
+  3: OsGetRunQueue:350
+   3: 350
+  4: 321
+  5: 331
+  7: OsOrderQueSendEnque:7209
+   3: OsFiberQueIsFull:1945
+    2: 1945
+   14: OsFiberQueEnqueTail:4298
+    3: 308
+    4: 326
+    6: 2138
+    7: 328
+    8: 292
+    9: 306
+    10: OsFiberQueGetNextPos:285
+     2: 285
+   15: 628
+  10: 937
+  12: 314
+  16: 488
+  18: 64
+  19: 280
+ 39: 1202
+hal_host_get_rx_add_buff_num:27917:27917
+ 2: 348
+ 4: 4
+ 9: oal_pcie_link_state_up:156
+  5: get_pcie_res:2
+   2: 2
+  10: 135
+  11: 8
+  15: 11
+ 14: 6
+ 21: 9
+ 25: 4455 hal_ring_get_entry_count:4447
+ 29: 4
+ 33: oal_netbuf_list_head_init_nolock:9
+  2: 9 sbuf_queue_head_init:5
+ 34: hal_host_rx_add_buff_alloc_before_dma:22593
+  0: 42
+  5: hal_host_get_rx_msdu_dscr_len:542
+   2: 22
+   3: 520
+  11: 337
+  12: hal_host_rx_alloc_netbuf:7594
+   12: oal_netbuf_alloc:7594
+    3: 7594 alloc_sbuf:7384
+  14: oam_log_print0_press:1565
+   3: 4
+   4: 62
+   7: 43 memcpy_s:38
+   9: oam_get_log_switch:2
+    2: 2
+   13: oam_log_header_fill:813
+    2: 3
+    7: 87 memcpy_s:19
+    9: 1
+    13: oam_log_get_sn:717
+     4: oal_spin_lock_irq_save:670
+      2: 670 SRE_SplIrqLock:666
+     5: 1
+     6: oal_spin_unlock_irq_restore:46
+      2: 46 mdrv_spin_unlock_irqrestore:44
+    14: 1
+    15: 2
+    16: 2
+   14: 8
+   15: 2
+   17: 424 oam_data_converge:401 DRBI_FusionKeventSend:19
+  15: 8
+  18: oal_netbuf_set_len:2622
+   2: oal_netbuf_len:671
+    2: 671 sbuf_len:450
+   5: oal_netbuf_len:684
+    2: 684 sbuf_len:303
+  20: oal_netbuf_headroom:797
+   2: 797 sbuf_headroom:623
+  21: 1004
+  34: oal_netbuf_push:2573
+   2: 2573 sbuf_push:2254
+  38: dpe_is_support_rx_dma_async:208
+   2: 208
+  39: oal_sbuf_cb:501
+   2: 501 get_userdata:314
+  41: oal_netbuf_data_iova:946
+   2: 946 sbuf_data_iova:518
+  42: oal_netbuf_len:494
+   2: 494 sbuf_len:308
+  47: 1050
+  50: oal_netbuf_list_tail_nolock:1727
+   2: oal_netbuf_addlist_tail_nolock:1727
+    2: 1727 sbuf_enqueue_tail:1428
+  53: oal_netbuf_list_len:99
+   2: 99 sbuf_queue_len:96
+ 36: oal_mdrv_int_lock:35
+  2: mdrv_int_lock:35
+   5: 34
+   6: 1
+ 37: oal_netbuf_queue_splice_tail_init:225
+  2: 225 sbuf_queue_splice_tail_init:177
+ 38: oal_netbuf_list_len:26
+  2: 26 sbuf_queue_len:17
+ 39: oal_mdrv_int_unlock:9
+  2: mdrv_int_unlock:9
+   4: 9
+ 40: 25
+OsFiberDispatcherHwiTail:26527:26527
+ 1: 49
+ 2: 52
+ 5: 25638 OsFiberActiveDispatcher:24738 OsHwiDispatcher:147 OsHwiRet:135 _IrqVector:66 HwiDispatch:48 HwiCommonHandle:30 OsHwiTail:22
+ 7: 788
+hmac_tid_get_netbuf_list:24057:24057
+ 2: 24
+ 5: oal_netbuf_list_head_init_nolock:70
+  2: 70 sbuf_queue_head_init:37
+ 7: dpe_tid_queue_lock_irq_save:697
+  3: oal_spin_lock_irq_save:697
+   2: 697 SRE_SplIrqLock:678 OsHwiRet:1
+ 8: oal_netbuf_list_empty:2483
+  2: 2483 sbuf_queue_empty:1221 sbuf_queue_len:669
+ 9: oal_netbuf_delist_nolock:18417
+  2: oal_netbuf_delist_head_nolock:18417
+   2: 18417 sbuf_dequeue:14966 sbuf_enqueue_tail:1833
+ 14: dpe_tid_queue_unlock_irq_restore:417
+  3: oal_spin_unlock_irq_restore:417
+   2: 417 mdrv_spin_unlock_irqrestore:300
+ 15: 47
+DRBI_FiberQueSend:23752:23752
+ 1: 392
+ 6: 313
+ 11: 1044
+ 15: 908
+ 19: OsIntLock:1007
+  2: DRB_IntLock:1007
+   2: ArchLockInterrupt:1007
+    4: 386
+    5: 299
+    6: 322
+ 20: 18460 OsFiberQueSend:17843
+ 21: OsIntRestore:544
+  2: DRB_IntRestore:544
+   2: ArchRestoreInterrupt:544
+    4: 544
+ 23: 1084
+gso_build_header:23660:23660
+ 0: 1056
+ 10: spl_ntohs:1919
+  2: spl_htons:1919
+   2: htons_asm:1919
+    3: 1919
+ 11: 216
+ 12: 431
+ 13: spl_ntohs:528
+  2: spl_htons:528
+   2: htons_asm:528
+    3: 528
+ 15: spl_htons:217
+  2: htons_asm:217
+   3: 217
+ 21: spl_htons:202
+  2: htons_asm:202
+   3: 202
+ 22: gso_compute_ip_checksum:15944
+  2: 202
+  3: compute_checksum:14876
+   2: spl_htons:415
+    2: htons_asm:415
+     3: 415
+   4: 1876
+   5: 10738
+   11: 1436
+   12: 411
+ 54: 212
+dpa_sms_sbuf_get_tcm_header:23444:23444
+ 1: 808
+ 2: 21509
+ 5: 572
+ 6: 555
+dpe_wlan_user_get:22985:22985
+ 1: 9984
+ 6: 361
+ 7: 10000
+ 11: 810
+ 17: 1830
+sbuf_unlink:22647:22647
+ 5: 19605
+ 6: 435
+ 7: 440
+ 9: 424
+ 10: 1743
+oal_pcie_intx_ete_isr:22189:22189
+ 1: 474
+ 6: get_pcie_res:2
+  2: 2
+ 7: 21689 oal_pcie_transfer_ete_done:21332
+ 14: 24
+OsSchedHandleIpc:22131:22131
+ 1: 599
+ 9: OsGetHwThreadId:179
+  3: 179
+ 13: OsSchedIpcQueIsEmpty:396
+  2: 396
+ 15: OsSchedIpcDeque:12061
+  4: 315
+  6: 55
+  7: 72
+  8: 64
+  9: 63
+  10: 70
+  11: 339
+  12: 64
+  15: OsSchedIpcMemBarrier:92
+   2: DRB_Dmb:92
+    2: ArchDataMemBarrier:92
+     2: 92
+  17: 10866
+  24: OsSchedIpcMemBarrier:61
+   2: DRB_Dmb:61
+    2: ArchDataMemBarrier:61
+     2: 61
+ 23: 310
+ 24: 8231 OsFiberQueSend:7580
+ 27: 215
+OsHwiDispatchTail:21181:21181
+ 1: 141
+ 2: OsGetRunQueue:127
+  3: 127
+ 4: 413
+ 21: 1400 OsFiberDispatcherHwiTail:1341
+ 22: 148
+ 23: 978
+ 28: 297
+ 30: 1008
+ 35: 377
+ 37: DRB_Dmb:94
+  2: ArchDataMemBarrier:94
+   2: 94
+ 41: 16004
+ 43: 194
+dpe_comm_dma_cbk_async:21077:21077
+ 0: 149
+ 1: 449
+ 5: 28
+ 11: dpe_dma_get_netbuf_list:6
+  2: 6
+ 12: dpe_dma_done_cache_invalid:9997
+  5: 471
+  6: oal_netbuf_next:685
+   2: 685 get_sbuf_next:337 _IrqVector:1
+  7: 8042 dpa_sms_sbuf_get_tcm_header:682
+ 26: 10439 dpe_rx_data_comp_dma_cb:9179 dpe_rx_add_buff_cbk:1053 OsHwiDispatcher:7 OsHwiRet:4 _IrqVector:1 HwiDispatch:1
+ 28: 9
+gso_recv_msg_cb:20988:20988
+ 1: 832
+ 11: 559
+ 14: 3805
+ 21: 1287
+ 28: 13801 sms_tx_start_main_process:12833 OsHwiRet:20 OsHwiDispatcher:16 _IrqVector:11 HwiDispatch:7 HwiCommonHandle:2 OsHwiTail:1
+ 31: 704
+sbuf_enqueue_tail:20904:20904
+ 2: sbuf_queue_before:20904
+  2: sbuf_insert:17688
+   3: 3515
+   4: 2252
+   5: 2252
+   6: 9669
+ficc_localsend_handler:20216:20216
+ 1: 700
+ 7: readl:49
+  2: 49
+ 8: 2424
+ 9: 3055
+ 10: 1973
+ 11: ficc_opipe_irq_handler:11452
+  4: ficc_opipe_devint_stat:68
+   2: readl:68
+    2: 68
+  5: 190
+  6: ficc_opipe_devint_clr:2467
+   2: writel:2179
+    2: cache_sync:42
+     2: 42
+    3: writel_relaxed:2137
+     2: 2137
+   3: cache_sync:288
+    2: 288
+  10: 218
+  11: ficc_debug_info_update_send_done:2713
+   3: 2548
+   6: 71
+   7: bsp_get_slice_value:37
+    2: bsp_get_slice_value_u64:37
+     4: 37
+  12: ficc_common_event_notify:4404
+   3: 29
+   8: 83
+   9: 40
+   11: 99
+   12: 4153 dma_done_notify:4072
+  14: 71
+ 17: 363
+bsp_dma_chn_memcpy_submit_async:19694:19694
+ 0: 4
+ 1: 91
+ 9: 20
+ 13: 50
+ 17: _dma_chn_memcpy_prepare_cd:18287
+  0: 1370
+  8: 5
+  12: 754 ficc_dma_malloc_cd:751
+  13: 22
+  19: 360
+  22: 634
+  23: fill_dma_memcpy_cd:14803
+   10: 1046
+   14: 1370
+   16: 4817
+   18: 7570 bsp_ficc_blks2multiblks_blk_head_fill_expand:4886
+  24: 339
+ 22: ficc_dma_get_cd_addr:42
+  7: 39
+  11: 3
+ 28: _dma_chn_prepare_vdesc:53
+  4: ficc_dma_vdesc_malloc:20
+   8: 6
+   9: 3
+   10: 1
+   11: 4
+   12: 3
+   15: 3
+  9: 30
+  10: 1
+  11: 2
+ 34: bsp_ficc_chn_blks2multiblks_send_expand:1112
+  4: ficc_chn_dmatrans_async:380
+   4: ficc_channel_get_by_hdl:32
+    6: 32
+   9: 10
+   13: 1
+   16: 12
+   20: ficc_hdr_fill_bd6:17
+    2: ficc_hdr_fill_bd3:17
+     7: 12
+     8: 3
+     9: 2
+   22: opipe_put_to_ringbuf:193
+    3: 6
+    4: 1
+    5: 6
+    6: 4
+    10: 31
+    26: 13
+    30: 19
+    31: memcpy_s:99
+     2: 18
+     3: 81 memcpy:75
+    34: 10
+    45: 4
+   27: ficc_opipe_wptr_update:95
+    2: writel:59
+     2: cache_sync:44
+      2: 44
+     3: writel_relaxed:15
+      2: 15
+    3: cache_sync:36
+     2: 36
+   28: 6
+  5: ficc_debug_info_update_send:732
+   3: 204
+   6: 227
+   7: bsp_get_slice_value:7
+    2: bsp_get_slice_value_u64:7
+     4: 7
+   8: 16
+ 35: 5
+ 43: bsp_get_slice_value:4
+  2: bsp_get_slice_value_u64:4
+   4: 4
+ 47: 12
+hal_rx_tcp_udp_checksum:18764:18764
+ 1: 4225
+ 5: 285
+ 6: oal_netbuf_next:796
+  2: 796 get_sbuf_next:183
+ 7: oal_sbuf_cb:526
+  2: 526 get_userdata:311
+ 8: 2721
+ 9: dpe_set_netbuf_checksum:4044
+  3: oal_set_netbuf_csum_flag:4044
+   2: 4044 sbuf_set_flags_csum:676
+ 11: dpe_device_rx_checksum_stat:5637
+  2: dpe_wlan_device_stat_get:182
+   2: 182
+  3: 1474
+  4: 1131
+  10: 1960
+  11: 890
+ 14: 530
+gso_process_bd_fiber:18176:18176
+ 1: 1210
+ 2: 126
+ 4: 14647 gso_process_bd:14444 OsHwiRet:34 OsHwiDispatcher:22 _IrqVector:16 HwiDispatch:11 OsHwiTail:6 HwiCommonHandle:4
+ 6: 785
+ 7: 958
+ 9: 450
+hmac_ba_rx_data_release:17582:17582
+ 2: 657
+ 4: 87
+ 5: 103
+ 10: 2965 hmac_rx_ba_release_check_sn:2156
+ 20: hmac_rx_mpdu_to_netbuf_list:1919
+  5: 122
+  11: 251
+  12: oal_netbuf_next:362
+   2: 362 get_sbuf_next:195
+  13: oal_netbuf_list_tail_nolock:1184
+   2: oal_netbuf_addlist_tail_nolock:1184
+    2: 1184 sbuf_enqueue_tail:827
+ 22: hmac_ba_rx_update_release_seqnum:1977
+  7: hmac_baw_rightside:180
+   0: 180
+  8: 594
+ 24: 310
+ 26: hmac_rx_ba_handle_release_flag:7871
+  0: 5
+  6: 78
+  11: 864
+  16: 3
+  17: 4
+  18: hmac_rx_release_valid_check:18
+   11: 5
+   13: 13 hmac_rx_ba_release_check_sn:12
+  25: hmac_ba_rx_update_release_seqnum:69
+   7: 67
+   8: 2
+  28: hmac_remove_frame_from_ring_reorder_q:6005
+   7: 4249 SRE_SplIrqLock:4118
+   10: dpe_rx_reorder_lock_irq_save:62
+    3: oal_spin_lock_irq_save:62
+     2: 62
+   11: 138
+   12: 60 sbuf_queue_empty:1
+   19: 84
+   27: 31 mdrv_spin_unlock_irqrestore:26
+   33: 245
+   40: 1136 mdrv_spin_unlock_irqrestore:1091
+  30: oal_netbuf_queue_splice_tail_init:554
+   2: 554 sbuf_queue_splice_tail_init:487
+  31: 29
+  34: 42
+  35: 53
+  37: dpe_get_tid_ba_info:39
+   2: dpe_wlan_user_get:36
+    6: 22
+    11: 14
+   3: 3
+  43: 10
+  44: 2
+ 29: 903
+ 34: 346
+hmac_tid_schedule_thread:17498:17498
+ 1: 448
+ 7: oal_mdrv_int_lock:76
+  2: mdrv_int_lock:76
+   4: 22
+   5: 23
+   6: 31
+ 10: 75
+ 14: 47
+ 15: oal_mdrv_int_unlock:27
+  2: mdrv_int_unlock:27
+   4: 27
+ 17: 60
+ 19: hmac_tid_schedule_thread_process:16619
+  0: 8
+  3: hmac_tid_schedule_list_for_each:13129
+   2: hmac_tid_list_for_each:13129
+    6: oal_spin_lock_irq_save:834
+     2: 834 SRE_SplIrqLock:745
+    7: hmac_tid_list_for_each_nolock:11886
+     4: 65
+     8: 123
+     9: 11698 hmac_sche_tid_info_getter:7426 hmac_get_tx_sche_tid_info:2865
+    8: oal_spin_unlock_irq_restore:409
+     2: 409 mdrv_spin_unlock_irqrestore:272
+  5: hmac_tid_tx_list_for_each:3218
+   2: hmac_tid_list_for_each_nolock:3218
+    4: 142
+    8: 151
+    9: 2925 hmac_tid_push_ring_process:2791 hmac_tx_tid_info_getter:40 OsHwiRet:8 OsHwiDispatcher:4 HwiDispatch:2 _IrqVector:2 HwiCommonHandle:1
+  6: hmac_tid_tx_list_clear:264
+   2: hmac_tid_list_clear_nolock:264
+    2: oal_dlist_is_empty:29
+     6: 29
+    3: oal_dlist_delete_head:80
+     14: oal_dlist_delete_entry:80
+      7: 28
+      11: oal_dlist_delete:32
+       6: 10
+       7: 22
+      12: 7
+      13: 13
+ 21: 55
+ 25: 91
+mp17c_host_tx_set_ddr_ring:17441:17441
+ 2: 1409
+ 8: 699
+ 10: hal_host_tx_tid_ring_depth_get:990
+  2: 849
+  3: 141 mp17c_host_get_tx_tid_ring_depth:125
+ 13: 6327 memcpy_s:3791
+ 14: 5912 memcpy_s:4670
+ 21: 1580
+ 22: 502
+hal_host_rx_ring_entry_get:16861:16861
+ 2: 153
+ 7: 3
+ 13: 1963 hal_ring_get_entry_count:1958
+ 20: 1
+ 21: 1
+ 23: 9
+ 24: dpe_is_support_rx_ring_read_single:36
+  2: 36
+ 25: hal_host_rx_ring_entry_burst:13949
+  8: 129
+  10: 125
+  11: 108
+  14: 1324 hal_host_comp_ring_wait_valid:1308
+  19: 1973 memcpy_s:1491
+  23: hal_rx_comp_ring_update_rptr:1136
+   5: 609
+   7: 314
+   8: 2
+   13: 211
+  25: 7602 hal_get_skb_from_ring_entry:7120
+  26: 102
+  27: oal_netbuf_list_tail_nolock:1213
+   2: oal_netbuf_addlist_tail_nolock:1213
+    2: 1213 sbuf_enqueue_tail:908
+  29: 234
+  32: 3
+ 27: 1
+ 30: 3
+ 31: 299 hal_ring_reset_entries:298
+ 34: oal_netbuf_list_len:9
+  2: 9 sbuf_queue_len:7
+ 37: hal_ring_set_sw2hw:423
+  9: 423 hal_host_writel:324
+ 38: 5
+dpe_wlan_xmit_from_acpu_ring_tx:16047:16047
+ 1: 93
+ 3: oal_netbuf_peek:554
+  2: oal_netbuf_head_next:554
+   2: 554 sbuf_peek:369
+ 8: oal_sbuf_cb:949
+  2: 949 get_userdata:195
+ 9: oal_netbuf_tail:989
+  2: oal_netbuf_tail_next:724
+   2: 724 sbuf_peek_tail:387
+  5: 186 set_sbuf_next:93
+ 12: 13203 dpe_is_ring_tx:12227
+ 14: 259
+hmac_host_ring_tx_suspend:15835:15835
+ 2: 745
+ 4: 213
+ 8: dpe_vap_get_net_device:1516
+  5: 235
+  8: 1028
+  11: 253
+ 9: 1645
+ 14: 562
+ 18: hmac_ring_tx_suspend_th:6494
+  2: hal_host_tx_tid_ring_depth_get:4766
+   2: 3569
+   3: 1197
+ 29: 489
+hmac_rx_skb_netif_rpt:15607:15607
+ 1: 106
+ 2: dpe_vap_get_net_device:17
+  4: dpe_wlan_vap_get:4
+   3: 4
+  8: 11
+  11: 2
+ 8: 269
+ 14: 207
+ 21: 397 hmac_rx_get_input_netbuf_from_waitlist:393
+ 22: 14602 dpe_wlan_rx_sms_filter_input:14504 OsHwiRet:3 OsHwiDispatcher:3 HwiDispatch:2 _IrqVector:2 OsHwiTail:2 HwiCommonHandle:1
+ 61: 9
+dpe_wlan_rx_filter_user_data_set:14391:14391
+ 1: 479
+ 2: oal_sbuf_cb:429
+  2: 429 get_userdata:214 OsHwiRet:1
+ 3: oal_sbuf_cb:1159
+  2: 1159 get_userdata:966
+ 5: 702
+ 6: 182
+ 7: 11082
+ 14: 358
+sms_tx_start_main_process:14376:14376
+ 1: 1129
+ 5: 460
+ 8: 953
+ 10: 1405
+ 16: 1472
+ 17: 3989
+ 20: 1448
+ 21: 802
+ 24: 301
+ 25: 1625 DRBI_FiberQueSend:1539 HwiCommonHandle:1 OsHwiDispatcher:1 OsHwiRet:1 OsHwiTail:1
+ 28: 792
+dra_free_dpa_buf:14166:14166
+ 4: osl_get_core_id:625
+  2: mdrv_get_core_id:625
+   2: OsGetCoreID:625
+    3: 625
+ 5: dra_free_mem:12902
+  7: mdrv_int_lock:2298
+   4: 316
+   5: 316
+   6: 1666
+  8: 3974
+  10: 343
+  16: 942
+  17: 1641
+  18: 304
+  21: 989
+  26: 2064
+  27: mdrv_int_unlock:347
+   4: 347
+ 8: 339
+dpa_sms_filter_cfg_wlan:14144:14144
+ 1: 11369
+ 2: 104
+ 3: 321
+ 6: 99
+ 8: 587
+ 11: dpa_sms_filter_deliv_direct_pkt:1
+  6: 1 SRE_SplIrqLock:1
+ 15: 313
+ 19: 220
+ 20: 321
+ 21: 435
+ 26: 374
+get_userdata:13914:13914
+ 2: 13914
+__udivdi3:13870:13870
+ 0: 13870
+hmac_ba_rx_data_buffer:12978:12978
+ 0: 10
+ 2: 227
+ 3: 36
+ 8: 105
+ 11: dpe_get_tid_ba_info:419
+  2: dpe_wlan_user_get:154
+   6: 14
+   11: 140
+  3: 68
+  4: 144
+  9: dpe_wlan_is_multi_user_not_support_ampdu:53
+   3: 53
+ 17: 121
+ 19: 3132 hmac_rx_ba_release_check_sn:3036 OsHwiRet:2 HwiDispatch:1
+ 22: hmac_rx_ba_handle_release_flag:313
+  6: 34
+  11: 279
+ 25: hmac_ba_add_netbuf_to_reo_list:8353
+  6: oal_sbuf_cb:67
+   2: 67 get_userdata:49
+  10: hmac_ba_buffer_frame_in_reodr:812
+   6: 64
+   12: 110
+   17: oal_netbuf_list_empty:440
+    2: 440 sbuf_queue_empty:421
+   20: 57
+   23: 17
+  19: 51
+  20: bsp_get_elapse_ms:6554
+   2: bsp_get_slice_value:27
+    2: bsp_get_slice_value_u64:27
+     4: 27
+  21: dpe_netbuf_list_head_init:54
+   4: 54 sbuf_queue_head_init:39
+  22: hmac_rx_mpdu_to_netbuf_list:268
+   11: 13
+   12: oal_netbuf_next:82
+    2: 82 get_sbuf_next:54
+   13: oal_netbuf_list_tail_nolock:173
+    2: oal_netbuf_addlist_tail_nolock:173
+     2: 173 sbuf_enqueue_tail:117
+  23: oal_netbuf_list_len:53
+   2: 53 sbuf_queue_len:23
+  24: hmac_ba_seqno_lt:282
+   2: 282
+  25: 17
+ 28: 82
+ 29: 1 oam_log_print3_press:1
+ 35: 59
+dpe_is_ring_tx:12227:12227
+ 1: 651
+ 3: dpe_wlan_vap_get:282
+  3: 282
+ 7: dpe_ring_tx_enabled:362
+  2: dpe_host_ring_tx_enabled:184
+   2: 184
+ 11: hmac_tid_ring_tx_allowed:8309
+  0: 715
+  5: 102
+  10: dpe_wlan_user_get:2405
+   6: 275
+   11: 2130
+  12: 820
+  17: dpe_wlan_is_multi_user_not_support_ampdu:693
+   3: 693
+  21: dpe_get_tx_tid_info:2360
+   0: 184
+   2: dpe_wlan_user_get:1630
+    6: 171
+    11: 1459
+   3: 272
+   9: dpe_wlan_is_multi_user_not_support_ampdu:274
+    3: 274
+  26: hmac_tid_info_inited:94
+   2: oal_atomic_read:94
+    2: dpa_atomic_read:94
+     2: 94
+ 15: 742
+ 20: 1298
+ 21: 283
+hmac_tid_push_ring_process:11753:11753
+ 1: 25
+ 2: 311 dpe_wlan_user_get:214 _IrqVector:2 OsHwiRet:1
+ 6: 22
+ 10: 3029 dpe_wlan_vap_get:2985 OsHwiRet:14 OsHwiDispatcher:10 _IrqVector:6 OsHwiTail:3 HwiDispatch:3 HwiCommonHandle:2
+ 11: 39
+ 15: hmac_get_tid_push_ring_func:49
+  2: oal_atomic_read:9
+   2: dpa_atomic_read:9
+    2: 9
+  5: 40
+ 16: 5
+ 21: hmac_tid_push_ring_fail_reset:10
+  2: 10
+ 22: 7067 hmac_tid_push_netbuf_to_host_ring:5687 OsHwiRet:17 _IrqVector:6 HwiDispatch:6 OsHwiDispatcher:3 HwiCommonHandle:3
+ 24: oal_atomic_read:161
+  2: dpa_atomic_read:161
+   2: 161
+ 27: 1019
+bsp_pfa_config_td:10244:10244
+ 1: 585
+ 6: 296
+ 10: 372
+ 11: pfa_config_td_para_check:1901
+  2: 344
+  6: 896
+  10: pfa_port_td_full:430
+   2: 430
+ 14: 92
+ 16: bsp_dra_map:2047
+  6: 836
+  7: 125
+  26: 1086
+ 17: memcpy_s:3135
+  2: 756
+  3: 2379 memcpy:1795 _IrqVector:1 OsHwiRet:1
+ 19: 435
+ 21: pfa_writel:213
+  2: writel:213
+   2: cache_sync:6
+    2: 6
+   3: writel_relaxed:207
+    2: 207
+ 24: 350
+ 27: 588
+dma_done_proc:10077:10077
+ 1: 134
+ 6: 47
+ 10: 50
+ 11: 175
+ 12: 167
+ 18: 116
+ 20: ficc_dma_vdesc_get_used_head:364
+  8: 70
+  9: 146
+  10: 61
+  13: 87
+ 21: 70
+ 26: 499
+ 27: 3945 sms_tx_line_and_csum_cb:3822 OsHwiRet:1 hcc_dma_cbk:1
+ 28: 143
+ 35: 797
+ 36: 59
+ 37: ficc_dma_cd_used_head_free:571
+  7: 136
+  12: 435
+ 38: ficc_dma_vdesc_used_head_free:2409
+  5: 128
+  10: 72
+  11: 368
+  16: 259
+  17: memset_s:1582
+   3: 1582 memset:1262
+ 41: 392
+cpuidle_time_rec_enter:9882:9882
+ 1: 373
+ 4: bsp_get_slice_value:192
+  2: bsp_get_slice_value_u64:192
+   4: 192
+ 5: 9061 SRE_SplIrqLock:8979
+ 6: 61
+ 7: 66
+ 8: 129
+OsCacheCheckPhyPara:9522:9522
+ 1: 1628
+ 6: OsVa2Pa:5036
+  2: 5036 OsMmuVa2Pa:4611 OsHwiRet:8 _IrqVector:5 HwiDispatch:4 OsHwiDispatcher:4 HwiCommonHandle:2 OsHwiTail:1
+ 7: 2858
+dpe_rx_add_buff_dma_prepare:9431:9431
+ 1: 255
+ 7: 5
+ 8: 8
+ 10: oal_mdrv_int_lock:5
+  2: mdrv_int_lock:5
+   4: 4
+   5: 1
+ 11: oal_netbuf_list_head_init_nolock:11
+  2: 11 sbuf_queue_head_init:5
+ 13: oal_netbuf_list_len:13
+  2: 13 sbuf_queue_len:9
+ 14: oal_netbuf_queue_splice_tail_init:171
+  2: 171 sbuf_queue_splice_tail_init:16
+ 15: oal_mdrv_int_unlock:2
+  2: mdrv_int_unlock:2
+   4: 2
+ 19: oal_netbuf_next:389
+  2: 389 get_sbuf_next:127
+ 20: 7155
+ 25: oal_netbuf_delist_nolock:872
+  2: oal_netbuf_delist_head_nolock:872
+   2: 872 sbuf_dequeue:775
+ 27: oal_netbuf_list_tail_nolock:461
+  2: oal_netbuf_addlist_tail_nolock:461
+   2: 461 sbuf_enqueue_tail:358
+ 29: oal_mdrv_int_unlock:7
+  2: mdrv_int_unlock:7
+   4: 7
+ 30: 2
+dra_free_msg_buf:9346:9346
+ 4: osl_get_core_id:289
+  2: mdrv_get_core_id:289
+   2: OsGetCoreID:289
+    3: 289
+ 5: 915
+ 11: dra_free_mem:7902
+  7: mdrv_int_lock:1415
+   4: 229
+   5: 912
+   6: 274
+  8: 2275
+  10: 265
+  16: 787
+  17: 1355
+  21: 987
+  26: 590
+  27: mdrv_int_unlock:228
+   4: 228
+ 14: 240
+OsHwiDispatchHandle:8322:8322
+ 1: 169
+ 2: 305
+ 3: 135
+ 4: 6301 OsHwiHookDispatcher:6146
+ 5: 841
+ 7: 146
+ 10: 286
+ 11: 139
+OsSchedSendIpcCall:8186:8186
+ 2: 133
+ 9: OsSchedIpcQueIsFull:203
+  2: 203
+ 10: OsSchedIpcEnque:1818
+  4: 263
+  6: 51
+  7: 61
+  8: 54
+  9: 64
+  10: 295
+  11: 54
+  12: 57
+  15: OsSchedIpcMemBarrier:54
+   2: DRB_Dmb:54
+    2: ArchDataMemBarrier:54
+     2: 54
+  17: 812
+  24: OsSchedIpcMemBarrier:53
+   2: DRB_Dmb:53
+    2: ArchDataMemBarrier:53
+     2: 53
+ 20: 5921 OsSchedSendIpc:5611
+ 21: 55
+hmac_sche_tid_info_getter:8115:8115
+ 2: 8115
+dpe_rx_add_buff_cbk:8093:8093
+ 1: 193
+ 3: 7
+ 4: hal_get_host_device:161
+  2: mac_chip_get_hal_dev_num:46
+   2: 46
+  3: 115
+ 10: oal_netbuf_list_head_init_nolock:28
+  2: 28 sbuf_queue_head_init:23
+ 12: oal_mdrv_int_lock:6
+  2: mdrv_int_lock:6
+   5: 3
+   6: 3
+ 13: oal_netbuf_queue_splice_tail_init:56
+  2: 56 sbuf_queue_splice_tail_init:46
+ 15: oal_netbuf_list_len:19
+  2: 19 sbuf_queue_len:7
+ 16: oal_mdrv_int_unlock:7
+  2: mdrv_int_unlock:7
+   4: 7
+ 23: 6842 hal_host_rx_add_buff_alloc_after_dma:6835 HwiDispatch:2 _IrqVector:1 OsHwiRet:1
+ 25: 13
+ 27: 4
+ 32: 5
+ 36: hmac_rx_comp_need_scheduled:601
+  8: mdrv_get_core_id:4
+   2: OsGetCoreID:4
+    3: 4
+  9: 209
+  13: oal_mdrv_int_lock:5
+   2: mdrv_int_lock:5
+    4: 3
+    5: 1
+    6: 1
+  14: 4
+  17: 1
+  19: 325
+  25: 37
+  32: 4
+  34: 11
+  35: oal_mdrv_int_unlock:1
+   2: mdrv_int_unlock:1
+    4: 1
+ 37: 11
+ 42: 130 DRBI_FiberQueSend:125
+ 45: 7
+dpa_sms_sbuf_alloc_tcm_header:7896:7896
+ 1: 273
+ 5: 2665 DRB_SysCurThreadType:2437
+ 10: bsp_sms_get_ram_header:2959
+  2: sms_gro_cache_get:2959
+   7: osl_get_core_id:105
+    2: mdrv_get_core_id:105
+     2: OsGetCoreID:105
+      3: 105
+   9: 333
+   15: 103
+   16: 90
+   17: 344
+   18: 515
+   19: 581
+   21: 110
+   29: 778
+ 15: 441
+ 17: 354
+ 19: 692 bsp_get_l1dtcm_global_offset:144
+ 22: 512
+hmac_tx_complete_update_mlink_ring_rptr:7494:7494
+ 0: 5
+ 1: 563
+ 4: hmac_tx_reg_read_rptr:3762
+  2: 17
+  3: 1
+  4: 1
+  5: 2
+  8: hal_host_tx_ring_get_ops:3733
+   2: 12
+   3: 3721 mp17c_host_tx_ring_get_ops:3366
+  12: 1
+ 10: hmac_tx_reg_read_ml1_rptr:2751
+  3: 5
+  4: 3
+  8: hal_host_tx_ring_get_ops:2733
+   2: 16
+   3: 2717 mp17c_host_tx_ring_get_ops:2715
+  12: 7
+ 17: hmac_tx_comp_update_ml_bitmap:2
+  5: 2
+ 19: hal_tx_complete_ring_rptr_valid:242
+  3: 5
+  4: hal_host_tx_tid_ring_depth_get:237
+   2: 29
+   3: 208 mp17c_host_get_tx_tid_ring_depth:205
+ 27: 4
+ 28: 140
+ 37: 13
+mp17c_host_get_rx_msdu_dscr_len:6941:6941
+ 2: 6941
+hal_ring_get_entry_count:6934:6934
+ 1: 336
+ 6: 41
+ 11: hal_ring_get_hw2sw:6085
+  10: 65
+  11: 132
+  14: 435 hal_host_readl:321
+  16: 3684
+  17: 14
+  20: 201
+  23: 242 hal_host_readl:208
+  25: 1308
+  26: 4
+ 12: 24
+ 13: hal_ring_is_full:4
+  2: 3
+  3: 1
+ 18: 2
+ 23: 169
+ 27: hal_ring_is_empty:2
+  2: 2
+ 33: hal_ring_wrap_around:135
+  2: 135
+ 41: 30
+ 50: 4
+ 52: 13
+get_sbuf_next:6837:6837
+ 2: 6837
+DRBI_FusionCacheInv:6592:6592
+ 1: 821
+ 4: 3729 OsCacheCheckVirtPara:3326 _IrqVector:4 OsHwiDispatcher:3 OsHwiRet:2 HwiDispatch:1
+ 5: 422
+ 10: 826
+ 12: 794
+hmac_rx_ba_release_check_sn:6570:6570
+ 2: 2403
+ 3: 754
+ 4: hmac_rx_reorder_release_to_sn:454
+  7: 363
+  8: 91
+ 5: 29
+ 8: 878 oam_log_print2_press:460 OsHwiRet:1
+ 10: 622 oam_log_print2_press:400
+ 12: 972 oam_log_print4_press:505
+ 19: 458
+bsp_dmi_chn_recv:6533:6533
+ 1: 3285
+ 3: 293
+ 6: 88
+ 11: 416
+ 15: 93
+ 17: 82
+ 18: 2033 DRBI_FiberQueSend:1554 OsHwiRet:2 OsHwiTail:1 _IrqVector:1
+ 19: 78
+ 26: 165
+record_data_fill:6093:6093
+ 1: 16
+ 4: 34
+ 8: 6
+ 9: mdrv_get_core_id:6
+  2: OsGetCoreID:6
+   3: 6
+ 10: 310
+ 12: 1140 SRE_SplIrqLock:1120
+ 13: bsp_get_slice_value:12
+  2: bsp_get_slice_value_u64:12
+   4: 12
+ 14: 15
+ 16: 26
+ 20: record_save_data:1037
+  5: 39
+  8: 507
+  9: 255
+  10: 87
+  12: 123
+  20: 10
+  21: 16
+ 21: record_save_data:1633
+  4: 39
+  5: 18
+  8: 922
+  9: 346
+  10: 147
+  12: 156
+  14: 1
+  21: 4
+ 22: 1705 mdrv_spin_unlock_irqrestore:1664
+ 24: syslog_fs_is_ok:125
+  10: 35
+  11: 6
+  13: 55
+  16: 17
+  17: 12
+ 28: 4 SRE_SplIrqLock:3
+ 31: 3 mdrv_spin_unlock_irqrestore:3
+ 33: 21
+mp17c_host_tx_ring_get_ops:6081:6081
+ 0: 25
+ 1: 182
+ 4: 5
+ 8: 347
+ 12: mp17c_host_tx_get_hw_ml1_rptr:5480
+  3: mp17c_host_tx_get_ring_table:57
+   2: hal_host_readl:57
+    3: hal_host_pcpu_access_device_allowed:50
+     2: 50
+    4: readl:2
+     2: 2
+  4: 15
+  8: 3558
+  9: 3
+ 13: 4
+dpe_tx_msdu_info_clear_check:6002:6002
+ 1: 1810
+ 6: 1367
+ 26: 2825
+mp17c_host_get_tx_tid_ring_depth:5977:5977
+ 1: 5216
+ 2: 761
+bsp_dra_map:5929:5929
+ 1: 208
+ 6: 1062
+ 7: 215
+ 26: 2065
+ 28: 1932
+ 32: 447
+mp17c_mac_irq_host_all:5824:5824
+ 1: 213
+ 3: mp17c_irq_host_mac_isr:5060
+  0: 1
+  5: 1
+  10: 3
+  18: mp17c_get_host_mac_int_status:33
+   2: hal_host_readl_irq:33
+    2: hal_host_pcpu_access_device_allowed:4
+     2: 4
+  19: mp17c_get_host_mac_int_mask:21
+   2: 21
+  20: 2048
+  31: 2241
+  33: 2
+  35: mp17c_irq_host_mac_isr_process_all:694
+   7: 1
+   9: 4
+   11: mp17c_irq_host_mac_isr_process:689
+    0: 43 mp17c_clear_host_mac_int_status:35
+    4: hal_irq_host_tx_complete_isr:646
+     4: 2
+     13: hmac_set_tx_comp_triggered:1
+      2: oal_atomic_set:1
+       2: dpa_atomic_set:1
+        2: 1
+     14: hmac_tx_comp_scheduled:637
+      2: 9
+      4: 4
+      7: hmac_tx_comp_need_scheduled:478
+       7: mdrv_get_core_id:1
+        2: OsGetCoreID:1
+         3: 1
+       8: 7
+       12: oal_mdrv_int_lock:3
+        2: mdrv_int_lock:3
+         4: 1
+         5: 1
+         6: 1
+       13: 1
+       15: 2
+       17: 7
+       22: 2
+       29: 445
+       31: 7
+       32: oal_mdrv_int_unlock:3
+        2: mdrv_int_unlock:3
+         4: 3
+      12: 146 DRBI_FiberQueSend:26
+  36: mp17c_clear_host_mac_int_status:16
+   5: hal_host_writel_irq:16
+    2: hal_host_pcpu_access_device_allowed:3
+     2: 3
+    5: writel:13
+     2: cache_sync:3
+      2: 3
+     3: writel_relaxed:10
+      2: 10
+ 4: 551
+dpa_sms_sbuf_free_tcm_header:5757:5757
+ 1: 99
+ 2: 281
+ 3: bsp_sms_put_ram_header:4672
+  2: sms_gro_cache_put:4672
+   4: osl_get_core_id:100
+    2: mdrv_get_core_id:100
+     2: OsGetCoreID:100
+      3: 100
+   8: 290
+   9: 92
+   10: 315
+   12: 565
+   15: 437
+   16: cache_sync:559
+    2: 559
+   17: 1378
+   19: 936
+ 4: 98
+ 5: 94
+ 6: 91
+ 8: 336
+cpuidle_time_rec_exit:5729:5729
+ 1: 520
+ 4: bsp_get_slice_value:171
+  2: bsp_get_slice_value_u64:171
+   4: 171
+ 5: 4473 SRE_SplIrqLock:4413
+ 6: update_cpuidle_duration:406
+  2: 81
+  3: 325
+ 7: 41
+ 8: 118
+sbuf_queue_empty:5702:5702
+ 2: 5702
+OsSchedSendIpc:5611:5611
+ 1: 586
+ 3: OsCoreWakeupIpc:128
+  2: 63
+  4: 65
+ 4: OsSchedTriggerIpi:2558
+  3: DRB_Dmb:594
+   2: ArchDataMemBarrier:594
+    2: 594
+  4: OsHwiTriggerByMask:1725
+   2: OsGetMpRegBase:235
+    3: 48
+    5: 187
+   5: OsCoreMaskLogical2Phy:1192
+    4: OsGetRMB:54
+     3: 54
+    9: 507
+    10: 631
+   8: 55
+ 5: 2339
+mp17c_mac_comm_irq_host_all:5453:5453
+ 0: 73
+ 1: 31
+ 6: 8
+ 7: 10
+ 11: 2
+ 17: mp17c_get_host_mac_common_int_status:115
+  2: hal_host_readl_irq:115
+   2: hal_host_pcpu_access_device_allowed:3
+    2: 3
+   5: readl:111
+    2: 111
+ 18: mp17c_get_host_mac_common_int_mask:137
+  2: hal_host_readl_irq:84
+   5: readl:84
+    2: 84
+ 19: mp17c_mac_comm_except_rx_complete_irq:1766
+  3: 1766
+ 20: 394
+ 27: 1104
+ 28: mp17c_clear_host_mac_common_int_status:133
+  5: hal_host_writel_irq:133
+   2: hal_host_pcpu_access_device_allowed:124
+    2: 124
+   5: writel:8
+    2: cache_sync:6
+     2: 6
+    3: writel_relaxed:2
+     2: 2
+ 31: 1
+ 32: 4
+ 34: 2
+ 35: mp17c_irq_host_mac_common_isr_process_all:1128
+  7: 2
+  9: 2
+  11: mp17c_irq_host_mac_comm_isr_process:1124
+   3: 1
+   5: 4
+   11: 1
+   13: 880 hal_irq_host_rx_complete_isr:626 mp17c_clear_host_mac_common_int_status:190 g_rx_add_buff_hdl:26
+   24: 238 hal_irq_host_rx_ring_empty_isr:165
+ 36: mp17c_clear_host_mac_common_int_status:39
+  5: hal_host_writel_irq:39
+   2: hal_host_pcpu_access_device_allowed:13
+    2: 13
+   5: writel:23
+    2: cache_sync:19
+     2: 19
+    3: writel_relaxed:4
+     2: 4
+ 37: 506
+hmac_tx_complete_process_by_tid_info:5385:5385
+ 0: 18
+ 1: 291
+ 2: hmac_tid_schedule_list_for_each:3157
+  2: hmac_tid_list_for_each:3157
+   6: oal_spin_lock_irq_save:212
+    2: 212 SRE_SplIrqLock:206
+   7: hmac_tid_list_for_each_nolock:2876
+    4: 15
+    8: 73
+    9: hmac_tx_complete_get_tx_tid_info:1974
+     7: oal_atomic_read:15
+      2: dpa_atomic_read:15
+       2: 15
+     11: hmac_tx_complete_tid_tx_list_enqueue:1944
+      2: hmac_tid_list_enqueue_nolock:1944
+       2: hmac_tid_entry_exists_nolock:1295
+        2: hmac_tid_list_for_each_nolock:1295
+         4: 451
+         8: 82
+         9: hmac_tid_entry_equal:232
+          2: 151
+          3: 81
+       6: oal_dlist_add_tail:101
+        0: 18
+        2: oal_dlist_add:83
+         4: 25
+         8: 25
+         9: 10
+         10: 14
+         11: 9
+   8: oal_spin_unlock_irq_restore:69
+    2: 69 mdrv_spin_unlock_irqrestore:67
+ 3: hmac_tx_complete_tid_tx_list_for_each:1720
+  2: hmac_tid_list_for_each_nolock:1720
+   4: 29
+   8: 314
+   9: 1377 hmac_tx_complete_process_tid_tx_list:693 hmac_tx_comp_tid_info_getter:229 OsHwiRet:25 OsHwiDispatcher:16 _IrqVector:15 HwiDispatch:14 HwiCommonHandle:12 OsHwiTail:4
+ 4: hmac_tid_list_clear_nolock:180
+  2: oal_dlist_is_empty:13
+   6: 13
+  3: oal_dlist_delete_head:111
+   14: oal_dlist_delete_entry:111
+    7: 44
+    11: oal_dlist_delete:32
+     6: 9
+     7: 23
+    12: 16
+    13: 19
+ 5: 19
+ficc_dma_done_int_en:5335:5335
+ 1: 605
+ 3: 35
+ 6: bsp_ficc_channel_int_en:3243
+  0: 291
+  5: ficc_channel_get_by_hdl:149
+   0: 48
+   6: 101
+  6: 66
+  11: _ficc_channel_int_en:2737
+   6: 193
+   9: ficc_opipe_devint_en:2439
+    4: readl:25
+     2: 25
+    5: writel:2138
+     2: cache_sync:35
+      2: 35
+     3: writel_relaxed:2103
+      2: 2103
+ 11: 1413
+bsp_ficc_channel_int_en:5041:5041
+ 0: 113
+ 5: ficc_channel_get_by_hdl:556
+  4: 147
+  6: 156
+  9: 253
+ 6: 37
+ 13: _ficc_channel_int_en:3998
+  11: 326
+  14: ficc_ipipe_devint_en:3400
+   4: readl:45
+    2: 45
+   5: writel:3046
+    2: cache_sync:61
+     2: 61
+    3: writel_relaxed:2985
+     2: 2985
+ 16: 337
+sbuf_len:4956:4956
+ 2: 4956
+bsp_ficc_blks2multiblks_blk_head_fill_expand:4886:4886
+ 5: bsp_ficc_blks2oneblk_blk_head_fill_expand:3269
+  5: 968
+  11: 637
+  13: 693
+  14: 971
+ 9: 676
+ 10: 306
+ 11: 323
+ 13: 312
+hmac_tid_schedule:4876:4876
+ 1: 608
+ 2: oal_atomic_read:30
+  2: dpa_atomic_read:30
+   2: 30
+ 5: 691
+ 13: hmac_tid_need_schedule:2891
+  8: mdrv_get_core_id:1304
+   2: OsGetCoreID:1304
+    3: 1304
+  9: 242
+  13: oal_mdrv_int_lock:112
+   2: mdrv_int_lock:112
+    4: 35
+    5: 36
+    6: 41
+  14: 32
+  16: 98
+  18: 111
+  23: 74
+  24: 150
+  25: oal_mdrv_int_unlock:20
+   2: mdrv_int_unlock:20
+    4: 20
+  32: 670
+  33: oal_mdrv_int_unlock:78
+   2: mdrv_int_unlock:78
+    4: 78
+ 18: 580 DRBI_FiberQueSend:533
+ 23: 39
+dma_done_notify:4666:4666
+ 1: 224
+ 3: 30
+ 8: 23
+ 11: 33
+ 16: ficc_dma_done_int_dis:3255
+  6: bsp_ficc_channel_int_dis:3220
+   0: 50
+   5: ficc_channel_get_by_hdl:263
+    6: 118
+    88: 145
+   6: 69
+   11: _ficc_channel_int_dis:2838
+    6: 191
+    9: ficc_opipe_devint_dis:2437
+     4: readl:35
+      2: 35
+     5: 203
+     6: writel:2199
+      2: cache_sync:35
+       2: 35
+      3: writel_relaxed:2164
+       2: 2164
+ 17: 186
+ 18: bsp_get_slice_value:40
+  2: bsp_get_slice_value_u64:40
+   4: 40
+ 19: 642 DRBI_FiberQueSend:594
+ 22: 67
+ 25: 95
+hal_pm_try_check_dev_state:4656:4656
+ 1: 343
+ 4: pm_wlan_dpa_get_acpu_state:603
+  2: 603
+ 14: oal_pcie_link_state_up:2509
+  5: get_pcie_res:774
+   2: 774
+  6: 10
+  10: 1202
+  11: 510
+  15: 13
+ 19: 26
+OsMmuVa2Pa:4611:4611
+ 0: 4611
+hal_get_host_device:4559:4559
+ 1: 850
+ 2: mac_chip_get_hal_dev_num:886
+  2: 886
+ 3: 241
+ 4: 1700
+ 9: 882
+sbuf_queue_splice_tail_init:4544:4544
+ 2: sbuf_queue_empty:265
+  2: 265
+ 3: sbuf_queue_splice:2398
+  3: 349
+  6: 603
+  7: 1269
+  8: 177
+ 4: 412
+ 5: sbuf_queue_head_init:671
+  2: 453
+  3: 218
+ 7: 351
+bsp_record_hash:4531:4531
+ 1: 322
+ 5: 59
+ 8: 228
+ 9: 133
+ 11: 183
+ 14: 3324 record_data_fill:3303 syslog_send_notify:4
+ 15: 282
+hmac_tx_complete_process:4526:4526
+ 0: hal_pm_try_wakeup_allow_sleep:341
+  12: oal_atomic_read:6
+   2: dpa_atomic_read:6
+    2: 6
+  16: oal_atomic_dec:216
+   2: dpa_atomic_dec:216
+    2: dpa_atomic_sub:216
+     4: 216
+  17: 116
+ 1: 349
+ 2: hal_pm_try_wakeup_forbid_sleep:427
+  11: oal_atomic_inc:263
+   2: dpa_atomic_inc:263
+    2: dpa_atomic_add:263
+     4: 263
+  12: 164
+ 3: 415 hal_pm_try_check_dev_state:400 OsHwiDispatcher:4 _IrqVector:2 OsHwiRet:1 OsHwiTail:1 HwiDispatch:1
+ 7: 19
+ 8: 2975 hmac_tx_complete_process_by_tid_info:2858 OsHwiRet:10 OsHwiDispatcher:7 HwiDispatch:5 OsHwiTail:5 HwiCommonHandle:3 _IrqVector:1
+mp17c_host_tx_ring_alloced:4497:4497
+ 2: 4497
+hal_irq_host_rx_complete_isr:4493:4493
+ 0: 4
+ 1: 218
+ 5: 2
+ 15: hmac_rx_comp_trigger_scheduled:335
+  2: hmac_set_rx_comp_triggered:1
+   2: oal_atomic_set:1
+    2: dpa_atomic_set:1
+     2: 1
+  3: hmac_rx_comp_scheduled:334
+   3: 1
+   6: hmac_rx_comp_need_scheduled:283
+    8: mdrv_get_core_id:2
+     2: OsGetCoreID:2
+      3: 2
+    9: 2
+    13: oal_mdrv_int_lock:6
+     2: mdrv_int_lock:6
+      5: 5
+      6: 1
+    14: 1
+    19: 236
+    22: 11
+    25: 2
+    34: 23
+   11: 50 DRBI_FiberQueSend:48
+ 17: hal_irq_rx_get_ring_data:3562
+  5: oal_netbuf_list_head_init_nolock:5
+   2: 5 sbuf_queue_head_init:2
+  7: 3496 hal_host_rx_ring_entry_get:3447
+  12: hal_host_rx_mpdu_que_push:61
+   5: dpe_st_spin_lock_irq_save:11
+    3: oal_mdrv_int_lock:11
+     2: mdrv_int_lock:11
+      4: 2
+      6: 9
+   7: oal_netbuf_list_len:11
+    2: 11 sbuf_queue_len:8
+   8: oal_netbuf_queue_splice_tail_init:34
+    2: 34 sbuf_queue_splice_tail_init:29
+   9: dpe_rx_mpdu_list_unlock_irq_restore:5
+    3: oal_mdrv_int_unlock:5
+     2: mdrv_int_unlock:5
+      4: 5
+ 19: 1
+ 20: hal_irq_rx_complete_process:2
+  4: hal_rx_data_scheduled:2
+   2: 1
+   5: hal_rx_data_need_scheduled:1
+    18: 1
+ 22: 347 oam_log_print1_press:333
+ 26: 22
+OsTskContextLoad:4471:4471
+ 0: 4471
+dump_arch_int_entry_hook:4233:4233
+ 2: osl_get_core_id:642
+  2: mdrv_get_core_id:642
+   2: OsGetCoreID:642
+    3: 642
+ 3: dump_arch_schdule_record_hrt:3146
+  2: dump_get_slice_value:440
+   4: 440
+  4: dump_schedule_loop_in_64bits:2706
+   2: 154
+   3: dump_arch_st_64bit:1050
+    2: 1050
+   4: 423
+ 4: dump_arch_set_int_in_contex:296
+  2: 296
+dump_arch_int_exit_hook:3849:3849
+ 2: osl_get_core_id:543
+  2: mdrv_get_core_id:543
+   2: OsGetCoreID:543
+    3: 543
+ 3: dump_arch_schdule_record_hrt:2890
+  2: dump_get_slice_value:422
+   4: 422
+  4: dump_schedule_loop_in_64bits:2468
+   2: 135
+   3: dump_arch_st_64bit:945
+    2: 945
+   4: 435
+ 4: dump_arch_set_int_out_contex:270
+  2: 270
+sbuf_queue_head_init:3801:3801
+ 2: 2920
+ 3: 881
+OsCacheCheckVirtPara:3341:3341
+ 1: 404
+ 2: 455
+ 6: 822
+ 10: 1258
+ 15: 402
+hmac_tx_comp_thread:3159:3159
+ 1: 379
+ 7: oal_mdrv_int_lock:16
+  2: mdrv_int_lock:16
+   4: 1
+   5: 1
+   6: 14
+ 10: 5
+ 14: 42
+ 15: oal_mdrv_int_unlock:1
+  2: mdrv_int_unlock:1
+   4: 1
+ 17: oal_pcie_link_state_up:341
+  5: get_pcie_res:2
+   2: 2
+  10: 326
+  11: 9
+  15: 4
+ 23: dpe_tx_comp_event_process:2245
+  0: 269
+  2: 2
+  3: 3
+  4: dpe_tx_comp_thread_process:1960
+   2: hmac_clear_tx_comp_triggered:8
+    2: oal_atomic_set:8
+     2: dpa_atomic_set:8
+      2: 8
+   4: 1952 hmac_tx_complete_process:1228 hal_get_host_device:652 OsHwiRet:14 _IrqVector:12 OsHwiDispatcher:9 HwiDispatch:3 HwiCommonHandle:2 OsHwiTail:2
+  10: 11
+ 26: 19
+hmac_get_tx_sche_tid_info:3091:3091
+ 1: 56
+ 2: 57
+ 7: oal_netbuf_list_len:247
+  2: 247 sbuf_queue_len:191
+ 11: hmac_tid_tx_list_enqueue:2448
+  2: hmac_tid_list_enqueue_nolock:2448
+   2: hmac_tid_entry_exists_nolock:224
+    2: hmac_tid_list_for_each_nolock:224
+     4: 206
+     8: 18
+   6: oal_dlist_add_tail:68
+    0: 11
+    2: oal_dlist_add:57
+     4: 20
+     8: 12
+     9: 6
+     10: 11
+     11: 8
+ 14: 230
+mp17c_host_tx_ring_update_ops:3079:3079
+ 1: 1057
+ 4: 11
+ 8: 84
+ 9: mp17c_host_tx_update_wptr:1560
+  5: mp17c_host_tx_update_ring_table:1560
+   3: hal_host_writel:1560
+    3: hal_host_pcpu_access_device_allowed:115
+     2: 115
+    4: writel:804
+     2: cache_sync:593
+      2: 593
+     3: writel_relaxed:211
+      2: 211
+ 12: 334
+hal_host_comp_ring_wait_valid:3017:3017
+ 2: 378
+ 9: 267 hal_host_comp_ring_entry_get:241
+ 10: hal_host_check_comp_ring_valid:2334
+  5: 172
+  6: 1781 memcpy_s:1468
+  7: 381
+ 17: 20
+ 24: 18
+OsHwiDispatcher:3002:3002
+ 0: 3002
+ficc_hdr_fill_bd5:2764:2764
+ 3: ficc_hdr_fill_bd3:668
+  5: 447
+  9: 221
+ 4: 196
+ 5: 203
+ 6: 420
+ 7: 229
+ 8: 214
+ 10: 624
+ 12: 210
+hmac_tid_ring_switch_list_enqueue:2753:2753
+ 1: 409
+ 2: 514
+ 7: 1830
+mp17c_host_tx_update_msdu_ring:2740:2740
+ 1: 80
+ 4: 61
+ 11: 59
+ 14: 70
+ 24: 27
+ 25: 37
+ 26: 329 memcpy_s:299
+ 30: 54
+ 31: 326 memcpy_s:287
+ 37: 3 memcpy_s:2
+ 42: 1 memcpy_s:1
+ 59: 1552
+ 65: 141
+sbuf_queue_len:2639:2639
+ 2: 2639
+DRB_SysCurThreadType:2437:2437
+ 3: OsIntLock:318
+  2: DRB_IntLock:318
+   2: ArchLockInterrupt:318
+    4: 99
+    5: 114
+    6: 105
+ 6: OsGetHwThreadId:353
+  3: 353
+ 11: OsCurThreadTypeNoIntLock:1342
+  2: OsGetRunQueue:99
+   3: 99
+  4: 497
+  14: 422
+  25: 212
+ 13: OsIntRestore:96
+  2: DRB_IntRestore:96
+   2: ArchRestoreInterrupt:96
+    4: 96
+ 15: 117
+sbuf_push:2254:2254
+ 2: 1160
+ 5: 99
+ 7: 311
+ 8: 684
+HwiDispatch:3178:2139
+ 0: 3178 OsHwiDispatchHandle:2176
+dump_arch_fiber_exit_hook:2096:2096
+ 2: osl_get_core_id:393
+  2: mdrv_get_core_id:393
+   2: OsGetCoreID:393
+    3: 393
+ 3: dump_arch_schdule_record_hrt:1480
+  2: dump_get_slice_value:462
+   4: 462
+  4: dump_schedule_loop_in_64bits:1018
+   2: 154
+   3: dump_arch_st_64bit:541
+    2: 541
+   4: 256
+ 5: dump_arch_set_fiber_out_contex:146
+  3: 146
+DRBI_FiberQueGetMsgNumByTid:2065:2065
+ 1: 101
+ 9: 78
+ 12: 211
+ 20: OsIntLock:124
+  2: DRB_IntLock:124
+   2: ArchLockInterrupt:124
+    4: 44
+    5: 38
+    6: 42
+ 21: OsFiberGetCb:97
+  2: 97
+ 22: OsFiberIsNotCreated:55
+  2: 55
+ 27: OsGetHwThreadId:42
+  3: 42
+ 28: 50
+ 32: OsGetRunQueue:42
+  3: 42
+ 33: 297
+ 37: 324 OsFiberQueQueryNum:280
+ 38: OsIntRestore:130
+  2: DRB_IntRestore:130
+   2: ArchRestoreInterrupt:130
+    4: 130
+ 40: 84
+OsHwiRet:2065:2065
+ 0: 2065
+sbuf_data_iova:2041:2041
+ 2: bsp_dra_to_iova:333
+  6: 333
+hal_pm_try_wakeup_allow_sleep:1908:1908
+ 12: oal_atomic_read:375
+  2: dpa_atomic_read:375
+   2: 375
+ 16: oal_atomic_dec:868
+  2: dpa_atomic_dec:868
+   2: dpa_atomic_sub:868
+    4: 868
+ 17: 654
+HwiCommonHandle:1878:1878
+ 0: 1878
+OsHwiTail:22925:1853
+ 0: 22925 OsHwiDispatchTail:19840 OsTskContextLoad:1519 OsMainSchedule:994
+dump_arch_fiber_entry_hook:1846:1846
+ 2: osl_get_core_id:285
+  2: mdrv_get_core_id:285
+   2: OsGetCoreID:285
+    3: 285
+ 3: dump_arch_schdule_record_hrt:1424
+  2: dump_get_slice_value:193
+   4: 193
+  4: dump_schedule_loop_in_64bits:1231
+   2: 83
+   3: dump_arch_st_64bit:495
+    2: 495
+   4: 202
+ 4: dump_arch_set_fiber_in_contex:137
+  2: 137
+OsFscMemAlloc:1821:1821
+ 1: 23
+ 3: 15
+ 9: OsFscMemSpinLock:188
+  2: OsSplLock:188
+   2: OsSplLockNoManage:188
+    3: 10
+    5: 178
+ 11: 1217 OsFscMemSplit:1032
+ 12: 9
+ 22: 66
+ 23: 26
+ 27: OsMemGetHeadAddr:5
+  2: 3
+  4: 2
+ 29: OsMemDbgInfoSet:58
+  2: OsGetCurPid:39
+   2: OsGetRunQueue:6
+    3: 6
+   4: 26
+   5: OsGetRunQueue:3
+    3: 3
+  3: 17
+ 32: 4
+ 37: OsFscMemSpinUnLock:23
+  2: OsSplUnlock:23
+   2: OsSplUnlockNoManage:23
+    2: 22
+    3: 1
+ 39: 187
+_IrqVector:1784:1784
+ 0: 1784
+OsMainSchedule:1716:1716
+ 1: 76
+ 5: OsGetRunQueue:68
+  3: 68
+ 7: 248
+ 8: 81
+ 11: 185
+ 13: OsGetHwThreadId:16
+  3: 16
+ 17: 440 OsPickNextTaskRtSingle:405
+ 18: 14
+ 20: 1
+ 22: 264 OsThrdContextLoad:201 OsContextSwitch:29 OsTskContextLoad:26
+ 28: 309
+sbuf_peek:1696:1696
+ 2: 703
+ 3: 703
+ 6: 290
+sbuf_peek_tail:1538:1538
+ 2: 530
+ 3: 698
+ 6: 310
+oam_log_print2_press:1538:1538
+ 4: 145
+ 5: 37
+ 6: 204
+ 9: 764 memcpy_s:678
+ 11: oam_get_log_switch:87
+  2: 87
+ 24: 166
+DRB_TaskIrqLock:1386:1386
+ 4: OsIntLock:1121
+  2: DRB_IntLock:1121
+   2: ArchLockInterrupt:1121
+    4: 975
+    5: 73
+    6: 73
+ 6: OsGetRunQueue:68
+  3: 68
+hal_host_comp_ring_entry_get:1320:1320
+ 2: 25
+ 8: 6
+ 9: 3
+ 12: hal_ring_wrap_around:10
+  2: 10
+ 16: 15
+ 19: 9
+ 23: 23
+ 27: 23
+ 31: 1093 memcpy_s:1076
+ 33: 11
+ 37: 3 memcpy_s:3
+ 39: 29
+ 46: 48
+sbuf_data:1221:1221
+ 2: 1221
+mp17c_host_tx_get_msdu_dscr_len:1210:1210
+ 2: 1210
+sbuf_pull:1166:1166
+ 1: 260
+ 2: 261
+ 5: 185
+ 7: 381
+ 8: 79
+oam_data_converge:1143:1143
+ 1: 225
+ 5: oam_data_check_param:32
+  2: 28
+  9: 4
+ 9: oal_spin_lock_irq_save:228
+  2: 228 SRE_SplIrqLock:225
+ 10: 3
+ 11: 300 oam_log_buffer_alloc:277
+ 19: 63
+ 34: 4
+ 35: 46 memcpy_s:32
+ 39: 7
+ 41: oal_spin_unlock_irq_restore:229
+  2: 229 mdrv_spin_unlock_irqrestore:208
+ 42: oam_sched_transfer:6
+  2: 6
+bsp_dmi_send_msg:1130:1130
+ 0: 8
+ 1: 6
+ 5: 23
+ 11: 1
+ 13: dmi_msg_send:1072
+  7: 2
+  13: dmi_get_rptr:39
+   3: bsp_ficc_chn_rptr_get:29
+    2: ficc_channel_get_by_hdl:13
+     6: 13
+    8: 10
+    9: 6
+   7: 10
+  14: bsp_dra_shm_cache_flush:592
+   3: 7
+   4: 585 DRB_DcacheFlush:555 DRBI_FusionCacheFlush:21
+  16: 79 SRE_SplIrqLock:76
+  17: 1
+  18: 2
+  19: 1
+  26: bsp_dra_virt_to_dra:4
+   3: 4
+  27: 11
+  28: 7
+  29: 4
+  30: 264 bsp_ficc_blk2ring_blk_send:261
+  37: 1
+  38: 62 mdrv_spin_unlock_irqrestore:49
+ 17: 11
+ 19: 9
+OsFscMemSplit:1032:1032
+ 0: 3
+ 2: 10
+ 16: OsMemTailAdd:5
+  3: 5
+ 18: 4
+ 20: 4
+ 22: 17
+ 27: OsFscMemBlkFuzzySearch:49
+  6: OsGetLMB1:4
+   3: 4
+  7: 32
+  12: 5
+  13: 3
+ 28: 24
+ 38: OsFscMemCheckList:371
+  2: 371
+ 41: 6
+ 44: 7
+ 45: 8
+ 54: OsFscMemSplitRight:5
+  4: 3
+  6: 2
+ 56: OsFscMemSplitLeft:64
+  5: 10
+  6: 2
+  12: 1
+  13: 2
+  15: OsGetLMB1:5
+   3: 5
+  16: OsFscMemDelete:12
+   2: 3
+   3: 9
+  17: OsFscMemInsert:31
+   4: 21
+   7: 4
+   9: 3
+   12: 3
+ 57: 2
+ 64: OsFscMemBlockUsedParaSet:26
+  6: OsMemSetTailMagic:3
+   2: 3
+  7: 5
+  9: 4
+  10: OsMemEncodeMagic:8
+   2: OsGetRndU16:3
+    2: OsGetRndU32:3
+     2: 3
+  13: 2
+  17: OsMemCfgHeadAddr:4
+   4: 4
+ 66: OsFscMemSetRightBlockStat:365
+  4: 334
+  5: 31
+ 67: 57
+ 70: 5
+hal_host_writel:939:939
+ 1: 429
+ 3: hal_host_pcpu_access_device_allowed:7
+  2: 7
+ 4: writel:337
+  2: cache_sync:328
+   2: 328
+  3: writel_relaxed:9
+   2: 9
+ 8: 156
+oam_thread_process:906:906
+ 5: oam_thread_is_running:5
+  2: 5
+ 6: 3
+ 7: 72 mdrv_kevent_recv:65
+ 8: oam_data_send:820
+  7: 185
+  11: oal_spin_lock_irq_save:356
+   2: 356 SRE_SplIrqLock:356
+  14: 4
+  26: 3
+  28: 161
+  29: 17 oam_send_sdt_log:16
+  31: oam_log_res_free:29
+   2: 9
+   7: 1
+   8: 1
+   12: oam_queue_enqueue:18
+    2: 8
+    6: 3
+    7: 2
+    8: 1
+    9: 4
+  32: 1
+  35: oal_spin_unlock_irq_restore:54
+   2: 54 mdrv_spin_unlock_irqrestore:52
+conn_dmi_oam_send:883:883
+ 1: 108
+ 6: 3
+ 12: conn_dmi_hal_alloc_buf:48
+  4: 2
+  9: mdrv_mem_alloc:43
+   4: 12
+   8: 31 DRB_MemAllocAlign:20
+  15: 3
+ 19: 37 memcpy_s:30
+ 26: conn_dmi_hal_send:604
+  10: 14
+  15: 1
+  16: 3
+  18: 586 g_ring_reg_tbl.1170:317 conn_dmi_drv_send:253 g_tid_switch_list_ops:7 g_tid_update_list_ops:3 g_tid_sche_list_ops:1
+ 34: conn_dmi_hal_free_buf:75
+  9: 2
+  14: mdrv_free:73
+   3: 11
+   4: 62 OsMemFree:52 mdrv_kmem_free:2
+ 36: 8
+OsFscMemFreeInner:880:880
+ 1: 8
+ 4: 13
+ 11: OsFscMemSpinLock:61
+  2: OsSplLock:61
+   2: OsSplLockNoManage:61
+    3: 17
+    5: 44
+ 14: OsMemDecodeMagic:136
+  2: 2
+  4: OsGetRndU16:131
+   2: OsGetRndU32:131
+    2: 131
+ 28: 47
+ 29: 507 OsFscMemCombine:489
+ 33: 22
+ 37: OsFscMemSpinUnLock:16
+  2: OsSplUnlock:16
+   2: OsSplGetAddr:16
+    2: 12
+    3: 4
+ 38: 69
+OsMemAllocAlignInner:848:848
+ 1: 4
+ 7: 5
+ 13: 8
+ 19: 5
+ 24: OsIntLock:3
+  2: DRB_IntLock:3
+   2: ArchLockInterrupt:3
+    4: 1
+    5: 1
+    6: 1
+ 25: 4
+ 27: 10
+ 33: OsMemAllocHook:795
+  10: 795 OsFscMemAlloc:789
+ 35: OsIntRestore:8
+  2: DRB_IntRestore:8
+   2: ArchRestoreInterrupt:8
+    4: 8
+ 38: 6
+oam_log_print4_press:821:821
+ 6: 98
+ 7: 15
+ 8: 90
+ 11: 355 memcpy_s:316
+ 13: oam_get_log_switch:38
+  2: 38
+ 28: 165
+set_sbuf_next:754:754
+ 2: 754
+ficc_dma_malloc_cd:751:751
+ 1: 401
+ 6: 250
+ 10: 19
+ 12: 7
+ 16: 7
+ 18: 47
+ 19: 5
+ 21: 15
+mdrv_sched_unlock:745:745
+ 1: 100
+ 2: OsTaskIrqUnlock:521
+  2: OsGetRunQueue:50
+   3: 50
+  4: 155
+  5: 129
+  13: OsTskUnlockIsNeedResched:124
+   2: 124
+  16: 1
+  21: OsTaskUnlockSchedule:18
+   5: OsTskScheduleFast:18
+    2: 18 OsThrdContextLoad:7 OsTaskTrap:4 OsTskSchedule:2
+  24: OsIntRestore:44
+   2: DRB_IntRestore:44
+    2: ArchRestoreInterrupt:44
+     4: 44
+ 3: 124
+dev_get_id:728:728
+ 2: 728
+sbuf_set_flags_csum:676:676
+ 4: 167
+ 6: 338
+ 7: 171
+process_timeout:673:673
+ 1: 39
+ 6: ptimer_get_cur_time:58
+  2: stack_get_systime:58
+   6: ktime_get_raw:58
+    2: bsp_slice_getcurtime_hrt_ns:58
+     2: 58
+ 10: 28
+ 11: remove_ptimer_node:164
+  7: 22
+  13: rb_inorder_successor:21
+   0: 20
+   13: 1
+  16: rb_delete_node:105
+   0: 86 rb_fix_delete_violation:83
+   3: 1
+   12: 2
+   15: 2
+   18: link_parent_child:7
+    3: 1
+    4: 6
+   20: 7
+  21: memset_s:16
+   3: 16 memset:14
+ 13: 2
+ 14: 5
+ 15: insert_ptimer_node:24
+  12: rb_insert_node:14
+   0: 6
+   7: 2
+   9: ptimer_node_cmp:3
+    5: 3
+   26: rb_fix_insert_violation:3
+    4: 1
+    53: 2
+  15: ptimer_node_cmp:5
+   5: 5
+  16: 5
+ 21: timeout_phandler:344
+  5: 4
+  12: 6
+  14: tcp_tmr:159
+   2: get_spl_instance:4
+    2: 4
+   3: 45
+   4: 19
+   8: handle_stack_timeout:75
+    4: 32
+    5: 2
+    10: 1
+    11: 1
+    12: 38
+    58: 1
+  17: get_stack_timer_tick_time:18
+   2: 18
+  18: stack_sys_gettimeofday:156
+   4: ktime_get_real_ts64:154
+    2: bsp_slice_getcurtime_hrt_ns:50
+     2: 50
+    3: 104 __udivdi3:102
+   5: 1
+   6: 1
+  19: set_stack_timer_tick_ref_tick:1
+   2: 1
+ 23: 3
+ 35: 6
+sbuf_put:650:650
+ 2: 112
+ 4: 538
+sbuf_headroom:623:623
+ 2: 623
+DRB_DcacheFlush:606:606
+ 1: 5
+ 7: 28 OsCacheCheckPhyPara:23
+ 8: 10
+ 12: OsCacheDcsoGetPara:17
+  3: 4
+  4: 13
+ 14: OsCacheDcso:546
+  7: 1
+  8: 2
+  11: OsCacheDcsoControlSizeReg:1
+   2: 1
+  15: OsIntRestore:398
+   2: DRB_IntRestore:398
+    2: ArchRestoreInterrupt:398
+     4: 398
+g_ring_reg_tbl.1170:549:549
+ 14: dmi_msg_init:297
+  2: 1
+  3: 2
+  6: 294
+ 15: 61 memcpy_s:58
+ 21: 191 bsp_dmi_send_msg:168
+OsEventSend:541:541
+ 5: 8
+ 9: 2
+ 13: OsEventSendNoIrq:520
+  9: 4
+  16: 290 OsSpinLockTaskRq:289
+  18: 1
+  20: 3
+  27: 3
+  30: 1
+  31: 3
+  34: 1
+  35: 14 OsSpinUnlockTaskRq:9
+  39: 5
+  45: OsTaskDetachFromTimerList:2
+   2: 2
+  49: 4
+  50: OsTskReadyAddBGD:169
+   2: 169 OsSmpSendReschedule:126 OsReschedTask:24 OsTskReadyAdd:18
+  365: 19 OsSpinUnlockTaskRq:17
+  455: 1
+ 19: OsTskScheduleFast:8
+  2: 8 OsTskSchedule:6
+ 23: 3
+sys_timeout_handle:532:532
+ 3: period_timeout_handler:474
+  2: 474 process_timeout:474
+hal_host_readl:529:529
+ 1: 274
+ 3: hal_host_pcpu_access_device_allowed:6
+  2: 6
+ 4: readl:237
+  2: 237
+ 8: 5
+timer_fiber:506:506
+ 1: 81
+ 5: timer_timeout_callback:423
+  4: 16
+  9: mdrv_int_lock:1
+   4: 1
+  11: timer_pop_timeout_inst:147
+   10: bsp_get_slice_value_u64:16
+    4: 16
+   12: 4
+   15: 120
+   17: 7
+  12: 5
+  19: timer_user_routine:125
+   5: 8
+   6: 2
+   9: 1
+   10: 114 sys_timeout_handle:58 dpe_timer_handle_timeout.1327:32 freq_timer_func:14 HwiCommonHandle:1 qoe_timer_handler:1 OsHwiTail:1 dpe_timer_handle_timeout.780:1
+  22: mdrv_int_lock:3
+   5: 2
+   6: 1
+  23: timer_update_list:106
+   0: 2
+   6: 2
+   7: timer_is_inst_alloc:3
+    6: 3
+   10: osl_list_remove_init:72
+    2: 46
+    3: 26
+   11: 1
+   12: 3
+   14: timer_insert_list:21
+    3: 3
+    5: 13
+    10: osl_list_insert_tail:3
+     2: osl_list_insert:1
+      3: 1
+    40: 2
+  27: timer_restart:20
+   2: 1
+   8: timer_run_list:19
+    5: 2
+    10: timer_calc_delta_tick:2
+     3: 2
+    12: timer_start:14
+     3: timer_set_load_value_modem:2
+      2: writel_relaxed:2
+       2: 2
+     4: 10
+     5: bsp_get_slice_value:2
+      2: bsp_get_slice_value_u64:2
+       4: 2
+ 7: 2
+OsFscMemCombine:489:489
+ 2: 7
+ 10: 8
+ 12: 10
+ 13: OsMemCheckTailMagicFail:2
+  2: 2
+ 18: OsMemDecodeMagic:200
+  2: 2
+  4: OsGetRndU16:20
+   2: OsGetRndU32:20
+    2: 20
+ 27: 4
+ 29: OsGetLMB1:17
+  3: 17
+ 30: 98
+ 31: OsFscMemBlockInit:14
+  2: 4
+  3: 1
+  4: 1
+  5: 8
+ 34: 27
+ 39: OsFscMemDelete:22
+  2: 10
+  3: 12
+ 43: OsFscMemInsert:30
+  4: OsGetLMB1:6
+   3: 6
+  7: 3
+  10: 2
+  11: 3
+  12: 3
+ 46: OsFscMemSetRightBlockStat:3
+  5: 3
+ 47: 6
+OsEventRecv:485:485
+ 0: 2
+ 1: 3
+ 9: 2
+ 14: 3
+ 18: OsSplLock:19
+  2: OsSplLockNoManage:19
+   5: 19
+ 19: 51
+ 24: OsIsEventNotMatch:6
+  3: 2
+  9: 3
+  10: 1
+ 27: 5
+ 30: OsEventRecvNeedSche:215
+  5: OsGetRunQueue:1
+   3: 1
+  9: 46 OsTskReadyDel:31 OsReschedTask:13
+  11: 3
+  15: 18 OsSpinUnLockRunTaskRq:16
+  17: 55 OsThrdContextLoad:27 OsTskSchedule:15 OsTaskTrap:13
+  19: 86 OsSpinLockRunTaskRq:66
+  22: 2
+ 39: 1
+ 43: 7
+ 45: OsSplUnlock:170
+  2: OsSplUnlockNoManage:170
+   2: 169
+   3: 1
+ 48: 1
+bsp_ficc_blk2ring_blk_send:475:475
+ 1: 12
+ 6: ficc_channel_get_by_hdl:6
+  6: 6
+ 9: 10
+ 12: 4
+ 16: bsp_ficc_blk2ring_blk_head_fill:3
+  3: 2
+  9: 1
+ 21: 141 SRE_SplIrqLock:136
+ 22: ficc_write_packet_raw:127
+  5: opipe_free_space_get:28
+   2: 9
+   3: 2
+   4: 9
+   5: 8
+  6: 6
+  12: opipe_put_to_ringbuf:63
+   3: 12
+   10: 7
+   26: 5
+   30: 8
+   31: memcpy_s:27
+    2: 3
+    3: 24 memcpy:20
+   34: 4
+  17: 3
+  18: ficc_opipe_wptr_update:21
+   2: writel:11
+    2: cache_sync:4
+     2: 4
+    3: writel_relaxed:7
+     2: 7
+   3: cache_sync:8
+    2: 8
+ 23: ficc_debug_info_update_send:97
+  3: 66
+  6: 1
+  7: bsp_get_slice_value:3
+   2: bsp_get_slice_value_u64:3
+    4: 3
+  8: 16
+ 27: 64 mdrv_spin_unlock_irqrestore:58
+ 29: 11
+hmac_tx_comp_tid_info_getter:451:451
+ 2: 451
+OsFscMemFree:438:438
+ 2: 432 OsFscMemFreeInner:391
+ 3: 6
+OsPickNextTaskRtSingle:419:419
+ 1: 15
+ 5: OsSplLock:201
+  2: OsSplLockNoManage:201
+   3: 3
+   5: 198
+ 8: 134
+ 9: 2
+ 12: 17 OsNextReadyRtTaskSingle:14
+ 13: 4
+ 14: 10
+ 16: OsSplUnlock:15
+  2: OsSplUnlockNoManage:15
+   2: 14
+   3: 1
+ 18: 21
+hmac_rx_get_input_netbuf_from_waitlist:395:395
+ 2: 186
+ 7: oal_netbuf_list_empty:17
+  2: 17 sbuf_queue_empty:1
+ 19: 12
+bsp_dmi_msg_alloc:384:384
+ 1: 6
+ 5: 4
+ 9: bsp_dra_alloc:223
+  2: dra_alloc:223
+   17: osl_get_core_id:1
+    2: mdrv_get_core_id:1
+     2: OsGetCoreID:1
+      3: 1
+   25: dra_alloc_mem:31
+    7: mdrv_int_lock:2
+     4: 1
+     6: 1
+    8: 7
+    14: 4
+    15: 2
+    16: 1
+    19: 13
+    20: mdrv_int_unlock:2
+     4: 2
+   26: 2
+   30: 33 DRBI_FusionTaskSelf:32
+   31: 3
+   34: dra_dbg_cnt_alloc:133
+    0: 4
+    2: dra_get_dbg_cnt_idx:123
+     2: OsGetCoreID:3
+      3: 3
+     5: 114
+     8: 6
+    3: 6
+ 13: 3
+ 15: 145
+ 18: 3
+mdrv_kevent_recv:369:369
+ 4: OsIntLock:3
+  2: DRB_IntLock:3
+   2: ArchLockInterrupt:3
+    4: 1
+    6: 2
+ 6: OsGetRunQueue:1
+  3: 1
+ 16: 2
+ 17: 306 OsEventRecv:304
+ 18: OsIntRestore:54
+  2: DRB_IntRestore:54
+   2: ArchRestoreInterrupt:54
+    4: 54
+ 24: 2
+oam_log_print1_press:362:362
+ 3: 144
+ 4: 2
+ 5: 9
+ 8: 80 memcpy_s:29
+ 10: 2
+ 22: 125
+g_tid_switch_list_ops:359:359
+ 8: 359 bsp_dmi_msg_alloc:352
+OsTskSwitchHookCaller:349:349
+ 1: 4
+ 2: OsGetRunQueue:12
+  3: 12
+ 3: 295 dump_arch_task_switch_hook:258
+ 4: OsGetRunQueue:21
+  3: 21
+ 5: 11
+hmac_tx_comp_entry_getter:335:335
+ 2: 335
+timer_irq_callback:330:330
+ 1: 4
+ 5: timer_is_int_enable_modem:4
+  2: readl_relaxed:4
+   2: 4
+ 6: timer_clear_int_modem:23
+  2: writel_relaxed:23
+   2: 23
+ 7: timer_get_mode_modem:1
+  3: 1
+ 8: timer_disable_modem:1
+  5: timer_clear_int_modem:1
+   2: writel_relaxed:1
+    2: 1
+ 11: bsp_get_slice_value:1
+  2: bsp_get_slice_value_u64:1
+   4: 1
+ 12: 1
+ 13: timer_routine:77
+  4: 1
+  5: 74 DRBI_FiberQueSend:73
+  6: 2
+ 15: 1
+ 18: 1
+ 840: 5
+hal_ring_reset_entries:308:308
+ 1: 63
+ 12: 58
+ 19: 2
+ 21: 1
+ 24: 1
+ 27: 168 memset_s:10
+ 30: 15
+OsSpinLockTaskRq:292:292
+ 5: 11
+ 6: OsSplLock:112
+  2: OsSplLockNoManage:112
+   3: 2
+   5: 110
+ 7: 169
+OsFiberQueQueryNum:280:280
+ 1: 50
+ 6: 195
+ 11: 35
+oam_log_buffer_alloc:280:280
+ 1: 86
+ 5: oam_log_res_alloc:46
+  3: oam_queue_dequeue:30
+   2: 13
+   7: 11
+   8: 6
+  10: 16
+ 13: oal_memalloc:6
+  8: mdrv_mem_alloc:6
+   8: 6 DRB_MemAllocAlign:3
+ 14: 6
+ 22: 1
+ 23: 130
+ 26: 5
+oam_send_sdt_log:279:279
+ 1: 3
+ 2: 200 conn_dmi_oam_send:198
+ 3: oal_free:71
+  2: mdrv_free:71
+   3: 5
+   4: 66 OsMemFree:62 mdrv_kmem_free:3
+ 4: 5
+free_sbuf:269:269
+ 2: 269
+conn_dmi_drv_send:263:263
+ 1: 261
+ 7: 2
+dump_arch_task_switch_hook:258:258
+ 3: osl_get_core_id:193
+  2: mdrv_get_core_id:193
+   2: OsGetCoreID:193
+    3: 193
+ 4: dump_arch_schdule_record_hrt:57
+  2: dump_get_slice_value:10
+   4: 10
+  4: dump_schedule_loop_in_64bits:47
+   2: 3
+   3: dump_arch_st_64bit:17
+    2: 17
+   4: 15
+ 5: dump_arch_set_task_contex:8
+  3: 8
+OsThrdContextLoad:247:247
+ 0: 247
+OsTickCoreCheck:216:216
+ 1: 2
+ 4: 14
+ 6: 96 OsTskDlyTargetCheck:95
+ 9: 4
+ 14: 99 SRE_GetPrimaryCore:45
+ 21: 1
+sbuf_trim:208:208
+ 2: 208
+mp17c_clear_host_mac_common_int_status:190:190
+ 1: 141
+ 2: 2
+ 5: hal_host_writel_irq:47
+  2: hal_host_pcpu_access_device_allowed:2
+   2: 2
+  5: writel:45
+   2: cache_sync:45
+    2: 45
+hal_irq_host_rx_ring_empty_isr:185:185
+ 1: 72
+ 2: 2
+ 12: hmac_rx_comp_trigger_scheduled:109
+  2: hmac_set_rx_comp_triggered:3
+   2: oal_atomic_set:3
+    2: dpa_atomic_set:3
+     2: 3
+  3: hmac_rx_comp_scheduled:106
+   3: 1
+   6: hmac_rx_comp_need_scheduled:85
+    9: 3
+    13: oal_mdrv_int_lock:18
+     2: mdrv_int_lock:18
+      5: 17
+      6: 1
+    19: 1
+    22: 52
+    25: 10
+    35: oal_mdrv_int_unlock:1
+     2: mdrv_int_unlock:1
+      4: 1
+   11: 20 DRBI_FiberQueSend:20
+ 13: 2
+OsMemFree:177:177
+ 1: 4
+ 2: OsMemFreeInside:168
+  9: 1
+  13: OsIntLock:9
+   2: DRB_IntLock:9
+    2: ArchLockInterrupt:9
+     4: 1
+     5: 2
+     6: 6
+  14: OsMemGetHeadAddr:3
+   2: 3
+  16: 13
+  29: 1
+  30: 21
+  34: 1
+  35: 42
+  43: 1
+  44: OsMemMagicWordCheck:9
+   4: OsMemDecodeMagic:5
+    4: OsGetRndU16:3
+     2: OsGetRndU32:3
+      2: 3
+   82: 2
+  48: OsMemFreeHook:56
+   10: 56 OsFscMemFree:47
+  50: OsIntRestore:11
+   2: DRB_IntRestore:11
+    2: ArchRestoreInterrupt:11
+     4: 11
+ 8: 5
+memset_s:162:162
+ 1: 1
+ 2: 4
+ 3: 154 memset:152
+ 8: 3
+bsp_get_l1dtcm_global_offset:144:144
+ 2: 144
+hcc_master_tx_queue_sched:140:140
+ 1: 1
+ 4: hcc_bus_pending_signal_process:25
+  6: 1
+  10: 24 oal_pcie_ete_pending_signal_process:22
+ 5: hcc_master_tx_queue_process:25
+  9: hcc_master_tx_transfer_lock:9
+   4: hcc_tx_transfer_lock:9
+    2: oal_mutex_lock:9
+     3: 9 pthread_mutex_lock:9
+  10: 15 hcc_tx_get_netbuf_header:13
+  587: 1
+ 6: hcc_master_tx_queue_process:83
+  10: 14 hcc_tx_get_netbuf_header:9 OsTskContextLoad:3 HwiCommonHandle:2
+  12: hcc_bus_tx_queue_sched:65
+   11: oal_netbuf_list_len:5
+    2: 5
+   15: hcc_bus_get_cur_bus:2
+    3: 2
+   16: 1
+   21: 57 oal_ete_send_netbuf_list:49 oal_pcie_ete_tx_netbuf:8
+  13: hcc_master_tx_transfer_unlock:4
+   4: hcc_tx_transfer_unlock:4
+    2: oal_mutex_unlock:4
+     3: 4 pthread_mutex_unlock:1
+ 7: hcc_master_tx_queue_process:6
+  10: 1
+  12: hcc_bus_tx_queue_sched:1
+   21: 1 oal_pcie_ete_tx_netbuf:1
+  13: hcc_master_tx_transfer_unlock:3
+   4: hcc_tx_transfer_unlock:3
+    2: oal_mutex_unlock:3
+     3: 3 pthread_mutex_unlock:2
+  587: 1
+OsSmpSendReschedule:132:132
+ 1: 1
+ 4: 10
+ 12: OsCoreWakeupIpc:2
+  2: 2
+ 14: OsHwiTriggerByMask:46
+  2: OsGetMpRegBase:6
+   3: 1
+   5: 5
+  5: OsCoreMaskLogical2Phy:33
+   4: OsGetRMB:3
+    3: 3
+   9: 12
+   10: 18
+  8: 5
+ 16: 54
+ 277: 19
+frw_event_dispatch_event:121:121
+ 1: 5
+ 4: frw_event_lookup_process_entry:113
+  9: 2
+  26: frw_pipe_1_event_process:111
+   0: 27 get_userdata:6 hcc_master_tx:4 HwiCommonHandle:1
+   4: 2
+   14: frw_hcc_event_process:81
+    9: frw_hcc_rx_convert_to_event:11
+     6: oal_sbuf_cb:4
+      2: 4 get_userdata:4
+     9: oal_sbuf_cb:2
+      2: 2 get_userdata:1
+     33: 5
+    17: frw_event_skb_generate:35
+     5: oal_netbuf_data:1
+      2: 1 sbuf_data:1
+     8: dpe_frw_event_filter:10
+      5: 10
+     12: oal_dma_alloc_nocache:2
+      4: 1
+      8: mdrv_mem_alloc:1
+       8: 1 OsTskContextLoad:1
+     18: oal_netbuf_build:6
+      2: 6 build_sbuf:6
+     24: 2
+     30: dpe_dma_cpy_noncache:12
+      2: 1 sbuf_data:1
+      3: 11 dpe_dma_cpy_sync:11
+    23: dpe_frw_event_config_syn:15
+     5: 1
+     11: oal_netbuf_data:2
+      2: 2 sbuf_data:2
+    24: frw_event_skb_free:16
+     9: oal_sbuf_cb:1
+      2: 1 get_userdata:1
+     10: 3
+     14: oal_netbuf_destory:3
+      2: 3 destroy_sbuf:3
+     15: oal_dma_free_nocache:9
+      2: mdrv_free:9
+       4: 9 OsMemFree:8 mdrv_kmem_free:1
+    34: 2
+   17: frw_dpe_event_process:1
+    8: 1
+ 9: 3
+OsContextSwitch:120:120
+ 1: 9
+ 3: 94 OsTskSwitchHookCaller:91
+ 11: 17
+sbuf_set_ifindex:109:109
+ 2: 109
+dpe_dma_rx_ring_data_event:100:100
+ 3: dpe_is_support_rx_dma_async:97
+  2: 97
+ 4: 1
+OsTskDlyTargetCheck:95:95
+ 1: 2
+ 5: OsSplLock:48
+  2: OsSplLockNoManage:48
+   3: 1
+   5: 47
+ 7: 40
+ 16: OsSplUnlock:5
+  2: OsSplUnlockNoManage:5
+   2: 5
+hmac_tid_update_list_process:88:88
+ 4: 3
+ 8: hmac_tid_update_list_for_each:85
+  2: hmac_tid_list_for_each:85
+   6: oal_spin_lock_irq_save:14
+    2: 14 SRE_SplIrqLock:14
+   7: hmac_tid_list_for_each_nolock:67
+    4: 3
+    9: hmac_tid_update_sync_threshold:58
+     12: 2
+     20: 1
+     26: hmac_tx_ring_switching:1
+      2: 1
+     27: 16 hmac_tid_schedule:16
+     31: hmac_tx_sync_ring_info:38
+      3: bsp_get_elapse_ms:31
+       2: 31 __udivdi3:31
+      6: hmac_tx_ring_set_update_info:6
+       7: 1
+       9: 4
+       10: 1 memcpy_s:1
+      13: hmac_tx_sync_h2d_scedule_event:1
+       5: dpe_tx_sync_h2d_scedule_event:1
+        9: 1 dpe_config_sync_device_send_event:1
+   8: oal_spin_unlock_irq_restore:4
+    2: 4 mdrv_spin_unlock_irqrestore:3
+DRBI_FusionKeventSend:87:87
+ 1: 6
+ 5: OsIntLock:14
+  2: DRB_IntLock:14
+   2: ArchLockInterrupt:14
+    4: 2
+    5: 1
+    6: 11
+ 15: 3
+ 16: 52 OsEventSend:52
+ 17: OsIntRestore:7
+  2: DRB_IntRestore:7
+   2: ArchRestoreInterrupt:7
+    4: 7
+ 23: 5
+OsTickTargetCoresGet:87:87
+ 1: 1
+ 8: 3
+ 10: 80 OsTickCoreCheck:76
+ 15: 3
+oal_ete_send_netbuf_list:86:86
+ 2: 9
+ 7: oal_ete_get_netbuf_step:1
+  3: 1
+ 11: ete_send_check_param:2
+  15: oal_netbuf_list_empty:2
+   2: 2 sbuf_queue_empty:2
+ 17: pm_wlan_wakeup_dpa_handler:5
+  5: pm_wlan_wakeup_check:5
+   8: 5
+ 26: oal_netbuf_list_len:4
+  2: 4
+ 37: 2
+ 45: oal_ete_send_netbuf_list_build:63
+  23: pcie_ete_ringbuf_freecount:2
+   3: pcie_ete_ringbuf_len:2
+    3: pcie_ete_ringbuf_is_overflow:2
+     2: 2
+  30: hcc_netbuf_delist_head_with_flowctrl:15
+   5: 3 SRE_SplIrqLock:3
+   6: oal_netbuf_delist_head:5
+    5: 1 SRE_SplIrqLock:1
+    6: 3 sbuf_dequeue:3
+    7: 1 mdrv_spin_unlock_irqrestore:1
+   8: netbuf_flowctrl_cnt_dec:6
+    6: 4
+    9: 1
+    12: 1
+   10: 1 mdrv_spin_unlock_irqrestore:1
+  48: oal_netbuf_hcc_header_iova:2
+   2: oal_netbuf_data_iova:2
+    2: 2 sbuf_data_iova:2
+  50: oal_ete_get_send_ep_slave_addr:6
+   3: oal_pcie_host_slave_address_switch:6
+    7: oal_pcie_host_slave_address_switch_mp17c:6
+     6: 6
+  62: oal_ete_write_ringbuf_by_sendbuf:4
+   5: pcie_ete_ringbuf_write:4
+    6: pcie_ete_ringbuf_is_full:1
+     2: pcie_ete_ringbuf_len:1
+      3: pcie_ete_ringbuf_is_overflow:1
+       3: 1
+    11: 1
+    20: 2 memcpy_s:2
+  67: oal_netbuf_data_iova:1
+   2: 1 sbuf_data_iova:1
+  68: oal_netbuf_len:1
+   2: 1 sbuf_len:1
+  74: 13 oal_ete_get_send_ep_slave_addr:13
+  90: oal_ete_write_ringbuf_by_sendbuf:2
+   5: pcie_ete_ringbuf_write:2
+    6: pcie_ete_ringbuf_is_full:1
+     2: pcie_ete_ringbuf_len:1
+      8: 1
+    20: 1 memcpy_s:1
+  94: oal_ete_send_netbuf_h2d_enqueue:6
+   4: hcc_netbuf_addlist_tail_with_flowctrl:6
+    5: oal_netbuf_addlist_tail:5
+     4: 2 SRE_SplIrqLock:2
+     6: 3 mdrv_spin_unlock_irqrestore:3
+    7: 1 mdrv_spin_unlock_irqrestore:1
+  99: 2
+  102: pcie_ete_ring_update_tx_sr_hptr:8
+   4: pcie_ete_set_tx_sr_head_ptr:8
+    7: writel:8
+     2: cache_sync:4
+      2: 4
+     3: writel_relaxed:4
+      2: 4
+  103: 1
+hcc_thread_func:85:85
+ 1: 12
+ 5: hcc_slave_rx_queue_sched:46
+  3: hcc_slave_rx_queue_process:13
+   9: 13 hcc_bus_rx_queue_sched:11
+  4: hcc_slave_rx_queue_process:1
+   9: 1
+  5: hcc_slave_rx_queue_process:31
+   9: 31 hcc_bus_rx_queue_sched:29
+ 8: 2
+ 9: 2 hcc_slave_tx_queue_sched:2
+ 17: 23 hcc_master_tx_queue_sched:21
+rb_fix_delete_violation:83:83
+ 6: 8
+ 74: set_node_black:75
+  2: 74
+  3: 1
+DRB_MemAllocAlign:83:83
+ 2: 15
+ 7: 61 OsMemAllocAlignInner:59
+ 8: 7
+oal_pcie_ete_pending_signal_process:71:71
+ 1: 7
+ 3: get_pcie_res:1
+  2: 1
+ 9: oal_ete_host_pending_signal_check:10
+  7: 9
+  11: oal_atomic_read:1
+   2: dpa_atomic_read:1
+    2: 1
+ 10: oal_ete_host_pending_signal_process:50
+  6: 1
+  10: 49 oal_ete_tx_transfer_process:49
+ 12: 2
+ 16: 1
+mdrv_sem_up:70:70
+ 1: 1
+ 7: 1
+ 12: OsSplLock:11
+  2: OsSplGetAddr:11
+   2: ArchLockInterrupt:2
+    6: 2
+   3: 1
+   5: 8
+ 14: OsSemCheckSemPara:16
+  3: OsSemIsUnused:9
+   2: 9
+  7: 1
+  14: 2
+  19: 2
+  31: 2
+ 29: OsSemIfPrioLock:6
+  3: OsSemPrioLock:6
+   2: OsSplLock:6
+    2: OsSplLockNoManage:6
+     5: 6
+ 32: ListEmpty:9
+  2: 9
+ 33: OsPendQGet:13
+  5: ListDelete:1
+   3: ListDelAndInit:1
+    2: 1
+  8: 3 OsSpinLockTaskRq:3
+  17: OsTskReadyAddBGD:8
+   2: 8 OsSmpSendReschedule:6 OsTskReadyAdd:1 OsReschedTask:1
+  19: 1 OsSpinUnlockTaskRq:1
+ 47: ListDelete:2
+  3: ListDelAndInit:2
+   2: ListLowLevelDelete:1
+    3: 1
+ 50: OsPriorityLower:2
+  8: 2
+ 62: OsSemIfPrioUnLock:5
+  2: 2
+  3: OsSemPrioUnLock:3
+   2: OsSplUnlock:3
+    2: OsSplUnlockNoManage:3
+     2: 3
+ 63: OsSplUnlock:3
+  2: OsSplUnlockNoManage:3
+   2: 2
+   3: 1
+ 65: OsIntRestore:1
+  2: DRB_IntRestore:1
+   2: ArchRestoreInterrupt:1
+    4: 1
+OsSpinLockRunTaskRq:68:68
+ 3: OsGetRunQueue:8
+  3: 8
+ 4: OsSplLock:20
+  2: OsSplLockNoManage:20
+   3: 1
+   5: 19
+ 5: 40
+oal_ete_tx_transfer_process:67:67
+ 1: 1
+ 9: pcie_ete_update_ring_tx_donecnt:39
+  3: pcie_ete_ringbuf_update_rd:39
+   8: 17
+   10: 22
+ 12: oal_netbuf_list_len:1
+  2: 1
+ 20: 1
+ 24: hcc_netbuf_delist_head_with_flowctrl:18
+  5: 2 SRE_SplIrqLock:2
+  6: oal_netbuf_delist_head:8
+   5: 2 SRE_SplIrqLock:2
+   6: 3 sbuf_dequeue:3
+   7: 3 mdrv_spin_unlock_irqrestore:2
+  8: netbuf_flowctrl_cnt_dec:5
+   6: 3
+   12: 2
+  10: 3 mdrv_spin_unlock_irqrestore:3
+ 31: oal_pcie_tx_netbuf_free:6
+  0: 6 free_sbuf:4 sbuf_free:2
+ 41: 1
+frw_post_event:64:64
+ 1: 4
+ 7: 1
+ 13: frw_generate_event_netbuf:1
+  7: oal_netbuf_alloc:1
+   3: 1 alloc_sbuf:1
+ 16: 1
+ 25: 57 frw_event_dispatch_event:56
+hcc_bus_rx_queue_sched:63:63
+ 0: 2
+ 1: 5
+ 10: oal_netbuf_list_len:4
+  2: 4 sbuf_queue_len:1
+ 19: oal_netbuf_list_len:3
+  2: 3
+ 23: hcc_bus_rx_sched_pre_post_do:37
+  7: hcc_netbuf_delist_head_with_flowctrl:17
+   5: 6 SRE_SplIrqLock:6
+   6: oal_netbuf_delist_head:5
+    5: 2 SRE_SplIrqLock:2
+    6: 2 sbuf_dequeue:2
+    7: 1
+   8: netbuf_flowctrl_cnt_dec:4
+    12: 4
+   10: 2 mdrv_spin_unlock_irqrestore:2
+  14: hcc_check_header_vaild:1
+   3: 1
+  20: hcc_rx_netbuf_trim:1
+   8: oal_netbuf_trim:1
+    2: 1 sbuf_trim:1
+  33: hcc_slave_rx_wifi_post_action_function:18
+   17: 3
+   19: 1
+   21: 4
+   29: 10 frw_post_event:7
+ 27: 2
+ 32: 10
+OsEnqueueTask:61:61
+ 1: 6
+ 2: 50 OsEnqueueTaskRtSingle:42
+ 3: 3
+ 4: 2
+SRE_SemPend:60:60
+ 6: OsSemHandleCheck:2
+  2: 2
+ 7: 1
+ 12: OsIntLock:7
+  2: DRB_IntLock:7
+   2: ArchLockInterrupt:1
+    6: 1
+   5: 6
+ 13: OsSemIsUnused:23
+  2: 23
+ 19: 1
+ 24: 1
+ 26: OsSemPendNotNeedSche:3
+  18: OsSemAddToBinMutexSemList:3
+   3: 2
+   6: ListTailAdd:1
+    2: 1
+ 27: OsSplUnlock:1
+  2: OsSplUnlockNoManage:1
+   2: 1
+ 43: OsPendQPut:8
+  7: 3 OsSpinLockRunTaskRq:2
+  8: 2 OsReschedTask:1 OsTskReadyDel:1
+  16: 1 OsSpinUnLockRunTaskRq:1
+  23: OsSemIfPrioUnLock:2
+   2: 2
+ 46: OsSplUnlock:2
+  2: OsSplUnlockNoManage:2
+   2: 2
+ 66: OsTskScheduleFastPS:9
+  3: 9 OsTaskTrap:3 OsThrdContextLoad:3 OsTskSchedule:3
+ 68: OsIntRestore:1
+  2: DRB_IntRestore:1
+   2: ArchRestoreInterrupt:1
+    4: 1
+ 70: 1
+hcc_tx_get_netbuf_header:59:59
+ 1: 10
+ 26: mdrv_mem_alloc:1
+  8: 1
+ 32: oal_netbuf_list_len:4
+  2: 4 sbuf_queue_len:1
+ 36: hcc_netbuf_delist_head_with_flowctrl:10
+  5: 4 SRE_SplIrqLock:4
+  6: oal_netbuf_delist_head:4
+   5: 1 SRE_SplIrqLock:1
+   7: 3 mdrv_spin_unlock_irqrestore:3
+  8: netbuf_flowctrl_cnt_dec:1
+   0: 1
+  10: 1 mdrv_spin_unlock_irqrestore:1
+ 41: oal_sbuf_cb:1
+  2: 1 get_userdata:1
+ 43: hcc_netbuf_addlist_tail_with_flowctrl:5
+  4: 3 SRE_SplIrqLock:3
+  5: oal_netbuf_addlist_tail:1
+   4: 1 SRE_SplIrqLock:1
+  7: 1 mdrv_spin_unlock_irqrestore:1
+ 45: hcc_dma_memcpy_submit_sync:13
+  4: 2 bsp_dma_memcpy_submit_async:2
+  10: 11 SRE_SemPend:8 HwiCommonHandle:1 OsTskContextLoad:1 _IrqVector:1
+ 52: mdrv_free:6
+  4: 6 OsMemFree:6
+ 53: 6
+hcc_thread_process:53:53
+ 6: hcc_thread_should_stop:1
+  2: 1
+ 9: 2
+ 26: 1
+ 27: 23 hcc_thread_func:22 HwiCommonHandle:1
+ 28: 26
+OsSmpSchIsr:53:53
+ 3: 53
+pthread_mutex_unlock:50:50
+ 4: OsMutexIsUninit:2
+  2: 2
+ 8: 47 mdrv_sem_up:46
+conn_dmi_msg_rx_func:50:50
+ 1: 8
+ 13: 1
+ 23: conn_dmi_msg_rx_cap_process:41
+  8: 5
+  15: conn_dmi_msg_rx_process:36
+   12: dpe_wifi_update_trx_stat:20
+    9: dpe_wifi_pps_tx_switch:3
+     7: hmac_tx_pps_switch:3
+      3: dpe_tx_ring_switch_sync_mode:1
+       2: 1
+    10: dpe_cache_flush:17
+     2: 17 DRB_DcacheFlush:15
+   19: 3
+   39: conn_dmi_msg_rx_ack_send_back:13
+    17: 3
+    25: 5 conn_dmi_hal_alloc_buf:5
+    37: 2 g_pcie_ete_trans_tx_done_intx_count:2
+    44: 3 OsMemFree:2 conn_dmi_hal_free_buf:1
+dpe_timer_handle_timeout.1327:50:50
+ 3: 14
+ 4: 18
+ 9: 18 hmac_tid_update_list_process:18
+bsp_dma_memcpy_submit_async:46:46
+ 1: 11
+ 5: 4 SRE_SplIrqLock:4
+ 6: 28 bsp_dma_chn_memcpy_submit_async:28
+ 7: 2 mdrv_spin_unlock_irqrestore:2
+ 8: 1
+SRE_GetPrimaryCore:45:45
+ 2: 45
+OsEnqueueTaskRtSingle:42:42
+ 4: OsEnqueueReadyListOnly:19
+  6: 4
+  9: ListTailAdd:13
+   2: ListLowLevelAdd:10
+    4: 8
+    5: 2
+  12: 2
+ 6: 10
+ 8: 3
+hmac_tx_tid_info_getter:40:40
+ 2: 40
+pthread_mutex_lock:40:40
+ 2: OsMutexIsUninit:9
+  2: 9
+ 6: 31 SRE_SemPend:31
+OsTskReadyDel:40:40
+ 1: 2
+ 3: 1
+ 8: 1
+ 13: 12 OsDequeueTask:8
+ 16: OsDecNrRunning:2
+  3: 2
+ 20: 10
+ 21: 12
+OsReschedTask:39:39
+ 4: 6
+ 5: OsGetHwThreadId:13
+  3: 13
+ 10: 17
+ 11: 2
+OsTskReadyAdd:38:38
+ 2: OsTskReadyAddOnly:35
+  2: 1
+  12: 2
+  14: 1
+  18: 23 OsEnqueueTask:19
+  20: OsIncNrRunning:8
+   2: 8
+ 3: 3
+OsDequeueTask:38:38
+ 2: 37 OsDequeueTaskRtSingle:30
+ 4: 1
+conn_dmi_hcc_rx:36:36
+ 1: 3
+ 6: 1
+ 8: conn_hcc_dmi_rx_check:3
+  7: 2
+  8: 1
+ 13: hcc_netbuf_build:25
+  11: 10 build_sbuf:10
+  26: oal_sbuf_cb:1
+   2: 1
+  27: oal_sbuf_cb:3
+   2: 3 get_userdata:3
+ 15: 4 dra_free:4
+DRBI_FusionCacheFlush:36:36
+ 1: 8
+ 4: 18 OsCacheCheckVirtPara:15
+ 5: 7
+ 10: 3
+mp17c_clear_host_mac_int_status:35:35
+ 1: 12
+ 2: 1
+ 5: hal_host_writel_irq:14
+  2: hal_host_pcpu_access_device_allowed:2
+   2: 2
+  5: writel:11
+   2: cache_sync:2
+    2: 2
+   3: writel_relaxed:9
+    2: 9
+ 6: 8
+oal_ete_rx_ringbuf_supply:35:35
+ 7: 1
+ 19: 1
+ 23: oal_pcie_rx_netbuf_pre_malloc:6
+  8: 1 OsTskContextLoad:1
+  16: 1
+  17: oal_pcie_rx_netbuf_alloc:2
+   3: 2 _IrqVector:1 hcc_netbuf_alloc:1
+  26: hcc_netbuf_addlist_tail_with_flowctrl:1
+   5: oal_netbuf_addlist_tail:1
+    6: 1 mdrv_spin_unlock_irqrestore:1
+  34: hcc_dma_memcpy_submit_sync:1
+   10: 1 SRE_SemPend:1
+ 29: 1
+ 31: oal_ete_rx_transfer_process:22
+  10: pcie_ete_update_ring_rx_donecnt:13
+   2: pcie_ete_get_rx_done_total_cnt:1
+    3: 1
+   3: pcie_ete_ringbuf_update_rd:12
+    8: 1
+    10: 11
+  26: 3 hcc_netbuf_delist_head_with_flowctrl:2
+  36: 3 hcc_netbuf_addlist_tail_with_flowctrl:3
+  42: 2 oal_pcie_rx_netbuf_submit:2
+  44: hcc_rx_assem_count:1
+   9: 1
+ 54: 3 pcie_ete_ringbuf_write:3
+ 90: 1 _IrqVector:1
+hmac_tx_entry_getter:35:35
+ 2: 35
+OsDequeueTaskRtSingle:30:30
+ 6: OsDequeueReadyListOnly:18
+  6: ListDelete:13
+   3: ListDelAndInit:13
+    2: ListLowLevelDelete:5
+     2: 1
+     3: 4
+  8: ListEmpty:2
+   2: 2
+  9: 1
+ 9: 7
+ 10: OsFindHighestPri:4
+  5: 4
+oal_ete_rx_hi_thread:29:29
+ 21: 1
+ 27: 4
+ 34: 20 oal_ete_rx_ringbuf_supply:19 _IrqVector:1
+ 36: 1
+ 41: oal_mutex_unlock:2
+  3: 2 pthread_mutex_unlock:1
+ 44: 1
+bsp_dmi_msg_free:29:29
+ 8: 1
+ 14: bsp_dra_shm_cache_invalid:5
+  4: 5 DRB_DcacheInv:5
+ 15: bsp_dra_free_msg:23
+  3: 23 dra_free:17
+dpe_dma_cpy_sync:28:28
+ 1: 8
+ 27: dpe_dma_cpy_submit_sync:20
+  5: 9 bsp_dma_memcpy_submit_async:8
+  16: 11 SRE_SemPend:6 HwiCommonHandle:1 OsTskContextLoad:1 OsHwiDispatcher:1
+OsSpinUnlockTaskRq:27:27
+ 3: 7
+ 4: OsSplUnlock:19
+  2: OsSplUnlockNoManage:19
+   2: 17
+   3: 2
+ 5: 1
+oal_ete_get_send_ep_slave_addr:27:27
+ 2: 12
+ 3: oal_pcie_host_slave_address_switch:14
+  7: 14 oal_pcie_host_slave_address_switch_mp17c:13 HwiCommonHandle:1
+ 8: 1
+OsTaskTrap:88:27
+ 0: 88 OsMainSchedule:61
+g_mpxx_loglevel_format:26:26
+ 10: conn_dmi_hal_rx:26
+  16: 26 conn_dmi_msg_rx_func:25 _IrqVector:1
+OsTskSchedule:26:26
+ 2: OsGetRunQueue:9
+  3: 9
+ 4: 12
+ 9: 3
+ 12: 1
+ 14: 1
+g_rx_add_buff_hdl:26:26
+ 6: 26
+hcc_tx:25:25
+ 2: 5
+ 9: hcc_tx_cond_check:7
+  2: 7
+ 25: hcc_build_header:1
+  15: 1
+ 26: hcc_netbuf_addlist_tail_with_flowctrl:12
+  4: 4 SRE_SplIrqLock:3
+  5: oal_netbuf_addlist_tail:8
+   4: 6 SRE_SplIrqLock:6
+   5: 2 sbuf_enqueue_tail:2
+g_slave_bus_res:25:25
+ 28: hcc_slave_rx:25
+  3: hcc_rx:21
+   9: hcc_netbuf_addlist_tail_with_flowctrl:21
+    4: 10 SRE_SplIrqLock:10
+    5: oal_netbuf_addlist_tail:11
+     4: 10 SRE_SplIrqLock:9
+     6: 1 mdrv_spin_unlock_irqrestore:1
+  5: hcc_slave_rx_sched_transfer:4
+   2: 4 DRBI_FusionKeventSend:4
+syslog_send_notify:25:25
+ 13: 10 SRE_SplIrqLock:8
+ 15: 2 mdrv_spin_unlock_irqrestore:2
+ 17: mdrv_mem_alloc:1
+  8: 1 DRB_MemAllocAlign:1
+ 26: bsp_dmi_send_msg_comm:10
+  14: bsp_msg_lite_sendto:10
+   6: 1
+   12: send_lite_msg:9
+    24: ficc_default_send:8
+     3: 8 bsp_ficc_chn_blks_send:8
+    115: 1
+ 30: 1 SRE_SplIrqLock:1
+ 38: 1 mdrv_spin_unlock_irqrestore:1
+hmac_ba_timeout_fn:25:25
+ 4: 2
+ 14: 4 dpe_wlan_user_get:4
+ 16: hmac_ba_timeout_param_is_valid:1
+  3: 1
+ 20: 3 dpe_get_tid_ba_info:3
+ 41: 13 hmac_ba_send_ring_reorder_timeout:13
+ 55: frw_timer_create_timer_m:1
+  17: 1 bsp_timer_add:1
+ 69: 1
+freq_timer_func:22:22
+ 1: 3
+ 5: dpa_cpu_dfs_cfg:17
+  7: bsp_cpudfs_get_cpu_usage:16
+   3: 13 SRE_SplIrqLock:7
+   6: cpudfs_calc_each_load:3
+    2: get_cpu_idle_time:2
+     9: update_cpuidle_duration:1
+      3: 1
+     11: 1 mdrv_spin_unlock_irqrestore:1
+    3: 1
+  12: 1
+ 6: dpa_ddr_dfs_cfg:1
+  29: dpa_freq_proc_cur_level:1
+   10: bsp_wdt_feed:1
+    11: 1
+ 7: 1
+hcc_master_tx:22:22
+ 1: 1
+ 8: 14 hcc_tx:13
+ 14: hcc_master_tx_sched_transfer:6
+  2: hcc_sched_transfer:1
+   2: 1
+ 16: 1
+mdrv_tick_isr:21:21
+ 1: 4
+ 3: OsGetHwThreadId:1
+  3: 1
+ 5: 1
+ 7: 11 OsTickTargetCoresGet:11
+ 14: 1
+ 17: 3
+hcc_netbuf_delist_head_with_flowctrl:19:19
+ 1: 3
+ 5: 8 SRE_SplIrqLock:8
+ 6: oal_netbuf_delist_head:6
+  5: 2 SRE_SplIrqLock:2
+  6: 3 sbuf_dequeue:3
+  7: 1 mdrv_spin_unlock_irqrestore:1
+ 10: 1 mdrv_spin_unlock_irqrestore:1
+ 11: 1
+OsSpinUnLockRunTaskRq:17:17
+ 2: OsSplUnlock:13
+  2: OsSplUnlockNoManage:13
+   2: 6
+   3: 7
+ 3: 4
+hcc_dma_cbk:16:16
+ 1: 8
+ 9: 8 mdrv_sem_up:7
+conn_dmi_hal_send:16:16
+ 18: 16 conn_dmi_drv_send:10 g_ring_reg_tbl.1170:6
+hmac_ba_send_ring_reorder_timeout:15:15
+ 20: bsp_get_elapse_ms:1
+  2: 1 __udivdi3:1
+ 21: 1
+ 22: hmac_get_frame_from_reorder_q:12
+  7: hmac_get_ba_rx_dhl:10
+   2: 10
+  8: 2
+ 52: hmac_rx_data_sta_proc:1
+  3: 1 hmac_rx_enqueue_list:1
+OsNextReadyRtTaskSingle:14:14
+ 6: 2
+ 7: 12
+oal_pcie_host_slave_address_switch_mp17c:13:13
+ 2: 8
+ 4: 1
+ 5: 4
+dpe_event_config_syn:13:13
+ 2: 4
+ 7: 1
+ 23: 2 dpe_event_config_syn_get_config_tbl:2
+ 30: dpe_config_get_cfgid_map:6
+  6: 4
+  8: 2
+bsp_ficc_chn_blks_send:13:13
+ 1: 4
+ 10: 2
+ 21: 2 SRE_SplIrqLock:2
+ 22: ficc_write_packet:4
+  9: opipe_free_space_get:1
+   4: 1
+  21: 2 opipe_put_to_ringbuf:2
+  26: 1
+ 27: 1 mdrv_spin_unlock_irqrestore:1
+hcc_netbuf_addlist_tail_with_flowctrl:11:11
+ 1: 5
+ 4: 1 SRE_SplIrqLock:1
+ 5: oal_netbuf_addlist_tail:5
+  4: 2 SRE_SplIrqLock:2
+  6: 3 mdrv_spin_unlock_irqrestore:3
+dpe_comm_dma_cbk_sync:11:11
+ 1: 6
+ 9: 4 mdrv_sem_up:3 OsHwiTail:1
+ 16: 1
+bsp_timer_add:10:10
+ 1: 1
+ 4: 2 DRB_TaskIrqLock:1
+ 5: 6 timer_add_common:6
+ 6: 1 mdrv_sched_unlock:1
+oal_pcie_ete_tx_netbuf:9:9
+ 4: get_pcie_res:9
+  2: 9
+g_dmi_hal_rx:9:9
+ 10: conn_dmi_hal_rx:9
+  16: 9 conn_dmi_hcc_rx:8 g_slave_bus_res:1
+ete_rx_thread_process:8:8
+ 15: 8 oal_ete_rx_hi_thread:8
+dpe_frw_event_process:8:8
+ 13: 1
+ 33: frw_event_hdr_init:2
+  8: 2
+ 37: dpe_dma_cpy_cache:3
+  3: 1 DRB_DcacheFlush:1
+  4: dpe_dma_cpy_sync:2
+   27: dpe_dma_cpy_submit_sync:2
+    5: 2 bsp_dma_memcpy_submit_async:2
+ 49: 2 frw_event_dispatch_event:2
+destroy_sbuf:8:8
+ 1: 3
+ 5: 5 sbuf_free:5
+dpa_sms_rx:7:7
+ 4: dev_conn_stats_update:3
+  2: get_common_pcb_by_fd:2
+   8: 2
+  11: 1
+ 13: 4 sms_gro_recv_push:4
+g_hal_common_ops:7:7
+ 11: 7 bsp_dmi_msg_free:7
+oal_pcie_rx_netbuf_submit:6:6
+ 1: 1
+ 21: hcc_dma_memcpy_submit_sync:1
+  5: 1
+ 28: 2 hcc_netbuf_delist_head_with_flowctrl:2
+ 36: hcc_master_rx:2
+  8: hcc_rx:2
+   9: 2 hcc_netbuf_addlist_tail_with_flowctrl:2
+mdrv_kmem_free:6:6
+ 2: 6
+hcc_slave_tx_queue_sched:6:6
+ 3: hcc_slave_tx_queue_process:1
+  10: hcc_bus_tx_queue_sched:1
+   11: oal_netbuf_list_len:1
+    2: 1 sbuf_queue_len:1
+ 5: hcc_slave_tx_queue_process:5
+  10: hcc_bus_tx_queue_sched:3
+   21: 3 conn_dmi_hcc_tx_netbuf:2 g_mng_buff_info:1
+  11: oal_netbuf_list_len:2
+   2: 2
+timer_add_common:6:6
+ 1: 1
+ 31: timer_add_init:1
+  13: timer_calc_expire_slice:1
+   18: 1
+ 35: timer_insert_list:3
+  5: 3
+ 41: 1
+sms_gro_recv_push:5:5
+ 4: sms_gro_set_bit:1
+  2: 1
+ 5: sms_gro_fill_userfield:1
+  16: memcpy_s:1
+   2: 1
+ 6: sms_gro_add_sbuf_list:1
+  7: 1
+ 14: sms_gro_add_timer:2
+  7: bsp_hrtimer_enable:1
+   10: timer_enable_modem:1
+    3: 1
+  11: bsp_wake_lock:1
+   8: 1 SRE_SplIrqLock:1
+hcc_netbuf_alloc:5:5
+ 1: 1
+ 4: oal_netbuf_alloc:2
+  3: 2 _IrqVector:1 alloc_sbuf:1
+ 12: oal_sbuf_cb:1
+  2: 1 get_userdata:1
+conn_dmi_hal_alloc_buf:5:5
+ 1: 5
+sms_gro_msg_deliver_to_acpu:5:5
+ 1: 1
+ 5: sms_gro_msg_merge:1
+  10: sms_gro_msg_check_usr_data:1
+   14: sms_gro_msg_cmp_usr_data:1
+    25: 1 memcmp:1
+ 10: 1 sms_gro_msg_send:1
+ 13: sms_gro_msg_alloc:1
+  5: 1
+ 22: sms_gro_msg_fill_usr_data:1
+  7: 1
+conn_dmi_service_request:5:5
+ 1: 5
+sms_filter_direct_rx_fiber:4:4
+ 8: 1 SRE_SplIrqLock:1
+ 17: 3 dpa_sms_rx:3
+dpe_frw_thread:4:4
+ 7: 1
+ 14: 3 dpe_frw_event_process:3
+sms_gro_deliver_sbuf_list:4:4
+ 26: 4 sms_gro_msg_deliver_to_acpu:3 OsHwiDispatcher:1
+qoe_timer_handler:4:4
+ 7: 1
+ 12: 1 memset:1
+ 15: 1 SRE_SplIrqLock:1
+ 17: 1 mdrv_spin_unlock_irqrestore:1
+dpe_timer_handle_timeout.780:4:4
+ 9: 4 hmac_ba_timeout_fn:3
+opipe_put_to_ringbuf:4:4
+ 6: 1
+ 31: memcpy_s:2
+  3: 2 memcpy:2
+ 47: 1
+hmac_update_tid_info_getter:4:4
+ 2: 4
+sms_gro_complete_timeout:3:3
+ 4: sms_gro_rx_complete:2
+  0: 1
+  12: 1
+ 8: bsp_wake_unlock:1
+  0: 1 mdrv_spin_unlock_irqrestore:1
+pcie_ete_ringbuf_write:3:3
+ 6: pcie_ete_ringbuf_is_full:1
+  2: pcie_ete_ringbuf_len:1
+   3: pcie_ete_ringbuf_is_overflow:1
+    3: 1
+ 18: 2
+dpe_get_tid_ba_info:3:3
+ 14: 3
+g_tid_update_list_ops:3:3
+ 28: 3
+ete_rx_hdr_proc_cbk:2:2
+ 11: 2 mdrv_sem_up:2
+g_mng_buff_info:2:2
+ 23: conn_dmi_hcc_send:2
+  22: conn_dmi_hal_send:2
+   18: 2 HwiCommonHandle:1
+conn_dmi_hcc_tx_netbuf:2:2
+ 1: 1
+ 6: 1
+g_pcie_ete_trans_tx_done_intx_count:2:2
+ 23: 2
+hcc_master_rx_queue_sched:2:2
+ 3: hcc_master_rx_queue_process:1
+  9: 1 hcc_bus_rx_queue_sched:1
+ 5: hcc_master_rx_queue_process:1
+  9: 1 hcc_bus_rx_queue_sched:1
+sms_gro_process_rx_queue:2:2
+ 7: sms_gro_proc_rx_sbuf_list:2
+  11: sms_gro_recv:2
+   8: 1
+   15: sms_gro_process_dev:1
+    21: sms_gro_merg_complete:1
+     10: 1 sms_gro_udp_proc_compl:1
+dpe_event_config_syn_get_config_tbl:2:2
+ 5: 2
+g_tid_update_list:2:2
+ 10: 2
+dpa_sms_filter_input:2:2
+ 18: 2 dpa_sms_filter_cfg_wlan:2
+hcc_oam_master_rcvd:1:1
+ 6: hcc_slave_tx:1
+  4: 1 hcc_tx:1
+sms_gro_msg_send:1:1
+ 1: 1
+memcmp:1:1
+ 0: 1
+dpe_config_sync_device_send_event:1:1
+ 35: 1
+call_msg_fun:1:1
+ 15: msg_free:1
+  7: 1 dra_free:1
+conn_dmi_hal_free_buf:1:1
+ 14: mdrv_free:1
+  3: 1
+sms_gro_udp_proc_compl:1:1
+ 15: 1
+DRB_TaskDelay:1:1
+ 26: 1 OsTskTimerAdd:1
+OsTskTimerAdd:1:1
+ 8: 1
+wdt_feed_task:1:1
+ 14: wdt_feed_time_debug:1
+  14: 1
+update_arp_entry_internal:1:1
+ 20: 1 find_arp_entry:1
+find_arp_entry:1:1
+ 8: find_entry_in_htable:1
+  6: find_entry_in_htable_locked:1
+   8: ref_entry:1
+    2: dmm_atomic_inc:1
+     2: 1
+g_powerup_res:1:1
+ 11: 1
+dpe_timer_handle_timeout.797:1:1
+ 9: 1 hmac_ba_timeout_fn:1
+sms_gro_sbuf_free_ext:1:1
+ 1: 1
+hmac_ba_rx_reo_timer_restart:1:1
+ 24: frw_timer_create_timer_m:1
+  17: 1 bsp_timer_add:1
+oam_log_print3_press:1:1
+ 5: 1
+g_tid_sche_list_ops:1:1
+ 8: 1
+OsTskEntry:513:0
+ 9: 513 oam_thread_process:417 OsTskContextLoad:36 hcc_thread_process:30 OsHwiDispatcher:14 HwiCommonHandle:13 dpe_frw_thread:1 wdt_feed_task:1 _IrqVector:1

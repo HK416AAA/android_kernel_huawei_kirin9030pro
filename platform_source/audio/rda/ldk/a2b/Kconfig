@@ -1,0 +1,15 @@
+menu "rda a2b driver"
+
+config RDA_A2B_DRIVER
+	bool "RDA_A2B_DRIVER"
+	default y
+	help
+	Say yes here if you want to configure RDA_A2B_DRIVER
+
+config RDA_A2B_DEBUG
+	bool "RDA_A2B_DEBUG"
+	default n
+	help
+	Say yes here if you want to open debug function of RDA_A2B_DRIVER
+
+endmenu

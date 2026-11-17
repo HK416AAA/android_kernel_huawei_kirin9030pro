@@ -1,0 +1,7 @@
+if KERNEL_CAMERA_PVSHIELD
+
+menu "Camera pvshield driver support"
+
+endmenu
+
+endif

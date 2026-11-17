@@ -1,0 +1,7 @@
+set(ps_mfg.dir ${GBB_MODEM_DIR}/ps/solution/mfg/mfg_bu)
+set(ps_mfg.stage STAGE_COMPILE)
+set(ps_mfg.toolchain ${tsp_toolchain})
+set(ps_mfg.libs_dir ${ps_libs_dir})
+set(ps_mfg.release_libs_dir ${release_libs_dir})
+set(ps_mfg.release_mode "libs")
+set(ps_mfg.libs_file ps_mfg_base.o)

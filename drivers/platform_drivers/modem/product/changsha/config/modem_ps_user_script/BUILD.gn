@@ -1,0 +1,91 @@
+# Copyright (c) 2024 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//build/ohos.gni")
+import("//vendor/hisi/ap/build/build_args.gni")
+import("//vendor/hisi/modem/build/build_args.gni")
+import("//vendor/hisi/modem/ap/phone/build/ohos/script/build_args.gni")
+
+if (chip_type == "") {
+  chip_type = "cs"
+}
+build_out = rebase_path(root_build_dir, "//")
+
+# source build module path should use source build path
+group("modem_ps_user_source") {
+  deps = []
+
+  if (modem_version_mode != "plat_llt") {
+    deps += [
+      "//vendor/hisi/modem/ps/ap/user/platform/ril/adapter/ohos/libhuaweicust:libhuaweicust",
+      "//vendor/hisi/modem/ps/ap/user/platform/ril/adapter/ohos/msg_trans:libril_msgtransfer",
+      "//vendor/hisi/modem/ps/ap/user/platform/ril/vendor/libcommril:libcommril",
+      "//vendor/hisi/modem/ps/ap/user/platform/ril/vendor/balong-ril:libvendor-ril",
+      "//vendor/hisi/modem/ps/ap/user/platform/ril/vendor/ril_util/event:libio_event",
+    ]
+  }
+
+  deps += [
+    "//vendor/hisi/modem/ps/ap/user/platform/hmi_service/hmi_host_ohos:libhmi_driver",
+    "//vendor/hisi/modem/ps/ap/user/platform/ims_dc:libims_dc_interface_service_1.0",
+  ]
+
+  if (TARGET_VERSION_MODE == "factory") {
+    deps += [
+      "//vendor/hisi/modem/ps/ap/user/platform/hmi_service/hmi_host_ohos:hmi_service",
+    ]
+  }
+}
+
+# libs release module path should use prebuilt build path
+group("modem_ps_user_private") {
+  deps = [
+    "//vendor/hisi/modem/ps/ap/user/platform/hmi_service/hmi_driver:libhmi_driver_core",
+    "//vendor/hisi/modem/ps/ap/user/platform/hmi_service/hmi_logcat:libhmi_logcat",
+    "//vendor/hisi/modem/ps/ap/user/platform/hmi_service/hmi_chr:libhmi_chr",
+    "//vendor/hisi/modem/ap/phone/build/ohos/prebuilts/hmi:libhmi_qoe",
+  ]
+
+  if (modem_build_variant != "user") {
+    deps += [
+      "//vendor/hisi/modem/app/himodemapr:himodemapr",
+      "//vendor/hisi/modem/ps/ap/user/platform/hmi_service/hmi_analysis:libhmi_analysis",
+      "//vendor/hisi/tools/modem/tsl_public:tslpublic",
+    ]
+  }
+}
+
+action("modem_ps_user_build") {
+  deps = []
+
+  # source build modules for eng&user version
+  if (!cfg_modem_ps_user_libs) {
+    deps += [ ":modem_ps_user_source" ]
+  }
+
+  # private build modules for eng&user version
+  deps += [ ":modem_ps_user_private" ]
+
+  script = "//vendor/hisi/modem/product/$device_name/config/modem_ps_user_script/ps_copy.sh"
+  args = [
+    "LIBS_BUILD=$cfg_modem_ps_user_libs",
+    "CHIP_TYPE=$chip_type",
+    "PRODUCT_NAME=$device_name",
+    "BUILD_OUT=$build_out",
+    "BUILD_VARIANT=$modem_build_variant",
+    "VERSION_MODE=$TARGET_VERSION_MODE",
+    "MODEM_VERSION_MODE=$modem_version_mode",
+  ]
+
+  outputs = ["$target_gen_dir/mode_ps_user_build.log"]
+}

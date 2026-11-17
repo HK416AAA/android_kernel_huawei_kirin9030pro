@@ -1,0 +1,37 @@
+# Copyright (c) 2024 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//build/ohos.gni")
+import("//vendor/hisi/ap/build/build_args.gni")
+import("//vendor/hisi/modem/build/build_args.gni")
+import("//vendor/hisi/modem/ap/phone/build/ohos/script/build_args.gni")
+
+build_out = rebase_path(root_build_dir, "//")
+
+action("tool_config_build") {
+  deps = [
+    "//vendor/hisi/modem/ap/phone/build/ohos/prebuilts/tool_config:log_default",
+    "//vendor/hisi/modem/ap/phone/build/ohos/prebuilts/tool_config:log_mid",
+    "//vendor/hisi/modem/ap/phone/build/ohos/prebuilts/tool_config:log_mini",
+    "//vendor/hisi/modem/ap/phone/build/ohos/prebuilts/tool_config:chr_msg",
+    "//vendor/hisi/modem/ap/phone/build/ohos/prebuilts/tool_config:chr_msg_group",
+  ]
+
+  script = "//vendor/hisi/modem/product/changsha/config/tool_config_script/tool_copy.sh"
+  args = [
+    "PRODUCT_NAME=$device_name",
+    "BUILD_OUT=$build_out",
+  ]
+
+  outputs = ["$target_gen_dir/tool_config_build.log"]
+}

@@ -1,0 +1,211 @@
+<hwlcd>
+	<PanelEntry>
+		<MipiDsiTimingSupport>1</MipiDsiTimingSupport>
+		<!--Mipi Horizontal sync area -->
+		<MipiHSyncArea>8</MipiHSyncArea>
+		<!--Mipi Horizontal back porch -->
+		<MipiHBackPorch>16</MipiHBackPorch>
+		<!--Mipi Horizontal line time -->
+		<MipiHLineTime>582</MipiHLineTime>
+		<!--Mipi Dpi horizontal size -->
+		<MipiDpiHSize>542</MipiDpiHSize>
+		<!--Mipi Vertical sync area -->
+		<MipiVSyncArea>4</MipiVSyncArea>
+		<!--Mipi Vertical back porch -->
+		<MipiVBackPorch>60</MipiVBackPorch>
+		<!--Mipi Vertical front porch -->
+		<MipiVFrontPorch>2280</MipiVFrontPorch>
+		<!--Panel information config start-->
+		<!--Panel type:8-video mode, 16-command mode-->
+		<PanelCmdType>8</PanelCmdType>
+		<!--Pixel clock-->
+		<PanelPxlClk>192</PanelPxlClk>
+		<!--Pixel clock division ratio-->
+		<PanelPxlClkDiv>1</PanelPxlClkDiv>
+		<PxlClkToPll2>2</PxlClkToPll2>
+		<!--Ifbc type:0-none, 1-orise2x, 2-orise3x, 3-himax2x,
+		4-rsp2x, 5-rsp3x, 6-vesa2x single, 7-vesa3x single
+		8-vesa2x dual, 9-vesa3x dual, 10-vesa3.75x dual-->
+		<PanelIfbcType>0</PanelIfbcType>
+
+		<!--DSS low power setting:0-close(video mode), 7-open(command mode)-->
+		<PanelVsynCtrType>0</PanelVsynCtrType>
+		<!--Pt station test support-->
+		<PanelPtTestSupport>1</PanelPtTestSupport>
+		<MipiDataTHsPrepareAdjust>1</MipiDataTHsPrepareAdjust>
+
+		<!--Esd enable-->
+		<PanelEsdSupport>1</PanelEsdSupport>
+		<PanelSubEsdSupport>1</PanelSubEsdSupport>
+		<PanelOnlySubEsdSupport>1</PanelOnlySubEsdSupport>
+		<PanelFacEsdSupport>0</PanelFacEsdSupport>
+		<!--bl type:1-none, 2-pwm, 4-blpwm, 8-mipi, 16-sh blpwm-->
+		<PanelBlType>4</PanelBlType>
+		<!--bl ic type:1-reg only, 2-pwm only, 3-muti-ramp, 4-ramp-muti, 6-i2c only, 7-blpwm-cabc-->
+		<PanelBlIcCtrlType>6</PanelBlIcCtrlType>
+		<!--bl min brightness setting-->
+		<PanelBlmin>4</PanelBlmin>
+		<!--bl max brightness setting-->
+		<PanelBlmax>10000</PanelBlmax>
+		<PanelDbvmax>10000</PanelDbvmax>
+		<!--bl default brightness setting-->
+		<PanelBlDef>1725</PanelBlDef>
+		<!--bl fastboot brightness setting-->
+		<PanelBlBoot>44</PanelBlBoot>
+		<!--Mipi lane number:c-phy:0-1port, 1-2port, 2-3port d-phy:0-1lane, 1-2lane, 2-3lane, 3-4lane-->
+		<MipiLaneNums>3</MipiLaneNums>
+		<!--mipi dsi support-->
+		<MipiDsiUptSupport>0</MipiDsiUptSupport>
+		<!--Mipi dsi default clock-->
+		<MipiDsiBitClk>556</MipiDsiBitClk>
+		<!--Mipi dsi tweak TX Swing setting-->
+		<!--Mipi phy mode:0-D-phy, 1-C-phy-->
+		<MipiPhyMode>0</MipiPhyMode>
+		<!--Mipi clk post adjust-->
+		<MipiClkPostAdjust>210</MipiClkPostAdjust>
+		<MipiMaxTxEscClk>8</MipiMaxTxEscClk>
+		<!--Mipi color mode:0-16bit_1, 1-16bit_2, 2-16bit_3, 3-18bit_1, 4-18bit_2, 5-24bit_1, 6-24bit_2, 7-24bit_3-->
+		<MipiColorMode>5</MipiColorMode>
+		<!--Mipi RG_VREFSEL_EQ -->
+		<MipiRgEqAdjust>90</MipiRgEqAdjust>
+		<!--Mipi RG_VREFSEL_VCM -->
+		<MipiRgVcmAdjust>50</MipiRgVcmAdjust>
+
+		<!-- for mipi check reg on -->
+		<PanelCheckRegOnCommand>"0x06, 0x01, 0x00, 0x00, 0x0a, 0x01, 0x01, 0x0a"</PanelCheckRegOnCommand>
+		<PanelCheckRegOnCommandState>0</PanelCheckRegOnCommandState>
+		<PanelCheckRegOnValue>"0x9c"</PanelCheckRegOnValue>
+		<!-- for mipi tr check -->
+		<PanelCheckRegCommand>"0x06, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x01, 0x0a"</PanelCheckRegCommand>
+		<PanelCheckRegCommandState>1</PanelCheckRegCommandState>
+		<PanelCheckRegValue>"0x9c"</PanelCheckRegValue>
+		<!--Effect config start-->
+		<PanelCheckRegOnSupport>1</PanelCheckRegOnSupport>
+		<PanelCheckRegOnSupportDsmReport>1</PanelCheckRegOnSupportDsmReport>
+		<PanelCheckRegSupport>1</PanelCheckRegSupport>
+		<!--Gamma support-->
+		<GammaSupport>1</GammaSupport>
+		<!--Dither support-->
+		<DitherSupport>1</DitherSupport>
+		<!--Gmp support-->
+		<GmpSupport>1</GmpSupport>
+		<!--for hiace parameter-->
+		<HiaceSupport>1</HiaceSupport>
+		<!--Xcc support-->
+		<XccSupport>1</XccSupport>
+		<Arsr1pSharpnessSupport>1</Arsr1pSharpnessSupport>
+		<!--prefix 2D sharpness support-->
+		<PrefixSharpTwoDSupport>1</PrefixSharpTwoDSupport>
+		<!--Post Xcc support-->
+		<PostXccSupport>1</PostXccSupport>
+		<!--hdr flw support-->
+		<HdrFlwSupport>0</HdrFlwSupport>
+		<!--Post Hihdr support-->
+		<PostHihdrSupport>0</PostHihdrSupport>
+		<!--EffectColorSupport-->
+		<EffectColorSupport>0</EffectColorSupport>
+		<EffectColorMode>2147483648</EffectColorMode>
+		<!--Effect config end-->
+		<!--Project id support-->
+		<PanelProjectIdSupport>2</PanelProjectIdSupport>
+		<!--Tp Project Id-->
+		<PanelDefaultTpProjectId>"GJUYCE2500"</PanelDefaultTpProjectId>
+		<!--Oem info-->
+		<OemInfoSupport>1</OemInfoSupport>
+		<OemBarcode2DSupport>1</OemBarcode2DSupport>
+		<!--sn code support-->
+		<PanelSnCodeSupport>1</PanelSnCodeSupport>
+		<CheckPanelSnCodeSupport>1</CheckPanelSnCodeSupport>
+		<!-- die id support -->
+		<LcdPanelDieidSupport>1</LcdPanelDieidSupport>
+		<!--event send
+		event, data, delay
+		event:0-NONE, 1-VCI, 2-IOVCC, 3-VSP, 4-VSN, 5-RESET, 6-MIPI, 7-TS early-event, 8-TS later-event, 9-vdd
+		data:0-power off, 1-power on
+		delay:ms/TS:0-no-sync 1-sync
+		-->
+		<!--Power on timming-->
+		<PowerOnStage>"11, 1, 0
+				2, 1, 3
+				3, 1, 2
+				4, 1, 4"</PowerOnStage>
+		<LPOnStage>"5, 1, 1
+				5, 0, 2
+				5, 1, 10
+				7, 1, 0
+				6, 1, 0
+				8, 1, 0"</LPOnStage>
+		<HSOnStage>"0, 0, 0"</HSOnStage>
+
+		<!--Power off timming-->
+		<HSOffStage>"7, 0, 0
+				8, 0, 0
+				6, 0, 0"</HSOffStage>
+		<LPOffStage>"0, 0, 0"</LPOffStage>
+		<PowerOffStage>"5, 0, 5
+				4, 0, 5
+				3, 0, 2
+				2, 0, 1
+				11, 0, 10"</PowerOffStage>
+		<!--Power timming config end-->
+		<!--Tp color support-->
+		<TpColorDefault>210</TpColorDefault>
+		<!--Backlight max nit-->
+		<!--Tddi Aod config-->
+		<AlpmSupport>1</AlpmSupport>
+		<PanelVideoAodSupport>1</PanelVideoAodSupport>
+		<TddiAodSupport>1</TddiAodSupport>
+		<TddiAodHighLight>580</TddiAodHighLight>
+		<TddiAodMiddleLight>135</TddiAodMiddleLight>
+		<TddiAodLowLight>6</TddiAodLowLight>
+		<TddiAodNoLight>0</TddiAodNoLight>
+		<!--Power timming config start-->
+		<!--event define
+		mode, number, amplitude
+		mode:0-none, 1-regulator, 2-gpio
+		number:gpio num or ldo num
+		amplitude:3100000-3.1v, 1850000-1.85v, 5500000-5.5v
+		-->
+		<LcdIovcc>"1, 4, 1800000"</LcdIovcc>
+		<LcdVsp>"2, 239, 6000000"</LcdVsp>
+		<LcdVsn>"2, 240, 6000000"</LcdVsn>
+		<PowerDownVsp>"2, 239, 0"</PowerDownVsp>
+		<PowerDownVsn>"2, 240, 0"</PowerDownVsn>
+		<LcdReset>"2, 201, 0"</LcdReset>
+		<TpReset>"2, 200, 0"</TpReset>
+		<LcdTe0>"2, 4, 0"</LcdTe0>
+		<LcdBacklight>"0, 0, 0"</LcdBacklight>
+		<IOVccRegulator>ldo4</IOVccRegulator>
+		<!--Fps fuction-->
+		<PanelFpsUpdtSupport>1</PanelFpsUpdtSupport>
+		<!--Need update dynamic frame when lcd on-->
+		<PanelFpsNeedUpdateOn>1</PanelFpsNeedUpdateOn>
+		<!--for hwc get panel support fps capacity, e.g. 0:60fps; 1:90fps; 2:120fps-->
+		<FpsDfrSupportValue>2</FpsDfrSupportValue>
+		<!--MMI test fps func switch 1:ltps get scence 2:ltps not scence-->
+		<FpsSwitchTestSupport>2</FpsSwitchTestSupport>
+		<!--frame rate 1->delay->...->frame rate n->delay-->
+		<FpsSwitchOrder>"60, 200, 90, 200, 120, 200"</FpsSwitchOrder>
+		<FpsEffectDelayFrameCnt>9000</FpsEffectDelayFrameCnt>
+		<FpsSendDfrCmdInVactive>1</FpsSendDfrCmdInVactive>
+		<FpsNeedHigh60Mode>0</FpsNeedHigh60Mode>
+		<!--bit0:hporch bit1:vporch bit2:clk-->
+		<FpsSwitchMode>2</FpsSwitchMode>
+		<!--hsa->hbp->dpi_hsize->hline_time->vsa->vbp->vfp->mipi_clk-->
+		<FpsTo60DsiTimming>"8, 16, 542, 582, 4, 60, 2280, 556"</FpsTo60DsiTimming>
+		<FpsTo90DsiTimming>"8, 16, 542, 582, 4, 60, 970, 556"</FpsTo90DsiTimming>
+		<FpsTo120DsiTimming>"8, 16, 542, 582, 4, 60, 308, 556"</FpsTo120DsiTimming>
+		<!--frame rate 1->delay->...->frame rate n->delay-->
+		<!--frame rate 1->...->frame rate n-->
+		<PanelSupportFpsList>"60, 90, 120"</PanelSupportFpsList>
+		<PanelFPS60CMD>"service call AGPService 102 i32 60 i32 1"</PanelFPS60CMD>
+		<PanelFPS90CMD>"service call AGPService 102 i32 90 i32 1"</PanelFPS90CMD>
+		<PanelFPS120CMD>"service call AGPService 102 i32 120 i32 1"</PanelFPS120CMD>
+
+		<!--support reload 1 support 0 not support -->
+		<ReloadSupport>1</ReloadSupport>
+		<!--Logging each underflow occurrence-->
+		<OneTimeReportUnderflow>1</OneTimeReportUnderflow>
+
+	</PanelEntry>
+</hwlcd>

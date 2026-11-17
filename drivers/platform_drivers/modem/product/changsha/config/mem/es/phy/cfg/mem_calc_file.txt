@@ -1,0 +1,1 @@
+../../../../../../vendor/hisi/build/delivery/prebuild/nashville/es_rtt/lib/modem_tsp.elf

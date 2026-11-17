@@ -1,0 +1,12 @@
+menu "sound Configuration"
+
+config AUDIO_OFFLOAD_INNER_RECORD
+    bool "audio pcm offload inner record driver support"
+    default n
+    help
+        for audio pcm offload inner record featured.
+source "platform_source/audio/sound/soc/platforms/Kconfig"
+source "platform_source/audio/sound/soc/codecs/Kconfig"
+source "platform_source/audio/sound/usb/hifi/Kconfig"
+source "platform_source/audio/sound/usb/usbaudio_mailbox/Kconfig"
+endmenu

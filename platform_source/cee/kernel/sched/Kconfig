@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: GPL-2.0
+
+config SCHED_LTS
+	bool "sched feature support LTS kernel"
+	default n
+	help
+	  Say Y here if OHOS LTS kernel
+	  Say N here if ASOP kernel
+
+config FRAME_WINDOW
+	bool "get frame rate in kernel"
+	default n
+
+config SOC_DFX
+	bool "dfx switch"
+	default n
+
+config HISI_PTR_FEATURE
+	bool "Performance thermal rebalancing "
+	default n
+
+config BENCHMARK_USE_ST_CORES_WORKAROUND
+	bool "Temporary workaround for issues that two threads benchmark runs on big core MT mode"
+	default n

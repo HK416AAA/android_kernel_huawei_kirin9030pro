@@ -1,0 +1,15 @@
+dpa {
+    compatible = "dpa,pm";
+    interrupts = <0 523 4>;
+    interrupt-names = "dpa_wakeup_int";
+
+    clocks=<&clk_gate_mdm_dpa>;
+    clock-names="clk_mdm_dpa";
+    clk_dpa_index = <0x0>;
+
+    dpa_fre_grade_max = <0x4>;
+    dpa_dfs_div_shifts = <418000000 558000000 640000000 836000000>;   // 417.79MHz, 558MHz, 640MHz, 835.58MHz, 向上取整
+
+    dump_size = <400>;
+    status = "disabled";
+};

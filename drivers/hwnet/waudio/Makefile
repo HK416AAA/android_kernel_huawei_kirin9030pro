@@ -1,0 +1,20 @@
+ifeq (taro, $(findstring taro,$(TARGET_DEVICE)))
+obj-$(CONFIG_HW_BOOSTER) += wifi_audio.o wifi_audio_utils.o wifi_audio_ptp.o wifi_audio_ptp_ext.o
+else
+obj-$(CONFIG_HW_WAUDIO_MODULE) += wifi_audio.o wifi_audio_utils.o wifi_audio_ptp.o wifi_audio_ptp_ext.o
+endif
+
+ifeq (v818, $(findstring v818,$(TARGET_PRODUCT)))
+$(warning waudio honghu v818 platform)
+KBUILD_CFLAGS += -DHONGHU_WIFI_AUDIO_CAST_PCM_DATA -DHONGHU_V818_PLATFORM
+else ifeq (v900, $(findstring v900,$(TARGET_PRODUCT)))
+$(warning waudio honghu v900 platform)
+KBUILD_CFLAGS += -DHONGHU_WIFI_AUDIO_CAST_PCM_DATA -DHONGHU_V900_PLATFORM
+else ifeq (n82002 , $(findstring n82002,$(TARGET_DEVICE)))
+$(warning waudio honghu n82002 platform)
+KBUILD_CFLAGS += -DHONGHU_WIFI_AUDIO_CAST_PCM_DATA -DN82002_PLATFORM
+else ifeq (v850, $(findstring v850,$(TARGET_PRODUCT)))
+KBUILD_CFLAGS += -DHONGHU_WIFI_AUDIO_CAST_PCM_DATA -DHONGHU_V850_PLATFORM
+else
+$(warning waudio not honghu platform)
+endif

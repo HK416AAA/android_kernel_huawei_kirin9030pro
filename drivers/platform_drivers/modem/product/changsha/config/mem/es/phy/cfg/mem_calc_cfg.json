@@ -1,0 +1,42 @@
+{
+    "SymbolType": {
+        "code": [
+            ".*\\.text"
+        ],
+        "pubData": [
+            ".*\\.rodata",
+            ".*\\.share.*\\.data",
+            "\\.(uphy|ul1m|fess|neun).*\\.(data|bss)",
+            "\\.(nphy\\.nphy_comm|lphy\\.lphy_comm).*\\.(data|bss)",
+            "\\.phy\\.spec\\.uphy_depend_intf\\.data"
+        ],
+        "instPrivData": [
+            "\\.(nphy\\.nphy_hl1c|lphy\\.lphy_hl1c).*\\.(data|bss)"
+        ],
+        "threadPrivData": []
+    },
+    "memtype": {
+        "L2MEM": {
+            "base": [],
+            "idle": [],
+            "conn": [],
+            "mini": []
+        },
+        "SYNCBUFFER": {
+            "base": [],
+            "idle": [],
+            "conn": [],
+            "mini": []
+        },
+        "DDR": {
+            "base": [],
+            "idle": [],
+            "conn": [
+                ".*"
+            ],
+            "mini": []
+        }
+    },
+    "uncache": [],
+    "fs_path_name": "hing_phy_fs3"
+}

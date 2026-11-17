@@ -1,0 +1,58 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2024-2024. All rights reserved.
+ * Description: hts_graph_resources.h
+ */
+#ifndef _HTS_GRAPH_RESOURCE_H_
+#define _HTS_GRAPH_RESOURCE_H_
+
+#define HTS_TEST_GRAPH_ID_BEGIN     100
+#define HTS_TEST_GRAPH_NUM          40
+#define HTS_GRAGH_NUM               30
+#define HTS_DYNAMIC_GRAPH_ID_BEGIN  200
+
+typedef enum {
+    MIN_GRAPH_NUM = -1,
+    DLSS = 0,
+    NEURAL_UPSCALE = 1,
+    SMART_PALETTE,
+    SMART_AWB,
+    SMART_FLOW,
+    SMART_DME,
+    AITM,
+    MTL_BACKBONE,
+    CIE_FDODSC,
+    CIE_SAL,
+    SMART_DEPTH,
+    AUDIO_NN,
+    FLASHAI_PREFILL,
+    FLASHAI_DECODE,
+    AIGC_VAE,
+    GLES_DLSS,
+    NEURAL_FRAME,
+    FLASH_LIGHT,
+    DLSS_FI,
+    FLASHAI_ABNORMAL,
+#ifdef HTS_DEBUG_EN
+    DLSS_TEST = 100,
+    AUDIO_TEST,
+    AUDIO_TEST_NPU,
+    GPU_TEST_LOOP,
+    TEST_GRAPH_1TO1,
+    TEST_GRAPH_NTO1,
+    TEST_GRAPH_1TON,
+    TEST_GRAPH_1TO3,
+    TEST_GRAPH_3TO1,
+    TEST_GRAPH_3TO3,
+    TEST_GRAPH_NTO1TON,
+    TEST_GRAPH_PATH5_FFTS_NPU_1TO1,
+    TEST_GRAPH_PATH5_FFTS_NPU_1TO2,
+    TEST_GRAPH_PATH5_FFTS_GPU_1TO1,
+    TEST_GRAPH_PATH5_AAE_AAE_UB0_1TO1,
+    TEST_GRAPH_PATH5_AAE_AAE_UB1_1TO1,
+    TEST_GRAPH_PATH5_FFTS_AAE_UB1_1TO2,
+    TEST_GRAPH_PATH5_FTS_AAE_UB1_2TO1,
+#endif
+    MAX_GRAPH_NUM
+} StaticGraph;
+
+#endif

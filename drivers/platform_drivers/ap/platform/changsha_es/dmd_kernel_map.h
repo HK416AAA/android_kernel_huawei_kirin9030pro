@@ -1,0 +1,5 @@
+#ifndef DMD_KERNEL_MAP_H
+#define DMD_KERNEL_MAP_H 
+#define RUNTIME_VAR_BASE 0x200E0
+#define RUNTIME_TMP_CUR_ADDR(n) (RUNTIME_VAR_BASE + 0x68 + n)
+#endif

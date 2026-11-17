@@ -1,0 +1,23 @@
+syscount {
+	compatible = "dpa,syscount";
+	#address-cells = <1>;
+    #size-cells = <1>;
+	timerslice {
+		reg = <0xFDB23000 0x1000>;
+		offset = <0x534 0x538>;
+		increase_count_flag=<1>;
+		clock-frequency  = <32764>;
+		need_map=<1>;
+		status = "ok";
+	};
+
+	hrttimer_app {
+		reg = <0xFDB4A000 0x2000>;
+		offset = <0x1008 0x100c>;
+		clock-frequency = <6400000>;
+		increase_count_flag=<1>;
+		sr_flag = <0>;
+		need_map=<1>;
+		status = "ok";
+	};
+};

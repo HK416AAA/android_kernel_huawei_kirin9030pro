@@ -1,0 +1,8 @@
+# path, mode(oct), uid, gid, cap
+# 支持data, data/*, data/1.txt方式进行路径匹配，优先匹配显示声明路径，如果找不到会尝试匹配*
+# cap 字符匹配能力仅支持L2
+# 目录未配置默认是 00755， 0， 0， 0
+# 文件未配置默认是 00644， 0， 0， 0
+
+# file
+vendor/communication/dpa/bin/udx_server,     00500,      1001,      1001,      0

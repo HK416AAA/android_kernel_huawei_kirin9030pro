@@ -1,0 +1,4 @@
+dpa_reset{
+    compatible = "dpa,reset";
+    enable = <0x1>;
+};

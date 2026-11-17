@@ -1,0 +1,105 @@
+#compile dpa
+CONFIG_DPA_DRIVERS=m
+
+#demo
+#CONFIG_DPA_COMPILE_DEMO=y
+
+#dump
+CONFIG_DPA_MINI_DUMP=y
+#CONFIG_DPA_FULL_DUMP=y
+CONFIG_ACPU_RDR_DPA_FEATURE_ON=y
+
+#dmi
+CONFIG_DPA_DMI=y
+
+#dra
+CONFIG_DPA_DRA=y
+CONFIG_DRA_PAGE=y
+CONFIG_DPA_DRA_SMMU=n
+
+#syscache
+CONFIG_DPA_SC_GID_CTRL=y
+
+#rpm
+CONFIG_DPA_PM=y
+
+#reset
+CONFIG_DPA_RESET=y
+CONFIG_DPA_RESET_DEBUG=n
+CONFIG_DPA_MDM_RESET_AGENT=y
+
+#netom
+CONFIG_DPA_NET_OM=y
+
+#dshell
+#CONFIG_DSHELL_HOST=y
+
+#syslog
+CONFIG_DPA_SYSLOG=y
+
+#wdt
+CONFIG_DPA_WDT=y
+#ocd user close
+# CONFIG_DPA_OCD=y
+
+#diag
+CONFIG_DPA_HOST_DIAG=y
+
+#busprobe
+CONFIG_MDMPERI_QIC=y
+
+#ldk proto hook define,todo delete
+CONFIG_DPA_PROTO=y
+
+#dpa proto
+CONFIG_DPA_NSTACK=y
+
+#wlist
+CONFIG_DPA_WHITE_LIST=y
+CONFIG_DPA_WHITE_LIST_NODE=n
+
+#sms 
+CONFIG_DPA_SMS=y
+
+#sms dap netdev,todo del
+CONFIG_DPA_NETDEV=y
+
+#sms dpa gso,todo del
+CONFIG_DPA_SMS_GSO=y
+
+#sms dpa gro,todo del
+CONFIG_DPA_SMS_GRO=y
+
+#sms filter
+CONFIG_DPA_SMS_FILTER=y
+
+#tc
+CONFIG_DPA_TC=y
+
+#stack om
+CONFIG_DPA_PROTO_OM=y
+CONFIG_DPA_OM_FUZZY_OFF=y
+
+#udx http
+CONFIG_UDX_HTTP=y
+
+#udx_server
+CONFIG_UDX_SERVER=y
+
+#udx buffer
+CONFIG_UDX_BUFFER=y
+
+#udx dfs
+CONFIG_UDX_DFS=n
+
+#udx dss
+CONFIG_UDX_DSS=n
+
+#chr
+CONFIG_DPA_CHR=y
+
+#chr_web
+CONFIG_DPA_CHR_WEB=y
+
+#dpa_sampler
+CONFIG_DPA_SAMPLER=n

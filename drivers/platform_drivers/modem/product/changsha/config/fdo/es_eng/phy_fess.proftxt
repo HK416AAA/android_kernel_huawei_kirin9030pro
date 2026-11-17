@@ -1,0 +1,10072 @@
+FESS_RFDEV_PowerLteNrCalcAdapt:344026:33
+ 2: 33
+ 3: 33
+ 11: 33
+ 3: FESS_RTS_GetBand:561
+  2: 33
+ 5: FESS_RFDEV_PowerNrHfCalcAdapt:0
+  10: 0
+  12: 0
+  13: 0
+  14: 0
+  15: 0
+  16: 0
+  17: 0
+  19: 0
+  20: 0
+  24: 0
+  25: 0
+  26: 0
+ 8: FESS_RFDEV_PowerLteNrLfCalcAdapt:341452
+  10: 33
+  12: 52
+  17: 33
+  18: 33
+  19: 33
+  21: 0
+  24: 66
+  25: 66
+  29: 66 FESS_RFAGENT_GetPdlongInfo:66
+  33: 66
+  34: 66
+  40: 66
+  47: 66
+  49: 0
+  53: 66
+  4: FESS_BITMAPBUFF_GetBuffIndex:198
+   2: 33
+  12: FESS_TXRTS_GetCtuneIdx:330
+   2: 33
+  13: FESS_RFDEV_InitTxApcLteNrCfgPara:2244
+   18: 33
+   5: FESS_RTS_GetModemId:99
+    2: 33
+   6: FESS_RTS_GetRatMode:132
+    2: 33
+   8: FESS_RTS_GetCenterFreqKhz:330
+    2: 33
+   12: FESS_TXRTS_GetBwRegion:297
+    2: 33
+   13: FESS_TXRTS_GetDpdFreqChan:231
+    2: 33
+  14: FESS_TXRTS_IsApcComp:198
+   2: 33
+  18: FESS_TXAPC_AllocApcIdCtx:1023
+   5: 33
+   6: 33
+   7: 33
+   8: 33
+  27: FESS_RFDEV_InitLteNrApcPara:6540
+   16: 66
+   18: 0
+   19: 0
+   23: 0
+   25: 0
+   26: 0
+   34: 66
+   36: 66
+   37: 66
+   41: 40
+   8: FESS_BITMAPBUFF_GetBuffIndex:594
+    2: 66
+   11: FESS_RTS_GetRatMode:462
+    2: 66
+   14: FESS_TXRTS_GetVFirstApcAntMap:1056
+    2: 66
+   15: FESS_TXRTS_IsApcComp:0
+    2: 0
+   28: FESS_RFDEV_InitFirstApcPdPara:0
+    7: 0
+    8: 0
+    4: FESS_RTS_GetRficId:0
+     2: 0
+  28: FESS_TXRTS_GetPreTemperature:396
+   2: 66
+  28: FESS_TXRTS_GetTemperature:462
+   2: 66
+  29: FESS_RTS_GetRficId:396
+   2: 66
+  31: FESS_RTS_GetNvDesc:396
+   2: 66
+  32: FESS_TXRTS_GetEtDpdSplitType:396
+   2: 66
+  35: FESS_TXRTS_IsHighSample:858
+   2: 66
+  37: FESS_TXAPC_StartLteNrTxPowerPreCalcFlow:274375
+   3: 66 memset:66
+   14: 66
+   15: 66
+   35: 66
+   42: 66
+   54: 0
+   64: 66
+   68: 0
+   71: 66
+   76: 66
+   77: 66
+   81: 66
+   7: FESS_TXAPC_CalcLteNrRbInfo:44457
+    8: 66
+    10: 132
+    12: 132
+    16: 66
+    24: 66
+    28: 44
+    29: 44
+    32: 44
+    34: 0
+    36: 44
+    38: 44
+    42: 0
+    47: 44
+    51: 44
+    7: FESS_TXAPC_GetApcCcCfgMap:2508
+     4: 66
+     615: 66
+    19: FESS_TXAPC_GetSingleCcInfo:11220
+     7: 110
+     10: 110
+     13: 0
+     17: 0
+     20: 0
+     22: 0
+     24: 0
+     31: 110
+     32: 110
+     33: 110
+     34: 110
+     36: 110
+     39: 110
+     40: 110
+     44: 110
+     16: FESS_TXAPC_GetLteBandWidthRbNum:0
+      28: 0
+     22: FESS_TXAPC_MergeLteRbInfo:0
+      3: 0
+      4: 0
+      8: 0
+      9: 0
+      10: 0
+      11: 0
+      14: 0
+     35: FESS_COMM_GetRbNum:440
+      3: 110
+    59: FESS_TXAPC_GetLteNrRbInfo:6072
+     4: 66
+     5: 66
+     6: 66
+     9: 66
+     10: 66
+     11: 66
+     12: 66
+   9: FESS_TXAPC_GetLteNrCcInfo:10296
+    10: 66
+    12: 0
+    13: 0
+    14: 0
+    17: 66
+    18: 66
+    19: 66
+    20: 66
+    21: 66
+    24: 66
+    27: 66
+    29: 66
+    31: 66
+    32: 66
+    33: 66
+    34: 66
+    36: 66
+   11: FESS_TXAPC_CalcLteNrDbbBackOffPow:4488
+    12: 66
+    34: 66
+    38: 0
+    41: 0
+    42: 0
+    60: 0
+    61: 0
+    62: 0
+    63: 0
+    66: 0
+    67: 0
+    572: 0
+    595: 66
+   17: FESS_TXAPC_CalcLteNrAntLossComp:1716
+    8: 66
+    697: 66
+    5: FESS_TXNV_GetLteRfComp:462
+     2: 66
+   20: FESS_TXAPC_CalcPdComp:29214
+    5: 66
+    11: FESS_TXAPC_CalcPdFreqTempComp:14834
+     7: 66
+     11: 66
+     15: 66
+     16: 22
+     17: 22
+     19: 44
+     20: 44
+     23: 44
+     24: 44
+     25: 44 FESS_TXAPC_CalcLteNrRbCenterFreqComp:44
+     28: 44
+     32: 66
+     33: 66
+     38: 0
+     41: 0
+     42: 0
+     44: 0
+     47: 0
+     50: 0
+     51: 0
+     55: 66
+     12: FESS_TXNV_GetTxApcCalRslt:396
+      2: 66
+     27: FESS_COMM_Alg32sRoundDiv:308
+      11: 44
+     35: FESS_TXNV_GetTempCompLabPara:0
+      2: 0
+     47: FESS_COMM_Alg32sRoundDiv:0
+      11: 0
+    13: FESS_TXAPC_GetPdComp:13126
+     2: 66
+     3: FESS_TXAPC_PresetLtevPdPara:0
+      5: 0
+      7: 0
+      7: FESS_TXAPC_CalcLteNrMinPowerPd:0
+       2: 0
+       6: 0
+       10: 0
+       11: 0
+       15: 0
+       2: FESS_TXNV_GetPdStartPower:0
+        2: 0
+     5: FESS_TXAPC_PresetPdPara:12304
+      9: 66 FESS_TXAPC_SaveLteNrPdRbInfo:44
+      11: 44
+      14: 22
+      8: FESS_TXAPC_SetLteNrChannelFlag:6908
+       9: 132
+       11: 132
+       14: 110
+       16: 0
+       20: 110
+       8: FESS_TXAPC_GetApcCcCfgMap:2970
+        4: 66
+      17: FESS_TXAPC_CalcLteNrMinPowerPd:3174
+       2: 66
+       6: 66
+       10: 60
+       11: 66
+       15: 60
+       2: FESS_TXNV_GetPdStartPower:1056
+        2: 66
+   30: FESS_TXAPC_CalcTasPowerDelta:330
+    3: 66
+    7: FESS_NVLIB_GetTxPowerDeltaTasSwap:0
+     7: 0
+     9: 0
+     10: 0
+     6: FESS_TXNV_GetDualCouplerCtrl:0
+      4: 0
+   32: FESS_TXAPC_CalcLteNrDbbAddAmprVal:4686
+    10: 66
+    22: 66
+    30: 66
+    32: 66
+    33: 0
+    37: 66
+    40: 66
+   45: FESS_TXAPC_CalcPaGainMode:13176
+    17: 66
+    6: FESS_TXNV_GetFeatureDefine:594
+     2: 66
+    17: FESS_TXAPC_GetPaGainSwitch:7704
+     10: 66
+     11: 0
+     17: 66
+     18: 66
+     19: 66
+     23: 66
+     24: 66
+     25: 66
+     32: 0
+     34: 26
+     35: 0
+     44: 66
+     46: 70
+     47: 52
+   47: FESS_TXAPC_CalcLtenrModulationComp:11826
+    19: 264
+    21: 264
+    30: 264
+    33: 264
+    35: 0
+    36: 0
+    10: FESS_TXNV_GetLteRfComp:792
+     2: 66
+   50: FESS_TXAPC_CalcMfm:73842
+    10: 0
+    71: 0
+    7: FESS_TXAPC_MfmGainMode:25146
+     7: 66
+     12: 0
+     14: 0
+     17: 0
+     9: FESS_TXAPC_CalcMfmWithHighAndMid:24288
+      8: 66
+      10: 66
+      11: 66
+      14: 66
+      15: 0
+      19: 66
+      22: 66 FESS_TXAPC_GetDpdGainMode:66
+      24: 66 FESS_TXAPC_GetLmeGainMode:66
+      26: 66
+      29: 66
+      15: FESS_TXAPC_GetEtGainMode:0
+       14: 0
+       15: 0
+       27: 0
+       33: 0
+       35: 0
+       38: 0
+       2: FESS_TXNV_GetFeatureDefine:0
+        2: 0
+      20: FESS_TXAPC_SetDpdLmeModePara:13530
+       9: 66
+       11: 66
+       12: 66
+       15: 66
+       17: 66
+       18: 0
+       20: 66
+       21: 66
+       22: 66
+       24: 66
+       25: 66
+       26: 66
+       30: 66
+       31: 66
+       34: 66
+       4: FESS_TXNV_GetFeatureDefine:396
+        2: 66
+       24: FESS_FEPNV_GetRficType:1716
+        2: 66
+        5: 66
+       24: FESS_TXNV_GetRficIdx:198
+        2: 66
+      29: FESS_TXAPC_GetTxConfigMode:2310
+       19: 66
+       20: 66
+       22: 66
+       23: 66
+    11: FESS_TXAPC_GetPaGainDelta:1122
+     7: 66
+     25: 0
+     35: 0
+    15: FESS_TXAPC_GetVccCompress:3168
+     16: 66
+     20: 66
+    18: FESS_TXAPC_CalcAptVcc:41568
+     7: 66
+     10: 66
+     21: 66
+     22: 66
+     17: FESS_TXAPC_SetAptPowerPara:25926
+      9: 66
+      15: 66
+      18: 66
+      19: 66
+      20: 66
+      21: 66
+      22: 66
+      23: 66
+      24: 66
+      25: 66
+      26: 66
+      29: 66
+      30: 66
+      38: 66
+      39: 66
+      40: 66
+      41: 66
+      11: FESS_TXAPC_CalcVccPaprComp:9690
+       4: 66
+       6: 66
+       9: 0
+       6: FESS_TXAPC_GetNrVccPaprCompValue:8172
+        8: 66
+        13: 66
+        16: 0
+        189: 66
+        11: FESS_TXAPC_GetNrRbRangeValue:5610
+         5: 66
+         10: 66
+         13: 66
+         15: 60
+         23: 66
+       9: FESS_TXAPC_GetLteVccPaprCompValue:0
+        7: 0
+        12: 0
+        13: 0
+        16: 0
+        19: 0
+        23: 0
+        26: 0
+        108: 0
+        18: FESS_TXAPC_CalcLteCcMprIdx:0
+         16: 0
+         21: 0
+         27: 0
+        22: FESS_TXAPC_CalcLteCaMprIdx:0
+         8: 0
+         11: 0
+         19: 0
+         24: 0
+         25: 0
+         26: 0
+         27: 0
+         29: 0
+      12: FESS_RFGAIN_GetVccAmprCompValue:4950
+       6: 66
+       17: 66
+       18: 66
+       22: 66
+       23: 66
+       139: 66
+      26: FESS_TXNV_GetEtAptPara:462
+       2: 66
+     18: FESS_TXAPC_CalcAptPower:7260
+      15: 66
+      19: 66
+      22: 66 FESS_TXAPC_GetAptFreqTempComp:66
+      24: 66
+      26: 66
+      29: 66
+      32: 66
+      26: FESS_TXAPC_GetRefPar:1320
+       13: 66
+     21: FESS_TXAPC_SetAptPaBiasPara:462
+      10: FESS_TXNV_GetEtAptPara:462
+       2: 66
+     22: FESS_TXAPC_CalcAptPaBias:4356
+      12: 66
+      13: 66
+      14: 66
+      17: 0
+      20: 66
+      29: 0
+      30: 0
+      34: 0
+      15: FESS_TXAPC_Get2x3AptPaBias:0
+       10: 0
+       25: 0
+       27: 0
+       28: 0
+       30: 0
+      27: FESS_COMM_AlgGetDestValueIndexIn16sUpTable:0
+       6: 0
+       15: 0
+       21: 0
+       22: 0
+       24: 0
+       25: 0
+       26: 0
+       27: 0
+    21: FESS_TXAPC_CalcEtVcc:2838
+     8: 66
+     21: 0
+     24: 66
+     25: 66
+     26: 66
+     16: FESS_TXAPC_SetEtLutPowerPara:0
+      12: 0
+      14: 0
+      15: 0
+      18: 0
+      20: 0
+      21: 0
+      23: 0
+      24: 0
+      26: 0
+      5: FESS_TXNV_GetTxApcCalRslt:0
+       2: 0
+     17: FESS_TXAPC_CalcEtLutPower:0
+      10: 0
+      13: 0
+      15: 0
+      17: 0
+     20: FESS_TXAPC_SetEtFracDelayPara:0
+      3: 0
+      4: 0
+      5: 0
+      6: 0
+      8: 0
+      9: 0
+   52: FESS_TXAPC_CalcLteNrDbbComp:10164
+    10: 66
+    11: 0
+    8: FESS_TXNV_GetTxApcCalRslt:594
+     2: 66
+    14: FESS_TXAPC_GetCalDbbGain:9108
+     17: 66
+     19: 66
+     21: 66
+     25: 66
+     26: 66
+     27: 66
+     30: 66
+     33: 66
+     35: 0
+     43: 66
+     44: 66
+     45: 66
+     49: 66
+     53: 66
+     1550: 0
+   54: FESS_TXAPC_CalcLteNrTempComp:14420
+    8: 66
+    10: 66
+    12: 66
+    13: 14
+    17: 66
+    18: 66
+    29: 52
+    30: 52
+    31: 0
+    35: 52
+    42: 52
+    43: 52
+    46: 52
+    47: 52 FESS_TXAPC_CalcTempComp:52
+    51: 52
+    54: 52
+    1449: 66
+    50: FESS_COMM_Alg32sRoundDiv:1040
+     11: 52
+   56: FESS_TXAPC_CalcLteNrFilterComp:9804
+    8: 66
+    9: 22
+    16: 44
+    24: 44
+    13: FESS_TXNV_GetLteRfComp:308
+     2: 44
+    20: FESS_TXAPC_CalcLteTxFilterCmpVal:0
+     15: 0
+     29: 0
+     32: 0
+     43: 0
+     46: 0
+     47: 0
+     48: 0
+     50: 0
+     40: FESS_COMM_Alg32sRoundDiv:0
+      11: 0
+    21: FESS_TXAPC_CalcNrTxFilterCmpVal:5948
+     9: 44
+     17: 44
+     20: 44
+     27: 44
+     30: 44
+     31: 44
+     34: 44
+     35: 176
+     36: 24
+     37: 0
+   58: FESS_TXAPC_CalcLteNrFreqCompCal:25892
+    5: 44
+    11: 66
+    12: 0
+    16: 66
+    5: FESS_TXAPC_CalcLteNrFactoryFreqComp:9262
+     11: 66
+     12: 22
+     13: 52
+     18: 52
+     20: 0
+     34: 52
+     37: 52
+     39: 0
+     45: 52
+     53: 52
+     54: 52
+     55: 52
+     56: 52
+     58: 52 FESS_TXAPC_CalcLteNrRbCenterFreqComp:52
+     60: 52
+     24: FESS_TXNV_GetCalFreqList:676
+      2: 52
+     40: FESS_APC_GetBiasIndex:0
+      5: 0
+      62: 0
+    8: FESS_TXAPC_CalcLteNrLabFreqComp:13000
+     8: 66
+     12: 66
+     13: 22
+     14: 22
+     15: 22
+     20: 44
+     46: 44
+     54: 44
+     55: 44
+     56: 44 FESS_TXAPC_CalcLteNrRbCenterFreqComp:44
+     58: 44
+     59: 44
+   60: FESS_TXAPC_CalcApcPower:7590
+    8: 66
+    10: 66
+    11: 66
+    13: 66
+    1484: 66
+   77: FESS_TXNV_GetNrBw200MDelta:1056
+    2: 66
+  44: FESS_TXAPC_SetReferApcInfo:5280
+   9: 66
+   10: 66
+   11: 66
+   12: 66
+   13: 66
+   14: 66
+   15: 66
+   17: 66
+   18: 66
+   19: 66
+  50: FESS_TXRTS_SetPreTemperature:0
+   2: 0
+  57: FESS_MNTN_RptApcRfdevAntCalcRunLog:13332
+   3: 66
+   7: 66
+   8: 66 memcpy:66
+  61: FESS_RFDEV_SetLnrBandRatInfo:1188
+   5: 33
+   6: 0
+   7: 0
+   8: 0
+   9: 33
+   11: 33
+   12: 33
+   13: 33
+   14: 33
+   15: 33
+  61: FESS_RTS_GetRatMode:99
+   2: 33
+FESS_OM_IdleHandle:258741:259
+ 1: 259
+ 2: 259 UPHY_CORE_Get32kTimeCount:259
+ 4: 259 FESS_OM_ProcMsgBuffList:259
+ 7: 259
+ 3: FESS_OM_SnapshotPeriodRpt:14763
+  7: 777
+  8: 777
+  9: 0
+  10: 0
+  11: 0
+  2: UPHY_CORE_GetMcCount:4144
+   4: 259
+ 5: FESS_OM_IsStartTrafficMonitor:4144
+  4: 259
+  3: FESS_OM_GetTrafficMonitorSwitch:2331
+   2: 259
+  5: FESS_OM_MonitorTraffic:0
+   8: 0
+   9: 0
+   11: 0
+   12: 0
+   19: 0
+   21: 0
+   2: FESS_OM_GetMonitorTrafficReportPeriod:0
+    2: 0
+   3: FESS_OM_GetMonitorTrafficReportThreshold:0
+    2: 0
+   4: UPHY_CORE_GetMcCount:0
+    4: 0
+   5: FESS_OM_GetTotalMsgLen:0
+    2: 0
+   13: FESS_OM_SetTrafficThreadFlag:0
+    2: 0
+   18: FESS_OM_GetTotalLostMsgCnt:0
+    2: 0
+   21: UPHY_CORE_GetMcCount:0
+    4: 0
+   22: FESS_OM_ReportTrafficMsg:0
+    4: 0
+    6: 0
+    10: 0
+    12: 0
+    13: 0
+   24: FESS_OM_UpdateTimeWindow:0
+    2: 0
+    3: 0
+    4: 0
+    4: UPHY_CORE_GetMcCount:0
+     4: 0
+    5: FESS_OM_SetTrafficThreadFlag:0
+     2: 0
+    6: FESS_OM_ClrTotalMsgLen:0
+     2: 0
+    7: FESS_OM_ClrTotalLostMsgCnt:0
+     2: 0
+ 6: FESS_OM_ModifyReportSwitch:236467
+  2: 259 UPHY_OM_GetHidsState:259
+  3: 259
+  4: FESS_OM_GetPowerLogSwitch:0
+   4: 0
+   5: 0
+  6: FESS_OM_UpdateSwitch:234654
+   7: 8288
+   8: 8288
+   3: FESS_OM_GetUphySwitch:46620
+    4: 259
+    8: 1295
+    9: 1295 UPHY_OM_GetModuleSwitch:1295
+    10: 1295
+    11: 777
+   4: FESS_OM_GetMonitorSwitch:14245
+    3: 259
+   5: FESS_OM_GetOmLevelSwitch:59311
+    4: 8288
+FESS_MID_SchedTaskProc:172967:274
+ 1: 274
+ 5: 274
+ 4: FESS_FWK_SchedRun:169953
+  8: 274 FESS_FWK_ProcMsg:274
+  10: 333
+  11: 335
+  13: 2
+  7: FESS_FWK_DeleteTimer:12304
+   2: 274
+   7: 272
+   9: FESS_MC_StopFwkTimer:3536
+    3: UPHY_WriteRegV:3536
+     3: 272
+     5: 272
+  11: FESS_FWK_IsCurrTaskOrderMsgEmpty:335
+   2: 335 UPHY_OS_CheckOrderQueueFirstTask:335
+  12: FESS_FWK_LogTrace:96
+   3: 2
+   4: 2
+   5: 2
+   8: 2
+   6: UPHY_CORE_GetMcCount:6
+    4: 2
+  16: FESS_FWK_ExecuteJob:141303
+   25: 333
+   37: 56
+   10: FESS_LATENCY_JudgeLock:2331
+    2: 333
+    2: FESS_OM_GetLoadMonitorSwitch:1998
+     2: 333
+    3: UPHY_INT_IntLockContext:0
+     5: 0
+     6: 0
+     4: UPHY_CORE_GetThreadId:0
+      2: mdrv_get_core_id:0
+       2: OsGetCoreID:0
+        3: 0
+   14: FESS_FWK_CheckScheduleTime:27572
+    7: 517
+    9: 517
+    15: 184
+    21: 184 FESS_FWK_AddSchedJob:184
+    23: 184
+    7: FESS_DLL_GetLast:5284
+     2: 517
+    15: FESS_FWK_LogTrace:6624
+     3: 184
+     4: 184
+     5: 184
+     6: 184
+     8: 184
+     6: UPHY_CORE_GetMcCount:552
+      4: 184
+    18: FESS_FWK_RemoveJob:184
+     2: 184 FESS_DLL_RemoveNode:184
+    23: FESS_FWK_DelOsMemVote:3642
+     3: 184
+     7: 182
+     8: 182
+     9: 0
+   14: UPHY_CORE_GetMcCount:1332
+    4: 333
+   17: FESS_FWK_ExecuteNextJob:50864
+    9: 230
+    14: 0
+    19: 230
+    22: 527 FESS_FWK_ProcPeriodTask:2 FESS_RXAGC_Schedule:66 FESS_MRM_ScheduleRxTask:63 FESS_MRM_ScheduleTxTask:113 FESS_MRM_TxStandbyInd:37 FESS_TXRESUME_Schedule:105 FESS_RXRESUME_Schedule:60 FESS_TXAPC_Schedule:66 FESS_RXSTANDBY_IndCb:15
+    26: 297
+    28: 230
+    36: 230
+    37: 33 UPHY_OM_PrintfWarnHash:33
+    41: 230
+    44: 230
+    46: 0
+    7: FESS_DLL_GetLast:4195
+     2: 333
+    11: FESS_DLL_GetLast:412
+     2: 103
+    16: UPHY_CORE_GetMcCount:690
+     4: 230
+    26: FESS_FWK_IsCurrTaskOrderMsgEmpty:297
+     2: 297 UPHY_OS_CheckOrderQueueFirstTask:297
+    31: UPHY_CORE_GetMcCount:2070
+     4: 230
+    33: FESS_LATENCY_MonitorJobLoadInfo:920
+     5: 230
+     9: 0
+     10: 0
+     13: 0
+     5: FESS_OM_GetLoadMonitorSwitch:690
+      2: 230
+    43: FESS_FWK_JobExcuteFinishPostProc:26218
+     2: 230
+     9: 230
+     11: 230 FESS_TASK_CleanJob:178 FESS_FWK_AddNextPeriodTask:2 FESS_MRM_TxCreateStandbyIndMsgJob:35 FESS_RXSTANDBY_CreateIndMsgJob:15
+     3: FESS_FWK_LogTrace:7820
+      3: 230
+      4: 230
+      5: 230
+      8: 230
+      6: UPHY_CORE_GetMcCount:690
+       4: 230
+     6: FESS_FWK_RemoveJob:2530
+      2: 230 FESS_DLL_RemoveNode:230
+     15: FESS_FWK_DelOsMemVote:7588
+      3: 230
+      7: 228
+      8: 228
+      9: 143 UPHY_OS_MsgFree:143
+   25: FESS_DLL_IsEmpty:1998
+    2: 333
+   27: FESS_FWK_UpdateTimer:29362
+    6: 277
+    11: 277
+    12: 277
+    5: FESS_DLL_GetLast:2770
+     2: 277
+    11: FESS_MC_StartFwkTimer:11357
+     3: FESS_MC_AdaptTimerPrecison:1662
+      3: 277
+      4: 277
+     5: UPHY_WriteRegV:3601
+      3: 277
+      5: 277
+     6: UPHY_WriteRegV:6094
+      3: 277
+      5: 277
+    16: FESS_FWK_LogTrace:10526
+     3: 277
+     4: 277
+     5: 277
+     8: 277
+     6: UPHY_CORE_GetMcCount:1108
+      4: 277
+   28: FESS_FWK_IsMsgJobTimeOut:10062
+    7: 277
+    8: 277 FESS_MC_GetOriginValue:277
+    9: 277
+    10: 5 UPHY_OM_PrintfWarnHash:5
+    6: FESS_DLL_GetLast:4432
+     2: 277
+   30: FESS_FWK_DeleteTimer:145
+    2: 5
+    7: 5
+    9: FESS_MC_StopFwkTimer:65
+     3: UPHY_WriteRegV:65
+      3: 5
+      5: 5
+   31: FESS_FWK_LogTrace:215
+    3: 5
+    4: 5
+    5: 5
+    8: 5
+    6: UPHY_CORE_GetMcCount:15
+     4: 5
+   33: FESS_FWK_TriggerLowTask:2176
+    9: 272 UPHY_OS_EventSend:272
+   34: FESS_FWK_LogTrace:12240
+    3: 272
+    4: 272
+    5: 272
+    6: 272
+    8: 272
+    6: UPHY_CORE_GetMcCount:816
+     4: 272
+   44: FESS_LATENCY_JudgeUnlock:333
+    2: 333
+    3: UPHY_INT_IntUnLockContext:0
+     4: 0
+     5: 0
+     3: UPHY_CORE_GetThreadId:0
+      2: mdrv_get_core_id:0
+       2: OsGetCoreID:0
+        3: 0
+encode_packed_data:152371:365
+ 1: 365
+ 2: 365
+ 7: 365
+ 3: encode_rttsrch_data:0
+  4: 0
+  5: 0
+  12: 0
+  15: 0
+  16: 0
+  18: 0
+  19: 0
+  23: 0
+  24: 0
+  29: 0
+  32: 0
+  34: 0
+  35: 0
+  38: 0
+  40: 0
+  41: 0
+  6: convert_to_rttsrch:0
+   2: 0
+  30: write_encdata_tosrcbuf:0
+   5: 0
+   9: 0
+   10: 0
+   14: 0
+   18: 0
+   19: 0
+   24: 0
+   28: 0
+   29: 0
+   6: diag_reportptr_record:0
+    4: 0
+   15: diag_reportptr_record:0
+    4: 0
+   20: diag_reportptr_record:0
+    4: 0
+   25: diag_reportptr_record:0
+    4: 0
+  32: write_encdata_tosrcbuf:0
+   4: 0
+   5: 0
+   9: 0
+   10: 0
+   14: 0
+   18: 0
+   19: 0
+   24: 0
+   28: 0
+   29: 0
+   6: diag_reportptr_record:0
+    4: 0
+   15: diag_reportptr_record:0
+    4: 0
+   20: diag_reportptr_record:0
+    4: 0
+   25: diag_reportptr_record:0
+    4: 0
+  35: write_encdata_tosrcbuf:0
+   4: 0
+   5: 0
+   9: 0
+   10: 0
+   14: 0
+   18: 0
+   19: 0
+   24: 0
+   28: 0
+   29: 0
+   6: diag_reportptr_record:0
+    4: 0
+   15: diag_reportptr_record:0
+    4: 0
+   20: diag_reportptr_record:0
+    4: 0
+   25: diag_reportptr_record:0
+    4: 0
+  38: write_encdata_tosrcbuf:0
+   4: 0
+   5: 0
+   9: 0
+   10: 0
+   14: 0
+   19: 0
+   24: 0
+   28: 0
+   29: 0
+   6: diag_reportptr_record:0
+    4: 0
+   15: diag_reportptr_record:0
+    4: 0
+   20: diag_reportptr_record:0
+    4: 0
+   25: diag_reportptr_record:0
+    4: 0
+ 6: encode_srch_data:121711
+  4: 365
+  6: 365
+  8: 365
+  14: 365
+  19: 365 bsp_odt_hp_get_write_buff:365
+  21: 365
+  28: 365
+  29: 365
+  31: 365
+  32: 365
+  35: 365
+  37: 365
+  38: 0
+  41: 365
+  42: 365
+  45: 365 bsp_odt_hp_write_done:365
+  17: encoder_spin_lock:0
+   5: 0
+  22: encoder_spin_unlock:0
+   2: 0
+   3: 0
+  23: diag_reportptr_record:0
+   4: 0
+  33: write_encdata_tosrcbuf:10950
+   4: 365
+   5: 365 memcpy_s:365
+   9: 365
+   10: 365
+   14: 0
+   18: 0
+   19: 0
+   24: 0
+   28: 0
+   29: 0
+   6: diag_reportptr_record:0
+    4: 0
+   15: diag_reportptr_record:0
+    4: 0
+   20: diag_reportptr_record:0
+    4: 0
+   25: diag_reportptr_record:0
+    4: 0
+  35: write_encdata_tosrcbuf:14305
+   4: 365
+   5: 363 memcpy_s:363
+   9: 363
+   10: 365
+   14: 2 memcpy_s:2
+   18: 2
+   19: 2
+   24: 2 memcpy_s:2
+   28: 2
+   29: 2
+   6: diag_reportptr_record:0
+    4: 0
+   15: diag_reportptr_record:0
+    4: 0
+   20: diag_reportptr_record:0
+    4: 0
+   25: diag_reportptr_record:0
+    4: 0
+  38: write_encdata_tosrcbuf:0
+   4: 0
+   5: 0
+   9: 0
+   10: 0
+   14: 0
+   18: 0
+   19: 0
+   24: 0
+   28: 0
+   29: 0
+   6: diag_reportptr_record:0
+    4: 0
+   15: diag_reportptr_record:0
+    4: 0
+   20: diag_reportptr_record:0
+    4: 0
+   25: diag_reportptr_record:0
+    4: 0
+  42: write_encdata_tosrcbuf:16521
+   4: 365
+   5: 362 memcpy_s:362
+   9: 362
+   10: 365
+   14: 3 memcpy_s:3
+   19: 3
+   24: 3 memcpy_s:3
+   28: 3
+   29: 3
+   6: diag_reportptr_record:0
+    4: 0
+   15: diag_reportptr_record:0
+    4: 0
+   20: diag_reportptr_record:0
+    4: 0
+   25: diag_reportptr_record:0
+    4: 0
+  46: encoder_spin_unlock:3650
+   2: 365
+   3: 0
+pack_diagmsg:148920:365
+ 1: 365
+ 2: 365
+ 7: 365
+ 8: 365
+ 10: 365 mdrv_timer_get_normal_timestamp:365
+ 13: 365
+ 16: 365
+ 22: 365
+ 112: 0
+ 17: diag_reportptr_record:0
+  4: 0
+ 21: split_msg_package:80665
+  7: 365
+  8: 0
+  11: 365
+  13: 365
+  21: 365
+  22: 365
+  23: 365
+  12: encode_msg_package:44895
+   5: 365
+   6: 365
+   16: 365
+   20: 365
+   22: 365
+   24: 365
+   25: 365
+   26: 365
+   29: 0
+   30: 0
+   33: 365
+   34: 365
+   36: 365 encode_packed_data:365
+   13: get_encode_srch:8760
+    2: 365
+  14: diag_reportptr_record:0
+   4: 0
+FESS_LOW_Handler:146335:0
+ 1: 0
+ 2: FESS_RegisterLazyJobOsMsgProc:0
+  3: 0
+  4: 0
+  5: 0
+ 4: FESS_LOW_ProcEvent:15540
+  3: 259
+  5: 259 UPHY_OS_EventRecv:259
+  7: 259
+  8: 259
+  9: 259 FESS_ProcDummyEvent:258
+  10: 259
+ 5: FESS_FWK_ProcLazyJob:2590
+  2: 259 FESS_RINGBUFF_Free:259
+ 6: FESS_ProcOsMsg:5180
+  3: 259
+  8: 0
+  9: 0
+  10: 0
+  13: 0
+ 7: FESS_ProcOmIdle:121471
+  2: FESS_RFM_OmIdleHandle:121471
+   2: 259
+   6: 259 FESS_OM_IdleHandle:259
+   9: FESS_RFM_OmTryToSendRfHidsMsg:118622
+    4: FESS_RFM_OmTryToSendRfHidsSwitchMsg:96348
+     3: FESS_OM_CheckNewRfHidsSwitchMsg:75369
+      8: 518
+      9: 1554
+      10: 1554
+      11: 518
+      12: 518
+      13: 518
+      5: FESS_OM_PreProcHidsConnStateForRf:8547
+       6: 259 UPHY_OM_GetHidsState:259
+       8: 259
+       13: 0
+       15: 0
+       16: 0
+       19: 0
+       23: 0
+     6: FESS_RFM_PeriodCheckRfCnf:20979
+      5: 259
+      7: 259
+      4: FESS_FEPNV_GetRficNum:3367
+       3: 259
+      7: FESS_OM_GetRfSwitchMsgBitMap:1554
+       2: 259
+      8: FESS_RFM_CheckRfSwitchMsgCnf:0
+       4: 0
+       5: 0
+       8: 0
+       14: 0
+       20: 0
+       23: 0
+       11: FESS_OM_GetRfSwitchMsgSendCnt:0
+        2: 0
+       12: FESS_OM_GetRfSwitchMsgId:0
+        2: 0
+       14: FESS_OM_GetRfSwitchMsgBitMap:0
+        2: 0
+       17: FESS_OM_IncRfSwitchMsgSendCnt:0
+        2: 0
+       18: FESS_RFM_SendRfSwitchMsgToRfic:0
+        11: 0
+        15: 0
+        18: 0
+        19: 0
+        20: 0
+        21: 0
+        23: 0
+        6: FESS_OM_GetRfSwitchMsgInfo:0
+         4: 0
+        22: FESS_OM_UpdateRfSwitchMsgState:0
+         2: 0
+       26: FESS_OM_ClearRfSwitchBitMap:0
+        2: 0
+    8: FESS_RFM_OmTryToSendRfHidsOtherMsg:15799
+     4: 518
+     6: 518
+     11: 259
+     18: 0
+     22: 0
+     25: 0
+     26: 0
+     27: 0
+     28: 0
+     29: 0
+     9: FESS_OM_GetRfOtherMsgCount:5698
+      3: 259
+      5: 259
+     12: FESS_OM_GetLatestRfOtherMsg:0
+      5: 0
+     30: FESS_OM_ReleaseLatestRfOtherMsg:0
+      2: 0
+UPHY_OM_GetModuleSwitch:144992:1393
+ 6: 1393
+ 4: UPHY_OM_GetModuleSwitchHidsMode:143599
+  8: 1393
+  9: 1393
+  14: 1393
+  16: 1393
+  22: 1393
+  28: 98
+  28: UPHY_OM_GetModuleMaskBit:1568
+   2: 98
+mdrv_sched_unlock:119692:1336
+ 1: 1336
+ 2: OsTaskIrqUnlock:115684
+  8: 1336
+  20: 292
+  33: 2
+  38: 0
+  5: OsGetHwThreadId:38744
+   3: 1336
+  17: OsTskUnlockIsNeedResched:44760
+   2: 1334
+  21: OsHwiTriggerByMask:0
+   2: 0
+   4: 0
+   7: 0
+  25: OsTaskUnlockSchedule:1460
+   2: 292
+   3: 0
+   5: OsTskScheduleFast:584
+    2: 292 OsTskSchedule:292
+  28: OsIntRestore:5044
+   0: 1042
+   4: 1042
+  34: OsIntRestore:8
+   4: 2
+  39: OsIntRestore:0
+   4: 0
+SRE_TaskIrqUnlock:119692:1336
+ 1: 1336
+ 2: OsTaskIrqUnlock:115684
+  8: 1336
+  20: 292
+  33: 2
+  38: 0
+  5: OsGetHwThreadId:38744
+   3: 1336
+  17: OsTskUnlockIsNeedResched:44760
+   2: 1334
+  21: OsHwiTriggerByMask:0
+   2: 0
+   4: 0
+   7: 0
+  25: OsTaskUnlockSchedule:1460
+   2: 292
+   3: 0
+   5: OsTskScheduleFast:584
+    2: 292 OsTskSchedule:292
+  28: OsIntRestore:5044
+   0: 1042
+   4: 1042
+  34: OsIntRestore:8
+   4: 2
+  39: OsIntRestore:0
+   4: 0
+cpuidle_loop:99774:0
+ 1: 0
+ 2: 290
+ 7: 290 SRE_TaskIrqLock:290
+ 11: 149
+ 18: 289
+ 19: 289
+ 25: 289 SRE_TaskIrqUnlock:289
+ 28: 0
+ 5: osl_get_core_id:3770
+  2: mdrv_get_core_id:3770
+   2: OsGetCoreID:3770
+    3: 290
+    9: 290
+ 6: record_idle_slice:6960
+  3: 290
+  6: 290 bsp_get_slice_value:290
+  7: 290
+  8: 290 bsp_get_slice_value_hrt:290
+ 8: record_idle_slice:7830
+  3: 290
+  6: 290 bsp_get_slice_value:290
+  7: 290
+  8: 290 bsp_get_slice_value_hrt:290
+ 9: cpuidle_prepare:6090
+  3: 290
+  4: 290
+  5: 290
+  6: 290 cpuidle_time_rec_enter:290
+ 10: record_idle_slice:7246
+  3: 290
+  6: 290 bsp_get_slice_value:290
+  7: 290
+  8: 290 bsp_get_slice_value_hrt:290
+ 11: is_dss_idle:14400
+  5: 289
+  3: _get_primary_thread_id:3468
+   2: 289
+ 12: idle2sleep:819
+  4: 63
+  5: 63 try_to_suspend:63
+ 13: record_idle_slice:1512
+  3: 63
+  6: 63 bsp_get_slice_value:63
+  7: 63
+  8: 63 bsp_get_slice_value_hrt:63
+ 17: record_idle_slice:6936
+  3: 289
+  6: 289 bsp_get_slice_value:289
+  7: 289
+  8: 289 bsp_get_slice_value_hrt:289
+ 20: record_idle_slice:7225
+  3: 289
+  6: 289 bsp_get_slice_value:289
+  7: 289
+  8: 289 bsp_get_slice_value_hrt:289
+ 22: record_idle_slice:7803
+  3: 289
+  6: 289 bsp_get_slice_value:289
+  7: 289
+  8: 289 bsp_get_slice_value_hrt:289
+ 23: cpuidle_complete:9537
+  3: 289
+  5: 289
+  6: 289 cpuidle_time_rec_exit:289
+ 24: record_idle_slice:6936
+  3: 289
+  6: 289 bsp_get_slice_value:289
+  7: 289
+  8: 289 bsp_get_slice_value_hrt:289
+ 26: record_idle_slice:5814
+  3: 290
+  6: 290 bsp_get_slice_value:290
+  7: 290
+  8: 290 bsp_get_slice_value_hrt:290
+FESS_SEQ_EventBlockCfg:88486:218
+ 1: 218
+ 9: 218
+ 15: 188
+ 16: 188
+ 19: 188
+ 20: 0
+ 21: 188
+ 31: 0
+ 32: 0
+ 39: 188
+ 40: 188
+ 49: 218
+ 19: FESS_SEQ_IsEventTimeLate:3008
+  3: 188
+  6: 188
+  2: UPHY_CORE_GetMcCount:564
+   4: 188
+ 26: UPHY_INT_LockOnly:1880
+  2: mdrv_int_lock:1880
+   4: 188
+   5: 188
+   6: 188
+ 27: FESS_SEQ_CommApplyRes:20668
+  8: 188
+  9: 2 FESS_SEQ_Recycle:2
+  12: FESS_SEQ_ApplyRes:17490
+   7: 188
+   8: 0
+   13: 188
+   17: 188
+   20: 188
+   22: 188
+   27: 188
+   28: 188
+ 28: UPHY_INT_UnlockOnly:564
+  2: mdrv_int_unlock:564
+   4: 188
+ 42: FESS_SEQ_WriteData:10324
+  5: 188
+  8: 1
+  10: 1
+  6: FESS_SEQ_DrvDirectBurstWrReg:7624
+   6: 1009
+   9: 1009
+  9: FESS_SEQ_DrvDirectBurstWrReg:16
+   6: 2
+   9: 2
+  10: FESS_SEQ_DrvDirectBurstWrReg:23
+   5: 1
+   6: 1
+   9: 1
+ 44: FESS_SEQ_WriteHeadBlock:34404
+  6: 188
+  11: 188
+  12: 188
+  13: 188
+  15: 188
+  16: 188
+  19: 188
+  20: 188
+  21: 188
+  15: FESS_SEQ_DrvHeadRamCfg:2444
+   2: 188
+   3: 188
+OsFiberActiveDispatcher:87910:260
+ 1: 260
+ 7: 260
+ 9: 260
+ 11: 260
+ 12: 260
+ 16: 260 OsFiberRdyPop:260
+ 17: 260
+ 18: 260
+ 19: 260
+ 20: 260 dump_arch_fiber_entry_hook:260
+ 23: 260
+ 25: 260
+ 26: 0
+ 31: 260
+ 32: 260
+ 33: 260
+ 35: 260 dump_arch_fiber_exit_hook:260
+ 36: 260
+ 11: OsGetRMB:780
+  3: 260
+ 22: OsFiberSwitchHookCaller:2600
+  2: 260
+  4: 260
+  5: 0
+ 23: OsFiberHandleOne:7280
+  4: 260
+  6: 260
+  12: OsIntUnLock:780
+   5: 260
+  13: OsFiberHandler:2860
+   2: 260 UPHY_SCHED_FiberFixMsgCommCB:260
+  14: OsIntLock:2340
+   4: 260
+   5: 260
+   6: 260
+ 29: OsFiberDispatcher:3930
+  7: 260
+  9: 260
+  10: 260
+  11: 14 OsFiberRdyPop:14
+  12: 14
+  13: 0
+  14: 14
+  16: 14
+  17: 14
+  19: 14
+  20: 14
+  9: OsGetRMB:780
+   3: 260
+  13: OsFiberSwitchHookCaller:70
+   2: 14
+   4: 14
+  14: OsFiberHandleOne:294
+   4: 14
+   6: 0
+   12: OsIntUnLock:42
+    5: 14
+   13: OsFiberHandler:98
+    2: 14 UPHY_SCHED_FiberFixMsgCommCB:14
+   14: OsIntLock:140
+    4: 14
+    5: 14
+    6: 14
+  20: OsGetRMB:42
+   3: 14
+ 34: OsFiberSwitchHookCaller:1300
+  2: 260
+  4: 260
+  5: 0
+UPHY_TRACE_RecAndRptIsrInfo:80914:487
+ 1: 487
+ 7: 487
+ 8: 8 UPHY_TRACE_OMCommIsrTraceReport:8
+ 11: 487
+ 14: 487
+ 15: 487
+ 16: 487
+ 17: 487
+ 18: 487
+ 19: 487
+ 20: 487
+ 3: UPHY_INT_IntLockContext:18993
+  5: 487 SRE_TaskIrqLock:487
+  6: 487
+  4: UPHY_CORE_GetThreadId:4383
+   2: mdrv_get_core_id:4383
+    2: OsGetCoreID:4383
+     3: 487
+ 4: UPHY_CORE_GetThreadId:4870
+  2: mdrv_get_core_id:4870
+   2: OsGetCoreID:4870
+    3: 487
+    9: 487 UPHY_TRACE_GetCommIsrTraceNode:487
+ 20: UPHY_CORE_GetMcCount:1948
+  4: 487
+ 22: UPHY_INT_IntUnLockContext:18993
+  4: 487
+  5: 487 SRE_TaskIrqUnlock:487
+  3: UPHY_CORE_GetThreadId:4383
+   2: mdrv_get_core_id:4383
+    2: OsGetCoreID:4383
+     3: 487
+FESS_TXAPC_CalcLteNrRbCenterFreqComp:78426:140
+ 11: 140
+ 12: 96 FESS_OM_LogPara:44
+ 19: 96
+ 21: 96
+ 27: 96
+ 28: 96
+ 36: 96
+ 40: 480
+ 41: 480
+ 42: 480
+ 49: 912
+ 50: 912
+ 52: 816
+ 57: 96
+ 58: 84
+ 61: 12
+ 65: 140
+ 52: Fess_NVBUILD_GetArryValue:5712
+  3: 360
+  4: 456
+  6: 360
+  8: 0
+ 61: FESS_TXAPC_CalcLtenrFreqCompNoCalVal:3942
+  12: 12
+  15: 204
+  16: 216
+  30: 12
+  35: 12
+  39: 12
+  42: 12 FESS_COMM_AlgCalculatesRfLinearComp:12
+  43: 12
+  44: 12
+  220: 6
+  45: Fess_NVBUILD_GetArryValue:180
+   3: 12
+   4: 6
+   6: 6
+   8: 0
+  46: Fess_NVBUILD_GetArryValue:60
+   4: 6
+   6: 6
+   8: 0
+memcpy_s:77208:1628
+ 2: 1628
+ 3: 1625 memcpy:1625
+ 7: 3 SecMemcpyError:3
+ 8: 3
+OsTskSwitchHookCaller:77088:528
+ 1: 528
+ 2: 528
+ 3: 528 dump_arch_task_switch_hook:528
+ 4: 528
+ 5: 528
+ 2: OsGetHwThreadId:12144
+  3: 528
+ 4: OsGetHwThreadId:11616
+  3: 528
+FESS_SEQ_EventCfg:74607:191
+ 1: 191
+ 10: 191
+ 15: 191
+ 18: 191
+ 19: 191
+ 27: 191
+ 31: 0
+ 32: 0
+ 36: 191
+ 37: 191
+ 40: 191
+ 41: 191
+ 46: 191
+ 47: 191
+ 48: 191
+ 52: 191
+ 18: FESS_SEQ_IsEventTimeLate:3048
+  3: 191
+  6: 191
+  2: UPHY_CORE_GetMcCount:764
+   4: 191
+ 26: UPHY_INT_LockOnly:1910
+  2: mdrv_int_lock:1910
+   4: 191
+   5: 191
+   6: 191
+ 27: FESS_SEQ_CommApplyRes:19120
+  8: 191
+  9: 4 FESS_SEQ_Recycle:4
+  12: FESS_SEQ_ApplyRes:16669
+   7: 191
+   8: 0
+   9: 0
+   13: 191
+   14: 191
+   20: 191
+   22: 191
+   27: 191
+   28: 191
+ 28: UPHY_INT_UnlockOnly:573
+  2: mdrv_int_unlock:573
+   4: 191
+ 43: FESS_SEQ_WriteData:7831
+  5: 191
+  8: 0
+  10: 0
+  6: FESS_SEQ_DrvDirectBurstWrReg:5921
+   5: 191
+   6: 382
+   9: 382
+  9: FESS_SEQ_DrvDirectBurstWrReg:0
+   6: 0
+   9: 0
+  10: FESS_SEQ_DrvDirectBurstWrReg:0
+   5: 0
+   6: 0
+   9: 0
+ 47: FESS_SEQ_DrvHeadRamCfg:1146
+  2: 191
+  3: 191
+FESS_DLL_InsertSortedInPart:68397:412
+ 2: 412
+ 8: 675
+ 10: 854 FESS_FWK_CompareMsgBufJobs:798 FESS_FWK_CompareJobs:56
+ 17: 675
+ 18: 675
+ 19: 675
+ 21: 675
+ 12: FESS_DLL_InsertBefore:2864
+  2: 179
+  3: 179
+  4: 179
+ 22: FESS_DLL_InsertPartitionNode:0
+  10: 0
+  12: 0
+  16: 0
+  18: 0
+  5: FESS_DLL_AllocPartitionNode:0
+   6: 0
+   8: 0
+   9: 0
+   11: 0
+  11: FESS_DLL_InitNode:0
+   2: 0
+   3: 0
+   4: 0
+  15: FESS_DLL_GetFirst:0
+   2: 0
+  20: FESS_DLL_InsertBefore:0
+   2: 0
+   3: 0
+   4: 0
+  25: FESS_DLL_GetNext:0
+   3: 0
+  29: FESS_DLL_InsertLast:0
+   3: 0
+   5: 0
+ 29: FESS_DLL_GetNext:6750
+  3: 675
+ 33: FESS_DLL_InsertLast:3961
+  3: 233
+  5: 233
+dump_arch_task_switch_hook:68112:528
+ 4: 528
+ 12: 528
+ 2: osl_get_core_id:11616
+  2: mdrv_get_core_id:11616
+   2: OsGetCoreID:11616
+    3: 528
+ 5: dump_arch_schdule_record_rrt:0
+  5: rrt_loop_in_128bits:0
+   4: 0
+   9: 0
+ 7: dump_arch_schdule_record_hrt:11616
+  6: dump_schedule_loop_in_128bits:11616
+   4: 528
+   4: dump_arch_st_128bit:6864
+    2: 528
+ 9: dump_arch_set_task_contex:6864
+  3: 528
+ 10: dump_arch_hook_tsk_switch:5280
+  2: 528
+  3: 0
+ 11: dump_arch_check_upload:5280
+  2: 528
+  3: 0
+  7: 0
+  11: 0
+  10: dump_arch_get_sched_data_ptr:0
+   1: 0
+FESS_RINGBUFF_Free:65708:709
+ 1: 709
+ 8: 709
+ 10: 572
+ 11: 572
+ 16: 0
+ 19: 0
+ 22: 566 FESS_OM_ProcMsgBuff:263 FESS_FWK_ProcLazyJobCb:2 FESS_RFDEV_IsMsgBuffExpired:301
+ 23: 566
+ 24: 460
+ 25: 460
+ 32: 709
+ 18: UPHY_OmSystemError:0
+  2: 0
+OsEventRecv:58689:259
+ 1: 259
+ 9: 259
+ 14: 259
+ 18: 259 OsSpinLockRunTaskRq:259
+ 19: 259
+ 27: 244
+ 33: 0
+ 39: 259
+ 43: 259
+ 45: 259 OsSpinUnLockRunTaskRq:259
+ 48: 259
+ 5: OsGetHwThreadId:2331
+  3: 259
+ 24: OsIsEventNotMatch:6171
+  3: 259
+  4: 0
+  5: 0
+  10: 259
+ 30: OsEventRecvNeedSche:15372
+  5: 244
+  9: 244 OsTskReadyDel:244
+  11: 244
+  15: 244 OsSpinUnLockRunTaskRq:244
+  17: 244 OsTskSchedule:244
+  19: 244 OsSpinLockRunTaskRq:244
+  22: 244
+  23: 0
+  5: OsGetHwThreadId:7076
+   3: 244
+  13: OsTaskAttachToTimerList:244
+   2: 244
+   6: 0
+   7: 0
+FESS_TRXBANDRES_InitBandReq:58202:473
+ 5: 473
+ 8: 473
+ 5: FESS_CANCEL_CreateGrpIdCtx:36444
+  3: 473
+  7: 473
+  12: 131
+  7: FESS_CANCEL_FindGrpId:1419
+   2: 473
+  8: FESS_CANCEL_UpdateGrpIdCtx:8238
+   3: 342
+   4: 5
+   6: 342
+   7: 0
+   9: 342
+  11: FESS_CANCEL_AllocGrpId:5371
+   2: 131
+   3: 131
+  12: FESS_CANCEL_InitGrpIdCtx:1703
+   3: 131
+   4: 131
+   5: 131
+   6: 131
+ 7: FESS_TRXBANDRES_InitBandPara:17974
+  3: 473
+  5: 473
+  6: 473
+  8: 473
+  10: 473
+mdrv_sched_lock:57489:1337
+ 1: 1337
+ 6: 1337
+ 4: OsIntLock:13368
+  4: 1337
+  5: 1337
+  6: 1337
+ 6: OsGetHwThreadId:34762
+  3: 1337
+SRE_TaskIrqLock:57489:1337
+ 1: 1337
+ 6: 1337
+ 4: OsIntLock:13368
+  4: 1337
+  5: 1337
+  6: 1337
+ 6: OsGetHwThreadId:34762
+  3: 1337
+FESS_RFDEV_SendRficMsg:54119:191
+ 1: 191
+ 22: 191
+ 25: 191
+ 27: 191
+ 30: 191
+ 31: 191
+ 32: 191
+ 35: 191
+ 38: 191
+ 39: 191 FESS_SEQ_EventCfg:191
+ 40: 191
+ 42: 0
+ 50: 191
+ 525: 191
+ 538: 191
+ 25: FESS_MBX_CfgLinkSoftBd:24514
+  10: 191
+  12: 0
+  17: 0
+  18: 0
+  23: 191
+  24: 0
+  30: 191
+  32: 191
+  37: 191
+  42: 191
+  43: 191
+  44: 191
+  52: 191
+  10: FESS_MBX_GetMbxStatus:573
+   2: 191
+  12: FESS_MBX_GetMbxBypassFlag:0
+   2: 0
+  28: UPHY_INT_LockOnly:4202
+   2: mdrv_int_lock:4202
+    4: 191
+    5: 191
+    6: 191
+  33: FESS_MBX_ClrLinkSoftBdStatusDrv:78
+   4: 6
+  39: UPHY_INT_UnlockOnly:2483
+   2: mdrv_int_unlock:2483
+    4: 191
+  49: UPHY_CORE_WbSync:1337
+   3: 191
+ 28: UPHY_CORE_GetMcCount:573
+  4: 191
+ 46: FESS_MNTN_RecordSendMsgRunLog:3056
+  6: 191
+  10: 0
+  12: 0
+  14: 0
+  19: 0
+  20: 0
+  21: 0
+  22: 0
+  23: 0
+  24: 0
+  26: 0
+  28: 0
+  29: 0
+  375: 0
+  6: FESS_MNTN_IsModuleRptEn:1146
+   2: 191
+mdrv_order_queue_get_first_task:53116:632
+ 5: 632
+ 9: 632
+ 14: 632
+ 19: 632
+ 24: 632
+ 25: 630
+ 30: 2
+ 34: 632
+ 169: 632
+ 18: OsIntLock:6320
+  4: 632
+  5: 632
+  6: 632
+ 19: OsGetHwThreadId:8216
+  3: 632
+  9: 632
+ 20: OsIntRestore:0
+  4: 0
+ 24: OsCrOrderQueIsEmpty:1896
+  2: 632
+ 26: OsIntRestore:1890
+  4: 630
+ 31: OsIntRestore:10
+  4: 2
+SRE_OrderQueGetFirstTask:53116:632
+ 5: 632
+ 9: 632
+ 14: 632
+ 19: 632
+ 24: 632
+ 25: 630
+ 30: 2
+ 34: 632
+ 169: 632
+ 18: OsIntLock:6320
+  4: 632
+  5: 632
+  6: 632
+ 19: OsGetHwThreadId:8216
+  3: 632
+  9: 632
+ 20: OsIntRestore:0
+  4: 0
+ 24: OsCrOrderQueIsEmpty:1896
+  2: 632
+ 26: OsIntRestore:1890
+  4: 630
+ 31: OsIntRestore:10
+  4: 2
+OsMainSchedule:52482:317
+ 8: 585
+ 9: 585
+ 12: 585
+ 14: 528
+ 18: 528 OsPickNextTaskRtSingle:528
+ 19: 528
+ 21: 528
+ 23: 528 OsContextSwitch:528
+ 29: 57
+ 5: OsGetHwThreadId:12870
+  3: 585
+dump_arch_int_exit_hook:51216:388
+ 4: 388
+ 12: 388
+ 16: 388
+ 2: osl_get_core_id:10864
+  2: mdrv_get_core_id:10864
+   2: OsGetCoreID:10864
+    3: 388
+ 5: dump_arch_schdule_record_rrt:0
+  5: rrt_loop_in_128bits:0
+   4: 0
+   9: 0
+ 7: dump_arch_schdule_record_hrt:8924
+  6: dump_schedule_loop_in_128bits:8924
+   4: 388
+   4: dump_arch_st_128bit:5044
+    2: 388
+ 9: dump_arch_set_int_out_contex:5044
+  2: 388
+ 10: dump_arch_hook_int_exit:3492
+  2: 388
+  3: 0
+ 11: dump_arch_check_upload:3880
+  2: 388
+  3: 0
+  7: 0
+  11: 0
+  10: dump_arch_get_sched_data_ptr:0
+   1: 0
+dump_arch_int_entry_hook:51084:387
+ 4: 387
+ 12: 387
+ 30: 387
+ 2: osl_get_core_id:11223
+  2: mdrv_get_core_id:11223
+   2: OsGetCoreID:11223
+    3: 387
+ 5: dump_arch_schdule_record_rrt:0
+  5: rrt_loop_in_128bits:0
+   4: 0
+   9: 0
+ 7: dump_arch_schdule_record_hrt:8514
+  6: dump_schedule_loop_in_128bits:8514
+   4: 387
+   4: dump_arch_st_128bit:5031
+    2: 387
+ 9: dump_arch_set_int_in_contex:5031
+  2: 387
+ 10: dump_arch_hook_int_entry:3870
+  2: 387
+  3: 0
+ 11: dump_arch_check_upload:3483
+  2: 387
+  3: 0
+  7: 0
+  11: 0
+  10: dump_arch_get_sched_data_ptr:0
+   1: 0
+OsPickNextTaskRtSingle:48048:528
+ 7: 528
+ 8: 528
+ 9: 528
+ 12: 528 OsNextReadyRtTaskSingle:528
+ 13: 528
+ 14: 528
+ 5: OsSplLock:13728
+  4: 528
+  5: 528
+ 16: OsSplUnlock:6336
+  3: 528
+  5: 528
+FESS_RFM_CommonMsgEntry:47940:141
+ 3: 141
+ 4: 3948
+ 5: 3948
+ 6: 0
+ 12: 141
+UPHY_SCHED_FiberFixMsgCommCB:46580:274
+ 1: 274
+ 3: 0
+ 10: 274
+ 13: 274
+ 16: 0
+ 25: 274
+ 31: 274 UPHY_OS_FiberGetFixMsg:274
+ 33: 274
+ 35: 274
+ 37: 274
+ 40: 274 FESS_MID_SchedTaskProc:274
+ 46: 274
+ 47: 274
+ 49: 274 UPHY_TRACE_GetTraceRecSwitch:274
+ 50: 274 UPHY_TRACE_RecAndRptIsrInfo:274
+ 57: 274
+ 2: UPHY_SCHED_IntLockContext:548
+  3: 274 UPHY_TRACE_GetCommSchedLockSwitch:274
+  4: UPHY_INT_IntLockContext:0
+   5: 0
+   6: 0
+   4: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+ 10: UPHY_CORE_GetMcCount:822
+  4: 274
+ 12: UPHY_OS_GetCRCfgTab:2466
+  2: 274
+ 13: UPHY_SCHED_IfCrMsgSleep:822
+  2: 274
+ 18: UPHY_SCHED_RunLpcCallback:0
+  3: 0
+ 21: UPHY_SCHED_IntUnLockContext:0
+  2: 0
+  3: UPHY_INT_IntUnLockContext:0
+   3: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+ 27: UPHY_SCHED_IntUnLockContext:0
+  2: 0
+  3: UPHY_INT_IntUnLockContext:0
+   3: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+ 35: UPHY_CORE_InstStore:11782
+  3: 274
+  10: 274
+  7: UPHY_CORE_GetCtxType:4384
+   2: 274
+  8: UPHY_CORE_GetContextID:1096
+   2: 274
+  11: UPHY_CORE_InstSwitch:0
+   2: 0
+ 37: UPHY_CORE_GetMcCount:822
+  4: 274
+ 42: UPHY_CORE_GetMcCount:822
+  4: 274
+ 44: UPHY_CORE_InstRestore:274
+  2: 274
+  3: UPHY_CORE_InstSwitch:0
+   2: 0
+ 55: UPHY_SCHED_IntUnLockContext:548
+  2: 274 UPHY_TRACE_GetCommSchedLockSwitch:274
+  3: UPHY_INT_IntUnLockContext:0
+   3: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+OsHwiHookDispatcher:44936:387
+ 9: 387 dump_arch_int_entry_hook:387
+ 13: 388 dump_arch_int_exit_hook:388
+ 14: 388
+ 11: OsHwiHandleActive:10062
+  16: 387 systimer_hander_isr:4 UPHY_INT_CommIsr:182 OsSmpSchIsr:49 OsCrIpcHandle:152
+  21: 387
+  13: OsHwiHandleFormGet:8514
+   3: 387
+   4: 0
+   6: OsGetHwThreadId:0
+    3: 0
+FESS_OM_AllocMsg:44447:263
+ 2: 263
+ 8: 263 UPHY_INST_GetThreadID:263
+ 10: 263
+ 11: 0
+ 17: 263
+ 21: 263
+ 24: 263 FESS_RINGBUFF_Alloc:263
+ 25: 263
+ 26: 0
+ 27: 0
+ 29: 0
+ 30: 0
+ 32: 0
+ 38: 263
+ 41: 263
+ 43: 263
+ 47: 263
+ 9: UPHY_CORE_GetThreadId:3419
+  2: mdrv_get_core_id:3419
+   2: OsGetCoreID:3419
+    3: 263
+    9: 263
+ 16: FESS_OM_GetLogSwitch:6838
+  4: 263
+ 23: UPHY_INT_LockOnly:2630
+  2: mdrv_int_lock:2630
+   4: 263
+   5: 263
+   6: 263
+ 28: UPHY_INT_UnlockOnly:0
+  2: mdrv_int_unlock:0
+   4: 0
+ 39: UPHY_INT_UnlockOnly:789
+  2: mdrv_int_unlock:789
+   4: 263
+FESS_RINGBUFF_Alloc:44304:456
+ 8: 456
+ 13: 456
+ 17: 456
+ 18: 456
+ 20: 456
+ 22: 456
+ 25: 456
+ 27: 456
+ 28: 6
+ 29: 6
+ 31: 6
+ 32: 6
+ 33: 6
+ 35: 6
+ 41: 456
+ 42: 456
+ 45: 456
+FESS_MRM_AllocRugLog:43890:133
+ 1: 133
+ 2: 133
+ 3: 0
+ 8: 133 FESS_OM_AllocMsg:133
+ 14: 133
+ 2: FESS_MNTN_IsRunLogRptEn:1330
+  2: 133
+ 11: FESS_MRM_RptCommInfoRunLog:37506
+  6: 133
+  12: 133
+  13: 133
+  14: 133
+  15: 133
+  16: 133
+  17: 133
+  18: 133
+  19: 133
+  20: 133
+  21: 133
+  22: 133
+  25: 133
+  29: 133
+  42: 133
+  6: FESS_MNTN_IsModuleRptEn:1197
+   2: 133
+  13: UPHY_CORE_GetMcCount:399
+   4: 133
+  42: FESS_MRM_RecordCommTrace:13300
+   2: 133
+   4: 133
+   5: 133
+   6: 133
+   7: 133
+   8: 133
+   9: 133
+   10: 133
+   11: 133
+   12: 133
+pack_phymsglog:43726:277
+ 1: 277
+ 4: 277
+ 6: 277 SRE_TaskIrqLock:277
+ 8: 277
+ 9: 277
+ 10: 277
+ 11: 277
+ 13: 277 encoder_get_phylog_srchid:277
+ 15: 277
+ 16: 277
+ 18: 277
+ 19: 277
+ 21: 277 pack_diagmsg:277
+ 22: 277 SRE_TaskIrqUnlock:277
+ 24: 277
+OsContextSwitch:39600:528
+ 2: 528 OsTskSwitchHookCaller:528
+ 8: 528
+ 4: OsUpdateCreActiveFlag:32208
+  4: 528
+  2: OsGetHwThreadId:4752
+   3: 528
+ 6: OsSchedSwitchTgrpSpace:3168
+  3: 528
+  4: 0
+  3: OsGetCurCntxId:0
+   4: 0
+   6: 0
+OsFiberQueSend:39046:305
+ 10: 305
+ 14: 305
+ 19: 273
+ 20: 273
+ 21: 0
+ 25: 273
+ 26: 273
+ 27: 0
+ 31: 273 OsFiberQueInnerSend:273
+ 33: 273
+ 8: OsGetHwThreadId:3050
+  3: 305
+ 15: OsFiberQueOutterSend:1056
+  2: OsFiberIpcCallSend:1056
+   3: 32 OsCrIpcCallSend:32
+OsCrIpcHandle:37189:152
+ 1: 152
+ 11: 152
+ 12: 152
+ 17: 156
+ 21: 153
+ 23: 153
+ 24: 153
+ 25: 153
+ 26: 153
+ 31: 153
+ 32: 152
+ 36: 156
+ 37: 153 OsCrOrderQueSend:12 OsFiberQueSend:141
+ 39: 156
+ 42: 152
+ 9: SRE_IntLock:1976
+  2: OsIntLock:1976
+   4: 152
+   5: 152
+   6: 152
+ 10: OsGetHwThreadId:2888
+  3: 152
+ 16: OsSplLock:3436
+  4: 156
+  5: 157
+ 17: ListEmpty:468
+  2: 156
+ 19: ListDelete:5355
+  3: ListDelAndInit:5355
+   2: 153
+   3: 153
+   2: ListLowLevelDelete:1377
+    2: 153
+    3: 153
+ 27: ListTailAdd:1377
+  2: 153
+  2: ListLowLevelAdd:459
+   6: 153
+ 30: ListEmpty:459
+  2: 153
+ 35: OsSplUnlock:2028
+  3: 156
+  5: 156
+ 41: SRE_IntRestore:1064
+  2: OsIntRestore:1064
+   4: 152
+OsTskSchedule:36920:828
+ 4: 828
+ 9: 268
+ 12: 268
+ 14: 560
+ 2: OsGetHwThreadId:23184
+  3: 828
+mdrv_spin_lock_irqsave:36450:450
+ 1: 450
+ 8: 450
+ 11: 450
+ 7: OsIntLock:4050
+  4: 450
+  5: 450
+  6: 450
+ 8: OsGetHwThreadId:13050
+  3: 450
+ 9: OsSplLock:8550
+  4: 450
+  5: 450
+SRE_SplIrqLock:36450:450
+ 1: 450
+ 8: 450
+ 11: 450
+ 7: OsIntLock:4050
+  4: 450
+  5: 450
+  6: 450
+ 8: OsGetHwThreadId:13050
+  3: 450
+ 9: OsSplLock:8550
+  4: 450
+  5: 450
+UPHY_OS_MemFreeAux:34948:276
+ 1: 276
+ 5: 276
+ 6: 276
+ 11: 276
+ 13: 276
+ 14: 276
+ 17: 276 UPHY_OS_SpinLock:276
+ 20: 276
+ 22: 276
+ 23: 276
+ 24: 276
+ 25: 276
+ 27: 276 UPHY_OS_SpinUnLock:276
+ 31: 276 UPHY_CORE_Get32kTimeCount:276
+ 32: 276
+ 33: 276
+ 34: 14 UPHY_OM_PrintfTraceHash:14
+ 38: 276
+ 10: UPHY_OS_HostMemGetPoolInfo:5520
+  8: 276
+bsp_odt_hp_get_write_buff:33945:365
+ 4: 365
+ 5: 365
+ 7: 0
+ 10: 365
+ 12: 1
+ 18: 364
+ 19: 364
+ 20: 365
+ 2: odt_hp_find_chan_info:11680
+  2: 365
+OsTskUnlock:33273:450
+ 7: 450
+ 10: 401
+ 17: 0
+ 21: 401
+ 288: 401
+ 3: OsGetHwThreadId:9900
+  3: 450
+ 10: OsTskUnlockIsNeedResched:5752
+  2: 450
+ 11: OsHwiTriggerByMask:2205
+  2: 49
+  4: 49
+  7: 49
+FESS_FWK_CompareMsgBufJobs:32798:918
+ 2: 918
+dump_arch_fiber_exit_hook:32760:260
+ 4: 260
+ 12: 260
+ 2: osl_get_core_id:5980
+  2: mdrv_get_core_id:5980
+   2: OsGetCoreID:5980
+    3: 260
+ 5: dump_arch_schdule_record_rrt:0
+  5: rrt_loop_in_128bits:0
+   4: 0
+   9: 0
+ 7: dump_arch_schdule_record_hrt:5720
+  6: dump_schedule_loop_in_128bits:5720
+   4: 260
+   4: dump_arch_st_128bit:3380
+    2: 260
+ 10: dump_arch_set_fiber_out_contex:3380
+  2: 260
+ 11: dump_arch_check_upload:2600
+  2: 260
+  3: 0
+  7: 0
+  11: 0
+  10: dump_arch_get_sched_data_ptr:0
+   1: 0
+UPHY_OM_MsgReport:31742:269
+ 1: 269
+ 4: 269
+ 9: 269 UPHY_OM_L1MsgAsmRpt:269
+ 12: 269
+ 8: UPHY_OM_FlowStat:17485
+  2: 269
+  3: 269
+  7: 269
+  15: 0
+  18: 0
+  2: UPHY_OM_ModeTypeTrans:1883
+   2: 269
+  4: UPHY_CORE_GetThreadId:2690
+   2: mdrv_get_core_id:2690
+    2: OsGetCoreID:2690
+     3: 269
+  7: UPHY_OM_GetRptMsgSwitch:2421
+   3: 269
+  11: UPHY_OM_MsgIdValidCheck:0
+   2: 0
+   3: 0
+   7: 0
+   11: 0
+   13: 0
+   15: 0
+OsEventSendNoIrq:30248:272
+ 7: 272
+ 9: 272
+ 10: 272 OsSpinLockTaskRq:272
+ 12: 272
+ 14: 272
+ 15: 0
+ 21: 272
+ 25: 244
+ 28: 244
+ 29: 0
+ 33: 244
+ 38: 0
+ 41: 244
+ 43: 244
+ 435: 272 OsSpinUnlockTaskRq:272
+ 39: OsTaskDetachFromTimerList:2684
+  2: 244
+  6: 0
+  7: 0
+  6: ListDelete:0
+   3: ListDelAndInit:0
+    2: 0
+    3: 0
+    2: ListLowLevelDelete:0
+     2: 0
+     3: 0
+  6: OsSplLock:0
+   4: 0
+   5: 0
+  6: OsSplUnlock:0
+   3: 0
+   5: 0
+ 44: OsTskReadyAddBGD:244
+  2: 244 OsTskReadyAdd:244
+OsSpinLockRunTaskRq:29512:527
+ 5: 527
+ 3: OsGetHwThreadId:16864
+  3: 527
+ 4: OsSplLock:12121
+  4: 527
+  5: 527
+dump_arch_fiber_entry_hook:29380:260
+ 4: 260
+ 11: 260
+ 2: osl_get_core_id:5980
+  2: mdrv_get_core_id:5980
+   2: OsGetCoreID:5980
+    3: 260
+ 5: dump_arch_schdule_record_rrt:0
+  5: rrt_loop_in_128bits:0
+   4: 0
+   9: 0
+ 7: dump_arch_schdule_record_hrt:5980
+  6: dump_schedule_loop_in_128bits:5980
+   4: 260
+   4: dump_arch_st_128bit:3380
+    2: 260
+ 9: dump_arch_set_fiber_in_contex:3380
+  2: 260
+ 10: dump_arch_check_upload:2340
+  2: 260
+  3: 0
+  7: 0
+  11: 0
+  10: dump_arch_get_sched_data_ptr:0
+   1: 0
+mdrv_task_private_data_get:29038:376
+ 1: 376
+ 10: 376
+ 6: SRE_IntLock:3760
+  2: OsIntLock:3760
+   4: 376
+   5: 376
+   6: 376
+ 7: OsFusionTskPrivDataGet:10990
+  5: 376
+  6: 376
+  11: 309
+  13: 309
+  14: 309
+ 7: OsGetHwThreadId:10528
+  3: 376
+ 8: SRE_IntRestore:1128
+  2: OsIntRestore:1128
+   4: 376
+SRE_FusionTskPrivDataGet:29038:376
+ 1: 376
+ 10: 376
+ 6: SRE_IntLock:3760
+  2: OsIntLock:3760
+   4: 376
+   5: 376
+   6: 376
+ 7: OsFusionTskPrivDataGet:10990
+  5: 376
+  6: 376
+  11: 309
+  13: 309
+  14: 309
+ 7: OsGetHwThreadId:10528
+  3: 376
+ 8: SRE_IntRestore:1128
+  2: OsIntRestore:1128
+   4: 376
+OsDequeueTaskRtSingle:28380:268
+ 9: 268
+ 10: 268 OsFindHighestPri:268
+ 12: 268
+ 16: 268
+ 6: OsDequeueReadyListOnly:21948
+  2: 268
+  8: 268
+  9: 260
+  6: ListDelete:9648
+   3: ListDelAndInit:9648
+    2: 268
+    3: 268
+    2: ListLowLevelDelete:1608
+     2: 268
+     3: 268
+  8: ListEmpty:804
+   2: 268
+FESS_MRM_ProcTrxcSingleMsg:27808:176
+ 1: 176
+ 4: 176
+ 8: 176
+ 12: 176
+ 13: 0
+ 14: 0
+ 19: 176
+ 23: 0
+ 31: 176 FESS_MRM_CreateJobToList:176
+ 40: 0
+ 8: FESS_MNTN_RptPhyMsgOpLog:2288
+  2: 176
+  7: 0
+  107: 176
+ 11: FESS_MRM_CheckInTrxcMsg:1232
+  2: 176 FESS_MRM_CheckInTxApc:33 FESS_MRM_CheckInTxStandby:35 FESS_MRM_CheckInRxAgc:32 FESS_MRM_CheckinSrs:10 FESS_MRM_CheckInRxResume:15 FESS_MRM_CheckInTxResume:36 FESS_MRM_CheckInRxStandby:15
+ 21: FESS_MRM_CcContextAlloc:7920
+  4: 176 FESS_NODEMEM_Alloc:176
+  8: 176
+  9: 176
+  10: 176
+  11: 176
+  12: 176
+  13: 176
+  14: 176
+  15: 176
+  8: UPHY_CORE_GetMcCount:528
+   4: 176
+ 28: FESS_MRM_ProcTrxcPrivateMsg:2464
+  2: 176 FESS_MRM_RxResume:15 FESS_MRM_ProcSrs:10 FESS_MRM_TxApcSet:33 FESS_MRM_TxResume:36 FESS_MRM_RxStandby:15 FESS_MRM_RxAgcSet:32 FESS_MRM_TxStandby:34
+ 37: FESS_MRM_ProcTrxcPrivateMsg:0
+  2: 0
+OsEventSend:27660:272
+ 1: 272
+ 5: 272
+ 9: 272
+ 13: 272 OsEventSendNoIrq:272
+ 18: 272
+ 23: 272
+ 290: 272
+ 19: OsTskScheduleFast:244
+  2: 244 OsTskSchedule:244
+FESS_BBDEV_CfgCrossUd:27640:100
+ 1: 100
+ 2: 100
+ 9: 100
+ 13: 100
+ 14: 100
+ 21: 100 FESS_SEQ_EventBlockCfg:100
+ 24: 100
+ 15: FESS_BBDEV_BeginEvent:2000
+  5: 100
+  6: 100
+ 17: FESS_TRXBBDRV_CfgCrossUd:16200
+  7: 100 memcpy:100
+  15: 100 memcpy:100
+  25: 100
+  26: 30
+  40: 70
+  42: 420
+  43: 420
+  47: 70
+  50: 70
+ 19: FESS_BBDEV_EndEvent:670
+  2: 70
+  4: 30
+FESS_RFDEV_AllocTimeBasedMbxBuff:27504:191
+ 1: 191
+ 9: 191 FESS_RINGBUFF_Free:191
+ 11: 191
+ 12: 191 FESS_RINGBUFF_Alloc:191
+ 14: 0
+ 15: 0
+ 21: 191
+ 24: 191
+ 28: 191
+ 32: 191
+ 5: UPHY_INT_IntLockContext:7449
+  5: 191 SRE_TaskIrqLock:191
+  6: 191
+  4: UPHY_CORE_GetThreadId:1719
+   2: mdrv_get_core_id:1719
+    2: OsGetCoreID:1719
+     3: 191
+ 6: UPHY_CORE_GetMcCount:573
+  4: 191
+ 17: UPHY_INT_IntUnLockContext:0
+  4: 0
+  5: 0
+  3: UPHY_CORE_GetThreadId:0
+   2: mdrv_get_core_id:0
+    2: OsGetCoreID:0
+     3: 0
+ 29: UPHY_INT_IntUnLockContext:6303
+  4: 191
+  5: 191 SRE_TaskIrqUnlock:191
+  3: UPHY_CORE_GetThreadId:1719
+   2: mdrv_get_core_id:1719
+    2: OsGetCoreID:1719
+     3: 191
+OsFiberRdyPop:27400:274
+ 2: 274
+ 9: 274
+ 10: 274
+ 11: 274
+ 12: 274
+ 13: 274
+ 14: 274
+ 15: 274
+ 16: 274
+ 18: 274
+ 19: 274
+ 21: 274
+ 22: 274
+ 25: 274
+FESS_FWK_ProcMsg:26852:274
+ 5: 274 FESS_MID_MsgEntry:274
+ 4: FESS_FWK_LogTrace:14796
+  3: 274
+  4: 274
+  5: 274
+  8: 274
+  6: UPHY_CORE_GetMcCount:822
+   4: 274
+ 6: FESS_FWK_LogTrace:11782
+  3: 274
+  4: 274
+  5: 274
+  8: 274
+  6: UPHY_CORE_GetMcCount:1096
+   4: 274
+UPHY_OS_HostGetMemNode:26240:164
+ 1: 164
+ 3: 164
+ 5: 164
+ 7: 164 UPHY_OS_SpinLock:164
+ 9: 164
+ 10: 164
+ 14: 164
+ 15: 164
+ 16: 164
+ 17: 164
+ 18: 164
+ 19: 164
+ 20: 164
+ 21: 164
+ 22: 164 UPHY_OS_SpinUnLock:164
+ 23: 164
+ 29: 164
+ 4: UPHY_OS_HostMemGetPoolInfo:3116
+  8: 164
+OsHwiDispatchTail:26057:0
+ 1: 388
+ 4: 388
+ 5: 0
+ 9: 0
+ 13: 0
+ 15: 0
+ 16: 0
+ 17: 0
+ 21: 388 OsFiberDispatcherHwiTail:388
+ 27: 317
+ 29: 317
+ 31: 317
+ 34: 317 OsMainSchedule:317
+ 35: 71
+ 2: OsGetHwThreadId:12416
+  3: 388
+ 11: OsIntEnable:0
+  2: SRE_IntUnLock:0
+   2: OsIntUnLock:0
+    5: 0
+ 14: OsIntDisable:0
+  2: SRE_IntLock:0
+   2: OsIntLock:0
+    4: 0
+    5: 0
+    6: 0
+OsEnqueueTaskRtSingle:25908:268
+ 4: 268
+ 6: 268
+ 8: 260
+ 10: 0
+ 16: 260
+ 4: OsEnqueueReadyListOnly:13668
+  6: 268
+  12: 268
+  18: 268
+  7: ListAdd:0
+   2: 0
+   2: ListLowLevelAdd:0
+    3: 0
+    5: 0
+  9: ListTailAdd:4288
+   2: 268
+   2: ListLowLevelAdd:2680
+    3: 268
+    5: 268
+FESS_BBDEV_RptTxRegisterInfo:24285:37
+ 1: 37
+ 6: 37
+ 11: 37 FESS_MRM_GetRptStreamNum:37
+ 13: 37
+ 16: 37 FESS_OM_AllocMsg:37
+ 18: 37
+ 22: 37
+ 23: 37
+ 24: 37
+ 28: 37
+ 39: 37
+ 6: FESS_MNTN_IsRunLogRptEn:370
+  2: 37
+ 10: FESS_TXRTS_GetRptStreamNum:111
+  2: 37
+ 11: FESS_TXRTS_GetBbChanNum:111
+  2: 37
+ 17: FESS_RTS_GetModemId:259
+  2: 37
+ 22: UPHY_CORE_GetMcCount:111
+  4: 37
+ 25: FESS_RTS_GetStartId:259
+  2: 37
+ 26: FESS_RTS_GetModemId:222
+  2: 37
+ 27: FESS_RTS_GetRatMode:259
+  2: 37
+ 34: FESS_BBDRV_RdTxDfeMntn:12543
+  10: 148
+  11: 148
+  12: 148
+  15: 37
+  17: 74
+  18: 74
+  21: 74
+  22: 74
+  26: 74
+  27: 74
+  31: 74
+  21: UPHY_ReadRegV:740
+   3: 74
+   5: 74
+  22: UPHY_ReadRegV:740
+   3: 74
+   5: 74
+  25: UPHY_ReadRegV:1184
+   3: 74
+   5: 74
+  30: UPHY_ReadRegV:740
+   3: 74
+   5: 74
+ 36: FESS_BBDEV_ProcSopEopNoUpdate:7006
+  4: 37
+  8: 37
+  12: 74
+  17: 74
+  18: 42
+  19: 38
+  20: 38
+  23: 74
+  25: 74
+  26: 74
+  27: 74
+  28: 74
+  31: 0
+  32: 0
+UPHY_OS_CheckOrderQueueFirstTask:24016:632
+ 1: 632
+ 4: 632 SRE_OrderQueGetFirstTask:632
+ 5: 632
+ 2: UPHY_OS_GetCRCfgTab:14536
+  2: 632
+OsFiberQueInnerSend:23205:273
+ 2: 273
+ 4: 273
+ 5: 273 OsFiberActivate:273
+ 7: 0
+ 3: OsOrderQueSendEnque:14196
+  3: 273
+  5: 0
+  8: 273
+  9: 0
+  13: 273 OsFiberQueEnqueTail:273
+  14: 273
+  3: OsGetHwThreadId:3276
+   3: 273
+   9: 273
+  8: OsFiberQueIsFull:1638
+   2: 273
+UPHY_OM_L1MsgAsmRpt:22483:277
+ 4: 277
+ 9: 277
+ 13: 277
+ 14: 277
+ 16: 277
+ 17: 277
+ 19: 277 mdrv_diag_phy_msg_report:277
+ 8: UPHY_OS_PrivDataGetInstId:4201
+  7: 277 SRE_FusionIsIntCntx:277
+  11: 273 SRE_FusionTskPrivDataGet:273
+  13: 273
+  5: UPHY_CORE_GetThreadId:2493
+   2: mdrv_get_core_id:2493
+    2: OsGetCoreID:2493
+     3: 277
+  8: UPHY_INT_GetIntInstId:4
+   2: 4
+ 13: UHPY_OM_GetSsidId:1939
+  2: 277
+UPHY_INT_CommIsr:22091:182
+ 1: 182
+ 2: 182 UPHY_INT_GetIntTab:182
+ 6: 182
+ 7: 182
+ 9: 182 UPHY_OS_IntInstStore:182
+ 11: 182
+ 13: 182 UPHY_EICC_CommIsr:14 FESS_MBX_Rfic0MidPriRxDevEomIsr:32 UL1M_RCM_32kIntProcess:4 FESS_INT_ProcMcTimerIsr:132
+ 16: 183 UPHY_OS_IntInstRestore:183
+ 19: 183
+ 6: UPHY_CORE_GetMcCount:728
+  4: 182
+ 11: UPHY_CORE_GetMcCount:546
+  4: 182
+ 14: UPHY_CORE_GetMcCount:549
+  4: 183
+ 18: UPHY_INT_RunTrace:9699
+  2: 183
+  6: 183 UPHY_TRACE_GetTraceRecSwitch:183
+  9: 183
+  10: 183
+  11: 183
+  13: 183 UPHY_TRACE_RecAndRptIsrInfo:183
+FESS_MRM_ScheduleTxTask:21922:113
+ 1: 113
+ 4: 113
+ 7: 113
+ 11: 113
+ 12: 0
+ 16: 113 FESS_UldsdsSigService_Handle:113
+ 17: 113
+ 32: 113
+ 36: 113
+ 11: FESS_MRM_CheckTxNvLoadStatus:678
+  6: 113
+  7: 0
+  8: 0
+  9: 0
+  10: 0
+  11: 0
+  12: 0
+  14: 0
+  430: 0
+  9: FESS_NVLOAD_GetNvUseIdx:0
+   2: 0
+   7: 0
+   10: 0
+ 21: FESS_MRM_GetMrmJobCtx:2599
+  2: 113 FESS_MRM_MatchTxBandDesc:113
+ 26: FESS_MRM_CheckOutMrmJob:1582
+  2: 113 FESS_MRM_CheckOutTxApc:33 FESS_MRM_CheckOutTxStandby:35 FESS_MRM_CheckOutDummy:10 FESS_MRM_CheckOutTxResume:35
+ 28: FESS_MRM_ProcTxTaskFail:0
+  4: 0
+  5: 0
+  6: 0
+  6: FESS_BITMAPBUFF_CalcBuffHeader:0
+   2: 0
+ 32: FESS_UldsdsSigService_Update:7006
+  12: 113
+  16: 113
+  17: 0
+  21: 113
+  22: 113
+  23: 113
+  25: 0
+  29: 113 FESS_UldsdsSigService_UpdateResume:35 FESS_UldsdsSigService_UpdateApc:33 FESS_UldsdsSigService_UpdateStandby:35 FESS_UldsdsSigService_UpdateSrs:10
+  17: FESS_UldsdsSigService_UpdateAfcPpm:0
+   3: 0
+   8: 0
+   11: 0
+   12: 0
+   15: 0
+   12: FESS_TxBand_GetRatMode:0
+    2: FESS_TxStart_GetRatMode:0
+     2: 0
+  23: FESS_TxBandRepo_FindBand:1243
+   2: 113
+   6: 113
+ 34: FESS_MRM_ExecuteTrxcTask:2712
+  3: 113
+  5: 113 FESS_SRS_TaskSchedule:10 FESS_TXRESUME_Schedule:35 FESS_TXAPC_Schedule:33 FESS_TXSTANDBY_Schedule:35
+  6: 113
+FESS_MRM_TaskExecute:21887:413
+ 2: 413
+ 3: 413
+ 6: 413 FESS_RXRESUME_ExecuteBbdev:15 FESS_MRM_ProcRxAgcSolution:33 FESS_TXRESUME_ExecuteBbdev:35 FESS_RXRESUME_ExecutePll:15 FESS_TXAPC_ProcBbdev:33 FESS_MRM_ProcRxResumeSolution:15 FESS_TXRESUME_ExecutePll:35 FESS_MRM_ProcTxResumeSolution:35 FESS_MRM_ProcTxApcSolution:33 FESS_RXAGC_ExecuteRfdev:33 FESS_RXRESUME_ExecuteRfdev:15 FESS_TXRESUME_ExecuteRfdev:35 FESS_RXRESUME_ExecutePreProc:15 FESS_RXAGC_ExecuteBbdev:33 FESS_TXAPC_ProcRfdev:33
+ 7: 413
+ 9: 413
+ 14: 413
+pack_phyhashlog:20407:88
+ 1: 88
+ 4: 88
+ 5: 88
+ 7: 88
+ 8: 88
+ 11: 88
+ 14: 88 SRE_TaskIrqLock:88
+ 16: 88
+ 17: 88
+ 18: 88
+ 19: 88
+ 21: 88 encoder_get_phylog_srchid:88
+ 23: 88
+ 25: 88
+ 26: 88
+ 27: 88
+ 28: 88
+ 30: 88 pack_diagmsg:88
+ 31: 88 SRE_TaskIrqUnlock:88
+ 33: 88
+FESS_DLL_InsertSorted:20320:412
+ 1: 412
+ 11: 412
+ 12: 412
+ 13: FESS_DLL_InsertSortedNormal:9408
+  0: 392
+  7: 392 FESS_DLL_FindInsertPartNormal:392
+  10: 392 FESS_DLL_InsertSortedInPart:392
+  13: 392
+ 15: FESS_DLL_InsertSortedDynaPart:240
+  7: 20 FESS_DLL_FindInsertPartDyna:20
+  10: 20 FESS_DLL_InsertSortedInPart:20
+FESS_TXRESUME_Schedule:20160:140
+ 1: 140
+ 2: 140
+ 3: 140
+ 5: 140 FESS_TRXBANDRES_InitBandReq:140
+ 7: 140
+ 9: 140
+ 13: 140
+ 15: 140 FESS_MRM_TaskExecute:140
+ 7: FESS_BITMAPBUFF_CalcBuffHeader:2240
+  2: 140
+ 13: FESS_MRM_ProcFeatureSolution:4060
+  4: 140
+  5: 140
+ 13: FESS_RTS_GetBand:560
+  2: 140
+mdrv_is_int_context:19968:384
+ 1: 384
+ 3: 384
+ 6: 384
+ 2: OsIntLock:3456
+  4: 384
+  5: 384
+  6: 384
+ 3: OsGetHwThreadId:8832
+  3: 384
+ 4: OsIntRestore:1152
+  4: 384
+SRE_FusionIsIntCntx:19968:384
+ 1: 384
+ 3: 384
+ 6: 384
+ 2: OsIntLock:3456
+  4: 384
+  5: 384
+  6: 384
+ 3: OsGetHwThreadId:8832
+  3: 384
+ 4: OsIntRestore:1152
+  4: 384
+FESS_TxAntMap_GetActualMap:19110:195
+ 6: 390
+ 7: 390
+ 8: 390
+ 15: 195
+FESS_RFDEV_ProcRxAgc:18909:33
+ 2: 33
+ 7: 33
+ 11: 33 FESS_RFDEV_AllocTimeBasedMbxBuff:33
+ 12: 33
+ 20: 33
+ 21: 33
+ 22: 33
+ 23: 33
+ 24: 33
+ 25: 33
+ 26: 33
+ 28: 33 FESS_RFDEV_ProcRxPathInfo:33
+ 37: 33
+ 40: 33
+ 43: 33
+ 44: 33
+ 46: 33
+ 47: 33
+ 48: 33
+ 49: 33
+ 51: 33 FESS_RFDEV_SendRficMsg:33
+ 53: 33
+ 17: FESS_RTS_GetRficId:198
+  2: 33
+ 27: FESS_RFDEV_UpdateRxPathAgcInfo:7689
+  5: 33
+  6: 33
+  7: 132
+ 31: FESS_RFDEV_GetNewRxAgcCtx:528
+  8: 33
+  11: 33
+  12: 33
+ 31: FESS_RXRTS_GetAgcCtxIdx:759
+  2: 33
+ 34: FESS_RFDEV_SaveRxAgcCtx:2541
+  9: 33
+  10: 33
+  11: 33
+  14: 33
+  15: 33
+  19: 33
+  22: 33
+  23: 33
+  25: 0
+  28: 0
+  7: FESS_RXRTS_GetAgcCtxIdx:627
+   2: 33
+  22: FESS_RTS_GetRatMode:99
+   2: 33
+ 37: FESS_RXRTS_GetAgcCtxIdx:396
+  2: 33
+ 46: FESS_RFDEV_ProcMbxPathInRfic:429
+  21: 33
+ 50: FESS_RTS_GetThreadId:198
+  2: 33
+OsFiberActivate:18277:273
+ 3: 273
+ 7: 273
+ 10: 273
+ 17: 259
+ 18: 259
+ 22: 0
+ 25: 0
+ 28: 273
+FESS_RTS_MatchBandDesc:18243:176
+ 7: 176
+ 8: 176
+ 15: 176
+ 16: 176
+ 22: 176
+ 4: FESS_BITMAPBUFF_GetBuffBitMap:704
+  2: 176
+ 12: FESS_BITMAPBUFF_IsBuffIdle:678
+  2: 113
+  3: 113
+ 13: FESS_BITMAPBUFF_IsBuffBusy:1008
+  2: 63
+  3: 63
+  4: 63
+ 16: FESS_RTS_GetStartId:528
+  2: 176
+ 17: FESS_RTS_MatchBasicInfo:7744
+  3: 176
+  4: 176
+  5: 176
+  6: 176
+  3: FESS_RTS_GetModemId:528
+   2: 176
+  4: FESS_RTS_GetRatMode:528
+   2: 176
+  5: FESS_RTS_GetBand:704
+   2: 176
+  6: FESS_RTS_GetCenterFreqKhz:528
+   2: 176
+FESS_MID_MsgEntry:17739:274
+ 1: 274
+ 8: 274
+ 9: 133 UPHY_OS_MsgFree:133
+ 15: 141
+ 16: 0
+ 34: 141 FESS_RFLOAD_RunModeIsSig:141
+ 45: 141
+ 14: FESS_RFM_MidMsgEntry:1551
+  2: 141 FESS_RFM_CommonMsgEntry:141
+ 29: FESS_LATENCY_JudgeLock:2820
+  2: 141
+  2: FESS_OM_GetLoadMonitorSwitch:1833
+   2: 141
+  3: UPHY_INT_IntLockContext:0
+   5: 0
+   6: 0
+   4: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+ 32: FESS_FWK_AddOsMemVote:846
+  5: 141
+ 35: FESS_MRM_MsgEntry:1410
+  5: 141
+ 37: FESS_MRM_CalMsgEntry:0
+  5: 0
+ 39: FESS_FWK_DelOsMemVote:2679
+  7: 141
+  8: 141
+  9: 0
+ 41: FESS_LATENCY_JudgeUnlock:423
+  2: 141
+  3: UPHY_INT_IntUnLockContext:0
+   4: 0
+   5: 0
+   3: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+FESS_MRM_ProcMultiActionsMsg:17645:110
+ 1: 110
+ 11: 110
+ 14: 110
+ 15: 0
+ 19: 145
+ 20: 145
+ 22: 0
+ 27: 145
+ 39: 110
+ 163: 145
+ 28: FESS_MRM_ProcSolutionMultiActionsMsg:0
+  7: 0
+  8: 0
+  9: 0
+  12: UPHY_CORE_GetMcCount:0
+   4: 0
+ 34: FESS_MRM_ProcTrxcMultiActionsMsg:4060
+  8: 145 FESS_MRM_ProcTrxcSingleMsg:145
+  10: 145
+  12: UPHY_CORE_GetMcCount:580
+   4: 145
+FESS_DLL_RemoveNode:17172:414
+ 1: 414
+ 3: 414
+ 8: 414
+ 10: 10
+ 14: 414
+ 15: 216
+ 19: 414 FESS_DLL_RemoveNodeInLink:414
+ 23: 0
+ 3: FESS_DLL_IsEmpty:1242
+  2: 414
+ 10: FESS_DLL_RemovePartitionNode:40
+  6: 0
+  8: 0
+  9: 0
+  5: FESS_DLL_GetFirst:40
+   2: 10
+  12: FESS_DLL_FreePartitionNode:0
+   17: 0
+   18: 0
+   21: 0
+   24: 0
+  17: FESS_DLL_GetNext:0
+   3: 0
+bsp_odt_hp_write_done:17155:365
+ 5: 365
+ 7: 365 odt_hal_set_src_write_ptr:365
+ 2: odt_hp_find_chan_info:10585
+  2: 365
+FESS_UldsdsSigService_Handle:17133:113
+ 1: 113
+ 13: 113
+ 19: 113
+ 20: 113
+ 23: 0
+ 29: 0
+ 36: 113
+ 39: 0
+ 43: 0
+ 48: 113
+ 54: 113
+ 13: FESS_UldsdsSigService_IsDsdsTaskValid:791
+  2: 113
+ 22: FESS_UldsdsSigService_PreHandleStart:0
+  7: 0
+  8: 0
+  12: 0
+  3: FESS_TxBandRepo_FindBand:0
+   6: 0
+  7: FESS_TxBand_NeedEarlyTermination:0
+   2: FESS_TxBand_GetState:0
+    2: 0
+  15: FESS_TxNvSetRepo_CreateNvDesc:0
+   11: 0
+   12: 0
+   13: 0
+   18: 0
+   19: 0
+   20: 0
+   21: 0
+   22: 0
+   23: 0
+   2: FESS_TxStart_GetCarrierType:0
+    2: 0
+   20: FESS_TxStart_GetAntNum:0
+    2: 0
+  20: FESS_TxBandRepo_CreateBand:0
+   7: 0
+   9: 0
+   12: 0
+   2: FESS_TxStart_GetCarrierType:0
+    2: 0
+   3: FESS_TxBandRepo_Alloc:0
+    2: 0
+    5: 0
+   6: FESS_TxStart_GetModemId:0
+    2: 0
+   10: FESS_TxBand_Init:0
+    4: 0
+    5: 0
+    6: 0
+    9: 0
+    13: 0
+    3: FESS_TxStart_GetCarrierType:0
+     2: 0
+    7: FESS_TxBand_SetNotAuthType:0
+     2: 0
+    15: FESS_TxBandPrioDelay_Init:0
+     2: 0
+     3: 0
+    16: FESS_TxBandDeviceState_Init:0
+     2: 0
+     3: 0
+    17: FESS_TxBandDeviceState_Init:0
+     2: 0
+     3: 0
+    18: FESS_TxBandArbition_Init:0
+     10: 0
+     12: 0
+     13: 0
+     16: 0
+     16: FESS_TxBandArbitSlot_Init:0
+      3: 0
+      4: 0
+    18: FESS_TxStart_GetSlotNo:0
+     2: FESS_TxStart_GetSubFrameOrSlotNum:0
+      2: 0
+    19: FESS_TxStart_GetApplyTime:0
+     2: 0
+    22: FESS_TxBandArbitHistory_Init:0
+     2: 0
+     4: 0
+  21: FESS_TxBand_SetStartExpDeviceState:0
+   2: 0
+   2: FESS_TxStart_GetAntCfgMap:0
+    2: 0
+   2: FESS_TxStart_GetStartMode:0
+    2: 0
+   3: FESS_TxStart_GetPllState:0
+    2: 0
+   4: FESS_TxBand_UpdateExpDeviceState:0
+    2: FESS_TxBandDeviceState_Update:0
+     3: 0
+     4: 0
+ 27: FESS_TxBandRepo_FindBand:2486
+  2: 113
+  6: 113
+ 32: FESS_UldsdsSigService_PreHandle:6963
+  2: 113
+  76: 78
+  4: FESS_TxBand_SetResumePara:1545
+   2: FESS_TxBand_SetResumeExpDeviceState:1545
+    5: 35
+    2: FESS_TxBandDeviceState_GetAntCfgMap:35
+     2: 35 FESS_TxAntMap_GetActualMap:35
+    3: FESS_TxResume_GetActualAntCfgMap:350
+     2: 35
+     3: 35
+    5: FESS_TxResume_GetPllState:350
+     2: 35
+    6: FESS_TxBandDeviceState_GetPllState:80
+     2: 20
+    8: FESS_TxBand_UpdateExpDeviceState:595
+     2: FESS_TxBandDeviceState_Update:595
+      3: 35
+      4: 35
+  7: FESS_TxBand_SetApcPara:696
+   2: 33
+   6: 33
+   2: FESS_TxApc_NeedCfgLoSliding:99
+    2: 33
+   3: FESS_TxBand_UpdateLoSlidingCfgState:105
+    2: 15
+   6: FESS_TxApc_NeedCfgAnaDig:99
+    2: 33
+   7: FESS_TxBand_UpdateAnaDigCfgState:231
+    2: 33
+  10: FESS_TxBand_SetStandbyPara:1965
+   2: FESS_TxBand_SetStandbyExpDeviceState:1720
+    3: 35
+    2: FESS_TxBandDeviceState_GetAntCfgMap:35
+     2: 35 FESS_TxAntMap_GetActualMap:35
+    3: FESS_TxStandby_GetActualAntCfgMap:350
+     2: 35
+     3: 35
+    5: FESS_TxStandby_GetPllState:245
+     2: 35
+    6: FESS_TxBandDeviceState_GetPllState:60
+     2: 20
+    8: FESS_TxBand_UpdateExpDeviceState:560
+     2: FESS_TxBandDeviceState_Update:560
+      3: 35
+      4: 35
+   3: FESS_TxBand_UpdateCancelPara:35
+    2: FESS_TxStart_SetCancelPara:35
+     3: 35
+   3: FESS_TxStandby_GetOpid:210
+    2: 35
+  13: FESS_TxBand_SetStopPara:0
+   2: FESS_TxBand_SetStopExpDeviceState:0
+    2: FESS_TxBand_UpdateExpDeviceState:0
+     2: FESS_TxBandDeviceState_Update:0
+      3: 0
+      4: 0
+ 36: FESS_UldsdsStatusService_IsStatusOpen:1130
+  2: 113
+ 37: FESS_TxBandRepo_FindBand:0
+  2: 0
+  6: 0
+ 39: FESS_TxBand_NeedEarlyTermination:0
+  2: FESS_TxBand_GetState:0
+   2: 0
+ 45: FESS_TxBandRepo_FindExistBands:0
+  3: 0
+  4: 0
+  5: 0
+ 47: FESS_UldsdsMntnSerivce_GetMntnPara:0
+  3: 0
+  4: 0
+  5: 0
+  9: 0
+  12: 0
+  4: UPHY_CORE_GetMcCount:0
+   4: 0
+  9: FESS_TxBand_GetId:0
+   2: 0
+OsHwiDispatchHandle:17046:0
+ 2: 387
+ 3: 387
+ 4: 387 OsHwiHookDispatcher:387
+ 5: 388
+ 7: 388
+ 8: 0
+ 10: 388
+FESS_TXDFE_CalcActualDfeChan:16749:123
+ 16: 246
+ 18: 246
+ 19: 216
+ 20: 216
+ 25: 123
+ 16: FESS_TXRTS_GetBbChanNum:1509
+  2: 216
+FESS_COMM_AlgGetDestValueIndexIn16usUpTable:16314:66
+ 6: 66
+ 12: 66
+ 15: 66
+ 21: 330
+ 22: 330
+ 24: 330
+ 25: 174
+ 26: 156
+ 27: 156
+FESS_RXAGC_Schedule:16236:99
+ 1: 99
+ 2: 99
+ 3: 99
+ 4: 99
+ 6: 99
+ 7: 99 FESS_TRXBANDRES_InitBandReq:99
+ 8: 99
+ 10: 99
+ 13: 99
+ 16: 99 FESS_MRM_TaskExecute:99
+ 17: 99
+ 6: FESS_BITMAPBUFF_CalcBuffHeader:1287
+  2: 99
+ 8: FESS_RTS_GetModemId:1287
+  2: 99
+ 8: FESS_RTS_GetRatMode:297
+  2: 99
+ 8: FESS_RXAGC_GetDestMid:891
+  11: 99
+ 13: FESS_MRM_ProcFeatureSolution:2772
+  4: 99
+  5: 99
+ 13: FESS_RTS_GetBand:396
+  2: 99
+mdrv_kevent_recv:16114:273
+ 1: 273
+ 6: 273
+ 9: 273
+ 10: 14 OsCrEventRecv:14
+ 17: 259 OsEventRecv:259
+ 24: 0
+ 4: OsIntLock:2457
+  4: 273
+  5: 273
+  6: 273
+ 6: OsGetHwThreadId:7917
+  3: 273
+ 11: OsIntRestore:42
+  4: 14
+ 18: OsIntRestore:1036
+  4: 259
+ 22: OsIntRestore:0
+  4: 0
+SRE_FusionKeventRecv:16114:273
+ 1: 273
+ 6: 273
+ 9: 273
+ 10: 14 OsCrEventRecv:14
+ 17: 259 OsEventRecv:259
+ 24: 0
+ 4: OsIntLock:2457
+  4: 273
+  5: 273
+  6: 273
+ 6: OsGetHwThreadId:7917
+  3: 273
+ 11: OsIntRestore:42
+  4: 14
+ 18: OsIntRestore:1036
+  4: 259
+ 22: OsIntRestore:0
+  4: 0
+FESS_TXBBDEV_ProcApc:16104:32
+ 2: 33
+ 3: 33
+ 9: 33
+ 12: 33 FESS_TXDFE_CalcActualDfeChan:33
+ 22: 33 FESS_SEQ_EventBlockCfg:33
+ 28: 33
+ 9: FESS_TXRTS_GetDfeSeqId:330
+  2: 33
+ 16: FESS_TXBBDEV_ProcApcCfr:363
+  3: 33
+  12: 33
+  17: 0
+  19: 0
+  23: 0
+  25: 0
+  12: FESS_TXRTS_GetCfrEnable:132
+   2: 33
+  23: FESS_BBFM_TimingCalcTxDfeCfgTime:0
+   13: 0
+   4: FESS_TXRTS_GetRficTxDelayTime:0
+    2: 0
+   10: FESS_RTS_GetTimingNvDesc:0
+    2: 0
+   10: FESS_STATICNV_GetBbicTxDfeDelay:0
+    3: 0
+  25: FESS_RTS_GetRatMode:0
+   2: 0
+  27: FESS_BBDEV_BeginEvent:0
+   4: 0
+   5: 0
+   6: 0
+   7: 0
+  29: FESS_TXBBDRV_CfgDfeDynamicCfr:0
+   12: 0
+   14: 0
+   18: 0
+   23: 0
+   25: 0
+   28: 0
+   33: 0
+  32: FESS_BBDEV_EndEvent:0
+   2: 0
+   4: 0
+ 19: FESS_TXBBDEV_ProcApcFifo:9735
+  7: 33
+  7: FESS_RTS_GetRatMode:99
+   2: 33
+  9: FESS_BBFM_TimingCalcTxDfeCfgTime:1254
+   10: 33
+   13: 33
+   18: 33
+   4: FESS_TXRTS_GetRficTxDelayTime:198
+    2: 33
+   10: FESS_RTS_GetTimingNvDesc:330
+    2: 33
+   10: FESS_STATICNV_GetBbicTxDfeDelay:99
+    3: 33
+  12: FESS_BBDEV_GetTxFifoPara:3894
+   9: 66
+   13: 33 FESS_TXBBDRV_GetGlbFifoLevel:33
+   16: 33
+   18: 66
+  14: FESS_BBDEV_BeginEvent:1320
+   4: 33
+   5: 33
+   6: 33
+   7: 33 FESS_BBDRV_CalcTxDfeValidChanBitmap:33
+  16: FESS_BBDRV_CfgTxDfeFifoLevel:2013
+   6: 33
+   9: 33
+   11: 33
+   16: 33
+   17: 33
+  19: FESS_BBDEV_EndEvent:396
+   2: 33
+ 25: FESS_BBDEV_ProcFeicTxApc:858
+  3: 33
+  11: 33
+  13: 33
+  14: 33
+  15: 0
+  22: 0
+  23: 0
+  24: 0
+  25: 0
+  26: 0
+  30: 0
+  32: 0
+  39: 0
+  42: 0
+  20: FESS_BBDEV_InitFeicParaCfgMntn:0
+   2: 0
+  21: FESS_BBDEV_ProcOmSwitchPwrThreConfig:0
+   11: 0
+   12: 0
+   15: 0
+   17: 0
+   19: 0
+   28: 0
+   29: 0
+   33: 0
+  45: FESS_BBDEV_AdjustFeicBlockNum:0
+   9: 0
+   10: 0
+   16: 0
+   17: 0
+   20: 0
+   21: 0
+   27: 0
+   28: 0
+   29: 0
+  49: FESS_BBDEV_ProcTxApcDispatch:0
+   6: 0
+   7: 0
+   10: 0
+   11: 0
+   12: 0
+   15: 0
+   17: 0
+   22: 0
+   24: 0
+   25: 0
+   26: 0
+   29: 0
+   32: 0
+   36: 0
+   37: 0
+   38: 0
+   16: FESS_BBDEV_FeicProcFirstApc:0
+    8: 0
+    9: 0
+    12: 0
+    15: 0
+    16: 0
+    17: 0
+    41: 0
+    12: FESS_BBDEV_CfgFeicSpeclSfram:0
+     7: 0
+     11: 0
+     17: 0
+     12: FESS_BBDEV_BeginEvent:0
+      4: 0
+      6: 0
+     13: FESS_TRXBBDRV_CfgFeicSpeclSfram:0
+      18: 0
+      19: 0
+      20: 0
+      21: 0
+      23: 0
+      24: 0
+     15: FESS_BBDEV_EndEvent:0
+      2: 0
+   32: FESS_BBDEV_CfgCoefConver:0
+    13: 0
+    17: 0
+    19: 0
+    24: 0
+    11: FESS_BBDEV_CalcCoefFactor:0
+     23: 0
+     24: 0
+     26: 0
+     29: 0
+     34: 0
+     35: 0
+     36: 0
+     40: 0
+     43: 0
+     44: 0
+     45: 0
+     46: 0
+     48: 0
+     52: 0
+     53: 0
+     54: 0
+    20: FESS_BBDEV_BeginEvent:0
+     4: 0
+     5: 0
+     6: 0
+     7: 0
+    21: FESS_TRXBBDRV_CfgFeicCoefConvert:0
+     13: 0
+     15: 0
+     18: 0
+     22: 0
+     29: 0
+    23: FESS_BBDEV_EndEvent:0
+     2: 0
+     4: 0
+  50: FESS_BBDEV_FeicHoldStrategyCtrl:0
+   7: 0
+   9: 0
+   10: 0
+   13: 0
+   14: 0
+   19: 0
+   20: 0
+   23: 0
+   24: 0
+   27: 0
+   44: 0
+   12: FESS_BBDEV_ProcOmCorrThrConfig:0
+    7: 0
+    4: FESS_BBDEV_GetFeicSampleRate:0
+     2: 0
+   26: FESS_BBDEV_FeicPreCorrCoffCalc:0
+    14: 0
+    16: 0
+    17: 0
+    22: 0
+    23: 0
+    29: 0
+    30: 0
+   30: FESS_BBDEV_GetMaxIndex:0
+    7: 0
+    10: 0
+    14: 0
+   34: FESS_BBDEV_FeicPreCorrCoffAlphaCalc:0
+    9: 0
+    14: 0
+    15: 0
+    16: 0
+    17: 0
+    18: 0
+    21: 0
+    27: 0
+    28: 0
+    4: FESS_BBDEV_GetFeicSampleRate:0
+     2: 0
+   37: FESS_BBDEV_FeicHoldFlagJudge:0
+    15: 0
+    24: 0
+    25: 0
+    8: FESS_BBDEV_GetFeicSampleRate:0
+     2: 0
+    9: FESS_BBDEV_GetFeicKIdx:0
+     3: 0
+    14: FESS_BBDEV_FeicNLHoldFlagJudge:0
+     7: 0
+     8: 0
+    18: FESS_BBDEV_FeicCorrHoldFlagJudge:0
+     8: 0
+     9: 0
+     13: 0
+     14: 0
+     15: 0
+     16: 0
+     17: 0
+     18: 0
+     21: 0
+     22: 0
+     26: 0
+     28: 0
+    21: FESS_BBDEV_FeicAliasingHoldFlagJudge:0
+     6: 0
+     7: 0
+     8: 0
+   40: FESS_BBDEV_FeicMaxIndexAlphaCalc:0
+    4: 0
+    5: 0
+    9: 0
+    10: 0
+    14: 0
+    17: 0
+    20: 0
+    25: 0
+   44: FESS_BBDEV_CfgFeicHoldCtrlPara:0
+    4: 0
+    5: 0
+    6: 0
+    9: 0
+    11: 0
+    13: 0
+    12: FESS_BBDEV_CfgCCHoldPara:0
+     10: 0
+     16: 0
+     12: FESS_BBDEV_BeginEvent:0
+      4: 0
+      6: 0
+     13: FESS_TRXBBDRV_CfgFeicHoldPara:0
+      15: 0
+      16: 0
+      23: 0
+      30: 0
+      31: 0
+      34: 0
+      35: 0
+     15: FESS_BBDEV_EndEvent:0
+      2: 0
+   47: FESS_BBDEV_CfgFeicMaxIndex:0
+    8: 0
+    12: 0
+    13: 0
+    17: 0
+    20: 0
+    27: 0
+    23: FESS_BBDEV_BeginEvent:0
+     4: 0
+     6: 0
+    24: FESS_TRXBBDRV_CfgFeicMaxIndex:0
+     8: 0
+     9: 0
+     10: 0
+     13: 0
+     15: 0
+     18: 0
+     19: 0
+   49: FESS_BBDEV_CalcCorrCoffRegularPara:0
+    5: 0
+    6: 0
+    7: 0
+    15: 0
+    19: 0
+    12: FESS_BBDEV_CalcCcCorrCoffRegularPara:0
+     7: 0
+     10: 0
+     11: 0
+     12: 0
+     14: 0
+     15: 0
+     16: 0
+     18: 0
+     19: 0
+     4: FESS_BBDEV_GetFeicSampleRate:0
+      2: 0
+     5: FESS_BBDEV_GetFeicKIdx:0
+      3: 0
+    16: FESS_BBDEV_CfgCorrCoffRegularPara:0
+     6: 0
+     8: 0
+     10: 0
+     16: 0
+     11: FESS_BBDEV_BeginEvent:0
+      4: 0
+      5: 0
+      6: 0
+      7: 0
+     13: FESS_TRXBBDRV_CfgFeicDcdRegular:0
+      9: 0
+      12: 0
+      14: 0
+      15: 0
+      18: 0
+      20: 0
+      22: 0
+      23: 0
+  51: FESS_BBDEV_FeicMiuStrategyCtrl:0
+   14: 0
+   16: 0
+   18: 0
+   23: 0
+   43: 0
+   44: 0
+   45: 0
+   23: FESS_BBDEV_FeicRbWeightMiu:0
+    30: 0
+    25: FESS_BBDEV_GetFeicSampleRate:0
+     2: 0
+   38: FESS_BBDEV_FeicCorrCoeffWeightMiu:0
+    12: 0
+    16: 0
+    17: 0
+    22: 0
+    23: 0
+    27: 0
+    11: FESS_BBDEV_GetFeicKIdx:0
+     3: 0
+   42: FESS_BBDEV_CfgFeicLmsMiu:0
+    8: 0
+    9: 0
+    10: 0
+    18: 0
+    14: FESS_BBDEV_BeginEvent:0
+     4: 0
+     6: 0
+    15: FESS_TRXBBDRV_CfgFeicLmsMiu:0
+     14: 0
+     18: 0
+     19: 0
+     22: 0
+  52: FESS_BBDEV_ProcFeicApcMntnRpt:0
+   7: 0
+   11: 0
+   12: 0
+   13: 0
+   17: 0
+   19: 0
+   22: 0
+   23: 0
+   24: 0
+   26: 0
+   27: 0
+   29: 0
+   30: 0
+   7: FESS_MNTN_IsModuleRptEn:0
+    2: 0
+  53: FESS_BBDEV_ApcFeicMntnRptDebug:0
+   2: 0
+   2: FESS_MNTN_IsDebugRptEn:0
+    2: 0
+   6: FESS_BBDEV_ApcFeicMntnRpt:0
+    8: 0
+    14: 0
+    15: 0
+    16: 0
+    18: 0
+    20: 0
+    21: 0
+    22: 0
+    24: 0
+    25: 0
+    26: 0
+    28: 0
+    30: 0
+    31: 0
+    36: 0
+    38: 0
+    39: 0
+    42: 0
+    43: 0
+    44: 0
+    46: FESS_BBDEV_ProcInitiativeRpt:0
+     7: 0
+     9: 0
+     10: 0
+     11: 0
+     12: 0
+     13: 0
+     14: 0
+     15: 0
+     16: 0
+     17: 0
+     18: 0
+     19: 0
+     20: 0
+     23: 0
+     24: 0
+     25: 0
+     26: 0
+     27: 0
+     28: 0
+FESS_TXTASK_TxMsgJob:15504:114
+ 2: 114
+ 3: 114
+ 5: 114
+ 8: 114
+ 9: 114 FESS_CANCEL_GetOpId:114
+ 13: 114 FESS_MRM_GetTxJobCtrlTime:114
+ 14: 114 FESS_CANCEL_CreateOpIdCtx:114
+ 16: 114
+ 9: FESS_TASK_IsUlDsdsVaildRatMode:4332
+  3: 114
+  7: 114
+FESS_TXSTANDBY_Schedule:15495:35
+ 1: 35
+ 2: 35
+ 3: 35
+ 5: 35 FESS_TRXBANDRES_InitBandReq:35
+ 10: 35 FESS_MRM_ProcTxStandbySolution:35
+ 13: 35
+ 14: 35
+ 5: FESS_BITMAPBUFF_CalcBuffHeader:1225
+  2: 35
+ 8: FESS_TXSTANDBY_ProcRfdev:245
+  2: 35 FESS_TXRFDEV_ProcTxStandby:35
+ 9: FESS_TXSTANDBY_ProcBbdev:10420
+  7: 35
+  7: FESS_RTS_GetRatMode:105
+   2: 35
+  11: FESS_TXBBDEV_ProcChanStandby:9965
+   9: 35
+   11: 35
+   24: 35 FESS_SEQ_EventBlockCfg:35
+   27: 35 FESS_BBDEV_ProcFeicTxStandby:35
+   9: FESS_TXRTS_GetDfeSeqId:245
+    2: 35
+   11: FESS_BBDEV_GetTxStopTiming:455
+    6: 35
+    3: FESS_BBFM_TimingCalcTxDfeCfgTime:350
+     4: FESS_TXRTS_GetRficTxDelayTime:350
+      2: 35
+   14: FESS_TXBBDEV_GetStandbyPara:1820
+    6: 35 FESS_TxAntMap_GetActualMap:35
+    7: 35
+    10: 35 FESS_TXDFE_CalcActualDfeChan:35
+    6: FESS_RTS_GetAntAbility:210
+     2: 35
+   16: FESS_BBDEV_BeginEvent:210
+    4: 35
+    6: 35
+   18: FESS_TXBBDRV_CfgStandby:1855
+    6: 35 FESS_BBDRV_CalcTxDfeValidChanBitmap:35
+    11: 35
+    12: 35
+    9: FESS_BBDRV_CfgChanOff:1155
+     2: 35
+     4: 35
+   27: FESS_RTS_GetBand:105
+    2: 35
+   35: FESS_BBDEV_SetTxStandbyMntn:840
+    4: 35 memcpy_s:35
+    7: FESS_BBDEV_SetTxDfeCfgCommMntn:245
+     3: 35
+     4: 35
+   38: FESS_MNTN_RptTxStandbyRunLog:3595
+    4: FESS_MNTN_RptTxTimingRunLog:1120
+     3: 35
+     7: 35
+     8: 35
+     3: FESS_MNTN_IsModuleRptEn:560
+      2: 35
+     7: UPHY_CORE_GetMcCount:140
+      4: 35
+    6: FESS_MNTN_RptTxBbChanRunLog:1175
+     5: 35
+     10: 35
+     11: 40
+     5: FESS_MNTN_IsModuleRptEn:210
+      2: 35
+    9: FESS_MNTN_RptTxStandbyBbdevRunLog:845
+     3: 35
+     7: 35
+     8: 35
+     3: FESS_MNTN_IsModuleRptEn:180
+      2: 20
+ 10: FESS_MRM_ProcFeatureSolution:455
+  4: 35
+  5: 35
+ 10: FESS_RTS_GetBand:420
+  2: 35
+OsSpinLockTaskRq:15392:296
+ 5: 296
+ 7: 296
+ 16: 296
+ 6: OsSplLock:5624
+  4: 296
+  5: 296
+ 13: OsSplUnlock:0
+  3: 0
+  5: 0
+OsTskReadyDel:15276:268
+ 3: 268
+ 8: 268
+ 13: 268 OsDequeueTask:268
+ 21: 268
+ 22: 268 OsReschedTask:268
+ 26: 0
+ 16: OsDecNrRunning:1876
+  3: 268
+FESS_MC_GetOriginValue:15231:277
+ 11: 277
+ 12: 0
+ 15: 277
+ 18: 277
+ 5: UPHY_WriteRegV:4432
+  3: 277
+  5: 277
+ 8: UPHY_ReadRegV:3601
+  3: 277
+  5: 277
+ 9: UPHY_ReadRegV:827
+  3: 277
+FESS_MRM_JudgeCheckInTime:15106:166
+ 5: 166
+ 10: 166
+ 13: 166
+ 14: 0
+ 15: 166
+ 19: 166
+ 20: 0
+ 21: 0
+ 26: 166
+OsFiberDispatcherHwiTail:15016:388
+ 2: 388
+ 4: 388
+ 8: 260
+ 9: 0
+ 11: 388 OsFiberActiveDispatcher:260
+OsTskReadyAdd:15008:268
+ 1: 268
+ 3: 268 OsReschedTask:268
+ 2: OsTskReadyAddOnly:13132
+  2: 268
+  12: 268
+  14: 268
+  18: 268 OsEnqueueTask:268
+  20: OsIncNrRunning:2680
+   2: 268
+UPHY_OS_FixedMsgOrderSend:14762:164
+ 1: 164
+ 8: 164
+ 11: 164
+ 12: 164
+ 14: 164
+ 15: 164
+ 16: 164
+ 17: 164 SRE_FiberQueSend:164
+ 20: 0
+ 22: 0
+ 23: 0
+ 24: 0
+ 26: 165
+ 31: 165
+ 10: UPHY_OS_GetCRCfgTab:2624
+  2: 164
+encoder_get_phylog_srchid:14235:365
+ 4: 365
+ 5: 365
+ 9: 365
+ 2: mdrv_get_core_id:5840
+  2: OsGetCoreID:5840
+   3: 365
+   9: 365
+UPHY_OS_IntInstStore:14196:182
+ 4: 182
+ 2: UPHY_CORE_GetThreadId:3458
+  2: mdrv_get_core_id:3458
+   2: OsGetCoreID:3458
+    3: 182
+ 3: UPHY_INT_SetIntInstId:1820
+  2: 182
+ 4: UPHY_CORE_InstStore:5278
+  3: 182
+  10: 182
+  7: UPHY_CORE_GetCtxType:2366
+   2: 182
+  8: UPHY_CORE_GetContextID:546
+   2: 182
+  11: UPHY_CORE_InstSwitch:0
+   2: 0
+mdrv_event_recv:13923:273
+ 3: 273
+ 6: 273
+ 9: 273 SRE_FusionKeventRecv:273
+ 10: 273
+ 16: 273
+ 21: 273
+FESS_TXAPC_GetDpdGainMode:13789:66
+ 1: 66
+ 7: 66
+ 8: 66
+ 13: 66
+ 18: 66
+ 23: 66
+ 24: 66
+ 25: 66
+ 27: 66
+ 28: 66
+ 34: 66 FESS_TXAPC_CalcDpdLmeLutMode:66
+ 35: 66
+ 31: FESS_TXAPC_GetDpdLmePowerTh:7194
+  8: 66
+  9: 66
+  12: 264
+  13: 264
+FESS_TXAPC_CalcTempComp:13728:52
+ 9: 52
+ 12: 52
+ 17: 52
+ 18: 52
+ 19: 52
+ 20: 52
+ 25: 52
+ 27: 104
+ 28: 104
+ 29: 104
+ 39: 52
+ 40: 52
+ 41: 52
+ 42: 52
+ 45: 52
+ 46: 52
+ 56: 52
+ 9: FESS_TXAPC_LimitTemp:312
+  3: 52
+ 12: FESS_TXAPC_LimitTemp:416
+  2: 52
+  3: 52
+ 45: FESS_COMM_Alg32sRoundDiv:156
+  11: 52
+ 46: FESS_COMM_Alg32sRoundDiv:104
+  11: 52 FESS_COMM_AlgCalculatesRfLinearComp:52
+FESS_DLL_RemoveNodeInLink:13662:414
+ 2: 414
+ 3: 414
+ 4: 414
+ 5: 414
+ 7: 414
+FESS_MRM_GetTxJobCtrlTime:12882:114
+ 2: 114
+ 4: 114
+ 8: 114
+ 9: 114 FESS_MRM_IsUlDsdsValid:114
+ 13: 114
+ 16: 114
+ 17: 0
+ 18: 0
+ 19: 0
+ 23: 114
+ 24: 0
+ 25: 0
+ 27: 114
+ 29: 114
+ 30: 114
+ 19: UPHY_CORE_GetMcCount:0
+  4: 0
+mdrv_fiber_queue_send:12792:164
+ 7: 164
+ 12: 164
+ 21: 164 OsFiberQueSend:164
+ 24: 164
+ 20: OsIntLock:1640
+  4: 164
+  5: 164
+  6: 164
+ 22: OsIntRestore:492
+  4: 164
+SRE_FiberQueSend:12792:164
+ 7: 164
+ 12: 164
+ 21: 164 OsFiberQueSend:164
+ 24: 164
+ 20: OsIntLock:1640
+  4: 164
+  5: 164
+  6: 164
+ 22: OsIntRestore:492
+  4: 164
+FESS_OM_ProcMsgBuff:12361:263
+ 5: 263 UPHY_OM_MsgReport:263
+ 6: FESS_OM_RecordMsgTrace:8679
+  2: 263
+  3: 263
+  5: 263
+  6: 263
+OsReschedTask:12328:536
+ 4: 536
+ 5: 536
+ 10: 0
+ 11: 536
+ 5: OsGetHwThreadId:6968
+  3: 536
+  9: 536
+bsp_get_slice_value_hrt:11895:2379
+ 2: 2379
+ 2: bsp_get_slice_value_hrt_u64:9516
+  4: 2379
+FESS_RFDEV_ProcTxPathInfo:11760:98
+ 4: 98
+ 5: 0
+ 6: 0
+ 8: 0
+ 11: 98
+ 14: 98
+ 15: 196
+ 17: 196
+ 21: 98
+ 25: 98
+ 4: FESS_RTS_GetBand:588
+  2: 98
+ 7: FESS_RTS_GetAntAbility:0
+  2: 0
+ 12: FESS_TXRTS_GetSegmentIdNum:686
+  2: 98
+ 15: FESS_TXRTS_GetSegmentIdNum:882
+  2: 196
+ 21: FESS_RTS_GetRatMode:294
+  2: 98
+ 22: FESS_TXRTS_GetSegmentId:0
+  2: 0
+ 64092: FESS_BITMAPBUFF_GetBuffIndex:980
+  2: 98
+UPHY_OS_EventSend:11692:286
+ 1: 286
+ 7: 286
+ 8: 286
+ 15: 286 mdrv_event_send:286
+ 16: 286
+ 20: 286
+ 48: 286
+ 9: UPHY_SCHED_CRGetOsTaskId:238
+  2: 14
+  3: UPHY_OS_GetCRCfgTab:224
+   2: 14
+UPHY_TRACE_GetCommIsrTraceNode:11688:487
+ 2: 487
+FESS_TXAPC_Schedule:11682:99
+ 1: 99
+ 2: 99
+ 3: 99
+ 6: 99
+ 7: 99 FESS_TRXBANDRES_InitBandReq:99
+ 12: 99
+ 14: 99 FESS_MRM_TaskExecute:99
+ 6: FESS_BITMAPBUFF_CalcBuffHeader:1584
+  2: 99
+ 12: FESS_MRM_ProcFeatureSolution:2772
+  4: 99
+  5: 99
+ 12: FESS_RTS_GetBand:297
+  2: 99
+FESS_NODEMEM_Free:11570:178
+ 1: 178
+ 5: 178
+ 7: 0
+ 12: 178
+ 13: 0
+ 17: 178
+ 19: 178
+ 20: 0
+FESS_MRM_RfdspRxWbRssiInd:11520:32
+ 1: 32
+ 3: 32
+ 2: FESS_RXAGC_WbRssiIndSchedule:11008
+  5: FESS_RFDEV_ProcWbRssiReport:11008
+   7: 32
+   9: 0
+   16: FESS_RFDEV_ProcWbRssiInd:10464
+    8: 32
+    13: 32
+    14: 32
+    15: 32
+    16: 32
+    18: 0
+    23: 32 FESS_OSA_SendFixedMsgWithOsMsg:32
+    8: FESS_OM_IsMrmRttTestEn:320
+     3: 32
+    22: FESS_RFDEV_SetWbRssiIndPara:7680
+     3: 32
+     6: 32
+     12: 32
+     13: 32
+     14: 32
+     15: 32
+     16: 32
+     19: 128
+     20: 128
+     24: 32
+     25: 32
+     26: 32
+     29: 32 memcpy_s:32
+     31: 32
+     35: 32
+     36: 0
+     8: FESS_RTS_GetModemId:224
+      2: 32
+     9: FESS_RTS_GetRatMode:192
+      2: 32
+     11: FESS_RTS_GetCenterFreqKhz:192
+      2: 32
+     16: UPHY_CORE_GetMcCount:96
+      4: 32
+     35: FESS_RTS_GetModemId:96
+      2: 32
+     38: FESS_RFDEV_SetV2XWbIndAgcGainInfo:0
+      6: 0
+      9: 0
+      10: FESS_RFDEV_GetV2XAgcGain:0
+       7: 0
+       11: 0
+       12: 0
+       4: FESS_RTS_GetNvDesc:0
+        2: 0
+       5: FESS_RTS_GetBandwidth:0
+        2: 0
+       7: FESS_RXNV_GetAgcGainLevel:0
+        10: 0
+        13: 0
+        45: 0
+        6: FESS_NV_GetLNrBandWidthRangeIndex:0
+         5: 0
+       8: FESS_RXNV_GetLnaGainIndex:0
+        13: 0
+        22: 0
+        6: FESS_NVLIB_GetStaticCommUnifResumeAddr:0
+         2: 0
+is_tool_connected:11479:883
+ 2: 883
+is_bootlog_open:11479:883
+ 2: 883
+OsFindHighestPri:11444:268
+ 4: 268
+ 5: 528
+ 6: 268
+ 11: 0
+ 6: OsGetRMB:804
+  3: 268
+FESS_RXRESUME_Schedule:11325:75
+ 1: 75
+ 2: 75
+ 3: 75
+ 6: 75 FESS_TRXBANDRES_InitBandReq:75
+ 7: 75
+ 9: 75
+ 14: 75
+ 16: 75 FESS_MRM_TaskExecute:75
+ 7: FESS_BITMAPBUFF_CalcBuffHeader:1200
+  2: 75
+ 14: FESS_MRM_ProcFeatureSolution:2175
+  4: 75
+  5: 75
+ 14: FESS_RTS_GetBand:225
+  2: 75
+mdrv_spin_unlock_irqrestore:11250:450
+ 6: 450 OsTskUnlock:450
+ 5: OsSplUnlock:9000
+  3: 450
+  5: 450
+ 7: OsIntRestore:1800
+  4: 450
+SRE_SplIrqUnlock:11250:450
+ 6: 450 OsTskUnlock:450
+ 5: OsSplUnlock:9000
+  3: 450
+  5: 450
+ 7: OsIntRestore:1800
+  4: 450
+UPHY_OM_PrintfTraceHash:11150:50
+ 1: 50
+ 5: 50 UPHY_OM_GetModuleSwitch:50
+ 13: 50
+ 14: 50 UPHY_OM_PrintMsgAsmRptHash:50
+ 22: 50
+bsp_get_slice_value:11056:2764
+ 2: 2764
+ 2: bsp_get_slice_value_u64:8292
+  4: 2764
+FESS_RFDEV_IsMsgBuffExpired:10921:301
+ 4: 301
+ 5: 106
+ 10: 301
+ 4: UPHY_CORE_GetMcCount:903
+  4: 301
+UPHY_OS_SpinUnLock:10800:450
+ 1: 450
+ 2: 450
+ 4: 450 SRE_SplIrqUnlock:450
+ 5: 450
+FESS_INT_ProcMcTimerIsr:10429:132
+ 1: 132
+ 12: 132
+ 22: 132
+ 23: 132
+ 28: 132
+ 29: 132
+ 30: 132 FESS_MC_IsrEntry:132
+ 35: 133
+ 22: UPHY_ReadRegV:1716
+  3: 132
+  5: 132
+ 26: UPHY_WriteRegV:2112
+  3: 132
+FESS_TXRESUME_ExecuteBbdev:10255:35
+ 1: 35
+ 2: 35
+ 7: 35
+ 12: 0
+ 14: 0
+ 15: 0
+ 19: 35
+ 20: 35
+ 23: 35
+ 31: 35
+ 450: 35
+ 7: FESS_RTS_GetRatMode:105
+  2: 35
+ 12: FESS_TXRTS_IsMultiplex:35
+  2: 35
+ 19: FESS_TXRTS_IsMultiplex:0
+  2: 0
+ 23: FESS_RTS_GetAntAbility:35
+  2: 35 FESS_TXRESUME_IsNeedHandle:35
+ 25: FESS_TXBBDEV_ProcChanResume:4020
+  2: 20
+  9: 20
+  11: 20 FESS_TXTIMING_GetChanEnable:20
+  13: 20
+  16: 20
+  18: 20 FESS_TXBBDRV_CfgChanEnable:20
+  20: 20 FESS_SEQ_EventBlockCfg:20
+  23: 20 FESS_MNTN_TxChanCommRunLog:20
+  26: 20
+  27: 0
+  28: 0
+  32: 20 FESS_BBDEV_ProcFeicTxResume:20
+  9: FESS_TXRTS_GetDfeSeqId:120
+   2: 20
+  13: FESS_RTS_GetAntAbility:20
+   2: 20 FESS_TxAntMap_GetActualMap:20
+  14: FESS_TXBBDEV_GetEnablePara:920
+   3: 20 FESS_TXDFE_CalcActualDfeChan:20
+   4: 20
+   6: 20
+   7: 20
+   8: 20
+  16: FESS_BBDEV_BeginEvent:180
+   4: 20
+   5: 20
+   6: 20
+  19: FESS_BBDEV_EndEvent:160
+   2: 20
+   4: 0
+  22: FESS_TXBBSNAPSHOT_SetTxResumeMntn:400
+   4: 20 memcpy_s:20
+  26: FESS_RTS_GetBand:80
+   2: 20
+  32: FESS_RTS_GetBand:0
+   2: 0
+ 29: FESS_MNTN_TxResumeMsgRunLog:2065
+  3: 35
+  10: 35
+  11: 35
+  13: 35 FESS_TXDFE_CalcActualDfeChan:35
+  3: FESS_MNTN_IsModuleRptEn:350
+   2: 35
+  7: FESS_TXRTS_GetCarrierType:210
+   2: 35
+  8: FESS_TXRTS_GetUlSwitchTime:210
+   2: 35
+  9: FESS_TXRTS_GetStartBandIdx:245
+   2: 35
+FESS_MRM_CheckOutTxApc:10032:33
+ 1: 33
+ 3: 33
+ 4: 33
+ 10: 33
+ 12: 33
+ 17: 0
+ 19: 0
+ 21: 0
+ 26: 33
+ 27: 33
+ 28: 0
+ 30: 0
+ 31: 0
+ 37: 33
+ 41: 33
+ 44: 33 FESS_MRM_AllocRugLog:33
+ 46: 33
+ 3: FESS_BITMAPBUFF_CalcBuffHeader:858
+  2: 33
+ 9: UPHY_CORE_GetMcCount:99
+  4: 33
+ 11: FESS_TXRTS_GetVLastApplyTime:429
+  2: 33
+ 13: FESS_TXRTS_SetVLastApplyTime:231
+  2: 33
+ 34: FESS_MRM_ProcTxApcPwrLimit:2937
+  8: 33
+  9: 0
+  15: 33
+  17: 66
+  18: 66
+  8: FESS_NVLIB_GetSarEn:198
+   3: 33
+  13: FESS_TXRTS_GetVModemPwrLimit:198
+   2: 33
+  13: FESS_TXRTS_GetVWifiPwrLimit:429
+   2: 33
+ 36: FESS_MRM_IsEnTxApcComp:825
+  4: 33
+  7: 33
+ 38: FESS_TXRTS_SetVApcComp:330
+  2: 33
+FESS_DLL_FindInsertPartNormal:9964:392
+ 2: 392
+ 8: 392
+ 10: 176 FESS_FWK_CompareMsgBufJobs:120 FESS_FWK_CompareJobs:56
+ 11: 32
+ 15: 392
+ 6: FESS_DLL_GetFirst:2876
+  2: 392
+UPHY_OS_SpinLock:9900:450
+ 1: 450
+ 2: 450
+ 4: 450
+ 5: 450 SRE_SplIrqLock:450
+thread_need_calc_load:9843:579
+ 2: 579
+UPHY_CORE_Get32kTimeCount:9842:703
+ 1: 703
+ 19: 703
+ 21: 703
+ 25: 703
+UPHY_OS_HostMemAllocAndFill:9840:164
+ 1: 164
+ 4: 164
+ 5: 164 UPHY_OS_MemAllocAux:164
+ 6: 164
+ 8: 164
+ 17: 0
+ 18: 0
+ 19: 164
+FESS_RFDVFS_DfeVote:9820:31
+ 1: 31
+ 4: 31
+ 9: 31
+ 14: 31
+ 18: 31
+ 21: 31
+ 4: FESS_FEPNV_IsSupportRfDvfs:93
+  2: 31
+ 13: FESS_RFDVFS_RecordDfeVoteInfo:1271
+  5: 31
+  6: 31
+  8: 31
+  9: 31
+  10: 31
+  6: UPHY_CORE_GetMcCount:93
+   4: 31
+ 15: FESS_RFDVFS_UpdateDfeVoteInfo:3348
+  6: 31
+  4: UPHY_INT_LockOnly:310
+   2: mdrv_int_lock:310
+    4: 31
+    5: 31
+    6: 31
+  12: FESS_RFDVFS_AddDfeVoteInfo:2232
+   3: 31
+   4: 31
+   8: 186
+  14: UPHY_INT_UnlockOnly:124
+   2: mdrv_int_unlock:124
+    4: 31
+ 19: FESS_RFDVFS_ProcDfeVoteInfo:3496
+  8: 31 FESS_RFDVFS_TuneRficProfile:31
+  4: UPHY_INT_LockOnly:992
+   2: mdrv_int_lock:992
+    4: 31
+    5: 31
+    6: 31
+  6: FESS_RFDVFS_JudgeDfeVoltage:2349
+   2: FESS_RFDVFS_IsHighVoteInfoExist:1373
+    4: 111
+    5: 126
+   3: FESS_RFDVFS_IsHighVoteInfoExist:112
+    4: 0
+    5: 16
+  10: UPHY_INT_UnlockOnly:124
+   2: mdrv_int_unlock:124
+    4: 31
+OsSpinUnlockTaskRq:9768:296
+ 3: 296
+ 5: 296
+ 4: OsSplUnlock:3848
+  3: 296
+  5: 296
+mdrv_diag_phy_msg_report:9695:277
+ 2: 277
+ 6: 277 is_bootlog_open:277
+ 7: 277 is_tool_connected:277
+ 12: 277 pack_phymsglog:277
+ 13: 0
+FESS_TXAPC_GetAptFreqTempComp:9636:66
+ 1: 66
+ 10: 66
+ 14: 66
+ 19: 66
+ 20: 66
+ 34: 66
+ 38: 66
+ 40: 66
+ 41: 66
+ 44: 66 FESS_NVLIB_CalcEtAptFreqTempComp:66
+ 48: 66
+FESS_NVLIB_CalcEtAptFreqTempComp:9174:66
+ 1: 66
+ 8: 66
+ 11: 66 FESS_COMM_AlgGetDestValueIndexIn16usUpTable:66
+ 12: 66
+ 16: 66
+ 17: 66
+ 19: 66
+ 20: 66
+ 23: 66
+ 24: 66 FESS_COMM_AlgCalculatesRfLinearComp:66
+ 29: 0
+ 30: 0
+ 33: 66
+OsFiberQueEnqueTail:9009:273
+ 2: 273
+ 3: 273
+ 5: 273
+ 6: 273
+ 7: 273
+ 8: 273
+ 10: 273
+OsSpinUnLockRunTaskRq:8959:527
+ 3: 527
+ 2: OsSplUnlock:8432
+  3: 527
+  5: 527
+UPHY_OM_PrintfWarnHash:8816:38
+ 1: 38
+ 4: 38 UPHY_OM_GetModuleSwitch:38
+ 8: 38
+ 10: 38 UPHY_OM_PrintMsgAsmRptHash:38
+ 11: 38
+FESS_OSA_AllocAndSendFixedMsgWithOsMsg:8717:132
+ 1: 132
+ 2: 132
+ 3: 132 UPHY_OS_HostMemAllocAndFill:132
+ 6: 0
+ 10: 132 memcpy_s:132
+ 11: 132 FESS_OSA_SendFixedMsgWithOsMsg:132
+ 12: 133
+UPHY_OS_MemAllocAux:8692:164
+ 1: 164
+ 2: 164
+ 4: 164 UPHY_OS_HostGetMemNode:164 UPHY_OS_HostMem_GetPoolID:164
+ 5: 164
+ 7: 0
+ 17: 164
+ 14: UPHY_HOST_MEM_PLATFORM_HEAD_FILL:1312
+  2: 164 UPHY_CORE_Get32kTimeCount:164
+  3: 164
+  4: 164
+FESS_MRM_InterfereRxBlanking:8550:68
+ 5: 68
+ 14: 68
+ 15: 68
+ 20: 68
+ 21: 33
+ 28: 35
+ 35: 68
+ 7: FESS_RTS_GetModemId:204
+  2: 68
+ 11: FESS_MRM_InterfereGetTxCcIdx:1564
+  2: 68
+ 11: FESS_TXRTS_GetUlCarrierType:204
+  2: 68
+ 15: FESS_RTS_GetCenterFreqKhz:204
+  2: 68
+ 29: FESS_MRM_InterfereCfgRxBlankingStart:0
+  6: 0
+  7: 0
+  12: 0
+  14: 0
+ 31: FESS_MRM_InterfereCfgRxBlankingStop:1496
+  6: 68
+  11: 0
+  14: 0
+  16: 0
+UPHY_OM_PrintMsgAsmRptHash:8536:88
+ 4: 88
+ 9: 88
+ 13: 88
+ 14: 88
+ 15: 88
+ 16: 88
+ 17: 88
+ 18: 88 mdrv_diag_phy_print_report_hash:88
+ 8: UPHY_OS_PrivDataGetInstId:1320
+  7: 88 SRE_FusionIsIntCntx:88
+  11: 88 SRE_FusionTskPrivDataGet:88
+  13: 88
+  5: UPHY_CORE_GetThreadId:792
+   2: mdrv_get_core_id:792
+    2: OsGetCoreID:792
+     3: 88
+  8: UPHY_INT_GetIntInstId:0
+   2: 0
+FESS_RFGAINDEV_ProcNormalApcMsg:8250:33
+ 1: 33
+ 6: 33 FESS_RFDEV_AllocTimeBasedMbxBuff:33
+ 11: 33
+ 19: 33
+ 14: FESS_RFGAINDEV_CalcNormalApc:4290
+  5: 33
+  18: 33
+  19: 33
+  20: 33
+  23: 33
+  24: 33 FESS_RFDEV_PowerLteNrCalcAdapt:33
+  27: 33 FESS_RFDEV_ProcTxPathInfo:33
+  32: 33
+  32: FESS_MNTN_RptApcRfdevCommRunLog:1914
+   6: 33
+   12: 33
+   13: 33
+   14: 33
+   15: 33
+   16: 33
+   17: 33
+   18: 33
+   6: FESS_MNTN_IsModuleRptEn:330
+    2: 33
+   12: UPHY_CORE_GetMcCount:99
+    4: 33
+ 16: FESS_RFGAINDEV_NormalApcMbxSend:2508
+  5: 33
+  10: 33
+  12: 33
+  13: 33
+  14: 33
+  15: 33
+  16: 33
+  17: 33
+  18: 33 FESS_RFDEV_SendRficMsg:33
+  10: FESS_RTS_GetRficId:231
+   2: 33
+  13: FESS_RTS_GetRficId:99
+   2: 33
+  14: FESS_TXRTS_IsRaiseMsgPriority:33
+   2: 33 FESS_RFDEV_ProcMbxPathInRfic:33
+FESS_MRM_CfgServiceRxCrossUd:8250:15
+ 1: 15
+ 2: 15
+ 8: 15
+ 16: 15
+ 19: 15 FESS_BBDEV_AllocCrossUdMntn:15
+ 22: 60
+ 23: 60
+ 28: 30
+ 29: 60
+ 38: 60 FESS_BBDEV_CfgCrossUd:60
+ 41: 60 FESS_BBDEV_RptCrossUdhRunLog:60
+ 8: FESS_RXRTS_GetSysState:45
+  2: 15
+ 12: FESS_MRM_SetRxCrossUdPara:480
+  6: 15
+  2: FESS_RTS_GetBand:105
+   2: 15
+  3: FESS_RTS_GetModemId:90
+   2: 15
+  4: FESS_RTS_GetRatMode:90
+   2: 15
+ 16: FESS_RTS_GetNvDesc:180
+  2: 15
+ 16: FESS_RXNV_GetAsmResumeTime:150
+  2: 15
+ 19: FESS_RTS_GetAntAbility:45
+  2: 15
+ 22: FESS_RTS_GetAntAbility:330
+  2: 60
+ 28: FESS_MRM_GetRxCrossUdCtrlInfo:1230
+  5: 60
+  8: 60
+  13: 30
+  14: 30
+  15: 30
+ 28: FESS_RTS_GetNvDesc:780
+  2: 60
+ 28: FESS_RXNV_GetCrossUDEBCtrl:600
+  2: 60
+  3: 60
+ 32: FESS_RXRTS_GetVCrossUdCfgBit:360
+  2: 60
+FESS_CANCEL_CreateOpIdCtx:8215:176
+ 2: 176
+ 3: 176
+ 4: 176
+ 7: 176
+ 12: 176
+ 13: 131
+ 8: FESS_CANCEL_CreatOpId:524
+  2: FESS_CANCEL_SetOpIdVaild:524
+   2: 131
+ 9: FESS_CANCEL_InitOpIdCtx:1179
+  2: 131
+  3: 131
+  4: FESS_LIST_InitList:393
+   2: 131
+ 11: FESS_CANCEL_AddJobNode:2333
+  2: 176
+  3: FESS_LIST_InsertFirst:1277
+   7: 176
+   8: 176
+mdrv_kevent_send:8134:286
+ 2: 286
+ 3: 286
+ 8: 286
+ 9: 14 OsCrEventSend:14
+ 16: 272 OsEventSend:272
+ 23: 0
+ 5: OsIntLock:2860
+  4: 286
+  5: 286
+  6: 286
+ 10: OsIntRestore:42
+  4: 14
+ 17: OsIntRestore:816
+  4: 272
+ 21: OsIntRestore:0
+  4: 0
+SRE_FusionKeventSend:8134:286
+ 2: 286
+ 3: 286
+ 8: 286
+ 9: 14 OsCrEventSend:14
+ 16: 272 OsEventSend:272
+ 23: 0
+ 5: OsIntLock:2860
+  4: 286
+  5: 286
+  6: 286
+ 10: OsIntRestore:42
+  4: 14
+ 17: OsIntRestore:816
+  4: 272
+ 21: OsIntRestore:0
+  4: 0
+FESS_NODEMEM_Alloc:8096:176
+ 1: 176
+ 5: 176
+ 6: 176
+ 7: 0
+ 11: 176
+ 12: 176
+ 13: 176
+UPHY_OM_GetHidsState:7770:518
+ 2: 518 mdrv_diag_get_conn_state:518
+FESS_MRM_CheckOutTxResume:7630:35
+ 1: 35
+ 3: 35
+ 4: 35
+ 6: 35
+ 11: 35
+ 14: 35
+ 15: 0
+ 17: 0
+ 19: 0
+ 22: 35
+ 25: 35
+ 26: 35
+ 27: 35
+ 28: 0
+ 29: 0
+ 31: 0
+ 32: 0
+ 37: 35
+ 38: 35
+ 41: 35 FESS_MRM_AllocRugLog:35
+ 43: 35
+ 3: FESS_BITMAPBUFF_CalcBuffHeader:805
+  2: 35
+ 9: UPHY_CORE_GetMcCount:105
+  4: 35
+ 10: FESS_TXRTS_GetVLastApplyTime:105
+  2: 35
+ 12: FESS_TXRTS_SetVLastApplyTime:245
+  2: 35
+ 34: FESS_MRM_SetTxChanState:280
+  3: 35 FESS_TxAntMap_GetActualMap:35
+ 37: FESS_RTS_GetRatMode:140
+  2: 35
+UPHY_OS_MsgFree:7564:280
+ 2: 280
+ 3: 280
+ 5: 280 UPHY_OS_IsMemFromHostPool:280
+ 7: 276 UPHY_OS_HostMemFree:276
+ 10: 4 mdrv_msg_free:4
+FESS_RXRESUME_ExecuteBbdev:7455:15
+ 1: 15
+ 2: 15
+ 4: 15
+ 8: 15
+ 9: 15 FESS_MRM_IsIfOperate:15
+ 10: 15
+ 15: 0
+ 18: 15
+ 8: FESS_RXRTS_UpdateBbAntMapInSwitch:780
+  2: FESS_RxRtsChan_UpdateBbAntMapInSwitch:735
+   3: 15
+   4: 15
+   7: 15
+  3: FESS_RTS_GetRatMode:45
+   2: 15
+  3: FESS_RXRTS_GetSysState:0
+   2: 0
+ 10: FESS_RXBBDEV_ProcChanResume:5100
+  2: 15
+  5: 15
+  8: 15
+  10: 0
+  13: 15 FESS_DVFS_BbaAvsVoltageVote:15
+  17: 15 FESS_MNTN_RptRxTimingRunLog:15
+  3: FESS_RTS_GetRatMode:15
+   2: 15
+  8: FESS_BBDEV_ProcFeicRxResume:60
+   4: 15
+   8: 0
+   12: 0
+   18: 0
+   8: FESS_RTS_GetBand:0
+    2: 0
+   17: FESS_BBDEV_ConfigContiVld:0
+    2: 0
+    4: 0
+    2: FESS_BBDEV_GetFeicWorking:0
+     2: 0
+    4: FESS_RXRTS_SetVContiModeTimeMod64Mc:0
+     2: 0
+  10: FESS_RXBBDEV_GetChanOpenTiming:330
+   3: FESS_RXBBDEV_TimingCalcRxDfeTime:90
+    3: FESS_RXRTS_GetRficRxDelayTime:90
+     2: 15
+   12: FESS_RTS_GetTimingNvDesc:150
+    2: 15
+   12: FESS_STATICNV_GetRxSerdesDelay:90
+    3: 15
+  13: FESS_RTS_GetModemId:150
+   2: 15
+  15: FESS_RXBBDEV_ProcDfeChanResume:3900
+   3: 15
+   9: 15
+   12: 15 FESS_RXBBDEV_GetEnableChanPara:15
+   13: 15 FESS_RXBBDRV_CfgDfeChanEnable:15
+   16: 15 FESS_SEQ_EventBlockCfg:15
+   10: FESS_BBDEV_BeginEvent:420
+    4: 15
+    5: 15
+    6: 15
+    7: 15
+   15: FESS_BBDEV_EndEvent:105
+    2: 15
+    4: 0
+   18: FESS_MNTN_RptRxBbChanRunLog:1665
+    2: 15
+    2: FESS_MNTN_IsModuleRptEn:195
+     2: 15
+    5: FESS_RXRTS_GetAllBbChan:1380
+     2: FESS_RxRtsChan_GetBbChanByAntAbility:1380
+      4: 60
+      5: 60
+      7: 15
+   19: FESS_MNTN_RptRxResumeBbdevRunLog:420
+    3: 15
+    7: 15
+    8: 15
+    3: FESS_MNTN_IsModuleRptEn:150
+     2: 15
+   19: FESS_RXRTS_GetVContiMode:150
+    2: 15
+ 14: FESS_RXRTS_SetAipIndex:465
+  5: 15
+  6: 0
+  7: 0
+  9: FESS_RXRTS_SetVAipStatus:210
+   2: 15
+ 15: FESS_RTS_GetAntAbility:0
+  2: 0
+FESS_MC_IsrEntry:7425:132
+ 1: 132
+ 7: 132
+ 8: 132 FESS_FWK_TimerCallback:132
+ 13: 133
+ 17: 0
+ 19: 0
+ 23: 0
+ 25: 0
+ 28: 0
+ 32: 0
+ 33: 0
+ 39: 133
+ 9: FESS_MC_StopFwkTimer:2128
+  3: UPHY_WriteRegV:2128
+   3: 133
+   5: 133
+ 26: FESS_MC_FreeTimer:0
+  4: 0
+  12: 0
+  4: UPHY_WriteRegV:0
+   3: 0
+   5: 0
+  7: UPHY_CORE_GetMcCount:0
+   4: 0
+ 28: UPHY_CORE_GetMcCount:0
+  4: 0
+FESS_RxRtsChan_CalcChanMaps:7410:30
+ 2: 30
+ 4: 120
+ 5: 120
+ 6: 120
+ 7: 120
+ 14: 30
+ 15: 30
+FESS_MRM_ProcMsg:7388:141
+ 5: 141
+ 6: 141
+ 7: 172
+ 8: 141 FESS_MRM_ProcMultiActionsMsg:110 FESS_MRM_ProcTrxcMsg:31
+ 13: 0
+ 15: 141
+FESS_TXRFDEV_ProcTxStandby:7315:35
+ 2: 35
+ 9: 35
+ 12: 35
+ 13: 35
+ 20: 35
+ 25: 35
+ 26: 35
+ 27: 35
+ 28: 35
+ 29: 70
+ 30: 70
+ 32: 35 FESS_RFDEV_ProcTxPathInfo:35
+ 35: 35
+ 37: 35
+ 39: 35
+ 40: 35
+ 41: 35
+ 43: 35
+ 45: 35 FESS_RFDEV_SendRficMsg:35
+ 47: 35
+ 10: FESS_RTS_GetRficId:35
+  2: 35 FESS_RFDEV_AllocTimeBasedMbxBuff:35
+ 40: FESS_TXRTS_IsRaiseMsgPriority:35
+  2: 35 FESS_RFDEV_ProcMbxPathInRfic:35
+ 44: FESS_RTS_GetThreadId:210
+  2: 35
+FESS_MBX_RcvMsg:7302:32
+ 1: 32
+ 7: 32
+ 13: 32
+ 15: 32
+ 21: 32
+ 27: 32 FESS_MRM_ProcRfdspIsrMsg:32
+ 29: 32
+ 10: FESS_MBX_UpdateRcvWptrDrv:640
+  5: 32
+  8: 32
+  5: UPHY_ReadRegV:192
+   3: 32
+   5: 32
+ 19: FESS_MBX_GetMsgLenByteDrv:1312
+  17: 32
+  24: 32
+  27: 32
+  28: 32
+  37: 32
+  48: 0
+  50: 0
+  51: 0
+  57: 0
+  60: 0
+  50: UPHY_ReadRegV:0
+   3: 0
+   5: 0
+  51: UPHY_ReadRegV:0
+   3: 0
+   5: 0
+  58: UPHY_WriteRegV:0
+   3: 0
+   5: 0
+ 25: FESS_MBX_RcvMsgDrv:2246
+  8: 32
+  9: 32
+  13: 32
+  18: 30 memcpy_s:30
+  19: 30
+  26: 2
+  36: 2 memcpy_s:2
+  39: 2
+  40: 2
+  47: 32
+  50: 32
+  55: 32
+  55: UPHY_WriteRegV:224
+   3: 32
+   5: 32
+odt_hal_set_src_write_ptr:7300:365
+ 2: 365 write_sync:365
+ 2: writel:1095
+  3: writel_relaxed:1095
+   2: 365
+FESS_RXSTANDBY_Schedule:7215:15
+ 1: 15
+ 2: 15
+ 3: 15
+ 5: 15 FESS_TRXBANDRES_InitBandReq:15
+ 9: 15 FESS_MRM_ProcRxStandbySolution:15
+ 10: 15
+ 11: 15
+ 5: FESS_BITMAPBUFF_CalcBuffHeader:540
+  2: 15
+ 7: FESS_RXSTANDBY_ExecuteRfdev:315
+  3: 15
+  6: 15 FESS_RFDEV_ProcRxStandby:15
+  3: FESS_RXRTS_ClearAipIndex:105
+   5: 15
+   6: 0
+   7: 0
+   4: FESS_RXRTS_GetVAipStatus:15
+    2: 15
+   9: FESS_RXRTS_SetVAipStatus:45
+    2: 15
+ 8: FESS_RXSTANDBY_ExecuteBbdev:4935
+  11: 15 FESS_MRM_IsIfOperate:15
+  11: FESS_RXRTS_GetVAipStatus:45
+   2: 15
+  15: FESS_RXRTS_UpdateBbAntMapInSwitch:735
+   2: FESS_RxRtsChan_UpdateBbAntMapInSwitch:690
+    3: 15
+    4: 15
+    7: 0
+   3: FESS_RTS_GetRatMode:45
+    2: 15
+   3: FESS_RXRTS_GetSysState:0
+    2: 0
+  17: FESS_RXBBDEV_ProcChanStandby:4005
+   6: 15
+   9: 15 FESS_BBDEV_ProcFeicRxStandby:15
+   15: 15 FESS_BBDEV_LaunchRxStreamDma:15
+   19: 15 FESS_MNTN_RptRxTimingRunLog:15
+   6: FESS_RXBBDEV_GetStopTiming:615
+    7: 15
+    3: FESS_RXBBDEV_TimingCalcRxDfeTime:555
+     9: 15
+     13: 15
+     17: 15
+     3: FESS_RXRTS_GetRficRxDelayTime:90
+      2: 15
+     9: FESS_RTS_GetTimingNvDesc:90
+      2: 15
+     9: FESS_STATICNV_GetBbicRxDfeDelay:60
+      3: 15
+   11: FESS_RXBBDEV_ProcDfeChanStandby:2955
+    6: 15
+    16: 15 FESS_SEQ_EventBlockCfg:15
+    6: FESS_RXRTS_GetDfeSeqId:105
+     2: 15
+    8: FESS_BBDEV_BeginEvent:150
+     5: 15
+     7: 15
+    10: FESS_RXBBDRV_CfgChanStandby:810
+     5: 0
+     2: FESS_RTS_GetRatMode:90
+      2: 15
+     3: FESS_RXBBDRV_CfgNoGsmChanStandby:720
+      3: 15
+      8: 15 FESS_RXBBDRV_PackNoGsmDfeChanStandbyCmd:15
+      10: 15
+      11: 15
+      6: FESS_RXRTS_CalcChanEnCfgBitmap:15
+       3: 15 FESS_RxRtsChan_CalcChanMaps:15
+    13: FESS_BBDEV_EndEvent:345
+     2: 15
+     3: 15
+     4: 0
+    18: FESS_MNTN_RptRxStandbyBbdevRunLog:525
+     3: 15
+     7: 15
+     8: 15
+     3: FESS_MNTN_IsModuleRptEn:135
+      2: 15
+ 9: FESS_MRM_ProcFeatureSolution:195
+  4: 15
+  5: 15
+ 9: FESS_RTS_GetBand:195
+  2: 15
+FESS_BBDEV_RptCrossUdhRunLog:7000:100
+ 4: 100
+ 5: 600
+ 8: 100
+ 9: 100
+ 10: 100
+ 11: 100
+ 12: 100
+FESS_LIST_RemoveNode:6848:178
+ 5: 218
+ 6: 0
+ 12: 218
+ 13: 218
+ 23: 178
+ 24: 178
+FESS_MRM_CheckOutTxStandby:6615:35
+ 1: 35
+ 2: 35
+ 3: 35
+ 4: 35
+ 6: 35
+ 10: 35
+ 13: 35
+ 14: 0
+ 16: 0
+ 18: 0
+ 22: 35
+ 23: 0
+ 24: 0
+ 28: 35 FESS_TxAntMap_GetActualMap:35
+ 31: 35 FESS_MRM_AllocRugLog:35
+ 33: 35
+ 4: FESS_BITMAPBUFF_CalcBuffHeader:315
+  2: 35
+ 8: UPHY_CORE_GetMcCount:105
+  4: 35
+ 9: FESS_TXRTS_GetVLastApplyTime:105
+  2: 35
+ 11: FESS_TXRTS_SetVLastApplyTime:245
+  2: 35
+ 28: FESS_MRM_ClearTxChanState:2450
+  4: 35
+  13: 35
+  13: FESS_UldsdsStatusService_IsStatusClose:665
+   2: 35
+  14: FESS_TXRTS_SetVUlDsdsStandbyCloseChan:245
+   2: 35
+FESS_RFDEV_ProcRxPathInfo:6552:63
+ 6: 63
+ 7: 0
+ 9: 0
+ 10: 0
+ 16: 63
+ 17: 63
+ 18: 126
+ 24: 63
+ 6: FESS_RTS_GetBand:441
+  2: 63
+ 7: FESS_BITMAPBUFF_GetBuffIndex:0
+  2: 0
+ 9: FESS_RTS_GetAntAbility:0
+  2: 0
+ 12: FESS_RXRTS_GetVAipStatus:0
+  2: 0
+ 14: FESS_RXRTS_GetSegmentIdNum:819
+  2: 63
+ 19: FESS_RXRTS_GetSegmentId:441
+  2: 126
+UPHY_OS_HostMem_GetPoolID:6492:164
+ 1: 164
+ 3: 128
+ 4: 292
+ 9: 164
+FESS_FWK_AddSchedJob:6416:230
+ 2: 230
+ 5: 230 FESS_DLL_InsertSorted:230
+ 6: 230
+ 2: FESS_FWK_AddOsMemVote:2966
+  2: 230
+  5: 228
+FESS_OSA_SendFixedMsgWithOsMsg:6397:164
+ 1: 164
+ 3: 164 UPHY_OS_GetTaskIdByMid:164
+ 4: 164
+ 6: 164
+ 7: 165 UPHY_OS_FixedMsgOrderSend:164
+FESS_COMM_AlgCalculatesRfLinearComp:6370:130
+ 9: 130
+ 13: 130
+ 22: 130
+ 31: 130
+FESS_MRM_CfgServiceTxCrossUd:6360:20
+ 1: 20
+ 2: 20
+ 10: 20 FESS_BBDEV_AllocCrossUdMntn:20
+ 11: 40
+ 12: 40
+ 16: 40 FESS_MRM_GetTxCrossUdCtrlInfo:40
+ 20: 40
+ 24: 40
+ 26: 40 FESS_BBDEV_CfgCrossUd:40
+ 28: 40 FESS_BBDEV_RptCrossUdhRunLog:40
+ 7: FESS_MRM_SetCrossUdPara:1200
+  4: 20
+ 11: FESS_RTS_GetAntAbility:260
+  2: 40
+ 16: FESS_RTS_GetNvDesc:240
+  2: 40
+ 16: FESS_TXNV_GetCrossUDEBIdxAddr:120
+  2: 40
+ 20: FESS_RTS_GetNvDesc:280
+  2: 40
+ 20: FESS_TXNV_GetAntSwitchTime:520
+  2: 40
+ 23: FESS_TXRTS_GetVCrossUdCfgBit:280
+  2: 40
+FESS_RFLOAD_RunModeIsSig:6345:141
+ 4: 141
+ 5: 141
+ 11: 141
+ 4: FESS_FEPNV_GetRficNum:1692
+  3: 141
+mdrv_diag_get_conn_state:6216:518
+ 1: 518
+ 2: 518 is_bootlog_open:518
+ 6: 518 is_tool_connected:518
+ 11: 518
+can_dss_sleep:6174:63
+ 1: 63
+ 5: 63
+ 6: 63
+ 9: 63 wake_lock_count:63
+ 10: 63
+ 11: 0
+ 16: 0
+ 17: 0
+ 21: 0
+ 23: 0
+ 24: 0
+ 25: 63
+ 30: 63
+ 3: _get_dss_id:756
+  2: 63 osl_get_logic_core_id:63
+  3: 63 osl_get_dss_id:63
+ 15: can_dss_sleep_as_last:0
+  4: 0
+  5: 0
+  3: is_lvl0_dss_last_suspend:0
+   3: 0
+UPHY_TRACE_GetCommSchedLockSwitch:6080:608
+ 2: 608
+FESS_TXRESUME_IsNeedHandle:6060:105
+ 2: 105
+ 4: 105
+ 6: 105
+ 8: 150
+ 9: 150 FESS_TXRESUME_IsNonMaintain:100 FESS_TXRESUME_ContainDigital:50
+ 13: 90
+FESS_MRM_CreateJobToList:6054:176
+ 4: 176
+ 6: 46 FESS_FWK_AddSchedJob:46
+ 10: 130 FESS_FWK_AddMsgJob:130
+ 2: UPHY_CORE_GetMcCount:526
+  4: 176
+ 5: FESS_FWK_IsEarlierMsgJobExist:1564
+  6: 46
+  9: 46
+  10: 0
+  5: FESS_DLL_GetLast:736
+   2: 46
+FESS_DVFS_BbaAvsVoltageVote:6007:67
+ 2: 67
+ 9: 67
+ 11: 67 FESS_CLK_SelBbaClk:67
+ 19: 67 FESS_DVFS_AdjustBbaVoltage:67
+ 21: 67
+ 5: FESS_DVFS_BbaAvsSetVoteAction:201
+  3: 67
+ 6: FESS_DVFS_BbaGetDvfsVoltage:1541
+  2: 67
+ 9: FESS_DVFS_BbaAvsIsFeatureOn:201
+  2: 67
+ 10: FESS_DVFS_BbaAvsJudgeVoltage:2799
+  5: 67
+  10: 40
+  12: 87
+  5: FESS_DVFS_BbaAvsIsScenarioEnable:268
+   2: 67
+  11: FESS_DVFS_BbaAvsGetVoteAction:261
+   3: 87
+ 13: FESS_DVFS_BbaAvsGetBbaAvsVoltage:0
+  2: 0
+UPHY_OS_EventRecv:6006:273
+ 7: 273 mdrv_event_recv:273
+ 8: 273
+ 13: 273
+ 18: 273
+OsSlubMemAllocObj:5920:20
+ 1: 20
+ 9: 20
+ 11: 20
+ 24: 20
+ 25: 20
+ 27: 0
+ 36: 20
+ 37: 20
+ 38: 20
+ 39: 20
+ 40: 1
+ 41: 1
+ 47: 20
+ 49: 20
+ 50: 20
+ 56: 20
+ 5: OsGetHwThreadId:200
+  3: 20
+ 14: OsSlubGet:277
+  4: 20
+  6: 20
+  12: 1
+  7: OsSlubPartialAlloc:122
+   8: 1
+   9: 1
+   10: 1
+   11: 1
+   12: 1
+   14: 1
+   4: OsSplLock:23
+    4: 1
+    5: 1
+   6: OsSlubLocalGet:51
+    4: 1
+    4: ListEmpty:6
+     2: 1
+    5: OsSlubLocalGetFromFreeList:35
+     4: 1
+     5: 1
+     4: ListEmpty:6
+      2: 1
+     7: ListDelete:13
+      3: ListDelAndInit:13
+       2: 1
+       2: ListLowLevelDelete:7
+        2: 1
+        3: 1
+    8: ListDelete:0
+     3: ListDelAndInit:0
+      2: 0
+      2: ListLowLevelDelete:0
+       2: 0
+       3: 0
+   17: OsSplUnlock:12
+    3: 1
+    5: 1
+  9: OsSlubAlloc:0
+   5: OsSlubLocalMemAlloc:0
+    2: 0
+   9: OsSlubLocalMemInit:0
+    2: 0
+    3: 0
+    4: 0
+    5: 0
+    6: 0
+    7: 0
+    9: 0
+   10: OsSlubLocalDbgListAdd:0
+    2: OsSplLock:0
+     4: 0
+     5: 0
+    3: ListTailAdd:0
+     2: 0
+     2: ListLowLevelAdd:0
+      4: 0
+      5: 0
+      6: 0
+    4: OsSplUnlock:0
+     3: 0
+     5: 0
+ 48: OsMemMagicWordEncode:700
+  2: 20
+  2: OsGetRndU16:500
+   2: OsGetRndU32:500
+    2: 20
+ 49: OsMemTailMagicWordSet:180
+  2: 20
+ 52: OsMemCfgHeadAddr:140
+  4: 20
+ 53: OsSlubDbgInfoSet:1348
+  2: OsMemDbgInfoSet:1348
+   2: 20
+   3: 20
+   2: OsGetCurPid:1268
+    2: 20
+    4: 20
+    2: OsGetHwThreadId:580
+     3: 20
+    5: OsGetHwThreadId:0
+     3: 0
+    10: OsGetHwThreadId:120
+     3: 12
+FESS_RXTASK_RxMsgJob:5828:62
+ 2: 62
+ 6: 62
+ 7: 62 FESS_CANCEL_GetOpId:62
+ 10: 62 FESS_MRM_GetRxJobCtrlTime:62
+ 12: 62 FESS_CANCEL_CreateOpIdCtx:62
+ 14: 62
+OsCrRun:5706:0
+ 1: 0
+ 10: 0
+ 11: 0
+ 12: 0
+ 17: 30
+ 20: 30
+ 21: 24
+ 22: 24
+ 23: 0
+ 24: 0
+ 25: 24 OsCrgIdleSuspend:24
+ 29: 30
+ 30: 30
+ 35: 30
+ 36: 30
+ 42: 30
+ 43: 30
+ 45: 0
+ 46: 0
+ 50: 30 UPHY_SCHED_MsgCommCB:4 UPHY_SCHED_FixMsgCommCB:7 UPHY_SCHED_EvtCommCB:14
+ 57: 0
+ 8: SRE_IntLock:0
+  2: OsIntLock:0
+   4: 0
+   5: 0
+   6: 0
+ 10: OsGetHwThreadId:0
+  3: 0
+ 19: OsFastFindFirstBit:324
+  2: 30
+  2: OsGetRMB:162
+   3: 30
+ 23: OsCrSwitchHookCaller:264
+  2: 24
+  4: 24
+ 45: OsCrSwitchHookCaller:264
+  2: 24
+  4: 24
+ 49: SRE_IntRestore:90
+  2: OsIntRestore:90
+   4: 30
+ 51: SRE_IntLock:270
+  2: OsIntLock:270
+   4: 30
+   5: 30
+   6: 30
+ 53: OsCrOperator:1704
+  3: 30
+  5: 30
+  10: 24 OsDequeueCr:24
+  15: 0
+  16: 0
+  18: 0
+  19: 0
+  20: 0
+  24: 0
+  21: ListTailAdd:0
+   2: 0
+   2: ListLowLevelAdd:0
+    4: 0
+    5: 0
+    6: 0
+ 56: SRE_IntRestore:0
+  2: OsIntRestore:0
+   4: 0
+FESS_MRM_GetRxJobCtrlTime:5642:62
+ 4: 62
+ 7: 62
+ 11: 62
+ 12: 0
+ 13: 0
+ 18: 62
+ 19: 62
+ 21: 62
+ 23: 62
+ 24: 62
+ 13: UPHY_CORE_GetMcCount:0
+  4: 0
+FESS_TXBBDRV_CfgChanEnable:5540:20
+ 2: 20
+ 6: 40
+ 7: 40
+ 10: 40
+ 14: 40
+ 18: 40
+ 25: 40
+ 30: 20
+ 18: FESS_TXRTS_GetTsMode:240
+  2: 40
+FESS_RFDEV_ProcMbxPathInRfic:5537:113
+ 17: 113
+ 18: 113
+ 21: 113
+ 22: 113
+ 25: 113
+UPHY_OS_FiberGetFixMsg:5480:274
+ 2: 274
+ 3: 274
+ 4: 274
+ 6: 274
+OsCrIpcCallSend:5456:44
+ 2: 44
+ 8: 44
+ 12: 44
+ 13: 44
+ 14: 44
+ 15: 44
+ 16: 44
+ 17: 44
+ 18: 44
+ 29: 44 OsCrSendIpc:44
+ 6: OsSplLock:836
+  4: 44
+  5: 44
+ 8: ListEmpty:440
+  2: 44
+ 10: ListDelete:1144
+  3: ListDelAndInit:1144
+   2: 44
+   3: 44
+   2: ListLowLevelDelete:264
+    2: 44
+    3: 44
+ 20: ListTailAdd:704
+  2: 44
+  2: ListLowLevelAdd:440
+   4: 44
+   5: 44
+   6: 44
+ 22: OsSplUnlock:572
+  3: 44
+  5: 44
+ 25: OsSplUnlock:0
+  3: 0
+  5: 0
+UPHY_TRACE_GetTraceRecSwitch:5357:487
+ 2: 487
+OsNextReadyRtTaskSingle:5280:528
+ 6: 528
+ 7: 528
+FESS_MRM_CheckInTxApc:5214:33
+ 1: 33
+ 10: 33 FESS_MRM_JudgeCheckInTime:33
+ 12: 33
+ 16: 33
+ 21: 33
+ 25: 33 FESS_MRM_CheckUldsdsPara:33
+ 26: 33
+ 36: 33
+ 43: 33
+ 7: UPHY_CORE_GetMcCount:99
+  4: 33
+ 16: FESS_MRM_SetCheckInPara:1386
+  3: 33
+  4: 33
+  5: 33
+  6: 33
+  7: 33
+ 20: FESS_MRM_CheckTxCommPara:1188
+  11: 33
+  13: 0
+  14: 0
+  18: 33 FESS_MRM_CheckTxParaNr:33
+ 31: FESS_MRM_IsApcIdValid:660
+  3: 33
+  4: 33
+  5: 0
+ 35: FESS_MRM_CheckApcAgcHighPriPara:132
+  8: 33
+  11: 0
+FESS_TXRFDEV_ProcTxResume:5100:20
+ 2: 20
+ 9: 20
+ 12: 20
+ 19: 20
+ 24: 20
+ 26: 20
+ 27: 20
+ 28: 20
+ 29: 20
+ 30: 20
+ 31: 20
+ 32: 20
+ 33: 40
+ 34: 40
+ 36: 20 FESS_RFDEV_ProcTxPathInfo:20
+ 38: 20
+ 40: 20
+ 42: 20
+ 43: 20
+ 44: 20
+ 46: 20
+ 47: 20
+ 48: 20 FESS_RFDEV_SendRficMsg:20
+ 50: 20
+ 10: FESS_RTS_GetRficId:20
+  2: 20 FESS_RFDEV_AllocTimeBasedMbxBuff:20
+ 25: FESS_RTS_GetBandwidth:120
+  2: 20
+ 31: FESS_TXRTS_IsHighSample:120
+  2: 20
+ 43: FESS_TXRTS_IsRaiseMsgPriority:20
+  2: 20 FESS_RFDEV_ProcMbxPathInRfic:20
+ 47: FESS_RTS_GetThreadId:140
+  2: 20
+OsDequeueTask:5092:268
+ 2: 268 OsDequeueTaskRtSingle:268
+ 3: 268
+FESS_BBDEV_RptRxRegisterInfo:5025:15
+ 1: 15
+ 6: 15
+ 10: 15 FESS_OM_AllocMsg:15
+ 17: 15
+ 18: 15
+ 19: 15
+ 20: 15
+ 30: 15
+ 6: FESS_MNTN_IsRunLogRptEn:135
+  2: 15
+ 11: FESS_RTS_GetModemId:90
+  2: 15
+ 17: FESS_RXRTS_GetBbPathNum:210
+  2: 15
+  3: 15 FESS_MRM_GetRptStreamNum:15
+ 18: UPHY_CORE_GetMcCount:45
+  4: 15
+ 25: FESS_RXBBDRV_RdMntn:2610
+  13: 30
+  14: 30
+  20: 30
+  27: 30
+  29: 30
+  23: UPHY_ReadRegV:600
+   3: 30
+   5: 30
+  26: UPHY_ReadRegV:270
+   3: 30
+   5: 30
+ 28: FESS_BBDEV_RptSdsRxRegisterInfo:1095
+  3: 30
+  4: 30 FESS_PCS_GetRxMntnRptInfo:30
+  5: 30
+  6: 30 FESS_PCS_GetRxMntnRptInfo:30
+  7: 30
+FESS_FWK_AddMsgJob:4890:182
+ 2: 182
+ 5: 182 FESS_DLL_InsertSorted:182
+ 6: 182
+ 2: FESS_FWK_AddOsMemVote:2342
+  2: 182
+  5: 180
+FESS_MRM_CheckInTxResume:4860:36
+ 1: 36
+ 10: 36 FESS_MRM_JudgeCheckInTime:36
+ 12: 36
+ 16: 36
+ 19: 36 FESS_MRM_CheckUldsdsPara:36
+ 20: 36
+ 31: 36
+ 7: UPHY_CORE_GetMcCount:108
+  4: 36
+ 16: FESS_MRM_SetCheckInPara:1224
+  3: 36
+  4: 36
+  5: 36
+  6: 36
+  7: 36
+ 24: FESS_MRM_CheckTxCommPara:1800
+  11: 36
+  13: 0
+  14: 0
+  18: 36 FESS_MRM_CheckTxParaNr:36
+  19: 36
+FESS_MRM_ScheduleRxTask:4851:63
+ 4: 63
+ 7: 63
+ 12: 63
+ 13: 0
+ 25: 0
+ 11: FESS_MRM_GetMrmJobCtx:1071
+  2: 63 FESS_MRM_MatchRxBandDesc:63
+ 16: FESS_MRM_CheckOutMrmJob:882
+  2: 63 FESS_MRM_CheckOutRxStandby:15 FESS_MRM_CheckOutRxAgc:33 FESS_MRM_CheckOutRxResume:15
+ 18: FESS_MRM_ProcRxTaskFail:0
+  4: 0
+  5: 0
+  6: 0
+  6: FESS_BITMAPBUFF_CalcBuffHeader:0
+   2: 0
+ 22: FESS_MRM_ExecuteTrxcTask:1323
+  3: 63
+  5: 63 FESS_RXAGC_Schedule:33 FESS_RXRESUME_Schedule:15 FESS_RXSTANDBY_Schedule:15
+  6: 63
+FESS_RFDVFS_TuneRficProfile:4805:31
+ 1: 31
+ 3: 31
+ 5: 0
+ 9: 0
+ 16: 31
+ 2: FESS_RFDVFS_IsHighVoltageGear:186
+  2: 31
+ 6: FESS_RFDVFS_TuneRficToLowVoltage:0
+  3: 0
+  6: 0
+ 12: FESS_RFDVFS_TuneRficToHighVoltage:0
+  2: 0
+ 15: FESS_RFDVFS_RptMntnInfo:2852
+  3: 31 FESS_RFPMU_GetAdjVoltageValue:31 FESS_OM_AllocMsg:31
+  5: 31
+  6: 31
+  10: 31
+  11: 31
+  12: 31
+  13: 31
+  14: 31
+  16: 31
+  18: 31 memcpy_s:31
+  19: 31 memcpy_s:31
+  10: UPHY_CORE_GetMcCount:93
+   4: 31
+UPHY_INST_GetThreadID:4734:263
+ 2: 263
+ 3: 263
+FESS_MRM_CheckInTxStandby:4725:35
+ 1: 35
+ 10: 35 FESS_MRM_JudgeCheckInTime:35
+ 12: 35
+ 19: 35 FESS_MRM_CheckUldsdsPara:35
+ 20: 35
+ 31: 35
+ 7: UPHY_CORE_GetMcCount:105
+  4: 35
+ 16: FESS_MRM_SetCheckInPara:1435
+  3: 35
+  4: 35
+  5: 35
+  6: 35
+ 24: FESS_MRM_CheckTxCommPara:1750
+  11: 35
+  13: 0
+  14: 0
+  18: 35 FESS_MRM_CheckTxParaNr:35
+  19: 35
+FESS_MRM_CheckInRxAgc:4608:32
+ 1: 32
+ 9: 32 FESS_MRM_JudgeCheckInTime:32
+ 11: 32
+ 25: 32
+ 26: 32 FESS_MRM_CheckRxParaNr:32
+ 27: 32
+ 38: 32
+ 7: UPHY_CORE_GetMcCount:128
+  4: 32
+ 15: FESS_MRM_SetCheckInPara:1536
+  3: 32
+  4: 32
+  5: 32
+  6: 32
+  7: 32
+  8: 32
+ 19: FESS_MRM_CheckRxCommPara:512
+  3: 32
+  6: 0
+  7: 0
+ 31: FESS_MRM_CheckApcAgcHighPriPara:544
+  8: 32
+  11: 0
+FESS_MRM_CheckTxParaNr:4576:104
+ 3: 104
+ 4: 104
+ 6: 0
+ 7: 0
+ 12: 104
+ 15: 104
+OsEnqueueTask:4556:268
+ 2: 268 OsEnqueueTaskRtSingle:268
+ 3: 268
+FESS_MRM_GetTxCrossUdCtrlInfo:4480:40
+ 5: 40
+ 7: 240
+ 9: 240
+ 13: 40
+ 14: 40
+ 18: 40
+ 19: 0
+ 22: 40
+FESS_TXBANDRES_MatchBandDesc:4407:113
+ 2: 113 FESS_RTS_MatchBandDesc:113
+ 10: 113
+ 2: FESS_UldsdsStatusService_IsStatusOpen:2034
+  2: 113
+ 9: FESS_BITMAPBUFF_GetBuffIndex:339
+  2: 113
+FESS_RFDEV_ProcRxPllStart:4305:15
+ 2: 15
+ 6: 15
+ 11: 15
+ 12: 15
+ 20: 15
+ 22: 15
+ 26: 15
+ 27: 15
+ 29: 15
+ 33: 15
+ 34: 15
+ 36: 15 memcpy_s:15
+ 40: 15
+ 44: 15
+ 46: 15
+ 47: 15
+ 48: 15
+ 50: 15
+ 51: 15
+ 53: 15 FESS_RFDEV_SendRficMsg:15
+ 56: 15
+ 9: FESS_RTS_GetRficId:15
+  2: 15 FESS_RFDEV_AllocTimeBasedMbxBuff:15
+ 18: FESS_RXRTS_GetSysState:90
+  2: 15
+ 19: FESS_RTS_GetRatMode:105
+  2: 15
+ 20: FESS_RTS_GetModemId:90
+  2: 15
+ 28: FESS_BITMAPBUFF_GetBuffIndex:90
+  2: 15
+ 31: FESS_RTS_GetBand:90
+  2: 15
+ 32: FESS_RTS_GetCenterFreqKhz:105
+  2: 15
+ 33: FESS_RTS_GetAntAbility:90
+  2: 15
+ 38: FESS_RXRTS_GetVAipStatus:150
+  2: 15
+ 41: FESS_RXRTS_GetSegmentId:105
+  2: 30
+ 48: FESS_RFDEV_ProcMbxPathInRfic:150
+  21: 15
+ 49: FESS_RTS_GetRatMode:150
+  2: 15
+ 52: FESS_RTS_GetThreadId:90
+  2: 15
+mdrv_event_vsend:4290:286
+ 1: 286
+ 3: 286
+ 6: 286 SRE_FusionKeventSend:286
+ 7: 286
+ 8: 0
+ 12: 286
+mdrv_event_send:4290:286
+ 1: 286
+ 3: 286
+ 6: 286 SRE_FusionKeventSend:286
+ 7: 286
+ 8: 0
+ 12: 286
+FESS_CANCEL_DeleteOpIdNode:4272:178
+ 2: 178
+ 3: 178
+ 5: 178
+ 8: 178 FESS_LIST_RemoveNode:178
+ 9: 178
+FESS_FWK_CompareJobs:4144:112
+ 2: 112
+UPHY_OS_HostMemFree:4140:276
+ 2: 276
+ 7: 276 UPHY_OS_MemFreeAux:276
+ 10: 276
+FESS_TXRESUME_ExecutePll:4065:35
+ 1: 35
+ 2: 35
+ 6: 15
+ 9: 15
+ 10: 15 FESS_TXRFDEV_ProcPllStart:15
+ 11: 35
+ 6: FESS_TXRTS_IncVPllSwitchCnt:135
+  2: 15
+ 9: FESS_RFDEV_TxResumeVoteDfe:2850
+  10: 15
+  12: 15
+  2: FESS_TXRTS_GetVPllSwitchCnt:150
+   2: 15
+  3: FESS_TXRTS_IsHighSample:90
+   2: 15
+  6: FESS_TXRFDEV_SetDfeVotePara:1875
+   10: 15
+   16: 15
+   17: 15
+   18: 15
+   20: 15
+   22: 15
+   24: 15
+   27: 15
+   3: FESS_RTS_GetRatMode:90
+    2: 15
+   6: FESS_RTS_GetBandwidth:90
+    2: 15
+   7: FESS_RTS_GetRficId:150
+    2: 15
+   8: FESS_BITMAPBUFF_GetBuffIndex:105
+    2: 15
+   11: FESS_RTS_GetAntAbility:45
+    2: 15
+   24: FESS_RTS_GetBand:105
+    2: 15
+   27: FESS_RTS_GetNvDesc:195
+    2: 15
+   27: FESS_TXNV_JudgeDpdLoadEnable:195
+    2: 15
+    6: 15
+  13: FESS_RFAGENT_VoteTxDfeOnLbm:120
+   2: 15 FESS_RFAGENT_VoteTxDfeOn6366:15
+mdrv_msg_vsend:4064:16
+ 1: 16
+ 4: 16
+ 9: 16
+ 16: 16 SRE_FusionKmsgSend:16
+ 18: 0
+ 21: 16
+ 23: 16 inter_dump_record:16
+ 24: 16 msg_diag_report:16
+ 26: 0
+ 27: 0
+ 29: 0
+ 30: 0
+ 32: 0
+ 34: 0
+ 39: 0
+ 41: 16
+ 45: 16
+ 10: msg_info_chkfill:1040
+  7: 16
+  11: 16
+  12: 16
+  13: 16
+  14: 16
+  16: 0
+  20: 16
+  21: 16
+  24: 16
+  25: 0
+  26: 0
+  28: 16 bsp_get_slice_value:16
+  30: 16
+  7: is_msg_cookie_vaild:208
+   2: 16
+ 14: msg_get_vaild_midctrl:992
+  6: 16
+  12: 0
+  17: 0
+  5: msg_get_private_midctrl:688
+   2: 16
+   7: 16
+   8: 0
+   13: 16
+   14: 0
+   17: 16
+   18: 16
+  11: msg_get_shared_midctrl:0
+   9: 0
+   12: 0
+   17: 0
+   18: 0
+   27: 0
+   258: 0
+  16: msg_get_shared_midctrl:0
+   9: 0
+   12: 0
+   17: 0
+   18: 0
+   27: 0
+   43: 0
+mdrv_msg_send:4064:16
+ 1: 16
+ 4: 16
+ 9: 16
+ 16: 16 SRE_FusionKmsgSend:16
+ 18: 0
+ 21: 16
+ 23: 16 inter_dump_record:16
+ 24: 16 msg_diag_report:16
+ 26: 0
+ 27: 0
+ 29: 0
+ 30: 0
+ 32: 0
+ 34: 0
+ 39: 0
+ 41: 16
+ 45: 16
+ 10: msg_info_chkfill:1040
+  7: 16
+  11: 16
+  12: 16
+  13: 16
+  14: 16
+  16: 0
+  20: 16
+  21: 16
+  24: 16
+  25: 0
+  26: 0
+  28: 16 bsp_get_slice_value:16
+  30: 16
+  7: is_msg_cookie_vaild:208
+   2: 16
+ 14: msg_get_vaild_midctrl:992
+  6: 16
+  12: 0
+  17: 0
+  5: msg_get_private_midctrl:688
+   2: 16
+   7: 16
+   8: 0
+   13: 16
+   14: 0
+   17: 16
+   18: 16
+  11: msg_get_shared_midctrl:0
+   9: 0
+   12: 0
+   17: 0
+   18: 0
+   27: 0
+   258: 0
+  16: msg_get_shared_midctrl:0
+   9: 0
+   12: 0
+   17: 0
+   18: 0
+   27: 0
+   43: 0
+FESS_TXRFDEV_ProcPllStart:4005:15
+ 2: 15
+ 8: 15
+ 11: 15
+ 12: 15
+ 19: 15
+ 20: 15
+ 22: 15
+ 25: 15
+ 30: 15
+ 31: 15
+ 33: 15 memcpy_s:15
+ 36: 30
+ 40: 15
+ 46: 15
+ 47: 15 FESS_RFDEV_ProcMbxPathInRfic:15
+ 48: 15
+ 49: 15
+ 51: 15
+ 53: 15 FESS_RFDEV_SendRficMsg:15
+ 56: 15
+ 9: FESS_RTS_GetRficId:15
+  2: 15 FESS_RFDEV_AllocTimeBasedMbxBuff:15
+ 21: FESS_RTS_GetRatMode:105
+  2: 15
+ 22: FESS_RTS_GetModemId:90
+  2: 15
+ 26: FESS_RTS_GetCenterFreqKhz:90
+  2: 15
+ 27: FESS_RTS_GetBand:105
+  2: 15
+ 28: FESS_RTS_GetBandwidth:90
+  2: 15
+ 29: FESS_RTS_GetAntAbility:105
+  2: 15
+ 31: FESS_BITMAPBUFF_GetBuffIndex:90
+  2: 15
+ 36: FESS_TXRTS_GetSegmentIdNum:150
+  2: 30
+ 37: FESS_TXRTS_GetSegmentId:300
+  2: 30
+ 40: FESS_RTS_GetRatMode:90
+  2: 15
+ 41: FESS_TXRTS_GetSegmentId:0
+  2: 0
+ 48: FESS_TXRTS_IsRaiseMsgPriority:90
+  2: 15
+ 52: FESS_RTS_GetThreadId:90
+  2: 15
+FESS_TXAPC_CalcDpdLmeLutMode:3960:66
+ 2: 66
+ 9: 66
+ 13: 66
+ 15: 0
+ 18: 0
+ 19: 66
+ 27: 66 FESS_TXAPC_CalcGainStatus:66
+ 31: 66
+ 29: FESS_TXAPC_GetDpdLmeLutIndex:264
+  5: 66
+  6: 66
+  9: 0
+  11: 0
+  16: 0
+  24: 0
+  25: 0
+  27: 0
+UPHY_OS_GetTaskIdByMid:3936:164
+ 2: 164
+ 3: 164
+FESS_MRM_ProcRfdspIsrMsg:3904:32
+ 1: 32
+ 4: 32
+ 7: 32
+ 8: 32
+ 10: 32
+ 11: 32
+ 14: 32 FESS_MNTN_RptRfdspMsgOpLog:32
+ 16: 32 FESS_MRM_RfdspRxWbRssiInd:32
+ 18: 0
+ 21: 0
+ 23: 0
+ 28: 0
+ 31: 32
+ 59: 0
+ 5: UPHY_CORE_GetMcCount:96
+  4: 32
+ 18: FESS_LATENCY_MonitorMsgLoadInfo:448
+  3: 32
+  4: 0
+  3: FESS_OM_GetLoadMonitorSwitch:416
+   2: 32
+ 18: UPHY_CORE_GetMcCount:96
+  4: 32
+ 23: FESS_OSA_AllocAndSendCalMsg:0
+  3: 0
+  6: 0
+  10: 0
+  11: 0
+FESS_MRM_ProcTxApcSolution:3894:33
+ 1: 33
+ 2: 33
+ 9: 33
+ 12: 33
+ 13: 66
+ 16: 33 FESS_MRM_InterfereRxBlanking:33
+ 21: 33
+ 22: 0
+ 25: 33
+ 10: FESS_TXRTS_GetTxSysState:99
+  2: 33
+ 19: FESS_MRM_ProcFeicCreatTxGapSolution:363
+  7: 33
+  11: 0
+  18: 0
+  21: 0
+  23: 0
+  24: 0
+  29: 0
+  31: 0
+  32: 0
+  34: 0
+  35: 0
+  36: 0
+  37: 0
+  38: 0
+  40: 0
+  42: 0
+  43: 0
+  46: 0
+  7: FESS_BBDEV_GetFeicCreateTxGapFlag:330
+   2: 33
+  11: FESS_BBDEV_GetFeicActiveTxBand:0
+   2: 0
+  15: FESS_BBDEV_SetFeicCreateTxGapFlag:0
+   2: 0
+  28: FESS_FWK_InitOsMemVote:0
+   5: 0
+  50: FESS_MRM_ProcFeicSupplyTxResume:0
+   6: 0
+   8: 0
+   9: 0
+   14: 0
+   16: 0
+   17: 0
+   18: 0
+   20: 0
+   21: 0
+   22: 0
+   24: 0
+   25: 0
+   27: 0
+   28: 0
+   31: 0
+   32: 0
+   13: FESS_FWK_InitOsMemVote:0
+    5: 0
+ 21: FESS_NVLIB_GetSarEn:297
+  3: 33
+ 22: FESS_TXRTS_GetUlCarrierType:0
+  2: 0
+FESS_MRM_CheckOutRxAgc:3894:33
+ 1: 33
+ 3: 33
+ 6: 33
+ 10: 33
+ 12: 33
+ 14: 33
+ 19: 33
+ 20: 0
+ 22: 0
+ 24: 0
+ 29: 33
+ 30: 33
+ 31: 0
+ 32: 0
+ 37: 33
+ 6: FESS_BITMAPBUFF_CalcBuffHeader:297
+  2: 33
+ 8: UPHY_CORE_GetMcCount:99
+  4: 33
+ 13: FESS_RXRTS_GetVLastApplyTime:297
+  2: 33
+ 16: FESS_RXRTS_SetVLastApplyTime:231
+  2: 33
+FESS_MRM_InterfereTxBlanking:3861:33
+ 2: 33
+ 3: 33
+ 12: 33
+ 13: 33
+ 17: 33
+ 18: 33
+ 23: 33 FESS_MRM_InterfereGetTxBlankingAction:33
+ 29: 0
+ 30: 0
+ 40: 0
+ 45: 33
+ 8: FESS_RTS_GetModemId:132
+  2: 33
+ 12: FESS_RTS_GetRatMode:99
+  2: 33
+ 17: FESS_RTS_GetRatMode:99
+  2: 33
+ 18: FESS_RTS_GetCenterFreqKhz:99
+  2: 33
+ 22: FESS_MRM_InterfereSetTxBlankingFlag:264
+  5: 33
+ 34: FESS_MRM_InterfereCfgTxBlankingStart:0
+  4: 0
+  6: 0
+  11: 0
+  12: 0
+  14: 0
+  16: 0
+ 36: FESS_MRM_InterfereCfgTxBlankingStop:0
+  6: 0
+  9: 0
+  14: 0
+  19: 0
+  22: 0
+  23: 0
+  25: 0
+  26: 0
+  27: 0
+  33: 0
+  34: 0
+  35: 0
+  38: 0
+ 41: FESS_MRM_ProcFeicTx:0
+  6: 0
+  7: 0
+  8: 0
+  11: 0
+  12: 0
+  13: 0
+  121: 0
+mdrv_diag_phy_print_report_hash:3696:88
+ 1: 88
+ 2: 88
+ 6: 88 is_bootlog_open:88
+ 7: 88 is_tool_connected:88
+ 12: 88 pack_phyhashlog:88
+ 13: 0
+FESS_MRM_TxStandbyInd:3614:37
+ 1: 37
+ 2: 37
+ 8: 37
+ 16: 37 FESS_BBDEV_RptTxRegisterInfo:37
+ 19: 37
+ 22: 16
+ 24: 16
+ 31: 37
+ 13: FESS_RTS_GetModemId:111
+  2: 37
+ 13: FESS_RTS_GetRatMode:37
+  2: 37 FESS_DVFS_BbaAvsVoltageVote:37
+ 17: FESS_TXRTS_SetVUlDsdsStandbyCloseChan:111
+  2: 37
+ 21: FESS_TXRTS_DecVPllSwitchCnt:208
+  2: 16
+ 25: FESS_RTS_GetRficId:112
+  2: 16
+ 26: FESS_RFAGENT_VoteTxDfeOffLbm:224
+  2: 16 FESS_RFAGENT_VoteTxDfeOff6366:16
+ 26: FESS_RTS_GetRficId:96
+  2: 16
+FESS_MRM_MatchTxBandDesc:3503:113
+ 2: 113
+ 3: 113 FESS_TXBANDRES_MatchBandDesc:113
+ 9: 113
+ 11: 113
+ 13: 0
+ 17: 113
+FESS_PCS_GetRxMntnRptInfo:3480:60
+ 1: 60
+ 3: 60
+ 4: 60
+ 5: 60
+ 9: 60
+ 6: UPHY_ReadRegV:960
+  3: 60
+  5: 60
+ 7: UPHY_ReadRegV:540
+  3: 60
+  5: 60
+OsHwiMcTrigger:3476:44
+ 1: 44
+ 6: 44
+ 7: 0
+ 14: 44
+ 3: OsIntLock:440
+  4: 44
+  5: 44
+  6: 44
+ 4: OsGetHwThreadId:704
+  3: 44
+  9: 44
+ 12: OsHwiTriggerByMask:1540
+  2: 44
+  4: 44
+  5: 44
+  7: 44
+ 13: OsIntRestore:132
+  4: 44
+UPHY_EICC_SendMsgToPde:3444:14
+ 5: 14
+ 15: 14
+ 16: 14
+ 17: 14
+ 18: 14
+ 22: 14
+ 24: 14
+ 25: 14
+ 26: 14
+ 34: 14
+ 36: 14 UPHY_EICC_WriteRingbuffer:14
+ 37: 14 UPHY_EICC_SingleWriteRingbuffer:14
+ 40: 14
+ 42: 14
+ 30: UPHY_EICC_WriteMsgHeadOpToIp:392
+  3: 14
+  5: 14
+  6: 14
+ 31: UPHY_EICC_WriteMsgHeadOm:1092
+  4: 14
+  5: 14
+  7: 14
+  8: 14
+  4: UPHY_CORE_GetMcCount:56
+   4: 14
+ 40: UPHY_WriteRegV:224
+  3: 14
+  5: 14
+FESS_MRM_IsUlDsdsValid:3400:170
+ 2: 170
+ 6: 0
+ 10: 0
+ 14: 0
+ 19: 170
+ 2: FESS_UldsdsStatusService_IsStatusClose:2040
+  2: 170
+FESS_MRM_MatchRxBandDesc:3276:63
+ 2: 63
+ 5: 63
+ 6: 63
+ 8: 63
+ 9: 63
+ 5: FESS_RXBANDRES_MatchBandDesc:1386
+  2: 63 FESS_RTS_MatchBandDesc:63
+  3: 63
+  4: 0
+  9: FESS_BITMAPBUFF_GetBuffIndex:63
+   2: 63
+FESS_TXBBDRV_GetGlbFifoLevel:3234:33
+ 17: 66
+ 18: 66
+ 19: 66
+ 29: 33
+OsEnqueueCr:3180:30
+ 2: 30
+ 5: 30
+ 8: 24
+ 12: 6
+ 6: OsOnlyEnqueueCr:1320
+  3: 24
+  6: 24
+  7: 24
+  8: 24
+  5: ListTailAdd:384
+   2: 24
+   2: ListLowLevelAdd:216
+    4: 24
+    5: 24
+    6: 24
+  6: OsCrSetPrioBit:384
+   2: 24
+   4: 24
+ 8: OsCrgIdleResume:1176
+  2: 24
+  3: 24 OsSpinLockTaskRq:24
+  5: 24
+  7: 24
+  10: 24 OsSpinUnlockTaskRq:24
+  8: OsTskReadyAddBGD:24
+   2: 24 OsTskReadyAdd:24
+  11: OsTskScheduleFast:24
+   2: 24 OsTskSchedule:24
+FESS_MRM_ProcTxStandbySolution:3110:35
+ 1: 35
+ 2: 35
+ 4: 35
+ 7: 35
+ 8: 0
+ 12: 35
+ 14: 15 FESS_MRM_RelTxCrossModemForBtListen:15
+ 18: 35
+ 21: 35 FESS_MRM_InterfereRxBlanking:35
+ 24: 0
+ 7: FESS_TXRTS_GetRxSysState:105
+  2: 35
+ 9: FESS_UldsdsSigService_UpdateAntPossession:0
+  3: FESS_Modem_UpdateAntPossession:0
+   2: 0
+ 19: FESS_TXRTS_GetTxSysState:140
+  2: 35
+FESS_MRM_CheckRxParaNr:3100:62
+ 4: 62
+ 5: 62
+ 7: 0
+ 8: 0
+ 13: 62
+ 16: 62
+ 19: 62
+UPHY_INT_GetIntTab:3094:182
+ 1: 182
+ 8: 182
+osl_get_logic_core_id:3087:63
+ 3: 63
+ 2: sysboot_get_phy_core_id:2835
+  4: 63
+OsTskDlyTargetCheck:3008:32
+ 1: 32
+ 8: 32
+ 20: 32
+ 5: OsSplLock:608
+  4: 32
+  5: 32
+ 18: OsSplUnlock:416
+  3: 32
+  5: 32
+OsSwtmrTargetCheck:3008:32
+ 1: 32
+ 8: 32
+ 19: 32
+ 5: OsSplLock:608
+  4: 32
+  5: 32
+ 17: OsSplUnlock:416
+  3: 32
+  5: 32
+FESS_CANCEL_GetOpId:2979:176
+ 3: 176
+ 4: 45
+ 8: 176
+FESS_OM_ProcMsgBuffList:2849:259
+ 2: 259 FESS_RINGBUFF_Free:259
+ 3: 259
+FESS_TXAPC_CalcGainStatus:2838:66
+ 7: 66
+ 13: 66
+ 15: 0
+ 16: 0
+ 25: 66
+ 27: 66
+ 28: 66
+ 37: 66
+ 41: 66
+FESS_RFAGENT_GetPdlongInfo:2838:66
+ 1: 66
+ 3: 66
+ 5: 66
+ 6: 66
+ 7: 66 FESS_RFAGENT_GetPdlongInfo6366:66
+ 8: 66
+OsTickCoreCheck:2752:32
+ 4: 32
+ 6: 32 OsTskDlyTargetCheck:32
+ 9: 32
+ 11: 32 OsSwtmrTargetCheck:32
+ 14: 32
+ 15: 32
+ 17: 32
+UL1M_SDRM_BakProcEvent:2608:14
+ 1: 14
+ 3: 2
+ 2: UL1M_SDRM_RecvPdeRptEvent:2376
+  2: 14 UL1M_SDRM_GetPdeBackGroundTaskInfo:14
+  3: 14
+  4: 14
+  7: 14
+  9: 14 UL1M_SDRM_GetCcTaskStatusBuf:14
+  10: 14
+  11: 14
+  14: 14
+  17: 14
+  20: 14
+  21: 0
+  22: 0
+  24: 0
+  25: 0
+  31: 14 NPHY_SDRA_SsbTfsPdeRsltRpt:2 NPHY_SDRA_TrsTfsPdeRsltRpt:8 NPHY_SDRA_SsbEmuPdeRsltRpt:4
+  33: 14
+  36: 12
+  38: 12 UL1M_SDRM_PopTaskQue:12
+  39: 12 UL1M_SDRM_SyncCmdQuePara:12
+  40: 12 UL1M_SDRM_ProcCmdQueTask:12
+FESS_RFDEV_ProcRxResume:2565:15
+ 2: 15
+ 6: 15
+ 11: 15
+ 19: 15
+ 23: 15
+ 24: 15
+ 25: 15
+ 27: 15 FESS_RFDEV_ProcRxPathInfo:15
+ 30: 15
+ 33: 15
+ 34: 15
+ 35: 15
+ 36: 15
+ 38: 15
+ 39: 15
+ 41: 15 FESS_RFDEV_SendRficMsg:15
+ 44: 15
+ 9: FESS_RTS_GetRficId:15
+  2: 15 FESS_RFDEV_AllocTimeBasedMbxBuff:15
+ 34: FESS_RFDEV_ProcMbxPathInRfic:180
+  21: 15
+ 39: FESS_RTS_GetThreadId:90
+  2: 15
+UPHY_EICC_CommIsr:2518:14
+ 1: 14
+ 11: 14
+ 12: 14
+ 13: 14
+ 15: 14
+ 16: 14
+ 18: 14 UPHY_EICC_ReadRingbuffer:14
+ 19: 14 UL1M_SDRM_MbxHeaderProc:14
+ 20: 0
+ 22: 14 UPHY_EICC_ReadRingbuffer:14
+ 24: 14
+ 26: 14
+ 28: 14 UL1M_SDRM_MbxTskProc:14
+ 29: 14
+ 32: 14
+ 10: UPHY_EICC_GetChnPipeDesByIntNum:294
+  3: 0
+  4: 14
+  8: 14
+ 26: UPHY_WriteRegV:126
+  3: 14
+  5: 14
+UPHY_SCHED_EvtCommCB:2492:14
+ 1: 14
+ 9: 14
+ 12: 14
+ 16: 0
+ 20: 14
+ 23: 0
+ 27: 14 UPHY_OS_EventRecv:14
+ 30: 14
+ 31: 0
+ 32: 0
+ 42: 14
+ 43: 0
+ 46: 14 UL1M_SDRM_BakProc:14
+ 52: 14
+ 53: 14
+ 54: 14
+ 61: 14
+ 2: UPHY_SCHED_IntLockContext:28
+  3: 14 UPHY_TRACE_GetCommSchedLockSwitch:14
+  4: UPHY_INT_IntLockContext:0
+   5: 0
+   6: 0
+   4: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+ 9: UPHY_CORE_GetMcCount:42
+  4: 14
+ 11: UPHY_OS_GetCRCfgTab:308
+  2: 14
+ 31: UPHY_SCHED_IfCrMsgSleep:0
+  2: 0
+ 33: UPHY_SCHED_RunLpcCallback:0
+  3: 0
+ 37: UPHY_SCHED_IntUnLockContext:0
+  2: 0
+  3: UPHY_INT_IntUnLockContext:0
+   3: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+ 42: UPHY_CORE_InstStore:728
+  3: 14
+  10: 14
+  7: UPHY_CORE_GetCtxType:224
+   2: 14
+  8: UPHY_CORE_GetContextID:42
+   2: 14
+  11: UPHY_CORE_InstSwitch:0
+   2: 0
+ 44: UPHY_CORE_GetMcCount:56
+  4: 14
+ 48: UPHY_CORE_GetMcCount:42
+  4: 14
+ 50: UPHY_CORE_InstRestore:14
+  2: 14
+  3: UPHY_CORE_InstSwitch:0
+   2: 0
+ 56: UPHY_SCHED_RecAndRptIsrInfo:126
+  2: 14 UPHY_TRACE_GetTraceRecSwitch:14
+  3: 14 UPHY_TRACE_RecAndRptIsrInfo:14
+ 59: UPHY_SCHED_IntUnLockContext:28
+  2: 14 UPHY_TRACE_GetCommSchedLockSwitch:14
+  3: UPHY_INT_IntUnLockContext:0
+   3: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+FESS_RFDEV_ProcRxStandby:2490:15
+ 2: 15
+ 6: 15
+ 11: 15
+ 12: 15
+ 18: 15
+ 22: 15
+ 23: 15
+ 24: 15
+ 25: 15
+ 26: 15 FESS_RFDEV_ProcRxPathInfo:15
+ 28: 15
+ 31: 15
+ 33: 15
+ 34: 15
+ 36: 15
+ 37: 15
+ 38: 15 FESS_RFDEV_SendRficMsg:15
+ 41: 15
+ 9: FESS_RTS_GetRficId:15
+  2: 15 FESS_RFDEV_AllocTimeBasedMbxBuff:15
+ 32: FESS_RFDEV_ProcMbxPathInRfic:195
+  21: 15
+ 37: FESS_RTS_GetThreadId:90
+  2: 15
+NPHY_SDRA_TrsTfsPdeCfg:2472:8
+ 1: 8
+ 7: 8 UPHY_EICC_GetExtraHeadSize:8
+ 8: 0
+ 9: 0
+ 10: 0
+ 11: 0
+ 17: 8
+ 20: 8 UL1M_SDRM_JuegeRingBufState:8
+ 24: 8
+ 26: 0
+ 31: 8 NPHY_SDRA_TfsCommCfg:8
+ 45: 8 UL1M_SDRM_CmdSendMsg:8
+ 47: 8
+ 50: 8
+ 39: NPHY_SDRA_PdeTfsCfgRearrange:1224
+  6: 32
+  7: 32
+  14: 8 memcpy_s:8
+  15: 8
+OsCrEventSend:2450:14
+ 9: 14
+ 14: 14
+ 19: 14
+ 20: 14
+ 21: 14
+ 22: 14
+ 29: 0
+ 34: 14
+ 21: OsGetHwThreadId:182
+  3: 14
+  9: 14
+ 23: OsCrSendParaCheck:630
+  6: 14
+  11: 14
+  15: 14
+  16: 14
+ 27: OsCrEventInnerSend:546
+  2: 14
+  4: 14
+  5: 14 OsEnqueueCr:14
+UPHY_OS_IntInstRestore:2379:183
+ 1: 183
+ 3: 183
+ 2: UPHY_CORE_InstRestore:1098
+  2: 183
+  3: UPHY_CORE_InstSwitch:0
+   2: 0
+FESS_FWK_TimerCallback:2377:132
+ 1: 132
+ 7: 132
+ 8: 133 FESS_OSA_AllocAndSendFixedMsgWithOsMsg:132
+OsGetStackPeak:2340:0
+ 2: 585
+FESS_OM_LogPara:2288:44
+ 1: 44
+ 12: 44
+ 17: 0
+ 20: 0
+ 21: 0
+ 22: 0
+ 23: 0
+ 24: 0
+ 25: 0
+ 28: 0
+ 30: 0
+ 32: 0
+ 34: 0
+ 38: 0
+ 39: 0
+ 40: 0
+ 41: 0
+ 42: 0
+ 49: 44
+ 11: FESS_OM_GetLogSwitch:1848
+  4: 44
+UL1M_SDRM_BakProc:2274:14
+ 3: 14 UPHY_OM_PrintfTraceHash:14
+ 5: 14
+ 7: 144
+ 8: 144
+ 9: 14 UL1M_SDRM_BakProcEvent:14
+ 12: 144
+ 16: 14
+FESS_MRM_CheckOutRxResume:2250:15
+ 1: 15
+ 7: 15
+ 11: 15
+ 12: 15
+ 14: 15
+ 18: 15
+ 19: 0
+ 21: 0
+ 23: 0
+ 26: 15
+ 29: 15
+ 30: 0
+ 31: 0
+ 32: 0
+ 34: 0
+ 35: 0
+ 36: 0
+ 42: 15 FESS_MRM_AllocRugLog:15
+ 44: 15
+ 7: FESS_BITMAPBUFF_CalcBuffHeader:285
+  2: 15
+ 9: UPHY_CORE_GetMcCount:45
+  4: 15
+ 13: FESS_RXRTS_GetVLastApplyTime:135
+  2: 15
+ 16: FESS_RXRTS_SetVLastApplyTime:15
+  2: 15
+ 39: FESS_MRM_ProcContiModeVldResumeApplyTime:60
+  4: 15
+  9: 0
+  11: 0
+  4: FESS_RXRTS_GetVContiMode:45
+   2: 15
+  10: FESS_RXRTS_GetVContiModeTimeMod64Mc:0
+   2: 0
+UL1M_RCM_DsdsInquiryTaskApply:2160:8
+ 3: 8
+ 10: 104
+ 12: 104 UL1M_RCM_GetRfChannelId:104
+ 17: 36
+ 24: 36
+ 26: 0
+ 27: 0
+ 32: 0
+ 41: 8
+FESS_TASK_CleanJob:2136:178
+ 1: 178
+ 2: 178 FESS_CANCEL_DeleteOpIdNode:178
+ 3: 178 FESS_NODEMEM_Free:178
+FESS_MRM_ProcTxResumeSolution:2090:35
+ 1: 35
+ 2: 35
+ 6: 35 FESS_TXRESUME_IsNeedHandle:35
+ 7: 35
+ 12: 20
+ 13: 0
+ 18: 20 FESS_MRM_CfgServiceTxCrossUd:20
+ 21: 20 FESS_MRM_MaskTxCrossModemForBtListen:20
+ 25: 35
+ 14: FESS_UldsdsSigService_NeedCfgAntInResume:0
+  3: FESS_Modem_NeedCfgAntInResume:0
+   2: 0
+ 15: FESS_UldsdsSigService_UpdateAntPossession:0
+  3: FESS_Modem_UpdateAntPossession:0
+   2: 0
+FESS_BBDRV_CalcTxDfeValidChanBitmap:2081:68
+ 6: 68
+ 7: 106
+ 10: 68
+FESS_RXBBDRV_CfgDfeChanEnable:2040:15
+ 1: 15
+ 2: 15
+ 7: 15
+ 9: 15
+ 10: 0
+ 12: 0
+ 19: 15
+ 32: 15
+ 33: 0
+ 39: 15
+ 41: 15
+ 44: 15
+ 46: 15
+ 51: 15
+ 53: 0
+ 59: 15
+ 7: FESS_RXRTS_CalcChanEnCfgBitmap:15
+  3: 15 FESS_RxRtsChan_CalcChanMaps:15
+ 9: FESS_RXRTS_GetVContiMode:45
+  2: 15
+NPHY_SDRA_TfsCommCfg:1984:8
+ 2: 8
+ 6: 8
+ 7: 8
+ 8: 8
+ 11: 8
+ 14: 8
+ 17: 8
+ 19: 8
+ 21: 8
+ 23: 8
+ 27: 8
+ 29: 8
+ 31: 8
+ 33: 8
+ 41: 8 NPHY_SDRA_TfsParaEstCfg:8
+ 44: 8
+ 45: 8
+ 49: 8
+FESS_RXBBDRV_PackNoGsmDfeChanStandbyCmd:1980:15
+ 3: 15
+ 8: 15
+ 10: 15
+ 14: 15
+ 15: 15
+ 17: 15
+ 20: 15
+ 21: 15
+ 23: 15
+ 28: 15
+ 31: 15
+ 20: FESS_RXRTS_GetVContiMode:45
+  2: 15
+FESS_MRM_CheckInRxResume:1980:15
+ 1: 15
+ 11: 15 FESS_MRM_JudgeCheckInTime:15
+ 13: 15
+ 17: 15
+ 27: 15
+ 28: 15 FESS_MRM_CheckRxParaNr:15
+ 29: 15
+ 34: 15
+ 7: UPHY_CORE_GetMcCount:45
+  4: 15
+ 17: FESS_MRM_SetCheckInPara:615
+  3: 15
+  4: 15
+  5: 15
+  6: 15
+  7: 15
+  8: 15
+ 21: FESS_MRM_CheckRxCommPara:240
+  3: 15
+  6: 0
+  7: 0
+FESS_MRM_TxCreateStandbyIndMsgJob:1960:35
+ 2: 35
+ 3: 35
+ 5: 35
+ 6: 35
+ 9: 35
+ 11: 35 FESS_FWK_AddMsgJob:35
+FESS_MRM_CheckInRxStandby:1950:15
+ 1: 15
+ 11: 15 FESS_MRM_JudgeCheckInTime:15
+ 13: 15
+ 27: 15
+ 28: 15 FESS_MRM_CheckRxParaNr:15
+ 29: 15
+ 34: 15
+ 7: UPHY_CORE_GetMcCount:45
+  4: 15
+ 17: FESS_MRM_SetCheckInPara:720
+  3: 15
+  4: 15
+  5: 15
+  6: 15
+  7: 15
+  8: 15
+ 21: FESS_MRM_CheckRxCommPara:240
+  3: 15
+  6: 0
+  7: 0
+OsDequeueCr:1944:24
+ 7: 24
+ 10: 24
+ 4: ListDelete:696
+  3: ListDelAndInit:696
+   2: 24
+   3: 24
+   2: ListLowLevelDelete:168
+    2: 24
+    3: 24
+ 7: ListEmpty:72
+  2: 24
+ 8: OsCrClearPrioBit:600
+  2: 24
+  4: 24
+FESS_MRM_CheckOutRxStandby:1935:15
+ 1: 15
+ 3: 15
+ 6: 15
+ 10: 15
+ 11: 15
+ 13: 15
+ 17: 15
+ 18: 0
+ 20: 0
+ 22: 0
+ 26: 15
+ 27: 0
+ 28: 0
+ 29: 0
+ 33: 15 FESS_MRM_AllocRugLog:15
+ 35: 15
+ 6: FESS_BITMAPBUFF_CalcBuffHeader:135
+  2: 15
+ 8: UPHY_CORE_GetMcCount:45
+  4: 15
+ 12: FESS_RXRTS_GetVLastApplyTime:135
+  2: 15
+ 15: FESS_RXRTS_SetVLastApplyTime:105
+  2: 15
+FESS_BBDEV_LaunchRxStreamDma:1935:15
+ 1: 15
+ 6: 15
+ 14: 30
+ 15: 30
+ 16: 30
+ 17: 15 UPHY_BBPDMA_RptChnTimeSetEnable:15
+ 18: 15
+ 23: 15
+ 4: FESS_RXRTS_GetBbPathNum:480
+  3: 15
+ 15: FESS_RXRTS_GetBbPath:90
+  2: 30
+FESS_TXRFDEV_ProcSrs:1860:10
+ 2: 10
+ 6: 10
+ 9: 10 FESS_RFDEV_AllocTimeBasedMbxBuff:10
+ 10: 10
+ 17: 10
+ 18: 10
+ 19: 10
+ 20: 10
+ 21: 10
+ 22: 10
+ 23: 10
+ 24: 10
+ 25: 10
+ 26: 10
+ 28: 10
+ 33: 10
+ 35: 10 FESS_RFDEV_ProcMbxPathInRfic:10
+ 37: 10
+ 38: 10
+ 39: 10
+ 41: 10 FESS_RFDEV_SendRficMsg:10
+ 44: 10
+ 28: FESS_RTS_GetAntAbility:10
+  2: 10 FESS_RFDEV_ProcTxPathInfo:10
+ 32: FESS_RTS_GetRficId:130
+  2: 10
+ 36: FESS_TXRTS_IsRaiseMsgPriority:60
+  2: 10
+UPHY_SCHED_FixMsgCommCB:1848:7
+ 1: 12
+ 10: 12
+ 13: 12
+ 16: 0
+ 27: 12 UPHY_OS_OrderQueueFixMsgRcv:12
+ 29: 12
+ 36: 12
+ 38: 12
+ 41: 12 UL1M_SDRM_WaitSdrTaskProc:12
+ 47: 12
+ 48: 12
+ 55: 12
+ 2: UPHY_SCHED_IntLockContext:24
+  3: 12 UPHY_TRACE_GetCommSchedLockSwitch:12
+  4: UPHY_INT_IntLockContext:0
+   5: 0
+   6: 0
+   4: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+ 10: UPHY_CORE_GetMcCount:48
+  4: 12
+ 12: UPHY_OS_GetCRCfgTab:108
+  2: 12
+ 13: UPHY_SCHED_IfCrMsgSleep:36
+  2: 12
+ 18: UPHY_SCHED_RunLpcCallback:0
+  3: 0
+ 21: UPHY_SCHED_IntUnLockContext:0
+  2: 0
+  3: UPHY_INT_IntUnLockContext:0
+   3: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+ 32: UPHY_SCHED_IntUnLockContext:0
+  2: 0
+  3: UPHY_INT_IntUnLockContext:0
+   3: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+ 36: UPHY_CORE_InstStore:624
+  3: 12
+  10: 12
+  7: UPHY_CORE_GetCtxType:192
+   2: 12
+  8: UPHY_CORE_GetContextID:36
+   2: 12
+  11: UPHY_CORE_InstSwitch:0
+   2: 0
+ 38: UPHY_CORE_GetMcCount:36
+  4: 12
+ 43: UPHY_CORE_GetMcCount:48
+  4: 12
+ 45: UPHY_CORE_InstRestore:12
+  2: 12
+  3: UPHY_CORE_InstSwitch:0
+   2: 0
+ 50: UPHY_SCHED_RecAndRptIsrInfo:96
+  2: 12 UPHY_TRACE_GetTraceRecSwitch:12
+  3: 12 UPHY_TRACE_RecAndRptIsrInfo:12
+ 53: UPHY_SCHED_IntUnLockContext:24
+  2: 12 UPHY_TRACE_GetCommSchedLockSwitch:12
+  3: UPHY_INT_IntUnLockContext:0
+   3: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+FESS_TXAPC_ProcRfdev:1848:33
+ 1: 33
+ 2: 33
+ 3: 33
+ 6: 33 FESS_RFGAINDEV_ProcNormalApcMsg:33
+ 9: 0
+ 2: FESS_RTS_GetRatMode:132
+  2: 33
+ 4: FESS_RFGAINDEV_ProcDigitalApcMsg:0
+  13: 0
+  15: 0
+  19: 0
+  20: 0
+  21: 0
+  28: 0
+  29: 0
+  30: 0
+  34: 0
+  40: 0
+  43: 0
+  44: 0
+  45: 0
+  46: 0
+  47: 0
+  48: 0
+  80: 0
+  14: FESS_TXAPC_GetApcIdCtx:0
+   5: 0
+   6: 0
+   7: 0
+  36: FESS_RFDEV_PowerNrLfCalcDigitalApc:0
+   9: 0
+   10: 0
+   15: 0
+   16: 0
+   17: 0
+   18: 0
+   19: 0
+   20: 0
+   25: FESS_RTS_GetNvDesc:0
+    2: 0
+   27: FESS_TXRTS_GetEtDpdSplitType:0
+    2: 0
+   28: FESS_TXRTS_GetBwRegion:0
+    2: 0
+   30: FESS_TXAPC_DigApcPowerCtrl:0
+    9: 0
+    12: 0
+    13: 0
+    16: 0
+    17: 0
+    20: 0
+    22: 0
+    23: 0
+    27: 0
+    30: 0
+    31: 0
+    3: FESS_TXNV_GetFeatureDefine:0
+     2: 0
+    21: FESS_TXAPC_SetDigMfmCalcPara:0
+     4: 0
+     5: 0
+     6: 0
+     8: 0
+     9: 0
+     10: 0
+     11: 0
+     12: 0
+     13: 0
+     14: 0
+     17: 0
+     18: 0
+     19: 0
+     22: 0
+     4: FESS_TXNV_GetSplineDpaCfg:0
+      2: 0
+     5: FESS_FEPNV_GetRficType:0
+      2: 0
+      5: 0
+     5: FESS_TXNV_GetRficIdx:0
+      2: 0
+    27: FESS_TXAPC_GetTxConfigMode:0
+     19: 0
+     20: 0
+     21: 0
+     22: 0
+     23: 0
+    30: FESS_TXAPC_GetDigPaGainDelta:0
+     5: 0
+     8: 0
+     9: 0
+     10: 0
+     11: 0
+     12: 0
+     16: 0
+     17: 0
+     18: 0
+     20: 0
+     24: 0
+     25: 0
+     26: 0
+     27: 0
+     31: 0
+     32: 0
+  44: FESS_TXRTS_IsRaiseMsgPriority:0
+   2: 0
+  47: FESS_RTS_GetThreadId:0
+   2: 0
+osl_get_dss_id:1827:63
+ 1: 63
+ 2: 63
+mdrv_order_queue_receive:1812:12
+ 2: 12
+ 12: 12
+ 17: 12 SRE_CurThreadType:12
+ 18: 12
+ 23: 12
+ 24: 12
+ 25: 12
+ 27: 12
+ 28: 12 OsCrOrderQueTryDequeHead:12
+ 31: 12
+ 32: 12 OsCrOrderQueTryActiveNode:12
+ 37: 12
+ 15: SRE_IntLock:108
+  2: OsIntLock:108
+   4: 12
+   5: 12
+   6: 12
+ 19: SRE_IntRestore:0
+  2: OsIntRestore:0
+   4: 0
+ 23: OsGetHwThreadId:120
+  3: 12
+ 35: SRE_IntRestore:48
+  2: OsIntRestore:48
+   4: 12
+SRE_OrderQueReceive:1812:12
+ 2: 12
+ 12: 12
+ 17: 12 SRE_CurThreadType:12
+ 18: 12
+ 23: 12
+ 24: 12
+ 25: 12
+ 27: 12
+ 28: 12 OsCrOrderQueTryDequeHead:12
+ 31: 12
+ 32: 12 OsCrOrderQueTryActiveNode:12
+ 37: 12
+ 15: SRE_IntLock:108
+  2: OsIntLock:108
+   4: 12
+   5: 12
+   6: 12
+ 19: SRE_IntRestore:0
+  2: OsIntRestore:0
+   4: 0
+ 23: OsGetHwThreadId:120
+  3: 12
+ 35: SRE_IntRestore:48
+  2: OsIntRestore:48
+   4: 12
+FESS_MRM_ProcTrxcMsg:1767:31
+ 1: 31
+ 4: 31
+ 7: 31
+ 9: 31 FESS_MRM_ProcTrxcSingleMsg:31
+ 11: 0
+ 12: 31
+ 5: UPHY_CORE_GetMcCount:93
+  4: 31
+ 11: FESS_LATENCY_MonitorMsgLoadInfo:589
+  3: 31
+  4: 0
+  3: FESS_OM_GetLoadMonitorSwitch:403
+   2: 31
+ 11: UPHY_CORE_GetMcCount:93
+  4: 31
+FESS_RXAGC_ExecuteBbdev:1749:33
+ 1: 33
+ 2: 33
+ 6: 33
+ 13: 33
+ 6: FESS_RTS_GetRatMode:132
+  2: 33
+ 7: FESS_BBDEV_ProcFeicRxAgc:330
+  5: 33
+  9: 0
+  13: 0
+  15: 0
+  19: 0
+  9: FESS_RTS_GetBand:0
+   2: 0
+  14: FESS_BBDEV_CtrlFeicDLDynamicSwitch:0
+   11: 0
+   12: 0
+   13: 0
+   17: 0
+   21: 0
+   22: 0
+   23: 0
+   24: 0
+   25: 0
+   26: 0
+   32: 0
+   33: 0
+   7: FESS_BBDEV_ProcOmRsrpThreConfig:0
+    7: 0
+    8: 0
+    12: 0
+  15: FESS_RTS_GetAntAbility:0
+   2: 0
+  19: FESS_BBDEV_CfgRxAgcPraticeInit:0
+   8: 0
+   9: 0
+   11: 0
+   12: 0
+   13: 0
+   17: 0
+   18: 0
+   22: 0
+   24: 0
+   25: 0
+   27: 0
+   33: 0
+   34: 0
+   39: 0
+   44: 0
+ 9: FESS_RXBBDEV_CfgGsmAgc:0
+  9: 0
+  14: 0
+  16: 0
+  24: 0
+  16: FESS_RXBBDEV_TimingCalcRxDfeTime:0
+   17: 0
+   3: FESS_RXRTS_GetRficRxDelayTime:0
+    2: 0
+  18: FESS_RXBBDEV_GetGsmFirPara:0
+   3: 0
+   4: 0
+   5: 0
+   7: 0
+   8: 0
+  19: FESS_BBDEV_BeginEvent:0
+   4: 0
+   5: 0
+   6: 0
+   7: 0
+  21: FESS_RXBBDRV_CfgGsmFir:0
+   7: 0
+   8: 0
+   13: 0
+   22: 0
+   5: FESS_RTS_GetModemId:0
+    2: 0
+   9: FESS_RXRTS_GetBbChannel:0
+    2: 0
+  23: FESS_BBDEV_EndEvent:0
+   2: 0
+   4: 0
+cpuidle_time_rec_enter:1740:290
+ 1: 290
+ 2: 290 thread_need_calc_load:290
+ 8: 0
+ 9: 0
+ 10: 0
+ 11: 0
+ 12: 0
+ 13: 290
+cpuidle_time_rec_exit:1734:289
+ 1: 289
+ 2: 289 thread_need_calc_load:289
+ 8: 0
+ 9: 0
+ 11: 0
+ 12: 0
+ 13: 289
+ 10: update_cpuidle_duration:0
+  2: 0
+  3: 0
+FESS_MRM_CheckUldsdsPara:1710:114
+ 2: 114
+ 6: 0
+ 7: 0
+ 8: 114
+ 2: FESS_UldsdsStatusService_IsStatusClose:1482
+  2: 114
+UL1M_SDRM_ProcCmdQueTask:1690:24
+ 7: 24
+ 11: 18
+ 12: 26
+ 14: 26
+ 18: 12
+ 20: 12
+ 21: 12 UL1M_SDRM_PostPdeLowTaskEvent:12
+ 22: 12
+ 26: 12
+ 27: 12
+ 30: 12
+ 36: 12
+FESS_MRM_InterfereGetTxBlankingAction:1683:33
+ 2: 33
+ 5: 33
+ 9: 33
+ 10: 33
+ 21: 0
+ 22: 0
+ 27: 33
+ 33: 33
+FESS_UldsdsSigService_UpdateResume:1680:70
+ 2: 70
+ 6: 70
+ 3: FESS_TxBand_SetResumeRealDeviceState:840
+  2: FESS_TxBandDeviceState_GetAntCfgMap:420
+   2: 70
+  3: FESS_TxBandDeviceState_GetPllState:420
+   2: 70
+ 4: FESS_TxResume_GetApplyTime:490
+  2: 70
+OsCrEventRecv:1610:14
+ 5: 14
+ 9: 14
+ 13: 14
+ 18: 14
+ 21: 14
+ 26: 14
+ 27: 14
+ 31: 14
+ 17: OsGetCurrentCrCtrl:490
+  2: 14
+  2: OsGetHwThreadId:308
+   3: 14
+FESS_MRM_ProcSrs:1610:10
+ 4: 10 FESS_TXTASK_TxMsgJob:10
+ 10: 10 FESS_MRM_UpdateTxJobDeadLineTime:10
+ 7: FESS_MRM_GetTxSwitchCtrlTime:460
+  2: 10
+  4: 10
+  5: 10 FESS_MRM_IsUlDsdsValid:10
+  7: 10
+  9: 0
+  12: 10
+  13: 10
+ 12: FESS_MRM_RptSrsMsgJobRunLog:1000
+  5: 10 FESS_OM_AllocMsg:10
+  7: 10
+  8: 0
+  12: 10
+  13: 10
+  14: 10
+  15: 10
+  16: 10
+  17: 10
+  18: 10
+  19: 10
+  20: 10
+  23: 10
+  23: UPHY_CORE_GetMcCount:30
+   4: 10
+NPHY_SDRA_TrsTfsPdeRsltRpt:1592:8
+ 1: 8
+ 3: 8
+ 11: 8
+ 14: 32
+ 15: 32
+ 18: 8 memcpy_s:8
+ 21: 8
+ 28: 8 NEUN_SDRA_SendOsMsg:8
+ 29: 8 UL1M_SDRM_GetL1dDstMid:8
+ 32: 8
+ 25: NPHY_SDRA_TfsRptCfg:376
+  5: 8
+  6: 8
+  7: 8
+  8: 8
+  9: 8
+  10: 8
+FESS_MNTN_TxChanCommRunLog:1540:20
+ 3: 20
+ 8: 20
+ 9: 20
+ 10: 20
+ 11: 20
+ 12: 20
+ 15: 20
+ 16: 20
+ 19: 20
+ 3: FESS_MNTN_IsModuleRptEn:180
+  2: 20
+ 8: UPHY_CORE_GetMcCount:60
+  4: 20
+ 14: FESS_RTS_GetBandwidth:120
+  2: 20
+ 17: FESS_TXRTS_GetAfcPpm:120
+  2: 20
+UL1M_RCM_DsdsRptNodeInfo:1500:60
+ 1: 60
+ 6: 60 UL1M_RCM_DsdsGetMainParaAddr:60
+ 9: 0
+ 10: 0
+ 12: 60
+ 15: 60
+ 20: 0
+ 22: 0
+ 27: 0
+ 30: 0
+ 33: 0
+ 37: 60
+ 39: 60
+OsCrSendIpc:1496:44
+ 3: OsCoreWakeupIpc:748
+  2: 44
+  4: 44
+  5: 44 dss_ipc_wakeup_hook:44
+ 4: OsCrTriggerIpi:748
+  3: 44
+  4: 44 OsHwiMcTrigger:44
+FESS_TXAPC_SaveLteNrPdRbInfo:1496:44
+ 3: 44
+ 4: 44
+ 5: 44
+ 7: 0
+ 8: 0
+ 10: 0
+ 11: 0
+ 13: 44
+write_sync:1460:365
+ 2: 365
+ 3: 365
+UL1M_RCM_DsdsRptTaskInfo:1460:4
+ 1: 4
+ 3: 4 UL1M_RCM_DsdsGetMainParaAddr:4
+ 6: 4 memset_s:4
+ 7: 4
+ 8: 4
+ 9: 4
+ 10: 4
+ 11: 4
+ 12: 4
+ 13: 4 UL1M_RCM_GetMultiCardInd:4
+ 14: 4 UL1M_RCM_GetSupportDualUlFlag:4
+ 15: 4 UL1M_RCM_GetDualSimActiveInd:4
+ 16: 4
+ 18: 4
+ 19: 4
+ 20: 4 UL1M_RCM_GetRfResetState:4
+ 21: 4
+ 22: 4
+ 23: 4
+ 24: 4
+ 25: 4
+ 26: 4
+ 27: 4 UL1M_RCM_GetConSearchState:4
+ 28: 4 UL1M_RCM_GetChannelKeep:4
+ 29: 4 UL1M_RCM_GetConSearchWorkState:4
+ 30: 4 UL1M_RCM_GetChannelKeepTimeStamp:4
+ 31: 4 UL1M_RCM_ShareDsdsVersion:4
+ 32: 20
+ 33: 20 UL1M_RCM_DsdsGetPhyDsdsState:20
+ 37: 4 UL1M_RCM_OmReport:4
+UL1M_RCM_GetRfChannelId:1456:104
+ 1: 104
+ 2: 104
+FESS_TXRESUME_ExecuteRfdev:1445:35
+ 1: 35
+ 4: 35 FESS_TXRESUME_IsNeedHandle:35
+ 9: 20
+ 10: 20
+ 12: 20 FESS_TXRFDEV_ProcTxResume:20
+ 14: 15
+UPHY_BBPDMA_ChnEnableProc:1395:15
+ 3: 15
+ 9: 15
+ 10: 0
+ 11: 15
+ 15: 15
+ 19: 15
+ 21: 0
+ 26: 15
+ 28: 15
+ 31: 15
+ 8: UPHY_BBPDMA_GetChnStatePtr:150
+  2: 15
+ 10: UPHY_ReadRegV:0
+  3: 0
+  5: 0
+ 18: UPHY_BBPDMA_GetChnTrigModePtr:45
+  2: 15
+ 26: UPHY_WriteRegV:195
+  3: 15
+  5: 15
+UL1M_SDRM_MbxTskProc:1390:14
+ 4: 14
+ 7: 14
+ 8: 0
+ 11: 14
+ 12: 14
+ 14: 14 UPHY_OS_EventSend:14
+ 17: 0
+ 20: 0
+ 21: 0
+ 13: UL1M_SDRM_CommTaskPdeRptIsr:460
+  2: 10
+  4: 10
+  9: 10
+  10: 0
+  11: 0
+  8: UL1M_SDRM_TaskIdxMapping:100
+   4: 10
+FESS_TXAPC_GetLmeGainMode:1386:66
+ 2: 66
+ 8: 66
+ 9: 66
+ 13: 0
+ 14: 0
+ 15: 0
+ 20: 0
+ 24: 0
+ 25: 0
+ 28: 0
+ 29: 0
+ 34: 0
+ 36: 66
+ 32: FESS_TXAPC_GetDpdLmePowerTh:0
+  8: 0
+  9: 0
+  11: 0
+  12: 0
+  13: 0
+FESS_MNTN_RptRxTimingRunLog:1380:30
+ 2: 30
+ 6: 30
+ 7: 30
+ 8: 30
+ 9: 30
+ 12: 30
+ 2: FESS_MNTN_IsModuleRptEn:270
+  2: 30
+ 6: UPHY_CORE_GetMcCount:90
+  4: 30
+FESS_MNTN_RptRfdspMsgOpLog:1376:32
+ 1: 32
+ 6: 32
+ 10: 0
+ 13: 0
+ 17: 0
+ 18: 0
+ 19: 0
+ 23: 0
+ 24: 0
+ 25: 0
+ 27: 32
+ 6: FESS_MNTN_IsOpLogRptEn:320
+  2: 32
+FESS_RXBBDEV_GetEnableChanPara:1365:15
+ 3: 15
+ 7: 15
+ 8: 15
+ 4: FESS_RTS_GetRatMode:90
+  2: 15
+FESS_BBDEV_ProcFeicTxStandby:1365:35
+ 1: 35
+ 4: 35
+ 8: 0
+ 12: 0
+ 15: 35
+ 13: FESS_BBDEV_CfgFeicTxStandbyPara:0
+  2: 0
+  13: 0
+  14: 0
+  16: 0
+  20: 0
+  21: 0
+  26: 0
+  31: 0
+  37: 0
+  24: FESS_BBDEV_CalcUlEnCfgTime:0
+   3: 0
+   6: 0
+  25: FESS_BBDEV_BeginEvent:0
+   4: 0
+   5: 0
+   7: 0
+  27: FESS_BBDEV_EndEvent:0
+   2: 0
+   4: 0
+  32: FESS_BBDEV_BeginEvent:0
+   4: 0
+   5: 0
+   6: 0
+   7: 0
+  33: FESS_TRXBBDRV_CfgFeicEnProtect:0
+   8: 0
+   11: 0
+   12: 0
+   6: FESS_BBDRV_CfgFeicEn:0
+    12: 0
+   11: FESS_BBDRV_CfgFeicEn:0
+    11: 0
+    12: 0
+OsFiberMsgQueSend:1356:12
+ 11: 12
+ 17: 12
+ 25: 0
+ 30: 0
+ 31: 0
+ 32: 0
+ 36: 0
+ 39: 0
+ 44: 0
+ 48: 12
+ 301: 0
+ 15: OsIntLock:108
+  4: 12
+  5: 12
+  6: 12
+ 16: OsGetHwThreadId:156
+  3: 12
+  9: 12
+ 18: OsFiberMsgQueOuterSend:396
+  3: OsFiberIpcCallSend:396
+   3: 12 OsCrIpcCallSend:12
+ 19: OsIntRestore:48
+  4: 12
+ 23: OsFiberMsgSendCheck:0
+  6: 0
+  7: 0
+  11: 0
+  16: 0
+  17: 0
+  15: OsGetHwThreadId:0
+   3: 0
+ 26: OsIntRestore:0
+  4: 0
+ 34: ListTailAdd:0
+  2: 0
+  2: ListLowLevelAdd:0
+   3: 0
+   5: 0
+   6: 0
+ 40: OsIntRestore:0
+  4: 0
+ 44: OsFiberNormalMsgTrigger:0
+  5: 0
+  6: 0
+ 46: OsIntRestore:0
+  4: 0
+FESS_DVFS_AdjustBbaVoltage:1340:67
+ 3: 67
+ 4: 0
+ 5: 0
+ 6: 0
+ 11: 67
+ 3: FESS_DVFS_GetLastSetVoltage:871
+  2: 67
+ 8: FESS_DVFS_SetLastSetVoltage:0
+  2: 0
+ 9: FESS_DVFS_ReportBbaVolt:0
+  3: 0
+  5: 0
+  6: 0
+UL1M_SDRM_CmdSendMsg:1330:14
+ 1: 14
+ 2: 14 UPHY_EICC_GetExtraHeadSize:14
+ 3: 14 UPHY_EICC_SendMsgToPde:14
+ 7: 14
+ 9: 14
+ 10: 14
+ 14: 14
+FESS_RFAGENT_GetPdlongInfo6366:1320:66
+ 5: 66
+OsCrgIdleSuspend:1296:24
+ 5: 24 OsSpinLockRunTaskRq:24
+ 6: 24
+ 7: 24
+ 9: 0
+ 13: 24 OsTskReadyDel:24
+ 14: 24
+ 15: 24 OsSpinUnLockRunTaskRq:24
+ 5: OsGetHwThreadId:528
+  3: 24
+ 17: OsTskScheduleFast:24
+  2: 24 OsTskSchedule:24
+mdrv_msg_alloc:1280:16
+ 6: 16
+ 9: 16
+ 10: 16
+ 13: 16
+ 19: 16 SRE_MemAllocAlign:16
+ 20: 16
+ 26: 16
+ 29: 16
+ 23: msg_cookie_init:368
+  2: 16
+  3: 16
+  4: 16
+OsCrOrderQueInnerSend:1278:12
+ 2: 12
+ 4: 12
+ 7: 12
+ 9: 12
+ 12: 12
+ 13: 0
+ 21: 12 OsCrOrderQueEnqueTail:12
+ 23: 12
+ 26: 6
+ 27: 6 OsEnqueueCr:6
+ 30: 6
+ 7: OsGetHwThreadId:144
+  3: 12
+  9: 12
+ 12: OsCrOrderQueIsFull:72
+  2: 12
+dss_ipc_wakeup_hook:1276:44
+ 1: 44
+ 6: 44
+ 7: 0
+ 8: 0
+ 9: 0
+ 14: 44
+ 5: readl:748
+  2: 44 read_sync:44
+  3: 44
+msg_diag_report:1260:20
+ 1: 20
+ 3: 20
+ 7: 0
+ 8: 0
+ 9: 0
+ 10: 0
+ 11: 0
+ 12: 0
+ 14: 20
+ 17: 20
+UPHY_BBPDMA_GetChnId:1260:15
+ 3: 15
+ 6: 15
+ 7: 15
+ 10: 15
+ 16: 15
+ 4: UPHY_BBPDMA_GetChnIdCfg:435
+  3: 15 UPHY_INST_GetSpecBootCfg:15
+  2: UPHY_OS_PrivDataGetInstId:225
+   7: 15 SRE_FusionIsIntCntx:15
+   11: 15 SRE_FusionTskPrivDataGet:15
+   13: 15
+   5: UPHY_CORE_GetThreadId:135
+    2: mdrv_get_core_id:135
+     2: OsGetCoreID:135
+      3: 15
+   8: UPHY_INT_GetIntInstId:0
+    2: 0
+OsMemAllocAlignInner:1260:20
+ 13: 20
+ 14: 0
+ 19: 20
+ 20: 0
+ 25: 20
+ 27: 20
+ 29: 0
+ 24: OsIntLock:200
+  4: 20
+  5: 20
+  6: 20
+ 28: OsIntRestore:0
+  4: 0
+ 33: OsMemAllocHook:120
+  10: 20 OsSlubFscMemAlloc:20
+ 35: OsIntRestore:60
+  4: 20
+FESS_BBDEV_AllocCrossUdMntn:1260:35
+ 4: 35 FESS_OM_AllocMsg:35
+ 7: 35
+ 8: 35
+FESS_RFAGENT_VoteTxDfeOn6366:1230:15
+ 5: 15
+ 10: 15
+ 11: 0
+ 12: 0
+ 14: 0
+ 19: 15
+ 24: 15 FESS_RFDVFS_DfeVote:15
+ 27: 0
+ 5: FESS_FEPNV_IsSupportRfDvfs:45
+  2: 15
+ 11: FESS_RFAGENT_GetTxVoteTypeByBandwidth:0
+  5: 0
+  7: 0
+FESS_MRM_TxResume:1188:36
+ 6: 36 FESS_TXTASK_TxMsgJob:36
+ 9: 36 FESS_MRM_UpdateTxJobDeadLineTime:36
+UPHY_EICC_WriteRingbuffer:1175:14
+ 5: 14
+ 7: 14
+ 8: 14
+ 9: 14
+ 10: 14
+ 11: 11
+ 13: 3
+ 14: 3 memcpy_s:3
+ 16: 3
+ 19: 0
+ 20: 0
+ 21: 0
+ 22: 0
+ 23: 0
+ 24: 0
+ 25: 0
+ 27: 14 memcpy_s:14
+ 29: 0
+ 30: 0
+ 31: 0
+ 38: 14
+ 39: 14
+UPHY_EICC_ReadRingbuffer:1172:28
+ 1: 28
+ 3: 28
+ 4: 28
+ 5: 28
+ 8: 2
+ 9: 2 memcpy_s:2
+ 10: 28 memcpy_s:28
+inter_dump_record:1160:20
+ 4: 20
+ 5: 20
+ 6: 20
+ 7: 20
+mdrv_cur_context:1140:12
+ 1: 12
+ 6: 12
+ 15: 12
+ 3: OsIntLock:108
+  4: 12
+  5: 12
+  6: 12
+ 6: OsGetHwThreadId:240
+  3: 12
+ 7: OsIntRestore:0
+  4: 0
+ 11: OsCurThreadTypeNoIntLock:552
+  2: 12
+  4: 12
+  14: 0
+  25: 0
+  2: OsGetHwThreadId:348
+   3: 12
+ 13: OsIntRestore:36
+  4: 12
+SRE_CurThreadType:1140:12
+ 1: 12
+ 6: 12
+ 15: 12
+ 3: OsIntLock:108
+  4: 12
+  5: 12
+  6: 12
+ 6: OsGetHwThreadId:240
+  3: 12
+ 7: OsIntRestore:0
+  4: 0
+ 11: OsCurThreadTypeNoIntLock:552
+  2: 12
+  4: 12
+  14: 0
+  25: 0
+  2: OsGetHwThreadId:348
+   3: 12
+ 13: OsIntRestore:36
+  4: 12
+wake_lock_count:1134:63
+ 6: 63
+ 7: 63
+ 2: wl_get_governor:63
+  2: 63
+  3: 0
+UPHY_OS_MsgSend:1128:12
+ 5: 12
+ 6: 12
+ 15: 12
+ 16: 12
+ 19: 12 UPHY_OS_MsgAlloc:12
+ 20: 0
+ 23: 12
+ 24: 12 memcpy_s:12
+ 25: 12
+ 28: 12
+ 29: 0
+ 32: 0
+ 34: 0
+ 38: 12 mdrv_msg_vsend:12
+ 41: 12
+ 42: 0
+ 43: 0
+ 50: 12
+ 29: UPHY_OS_LayerMsgSend:0
+  6: 0
+  7: 0
+  10: 0
+  11: 0
+  14: 0
+  16: 0
+  17: 0
+  18: 0
+UPHY_OS_IsMemFromHostPool:1120:280
+ 2: 280
+OsCrOrderQueTryDequeHead:1116:12
+ 5: 12
+ 8: 12
+ 11: 12
+ 12: 12
+ 13: 12
+ 14: 12
+ 15: 12
+ 18: 12
+ 5: OsCrOrderQueIsEmpty:108
+  2: 12
+OsCrMsgSend:1088:4
+ 1: 4
+ 8: 4
+ 10: 4
+ 16: 4
+ 23: 4
+ 24: 4
+ 25: 4
+ 27: 4
+ 28: 4 OsCrMsgSendParaCheck:4
+ 29: 4
+ 33: 4
+ 36: 0
+ 42: 4
+ 512: 4
+ 21: SRE_IntLock:40
+  2: OsIntLock:40
+   4: 4
+   5: 4
+   6: 4
+ 25: OsGetHwThreadId:52
+  3: 4
+  9: 4
+ 30: SRE_IntRestore:0
+  2: OsIntRestore:0
+   4: 0
+ 33: OsCrMsgSendEnque:288
+  3: 4
+  5: 4
+  9: 4
+  10: 4
+  11: 4
+  12: 4 OsEnqueueCr:4
+  6: ListAdd:0
+   2: 0
+   2: ListLowLevelAdd:0
+    5: 0
+  8: ListTailAdd:44
+   2: 4
+   2: ListLowLevelAdd:16
+    4: 4
+    5: 4
+ 40: SRE_IntRestore:24
+  2: OsIntRestore:24
+   4: 4
+UL1M_SDRM_GetInstInfo:1044:12
+ 4: 12
+ 5: 36
+ 6: 36
+ 7: 24
+ 12: 0
+ 13: 0
+ 14: 0
+ 19: 12
+mdrv_kmem_free:1040:8
+ 10: 8
+ 18: 8
+ 35: 8
+ 39: 8
+ 40: 8
+ 45: 8
+ 58: 0
+ 60: 0
+ 14: OsIntLock:72
+  4: 8
+  5: 8
+  6: 8
+ 15: OsMemGetHeadAddr:80
+  2: 8
+  4: 8
+ 41: OsIntRestore:0
+  4: 0
+ 46: OsMemMagicWordCheck:288
+  3: 8
+  4: 8
+  8: 0
+  72: 8
+  4: OsMemMagicWordDecode:152
+   4: 8
+   4: OsGetRndU16:128
+    2: OsGetRndU32:128
+     2: 8
+ 50: OsMemFreeHook:40
+  10: 8 OsSlubFscMemFree:8
+ 52: OsIntRestore:24
+  4: 8
+ 57: OsIntRestore:0
+  4: 0
+SRE_MemFree:1040:8
+ 10: 8
+ 18: 8
+ 35: 8
+ 39: 8
+ 40: 8
+ 45: 8
+ 58: 0
+ 60: 0
+ 14: OsIntLock:72
+  4: 8
+  5: 8
+  6: 8
+ 15: OsMemGetHeadAddr:80
+  2: 8
+  4: 8
+ 41: OsIntRestore:0
+  4: 0
+ 46: OsMemMagicWordCheck:288
+  3: 8
+  4: 8
+  8: 0
+  72: 8
+  4: OsMemMagicWordDecode:152
+   4: 8
+   4: OsGetRndU16:128
+    2: OsGetRndU32:128
+     2: 8
+ 50: OsMemFreeHook:40
+  10: 8 OsSlubFscMemFree:8
+ 52: OsIntRestore:24
+  4: 8
+ 57: OsIntRestore:0
+  4: 0
+NPHY_SDRA_GetPdeSsbEmuRslt:1036:4
+ 1: 4
+ 7: 4
+ 10: 4
+ 11: 4
+ 12: 4
+ 13: 4
+ 15: 4
+ 29: 32
+ 31: 32 memcpy_s:32
+ 38: 4
+ 39: 0
+ 40: 0
+ 44: 0
+ 49: 4
+FESS_MRM_ProcTxBlankingSolution:1023:33
+ 2: 33
+ 4: 33 FESS_MRM_InterfereTxBlanking:33
+ 6: 33
+ 2: FESS_RXRTS_IsIntraPcc:99
+  2: 33
+OsSlubFscMemAlloc:980:20
+ 1: 20
+ 5: 20
+ 8: 20
+ 9: 0
+ 14: 20
+ 15: 20 OsSlubMemAllocObj:20
+ 17: 0
+ 18: 0
+ 20: 0
+ 21: 0
+ 26: 0
+FESS_DLL_FindInsertPartDyna:980:20
+ 2: 20
+ 4: 20
+ 7: 20
+ 18: 20
+ 7: FESS_DLL_IsEmpty:80
+  2: 20
+ 9: FESS_DLL_GetFirst:260
+  2: 20
+ 12: FESS_DLL_FindPartitionNode:0
+  7: 0
+  14: 0
+  16: 0
+  18: 0
+  6: FESS_DLL_GetFirst:0
+   2: 0
+  23: FESS_DLL_GetNext:0
+   3: 0
+  27: FESS_DLL_GetLast:0
+   2: 0
+ 14: FESS_DLL_GetFirst:0
+  2: 0
+NPHY_SDRA_GetHalfFrmPos:966:6
+ 7: 6
+ 9: 6
+ 13: 6
+ 18: 6
+ 21: 6
+ 24: 6
+ 25: 6
+ 27: 6
+ 30: 6
+ 32: 6
+ 36: 6
+ 41: 6
+ 46: 6
+OsTickTargetCoresGet:964:4
+ 1: 4
+ 5: 32
+ 6: 32 OsTickCoreCheck:32
+ 11: 4
+NPHY_SDRA_TfsParaEstCfg:944:8
+ 1: 8
+ 9: 8 memcpy_s:8
+ 12: 8
+ 14: 8
+ 15: 8
+ 18: 8
+ 19: 0
+ 21: 8
+FESS_CLK_SelBbaClk:938:67
+ 6: 67
+ 7: UPHY_WriteRegV:737
+  3: 67
+  5: 67
+OsCrOrderQueSend:936:12
+ 8: 12
+ 9: 12
+ 10: 12
+ 13: 0
+ 16: 12 OsCrOrderQueInnerSend:12
+ 22: 0
+ 9: OsGetHwThreadId:156
+  3: 12
+  9: 12
+ 11: OsCrSendParaCheck:540
+  6: 12
+  11: 12
+  15: 12
+  16: 12
+NPHY_SDRA_SsbEmuTaskCfg:932:4
+ 3: 4
+ 7: 4 memset:4
+ 8: 4
+ 9: 64
+ 14: 4
+ 17: 0
+ 18: 0
+ 20: 0
+ 21: 0
+ 22: 0
+ 24: 0
+ 25: 4
+ 28: 0
+ 30: 0
+ 31: 0
+ 32: 0
+ 33: 0
+ 36: 0
+ 37: 4
+ 40: 4
+ 41: 4
+ 43: 4
+ 44: 4 NPHY_SDRA_GetEmuSsbPos:4
+ 46: 4 NPHY_SDRA_SsbEmuCmdCommCfg:4
+ 49: 4
+ 51: 4
+ 53: 4 NPHY_SDRA_SsbPosCalcInfoOmRpt:4
+ 55: 4
+NPHY_SDRA_TrsTfsMsgDeal:928:8
+ 1: 8
+ 3: 8
+ 6: 8
+ 8: 8
+ 9: 8
+ 16: 8
+ 18: 0
+ 22: 8
+ 24: 8
+ 25: 8
+ 27: 8
+ 28: 8
+ 32: 8 UL1M_SDRM_PushTaskQue:8
+ 33: 8 UL1M_SDRM_ProcCmdQueTask:8
+ 35: 8
+FESS_TXTIMING_GetChanEnable:880:20
+ 1: 20
+ 3: 20 FESS_BBFM_TimingCalcTxTimePara:20
+ 7: 20
+ 8: 20
+ 9: 20
+ 13: 20
+FESS_MRM_ProcRxAgcSolution:858:33
+ 3: 33 FESS_MRM_ProcTxBlankingSolution:33
+ 7: 33
+ 8: 0
+ 12: 33
+FESS_RXSTANDBY_CreateIndMsgJob:855:15
+ 2: 15
+ 3: 15
+ 5: 15
+ 6: 15
+ 9: 15
+ 11: 15 FESS_FWK_AddMsgJob:15
+FESS_MRM_UpdateTxJobDeadLineTime:818:46
+ 1: 46
+ 2: 46 FESS_MRM_IsUlDsdsValid:46
+ 3: 46
+ 5: 46
+ 6: 36
+ 10: 10
+UPHY_OM_WarnMsgDisp:812:4
+ 1: 4
+ 4: 4 memset:4
+ 8: 4
+ 12: 4
+ 13: 4
+ 14: 4
+ 15: 4
+ 16: 8
+ 17: 8
+ 21: 4 UPHY_OM_L1MsgAsmRpt:4
+ 22: 4
+FESS_TXRESUME_IsNonMaintain:800:100
+ 1: 100
+ 2: 100
+UPHY_EICC_SingleWriteRingbuffer:798:14
+ 1: 14
+ 3: 14
+ 4: 14
+ 5: 14
+ 6: 14 memcpy_s:14
+ 8: 0
+ 9: 0
+ 10: 0
+ 13: 14
+UL1M_SDRM_MbxHeaderProc:784:14
+ 5: 14
+ 6: 14
+ 7: 0
+ 10: 14
+ 11: 0
+ 15: 14
+ 18: 14
+UL1M_SDRM_JuegeRingBufState:784:14
+ 5: 14
+ 6: 14
+ 7: 14
+ 8: 14
+ 9: 14
+ 13: 0
+FESS_BBFM_TimingCalcTxTimePara:780:20
+ 18: 20
+ 22: 20
+ 25: 20
+ 3: FESS_RTS_GetTimingNvDesc:120
+  2: 20
+ 4: FESS_TXRTS_GetRficTxDelayTime:60
+  2: 20
+ 8: FESS_STATICNV_GetTxSerdesDelay:120
+  3: 20
+ 11: FESS_STATICNV_GetBbicTxDfeDelay:80
+  3: 20
+OsSlubMemFreeObj:760:8
+ 1: 8
+ 9: 8
+ 15: 8
+ 16: 8
+ 17: 0
+ 21: 8
+ 23: 8
+ 24: 8
+ 26: 8
+ 31: 0
+ 33: 0
+ 34: 0
+ 36: 0
+ 38: 0
+ 39: 0
+ 42: 8
+ 3: OsGetHwThreadId:80
+  3: 8
+ 8: OsSlubOffsetDecode:72
+  2: 8
+ 16: OsMemTailMagicWordGet:72
+  2: 8
+ 30: OsSplLock:0
+  4: 0
+  5: 0
+ 37: OsSplUnlock:0
+  3: 0
+  5: 0
+ 39: OsSlubFree:0
+  2: OsSlubLocalDbgListDel:0
+   2: OsSplLock:0
+    4: 0
+    5: 0
+   3: ListDelete:0
+    3: ListDelAndInit:0
+     2: 0
+     3: 0
+     2: ListLowLevelDelete:0
+      2: 0
+      3: 0
+   4: OsSplUnlock:0
+    3: 0
+    5: 0
+  3: OsSlubLocalMemFree:0
+   2: 0
+   2: OsMemGetHeadAddr:0
+    2: 0
+    4: 0
+UPHY_OM_LayerReport:740:4
+ 2: 4
+ 3: 4
+ 4: 4 UPHY_CORE_MemAlloc:4
+ 7: 0
+ 13: 4
+ 14: 4
+ 15: 0
+ 20: 4
+ 21: 4
+ 22: 4
+ 23: 4
+ 24: 4 UPHY_INT_Lock:4
+ 25: 4
+ 26: 4 UPHY_INT_Unlock:4
+ 27: 4 memcpy_s:4
+ 28: 4 UPHY_OM_L1MsgAsmRpt:4
+ 29: 4 UPHY_CORE_MemFree:4
+ 31: 4
+ 19: UPHY_OS_PrivDataGetInstId:108
+  7: 4 SRE_FusionIsIntCntx:4
+  11: 0
+  13: 0
+  5: UPHY_CORE_GetThreadId:36
+   2: mdrv_get_core_id:36
+    2: OsGetCoreID:36
+     3: 4
+  8: UPHY_INT_GetIntInstId:4
+   2: 4
+UL1M_RCM_SchdlMsgProc:740:4
+ 1: 4
+ 6: 4 UL1M_RCM_GetMsgId:4
+ 13: 60
+ 15: 4 UL1M_RCM_SchdlProc32kInt:4
+ 20: 0
+FESS_RXSTANDBY_IndCb:735:15
+ 2: 15
+ 7: 15
+ 15: 15 FESS_BBDEV_RptRxRegisterInfo:15
+ 17: 15
+ 12: FESS_RTS_GetModemId:45
+  2: 15
+ 12: FESS_RTS_GetRatMode:15
+  2: 15 FESS_DVFS_BbaAvsVoltageVote:15
+UPHY_SCHED_MsgCommCB:728:4
+ 1: 4
+ 4: 4
+ 10: 4
+ 13: 4
+ 15: 0
+ 23: 4
+ 26: 0
+ 28: 0
+ 31: 4 UPHY_OS_MsgRecv:4
+ 34: 4
+ 40: 4
+ 42: 4
+ 47: 4 UL1M_RCM_SchdlProcessMsg:4
+ 53: 4
+ 54: 4
+ 61: 4
+ 2: UPHY_SCHED_IntLockContext:32
+  3: 4 UPHY_TRACE_GetCommSchedLockSwitch:4
+  4: UPHY_INT_IntLockContext:0
+   5: 0
+   6: 0
+   4: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+ 10: UPHY_CORE_GetMcCount:12
+  4: 4
+ 12: UPHY_OS_GetCRCfgTab:36
+  2: 4
+ 13: UPHY_SCHED_IfCrMsgSleep:12
+  2: 4
+ 17: UPHY_SCHED_RunLpcCallback:0
+  3: 0
+ 20: UPHY_SCHED_IntUnLockContext:0
+  2: 0
+  3: UPHY_INT_IntUnLockContext:0
+   3: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+ 36: UPHY_SCHED_IntUnLockContext:0
+  2: 0
+  3: UPHY_INT_IntUnLockContext:0
+   3: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+ 42: UPHY_CORE_InstStore:144
+  3: 4
+  10: 4
+  7: UPHY_CORE_GetCtxType:64
+   2: 4
+  8: UPHY_CORE_GetContextID:12
+   2: 4
+  11: UPHY_CORE_InstSwitch:0
+   2: 0
+ 44: UPHY_CORE_GetMcCount:12
+  4: 4
+ 49: UPHY_CORE_GetMcCount:12
+  4: 4
+ 51: UPHY_CORE_InstRestore:4
+  2: 4
+  3: UPHY_CORE_InstSwitch:0
+   2: 0
+ 56: UPHY_SCHED_RecAndRptIsrInfo:32
+  2: 4 UPHY_TRACE_GetTraceRecSwitch:4
+  3: 4 UPHY_TRACE_RecAndRptIsrInfo:4
+ 59: UPHY_SCHED_IntUnLockContext:8
+  2: 4 UPHY_TRACE_GetCommSchedLockSwitch:4
+  3: UPHY_INT_IntUnLockContext:0
+   3: UPHY_CORE_GetThreadId:0
+    2: mdrv_get_core_id:0
+     2: OsGetCoreID:0
+      3: 0
+UPHY_OS_OrderQueueFixMsgRcv:684:12
+ 2: 12
+ 10: 12
+ 11: 0
+ 14: 0
+ 16: 12
+ 17: 12
+ 18: 12
+ 23: 12
+ 8: UPHY_SCHED_GetCrOrderQueue:156
+  3: 12 SRE_OrderQueReceive:12
+  2: UPHY_OS_GetCRCfgTab:144
+   2: 12
+UL1M_RCM_DsdsRfReqListProc:684:4
+ 1: 4
+ 12: 4 memset_s:4
+ 15: 4
+ 18: 52
+ 23: 52
+ 26: 0
+ 27: 0
+ 30: 52
+ 35: 0
+ 37: 0
+ 43: 0
+ 47: 0
+ 48: 0
+ 50: 0
+ 56: 4
+UL1M_SDRM_PushTaskQue:672:12
+ 2: 12
+ 4: 12 memcpy_s:12
+ 5: 12
+ 6: 12
+ 10: 12
+ 13: 12
+ 16: 12
+UL1M_RCM_GetMsgOmSwitch:672:8
+ 7: 8
+ 8: 8
+ 13: 8
+ 19: 8
+ 20: 8
+OsCrOrderQueTryActiveNode:672:12
+ 10: 6
+ 12: 12
+ 15: 6
+ 17: 6
+ 19: 6
+ 20: 6
+ 21: 0
+ 24: 6
+ 25: 6
+ 26: 6
+ 27: 6 OsEnqueueCr:6
+ 29: 6
+ 12: OsCrOrderQueIsEmpty:36
+  2: 12
+ 20: OsGetHwThreadId:156
+  3: 6
+  9: 6
+FESS_MBX_Rfic0MidPriRxDevEomIsr:672:32
+ 4: 32 FESS_MBX_RcvMsg:32
+ 6: 32
+ 3: FESS_INT_ClearMbx0EomSnglInt:608
+  2: UPHY_WriteRegV:608
+   3: 32
+   5: 32
+FESS_BBDEV_ProcFeicTxResume:660:20
+ 1: 20
+ 3: 20
+ 5: 20
+ 9: 0
+ 16: 0
+ 17: 0
+ 19: 20
+ 13: FESS_BBDEV_SetFeicCreateTxGapFlag:0
+  2: 0
+ 14: FESS_BBDEV_CalcUlEnCfgTime:0
+  3: 0
+  6: 0
+FESS_RFAGENT_VoteTxDfeOff6366:656:16
+ 5: 16
+ 9: 16 FESS_RFDVFS_DfeVote:16
+ 12: 16
+NPHY_SDRA_SsbEmuCommCfg:622:4
+ 3: 4
+ 5: 4
+ 6: 4
+ 7: 4
+ 11: 4
+ 12: 4
+ 14: 4
+ 15: 4
+ 17: 4
+ 18: 4
+ 21: 2
+ 22: 2
+ 24: 2
+ 26: 2
+ 28: 4
+UL1M_RCM_DsdsSelectPreAssignTaskNode:604:4
+ 1: 4
+ 14: 52
+ 15: 0
+ 17: 52
+ 18: 0
+ 20: 0
+ 25: 0
+ 26: 0
+ 27: 0
+ 29: 0
+ 36: 4
+ 38: 0
+ 40: 4
+memset_s:600:20
+ 2: 20
+ 3: 20 memset:20
+ 7: 0
+UPHY_BBPDMA_ChnTimeSetEnable:600:15
+ 3: 15
+ 7: 15
+ 11: 15 UPHY_BBPDMA_GetChnId:15
+ 12: 15
+ 22: 15 UPHY_BBPDMA_ChnEnableProc:15
+ 23: 15
+OsCrMsgReceive:592:4
+ 6: 4
+ 10: 4
+ 11: 4
+ 17: 4
+ 18: 4
+ 19: 4
+ 21: 4
+ 23: 4
+ 3: OsGetCurrentCrCtrl:164
+  2: 4
+  2: OsGetHwThreadId:112
+   3: 4
+ 11: ListEmpty:12
+  2: 4
+ 16: ListDelete:76
+  3: ListDelAndInit:76
+   2: 4
+   3: 4
+   2: ListLowLevelDelete:28
+    2: 4
+    3: 4
+OsRecordStackPeak:584:0
+ 3: 584
+FESS_SRS_TaskSchedule:580:10
+ 1: 10
+ 2: 10
+ 3: 10
+ 5: 10
+ 8: 10
+ 5: FESS_BITMAPBUFF_CalcBuffHeader:160
+  2: 10
+ 8: FESS_RTS_GetAntMapAbility:10
+  2: 10 FESS_TRXBANDRES_InitBandReq:10
+ 10: FESS_UldsdsStatusService_IsStatusOpen:150
+  2: 10 FESS_TXRFDEV_ProcSrs:10
+try_to_suspend:567:63
+ 3: 63 can_dss_sleep:63
+ 4: 0
+ 5: 0
+ 6: 0
+ 8: 0
+ 10: 0
+ 12: 0
+ 16: 63
+ 7: get_thread_type:0
+  2: 0
+UL1M_SDRM_GetL1dDstMid:552:12
+ 5: 12 UL1M_SDRM_GetInstInfo:12
+ 6: 12
+ 7: 12
+ 8: 12
+ 11: 12
+FESS_TXRESUME_ContainDigital:550:50
+ 1: 50
+ 2: 50
+UL1M_ULPM_LpcVote:540:8
+ 1: 8
+ 2: 8 UPHY_OS_SpinLock:8
+ 3: 8 UL1M_ULPM_GetVoteState:8
+ 6: 4
+ 7: 0
+ 11: 4
+ 13: 0
+ 16: 8 UL1M_ULPM_SetVoteState:8
+ 17: 8 UPHY_OS_SpinUnLock:8
+ 18: 8 UPHY_OM_PrintfTraceHash:8
+ 20: 8
+ 6: UL1M_ULPM_GetUl1mLpcState:52
+  2: 4
+ 8: UL1M_ULPM_SetUl1mLpcState:0
+  2: 0
+FESS_RFPMU_GetAdjVoltageValue:527:31
+ 1: 31
+ 2: 31
+mdrv_msg_recv:524:4
+ 1: 4
+ 3: 4
+ 8: 4 SRE_FusionKmsgRecv:4
+ 9: 4
+ 10: 4
+ 11: 4
+ 12: 4
+ 13: 4 bsp_get_slice_value:4
+ 14: 4
+ 15: 4 msg_diag_report:4
+ 18: 0
+ 21: 0
+ 25: 4 inter_dump_record:4
+ 27: 4
+UL1M_RCM_DsdsReqListPriorityCalc:524:4
+ 1: 4
+ 9: 52
+ 13: 0
+ 14: 0
+ 16: 52
+ 19: 52
+ 24: 0
+ 26: 0
+ 35: 0
+ 39: 4
+NPHY_SDRA_SsbEmuCmdCommCfg:524:4
+ 5: 4
+ 6: 4
+ 10: 4 memcpy_s:4
+ 12: 4
+ 14: 4 memcpy_s:4
+ 16: 4
+ 18: 4 memcpy_s:4
+ 20: 4
+ 22: 4 memcpy_s:4
+ 24: 4
+ 28: 4 NPHY_SDRA_EmuCommPosCfg:4
+ 33: 4
+ 35: 4
+NPHY_SDRA_SsbIdxCalSsbDataPos:522:6
+ 4: 6
+ 9: 6
+ 11: 6
+ 14: 6
+ 15: 0
+ 16: 0
+ 17: 0
+ 21: 6
+ 22: 6
+ 25: 0
+ 30: 6 NPHY_SDRA_GetHalfFrmPos:6 NPHY_SDRA_GetSsbDataPos:6
+ 32: 6
+ 34: 6
+ 35: 0
+ 36: 6
+ 39: 0
+ 40: 0
+ 41: 0
+ 44: 6
+UL1M_SDRM_WaitSdrTaskProc:516:12
+ 3: 12
+ 4: 12
+ 5: 12 UPHY_OM_PrintfTraceHash:12
+ 8: 12 UL1M_SDRM_GetPdeBackGroundTaskInfo:12
+ 9: 12
+ 10: 0
+ 11: 0
+ 15: 12 NPHY_SDRA_SsbEmuMsgDeal:2 NPHY_SDRA_SsbTfsMsgDeal:2 NPHY_SDRA_TrsTfsMsgDeal:8
+NPHY_SDRA_SsbTfsCommCfg:516:2
+ 1: 2
+ 3: 2
+ 6: 2
+ 7: 2
+ 9: 2
+ 10: 2
+ 12: 2
+ 13: 2
+ 15: 2
+ 16: 2
+ 17: 2
+ 18: 2
+ 23: 2
+ 24: 2 NPHY_SDRA_SsbIdxCalSsbDataPos:2
+ 25: 2
+ 26: 2
+ 34: 2
+ 35: 2
+ 36: 2
+ 39: 2
+ 40: 2
+ 42: 2
+ 44: 2
+ 45: 2
+ 46: 2
+FESS_MRM_ProcRxResumeSolution:480:15
+ 3: 15
+ 4: 15 FESS_MRM_CfgServiceRxCrossUd:15
+ 9: 15
+ 10: 0
+ 13: 15
+ 3: FESS_RTS_GetModemId:45
+  2: 15
+FESS_UldsdsSigService_UpdateApc:462:33
+ 2: 33
+ 3: FESS_TxApc_GetApplyTime:198
+  2: 33
+ 3: FESS_TxBand_UpdateTime:33
+  2: FESS_TxBandTime_Update:33
+   2: 33
+UL1M_RCM_DsdsRptReqRfListInfo:460:4
+ 2: 4 UL1M_RCM_DsdsGetMainParaAddr:4
+ 8: 4
+ 11: 52
+ 14: 52 UL1M_RCM_DsdsRptNodeInfo:52
+ 18: 8
+ 22: 8 UL1M_RCM_DsdsRptNodeInfo:8
+ 25: 4
+NPHY_SDRA_SsbTfsPdeCfg:434:2
+ 1: 2
+ 4: 2
+ 8: 2 UPHY_EICC_GetExtraHeadSize:2
+ 9: 0
+ 10: 0
+ 11: 0
+ 12: 0
+ 13: 0
+ 18: 2
+ 21: 2 UL1M_SDRM_JuegeRingBufState:2
+ 30: 2
+ 31: 2
+ 33: 2 NPHY_SDRA_SsbTfsCommCfg:2
+ 36: 2 memcpy_s:2
+ 38: 2 memcpy_s:2
+ 44: 2 memcpy_s:2
+ 46: 2 memcpy_s:2
+ 47: 2
+ 48: 2 memcpy_s:2
+ 51: 2 UL1M_SDRM_CmdSendMsg:2
+ 53: 2
+ 56: 2
+NPHY_SDRA_SsbEmuPdeRsltRpt:430:4
+ 1: 4
+ 3: 4
+ 7: 4 NPHY_SDRA_GetPdeSsbEmuRslt:4
+ 9: 4
+ 12: 4 UL1M_SDRM_CheckCmdQueTask:2 NPHY_SDRA_JudgeNextSsbEmuTask:4
+ 19: 4
+ 20: 2
+ 21: 2
+ 22: 2
+ 23: 2
+ 24: 2
+ 25: 2
+ 26: 2
+ 27: 2
+ 28: 2
+ 31: 2 NPHY_SDRA_JudgeNextSsbEmuTask:2
+ 43: 2 NPHY_SDRA_RelSsbEmuDdr:2
+ 46: 4
+ 39: NPHY_SDRA_SendSsbEmuRptMsg:68
+  4: 2
+  5: 2
+  8: 2 NEUN_SDRA_SendOsMsg:2
+  9: 2 UL1M_SDRM_GetL1dDstMid:2
+FESS_SEQ_Recycle:426:6
+ 1: 6
+ 2: 6
+ 7: 6
+ 10: 6
+ 11: 6
+ 13: 6
+ 14: 6
+ 7: FESS_SEQ_DrvPtrRd:96
+  4: 6
+  5: 6
+mdrv_kmsg_recv:420:4
+ 6: 4
+ 11: 4
+ 13: 4
+ 19: 4
+ 20: 0
+ 27: 4
+ 28: 4 OsCrMsgReceive:4
+ 35: 0
+ 42: 0
+ 557: 0
+ 10: OsIntLock:36
+  4: 4
+  5: 4
+  6: 4
+ 11: OsGetHwThreadId:104
+  3: 4
+ 14: OsIntRestore:0
+  4: 0
+ 21: OsIntRestore:0
+  4: 0
+ 29: OsIntRestore:16
+  4: 4
+ 36: OsIntRestore:0
+  4: 0
+ 40: OsIntRestore:0
+  4: 0
+SRE_FusionKmsgRecv:420:4
+ 6: 4
+ 11: 4
+ 13: 4
+ 19: 4
+ 20: 0
+ 27: 4
+ 28: 4 OsCrMsgReceive:4
+ 35: 0
+ 42: 0
+ 557: 0
+ 10: OsIntLock:36
+  4: 4
+  5: 4
+  6: 4
+ 11: OsGetHwThreadId:104
+  3: 4
+ 14: OsIntRestore:0
+  4: 0
+ 21: OsIntRestore:0
+  4: 0
+ 29: OsIntRestore:16
+  4: 4
+ 36: OsIntRestore:0
+  4: 0
+ 40: OsIntRestore:0
+  4: 0
+NEUN_SDRA_SendOsMsg:408:12
+ 1: 12
+ 4: 12
+ 6: 12
+ 7: 12
+ 8: 12
+ 9: 12 UPHY_OS_MsgSend:12
+UL1M_SDRM_GetPdeBackGroundTaskInfo:400:40
+ 1: 40
+ 2: 40
+NPHY_SDRA_EmuCommPosCfg:400:4
+ 3: 4
+ 5: 4
+ 7: 4
+ 9: 4
+ 11: 4
+ 13: 4
+ 15: 4
+ 17: 4
+OsCrOrderQueEnqueTail:396:12
+ 2: 12
+ 5: 12
+ 4: OsCrOrderQueFill:204
+  3: 12
+  4: 12
+  5: 12
+  6: 12
+  7: 12
+NPHY_SDRA_SsbEmuMsgDeal:396:2
+ 1: 2
+ 3: 2
+ 5: 2
+ 9: 2
+ 10: 2
+ 16: 2
+ 17: 2
+ 18: 2
+ 19: 2
+ 21: 2
+ 22: 2
+ 23: 2
+ 24: 2
+ 27: 2
+ 31: 2
+ 32: 2
+ 37: 2 UL1M_SDRM_PushTaskQue:2
+ 38: 2 UL1M_SDRM_ProcCmdQueTask:2
+ 40: 2
+NPHY_SDRA_SsbEmuPdeCfg:376:4
+ 1: 4
+ 4: 4
+ 7: 4 NPHY_SDRA_SsbEmuCancleTask:4
+ 8: 4
+ 12: 4 UPHY_EICC_GetExtraHeadSize:4
+ 13: 4
+ 16: 4 UL1M_SDRM_JuegeRingBufState:4
+ 21: 4 NPHY_SDRA_SsbEmuCommCfg:4
+ 22: 4 NPHY_SDRA_SsbEmuTaskCfg:4
+ 24: 4 UL1M_SDRM_CmdSendMsg:4
+ 26: 4
+ 30: 4
+FESS_MRM_CheckinSrs:370:10
+ 1: 10
+ 11: 10 FESS_MRM_CheckUldsdsPara:10
+ 14: 10
+ 19: 10
+ 20: 0
+ 25: 10
+ 27: 0
+ 33: 10
+mdrv_timer_get_normal_timestamp:365:365
+ 2: 365 bsp_get_slice_value:365
+UL1M_RCM_DsdsCleanRfUseQueue:344:8
+ 1: 8
+ 11: 8 memset_s:8
+ 14: 0
+ 15: 0
+ 17: 8
+ 19: 8
+ 23: 0
+ 25: 0
+ 31: 0
+ 33: 0
+ 34: 0
+ 36: 0
+ 42: 0
+ 43: 0
+ 44: 0
+ 47: 0
+ 51: 8
+UL1M_RCM_DcxoPeriodTask:334:4
+ 2: 4 UL1M_RCM_DcxoGetMainInfoAddr:4
+ 8: 4 UL1M_RCM_DcxoMiniPeriodTask:4
+ 20: 4
+ 22: 4
+ 23: 2
+ 25: 2 UL1M_RCM_DcxoRdSampleDataFromCtu:2
+ 28: 4
+ 29: 4
+ 32: 0
+ 34: 0
+ 37: 4
+FESS_TXAPC_ProcBbdev:330:33
+ 3: 33
+ 7: 33 FESS_TXBBDEV_ProcApc:32
+ 9: 0
+ 3: FESS_RTS_GetRatMode:99
+  2: 33
+FESS_RXRESUME_ExecuteRfdev:330:15
+ 3: 15
+ 4: 15
+ 6: 15
+ 8: 15 FESS_RFDEV_ProcRxResume:15
+FESS_BBDEV_ProcFeicRxStandby:330:15
+ 8: 15
+ 13: 0
+ 17: 0
+ 22: 0
+ 25: 0
+ 26: 0
+ 30: 0
+ 31: 0
+ 35: 0
+ 36: 0
+ 39: 0
+ 9: FESS_RXRTS_SetVContiMode:120
+  2: 15
+ 13: FESS_RTS_GetBand:0
+  2: 0
+ 17: FESS_BBDEV_GetFeicWorking:0
+  2: 0
+ 18: FESS_RXRTS_SetVContiMode:0
+  2: 0
+ 25: FESS_RTS_GetAntAbility:0
+  2: 0
+mdrv_kmsg_send:320:16
+ 2: 16
+ 6: 16
+ 7: 12 OsFiberMsgQueSend:12
+ 13: 4 OsCrMsgSend:4
+ 18: 0
+ 22: 0
+SRE_FusionKmsgSend:320:16
+ 2: 16
+ 6: 16
+ 7: 12 OsFiberMsgQueSend:12
+ 13: 4 OsCrMsgSend:4
+ 18: 0
+ 22: 0
+UPHY_INT_Lock:316:4
+ 4: 4
+ 5: 4 SRE_TaskIrqLock:4
+ 8: 4
+ 9: 4
+ 10: 4
+ 3: UPHY_CORE_GetThreadId:76
+  2: mdrv_get_core_id:76
+   2: OsGetCoreID:76
+    3: 4
+FESS_RXRESUME_ExecutePll:315:15
+ 2: 15
+ 6: 15 FESS_RFDEV_ProcRxPllStart:15
+ 7: 15
+FESS_MRM_RxResume:315:15
+ 6: 15 FESS_RXTASK_RxMsgJob:15
+ 7: 15
+UL1M_PRM_ReadShareMem:308:14
+ 1: 14
+ 2: 14
+ 3: 14
+UL1M_RCM_SchdlProcessMsg:304:4
+ 1: 4
+ 6: 4
+ 7: 0
+ 11: 4
+ 13: 4 UL1M_RCM_GetMsgId:4
+ 16: 4 UPHY_OM_WarnMsgDisp:4
+ 17: 4 UL1M_RCM_RecordMsgInfo:4 UPHY_CORE_Get32kTimeCount:4
+ 23: 4
+ 25: 4 UL1M_ULPM_LpcVote:4
+ 35: 4 UL1M_RCM_SchdlMsgProc:4
+ 38: 4 UPHY_OS_MsgFree:4
+ 40: 4
+ 42: 4 UL1M_RCM_RecordPayload:4
+ 47: 4 UL1M_ULPM_LpcVote:4
+ 50: 0
+UL1M_RCM_SendMsg:300:4
+ 1: 4
+ 9: 4
+ 10: 4 UPHY_OS_MsgFullAlloc:4
+ 12: 0
+ 16: 4 memcpy_s:4
+ 17: 4
+ 20: 4 UL1M_RCM_GetLayerMsgOmSwitch:4
+ 25: 4 UL1M_RCM_HalSendMsg:4
+ 27: 0
+ 28: 0
+ 31: 4
+OsCrMsgSendParaCheck:296:4
+ 10: 4
+ 15: 4
+ 5: OsCrSendParaCheck:256
+  6: 4
+  11: 4
+  15: 4
+  16: 4
+  20: 4
+UL1M_RCM_DsdsGetPhyDsdsState:280:20
+ 1: 20
+ 5: 20
+FESS_MRM_TxStandby:280:34
+ 5: 35 FESS_TXTASK_TxMsgJob:35
+ 6: 35
+FESS_MRM_TxApcSet:264:33
+ 5: 33 FESS_TXTASK_TxMsgJob:33
+ 6: 33
+FESS_ProcDummyEvent:259:258
+ 2: 259
+FESS_MRM_RxAgcSet:256:32
+ 5: 32 FESS_RXTASK_RxMsgJob:32
+ 6: 32
+NPHY_SDRA_JudgeNextSsbEmuTask:252:6
+ 4: 6
+ 5: 6
+ 6: 6
+ 8: 6
+UL1M_SDRM_PopTaskQue:240:12
+ 2: 12
+ 5: 12
+ 8: 12
+UL1M_SDRM_GetCcTaskStatusBuf:238:14
+ 2: 14
+ 7: 14
+UPHY_INT_Unlock:228:4
+ 5: 4
+ 6: 4
+ 8: 4
+ 9: 4 SRE_TaskIrqUnlock:4
+ 11: 4
+ 3: UPHY_CORE_GetThreadId:76
+  2: mdrv_get_core_id:76
+   2: OsGetCoreID:76
+    3: 4
+FESS_MRM_RelTxCrossModemForBtListen:225:15
+ 5: 15
+ 9: 15
+ 5: FESS_MRM_GetBtListenStatus:195
+  3: 15
+FESS_MRM_ProcRxStandbySolution:225:15
+ 4: 15
+ 5: 0
+ 8: 15
+UL1M_SDRM_PostPdeTask:224:14
+ 1: 14
+ 2: 14 UL1M_SDRM_GetPdeBackGroundTaskInfo:14
+ 3: 14
+ 4: 0
+ 9: 14 NPHY_SDRA_SsbTfsPdeCfg:2 NPHY_SDRA_TrsTfsPdeCfg:8 NPHY_SDRA_SsbEmuPdeCfg:4
+FESS_MRM_MaskTxCrossModemForBtListen:220:20
+ 5: 20
+ 9: 20
+ 5: FESS_MRM_GetBtListenStatus:180
+  3: 20
+UL1M_RCM_DcxoRdSampleDataFromCtu:216:2
+ 1: 2
+ 6: 2
+ 12: 2
+ 13: 2
+ 14: 2
+ 15: 2
+ 24: 2 UL1M_PRM_ReadShareMem:2
+ 25: 2 UL1M_PRM_ReadShareMem:2
+ 26: 2 UL1M_PRM_ReadShareMem:2
+ 27: 2 UL1M_PRM_ReadShareMem:2
+ 28: 2 UL1M_PRM_ReadShareMem:2
+ 31: 2
+ 35: 2
+ 41: 2 UL1M_RCM_DcxoSelectValidSample:2
+ 46: 0
+ 47: 0
+ 51: 2
+ 52: 0
+OsSlubFscMemFree:216:8
+ 4: 8
+ 5: 8 OsSlubMemFreeObj:8
+ 7: 0
+ 13: 0
+UL1M_RCM_DsdsRfUsedOtherListProc:212:4
+ 2: 4
+ 8: 8
+ 13: 0
+ 16: 8
+ 18: 0
+ 19: 0
+ 24: 0
+ 28: 4
+arch_dump_get_sched_info:210:2
+ 1: 2
+ 8: 2
+ 11: 2
+ 12: 2
+ 14: 2
+ 17: 2
+ 20: 2
+ 21: 2 memcpy_s:2
+ 24: 0
+ 26: 0
+ 29: 2
+ 30: 0
+ 33: 2
+ 2: dump_arch_get_sched_data_ptr:26
+  1: 2
+UL1M_RCM_DsdsRfUsedAssignListProc:208:4
+ 2: 4
+ 9: 8
+ 14: 0
+ 17: 8
+ 19: 0
+ 20: 0
+ 25: 0
+ 29: 4
+NPHY_SDRA_SsbTfsMsgDeal:206:2
+ 1: 2
+ 3: 2
+ 5: 2
+ 7: 2
+ 8: 2
+ 12: 2
+ 13: 2
+ 15: 2
+ 16: 2
+ 19: 2
+ 21: 0
+ 22: 0
+ 23: 0
+ 25: 0
+ 32: 2 UL1M_SDRM_PushTaskQue:2
+ 33: 2 UL1M_SDRM_ProcCmdQueTask:2
+ 35: 2
+NEUN_SDRA_GetSsbCaseType:204:6
+ 6: 6
+ 12: 6
+ 15: 6
+ 20: 6
+UL1M_RCM_DsdsPreAssignContrl:200:4
+ 1: 4
+ 6: 4 UL1M_RCM_DsdsRfReqListProc:4
+ 9: 4 UL1M_RCM_DsdsReqListPriorityCalc:4
+ 12: 8
+ 14: 8 UL1M_RCM_DsdsCleanRfUseQueue:8
+ 20: 4 UL1M_RCM_GetDsdsVersion:4
+ 21: 4
+ 25: 4
+ 27: 4 UL1M_RCM_DsdsPreAssignProc:4
+ 30: 0
+FESS_FWK_ProcLazyJobCb:200:2
+ 8: 2 FESS_MNTN_RptSchedInfo:2
+ 13: 2
+ 6: FESS_FWK_LazyJobMntnStartMc:148
+  5: 2
+  7: 2
+  8: 2
+  9: 2
+  10: 2
+  13: 2
+  9: UPHY_CORE_GetMcCount:6
+   4: 2
+ 10: FESS_FWK_LazyJobMntnEndMc:22
+  4: 2
+  7: 2
+  8: 0
+  10: 0
+  11: 0
+  4: UPHY_CORE_GetMcCount:6
+   4: 2
+UL1M_PRM_SdrReleaseNrSmpDdr:198:2
+ 2: 2 UPHY_OS_SpinLock:2
+ 3: 2
+ 4: 2
+ 7: 2
+ 9: 2 UPHY_OM_PrintfTraceHash:2
+ 13: 2
+ 14: 2
+ 15: 2 UPHY_OS_SpinUnLock:2
+NPHY_SDRA_SsbTfsPdeRsltRpt:198:2
+ 1: 2
+ 3: 2
+ 6: 2
+ 7: 0
+ 8: 0
+ 14: 2 memcpy_s:2
+ 15: 2
+ 20: 2
+ 21: 2
+ 22: 2
+ 23: 2
+ 27: 2 NEUN_SDRA_SendOsMsg:2
+ 28: 2 UL1M_SDRM_GetL1dDstMid:2
+ 32: 2
+ 33: 0
+ 36: 2
+NPHY_SDRA_GetSsbPssPosTable:198:6
+ 1: 6
+ 4: 6
+UPHY_OS_MsgRecv:192:4
+ 1: 4
+ 3: 4
+ 5: 4
+ 8: 4 mdrv_msg_recv:4
+ 9: 4
+ 14: 0
+ 18: 4
+ 20: 4
+ 25: 4
+mdrv_tick_isr:180:4
+ 3: 4
+ 5: 4
+ 7: 4 OsTickTargetCoresGet:4
+ 9: 0
+ 11: 0
+ 14: 4
+ 15: 0
+ 17: 4
+ 3: OsGetHwThreadId:60
+  3: 4
+  9: 4
+mdrv_msg_free:180:4
+ 7: 4
+ 11: 4
+ 14: 4
+ 20: 0
+ 23: 4 SRE_MemFree:4
+ 24: 4
+ 26: 0
+ 30: 4
+ 11: is_msg_cookie_vaild:52
+  2: 4
+ 17: msg_cookie_deinit:4
+  2: 4
+mdrv_kmem_alloc_align:180:20
+ 2: 20
+ 3: 20
+ 7: 20 OsMemAllocAlignInner:20
+ 8: 20
+SRE_TickISR:180:4
+ 3: 4
+ 5: 4
+ 7: 4 OsTickTargetCoresGet:4
+ 9: 0
+ 11: 0
+ 14: 4
+ 15: 0
+ 17: 4
+ 3: OsGetHwThreadId:60
+  3: 4
+  9: 4
+SRE_MemAllocAlign:180:20
+ 2: 20
+ 3: 20
+ 7: 20 OsMemAllocAlignInner:20
+ 8: 20
+UL1M_RCM_DsdsPreAssignFailListProc:168:4
+ 2: 4
+ 14: 4 memset_s:4
+ 22: 0
+ 23: 0
+ 26: 4
+ 29: 4
+ 34: 0
+ 36: 0
+ 42: 0
+ 45: 0
+ 52: 0
+ 53: 0
+ 54: 0
+ 56: 0
+ 72: 0
+ 77: 4
+UPHY_INST_GetSpecBootCfg:165:15
+ 2: 15
+UPHY_OS_MsgFullAlloc:164:4
+ 1: 4
+ 5: 4 mdrv_msg_alloc:4
+ 6: 0
+ 9: 4
+UL1M_RCM_DcxoMiniPeriodTask:156:4
+ 1: 4
+ 2: 4 UL1M_RCM_DcxoGetMiniInfoAddr:4
+ 6: 4
+ 7: 4
+ 10: 4 UL1M_RCM_DcxoHpGetHpCtrlSwitch:4
+ 11: 0
+ 12: 4
+ 15: 0
+ 16: 0
+ 19: 0
+ 21: 0
+ 25: 0
+ 26: 0
+ 30: 4
+UPHY_BBPDMA_RptChnTimeSetEnable:150:15
+ 3: 15 UPHY_BBPDMA_ChnTimeSetEnable:15
+NPHY_SDRA_GetSsbDataPos:150:6
+ 6: 6 NEUN_SDRA_GetSsbCaseType:6
+ 7: 6 NPHY_SDRA_GetSsbPssPosTable:6
+ 10: 6
+UPHY_OS_MsgFullSend:140:4
+ 11: 4
+ 12: 0
+ 15: 4 UPHY_OS_LayerReport:4
+ 17: 4
+ 21: 4 mdrv_msg_vsend:4
+ 24: 4
+ 25: 0
+ 26: 0
+ 33: 4
+ 12: UPHY_OS_LayerMsgSend:0
+  6: 0
+  7: 0
+  10: 0
+  11: 0
+  14: 0
+  16: 0
+  17: 0
+  18: 0
+UPHY_CORE_MemAlloc:136:4
+ 1: 4
+ 2: 4
+ 3: 4
+ 9: 4
+ 10: 4
+ 11: 4 mdrv_mem_alloc:4
+ 13: 0
+ 14: 4
+ 16: 0
+ 18: 4
+UL1M_RCM_GetRptMsgId:136:4
+ 1: 4
+ 11: 0
+ 12: 4
+ 13: 4
+ 19: 0
+UL1M_RCM_GetLayerMsgOmSwitch:136:4
+ 1: 4
+ 5: 4
+ 6: 0
+ 10: 4 UL1M_RCM_GetMsgId:4
+ 11: 4
+ 13: 4 UL1M_RCM_GetRptMsgId:4
+ 18: 4 UL1M_RCM_GetModuleAndMsgOmSwitch:4
+ 19: 4
+UL1M_RCM_GetSupportDualUlFlag:132:12
+ 2: 12
+UL1M_RCM_DcxoSelectValidSample:132:2
+ 19: 2
+ 22: 6
+ 23: 6
+ 24: 0
+ 27: 0
+ 35: 2
+ 36: 0
+ 37: 0
+ 38: 0
+ 39: 0
+ 45: 2
+UPHY_TRACE_DumpSchedInfoRpt:124:2
+ 1: 2
+ 3: 2 UPHY_OM_GetModuleSwitch:2
+ 4: 2 mdrv_om_get_sched_info:2
+ 5: 2 UPHY_OM_MsgReport:2
+ 10: 2
+ 4: UPHY_CORE_GetThreadId:32
+  2: mdrv_get_core_id:32
+   2: OsGetCoreID:32
+    3: 2
+    9: 2
+UL1M_RCM_RecordPayload:120:4
+ 4: 4
+ 7: 4
+ 10: 0
+ 13: 4
+UL1M_RCM_GetModuleAndMsgOmSwitch:120:8
+ 6: 8 UPHY_OM_GetModuleSwitch:8
+ 7: 8
+ 8: 0
+ 13: 8 UL1M_RCM_GetMsgOmSwitch:8
+ 14: 8
+ 15: 0
+ 19: 8
+UL1M_RCM_Calc32kTimeDistance:120:4
+ 6: 4
+ 7: 4
+ 10: 4
+ 17: 0
+ 20: 0
+NPHY_SDRA_SsbPosCalcInfoOmRpt:120:4
+ 3: 4
+ 12: 4
+ 13: 0
+ 17: 0
+ 18: 0
+ 19: 0
+ 20: 0
+ 22: 0
+ 24: 0
+ 25: 0
+ 26: 0
+ 27: 0
+ 30: 0
+ 31: 0
+ 32: 0
+ 35: 0
+ 36: 0
+ 37: 0
+ 41: 0
+ 45: 4
+FESS_MRM_RxStandby:120:15
+ 5: 15 FESS_RXTASK_RxMsgJob:15
+ 6: 15
+UL1M_RCM_OmReport:116:4
+ 1: 4
+ 5: 4 UL1M_RCM_GetModuleAndMsgOmSwitch:4
+ 6: 4
+ 10: 4 UPHY_OM_MsgReport:4
+ 11: 4
+ 12: 0
+ 15: 4
+systimer_hander_isr:112:4
+ 5: 4
+ 6: 4
+ 8: 4
+ 11: 0
+ 5: sys_readl:28
+  2: 4
+  3: 4
+ 8: sys_writel:20
+  2: 4
+  3: 4 SRE_TickISR:4
+UL1M_SDRM_PostPdeLowTaskEvent:112:14
+ 5: 14
+ 6: 14 UL1M_SDRM_PostPdeTask:14
+FESS_UldsdsSigService_UpdateSrs:110:10
+ 2: 10
+ 5: 10
+ 3: FESS_Srs_GetApplyTime:70
+  2: 10
+UL1M_RCM_RecordMsgInfo:108:4
+ 4: 4
+ 5: 4
+ 6: 4
+ 7: 4
+UL1M_RCM_DsdsJudgeSwitchReversedState:108:4
+ 7: 4 UL1M_RCM_DsdsInquiryTaskApply:4
+ 8: 4 UL1M_RCM_DsdsInquiryTaskApply:4
+ 10: 4
+ 11: 0
+ 14: 0
+ 16: 0
+ 18: 4
+ 24: 4
+mdrv_mem_alloc:104:4
+ 7: 4
+ 18: 4 SRE_MemAllocAlign:4
+UL1M_RCM_32kIntProcess:100:4
+ 1: 4
+ 4: 4 UL1M_RCM_Clear32kInt:4
+ 6: 4
+ 7: 4 UL1M_RCM_SendMsg:4
+NPHY_SDRA_GetEmuSsbPos:96:4
+ 2: 4
+ 4: 4 NPHY_SDRA_SsbIdxCalSsbDataPos:4
+ 5: 4
+ 7: 4
+UL1M_ULPM_GetVoteState:88:8
+ 2: 8
+UL1M_RCM_GetDualSimActiveInd:88:8
+ 2: 8
+UL1M_RCM_GetChannelKeep:88:8
+ 2: 8
+UL1M_RCM_DsdsProcDualUlEnter:88:4
+ 1: 4
+ 11: 4 UL1M_RCM_GetDualSimActiveInd:4 UL1M_RCM_GetSupportDualUlFlag:4
+ 16: 0
+ 17: 0
+ 18: 0
+ 19: 0
+ 21: 0
+ 22: 0
+ 27: 0
+ 28: 0
+ 30: 0
+ 33: 0
+ 38: 0
+ 41: 0
+ 44: 4
+UL1M_RCM_DsdsMainStateMachine:88:4
+ 2: 4 UL1M_RCM_DsdsGetMainParaAddr:4
+ 5: 4 UL1M_RCM_DsdsChannelKeepTimeOutProc:4
+ 8: 4 UL1M_RCM_GetDsdsVersion:4
+ 10: 4 UL1M_RCM_DsdsDualUlPreProcess:4
+ 13: 4
+ 14: 0
+ 17: 4 UL1M_RCM_DsdsProcDsds2StateMachine:4
+ 22: 4 UL1M_RCM_DsdsMainProcess:4
+UL1M_RCM_DcxoPreTimingCal:84:4
+ 1: 4
+ 2: 4 UL1M_RCM_DcxoGetTimingCalAddr:4 UL1M_RCM_Calc32kTimeDistance:4
+ 6: 4
+ 7: 4
+ 12: 0
+ 14: 0
+ 16: 4
+UL1M_RCM_CrmPeriodTask:84:4
+ 2: 4 UL1M_RCM_CrmGetArbitInfoAddr:4 UL1M_RCM_CrmGetMimoInfoAddr:4
+ 7: 4
+ 8: 0
+ 9: 0
+ 10: 0
+ 16: 4
+ 17: 0
+ 18: 0
+ 19: 0
+ 25: 4
+ 26: 0
+ 27: 0
+ 28: 0
+ 35: 4
+ 37: 0
+ 40: 4
+FESS_FWK_AddLazyJob:82:2
+ 5: 2
+ 6: 2 FESS_RINGBUFF_Alloc:2
+ 8: 2
+ 9: 0
+ 13: 2
+ 14: 2
+ 15: 2 memcpy_s:2
+UL1M_RCM_InquireSys32kTime:80:4
+ 1: 4
+ 6: 0
+ 7: 4 UL1M_FLPM_IsBbaReady:4
+ 8: 4
+ 13: 0
+ 15: 0
+ 20: 0
+ 21: 0
+ 23: 4
+ 8: UPHY_ReadRegV:52
+  3: 4
+  5: 4
+UL1M_RCM_GetDsdsVersion:80:8
+ 2: 8
+bsp_dump_get_sched_info:76:2
+ 1: 2
+ 2: 2 osl_get_max_core_num:2
+ 5: 2 arch_dump_get_sched_info:2
+ 6: 0
+UL1M_RCM_DsdsGetMainParaAddr:76:76
+ 2: 76
+UPHY_TRACE_OMCommIsrTraceReport:72:8
+ 1: 8
+ 2: 8 UPHY_TRACE_GetSwitch:8
+ 3: 8
+ 5: 0
+ 10: 8
+ 4: UPHY_CORE_GetThreadId:0
+  2: mdrv_get_core_id:0
+   2: OsGetCoreID:0
+    3: 0
+    9: 0
+FESS_MNTN_RptSchedInfo:72:2
+ 5: 2 UPHY_TRACE_DumpSchedInfoRpt:2
+ 3: FESS_FWK_ReportTraceRecord:70
+  7: 2 FESS_OM_AllocMsg:2
+  9: 2
+  10: 2 memcpy_s:2
+  11: 2
+UPHY_OS_LayerReport:68:4
+ 2: 4
+ 3: 4
+ 4: 4 UPHY_OM_LayerReport:4
+UL1M_RCM_DsdsJudgeRfResetTimeout:68:4
+ 1: 4
+ 2: 4 UL1M_RCM_DsdsJudgeRfResetState:4 UL1M_RCM_DsdsGetFessResetAddr:4
+ 8: 4
+ 12: 0
+ 18: 0
+ 20: 0
+ 26: 0
+ 28: 0
+ 30: 0
+ 39: 0
+ 41: 0
+ 43: 0
+ 55: 4
+ 29: UPHY_OmSystemError:0
+  2: 0
+ 42: UPHY_OmSystemError:0
+  2: 0
+UL1M_RCM_GetMsgId:60:12
+ 6: 12
+UL1M_FLPM_IsBbaReady:60:4
+ 2: 4
+ 3: 0
+ 6: 4 FESS_LPM_IsBbaReady:4
+ 7: 4
+UL1M_ULPM_SetVoteState:56:8
+ 2: 8
+FESS_LPM_IsBbaReady:56:4
+ 2: 4
+UL1M_RCM_DcxoHpGetHpCtrlSwitch:52:4
+ 2: 4
+UL1M_RCM_Clear32kInt:52:4
+ 2: UPHY_WriteRegV:52
+  3: 4
+  5: 4
+FESS_MRM_GetRptStreamNum:52:52
+ 2: 52
+OsSmpSchIsr:49:49
+ 3: 49
+UL1M_SDRM_SyncCmdQuePara:48:12
+ 2: 12
+UL1M_RCM_DsdsDualUlPreProcess:48:4
+ 1: 4
+ 3: 4 UL1M_RCM_GetSupportDualUlFlag:4
+ 8: 4
+ 9: 4 UL1M_RCM_DsdsProcDualUlEnter:4
+ 11: 0
+ 14: 0
+FESS_FWK_AddNextPeriodTask:48:2
+ 0: 2
+ 4: 2
+ 5: 2
+ 6: 2 FESS_FWK_AddMsgJob:2
+ 4: UPHY_CORE_GetMcCount:6
+  4: 2
+read_sync:44:44
+ 5: 44
+UL1M_RCM_ShareDsdsVersion:44:4
+ 2: 4
+UL1M_RCM_GetRfResetState:44:4
+ 2: 4
+UL1M_RCM_GetMultiCardInd:44:4
+ 2: 4
+UL1M_RCM_GetChannelKeepTimeStamp:44:4
+ 2: 4
+UL1M_RCM_DsdsProcDsds2StateMachine:44:4
+ 6: 4
+ 9: 4 UL1M_RCM_DsdsProcNormalState:4
+ 14: 0
+ 18: 0
+ 23: 0
+ 27: 0
+ 30: 0
+UL1M_RCM_DsdsGetFessResetAddr:44:4
+ 2: 4
+UL1M_RCM_DcxoGetTimingCalAddr:44:4
+ 2: 4
+UL1M_SDRM_CheckCmdQueTask:42:2
+ 5: 2
+ 6: 2
+ 7: 2 UL1M_SDRM_PostPdeLowTaskEvent:2
+ 25: 2
+UPHY_CORE_MemFree:40:4
+ 2: 4
+ 6: 4 mdrv_free:4
+ 7: 0
+ 9: 4
+UL1M_RCM_GetConSearchWorkState:40:4
+ 2: 4
+UL1M_RCM_GetConSearchState:40:4
+ 2: 4
+UL1M_RCM_DsdsMainProcess:40:4
+ 1: 4
+ 3: 4 UL1M_RCM_DsdsPreAssignContrl:4
+ 6: 4 UL1M_RCM_DsdsAssignContrl:4
+ 9: 4 UL1M_RCM_DsdsRptReqRfListInfo:4
+ 12: 4 UL1M_RCM_DsdsJudgeRfResetTimeout:4
+UL1M_RCM_DsdsGetSys32kTime:40:4
+ 2: 4
+SecMemcpyError:37:3
+ 2: 3
+ 6: 1
+ 8: 0
+ 9: 0
+ 14: 1
+ 15: 0
+ 19: 1
+ 20: 0
+ 26: 3
+UPHY_OS_MsgAlloc:36:12
+ 4: 12 mdrv_msg_alloc:12
+ 5: 0
+ 7: 12
+FESS_UldsdsSigService_UpdateStandby:35:35
+ 94: 35 FESS_UldsdsSigService_UpdateResume:35
+FESS_RXAGC_ExecuteRfdev:33:33
+ 2: 33 FESS_RFDEV_ProcRxAgc:33
+UL1M_RCM_SchdlProc32kInt:32:4
+ 3: 4 UL1M_RCM_DsdsSetSys32kTime:4 UL1M_RCM_InquireSys32kTime:4
+ 6: 4 UL1M_RCM_DsdsGetSys32kTime:4 UL1M_RCM_DcxoPreTimingCal:4
+ 9: 4 UL1M_RCM_DsdsMainStateMachine:4
+ 12: 4 UL1M_RCM_DcxoPeriodTask:4
+ 15: 4 UL1M_RCM_DsdsRptTaskInfo:4
+ 19: 4 UL1M_RCM_CrmPeriodTask:4
+UL1M_RCM_CrmGetArbitInfoAddr:32:4
+ 2: 4
+FESS_MRM_IsIfOperate:30:30
+ 2: 30
+UPHY_EICC_GetExtraHeadSize:28:28
+ 2: 28
+UL1M_RCM_DsdsSetSys32kTime:28:4
+ 2: 4
+UL1M_RCM_DsdsAssignContrl:28:4
+ 1: 4
+ 3: 4 UL1M_RCM_DsdsRfUsedAssignListProc:4
+ 6: 4 UL1M_RCM_DsdsPreAssignFailListProc:4
+ 9: 4 UL1M_RCM_DsdsRfUsedOtherListProc:4
+UL1M_RCM_CrmGetMimoInfoAddr:28:4
+ 2: 4
+NPHY_SDRA_SsbEmuCancleTask:28:4
+ 3: 4
+ 4: 0
+ 5: 0
+ 6: 0
+ 7: 0
+ 8: 0
+ 13: 4
+UL1M_RCM_DsdsProcNormalState:24:4
+ 1: 4
+ 7: 4 UL1M_RCM_DsdsJudgeSwitchReversedState:4
+ 8: 0
+ 10: 4
+UL1M_RCM_DsdsPreAssignProc:24:4
+ 1: 4
+ 6: 4 UL1M_RCM_DsdsSelectPreAssignTaskNode:4
+ 8: 4
+ 16: 0
+ 17: 0
+ 19: 0
+ 23: 0
+ 24: 0
+ 26: 0
+ 29: 0
+ 31: 4
+UL1M_RCM_DsdsChannelKeepTimeOutProc:16:4
+ 2: 4 UL1M_RCM_DsdsGetMainParaAddr:4 UL1M_RCM_GetChannelKeep:4
+ 5: 4
+ 6: 0
+ 8: 0
+ 9: 0
+ 11: 0
+ 12: 0
+ 15: 4
+NPHY_SDRA_RelSsbEmuDdr:16:2
+ 2: 2
+ 3: 0
+ 4: 2 UL1M_PRM_SdrReleaseNrSmpDdr:2
+ 6: 0
+FESS_RXRESUME_ExecutePreProc:15:15
+ 3: 15
+FESS_MNTN_ProcSchedInfoRptPeriodTask:14:2
+ 3: 2 FESS_FWK_AddLazyJob:2
+FESS_MRM_CheckOutDummy:10:10
+ 2: 10
+FESS_FWK_ProcPeriodTask:10:2
+ 3: 2 FESS_MNTN_ProcSchedInfoRptPeriodTask:2
+UPHY_TRACE_GetSwitch:8:8
+ 2: 8
+UL1M_RCM_DsdsJudgeRfResetState:8:4
+ 4: 4 UL1M_PRM_ReadShareMem:4
+ 9: 4
+mdrv_free:4:4
+ 2: 4 SRE_MemFree:4
+UL1M_RCM_HalSendMsg:4:4
+ 12: 4 UPHY_OS_MsgFullSend:4
+UL1M_RCM_DcxoGetMiniInfoAddr:4:4
+ 2: 4
+UL1M_RCM_DcxoGetMainInfoAddr:4:4
+ 2: 4
+osl_get_max_core_num:2:2
+ 2: 2
+mdrv_om_get_sched_info:2:2
+ 2: 2 bsp_dump_get_sched_info:2
+memset:0:94
+memcpy:0:1891

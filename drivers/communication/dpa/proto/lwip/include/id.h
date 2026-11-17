@@ -1,0 +1,48 @@
+#ifndef ID_H
+#define ID_H
+#include <bsp_dpa_client.h>
+
+enum sock_functions_id {
+    SOCK_CREATE,
+    SOCK_CLOSE,
+    SOCK_REGISTER_EVENT,
+    SOCK_CONNECT,
+    SOCK_SETSOCKOPT,
+    SOCK_SENDMSG,
+    SOCK_RECVMSG,
+    SOCK_RECVMSG_END,
+    SOCK_GETSOCKOPT,
+    SOCK_IOCTL,
+    SOCK_BIND,
+    SOCK_LISTEN,
+    SOCK_ACCEPT,
+    SOCK_PUBLISH,
+    SOCK_RECV,
+    SOCK_FUNCTIONS_END
+};
+
+enum arp_functions_id {
+    ADD_STATIC_ARP_ENTRY,
+    DEL_STATIC_ARP_ENTRY,
+    ADD_STATIC_ND6_ENTRY,
+    DEL_STATIC_ND6_ENTRY,
+    ETHARP_REGISTER_NOTIFIER,
+    ND6_REGISTER_NOTIFIER,
+    ARP_FUNCTIONS_END
+};
+
+enum netdev_functions_id {
+    NETDEV_CONFIG,
+    NETDEV_ADD,
+    NETDEV_REMOVE,
+    NETDEV_UPDATE,
+    NETDEV_CFG_IP4ADDR,
+    NETDEV_FUNCTIONS_END
+};
+
+enum modem_cfg_functions_id {
+    MODEM_CFG_LINK,
+    MODEM_CFG_FUNCTIONS_END
+};
+
+#endif

@@ -1,0 +1,27 @@
+/**************************
+ * err_type select for this
+ * enum buserr_type {
+ *     BUS_ERROR_AHB_APB_AXI = 0,
+ *     BUS_ERROR_NOC = 1,
+ *     BUS_ERROR_QIC = 2,
+ *     BUS_ERROR_MINIBUS = 3,
+ *     BUS_ERROR_DMCQIC = 4,
+ *     BUS_ERROR_DDR = 5,
+ *     BUS_ERROR_BUTT,
+ * };
+*****************************/
+
+dpa_busprobe {
+    compatible               = "dpa_busprobe,dpa";
+    interrupts               = <0 419 4>;
+    sysctrl_base_address     = <0xE6C01000>;
+    err_state_reg_sum        = <0x1>;
+    sc_int_stat1 {
+        err_state_reg_id     = <0>;
+        err_state_reg_offset = <0x984>;
+        err_state_bit_sum    = <4>;
+        err_type             = <2>, <0>, <0>, <0>;
+        err_state_bit        = <4>, <5>, <6>, <12>;
+        err_name             = "dpa_qic_intr_em_rec", "dpa_pslv_err_int", "dpa_timer_pslv_err_int", "dpa_hslv_err_int";
+    };
+};

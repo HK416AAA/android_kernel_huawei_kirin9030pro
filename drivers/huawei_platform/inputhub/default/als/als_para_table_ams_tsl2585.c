@@ -1,0 +1,136 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2024. All rights reserved.
+ * Description: als para table ams tsl2585 source file
+ * Author: lisheng
+ * Create: 2024-01-19
+ */
+
+#include "als_para_table_ams_tsl2585.h"
+
+#include <linux/err.h>
+#include <linux/of.h>
+#include <linux/of_device.h>
+#include <linux/of_gpio.h>
+#include <linux/slab.h>
+#include <linux/types.h>
+
+#include <securec.h>
+
+#include "als_tp_color.h"
+#include "contexthub_boot.h"
+#include "contexthub_route.h"
+
+static als_para_normal_table tsl2585_als_para_diff_tp_color_table[] = {
+	{ PSD, V3, VISI_TPLCD, TSL2585_PARA_SIZE,
+		{ 2048, 120, 220, 360, 2000, 3158, 3451, 3535, 3619, 6300, 5000, 4000, 250, 0, 0, 0 }
+	},
+	{ PSD, V3, BOE_TPLCD_B12, TSL2585_PARA_SIZE,
+		{ 2048, 120, 220, 350, 2000, 4957, 5613, 5545, 5600, 4360, 3679, 4000, 250, 0, 0, 0 }
+	},
+	{ PSD, V3, CSOT_TPLCD, TSL2585_PARA_SIZE,
+		{ 2048, 100, 180, 280, 2000, 1706, 1873, 1936, 1949, 9316, 10045, 4000, 250, 0, 0, 0 }
+	},
+	{ PSD, V3, TS_PANEL_UNKNOWN, TSL2585_PARA_SIZE,
+		{ 2048, 110, 250, 310, 2000, 5059, 5683, 5691, 5955, 4360, 3679, 4000, 250, 0, 0, 0 }
+	},
+	{ TLR, V3, CSOT_TPLCD, TSL2585_PARA_SIZE,
+		{ 256, 65, 118, 181, 2000, 11074, 12306, 13169, 13450, 1450, 2400, 4000, 250, 0, 0, 0 }
+	},
+	{ TLR, V3, BOE_TPLCD, TSL2585_PARA_SIZE,
+		{ 256, 57, 103, 158, 2000, 11455, 12944, 14166, 14641, 1450, 2400, 4000, 250, 0, 0, 0 }
+	},
+	{ TLR, V3, VISI_TPLCD, TSL2585_PARA_SIZE,
+		{ 256, 81, 154, 239, 2000, 9112, 9832, 9992, 10064, 1900, 2400, 4000, 250, 0, 0, 0 }
+	},
+	{ TLR, V3, TS_PANEL_UNKNOWN, TSL2585_PARA_SIZE,
+		{ 256, 70, 130, 190, 2000, 9616, 10795, 13012, 13828, 1450, 2400, 4000, 250, 0, 0, 0 }
+	},
+	{ GAI, V3, BOE_TPLCD, TSL2585_PARA_SIZE,
+		{ 256, 57, 103, 158, 2000, 11455, 12944, 14166, 14641, 1450, 2400, 4000, 250, 0, 0, 0 }
+	},
+	{ GAI, V3, CSOT_TPLCD, TSL2585_PARA_SIZE,
+		{ 256, 65, 118, 181, 2000, 11074, 12306, 13169, 13450, 1450, 2400, 4000, 250, 0, 0, 0 }
+	},
+	{ GAI, V3, VISI_TPLCD, TSL2585_PARA_SIZE,
+		{ 256, 81, 154, 239, 2000, 9112, 9832, 9992, 10064, 1900, 2400, 4000, 250, 0, 0, 0 }
+	},
+	{ GAI, V3, TS_PANEL_UNKNOWN, TSL2585_PARA_SIZE,
+		{ 256, 70, 130, 190, 2000, 9616, 10795, 13012, 13828, 1450, 2400, 4000, 250, 0, 0, 0 }
+	},
+	{ CHZ, V3, BOE_TPLCD, TSL2585_PARA_SIZE,
+		{ 256, 70, 130, 195, 2000, 11435, 12488, 13015, 13077, 1450, 2400, 4000, 250, 0, 0, 0 }
+	},
+	{ CHZ, V3, TM_TPLCD, TSL2585_PARA_SIZE,
+		{ 256, 61, 115, 179, 2000, 11644, 12675, 13167, 13211, 1450, 2400, 4000, 250, 0, 0, 0 }
+	},
+	{ CHZ, V3, TS_PANEL_UNKNOWN, TSL2585_PARA_SIZE,
+		{ 256, 70, 130, 190, 2000, 9616, 10795, 13012, 13828, 1450, 2400, 4000, 250, 0, 0, 0 }
+	},
+	/* xian platfom add {ALS_GAIN, IR_GAIN, H, A, D, C(8 number lux coefs), als_target, ir_target,
+		offset_max, offset_min, als_target_ratio, ir_target_ratio} */
+	{ MRT, V3, TM_TPLCD, TSL2585_PARA_SIZE,
+		{ 512, 512, 730, 1400, 2200, 20000, 7775, 8647, 9283, 10066, 20217, 2429, 4000, 250, 1, 1 }
+	},
+	{ MRT, V3, VISI_TPLCD, TSL2585_PARA_SIZE,
+		{ 512, 512, 920, 1800, 2750, 20000, 7799, 8652, 8805, 9716, 20217, 2429, 4000, 250, 1, 1 }
+	},
+	{ MRT, V3, TS_PANEL_UNKNOWN, TSL2585_PARA_SIZE,
+		{ 512, 512, 730, 1400, 2200, 20000, 7775, 8647, 9283, 10066, 20217, 2429, 4000, 250, 1, 1 }
+	},
+	{ PSN, V3, CSOT_TPLCD, TSL2585_PARA_SIZE,
+		{ 256, 256, 582, 1045, 1600, 20000, 9779, 11054, 12006, 12463, 1450, 2400, 4000, 250, 10, 1 }
+	},
+	{ PSN, V3, BOE_TPLCD, TSL2585_PARA_SIZE,
+		{ 256, 256, 620, 1090, 1660, 20000, 9333, 10629, 11769, 12131, 1450, 2400, 4000, 250, 10, 1 }
+	},
+	{ PSN, V3, VISI_TPLCD, TSL2585_PARA_SIZE,
+		{ 256, 256, 810, 1540, 2390, 20000, 9112, 9832, 9992, 10064, 1900, 2400, 4000, 250, 10, 1 }
+	},
+	{ PSN, V3, TS_PANEL_UNKNOWN, TSL2585_PARA_SIZE,
+		{ 256, 256, 650, 1180, 1810, 20000, 11074, 12306, 13169, 13450, 1450, 2400, 4000, 250, 10, 1 }
+	},
+	{ SUP, V3, TM_TPLCD, TSL2585_PARA_SIZE,
+		{ 1024, 1024, 2434, 4483, 6653, 20000, 4075, 4326, 4331, 4482, 5047, 2940, 4000, 250, 10, 1 }
+	},
+	{ SUP, V3, BOE_TPLCD, TSL2585_PARA_SIZE,
+		{ 1024, 1024, 2760, 4970, 7330, 20000, 5591, 6054, 6290, 6461, 3400, 1750, 4000, 250, 10, 1 }
+	},
+	{ SUP, V3, TS_PANEL_UNKNOWN, TSL2585_PARA_SIZE,
+		{ 1024, 1024, 2000, 3560, 5400, 20000, 4263, 4531, 4605, 4700, 4553, 2429, 4000, 250, 10, 1 }
+	},
+	{ KLE, V3, VISI_TPLCD, TSL2585_PARA_SIZE,
+		{ 512, 512, 950, 1820, 2790, 20000, 7780, 8402, 8374, 8783, 20217, 2429, 4000, 250, 1, 1 }
+	},
+	{ KLE, V3, CSOT_TPLCD, TSL2585_PARA_SIZE,
+		{ 512, 512, 970, 1700, 2700, 20000, 8483, 9225, 9539, 9733, 20217, 2429, 4000, 250, 1, 1 }
+	},
+	{ KLE, V3, TS_PANEL_UNKNOWN, TSL2585_PARA_SIZE,
+		{ 512, 512, 1130, 2200, 3350, 20000, 8890, 9581, 9420, 10148, 20217, 2429, 4000, 250, 1, 1 }
+	},
+	{ SLY, V3, VISI_TPLCD, TSL2585_PARA_SIZE,
+		{ 512, 512, 950, 1820, 2790, 20000, 7780, 8402, 8374, 8783, 20217, 2429, 4000, 250, 1, 1 }
+	},
+	{ SLY, V3, CSOT_TPLCD, TSL2585_PARA_SIZE,
+		{ 512, 512, 970, 1700, 2700, 20000, 8483, 9225, 9539, 9733, 20217, 2429, 4000, 250, 1, 1 }
+	},
+	{ SLY, V3, TS_PANEL_UNKNOWN, TSL2585_PARA_SIZE,
+		{ 512, 512, 1130, 2200, 3350, 20000, 8890, 9581, 9420, 10148, 20217, 2429, 4000, 250, 1, 1 }
+	},
+};
+
+als_para_normal_table *als_get_tsl2585_table_by_id(uint32_t id)
+{
+	if (id >= ARRAY_SIZE(tsl2585_als_para_diff_tp_color_table))
+		return NULL;
+	return &(tsl2585_als_para_diff_tp_color_table[id]);
+}
+
+als_para_normal_table *als_get_tsl2585_first_table(void)
+{
+	return &(tsl2585_als_para_diff_tp_color_table[0]);
+}
+
+uint32_t als_get_tsl2585_table_count(void)
+{
+	return ARRAY_SIZE(tsl2585_als_para_diff_tp_color_table);
+}

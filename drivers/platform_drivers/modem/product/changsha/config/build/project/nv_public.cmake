@@ -1,0 +1,7 @@
+set(nv_public.dir ${GBB_MODEM_DIR}/nv/public/build)
+set(nv_public.stage STAGE_COMPILE)
+set(nv_public.sec default)
+set(nv_public.sec_regx nv_cust.bin)
+set(nv_public.release_mode "src")
+set(nv_public.depends_release_artifact "true")
+set(nv_public.out nv_cust_product)

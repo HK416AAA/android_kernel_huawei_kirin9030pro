@@ -1,0 +1,6 @@
+dpa_sampler {
+    compatible = "dpa_sampler,dpa";
+    dpa_core_num = <2>;
+    dpa_core_bitmask = <3>;
+    dpa_core_pc_regs = <0xE726102C 0xE727102C>;
+};

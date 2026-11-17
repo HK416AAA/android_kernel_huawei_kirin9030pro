@@ -1,0 +1,32 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2024-2024. All rights reserved.
+ */
+#ifndef EVENT_FLAGS_H
+#define EVENT_FLAGS_H
+
+/* event callback flags */
+#define CONNECT_EVT_RCVPLUS 0x01U
+#define CONNECT_EVT_RCVMINUS 0x02U
+#define CONNECT_EVT_SENDPLUS 0x04U
+#define CONNECT_EVT_SENDMINUS 0x08U
+#define CONNECT_EVT_ERROR 0x10U
+#define CONNECT_EVT_HUP 0x20U
+#define CONNECT_EVT_RDHUP 0x40U
+#define CONNECT_EVT_AGAIN 0x80U
+#define CONNECT_EVT_ACCEPT 0x100U
+
+/* Epoll event masks */
+#define SPL_EPOLLIN     0x00000001
+#define SPL_EPOLLPRI    0x00000002
+#define SPL_EPOLLOUT    0x00000004
+#define SPL_EPOLLERR    0x00000008
+#define SPL_EPOLLHUP    0x00000010
+#define SPL_EPOLLNVAL   0x00000020
+#define SPL_EPOLLRDNORM 0x00000040
+#define SPL_EPOLLRDBAND 0x00000080
+#define SPL_EPOLLWRNORM 0x00000100
+#define SPL_EPOLLWRBAND 0x00000200
+#define SPL_EPOLLMSG    0x00000400
+#define SPL_EPOLLRDHUP  0x00002000
+
+#endif

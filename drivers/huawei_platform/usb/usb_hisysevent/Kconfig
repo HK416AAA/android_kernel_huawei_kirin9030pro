@@ -1,0 +1,4 @@
+config USB_HISYSEVENT
+    bool "USB Hisysevent Report"
+	help
+	  Say Y to enable usb hisysevent report

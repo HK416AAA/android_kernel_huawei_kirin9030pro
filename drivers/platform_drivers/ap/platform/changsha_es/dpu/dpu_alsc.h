@@ -1,0 +1,11 @@
+#ifndef DPU_ALSC_H
+#define DPU_ALSC_H 
+#define ALSC_PIC_WIDTH_SHIFT 13
+#define ALSC_PIC_HEIGHT_MASK ((1UL << ALSC_PIC_WIDTH_SHIFT) - 1)
+#define ALSC_PICTURE_SIZE(xres,yres) \
+ ((((xres) & ALSC_PIC_HEIGHT_MASK) << ALSC_PIC_WIDTH_SHIFT) | ((yres) & ALSC_PIC_HEIGHT_MASK))
+#define ALSC_ADDR_Y_SHIFT 13
+#define ALSC_ADDR_X_MASK ((1UL << ALSC_ADDR_Y_SHIFT) - 1)
+#define ALSC_SIZE_Y_SHIFT 8
+#define ALSC_SIZE_X_MASK ((1UL << ALSC_SIZE_Y_SHIFT) - 1)
+#endif

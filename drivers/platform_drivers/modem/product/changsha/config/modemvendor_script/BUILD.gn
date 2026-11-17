@@ -1,0 +1,54 @@
+# Copyright (c) 2021 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//build/ohos.gni")
+import("//vendor/hisi/ap/build/build_args.gni")
+import("//vendor/hisi/modem/build/build_args.gni")
+
+action("file_copy") {
+  deps = [
+      "//vendor/hisi/modem/app/rfile_user:rfile_user_phone",
+      "//vendor/hisi/modem/product/$device_name/config/modem_ps_user_script:modem_ps_user_build",
+      "//vendor/hisi/modem/product/$device_name/config/tool_config_script:tool_config_build",
+    ]
+  if (modem_build_variant != "user") {
+    deps += [
+        "//vendor/hisi/modem/app/logdeflatsvr:mdmlogdeflatsvr",
+        "//vendor/hisi/modem/app/heating_proxy:heating_proxy",
+        "//vendor/hisi/modem/app/modem_manufacture:modem_aging",
+        "//vendor/hisi/modem/app/modem_aging_test:modem_aging_test",
+        "//vendor/hisi/modem/ap/phone/build/ohos/modem_vendor_build/mtp_build_user/harmony:mtp_acore_user",
+        "//vendor/hisi/modem/ap/phone/build/ohos/modem_vendor_build/mtp_build_user_public/harmony:mtp_acore_user_public",
+        "//vendor/hisi/modem/app/st_test:st_app_test",
+      ]
+  } else if (modem_build_with_log) {
+    deps += [
+        "//vendor/hisi/modem/app/logdeflatsvr:mdmlogdeflatsvr"
+      ]
+  }
+    script = "//vendor/hisi/modem/product/$device_name/config/modemvendor_script/copy.sh"
+    product_out = rebase_path(root_build_dir, "//")
+    args = [
+      "OBB_PRODUCT_NAME=$device_name",
+      "PRODUCT_OUT=$product_out",
+      "BUILD_VARIANT=$modem_build_variant",
+      "modem_build_with_log=$modem_build_with_log"
+    ]
+  outputs = ["$target_gen_dir/modem_vendor_build.log"]
+}
+
+group("modem_vendor_device") {
+  deps = [
+    ":file_copy",
+  ]
+}

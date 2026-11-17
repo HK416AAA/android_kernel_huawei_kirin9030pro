@@ -1,0 +1,11 @@
+{
+    "call_chain": "",
+    "image_path": "",
+    "readelf": "",
+    "objcopy": "",
+    "func_deploy": [{
+        "seg": "*(ddr.text)",
+        "size": 31000,
+        "images": ["mp1x_wifi"]
+    }]
+}

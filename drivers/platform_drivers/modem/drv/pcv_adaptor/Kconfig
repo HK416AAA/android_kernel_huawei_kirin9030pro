@@ -1,0 +1,12 @@
+#
+# v2x_agent
+#
+ 
+config V2X_AGENT
+    tristate "v2x agent driver"
+    default n
+ 
+config V2X_AGENT_DUMP
+    bool "v2x agent dump"
+    depends on V2X_AGENT
+    default n

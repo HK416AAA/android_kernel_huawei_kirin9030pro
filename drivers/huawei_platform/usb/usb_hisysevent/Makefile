@@ -1,0 +1,1 @@
+obj-$(CONFIG_USB_HISYSEVENT) += usb_hisysevent.o

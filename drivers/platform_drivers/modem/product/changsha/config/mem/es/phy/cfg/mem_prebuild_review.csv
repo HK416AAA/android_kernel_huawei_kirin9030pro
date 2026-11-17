@@ -1,0 +1,333 @@
+changeid,memtype,inctype,component,team,size,owner,description
+I0136f388e9df6912fe8ed247b87a38ed175e176e,L2MEM,mini,lphy_ml1c,anp,5250,zhaoyamin 00799187,最小系统特性开关打开
+I0136f388e9df6912fe8ed247b87a38ed175e176e,L2MEM,mini,nphy_ml1c,anp,7949,zhaoyamin 00799187,最小系统特性开关打开
+I025379662e7cf2d9c97630d4b5035fe52ed43917,DDR,conn,uphy,plt,12742,lihongwei 00436719,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,DDR,conn,ul1m,ul1m,30708,lihongwei 00436719,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,DDR,mini,ul1m,ul1m,10403,lihongwei 00436719,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,L2MEM,conn,ul1m,ul1m,4515,lihongwei 00436719,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,DDR,conn,fess,fess,4486,wangyunfeng 00610598,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,L2MEM,mini,fess,fess,3185,wangyunfeng 00610598,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,L2MEM,conn,fess,fess,2849,wangyunfeng 00610598,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,L2MEM,mini,nphy_ll1u,ul,1715,wengweiyuan 30040432,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,L2MEM,conn,nphy_ll1u,ul,3261,wengweiyuan 30040432,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,L2MEM,conn,nphy_ll1d,dem,3190,dushihang 00855001,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,L2MEM,mini,nphy_ll1d,dem,1878,dushihang 00855001,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,DDR,conn,nphy_ll1d,dem,4058,dushihang 00855001,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,DDR,conn,wphy,wphy,11021,renyanhui 00892457,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,DDR,conn,gphy,gphy,16987,zhangxianming 00879046,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,DDR,conn,uphy,plt,12742,lihongwei 00436719,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,L2MEM,conn,lphy_ml1c,lphy_ml1c,3980,lihongwei 00436719,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,L2MEM,conn,nphy_ml1c,nphy_ml1c,2597,lihongwei 00436719,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,DDR,conn,lphy_hl1c,lphy_hl1c,3864,lihongwei 00436719,changsha打开chr特性
+I025379662e7cf2d9c97630d4b5035fe52ed43917,DDR,conn,nphy_hl1c,nphy_hl1c,5774,lihongwei 00436719,changsha打开chr特性
+I04ac82c5362a395ea31f0cb51301329e9532b097,DDR,conn,csxw1,csxw1,2851,yangyongcheng 00831640,csxw1BT 2R并行测试项目
+I04b1e04f0d00a667e40159769fe29f326e59c3ae,DDR,conn,csxw1,sidelink,9831,zhangqi 00929370,csxw1 蜂窝探测项目开发
+I05778b93637133ba460a10b6c0b062cfec355782,DDR,coon,uphy,com_bj,5781,wupeng 00814379,psa dump增加临终函数代码段保存
+I073e7961b626f93a522f490e865b6843f16bdc9b,DDR,conn,uphy,com_bj,28443,liujiajun 00369871,平台低功耗联调上库 新增tsp maxs异常dump
+I073e7961b626f93a522f490e865b6843f16bdc9b,L2MEM,mini,uphy,com_bj,9169,liujiajun 00369871,平台低功耗联调上库 新增uphy msg消息唤醒buffer
+I096ae7b06016f6c12090b2c9abefb2b7aa4bebae,DDR,conn,fess,fess,2411,renzhe 00417061,tts xw1支持TrxTas和Mas方向图
+I0b3abf13b0a16877a61476559eba365a66e8f700,L2MEM,conn,nphy_ll1d,dem,1861,qiankun 00430279, PDC三合一降虚警特性
+I0c65862d2db342b81e777ffb42a149085614e13a,DDR,conn,uphy,uphy,4659,liuxiang 00445858,老化激发用例增加
+I0c82f6feea5e1bbd9c719cd6cfaecdaf1ad7de66,L2MEM,mini,ul1m,com_bj,2394,zhangjingwang 00414126,add memchekc stage II
+I0c82f6feea5e1bbd9c719cd6cfaecdaf1ad7de66,L2MEM,mini,uphy,com_bj,235194,zhangjingwang 00414126,add memchekc stage II
+I0c82f6feea5e1bbd9c719cd6cfaecdaf1ad7de66,L2MEM,mini,neun,com_bj,5919,zhangjingwang 00414126,add memchekc stage II
+I0c82f6feea5e1bbd9c719cd6cfaecdaf1ad7de66,L2MEM,mini,lphy_comm,com_bj,9578,zhangjingwang 00414126,add memchekc stage II
+I0c82f6feea5e1bbd9c719cd6cfaecdaf1ad7de66,L2MEM,mini,nphy_comm,com_bj,10966,zhangjingwang 00414126,add memchekc stage II
+I0c82f6feea5e1bbd9c719cd6cfaecdaf1ad7de66,L2MEM,mini,lphy_ml1c,com_bj,107826,zhangjingwang 00414126,add memchekc stage II
+I0c82f6feea5e1bbd9c719cd6cfaecdaf1ad7de66,L2MEM,mini,lphy_ll1d,com_bj,21982,zhangjingwang 00414126,add memchekc stage II
+I0c82f6feea5e1bbd9c719cd6cfaecdaf1ad7de66,L2MEM,mini,nphy_ml1c,com_bj,4707,zhangjingwang 00414126,add memchekc stage II
+I0c82f6feea5e1bbd9c719cd6cfaecdaf1ad7de66,L2MEM,mini,nphy_ll1d,com_bj,7912,zhangjingwang 00414126,add memchekc stage II
+I0c9da68b1013e5f36d76eb88a27742c5cabbf35a,DDR,conn,lphy_ll1u,dem,38058,xueqiuyan 00527494, add lte ul pwr ctrl code and data
+I0fef9ae3c94e6967c055ad48577ea94bb8fce411,L2MEM,conn,fess,fess,2000,yangqixuan 00511085,msg ringbuff mem increase
+I0ff9a9d64e2e065763a8a63d9f4c36cff7968d28,DDR,conn,ul1m,rcm,11555,quxiaoning 00420775,rcm mini adapt
+I0ff9a9d64e2e065763a8a63d9f4c36cff7968d28,L2MEM,mini,ul1m,rcm,10519,quxiaoning 00420775,rcm mini adapt
+I1059fed61c633189f3b5eebef2c9b13c57018d47,DDR,conn,csxw1,sidelink,2614,lijiale 00595452,csxw1邻星寻呼特性合入
+I122db6b652c577752f81b8520cd6d2a9f8f5a019,L2MEM,mini,fess,fess,1409,zhouyu 00851357,大信号档位扩展
+I122db6b652c577752f81b8520cd6d2a9f8f5a019,L2MEM,conn,fess,fess,1409,zhouyu 00851357,大信号档位扩展
+I1343eac3083ea36d353ac5c2c3d599e702623f32,DDR,conn,csxw1,csxw1,9927,nanjiuhang 00613221,解调SNR滤波和Doppler斜率判档新增特性开发
+I1404b166952aa860e1eebbceaeae267ccf0f203b,L2MEM,conn,nphy_ml1c,anp,1833,jiajing 00422701,presync open
+I1404b166952aa860e1eebbceaeae267ccf0f203b,L2MEM,mini,nphy_ml1c,anp,1600,jiajing 00422701,presync open
+I19e768a8369c61148a459b1780b4286af6e6912b,L2MEM,mini,neun,anp,889,chenwu 00527862, huc模块加classfile rule
+I1cffe9ec2788b1f6b1ecce9e5dcd1ef47646f23e,DDR,conn,nphy_ll1u,ul,5329, pixiuwei 00500140,PRACH 代码挪DDR
+I1e4b797dfda831e5fcb6d1b5bfabc775abdf8f38,L2MEM,mini,neun,fec,1157,liuxiaodong 00899745,小信道场景dfu trace minidump添加
+I21a0e15156f632be613fdb15b39f8b4f179e3921,DDR,conn,lphy_hl1c,anp,6717,lishixiao 00912480,agent 特性合入
+I21a0e15156f632be613fdb15b39f8b4f179e3921,DDR,conn,nphy_hl1c,anp,15260,lishixiao 00912480,agent 特性合入
+I21a0e15156f632be613fdb15b39f8b4f179e3921,DDR,conn,uphy,plt,24759,yangkaili 00559460,agent 特性合入
+I21a0e15156f632be613fdb15b39f8b4f179e3921,L2MEM,mini,uphy,plt,1848,yangkaili 00559460,agent 特性合入
+I21a0e15156f632be613fdb15b39f8b4f179e3921,L2MEM,conn,nphy_comm,anp,3642,lishixiao 00912480,agent 特性合入
+I21a0e15156f632be613fdb15b39f8b4f179e3921,L2MEM,mini,nphy_comm,anp,1593,lishixiao 00912480,agent 特性合入
+I21a0e15156f632be613fdb15b39f8b4f179e3921,L2MEM,conn,nphy_ml1c,fec,4508,xuncong 00799242,agent 特性合入
+I21a0e15156f632be613fdb15b39f8b4f179e3921,L2MEM,mini,nphy_ml1c,fec,4488,xuncong 00799242,agent 特性合入
+I21a0e15156f632be613fdb15b39f8b4f179e3921,DDR,conn,lphy_ml1c,fec,10868,xuncong 00799242,agent 特性合入
+I21a0e15156f632be613fdb15b39f8b4f179e3921,L2MEM,mini,lphy_ml1c,anp,1353,lishixiao 00912480,agent 特性合入
+I21a0e15156f632be613fdb15b39f8b4f179e3921,L2MEM,conn,lphy_ll1d,dem,3648,wangchao 00581713,agent 特性合入
+I21c437ab2d448a74e031b269ce882f8366265d56,DDR,conn,uphy,sys,3016,zhouwenbao 00476947,and component  satellite_lib_psa_fs3
+I22939b487f66e39f77ee6c5c821ef995e4b12ee7,DDR,conn,fess,fess,6561,zhouyu 00851357,feic changge
+I234ec4dd5eda983849fcf89357344b7b4de018c5,DDR,conn,lphy_ll1d,dem,3012,sujiajia 00442701,ri自适应移植
+I28254982e28180e25a95aab03112c8338b408c33,DDR,conn,ul1m,ul1m,20538,nieyuting 00619839,LPM储存发送给NR和LTEHL1C的睡眠缓存消息
+I28bd9e5eaf7f83cc21b43ce9af73c118fbfbeeba,DDR,conn,nphy_ml1c,anp,6431,lishixiao 00912480,内存外移DDR
+I2a8a01ada24096b4930088eee351a0587766a7ce,L2MEM,mini,fess,fess,1096,zhangjian 00420192,serdespll支持定时器管理功能
+I2a8a01ada24096b4930088eee351a0587766a7ce,L2MEM,conn,fess,fess,1055,zhangjian 00420192,serdespll支持定时器管理功能
+I2d770afc39f85a67986cf211f82b039357a97790,DDR,conn,nphy_hl1c,sdr,2271,zhumengyu 00845556,Serv PB服务区解PB和ESNR功能添加
+I2e30bfc86a6d4cd82c7ad5d7c16f04cedea1869f,L2MEM,conn,nphy_ll1u,ul,5287,zhangyu 00615609,DSDS7 FESS接口适配
+I2fb6f134f32fe24e4b64ea0f26200e08e6c111b3,DDR,conn,nphy_ll1u,ul,2097,pixiuwei 00500140,msg_proc
+I34e27b846cc6e985e054e78e8e7003ff8bd71ce5,L2MEM,conn,nphy_ml1c,fec,3120,liurui 00512681,agc放开wb ssb统计特性
+I34e27b846cc6e985e054e78e8e7003ff8bd71ce5,DDR,conn,nphy_comm,fec,5468,liurui 00512681,agc放开wb ssb统计特性
+I34e27b846cc6e985e054e78e8e7003ff8bd71ce5,DDR,conn,nphy_ll1d,fec,3023,liurui 00512681,agc放开wb ssb统计特性
+I35728f8a71fa54ffff4a9af709d8c0b95c35e50b,DDR,conn,nphy_ll1d,nphy_ll1d,66560,lixiaoka 00840754,160Rb trs新需求开发紧急合入后续优化
+I3816dd3b1da10a8e8e3bda8c73bc1bcbfb4143b2,L2MEM,conn,nphy_ll1u,ul,3140,zhouwuxiao 00816807,第19行合入的新代码未被调用而被优化（重复计算了第19行的合入的增量）
+I39015dee4301053d3ed7a02f9b1b37f42669b539,DDR,conn,sphy,gsphy,10214,lixin 00450152,TTS低功耗项目上库
+I39015dee4301053d3ed7a02f9b1b37f42669b539,DDR,conn,ul1m,gsphy,2372,lixin 00450152,TTS低功耗项目上库
+I3c1816e6c5d4573dc60348498d6642c5f119ff11,L2MEM,mini,ul1m,dem,1160,dushihang 00855001,回退NSV CHR上报消息修改
+I3d537e4d1552d2bd30a4117c426890083801d6b4,L2MEM,mini,nphy_hl1c,anp,633,guotao 00576590,agent 特性合入
+I3d537e4d1552d2bd30a4117c426890083801d6b4,DDR,conn,nphy_hl1c,anp,659,guotao 00576590,agent 特性合入
+I3ffb6a41a4f559e14840f72f7fc50e1d4a0f131c,DDR,conn,lphy_ll1u,ul,11076,xueqiuyan 00527494,add ul grant code
+I41a3f6ce2182bf670b951eb33bcdb430ca723d7c,L2MEM,mini,uphy,plt,587,wupeng 00814379,psa wdg 保存喂狗时间戳
+I421467c8ab620f33e8dd0ae2953fd4c441154566,DDR,conn,sphy,gsphy,2405,fengpengying 00465932,TTS天线寻优特性功能合入
+I42a6e76260bad22f21bb407d0dc3ba3339fb0262,DDR,conn,sphy,gsphy,3086,lixin l00450152,TTS 邻区测量
+I42d1164591d2a615d7c8d5cff13e925044cbc6e6,DDR,conn,uphy,plt,74594,liujiajun 00879047, open latencym && enhanced latencym
+I46591ef6d220d274e6eea58e138ccc1a2e0d8fa7,DDR,conn,csxw1,csxw1,2880,wangfansen 00412730,csxw1实例拆分项目开发
+I46591ef6d220d274e6eea58e138ccc1a2e0d8fa7,DDR,conn,uphy,uphy,6032,yangkaili 00559460,csxw1实例拆分项目开发
+I477d37a065007e04c3cc3393edec63664fef425e,L2MEM,conn,fess,fess,1960,xulong 00836426,fess nvload checksame
+I477d37a065007e04c3cc3393edec63664fef425e,DDR,conn,fess,fess,1879,xulong 00836426,fess nvload checksame
+I48cb17ee5ed8e945fd893fdc4b86d56153f260bd,DDR,conn,wphy,wphy,4035,yanning 00605479,Dsds7.0Merge
+I49299d203baa82d79300143a46fe5ecea8705600,L2MEM,conn,nphy_ml1c,fec,1715,duanhaixu 00836429, DAPS特性代码合入
+I49299d203baa82d79300143a46fe5ecea8705600,DDR,conn,nphy_hl1c,anp,4411,wulina 00650830, DAPS特性代码合入
+I4afb8678f51ab27d148a6e51e2b9a6a24c511ce1,DDR,conn,csxw1,sidelink,18436,sumaojun 00415387,csxw1业务态语音特性功能合入，代码规模10.17KLOC
+I4b39076e4d6bac7dbf1a8009a1faf9cd8b1fe415,DDR,conn,fess,fess,3263,dingfei 00609206,Nanchang SerDes产测需求开发项目
+I4b39076e4d6bac7dbf1a8009a1faf9cd8b1fe415,L2MEM,mini,fess,fess,564,dingfei 00609206,Nanchang SerDes产测需求开发项目
+I4c816d8a3c3cc1015db37cc92959b475ef529f2b,L2MEM,mini,fess,fess,1964,zhouyu 00851357,serdes pll 动态开关项目
+I4c816d8a3c3cc1015db37cc92959b475ef529f2b,L2MEM,conn,fess,fess,2137,zhouyu 00851357,serdes pll 动态开关项目
+I509a7a336d825b6d17e7f83a433c6b1406c31171,DDR,conn,sphy,gsphy,9444,zhangqi 00412731,TTS DSDS特性开发
+I50f8a95d0b51e14fc44b49a24008d24f365c2188,DDR,conn,nphy_ll1u,ul,2290,pixiuwei 00500140,ul-dci bwpSwitch
+I51a4906e90e74e51955db6b94c4409fa51e25047,L2MEM,conn,nphy_ll1d,dem,113152,wangchao,NR LL1D DlCcCfg共享内存改为实例内部定义
+I51a4906e90e74e51955db6b94c4409fa51e25047,L2MEM,conn,nphy_ll1d,anp,1792,guoshouming,NR LL1D L1cCcCfg共享内存改为实例内部定义
+I51a4906e90e74e51955db6b94c4409fa51e25047,L2MEM,mini,nphy_ll1d,dem,56600,wangchao,NR LL1D DlCcCfg共享内存改为实例内部定义
+I51a4906e90e74e51955db6b94c4409fa51e25047,L2MEM,mini,nphy_ll1d,anp,920,guoshouming,NR LL1D L1cCcCfg共享内存改为实例内部定义
+I51a4906e90e74e51955db6b94c4409fa51e25047,L2MEM,conn,nphy_ll1u,ul,82176,shenjianping,NR LL1U UlCcCfg共享内存改为实例内部定义
+I51a4906e90e74e51955db6b94c4409fa51e25047,L2MEM,mini,nphy_ll1u,ul,20568,shenjianping,NR LL1U UlCcCfg共享内存改为实例内部定义
+I52b18c938815608aa1cba1dbe467e9e8579b932e,DDR,conn,csxw1,csxw1,3306,mahui 00826644,fcch裁剪功能开发
+I551738261ec7d94c3bdc02d691bfe54f1d75f780,DDR,conn,wphy,wphy,56322,wangqixin 00845392,优化回退
+I5717f43e430d3138c85ad86132628e73aa570bd2,DDR,conn,uphy,plt,2645,changjunwang 00850015,add inst migrate process code (code(TSP:1094 PSA:1079)variable(TSP:80 PSA:392))
+I58f84b8a5f24e78e13bf9932cd205996aca01b9d,DDR,conn,nphy_ll1u,ul,2207,pixiuwei 00500140, DMA配置内存从L2挪到DDR
+I58f959fb20661226e6286e66fce405c2270db0c7,DDR,conn,nphy_hl1c,anp,41072,songhongping 00827087,changsha 打开寻呼测量下移宏
+I58f959fb20661226e6286e66fce405c2270db0c7,L2MEM,mini,nphy_hl1c,anp,17194,songhongping 00827087,changsha 打开寻呼测量下移宏
+I58f959fb20661226e6286e66fce405c2270db0c7,DDR,conn,lphy_hl1c,anp,20368,songhongping 00827087,changsha 打开寻呼测量下移宏
+I58f959fb20661226e6286e66fce405c2270db0c7,L2MEM,mini,lphy_hl1c,anp,9311,songhongping 00827087,changsha 打开寻呼测量下移宏
+I58f959fb20661226e6286e66fce405c2270db0c7,DDR,conn,neun,anp,4667,songhongping 00827087,changsha 打开寻呼测量下移宏
+I58f959fb20661226e6286e66fce405c2270db0c7,L2MEM,mini,neun,anp,2339,songhongping 00827087,changsha 打开寻呼测量下移宏
+I59b8b1b317dea2b8972f8ea2f8fbce0a3fdc7ba8,DDR,conn,neun,anp,5755,bibei 00897032,修正neun ssm路径下各个组件在classify_rule的配置路径错误
+I5aaa97cadbfc8403f09f7a3f2c0039600d6fe3a5,DDR,conn,fess,fess,5017,fujiawei 00620457,changsha 6563v500一键上下电特性
+I5aaa97cadbfc8403f09f7a3f2c0039600d6fe3a5,L2MEM,mini,fess,fess,1494,fujiawei 00620457,changsha 6563v500一键上下电特性
+I5b18399d14b7d62f00b377e03c88e1fb19717a76,L2MEM,conn,fess,fess,1870,zhangyinglong z00849965, ca nvload
+I5b81e8bb5cddd6c76bd5e0acb518da735ca30d32,DDR,conn,nphy_hl1c,sdr,12042,xuxiyan 00428225, NR数据中心按HL1C实例共享增加的内存
+I5b81e8bb5cddd6c76bd5e0acb518da735ca30d32,L2M,mini,nphy_hl1c,sdr,1911,xuxiyan 00428225, NR数据中心按HL1C实例共享增加的内存
+I5b830f4695d77c8e645605e78ceefa1cb4cdb8b8,L2MEM,conn,nphy_ll1u,ul,2759,p00500140,芯片接口核对
+I5c8533ede0e0798415c6d92ae77de81ce773e712,DDR,conn,neun,anp,26136,wangyikun 30045955,tas特性开宏
+I5c8533ede0e0798415c6d92ae77de81ce773e712,L2MEM,conn,neun,anp,1251,wangyikun 30045955,tas特性开宏
+I5c8533ede0e0798415c6d92ae77de81ce773e712,DDR,conn,lphy_hl1c,anp,2345,wangyikun 30045955,tas特性开宏
+I5c8533ede0e0798415c6d92ae77de81ce773e712,DDR,conn,nphy_hl1c,anp,2335,wangyikun 30045955,tas特性开宏
+I5c8533ede0e0798415c6d92ae77de81ce773e712,DDR,conn,lphy_ml1c,anp,2323,wangyikun 30045955,tas特性开宏
+I5c8533ede0e0798415c6d92ae77de81ce773e712,DDR,conn,nphy_ml1c,anp,4749,wangyikun 30045955,tas特性开宏
+I5c8a681981c9be22d0e7a81a4bbbbdfcbd2d12c3,L2MEM,conn,nphy_ml1c,anp,2629,zhaoyamin 00799187,打开天线管理调度（包括开关分集调度处理）
+I5df82202c90daea3fda0d2ae02412a65890c1ea1,L2MEM,conn,fess,fess,9348,wangye 00371167,ringbuff size modify temporary
+I60630f5add9c444345f2512cc3506e6c4a019041,L2MEM,mini,fess,fess,1452,yeyuanqing 00910298,MultiAction消息TxResume+TxApc优化处理
+I60630f5add9c444345f2512cc3506e6c4a019041,L2MEM,conn,fess,fess,2566,yeyuanqing 00910298,MultiAction消息TxResume+TxApc优化处理
+I63f5fd21ef497bea731e82b8b27b8e2580780f35,DDR,mini,uphy,plt,102400,zhoujunxing 00673181,最小系统镜像迁移验证前OM消息buffer临时方案
+I65c0c8b820c8aae0a57997937fee1665aac9a658,DDR,conn,csxw2_hl1c,sdr,2629,qiankun 00430279,bgt emu星网专有代码迁移至CSXW2仓
+I65ec18d36099c6d404a8768fa00c0a8911e18f52,DDR,conn,csxw1,csxw1,18658,lijiale 00595452,csxw1 线程拆分特性开发
+I66c49db32cf0bed42c897c66270aab1a4aede03e,DDR,conn,csxw1,csxw1,7738,zhanghuawei 00921859,csxw1 动态时频偏开发联调项目
+I67365edd4ddf3713c900c15032b5355f56d200b1,DDR,conn,csxw1,csxw1,9634,zhangyi 00467159,csxw1 支持临区时频环路开发项目
+I67c9b33f5d03394a4aca6ebd8908e83c61187c23,DDR,conn,uphy,plt,4884,liujiajun 00369871,add maxs cmd id backup
+I68fc9825b587dde854ef466851e58a30347c9330,DDR,conn,fess,fess,11263,wanglei 00469410,fess NV查询接口L2内存优化
+I6925e8812933d060ab772210e422fbf58dc37f40,L2MEM,base,uphy,uphy,0,zhouwenbao 00476947,flto fix compile error
+I695b306ca2911613eb9a8de6778794a66cbb37b5,DDR,conn,fess,fess,5806,wangmengge 00584773,污染打标放开特性宏
+I695b306ca2911613eb9a8de6778794a66cbb37b5,L2MEM,conn,fess,fess,8296,wangmengge 00584773,污染打标放开特性宏
+I695b306ca2911613eb9a8de6778794a66cbb37b5,L2MEM,mini,fess,fess,1022,wangmengge 00584773,污染打标放开特性宏
+I695b306ca2911613eb9a8de6778794a66cbb37b5,DDR,conn,nphy_hl1c,anp,2451,dingyi 00524225,污染打标放开特性宏
+I696484205dd857b45013049a8391716972191ec1,DDR,conn,nphy,sdr,2920,yangmeng 00829847,初始测量，过程和SDR功能添加
+I69d4cb85d916163e863735bb344bf3f487d4fe09,L2MEM,conn,fess,fess,1388,jiangxiaojun j00485719, vco ip2 fdiq proc
+I6a6c82e506e8dc56c81c2281d735845d047db54d,DDR,conn,fess,fess,4390,yangqixuan 00511085,move fess lpc&powerOn code to ddr
+I6b286b0ce682919ba4817d89d9f070fade3f5ca3,DDR,conn,ul1m,anp,2777,chenwu 00527862,changsha 功耗支持实例迁移开宏
+I6b69a83c3d18bf9c1c88613cdb622a6511ab4fcb,L2MEM,conn,nphy_ll1u,ul,2072,chenyu 00477948,interband功率域增强HPUE开发
+I6c283ce6642cd3905c248de10eb0ffdfd4cc7f9b,DDR,conn,nphy_ll1u,ul,5754,hexuesheng 00664540,智慧上行phr特性开宏
+I6c75733a52f09eafe073af04370d9742560dcae5,L2MEM,conn,fess,fess,2098,liwenkang 00850004,fess txpattern 特性打开
+I6cac0c0e2f3afb34af799982c1491cfe7eaeb5fe,DDR,conn,neun,lrrc,5837,heyuan h00798076, SSA V2.0特性开发
+I6cac0c0e2f3afb34af799982c1491cfe7eaeb5fe,L2MEM,conn,neun,lrrc,2945,heyuan h00798076, SSA V2.0特性开发
+I6ce41a1e6f78c83a2fdca22a0c9573c67bf67a17,DDR,conn,uphy,com_bj,3222,yangkaili 00559460,平台内存优化3k 释放non mini L2M 内存
+I6d07cccd53a32344d79b143b3aa63174f5030524,L2MEM,conn,fess,fess,4385,shengqinxue s00806621, NvQuery项目接口移植适配
+I6fc2aec2432877e9cdb1375d6b1779524d95dac2,L2MEM,conn,nphy_comm,ul,5182,pixiuwei 00500140,代码位置移动，从UL挪动到nphy_comm
+I738913177c8c0e8fde13c45844b8e90e25432829,DDR,conn,lphy_hl1c,3900,anp,bibei 00897032,打印缓存上报
+I738913177c8c0e8fde13c45844b8e90e25432829,L2MEM,mini,lphy_hl1c,1925,anp,bibei 00897032,打印缓存上报
+I738913177c8c0e8fde13c45844b8e90e25432829,DDR,conn,nphy_hl1c,4744,anp,bibei 00897032,打印缓存上报
+I738913177c8c0e8fde13c45844b8e90e25432829,L2MEM,mini,nphy_hl1c,1925,anp,bibei 00897032,打印缓存上报
+I73983bc041a965e7c624849543929ca9da4b8d93,DDR,conn,nphy_ll1u,ul,3761,pixiuwei 00500140,nv5.0切换
+I73ec20acb26b21c23afdb0ba8f55f2e01062b25e,L2MEM,mini,fess,fess,2720,wangyunfeng 00610598,打开RFDVFS特性
+I73ec20acb26b21c23afdb0ba8f55f2e01062b25e,L2MEM,conn,fess,fess,1290,wangyunfeng 00610598,打开RFDVFS特性
+I750718c7eee6a5390c4777513b1701d83264f0fc,DDR,conn,nphy_ml1c,fec,4013,lixiaoka 00840754, nphy ml1c内存修改整改，减少L2M的size，带来DDR增加
+I7a613df23badac263e33195ef581a11aed0d0229,L2MEM,mini,nphy_ml1c,anp,2370,gengxiaofu 00892456,增加最小系统下支持gap
+I7aa7a7d08775500f9ab4323b9b90d6f52cae0c05,DDR,conn,nphy_ml1c,anp,2332,bibei 00897032,print buffer
+I7aa7a7d08775500f9ab4323b9b90d6f52cae0c05,L2MEM,conn,nphy_ml1c,anp,606,bibei 00897032,print buffer
+I7aa7a7d08775500f9ab4323b9b90d6f52cae0c05,L2MEM,mini,nphy_ml1c,anp,2154,bibei 00897032,print buffer
+I7aa7a7d08775500f9ab4323b9b90d6f52cae0c05,L2MEM,conn,lphy_ml1c,anp,522,bibei 00897032,print buffer
+I7aa7a7d08775500f9ab4323b9b90d6f52cae0c05,L2MEM,mini,lphy_ml1c,anp,2154,bibei 00897032,print buffer
+I7e219d2cb9876cb1d16964e10c159b4406748590,DDR,conn,fess,fess,2122,wangshichang 00886769,SerDes一键切速
+I7fc484e14e54f407b29f6b4798f277c01f5766ae,DDR,conn,nphy_ml1c,anp,4085,nieyuting 00619839,功耗chrdubai优化
+I7fc484e14e54f407b29f6b4798f277c01f5766ae,L2MEM,mini,nphy_ml1c,anp,1575,nieyuting 00619839,功耗chrdubai优化
+I80d17d1f53768affd83d3d65a2080d5e309fb863,DDR,conn,fess,fess,7964,wenlei,fess pmu
+I81f14bf7b7979894c8d7092165c171b27df4ab76,DDR,conn,lphy_hl1c,sdr,9204,chenziyi 00611759,bandScan feature
+I81f14bf7b7979894c8d7092165c171b27df4ab76,DDR,conn,nphy_hl1c,sdr,4246,chenziyi 00611759,bandScan feature
+I81f14bf7b7979894c8d7092165c171b27df4ab76,DDR,conn,neun,sdr,12704,chenziyi 00611759,bandScan  feature
+I836be2f9a33f1df5686bd35f86af4c7acddcc508,L2MEM,conn,fess,fess,2664,wanglei 00469410,maxwellc20 双rfic NV适配开发
+I841d916d0e9fcc95d858adce9b67410ae1a26b0d,L2MEM,conn,fess,fess,2293,wenlei 00823229,FESS BB DVFS特性打开
+I841d916d0e9fcc95d858adce9b67410ae1a26b0d,L2MEM,mini,fess,fess,2597,wenlei 00823229,FESS BB DVFS特性打开
+I843bbfa66ce6ca42c04e722047f4c7b603887d74,L2MEM,mini,nphy_ml1c,anp,1327,guoshouming,NR ML1C多CC共享内存改为LL1D实例内部定义
+I843bbfa66ce6ca42c04e722047f4c7b603887d74,L2MEM,conn,nphy_ll1d,anp,3841,guoshouming,NR ML1C多CC共享内存改为LL1D实例内部定义
+I855eccef36833527c5895316c78322a6b7f122cb,DDR,conn,csxw1,sidelink,4043,lijiale 00595452, 维测打印区分ModemId
+I85f15d4bf3adc3a8324dd576410039fe6ae82757,L2MEM,mini,neun,fec,57803,fanyong 00603021,最小系统内存修饰
+I85f15d4bf3adc3a8324dd576410039fe6ae82757,L2MEM,mini,nphy_comm,fec,5760,fanyong 00603021,最小系统内存修饰
+I85f15d4bf3adc3a8324dd576410039fe6ae82757,L2MEM,mini,lphy_ll1d,fec,2192,fanyong 00603021,最小系统内存修饰
+I85f15d4bf3adc3a8324dd576410039fe6ae82757,L2MEM,mini,nphy_ml1c,fec,66116,fanyong 00603021,最小系统内存修饰
+I85f15d4bf3adc3a8324dd576410039fe6ae82757,L2MEM,mini,nphy_ll1d,fec,65770,fanyong 00603021,最小系统内存修饰
+I8617b86c515cd113e175978ba97cda2e02d1bde9,L2MEM,conn,nphy_ll1u,ul,5687,panchenxiao p00656902,Move Uci Config Mem From DDR To L2MEM
+I864fe857afca24d507e895e07e36e0f34a26a228,L2MEM,conn,fess,fess,2321,zhouyu 00851357,FEIC double modem project
+I86946098f58dd36427ecead392c47bc4d3da32cc,DDR,conn,nphy_hl1c,anp,2820,tianshuchun 00510115,changsha Nogap ANR特性宏打开
+I86da1b3299c538c609527b5b2dee915b4310784c,L2MEM,conn,nphy_ll1u,ul,1503,huangxiao 00906268,101 protocol ampr upgrade
+I86da1b3299c538c609527b5b2dee915b4310784c,L2MEM,mini,nphy_ll1u,ul,1611,huangxiao 00906268,101 protocol ampr upgrade
+I884be10fc67e238580b8416b5df9158545787063,L2MEM,conn,fess,fess,4588,huanglei 00603339,fsa tx nv res expand
+I8853ae92c079252fcc0bbe0d4984527cdceeefa0,L2MEM,conn,nphy_ll1d,anp,3585,fengdandan,NR LL1D 同频上下文与csirs beam上下文共享内存改为实例内部定义
+I8853ae92c079252fcc0bbe0d4984527cdceeefa0,L2MEM,mini,nphy_ll1d,anp,1865,fengdandan,NR LL1D 同频上下文与csirs beam上下文共享内存改为实例内部定义
+I895ccdcfb4c30a9881967129065a1de81387bf71,DDR,conn,nphy_ll1u,ul,3582,zhangqian 00840129,device & om & mace mem optimize
+I897b4c0ab2e0bfaca40975f003acbfa5f1432fbb,L2MEM,conn,fess,fess,2452,zhouyu 00851357,FEIC single band stub project
+I8a522b77981afaf9689095eba2650730567a1401,DDR,conn,csxw2_comm,com_bj,2642,yangkaili 00559460,星网镜像外移DDR
+I8a522b77981afaf9689095eba2650730567a1401,DDR,conn,csxw2_ml1c,com_bj,14755,yangkaili 00559460,星网镜像外移DDR
+I8a522b77981afaf9689095eba2650730567a1401,DDR,conn,csxw2_l1ld,com_bj,883,yangkaili 00559460,星网镜像外移DDR
+I8a522b77981afaf9689095eba2650730567a1401,DDR,conn,csxw2_ll1u,com_bj,12766,yangkaili 00559460,星网镜像外移DDR
+I8afaa59d711b594b5193c376e9f15a588eda869f,DDR,conn,csxw1,anp,7993,liyanliang 00833624,xw1移动性管理相关开发
+I8cc8cdecc5849610a7f88059455a408ad7a63a5a,DDR,conn,nphy_hl1c,anp,3230,gengxiaofu 00892456,放开NR异频R16 NOGAP特性
+I8cc8cdecc5849610a7f88059455a408ad7a63a5a,L2MEM,conn,nphy_ml1c,anp,2538,gengxiaofu 00892456,放开NR异频R16 NOGAP特性
+I8d50ac6b2678f6a1ece092586502b1bfdb10ca1f,DDR,conn,nphy_ll1u,nphy_ll1u,4388,panchenxiao 00656902,Move Macce Mem From L2 to DDR
+I90bd1262fd51d8e9ce4a2ff388819b3309ae7963,DDR,conn,ul1m,anp,10306,bohongrui 00413819,双卡同小区放开特性宏
+I90bd1262fd51d8e9ce4a2ff388819b3309ae7963,DDR,conn,nphy_hl1c,anp,12158,bohongrui 00413819,双卡同小区放开特性宏
+I90bd1262fd51d8e9ce4a2ff388819b3309ae7963,L2MEM,mini,ul1m,anp,4692,bohongrui 00413819,双卡同小区放开特性宏
+I90bd1262fd51d8e9ce4a2ff388819b3309ae7963,L2MEM,mini,nphy_hl1c,anp,1029,bohongrui 00413819,双卡同小区放开特性宏
+I90bd1262fd51d8e9ce4a2ff388819b3309ae7963,L2MEM,mini,nphy_ml1c,anp,10891,bohongrui 00413819,双卡同小区放开特性宏
+I90bd1262fd51d8e9ce4a2ff388819b3309ae7963,L2MEM,conn,nphy_ml1c,anp,11192,bohongrui 00413819,双卡同小区放开特性宏
+I90bd1262fd51d8e9ce4a2ff388819b3309ae7963,L2MEM,conn,nphy_ll1d,anp,1432,bohongrui 00413819,双卡同小区放开特性宏
+I90eb292de50cf97f0d7b0df041adea1d0d52869f,L2MEM,conn,nphy,ul,5980,tuhaibin 00838535,R17 pusch dmrs bundling
+I93b230ce4da14469e1bbc094f190266d8dfcfdd0,DDR,conn,nphy_hl1c,anp,3242,guanpengxin 00845844,robustness development
+I93b230ce4da14469e1bbc094f190266d8dfcfdd0,DDR,conn,lphy_hl1c,anp,2982,guanpengxin 00845844,robustness development
+I941ac54cf7ce45b90f94dae27f22f7200ae6dc42,DDR,conn,sphy,gsphy,7854,zhangqi 00412731,TTS 4R特性开发
+I9874459f4de456cb6172077c27d212c7eeb51f21,L2MEM,conn,nphy_ll1u,ul,2748,zhouwuxiao 00816807,job scheduler
+I99e00393bf0e7c79e67d67ffbda2d5d2e476afe4,DDR,conn,csxw1,csxw1,3541,zhanghuawei 00921859,csxw1 4R2R切换特性开发项目
+I9a79d2acc50e3446f791716f000f91588dae4396,L2MEM,conn,nphy_ll1u,com_bj,3255,yangkaili 00559460, 修改CACHELINE导致业务组件变量内存增加
+I9a79d2acc50e3446f791716f000f91588dae4396,L2MEM,mini,nphy_ll1u,com_bj,1280,yangkaili 00559460, 修改CACHELINE导致业务组件变量内存增加
+I9a79d2acc50e3446f791716f000f91588dae4396,L2MEM,conn,nphy_ll1d,com_bj,4611,yangkaili 00559460, 修改CACHELINE导致业务组件变量内存增加
+I9a79d2acc50e3446f791716f000f91588dae4396,L2MEM,mini,nphy_ll1d,com_bj,2240,yangkaili 00559460, 修改CACHELINE导致业务组件变量内存增加
+I9a79d2acc50e3446f791716f000f91588dae4396,L2MEM,conn,nphy_ml1c,com_bj,6730,yangkaili 00559460, 修改CACHELINE导致业务组件变量内存增加
+I9a79d2acc50e3446f791716f000f91588dae4396,L2MEM,mini,nphy_ml1c,com_bj,1797,yangkaili 00559460, 修改CACHELINE导致业务组件变量内存增加
+I9a79d2acc50e3446f791716f000f91588dae4396,L2MEM,mini,lphy_ll1d,com_bj,1159,yangkaili 00559460, 修改CACHELINE导致业务组件变量内存增加
+I9a79d2acc50e3446f791716f000f91588dae4396,DDR,conn,lphy_ll1d,com_bj,2576,yangkaili 00559460, 修改CACHELINE导致业务组件变量内存增加
+I9a79d2acc50e3446f791716f000f91588dae4396,L2MEM,conn,lphy_ml1c,com_bj,1475,yangkaili 00559460, 修改CACHELINE导致业务组件变量内存增加
+I9a79d2acc50e3446f791716f000f91588dae4396,DDR,conn,lphy_ml1c,com_bj,5580,yangkaili 00559460, 修改CACHELINE导致业务组件变量内存增加
+I9a79d2acc50e3446f791716f000f91588dae4396,DDR,conn,nphy_comm,com_bj,4480,yangkaili 00559460, 修改CACHELINE导致业务组件变量内存增加
+I9a79d2acc50e3446f791716f000f91588dae4396,L2MEM,conn,fess,com_bj,1036,yangkaili 00559460, 修改CACHELINE导致业务组件变量内存增加
+I9a79d2acc50e3446f791716f000f91588dae4396,L2MEM,mini,uphy,com_bj,1174,yangkaili 00559460, 平台L2CACHE镜像管理方案
+I9a79d2acc50e3446f791716f000f91588dae4396,L2MEM,conn,uphy,com_bj,1361,yangkaili 00559460, 平台L2CACHE镜像管理方案
+I9a79d2acc50e3446f791716f000f91588dae4396,DDR,conn,uphy,com_bj,2877,yangkaili 00559460, 平台L2CACHE镜像管理方案
+I9a9b7b60f41cad520ddacb584887a8ee5d2f7f6d,L2MEM,conn,nphy_ll1u,sdr,3210,zhoujunxing 00673181,ap csi beam代码数据从DDR挪到L2
+I9ae1066c85c48d4e6d9a79d09dc6d68f94a21a9b,L2MEM,conn,nphy_ll1u,ul,5252,yuanshuying 00836424,FSA
+I9afd6266647c43b305c39e6736d1d3365d3446fe,DDR,conn,uphy,plt,62240,changjunwang 00850015,add maxs mbx mem for protocol stack module WDEC
+I9d64aa1953cba48a36fbdf565f4c3115f85c2702,L2MEM,conn,fess,fess,20387,lizheng 00562401,fess sig nvload project
+Ia010dbc9990dc88f9cdf43023fec6788c73d6ab6,DDR,conn,nphy_ll1u,6893,liuzihan 00850688,6893,rtt打桩验证需求
+Ia30ff4cf5552faccf6bd8bb108874164fa6d1b83,DDR,conn,nphy_ll1u,ul,3502,zhangyu 00615609,被抑制的下行CC对应的harqAck反馈
+Ia6f661062df6838c20d5e7790fefcc6e9652c3a3,L2MEM,mini,fess,fess,704,fujiawei 00620457,FESS平台CHR新增和修改
+Ia76a211c4eb08ee8242a3f21dac68bbb70c9127b,DDR,conn,sphy,gsphy,2264,fengpengying 00465932, TTS TRX_TAS特性开发
+Ia7e4465533be12a8c2f1f4edd7dcd5155b68d397,L2MEM,mini,fess,fess,3536,liuchangzheng 00833337,changsha cfr nv pool
+Ia7e4465533be12a8c2f1f4edd7dcd5155b68d397,L2MEM,conn,fess,fess,3536,liuchangzheng 00833337,changsha cfr nv pool
+Ia9f11cf8d6a5f1d1ba7db69ef646f1c601347903,DDR,conn,nphy_hl1c,anp,3710,cuixiaojin 00855547,星网特性宏打开
+I6c5a506224e55056e7c29438e6ba7995828bc171,L2MEM,mini,ul1m,fec,619,liuxiaodong 00899745,PDT下电流程中FCFU排空保护处理
+Iaf0d9c324f5bc3b7399bd5e730ad229176a45a6c,DDR,conn,csxw1,csxw1,3028,wangfansen 00929371,DTX特性开发
+Ib034fbb84fbb17c4c93531c2995c0af5e107ee10,DDR,conn,fess,fess,10670,chendan 00522688,FESS平台基线serdes dfx相关接口
+Ib26ddff92c5154b9a26cb8466ff9bf733afedf21,L2MEM,mini,uphy,com_bj,2242,liyezhou 00442623,lpc hld 模块增加最小系统修饰
+Ib643dd6da4700904ae18eebf0ad6629b8c326c93,DDR,conn,csxw1,csxw1,4802,mahui 00826644,csxw14R2R切换项目
+Ib7bce6849f8f676b1f323c66632c8ca3d7cb4102,DDR,conn,csxw1,csxw1,2349,housikang 00797256,csxw1 温补自学习样点上报项目开发
+Ib9b979e9c599907735bc8a58fe981b43788e6665,L2MEM,conn,nphy,dem,2398,zhouchuanfeng 00562427,alg  kest
+Ib9b979e9c599907735bc8a58fe981b43788e6665,L2MEM,mini,nphy,dem,1306,zhouchuanfeng 00562427,alg  kest
+Ibcfb484c60b3ba19d9708c47a09dcfff33303b5f,DDR,conn,csxw1,csxw1,2770,nanjiuhang 00613221,XW1负载优化
+Ibebe074b24789a15d19bdf96c07c9be4e352ce50,DDR,conn,nphy_ml1c,anp,2726,chenyihua 00562386,L2 code move to ddr
+Ic32c39d9bf680233f96de902350cf05a9f8cf08a,L2MEM,mini,fess,fess,1664,gongyiping 00897057,Serdes 拉远配置
+Ic4363759cd00f8181bc1686175066da4ce31aff1,L2MEM,mini,fess,fess,727,dingfei 00609206,rfdvfs低温抬压项目
+Ic4363759cd00f8181bc1686175066da4ce31aff1,DDR,conn,fess,fess,1029,dingfei 00609206,rfdvfs低温抬压项目
+Ic4ecc31f940a548285879b3a38eec0ecf2347916,DDR,conn,csxw1,sidelink,8500,mahui 00826644,csxw1 trxtas mas特性开发
+Ic639da346beceb03a34ccc9b1932729582d466ff,L2MEM,conn,nphy_ll1u,ul,1058,yuanshuying 00836424,CHS上行增强35us项目开发
+Ic7280a18d016fe790a1add3aed38794ff01e9989,DDR,conn,nphy_ll1u,ul,2448,zhangqian 00840129,dmrs-bundling mem optimize
+Ic7c6f267fa65f5de3e378a5b7104cf300498dff4,DDR,conn,nphy_ll1d,fec,6090,liurui 00512681,l2m内存优化移至ddr
+Ic7c6f267fa65f5de3e378a5b7104cf300498dff4,DDR,conn,nphy_ll1d,fec,6090,liurui 00512681,l2m内存优化移至ddr
+Ic8caa15c49e64dc031771bbe34be9b4407c6b826,DDR,conn,csxw1,sidelink,9032,housikang 00797256,csxw1维测开发合入
+Ic91071f4a365f43a670e1a50c0543840dbc82f08,L2MEM,conn,nphy_ll1u,ul,9993,zhouwuxiao 00816807, job split and adapt
+Ic9b473666893329f157505181515f44c5308c334,L2MEM,conn,fess,fess,3221,huanglei 00603339,fsa main code
+Ic9d7abf5320bea290d73bead3c54067dbd4f5f3d,DDR,conn,nphy_ll1u,nphy_ll1u,4206,zhouwenbao 00476947,turn on flto
+Icda2e81773a53e1abaa3be72a6e640b2c7fc1047,DDR,conn,nphy_ll1u,ul,5507,zhangqian 00840129,msg3 and scell active mem optimize
+Iceaf17d32df8165ae672720abad5a4bd79ee2579,DDR,conn,csxw1,csxw1,7682,mengkang 00441054,csxw1低功耗项目开发
+Icee8d812dfa9fb2694f95a5db222bba22270f393,L2MEM,mini,fess,fess,875,gongyiping 00897057,DVFS三档需求项目开发
+Icf0a4b8a613eeee8ec8d16ed3145675387607221,L2MEM,conn,nphy_ll1u,ul,6804,panchenxiao p00656902,Chs版本Position Srs宏打开
+Icf0a4b8a613eeee8ec8d16ed3145675387607221,DDR,conn,nphy_ll1u,ul,4929,panchenxiao p00656902,Chs版本Position Srs宏打开
+Icf0a4b8a613eeee8ec8d16ed3145675387607221,DDR,conn,nphy_hl1c,nphy_hl1c,3851,panchenxiao p00656902,Chs版本Position Srs宏打开
+Id04ddbaecde2c947bafa34ff95928680ead6f0ca,L2MEM,conn,nphy_ml1c,anp,2164,qiyongzhi,NR ENDC MEAS feature on
+Id0c625e1bb100d0d984510c1019d643d27783fb7,DDR,coon,fess,fess,92879,wenlei 00823229, eng形态由fullstack切换到asic
+Id0c625e1bb100d0d984510c1019d643d27783fb7,L2MEM,conn,fess,fess,23894,wenlei 00823229, eng形态由fullstack切换到asic
+Id0c625e1bb100d0d984510c1019d643d27783fb7,L2MEM,mini,fess,fess,34217,wenlei 00823229, eng形态由fullstack切换到asic
+Id0c625e1bb100d0d984510c1019d643d27783fb7,L2MEM,conn,nphy_ll1u,ul,1763,pixiuwei 00500140, eng形态由fullstack切换到asic
+Id4bbeec1d43b428cc29cbc3225b831f9ef3cc618,L2MEM,conn,nphy_comm,anp,1200,wenhui,NR MBS feature on
+Id4bbeec1d43b428cc29cbc3225b831f9ef3cc618,DDR,conn,nphy_hl1c,anp,7139,wenhui,NR MBS feature on
+Id4bbeec1d43b428cc29cbc3225b831f9ef3cc618,L2MEM,conn,nphy_ml1c,anp,6251,wenhui,NR MBS feature on
+Id4bbeec1d43b428cc29cbc3225b831f9ef3cc618,L2MEM,conn,nphy_ll1d,dem,1391,liuyunzhong,NR MBS feature on
+Id4bbeec1d43b428cc29cbc3225b831f9ef3cc618,L2MEM,mini,nphy_ll1d,dem,1082,liuyunzhong,NR MBS feature on
+Id4bbeec1d43b428cc29cbc3225b831f9ef3cc618,DDR,conn,nphy_ll1d,dem,2421,liuyunzhong,NR MBS feature on
+Id5617aedacd20328db21ae817a2086b459cc46b0,DDR,conn,nphy_hl1c,sdr,2866,zhoujunxing 00673181,污染打标项目增加抢占指示占用内存
+Id5e118b1bc4c15a790179fa75e79112639d0369e,DDR,conn,d2dl,sidelink,14134,mengkang 00441054,D2D CDTRX和低功耗功能
+Id60bdf80e6e685481703b919823af60e5efc9bb5,L2MEM,conn,fess,fess,16055,zhouyu 00851357,FEIC single model project
+Id79e36049cb88213f47470e69cbc6ebfc371a2b4,DDR,conn,uphy,plt,8920,lihongwei 00436719, pde trace dump
+Ida07d554a823bcaab9ae26988a93e9ef3fb43402,DDR,conn,ul1m,dem,4321,qiankun 00430279,changsha 打开系统健壮性宏
+Ida07d554a823bcaab9ae26988a93e9ef3fb43402,L2MEM,mini,ul1m,dem,3194,qiankun 00430279,changsha 打开系统健壮性宏
+Iddff8450323caf7242c4d1440e1b66154dc8bd1f,DDR,conn,v2xl,sidelink,12554,mahui 00826644,FESS适配项目上库
+Ie0cfc4f6946c3e8fde29c727210ec634ecf939b5,L2MEM,mini,lphy_ml1c,anp,8696,fengdandan 00442304, lphy ml1c proc meas模块增加最小系统修饰
+Ie0cfc4f6946c3e8fde29c727210ec634ecf939b5,L2MEM,mini,nphy_ml1c,anp,16996,fengdandan 00442304, nphy ml1c proc meas模块增加最小系统修饰
+Ie1a431839f378eef21d1295cb677d8e8bbec1d78,DDR,conn,lphy_ll1u,dem,42518,baisiwen,add lte uci code and data
+Ie33403ad3f918d700d1a856de8b895e4cc8d338a,DDR,conn,wphy,wphy,5448,yangyongcheng 00831640,Type3i项目开发增加IC干扰抵消功能([instPrivData+3456][code+1916])
+Ie3851d39513e1f7ec03a99b2ac14a4999ba7b478,DDR,conn,nphy_ll1d,dem,12699,qiankun 00430279,内存优化L2-->DDR
+Ie3950327f6ad02f0f5d8032cb689ca863ac588ef,DDR,conn,csxw1,sidelink,4233,liucan 00544786,csxw1业务态数传特性功能合入
+Ie6ae4ff36cdf619047c28ef863b15d0103a53938,DDR,conn,uphy,plt,3444,zhouhan 00470099,打开mini dump 功能
+Ie6ae4ff36cdf619047c28ef863b15d0103a53938,L2MEM,mini,uphy,plt,1264,zhouhan 00470099,打开mini dump 功能
+Ie87998b2a353f7ea602524472f8137aac331370a,L2MEM,mini,fess,fess,3752,zhouhongjun 00513750,MPR2.0 产品线需求开发
+Ie87998b2a353f7ea602524472f8137aac331370a,L2MEM,conn,fess,fess,3752,zhouhongjun 00513750,MPR2.0 产品线需求开发
+Ie97bf7d4daf83ee929850eee7bc79c403baf6bad,DDR,conn,nphy_ll1d,fec,2640,fanyong 00603021,内存优化L2-->DDR
+Iea27bc2e065a5463806ff2cf5452a9fdc05a0102,L2MEM,conn,nphy_ll1u,ul,3042,tuhaibin 00838535,bbp dvfs
+Iec29df76639736dfbac3cab8048ecf804e483e10,L2MEM,mini,fess,fess,1261,wenlei 00823229,CHS差异适配，邮箱规格调整
+Iec29df76639736dfbac3cab8048ecf804e483e10,L2MEM,conn,fess,fess,1280,wenlei 00823229,CHS差异适配，邮箱规格调整
+Iec89536fa00ede43ca09fedb4b2b3c1e77f66dc3,DDR,conn,nphy_ml1c,anp,4367,songhongping 00827087, L2code move2Ddr
+Iede9f32c2ea0de9dc3de6fdfe070e8b0e38d7060,DDR,conn,gphy,gsphy,2728,zhangqi 00412731,GPHY DSDS7.0 mem inc
+Iedf1a590bcc0fe5da74e783ef0039c601582354a,DDR,conn,nphy_ll1u,ul,2970,pixiuwei 00500140,releaseMsgProc
+Iee6ddf8a652f3d5ad77de8966f15f143fcffe2bf,L2MEM,conn,fess,fess,9033,yuboping 00566742,fess txpattern 内存换负载优化
+If08c4ed9333bc48485c431628d059d013124ca20,L2MEM,mini,neun,com_bj,1638,zhouwenbao 00476947, add option -MD;other2neun;base elf analyze error
+If09ab454198440eac5a37211ca27d5196bcd938e,L2MEM,mini,fess,fess,1401,wangyunfeng 00610598,serdes pug回片差异适配
+If1c0e09c90f6c4b72e3f66dea692312f8e9ae719,L2MEM,conn,neun,fec,1292,fanyong,优化回退，优化合入changeid:ee84f82b2f9997b8d4e44a173d4b393d007061f8
+If1c7851677418441f449a6b18fec3c393da1ad41,DDR,conn,sphy,gsphy,2487,fengpengying 00465932,new scan&bach&dtx feature
+If33eafb9626e2a6ed4846dee6d5925c4ea5bb9cc,L2MEM,conn,nphy_ll1u,ul,1515,panchenxiao p00656902,Uci Config Task内存池化
+If357bf808176b9c9703418ae8a1bc2d64c33b86f,L2MEM,conn,nphy_ml1c,1947,fanyong 00603021,changsha 打开ATRS特性,
+If357bf808176b9c9703418ae8a1bc2d64c33b86f,DDR,conn,nphy_comm,3804,fanyong 00603021,changsha 打开ATRS特性,
+If407fa7dc90c986715d7c07edccc93bc74a55818,L2MEM,conn,others,sdr,4344,chenziyi 00611759, csxw1 sat pvc calc adapt
+If407fa7dc90c986715d7c07edccc93bc74a55818,DDR,conn,csxw1,sdr,5087,chenziyi 00611759, csxw1 sat pvc calc adapt
+If897859252b2afb4dffcb0c1cdbee3a7697de302,L2MEM,mini,uphy,plt,3765,liujiajun 00369871,add hld om
+If8e5b7ae04ff4a66bd01a80eed7db2152001cee0,L2MEM,conn,nphy_ml1c,fec,2908,xuncong 00799242, SFI基础功能合入
+If8e5b7ae04ff4a66bd01a80eed7db2152001cee0,L2MEM,conn,nphy_ll1d,fec,1209,xuncong 00799242, SFI基础功能合入
+If9cd124e1eb60fd4c91c276e8cab1b304da4d8c5,DDR,conn,fess,fess,11291,cuikui c00385905,Cal Nvload and Bt Nvload
+Ifae5803d7708403c46cc4c332e936e8c8f2b485b,L2MEM,mini,nphy_hl1c,sdr,1238,xuxiyan 00428225, 双卡同小区特性开发
+Ifb8225383cabcc53dd02c52d70d65acec1209b0d,DDR,conn,nphy_hl1c,sdr,6270,zhumengyu 00845556,changsha切换时延优化
+Ifb8225383cabcc53dd02c52d70d65acec1209b0d,L2MEM,mini,nphy_hl1c,sdr,816,zhumengyu 00845556,changsha切换时延优化
+Ifd78203ad038f83b1d515c1adc5c5723734f7479,L2MEM,mini,fess,fess,1163,yangqixuan 00511085,serdespll 特性增补开发
+Ifd78203ad038f83b1d515c1adc5c5723734f7479,L2MEM,conn,fess,fess,1078,yangqixuan 00511085,serdespll 特性增补开发
+Ifd9e646e4a3278bb5aad3a65f5e622824422d2ad,DDR,conn,uphy,plt,16506,lihongwei 00436719, psa l1cache tag dump
+Ifdee73a75cafa4ec55f95103310c192e35fe479f,DDR,conn,sphy,gsphy,3007,yangyong 30011395,Data segment addition
+Iff9972251b36cfeecb97f292de74ac27fee1e38e,L2MEM,mini,fess,fess,602,mohaotong 30046173,RFDSP itcm的Minidump

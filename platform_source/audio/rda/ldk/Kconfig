@@ -1,0 +1,17 @@
+menu "audio Kernel Configuration"
+
+RDA_AUDIO_SRC_PATH := $(if-success,[ -d $(srctree)/platform_source/audio/rda/ldk ],platform_source/audio/rda/ldk,vendor/drivers/audio)
+
+menuconfig RDA_AUDIO_DRIVERS
+	bool "Enable RDA audio drivers"
+	default n
+	help
+	Say yes here to support RDA audio drivers
+
+source "$(RDA_AUDIO_SRC_PATH)/hifi_dsp/Kconfig"
+source "$(RDA_AUDIO_SRC_PATH)/codecs/Kconfig"
+source "$(RDA_AUDIO_SRC_PATH)/hifi_mailbox/Kconfig"
+source "$(RDA_AUDIO_SRC_PATH)/rda_rdr/Kconfig"
+source "$(RDA_AUDIO_SRC_PATH)/a2b/Kconfig"
+
+endmenu

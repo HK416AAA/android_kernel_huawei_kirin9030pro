@@ -1,0 +1,41 @@
+config DMABUF_SWAP
+    bool "dmabuf swap"
+    depends on DMABUF_HEAPS
+    help
+      Choose this option to enable dmabuf swap of System Heap.
+      To store or resume the memory data from the UFS.
+
+config DMABUF_ZSWAP
+    bool "dmabuf zswap"
+    depends on DMABUF_SWAP
+    help
+      Choose this option to enable dmabuf swap of System Heap.
+      To store or resume the memory data from the storage.
+
+config DMABUF_RECLAIM
+    bool "dmabuf reclaim"
+    select ION_FAULT
+    depends on DMABUF_HEAPS
+    help
+      Choose this option to enable Dmabuf Reclaim of System Heap.
+      Reclaiming and restoring
+
+config DMABUF_RECLAIM_TEST
+    bool "dmabuf reclaim test"
+    depends on DMABUF_RECLAIM || DMABUF_SWAP
+    help
+      Choose this option to enable Dmabuf test program.
+
+config DMABUF_RESUME_PIPELINE
+    bool "dmabuf resume pipeline"
+    depends on DMABUF_RECLAIM
+    default n
+    help
+      Choose this option to enable Dmabuf resume pipeline
+
+config DMABUF_RECLAIM_SUPPORT_UVAMAP_DEAD
+    bool "dmabuf_reclaim support for died process uva_map"
+    depends on DMABUF_RECLAIM
+    default n
+    help
+      Choose this option to support for died or unmapping process uva_map

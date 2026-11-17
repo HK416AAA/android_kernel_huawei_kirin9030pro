@@ -1,0 +1,2 @@
+switch,comment,group,es_eng,es_rtt,es_user:es_eng,cs_eng,cs_rtt,cs_user:cs_eng,es_asan:es_eng,cs_asan:cs_eng
+CFG_CONFIG_MODEM_MINI_DUMP,,BSP_OS,YES,YES,,YES,YES,,,

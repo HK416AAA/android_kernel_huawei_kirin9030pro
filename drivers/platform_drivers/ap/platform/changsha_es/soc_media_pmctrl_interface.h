@@ -1,0 +1,8116 @@
+#ifndef __SOC_MEDIA_PMCTRL_INTERFACE_H__
+#define __SOC_MEDIA_PMCTRL_INTERFACE_H__ 
+#ifdef __cplusplus
+    #if __cplusplus
+        extern "C" {
+    #endif
+#endif
+#ifndef __SOC_H_FOR_ASM__
+#define SOC_MEDIA_PMCTRL_PERIBAKDATA0_ADDR(base) ((base) + (0x930UL))
+#define SOC_MEDIA_PMCTRL_PERIBAKDATA1_ADDR(base) ((base) + (0x934UL))
+#define SOC_MEDIA_PMCTRL_PERIBAKDATA2_ADDR(base) ((base) + (0x938UL))
+#define SOC_MEDIA_PMCTRL_PERIBAKDATA3_ADDR(base) ((base) + (0x93CUL))
+#define SOC_MEDIA_PMCTRL_PERI_INTR_STAT_ADDR(base) ((base) + (0xC2CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A0_ADDR(base) ((base) + (0x200UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A1_ADDR(base) ((base) + (0x204UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B0_ADDR(base) ((base) + (0x208UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B1_ADDR(base) ((base) + (0x20CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C0_ADDR(base) ((base) + (0x210UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C1_ADDR(base) ((base) + (0x214UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D0_ADDR(base) ((base) + (0x218UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D1_ADDR(base) ((base) + (0x21CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E0_ADDR(base) ((base) + (0x220UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E1_ADDR(base) ((base) + (0x224UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E2_ADDR(base) ((base) + (0x228UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E3_ADDR(base) ((base) + (0x22CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F0_ADDR(base) ((base) + (0x230UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F1_ADDR(base) ((base) + (0x234UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F2_ADDR(base) ((base) + (0x238UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F3_ADDR(base) ((base) + (0x23CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G0_ADDR(base) ((base) + (0x240UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G1_ADDR(base) ((base) + (0x244UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G2_ADDR(base) ((base) + (0x248UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G3_ADDR(base) ((base) + (0x24CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H0_ADDR(base) ((base) + (0x250UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H1_ADDR(base) ((base) + (0x254UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H2_ADDR(base) ((base) + (0x258UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H3_ADDR(base) ((base) + (0x25CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H4_ADDR(base) ((base) + (0x260UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H5_ADDR(base) ((base) + (0x264UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H6_ADDR(base) ((base) + (0x268UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H7_ADDR(base) ((base) + (0x26CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I0_ADDR(base) ((base) + (0x270UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I1_ADDR(base) ((base) + (0x274UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I2_ADDR(base) ((base) + (0x278UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I3_ADDR(base) ((base) + (0x27CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I4_ADDR(base) ((base) + (0x280UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I5_ADDR(base) ((base) + (0x284UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I6_ADDR(base) ((base) + (0x288UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I7_ADDR(base) ((base) + (0x28CUL))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_ADDR(base) ((base) + (0x290UL))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_ADDR(base) ((base) + (0x294UL))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_ADDR(base) ((base) + (0x298UL))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_ADDR(base) ((base) + (0x29CUL))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_ADDR(base) ((base) + (0x310UL))
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_ADDR(base) ((base) + (0x2B0UL))
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_ADDR(base) ((base) + (0x2BCUL))
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_ADDR(base) ((base) + (0x2C0UL))
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_ADDR(base) ((base) + (0x2C4UL))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_ADDR(base) ((base) + (0x2C8UL))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_ADDR(base) ((base) + (0x2CCUL))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_ADDR(base) ((base) + (0x2D0UL))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_ADDR(base) ((base) + (0x2D4UL))
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_ADDR(base) ((base) + (0x2D8UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_A_ADDR(base) ((base) + (0x2DCUL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_B_ADDR(base) ((base) + (0x2E0UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_C_ADDR(base) ((base) + (0x2E4UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_D_ADDR(base) ((base) + (0x2E8UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_E_ADDR(base) ((base) + (0x2ECUL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_F_ADDR(base) ((base) + (0x2F0UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_G_ADDR(base) ((base) + (0x2F4UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_H_ADDR(base) ((base) + (0x2F8UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_I_ADDR(base) ((base) + (0x2FCUL))
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_ADDR(base) ((base) + (0x300UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J0_ADDR(base) ((base) + (0x800UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J1_ADDR(base) ((base) + (0x804UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K0_ADDR(base) ((base) + (0x808UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K1_ADDR(base) ((base) + (0x80CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L0_ADDR(base) ((base) + (0x810UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L1_ADDR(base) ((base) + (0x814UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M0_ADDR(base) ((base) + (0x818UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M1_ADDR(base) ((base) + (0x81CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N0_ADDR(base) ((base) + (0x820UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N1_ADDR(base) ((base) + (0x824UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N2_ADDR(base) ((base) + (0x828UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N3_ADDR(base) ((base) + (0x82CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O0_ADDR(base) ((base) + (0x830UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O1_ADDR(base) ((base) + (0x834UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O2_ADDR(base) ((base) + (0x838UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O3_ADDR(base) ((base) + (0x83CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P0_ADDR(base) ((base) + (0x840UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P1_ADDR(base) ((base) + (0x844UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P2_ADDR(base) ((base) + (0x848UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P3_ADDR(base) ((base) + (0x84CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q0_ADDR(base) ((base) + (0x850UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q1_ADDR(base) ((base) + (0x854UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q2_ADDR(base) ((base) + (0x858UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q3_ADDR(base) ((base) + (0x85CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q4_ADDR(base) ((base) + (0x860UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q5_ADDR(base) ((base) + (0x864UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q6_ADDR(base) ((base) + (0x868UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q7_ADDR(base) ((base) + (0x86CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R0_ADDR(base) ((base) + (0x870UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R1_ADDR(base) ((base) + (0x874UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R2_ADDR(base) ((base) + (0x878UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R3_ADDR(base) ((base) + (0x87CUL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R4_ADDR(base) ((base) + (0x880UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R5_ADDR(base) ((base) + (0x884UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R6_ADDR(base) ((base) + (0x888UL))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R7_ADDR(base) ((base) + (0x88CUL))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_J_R_ADDR(base) ((base) + (0x890UL))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_J_R_ADDR(base) ((base) + (0x894UL))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_J_R_ADDR(base) ((base) + (0x898UL))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_J_R_ADDR(base) ((base) + (0x89CUL))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_J_R_ADDR(base) ((base) + (0x904UL))
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_ADDR(base) ((base) + (0x8B0UL))
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_ADDR(base) ((base) + (0x8BCUL))
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_J_R_ADDR(base) ((base) + (0x8C0UL))
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_ADDR(base) ((base) + (0x8C4UL))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_ADDR(base) ((base) + (0x8C8UL))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_ADDR(base) ((base) + (0x8CCUL))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_ADDR(base) ((base) + (0x8D0UL))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_ADDR(base) ((base) + (0x8D4UL))
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_ADDR(base) ((base) + (0x8D8UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_J_ADDR(base) ((base) + (0x8DCUL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_K_ADDR(base) ((base) + (0x8E0UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_L_ADDR(base) ((base) + (0x8E4UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_M_ADDR(base) ((base) + (0x8E8UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_N_ADDR(base) ((base) + (0x8ECUL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_O_ADDR(base) ((base) + (0x8F0UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_P_ADDR(base) ((base) + (0x8F4UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_Q_ADDR(base) ((base) + (0x8F8UL))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_R_ADDR(base) ((base) + (0x8FCUL))
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_ADDR(base) ((base) + (0x900UL))
+#define SOC_MEDIA_PMCTRL_PERI_CTRL0_ADDR(base) ((base) + (0x340UL))
+#define SOC_MEDIA_PMCTRL_PERI_CTRL4_ADDR(base) ((base) + (0x350UL))
+#define SOC_MEDIA_PMCTRL_PERI_CTRL5_ADDR(base) ((base) + (0x354UL))
+#define SOC_MEDIA_PMCTRL_PERI_CTRL7_ADDR(base) ((base) + (0x35CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH0_IDX_0_ADDR(base) ((base) + (0xC30UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH0_IDX_1_ADDR(base) ((base) + (0xC34UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH1_IDX_0_ADDR(base) ((base) + (0xC38UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH1_IDX_1_ADDR(base) ((base) + (0xC3CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH2_IDX_0_ADDR(base) ((base) + (0xC40UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH2_IDX_1_ADDR(base) ((base) + (0xC44UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH3_IDX_0_ADDR(base) ((base) + (0xC48UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH3_IDX_1_ADDR(base) ((base) + (0xC4CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH4_IDX_0_ADDR(base) ((base) + (0xC50UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH4_IDX_1_ADDR(base) ((base) + (0xC54UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH5_IDX_0_ADDR(base) ((base) + (0xC58UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH5_IDX_1_ADDR(base) ((base) + (0xC5CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH6_IDX_0_ADDR(base) ((base) + (0xC60UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH6_IDX_1_ADDR(base) ((base) + (0xC64UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH7_IDX_0_ADDR(base) ((base) + (0xC68UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH7_IDX_1_ADDR(base) ((base) + (0xC6CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH8_IDX_0_ADDR(base) ((base) + (0xC70UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH8_IDX_1_ADDR(base) ((base) + (0xC74UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH9_IDX_0_ADDR(base) ((base) + (0xC78UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH9_IDX_1_ADDR(base) ((base) + (0xC7CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH10_IDX_0_ADDR(base) ((base) + (0xC80UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH10_IDX_1_ADDR(base) ((base) + (0xC84UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH11_IDX_0_ADDR(base) ((base) + (0xC88UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH11_IDX_1_ADDR(base) ((base) + (0xC8CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH12_IDX_0_ADDR(base) ((base) + (0xC90UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH12_IDX_1_ADDR(base) ((base) + (0xC94UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH13_IDX_0_ADDR(base) ((base) + (0xC98UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH13_IDX_1_ADDR(base) ((base) + (0xC9CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH14_IDX_0_ADDR(base) ((base) + (0xCA0UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH14_IDX_1_ADDR(base) ((base) + (0xCA4UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH15_IDX_0_ADDR(base) ((base) + (0xCA8UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH15_IDX_1_ADDR(base) ((base) + (0xCACUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_ADDR(base) ((base) + (0x500UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_ADDR(base) ((base) + (0x504UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_ADDR(base) ((base) + (0x508UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_3_ADDR(base) ((base) + (0x50CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_ADDR(base) ((base) + (0x510UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_ADDR(base) ((base) + (0x514UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_ADDR(base) ((base) + (0x518UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_UP_TIME_ADDR(base) ((base) + (0xCB0UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_DN_TTME_ADDR(base) ((base) + (0xCB4UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_BUCK_ON_TIME_ADDR(base) ((base) + (0xCB8UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_BUCK_OFF_TIME_ADDR(base) ((base) + (0xCBCUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_ADDR(base) ((base) + (0x51CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_ADDR(base) ((base) + (0x520UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_ADDR(base) ((base) + (0xCC0UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_ADDR(base) ((base) + (0xCC4UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_FIX_VOL_CONFIG_ADDR(base) ((base) + (0xCC8UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_M3ORCPU_MSK_ADDR(base) ((base) + (0x524UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_READ_ADDR(base) ((base) + (0xCCCUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_ADDR(base) ((base) + (0x528UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_HRD_VOL_IDX_ADDR(base) ((base) + (0xCD0UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_STAT_TIME_HOLD_ADDR(base) ((base) + (0xCD4UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_ADDR(base) ((base) + (0x52CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_HRD_ADDR(base) ((base) + (0x530UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_CHG_FLAG_ADDR(base) ((base) + (0xCD8UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_SPM1_HOLD_TIME_ADDR(base) ((base) + (0xCDCUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_FER_REQ_ACK_ADDR(base) ((base) + (0xCE0UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_DOZE_VOTE_CTRL_ADDR(base) ((base) + (0xCE4UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_ADDR(base) ((base) + (0x328UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT1_ADDR(base) ((base) + (0x32CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT2_ADDR(base) ((base) + (0x330UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT3_ADDR(base) ((base) + (0x334UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT4_ADDR(base) ((base) + (0x338UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT5_ADDR(base) ((base) + (0x33CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT6_ADDR(base) ((base) + (0x344UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT7_ADDR(base) ((base) + (0x348UL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT8_ADDR(base) ((base) + (0x34CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_MEDIAXPU_MSK_ADDR(base) ((base) + (0x304UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH0_IDX_0_ADDR(base) ((base) + (0xD0CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH0_IDX_1_ADDR(base) ((base) + (0xD10UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH1_IDX_0_ADDR(base) ((base) + (0xD14UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH1_IDX_1_ADDR(base) ((base) + (0xD18UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH2_IDX_0_ADDR(base) ((base) + (0xD1CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH2_IDX_1_ADDR(base) ((base) + (0xD20UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH3_IDX_0_ADDR(base) ((base) + (0xD24UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH3_IDX_1_ADDR(base) ((base) + (0xD28UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH4_IDX_0_ADDR(base) ((base) + (0xD2CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH4_IDX_1_ADDR(base) ((base) + (0xD30UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH5_IDX_0_ADDR(base) ((base) + (0xD34UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH5_IDX_1_ADDR(base) ((base) + (0xD38UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH6_IDX_0_ADDR(base) ((base) + (0xD3CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH6_IDX_1_ADDR(base) ((base) + (0xD40UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH7_IDX_0_ADDR(base) ((base) + (0xD44UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH7_IDX_1_ADDR(base) ((base) + (0xD48UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH8_IDX_0_ADDR(base) ((base) + (0xD4CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH8_IDX_1_ADDR(base) ((base) + (0xD50UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH9_IDX_0_ADDR(base) ((base) + (0xD54UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH9_IDX_1_ADDR(base) ((base) + (0xD58UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH10_IDX_0_ADDR(base) ((base) + (0xD5CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH10_IDX_1_ADDR(base) ((base) + (0xD60UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH11_IDX_0_ADDR(base) ((base) + (0xD64UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH11_IDX_1_ADDR(base) ((base) + (0xD68UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH12_IDX_0_ADDR(base) ((base) + (0xD6CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH12_IDX_1_ADDR(base) ((base) + (0xD70UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH13_IDX_0_ADDR(base) ((base) + (0xD74UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH13_IDX_1_ADDR(base) ((base) + (0xD78UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH14_IDX_0_ADDR(base) ((base) + (0xD7CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH14_IDX_1_ADDR(base) ((base) + (0xD80UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH15_IDX_0_ADDR(base) ((base) + (0xD84UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH15_IDX_1_ADDR(base) ((base) + (0xD88UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_ADDR(base) ((base) + (0x534UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_ADDR(base) ((base) + (0x538UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_ADDR(base) ((base) + (0x53CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_3_ADDR(base) ((base) + (0x540UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_ADDR(base) ((base) + (0x544UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_ADDR(base) ((base) + (0x548UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_ADDR(base) ((base) + (0x54CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_UP_TIME_ADDR(base) ((base) + (0xD8CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_DN_TTME_ADDR(base) ((base) + (0xD90UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_BUCK_ON_TIME_ADDR(base) ((base) + (0xD94UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_BUCK_OFF_TIME_ADDR(base) ((base) + (0xD98UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_ADDR(base) ((base) + (0x550UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_ADDR(base) ((base) + (0x554UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_ADDR(base) ((base) + (0xD9CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_ADDR(base) ((base) + (0xDA0UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_FIX_VOL_CONFIG_ADDR(base) ((base) + (0xDA4UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_M3ORCPU_MSK_ADDR(base) ((base) + (0x558UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_READ_ADDR(base) ((base) + (0xDA8UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_ADDR(base) ((base) + (0x55CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_HRD_VOL_IDX_ADDR(base) ((base) + (0xDACUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_STAT_TIME_HOLD_ADDR(base) ((base) + (0xDB0UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_ADDR(base) ((base) + (0x560UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_HRD_ADDR(base) ((base) + (0x564UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_CHG_FLAG_ADDR(base) ((base) + (0xDB4UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_SPMI_HOLD_TIME_ADDR(base) ((base) + (0xDB8UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_FER_REQ_ACK_ADDR(base) ((base) + (0xDBCUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_DOZE_VOTE_CTRL_ADDR(base) ((base) + (0xDC0UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_ADDR(base) ((base) + (0x358UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT1_ADDR(base) ((base) + (0x360UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT2_ADDR(base) ((base) + (0x368UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT3_ADDR(base) ((base) + (0x36CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT4_ADDR(base) ((base) + (0x370UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT5_ADDR(base) ((base) + (0x374UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT6_ADDR(base) ((base) + (0x378UL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT7_ADDR(base) ((base) + (0x37CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT8_ADDR(base) ((base) + (0x38CUL))
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_MEDIAXPU_MSK_ADDR(base) ((base) + (0x308UL))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_SW_CFG_ADDR(base) ((base) + (0x030UL))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_DIV_CFG_ADDR(base) ((base) + (0x034UL))
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_ADDR(base) ((base) + (0x038UL))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VOL_CFG_ADDR(base) ((base) + (0xA48UL))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_ADDR(base) ((base) + (0x040UL))
+#define SOC_MEDIA_PMCTRL_APB_SF_INSTR_LIST_ADDR(base,sf) ((base) + (0x070+ (sf)*4UL))
+#define SOC_MEDIA_PMCTRL_APB_HW_INSTR_LIST_ADDR(base,hw) ((base) + (0x100+ (hw)*4UL))
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_ADDR(base) ((base) + (0x044UL))
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG2_ADDR(base) ((base) + (0x048UL))
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG3_ADDR(base) ((base) + (0x04CUL))
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_ADDR(base) ((base) + (0x050UL))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_ADDR(base) ((base) + (0x054UL))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_ADDR(base) ((base) + (0x058UL))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_ADDR(base) ((base) + (0x05CUL))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_ADDR(base) ((base) + (0x060UL))
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_ADDR(base) ((base) + (0x064UL))
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_SF_EN_ADDR(base) ((base) + (0x068UL))
+#define SOC_MEDIA_PMCTRL_PERI_DSS_AVS_VOL_IDX_0_ADDR(base) ((base) + (0xA40UL))
+#define SOC_MEDIA_PMCTRL_PERI_DSS_AVS_VOL_IDX_1_ADDR(base) ((base) + (0xA44UL))
+#define SOC_MEDIA_PMCTRL_APB_DSS2DDR_INSTR_LIST_ADDR(base,ddr_freq) ((base) + (0x160+ (ddr_freq)*4UL))
+#define SOC_MEDIA_PMCTRL_APB_DSS2QICE_INSTR_LIST_ADDR(base,qice_freq) ((base) + (0x188+ (qice_freq)*4UL))
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_SF_CFG_ADDR(base) ((base) + (0x1B0UL))
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_SF_CFG_ADDR(base) ((base) + (0x1B4UL))
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_ADDR(base) ((base) + (0x1B8UL))
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_ADDR(base) ((base) + (0x1BCUL))
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_ADDR(base) ((base) + (0x1C0UL))
+#define SOC_MEDIA_PMCTRL_APB_DDR_QICE_CUR_FREQ_ADDR(base) ((base) + (0x1C4UL))
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_ADDR(base) ((base) + (0x1C8UL))
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_ADDR(base) ((base) + (0x1CCUL))
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_ADDR(base) ((base) + (0x1D0UL))
+#define SOC_MEDIA_PMCTRL_DSS_DFS_OK_ADDR(base) ((base) + (0x30CUL))
+#define SOC_MEDIA_PMCTRL_DSS2LPMCU_MXPU_DVS_MSK_ADDR(base) ((base) + (0x314UL))
+#define SOC_MEDIA_PMCTRL_FFTS_REQ_INFO_ADDR(base) ((base) + (0x318UL))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_ADDR(base) ((base) + (0x600UL))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_ADDR(base) ((base) + (0x604UL))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_ADDR(base) ((base) + (0x608UL))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_ADDR(base) ((base) + (0x60CUL))
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_ADDR(base) ((base) + (0x610UL))
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_ADDR(base) ((base) + (0x614UL))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_ADDR(base) ((base) + (0x618UL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_ADDR(base) ((base) + (0x61CUL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_ADDR(base) ((base) + (0x620UL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_ADDR(base) ((base) + (0x624UL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_ADDR(base) ((base) + (0x628UL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_ADDR(base) ((base) + (0x62CUL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_ADDR(base) ((base) + (0x630UL))
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_ADDR(base) ((base) + (0x634UL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_ADDR(base) ((base) + (0x638UL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_ADDR(base) ((base) + (0x63CUL))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_ADDR(base) ((base) + (0x700UL))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_ADDR(base) ((base) + (0x704UL))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_ADDR(base) ((base) + (0x708UL))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_ADDR(base) ((base) + (0x70CUL))
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_ADDR(base) ((base) + (0x710UL))
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_ADDR(base) ((base) + (0x714UL))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_ADDR(base) ((base) + (0x718UL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_ADDR(base) ((base) + (0x71CUL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_ADDR(base) ((base) + (0x720UL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_ADDR(base) ((base) + (0x724UL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_ADDR(base) ((base) + (0x728UL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_ADDR(base) ((base) + (0x72CUL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_ADDR(base) ((base) + (0x730UL))
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_ADDR(base) ((base) + (0x734UL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_M_ADDR(base) ((base) + (0x738UL))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_M_ADDR(base) ((base) + (0x73CUL))
+#else
+#define SOC_MEDIA_PMCTRL_PERIBAKDATA0_ADDR(base) ((base) + (0x930))
+#define SOC_MEDIA_PMCTRL_PERIBAKDATA1_ADDR(base) ((base) + (0x934))
+#define SOC_MEDIA_PMCTRL_PERIBAKDATA2_ADDR(base) ((base) + (0x938))
+#define SOC_MEDIA_PMCTRL_PERIBAKDATA3_ADDR(base) ((base) + (0x93C))
+#define SOC_MEDIA_PMCTRL_PERI_INTR_STAT_ADDR(base) ((base) + (0xC2C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A0_ADDR(base) ((base) + (0x200))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A1_ADDR(base) ((base) + (0x204))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B0_ADDR(base) ((base) + (0x208))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B1_ADDR(base) ((base) + (0x20C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C0_ADDR(base) ((base) + (0x210))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C1_ADDR(base) ((base) + (0x214))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D0_ADDR(base) ((base) + (0x218))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D1_ADDR(base) ((base) + (0x21C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E0_ADDR(base) ((base) + (0x220))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E1_ADDR(base) ((base) + (0x224))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E2_ADDR(base) ((base) + (0x228))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E3_ADDR(base) ((base) + (0x22C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F0_ADDR(base) ((base) + (0x230))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F1_ADDR(base) ((base) + (0x234))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F2_ADDR(base) ((base) + (0x238))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F3_ADDR(base) ((base) + (0x23C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G0_ADDR(base) ((base) + (0x240))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G1_ADDR(base) ((base) + (0x244))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G2_ADDR(base) ((base) + (0x248))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G3_ADDR(base) ((base) + (0x24C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H0_ADDR(base) ((base) + (0x250))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H1_ADDR(base) ((base) + (0x254))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H2_ADDR(base) ((base) + (0x258))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H3_ADDR(base) ((base) + (0x25C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H4_ADDR(base) ((base) + (0x260))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H5_ADDR(base) ((base) + (0x264))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H6_ADDR(base) ((base) + (0x268))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H7_ADDR(base) ((base) + (0x26C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I0_ADDR(base) ((base) + (0x270))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I1_ADDR(base) ((base) + (0x274))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I2_ADDR(base) ((base) + (0x278))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I3_ADDR(base) ((base) + (0x27C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I4_ADDR(base) ((base) + (0x280))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I5_ADDR(base) ((base) + (0x284))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I6_ADDR(base) ((base) + (0x288))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I7_ADDR(base) ((base) + (0x28C))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_ADDR(base) ((base) + (0x290))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_ADDR(base) ((base) + (0x294))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_ADDR(base) ((base) + (0x298))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_ADDR(base) ((base) + (0x29C))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_ADDR(base) ((base) + (0x310))
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_ADDR(base) ((base) + (0x2B0))
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_ADDR(base) ((base) + (0x2BC))
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_ADDR(base) ((base) + (0x2C0))
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_ADDR(base) ((base) + (0x2C4))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_ADDR(base) ((base) + (0x2C8))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_ADDR(base) ((base) + (0x2CC))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_ADDR(base) ((base) + (0x2D0))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_ADDR(base) ((base) + (0x2D4))
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_ADDR(base) ((base) + (0x2D8))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_A_ADDR(base) ((base) + (0x2DC))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_B_ADDR(base) ((base) + (0x2E0))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_C_ADDR(base) ((base) + (0x2E4))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_D_ADDR(base) ((base) + (0x2E8))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_E_ADDR(base) ((base) + (0x2EC))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_F_ADDR(base) ((base) + (0x2F0))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_G_ADDR(base) ((base) + (0x2F4))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_H_ADDR(base) ((base) + (0x2F8))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_I_ADDR(base) ((base) + (0x2FC))
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_ADDR(base) ((base) + (0x300))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J0_ADDR(base) ((base) + (0x800))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J1_ADDR(base) ((base) + (0x804))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K0_ADDR(base) ((base) + (0x808))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K1_ADDR(base) ((base) + (0x80C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L0_ADDR(base) ((base) + (0x810))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L1_ADDR(base) ((base) + (0x814))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M0_ADDR(base) ((base) + (0x818))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M1_ADDR(base) ((base) + (0x81C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N0_ADDR(base) ((base) + (0x820))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N1_ADDR(base) ((base) + (0x824))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N2_ADDR(base) ((base) + (0x828))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N3_ADDR(base) ((base) + (0x82C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O0_ADDR(base) ((base) + (0x830))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O1_ADDR(base) ((base) + (0x834))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O2_ADDR(base) ((base) + (0x838))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O3_ADDR(base) ((base) + (0x83C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P0_ADDR(base) ((base) + (0x840))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P1_ADDR(base) ((base) + (0x844))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P2_ADDR(base) ((base) + (0x848))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P3_ADDR(base) ((base) + (0x84C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q0_ADDR(base) ((base) + (0x850))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q1_ADDR(base) ((base) + (0x854))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q2_ADDR(base) ((base) + (0x858))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q3_ADDR(base) ((base) + (0x85C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q4_ADDR(base) ((base) + (0x860))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q5_ADDR(base) ((base) + (0x864))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q6_ADDR(base) ((base) + (0x868))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q7_ADDR(base) ((base) + (0x86C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R0_ADDR(base) ((base) + (0x870))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R1_ADDR(base) ((base) + (0x874))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R2_ADDR(base) ((base) + (0x878))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R3_ADDR(base) ((base) + (0x87C))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R4_ADDR(base) ((base) + (0x880))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R5_ADDR(base) ((base) + (0x884))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R6_ADDR(base) ((base) + (0x888))
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R7_ADDR(base) ((base) + (0x88C))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_J_R_ADDR(base) ((base) + (0x890))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_J_R_ADDR(base) ((base) + (0x894))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_J_R_ADDR(base) ((base) + (0x898))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_J_R_ADDR(base) ((base) + (0x89C))
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_J_R_ADDR(base) ((base) + (0x904))
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_ADDR(base) ((base) + (0x8B0))
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_ADDR(base) ((base) + (0x8BC))
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_J_R_ADDR(base) ((base) + (0x8C0))
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_ADDR(base) ((base) + (0x8C4))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_ADDR(base) ((base) + (0x8C8))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_ADDR(base) ((base) + (0x8CC))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_ADDR(base) ((base) + (0x8D0))
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_ADDR(base) ((base) + (0x8D4))
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_ADDR(base) ((base) + (0x8D8))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_J_ADDR(base) ((base) + (0x8DC))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_K_ADDR(base) ((base) + (0x8E0))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_L_ADDR(base) ((base) + (0x8E4))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_M_ADDR(base) ((base) + (0x8E8))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_N_ADDR(base) ((base) + (0x8EC))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_O_ADDR(base) ((base) + (0x8F0))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_P_ADDR(base) ((base) + (0x8F4))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_Q_ADDR(base) ((base) + (0x8F8))
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_R_ADDR(base) ((base) + (0x8FC))
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_ADDR(base) ((base) + (0x900))
+#define SOC_MEDIA_PMCTRL_PERI_CTRL0_ADDR(base) ((base) + (0x340))
+#define SOC_MEDIA_PMCTRL_PERI_CTRL4_ADDR(base) ((base) + (0x350))
+#define SOC_MEDIA_PMCTRL_PERI_CTRL5_ADDR(base) ((base) + (0x354))
+#define SOC_MEDIA_PMCTRL_PERI_CTRL7_ADDR(base) ((base) + (0x35C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH0_IDX_0_ADDR(base) ((base) + (0xC30))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH0_IDX_1_ADDR(base) ((base) + (0xC34))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH1_IDX_0_ADDR(base) ((base) + (0xC38))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH1_IDX_1_ADDR(base) ((base) + (0xC3C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH2_IDX_0_ADDR(base) ((base) + (0xC40))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH2_IDX_1_ADDR(base) ((base) + (0xC44))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH3_IDX_0_ADDR(base) ((base) + (0xC48))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH3_IDX_1_ADDR(base) ((base) + (0xC4C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH4_IDX_0_ADDR(base) ((base) + (0xC50))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH4_IDX_1_ADDR(base) ((base) + (0xC54))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH5_IDX_0_ADDR(base) ((base) + (0xC58))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH5_IDX_1_ADDR(base) ((base) + (0xC5C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH6_IDX_0_ADDR(base) ((base) + (0xC60))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH6_IDX_1_ADDR(base) ((base) + (0xC64))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH7_IDX_0_ADDR(base) ((base) + (0xC68))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH7_IDX_1_ADDR(base) ((base) + (0xC6C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH8_IDX_0_ADDR(base) ((base) + (0xC70))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH8_IDX_1_ADDR(base) ((base) + (0xC74))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH9_IDX_0_ADDR(base) ((base) + (0xC78))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH9_IDX_1_ADDR(base) ((base) + (0xC7C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH10_IDX_0_ADDR(base) ((base) + (0xC80))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH10_IDX_1_ADDR(base) ((base) + (0xC84))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH11_IDX_0_ADDR(base) ((base) + (0xC88))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH11_IDX_1_ADDR(base) ((base) + (0xC8C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH12_IDX_0_ADDR(base) ((base) + (0xC90))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH12_IDX_1_ADDR(base) ((base) + (0xC94))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH13_IDX_0_ADDR(base) ((base) + (0xC98))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH13_IDX_1_ADDR(base) ((base) + (0xC9C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH14_IDX_0_ADDR(base) ((base) + (0xCA0))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH14_IDX_1_ADDR(base) ((base) + (0xCA4))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH15_IDX_0_ADDR(base) ((base) + (0xCA8))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH15_IDX_1_ADDR(base) ((base) + (0xCAC))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_ADDR(base) ((base) + (0x500))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_ADDR(base) ((base) + (0x504))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_ADDR(base) ((base) + (0x508))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_3_ADDR(base) ((base) + (0x50C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_ADDR(base) ((base) + (0x510))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_ADDR(base) ((base) + (0x514))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_ADDR(base) ((base) + (0x518))
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_UP_TIME_ADDR(base) ((base) + (0xCB0))
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_DN_TTME_ADDR(base) ((base) + (0xCB4))
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_BUCK_ON_TIME_ADDR(base) ((base) + (0xCB8))
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_BUCK_OFF_TIME_ADDR(base) ((base) + (0xCBC))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_ADDR(base) ((base) + (0x51C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_ADDR(base) ((base) + (0x520))
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_ADDR(base) ((base) + (0xCC0))
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_ADDR(base) ((base) + (0xCC4))
+#define SOC_MEDIA_PMCTRL_PERI_M1_FIX_VOL_CONFIG_ADDR(base) ((base) + (0xCC8))
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_M3ORCPU_MSK_ADDR(base) ((base) + (0x524))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_READ_ADDR(base) ((base) + (0xCCC))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_ADDR(base) ((base) + (0x528))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_HRD_VOL_IDX_ADDR(base) ((base) + (0xCD0))
+#define SOC_MEDIA_PMCTRL_PERI_M1_STAT_TIME_HOLD_ADDR(base) ((base) + (0xCD4))
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_ADDR(base) ((base) + (0x52C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_HRD_ADDR(base) ((base) + (0x530))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_CHG_FLAG_ADDR(base) ((base) + (0xCD8))
+#define SOC_MEDIA_PMCTRL_PERI_M1_SPM1_HOLD_TIME_ADDR(base) ((base) + (0xCDC))
+#define SOC_MEDIA_PMCTRL_PERI_M1_FER_REQ_ACK_ADDR(base) ((base) + (0xCE0))
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_DOZE_VOTE_CTRL_ADDR(base) ((base) + (0xCE4))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_ADDR(base) ((base) + (0x328))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT1_ADDR(base) ((base) + (0x32C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT2_ADDR(base) ((base) + (0x330))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT3_ADDR(base) ((base) + (0x334))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT4_ADDR(base) ((base) + (0x338))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT5_ADDR(base) ((base) + (0x33C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT6_ADDR(base) ((base) + (0x344))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT7_ADDR(base) ((base) + (0x348))
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT8_ADDR(base) ((base) + (0x34C))
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_MEDIAXPU_MSK_ADDR(base) ((base) + (0x304))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH0_IDX_0_ADDR(base) ((base) + (0xD0C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH0_IDX_1_ADDR(base) ((base) + (0xD10))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH1_IDX_0_ADDR(base) ((base) + (0xD14))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH1_IDX_1_ADDR(base) ((base) + (0xD18))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH2_IDX_0_ADDR(base) ((base) + (0xD1C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH2_IDX_1_ADDR(base) ((base) + (0xD20))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH3_IDX_0_ADDR(base) ((base) + (0xD24))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH3_IDX_1_ADDR(base) ((base) + (0xD28))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH4_IDX_0_ADDR(base) ((base) + (0xD2C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH4_IDX_1_ADDR(base) ((base) + (0xD30))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH5_IDX_0_ADDR(base) ((base) + (0xD34))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH5_IDX_1_ADDR(base) ((base) + (0xD38))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH6_IDX_0_ADDR(base) ((base) + (0xD3C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH6_IDX_1_ADDR(base) ((base) + (0xD40))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH7_IDX_0_ADDR(base) ((base) + (0xD44))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH7_IDX_1_ADDR(base) ((base) + (0xD48))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH8_IDX_0_ADDR(base) ((base) + (0xD4C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH8_IDX_1_ADDR(base) ((base) + (0xD50))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH9_IDX_0_ADDR(base) ((base) + (0xD54))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH9_IDX_1_ADDR(base) ((base) + (0xD58))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH10_IDX_0_ADDR(base) ((base) + (0xD5C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH10_IDX_1_ADDR(base) ((base) + (0xD60))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH11_IDX_0_ADDR(base) ((base) + (0xD64))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH11_IDX_1_ADDR(base) ((base) + (0xD68))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH12_IDX_0_ADDR(base) ((base) + (0xD6C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH12_IDX_1_ADDR(base) ((base) + (0xD70))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH13_IDX_0_ADDR(base) ((base) + (0xD74))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH13_IDX_1_ADDR(base) ((base) + (0xD78))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH14_IDX_0_ADDR(base) ((base) + (0xD7C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH14_IDX_1_ADDR(base) ((base) + (0xD80))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH15_IDX_0_ADDR(base) ((base) + (0xD84))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH15_IDX_1_ADDR(base) ((base) + (0xD88))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_ADDR(base) ((base) + (0x534))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_ADDR(base) ((base) + (0x538))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_ADDR(base) ((base) + (0x53C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_3_ADDR(base) ((base) + (0x540))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_ADDR(base) ((base) + (0x544))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_ADDR(base) ((base) + (0x548))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_ADDR(base) ((base) + (0x54C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_UP_TIME_ADDR(base) ((base) + (0xD8C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_DN_TTME_ADDR(base) ((base) + (0xD90))
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_BUCK_ON_TIME_ADDR(base) ((base) + (0xD94))
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_BUCK_OFF_TIME_ADDR(base) ((base) + (0xD98))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_ADDR(base) ((base) + (0x550))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_ADDR(base) ((base) + (0x554))
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_ADDR(base) ((base) + (0xD9C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_ADDR(base) ((base) + (0xDA0))
+#define SOC_MEDIA_PMCTRL_PERI_M2_FIX_VOL_CONFIG_ADDR(base) ((base) + (0xDA4))
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_M3ORCPU_MSK_ADDR(base) ((base) + (0x558))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_READ_ADDR(base) ((base) + (0xDA8))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_ADDR(base) ((base) + (0x55C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_HRD_VOL_IDX_ADDR(base) ((base) + (0xDAC))
+#define SOC_MEDIA_PMCTRL_PERI_M2_STAT_TIME_HOLD_ADDR(base) ((base) + (0xDB0))
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_ADDR(base) ((base) + (0x560))
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_HRD_ADDR(base) ((base) + (0x564))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_CHG_FLAG_ADDR(base) ((base) + (0xDB4))
+#define SOC_MEDIA_PMCTRL_PERI_M2_SPMI_HOLD_TIME_ADDR(base) ((base) + (0xDB8))
+#define SOC_MEDIA_PMCTRL_PERI_M2_FER_REQ_ACK_ADDR(base) ((base) + (0xDBC))
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_DOZE_VOTE_CTRL_ADDR(base) ((base) + (0xDC0))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_ADDR(base) ((base) + (0x358))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT1_ADDR(base) ((base) + (0x360))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT2_ADDR(base) ((base) + (0x368))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT3_ADDR(base) ((base) + (0x36C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT4_ADDR(base) ((base) + (0x370))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT5_ADDR(base) ((base) + (0x374))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT6_ADDR(base) ((base) + (0x378))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT7_ADDR(base) ((base) + (0x37C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT8_ADDR(base) ((base) + (0x38C))
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_MEDIAXPU_MSK_ADDR(base) ((base) + (0x308))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_SW_CFG_ADDR(base) ((base) + (0x030))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_DIV_CFG_ADDR(base) ((base) + (0x034))
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_ADDR(base) ((base) + (0x038))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VOL_CFG_ADDR(base) ((base) + (0xA48))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_ADDR(base) ((base) + (0x040))
+#define SOC_MEDIA_PMCTRL_APB_SF_INSTR_LIST_ADDR(base,sf) ((base) + (0x070+ (sf)*4))
+#define SOC_MEDIA_PMCTRL_APB_HW_INSTR_LIST_ADDR(base,hw) ((base) + (0x100+ (hw)*4))
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_ADDR(base) ((base) + (0x044))
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG2_ADDR(base) ((base) + (0x048))
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG3_ADDR(base) ((base) + (0x04C))
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_ADDR(base) ((base) + (0x050))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_ADDR(base) ((base) + (0x054))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_ADDR(base) ((base) + (0x058))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_ADDR(base) ((base) + (0x05C))
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_ADDR(base) ((base) + (0x060))
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_ADDR(base) ((base) + (0x064))
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_SF_EN_ADDR(base) ((base) + (0x068))
+#define SOC_MEDIA_PMCTRL_PERI_DSS_AVS_VOL_IDX_0_ADDR(base) ((base) + (0xA40))
+#define SOC_MEDIA_PMCTRL_PERI_DSS_AVS_VOL_IDX_1_ADDR(base) ((base) + (0xA44))
+#define SOC_MEDIA_PMCTRL_APB_DSS2DDR_INSTR_LIST_ADDR(base,ddr_freq) ((base) + (0x160+ (ddr_freq)*4))
+#define SOC_MEDIA_PMCTRL_APB_DSS2QICE_INSTR_LIST_ADDR(base,qice_freq) ((base) + (0x188+ (qice_freq)*4))
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_SF_CFG_ADDR(base) ((base) + (0x1B0))
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_SF_CFG_ADDR(base) ((base) + (0x1B4))
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_ADDR(base) ((base) + (0x1B8))
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_ADDR(base) ((base) + (0x1BC))
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_ADDR(base) ((base) + (0x1C0))
+#define SOC_MEDIA_PMCTRL_APB_DDR_QICE_CUR_FREQ_ADDR(base) ((base) + (0x1C4))
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_ADDR(base) ((base) + (0x1C8))
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_ADDR(base) ((base) + (0x1CC))
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_ADDR(base) ((base) + (0x1D0))
+#define SOC_MEDIA_PMCTRL_DSS_DFS_OK_ADDR(base) ((base) + (0x30C))
+#define SOC_MEDIA_PMCTRL_DSS2LPMCU_MXPU_DVS_MSK_ADDR(base) ((base) + (0x314))
+#define SOC_MEDIA_PMCTRL_FFTS_REQ_INFO_ADDR(base) ((base) + (0x318))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_ADDR(base) ((base) + (0x600))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_ADDR(base) ((base) + (0x604))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_ADDR(base) ((base) + (0x608))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_ADDR(base) ((base) + (0x60C))
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_ADDR(base) ((base) + (0x610))
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_ADDR(base) ((base) + (0x614))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_ADDR(base) ((base) + (0x618))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_ADDR(base) ((base) + (0x61C))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_ADDR(base) ((base) + (0x620))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_ADDR(base) ((base) + (0x624))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_ADDR(base) ((base) + (0x628))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_ADDR(base) ((base) + (0x62C))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_ADDR(base) ((base) + (0x630))
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_ADDR(base) ((base) + (0x634))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_ADDR(base) ((base) + (0x638))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_ADDR(base) ((base) + (0x63C))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_ADDR(base) ((base) + (0x700))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_ADDR(base) ((base) + (0x704))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_ADDR(base) ((base) + (0x708))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_ADDR(base) ((base) + (0x70C))
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_ADDR(base) ((base) + (0x710))
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_ADDR(base) ((base) + (0x714))
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_ADDR(base) ((base) + (0x718))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_ADDR(base) ((base) + (0x71C))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_ADDR(base) ((base) + (0x720))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_ADDR(base) ((base) + (0x724))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_ADDR(base) ((base) + (0x728))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_ADDR(base) ((base) + (0x72C))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_ADDR(base) ((base) + (0x730))
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_ADDR(base) ((base) + (0x734))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_M_ADDR(base) ((base) + (0x738))
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_M_ADDR(base) ((base) + (0x73C))
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int reserved : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERIBAKDATA0_UNION;
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int reserved : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERIBAKDATA1_UNION;
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int reserved : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERIBAKDATA2_UNION;
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int reserved : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERIBAKDATA3_UNION;
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_peri_dvs_stat_pmc2acpu_gather : 1;
+        unsigned int intr_peri_dvs_stat_pmc2lpm3_gather : 1;
+        unsigned int reserved : 30;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_INTR_STAT_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_INTR_STAT_intr_peri_dvs_stat_pmc2acpu_gather_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_INTR_STAT_intr_peri_dvs_stat_pmc2acpu_gather_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_INTR_STAT_intr_peri_dvs_stat_pmc2lpm3_gather_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_INTR_STAT_intr_peri_dvs_stat_pmc2lpm3_gather_END (1)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_a_channel0 : 15;
+        unsigned int freq_vote_a0_msk0 : 1;
+        unsigned int freq_vote_a_channel1 : 15;
+        unsigned int freq_vote_a0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_A0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A0_freq_vote_a_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A0_freq_vote_a_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A0_freq_vote_a0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A0_freq_vote_a0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A0_freq_vote_a_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A0_freq_vote_a_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A0_freq_vote_a0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A0_freq_vote_a0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_a_channel2 : 15;
+        unsigned int freq_vote_a1_msk0 : 1;
+        unsigned int freq_vote_a_channel3 : 15;
+        unsigned int freq_vote_a1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_A1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A1_freq_vote_a_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A1_freq_vote_a_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A1_freq_vote_a1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A1_freq_vote_a1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A1_freq_vote_a_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A1_freq_vote_a_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A1_freq_vote_a1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_A1_freq_vote_a1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_b_channel0 : 15;
+        unsigned int freq_vote_b0_msk0 : 1;
+        unsigned int freq_vote_b_channel1 : 15;
+        unsigned int freq_vote_b0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_B0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B0_freq_vote_b_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B0_freq_vote_b_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B0_freq_vote_b0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B0_freq_vote_b0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B0_freq_vote_b_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B0_freq_vote_b_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B0_freq_vote_b0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B0_freq_vote_b0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_b_channel2 : 15;
+        unsigned int freq_vote_b1_msk0 : 1;
+        unsigned int freq_vote_b_channel3 : 15;
+        unsigned int freq_vote_b1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_B1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B1_freq_vote_b_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B1_freq_vote_b_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B1_freq_vote_b1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B1_freq_vote_b1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B1_freq_vote_b_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B1_freq_vote_b_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B1_freq_vote_b1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_B1_freq_vote_b1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_c_channel0 : 15;
+        unsigned int freq_vote_c0_msk0 : 1;
+        unsigned int freq_vote_c_channel1 : 15;
+        unsigned int freq_vote_c0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_C0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C0_freq_vote_c_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C0_freq_vote_c_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C0_freq_vote_c0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C0_freq_vote_c0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C0_freq_vote_c_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C0_freq_vote_c_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C0_freq_vote_c0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C0_freq_vote_c0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_c_channel2 : 15;
+        unsigned int freq_vote_c1_msk0 : 1;
+        unsigned int freq_vote_c_channel3 : 15;
+        unsigned int freq_vote_c1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_C1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C1_freq_vote_c_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C1_freq_vote_c_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C1_freq_vote_c1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C1_freq_vote_c1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C1_freq_vote_c_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C1_freq_vote_c_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C1_freq_vote_c1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_C1_freq_vote_c1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_d_channel0 : 15;
+        unsigned int freq_vote_d0_msk0 : 1;
+        unsigned int freq_vote_d_channel1 : 15;
+        unsigned int freq_vote_d0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_D0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D0_freq_vote_d_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D0_freq_vote_d_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D0_freq_vote_d0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D0_freq_vote_d0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D0_freq_vote_d_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D0_freq_vote_d_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D0_freq_vote_d0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D0_freq_vote_d0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_d_channel2 : 15;
+        unsigned int freq_vote_d1_msk0 : 1;
+        unsigned int freq_vote_d_channel3 : 15;
+        unsigned int freq_vote_d1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_D1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D1_freq_vote_d_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D1_freq_vote_d_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D1_freq_vote_d1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D1_freq_vote_d1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D1_freq_vote_d_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D1_freq_vote_d_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D1_freq_vote_d1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_D1_freq_vote_d1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_e_channel0 : 15;
+        unsigned int freq_vote_e0_msk0 : 1;
+        unsigned int freq_vote_e_channel1 : 15;
+        unsigned int freq_vote_e0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_E0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E0_freq_vote_e_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E0_freq_vote_e_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E0_freq_vote_e0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E0_freq_vote_e0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E0_freq_vote_e_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E0_freq_vote_e_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E0_freq_vote_e0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E0_freq_vote_e0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_e_channel2 : 15;
+        unsigned int freq_vote_e1_msk0 : 1;
+        unsigned int freq_vote_e_channel3 : 15;
+        unsigned int freq_vote_e1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_E1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E1_freq_vote_e_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E1_freq_vote_e_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E1_freq_vote_e1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E1_freq_vote_e1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E1_freq_vote_e_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E1_freq_vote_e_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E1_freq_vote_e1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E1_freq_vote_e1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_e_channel4 : 15;
+        unsigned int freq_vote_e2_msk0 : 1;
+        unsigned int freq_vote_e_channel5 : 15;
+        unsigned int freq_vote_e2_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_E2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E2_freq_vote_e_channel4_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E2_freq_vote_e_channel4_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E2_freq_vote_e2_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E2_freq_vote_e2_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E2_freq_vote_e_channel5_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E2_freq_vote_e_channel5_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E2_freq_vote_e2_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E2_freq_vote_e2_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_e_channel6 : 15;
+        unsigned int freq_vote_e3_msk0 : 1;
+        unsigned int freq_vote_e_channel7 : 15;
+        unsigned int freq_vote_e3_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_E3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E3_freq_vote_e_channel6_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E3_freq_vote_e_channel6_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E3_freq_vote_e3_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E3_freq_vote_e3_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E3_freq_vote_e_channel7_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E3_freq_vote_e_channel7_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E3_freq_vote_e3_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_E3_freq_vote_e3_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_f_channel0 : 15;
+        unsigned int freq_vote_f0_msk0 : 1;
+        unsigned int freq_vote_f_channel1 : 15;
+        unsigned int freq_vote_f0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_F0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F0_freq_vote_f_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F0_freq_vote_f_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F0_freq_vote_f0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F0_freq_vote_f0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F0_freq_vote_f_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F0_freq_vote_f_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F0_freq_vote_f0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F0_freq_vote_f0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_f_channel2 : 15;
+        unsigned int freq_vote_f1_msk0 : 1;
+        unsigned int freq_vote_f_channel3 : 15;
+        unsigned int freq_vote_f1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_F1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F1_freq_vote_f_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F1_freq_vote_f_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F1_freq_vote_f1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F1_freq_vote_f1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F1_freq_vote_f_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F1_freq_vote_f_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F1_freq_vote_f1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F1_freq_vote_f1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_f_channel4 : 15;
+        unsigned int freq_vote_f2_msk0 : 1;
+        unsigned int freq_vote_f_channel5 : 15;
+        unsigned int freq_vote_f2_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_F2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F2_freq_vote_f_channel4_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F2_freq_vote_f_channel4_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F2_freq_vote_f2_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F2_freq_vote_f2_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F2_freq_vote_f_channel5_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F2_freq_vote_f_channel5_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F2_freq_vote_f2_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F2_freq_vote_f2_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_f_channel6 : 15;
+        unsigned int freq_vote_f3_msk0 : 1;
+        unsigned int freq_vote_f_channel7 : 15;
+        unsigned int freq_vote_f3_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_F3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F3_freq_vote_f_channel6_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F3_freq_vote_f_channel6_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F3_freq_vote_f3_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F3_freq_vote_f3_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F3_freq_vote_f_channel7_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F3_freq_vote_f_channel7_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F3_freq_vote_f3_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_F3_freq_vote_f3_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_g_channel0 : 15;
+        unsigned int freq_vote_g0_msk0 : 1;
+        unsigned int freq_vote_g_channel1 : 15;
+        unsigned int freq_vote_g0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_G0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G0_freq_vote_g_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G0_freq_vote_g_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G0_freq_vote_g0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G0_freq_vote_g0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G0_freq_vote_g_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G0_freq_vote_g_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G0_freq_vote_g0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G0_freq_vote_g0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_g_channel2 : 15;
+        unsigned int freq_vote_g1_msk0 : 1;
+        unsigned int freq_vote_g_channel3 : 15;
+        unsigned int freq_vote_g1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_G1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G1_freq_vote_g_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G1_freq_vote_g_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G1_freq_vote_g1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G1_freq_vote_g1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G1_freq_vote_g_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G1_freq_vote_g_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G1_freq_vote_g1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G1_freq_vote_g1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_g_channel4 : 15;
+        unsigned int freq_vote_g2_msk0 : 1;
+        unsigned int freq_vote_g_channel5 : 15;
+        unsigned int freq_vote_g2_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_G2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G2_freq_vote_g_channel4_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G2_freq_vote_g_channel4_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G2_freq_vote_g2_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G2_freq_vote_g2_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G2_freq_vote_g_channel5_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G2_freq_vote_g_channel5_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G2_freq_vote_g2_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G2_freq_vote_g2_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_g_channel6 : 15;
+        unsigned int freq_vote_g3_msk0 : 1;
+        unsigned int freq_vote_g_channel7 : 15;
+        unsigned int freq_vote_g3_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_G3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G3_freq_vote_g_channel6_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G3_freq_vote_g_channel6_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G3_freq_vote_g3_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G3_freq_vote_g3_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G3_freq_vote_g_channel7_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G3_freq_vote_g_channel7_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G3_freq_vote_g3_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_G3_freq_vote_g3_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_h_channel0 : 15;
+        unsigned int freq_vote_h0_msk0 : 1;
+        unsigned int freq_vote_h_channel1 : 15;
+        unsigned int freq_vote_h0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_H0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H0_freq_vote_h_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H0_freq_vote_h_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H0_freq_vote_h0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H0_freq_vote_h0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H0_freq_vote_h_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H0_freq_vote_h_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H0_freq_vote_h0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H0_freq_vote_h0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_h_channel2 : 15;
+        unsigned int freq_vote_h1_msk0 : 1;
+        unsigned int freq_vote_h_channel3 : 15;
+        unsigned int freq_vote_h1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_H1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H1_freq_vote_h_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H1_freq_vote_h_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H1_freq_vote_h1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H1_freq_vote_h1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H1_freq_vote_h_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H1_freq_vote_h_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H1_freq_vote_h1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H1_freq_vote_h1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_h_channel4 : 15;
+        unsigned int freq_vote_h2_msk0 : 1;
+        unsigned int freq_vote_h_channel5 : 15;
+        unsigned int freq_vote_h2_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_H2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H2_freq_vote_h_channel4_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H2_freq_vote_h_channel4_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H2_freq_vote_h2_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H2_freq_vote_h2_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H2_freq_vote_h_channel5_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H2_freq_vote_h_channel5_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H2_freq_vote_h2_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H2_freq_vote_h2_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_h_channel6 : 15;
+        unsigned int freq_vote_h3_msk0 : 1;
+        unsigned int freq_vote_h_channel7 : 15;
+        unsigned int freq_vote_h3_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_H3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H3_freq_vote_h_channel6_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H3_freq_vote_h_channel6_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H3_freq_vote_h3_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H3_freq_vote_h3_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H3_freq_vote_h_channel7_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H3_freq_vote_h_channel7_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H3_freq_vote_h3_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H3_freq_vote_h3_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_h_channel8 : 15;
+        unsigned int freq_vote_h4_msk0 : 1;
+        unsigned int freq_vote_h_channel9 : 15;
+        unsigned int freq_vote_h4_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_H4_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H4_freq_vote_h_channel8_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H4_freq_vote_h_channel8_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H4_freq_vote_h4_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H4_freq_vote_h4_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H4_freq_vote_h_channel9_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H4_freq_vote_h_channel9_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H4_freq_vote_h4_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H4_freq_vote_h4_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_h_channel10 : 15;
+        unsigned int freq_vote_h5_msk0 : 1;
+        unsigned int freq_vote_h_channel11 : 15;
+        unsigned int freq_vote_h5_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_H5_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H5_freq_vote_h_channel10_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H5_freq_vote_h_channel10_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H5_freq_vote_h5_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H5_freq_vote_h5_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H5_freq_vote_h_channel11_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H5_freq_vote_h_channel11_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H5_freq_vote_h5_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H5_freq_vote_h5_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_h_channel12 : 15;
+        unsigned int freq_vote_h6_msk0 : 1;
+        unsigned int freq_vote_h_channel13 : 15;
+        unsigned int freq_vote_h6_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_H6_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H6_freq_vote_h_channel12_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H6_freq_vote_h_channel12_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H6_freq_vote_h6_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H6_freq_vote_h6_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H6_freq_vote_h_channel13_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H6_freq_vote_h_channel13_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H6_freq_vote_h6_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H6_freq_vote_h6_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_h_channel14 : 15;
+        unsigned int freq_vote_h7_msk0 : 1;
+        unsigned int freq_vote_h_channel15 : 15;
+        unsigned int freq_vote_h7_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_H7_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H7_freq_vote_h_channel14_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H7_freq_vote_h_channel14_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H7_freq_vote_h7_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H7_freq_vote_h7_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H7_freq_vote_h_channel15_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H7_freq_vote_h_channel15_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H7_freq_vote_h7_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_H7_freq_vote_h7_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_i_channel0 : 15;
+        unsigned int freq_vote_i0_msk0 : 1;
+        unsigned int freq_vote_i_channel1 : 15;
+        unsigned int freq_vote_i0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_I0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I0_freq_vote_i_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I0_freq_vote_i_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I0_freq_vote_i0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I0_freq_vote_i0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I0_freq_vote_i_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I0_freq_vote_i_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I0_freq_vote_i0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I0_freq_vote_i0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_i_channel2 : 15;
+        unsigned int freq_vote_i1_msk0 : 1;
+        unsigned int freq_vote_i_channel3 : 15;
+        unsigned int freq_vote_i1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_I1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I1_freq_vote_i_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I1_freq_vote_i_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I1_freq_vote_i1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I1_freq_vote_i1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I1_freq_vote_i_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I1_freq_vote_i_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I1_freq_vote_i1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I1_freq_vote_i1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_i_channel4 : 15;
+        unsigned int freq_vote_i2_msk0 : 1;
+        unsigned int freq_vote_i_channel5 : 15;
+        unsigned int freq_vote_i2_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_I2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I2_freq_vote_i_channel4_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I2_freq_vote_i_channel4_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I2_freq_vote_i2_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I2_freq_vote_i2_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I2_freq_vote_i_channel5_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I2_freq_vote_i_channel5_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I2_freq_vote_i2_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I2_freq_vote_i2_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_i_channel6 : 15;
+        unsigned int freq_vote_i3_msk0 : 1;
+        unsigned int freq_vote_i_channel7 : 15;
+        unsigned int freq_vote_i3_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_I3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I3_freq_vote_i_channel6_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I3_freq_vote_i_channel6_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I3_freq_vote_i3_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I3_freq_vote_i3_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I3_freq_vote_i_channel7_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I3_freq_vote_i_channel7_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I3_freq_vote_i3_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I3_freq_vote_i3_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_i_channel8 : 15;
+        unsigned int freq_vote_i4_msk0 : 1;
+        unsigned int freq_vote_i_channel9 : 15;
+        unsigned int freq_vote_i4_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_I4_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I4_freq_vote_i_channel8_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I4_freq_vote_i_channel8_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I4_freq_vote_i4_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I4_freq_vote_i4_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I4_freq_vote_i_channel9_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I4_freq_vote_i_channel9_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I4_freq_vote_i4_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I4_freq_vote_i4_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_i_channel10 : 15;
+        unsigned int freq_vote_i5_msk0 : 1;
+        unsigned int freq_vote_i_channel11 : 15;
+        unsigned int freq_vote_i5_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_I5_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I5_freq_vote_i_channel10_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I5_freq_vote_i_channel10_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I5_freq_vote_i5_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I5_freq_vote_i5_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I5_freq_vote_i_channel11_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I5_freq_vote_i_channel11_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I5_freq_vote_i5_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I5_freq_vote_i5_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_i_channel12 : 15;
+        unsigned int freq_vote_i6_msk0 : 1;
+        unsigned int freq_vote_i_channel13 : 15;
+        unsigned int freq_vote_i6_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_I6_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I6_freq_vote_i_channel12_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I6_freq_vote_i_channel12_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I6_freq_vote_i6_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I6_freq_vote_i6_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I6_freq_vote_i_channel13_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I6_freq_vote_i_channel13_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I6_freq_vote_i6_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I6_freq_vote_i6_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_i_channel14 : 15;
+        unsigned int freq_vote_i7_msk0 : 1;
+        unsigned int freq_vote_i_channel15 : 15;
+        unsigned int freq_vote_i7_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_I7_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I7_freq_vote_i_channel14_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I7_freq_vote_i_channel14_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I7_freq_vote_i7_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I7_freq_vote_i7_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I7_freq_vote_i_channel15_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I7_freq_vote_i_channel15_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I7_freq_vote_i7_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_I7_freq_vote_i7_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_mask_to_lpmcu : 9;
+        unsigned int reserved : 7;
+        unsigned int intr_mask_to_lpmcu_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_intr_mask_to_lpmcu_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_intr_mask_to_lpmcu_END (8)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_intr_mask_to_lpmcu_msk_START (16)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_intr_mask_to_lpmcu_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_mask_to_cpu_lp_ctrl : 9;
+        unsigned int reserved : 7;
+        unsigned int intr_mask_to_cpu_lp_ctrl_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_intr_mask_to_cpu_lp_ctrl_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_intr_mask_to_cpu_lp_ctrl_END (8)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_intr_mask_to_cpu_lp_ctrl_msk_START (16)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_intr_mask_to_cpu_lp_ctrl_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_mask_to_gpu_lp_ctrl : 9;
+        unsigned int reserved : 7;
+        unsigned int intr_mask_to_gpu_lp_ctrl_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_intr_mask_to_gpu_lp_ctrl_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_intr_mask_to_gpu_lp_ctrl_END (8)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_intr_mask_to_gpu_lp_ctrl_msk_START (16)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_intr_mask_to_gpu_lp_ctrl_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_mask_to_ddr_lp_ctrl : 9;
+        unsigned int reserved : 7;
+        unsigned int intr_mask_to_ddr_lp_ctrl_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_intr_mask_to_ddr_lp_ctrl_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_intr_mask_to_ddr_lp_ctrl_END (8)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_intr_mask_to_ddr_lp_ctrl_msk_START (16)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_intr_mask_to_ddr_lp_ctrl_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_mask_to_media_lp_ctrl : 9;
+        unsigned int reserved : 7;
+        unsigned int intr_mask_to_media_lp_ctrl_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_intr_mask_to_media_lp_ctrl_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_intr_mask_to_media_lp_ctrl_END (8)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_intr_mask_to_media_lp_ctrl_msk_START (16)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_intr_mask_to_media_lp_ctrl_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_channel_num_a : 2;
+        unsigned int freq_vote_channel_num_b : 2;
+        unsigned int freq_vote_channel_num_c : 2;
+        unsigned int freq_vote_channel_num_d : 2;
+        unsigned int freq_vote_channel_num_e : 2;
+        unsigned int freq_vote_channel_num_f : 2;
+        unsigned int freq_vote_channel_num_g : 2;
+        unsigned int freq_vote_channel_num_h : 2;
+        unsigned int freq_vote_channel_num_i : 2;
+        unsigned int reserved : 14;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_a_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_a_END (1)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_b_START (2)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_b_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_c_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_c_END (5)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_d_START (6)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_d_END (7)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_e_START (8)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_e_END (9)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_f_START (10)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_f_END (11)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_g_START (12)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_g_END (13)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_h_START (14)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_h_END (15)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_i_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_freq_vote_channel_num_i_END (17)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_a_type : 2;
+        unsigned int freq_vote_b_type : 2;
+        unsigned int freq_vote_c_type : 2;
+        unsigned int freq_vote_d_type : 2;
+        unsigned int freq_vote_e_type : 2;
+        unsigned int freq_vote_f_type : 2;
+        unsigned int freq_vote_g_type : 2;
+        unsigned int freq_vote_h_type : 2;
+        unsigned int vote_mode_cfg_0_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_a_type_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_a_type_END (1)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_b_type_START (2)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_b_type_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_c_type_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_c_type_END (5)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_d_type_START (6)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_d_type_END (7)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_e_type_START (8)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_e_type_END (9)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_f_type_START (10)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_f_type_END (11)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_g_type_START (12)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_g_type_END (13)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_h_type_START (14)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_freq_vote_h_type_END (15)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_vote_mode_cfg_0_msk_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_vote_mode_cfg_0_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_i_type : 2;
+        unsigned int reserved_0 : 2;
+        unsigned int reserved_1 : 2;
+        unsigned int reserved_2 : 2;
+        unsigned int reserved_3 : 2;
+        unsigned int reserved_4 : 2;
+        unsigned int reserved_5 : 2;
+        unsigned int reserved_6 : 2;
+        unsigned int vote_mode_cfg_1_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_freq_vote_i_type_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_freq_vote_i_type_END (1)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_vote_mode_cfg_1_msk_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_vote_mode_cfg_1_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_a_start_en : 1;
+        unsigned int freq_vote_b_start_en : 1;
+        unsigned int freq_vote_c_start_en : 1;
+        unsigned int freq_vote_d_start_en : 1;
+        unsigned int freq_vote_e_start_en : 1;
+        unsigned int freq_vote_f_start_en : 1;
+        unsigned int freq_vote_g_start_en : 1;
+        unsigned int freq_vote_h_start_en : 1;
+        unsigned int freq_vote_i_start_en : 1;
+        unsigned int reserved : 7;
+        unsigned int vote_start_en_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_START_EN_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_a_start_en_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_a_start_en_END (0)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_b_start_en_START (1)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_b_start_en_END (1)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_c_start_en_START (2)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_c_start_en_END (2)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_d_start_en_START (3)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_d_start_en_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_e_start_en_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_e_start_en_END (4)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_f_start_en_START (5)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_f_start_en_END (5)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_g_start_en_START (6)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_g_start_en_END (6)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_h_start_en_START (7)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_h_start_en_END (7)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_i_start_en_START (8)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_freq_vote_i_start_en_END (8)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_vote_start_en_msk_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_vote_start_en_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int int_freq_vote_en_a : 1;
+        unsigned int int_freq_vote_en_b : 1;
+        unsigned int int_freq_vote_en_c : 1;
+        unsigned int int_freq_vote_en_d : 1;
+        unsigned int int_freq_vote_en_e : 1;
+        unsigned int int_freq_vote_en_f : 1;
+        unsigned int int_freq_vote_en_g : 1;
+        unsigned int int_freq_vote_en_h : 1;
+        unsigned int int_freq_vote_en_i : 1;
+        unsigned int reserved : 7;
+        unsigned int int_vote_en_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INT_VOTE_EN_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_a_START (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_a_END (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_b_START (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_b_END (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_c_START (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_c_END (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_d_START (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_d_END (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_e_START (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_e_END (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_f_START (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_f_END (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_g_START (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_g_END (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_h_START (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_h_END (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_i_START (8)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_freq_vote_en_i_END (8)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_vote_en_msk_START (16)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_int_vote_en_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int int_freq_vote_a_clr : 1;
+        unsigned int int_freq_vote_b_clr : 1;
+        unsigned int int_freq_vote_c_clr : 1;
+        unsigned int int_freq_vote_d_clr : 1;
+        unsigned int int_freq_vote_e_clr : 1;
+        unsigned int int_freq_vote_f_clr : 1;
+        unsigned int int_freq_vote_g_clr : 1;
+        unsigned int int_freq_vote_h_clr : 1;
+        unsigned int int_freq_vote_i_clr : 1;
+        unsigned int reserved_0 : 7;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INT_VOTE_CLR_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_a_clr_START (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_a_clr_END (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_b_clr_START (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_b_clr_END (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_c_clr_START (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_c_clr_END (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_d_clr_START (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_d_clr_END (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_e_clr_START (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_e_clr_END (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_f_clr_START (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_f_clr_END (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_g_clr_START (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_g_clr_END (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_h_clr_START (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_h_clr_END (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_i_clr_START (8)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_int_freq_vote_i_clr_END (8)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int int_freq_vote_raw_stat_a : 1;
+        unsigned int int_freq_vote_raw_stat_b : 1;
+        unsigned int int_freq_vote_raw_stat_c : 1;
+        unsigned int int_freq_vote_raw_stat_d : 1;
+        unsigned int int_freq_vote_raw_stat_e : 1;
+        unsigned int int_freq_vote_raw_stat_f : 1;
+        unsigned int int_freq_vote_raw_stat_g : 1;
+        unsigned int int_freq_vote_raw_stat_h : 1;
+        unsigned int int_freq_vote_raw_stat_i : 1;
+        unsigned int reserved_0 : 7;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_a_START (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_a_END (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_b_START (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_b_END (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_c_START (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_c_END (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_d_START (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_d_END (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_e_START (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_e_END (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_f_START (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_f_END (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_g_START (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_g_END (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_h_START (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_h_END (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_i_START (8)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_int_freq_vote_raw_stat_i_END (8)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int int_freq_vote_stat_a : 1;
+        unsigned int int_freq_vote_stat_b : 1;
+        unsigned int int_freq_vote_stat_c : 1;
+        unsigned int int_freq_vote_stat_d : 1;
+        unsigned int int_freq_vote_stat_e : 1;
+        unsigned int int_freq_vote_stat_f : 1;
+        unsigned int int_freq_vote_stat_g : 1;
+        unsigned int int_freq_vote_stat_h : 1;
+        unsigned int int_freq_vote_stat_i : 1;
+        unsigned int reserved_0 : 7;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INT_VOTE_STAT_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_a_START (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_a_END (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_b_START (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_b_END (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_c_START (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_c_END (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_d_START (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_d_END (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_e_START (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_e_END (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_f_START (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_f_END (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_g_START (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_g_END (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_h_START (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_h_END (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_i_START (8)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_int_freq_vote_stat_i_END (8)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int int_frequency_vote_a_i : 1;
+        unsigned int intr_freq_vote_to_cpu_lp_ctrl_a_i : 1;
+        unsigned int intr_freq_vote_to_gpu_lp_ctrl_a_i : 1;
+        unsigned int intr_freq_vote_to_ddr_lp_ctrl_a_i : 1;
+        unsigned int intr_freq_vote_to_media_lp_ctrl_a_i : 1;
+        unsigned int reserved : 27;
+    } reg;
+} SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_int_frequency_vote_a_i_START (0)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_int_frequency_vote_a_i_END (0)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_intr_freq_vote_to_cpu_lp_ctrl_a_i_START (1)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_intr_freq_vote_to_cpu_lp_ctrl_a_i_END (1)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_intr_freq_vote_to_gpu_lp_ctrl_a_i_START (2)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_intr_freq_vote_to_gpu_lp_ctrl_a_i_END (2)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_intr_freq_vote_to_ddr_lp_ctrl_a_i_START (3)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_intr_freq_vote_to_ddr_lp_ctrl_a_i_END (3)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_intr_freq_vote_to_media_lp_ctrl_a_i_START (4)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_intr_freq_vote_to_media_lp_ctrl_a_i_END (4)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_a : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_A_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_A_freq_vote_result_a_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_A_freq_vote_result_a_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_b : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_B_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_B_freq_vote_result_b_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_B_freq_vote_result_b_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_c : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_C_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_C_freq_vote_result_c_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_C_freq_vote_result_c_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_d : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_D_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_D_freq_vote_result_d_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_D_freq_vote_result_d_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_e : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_E_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_E_freq_vote_result_e_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_E_freq_vote_result_e_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_f : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_F_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_F_freq_vote_result_f_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_F_freq_vote_result_f_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_g : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_G_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_G_freq_vote_result_g_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_G_freq_vote_result_g_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_h : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_H_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_H_freq_vote_result_h_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_H_freq_vote_result_h_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_i : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_I_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_I_freq_vote_result_i_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_I_freq_vote_result_i_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int dss2qice_freq_vote_bypass : 1;
+        unsigned int dss2ddr_freq_vote_bypass : 1;
+        unsigned int aae_hrd_freq_vote_bypass : 1;
+        unsigned int vdec_hrd_freq_vote_bypass : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 1;
+        unsigned int dss2qice_to_lpmcu_bypass : 1;
+        unsigned int dss2ddr_to_lpmcu_bypass : 1;
+        unsigned int dss2qice_to_lpmcu_extend_cycles : 4;
+        unsigned int dss2ddr_to_lpmcu_extend_cycles : 4;
+        unsigned int reserved_2 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_dss2qice_freq_vote_bypass_START (0)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_dss2qice_freq_vote_bypass_END (0)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_dss2ddr_freq_vote_bypass_START (1)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_dss2ddr_freq_vote_bypass_END (1)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_aae_hrd_freq_vote_bypass_START (2)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_aae_hrd_freq_vote_bypass_END (2)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_vdec_hrd_freq_vote_bypass_START (3)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_vdec_hrd_freq_vote_bypass_END (3)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_dss2qice_to_lpmcu_bypass_START (6)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_dss2qice_to_lpmcu_bypass_END (6)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_dss2ddr_to_lpmcu_bypass_START (7)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_dss2ddr_to_lpmcu_bypass_END (7)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_dss2qice_to_lpmcu_extend_cycles_START (8)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_dss2qice_to_lpmcu_extend_cycles_END (11)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_dss2ddr_to_lpmcu_extend_cycles_START (12)
+#define SOC_MEDIA_PMCTRL_DSS_FREQ_VOTE_BYPASS_dss2ddr_to_lpmcu_extend_cycles_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_j_channel0 : 15;
+        unsigned int freq_vote_j0_msk0 : 1;
+        unsigned int freq_vote_j_channel1 : 15;
+        unsigned int freq_vote_j0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_J0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J0_freq_vote_j_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J0_freq_vote_j_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J0_freq_vote_j0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J0_freq_vote_j0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J0_freq_vote_j_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J0_freq_vote_j_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J0_freq_vote_j0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J0_freq_vote_j0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_j_channel2 : 15;
+        unsigned int freq_vote_j1_msk0 : 1;
+        unsigned int freq_vote_j_channel3 : 15;
+        unsigned int freq_vote_j1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_J1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J1_freq_vote_j_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J1_freq_vote_j_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J1_freq_vote_j1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J1_freq_vote_j1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J1_freq_vote_j_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J1_freq_vote_j_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J1_freq_vote_j1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_J1_freq_vote_j1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_k_channel0 : 15;
+        unsigned int freq_vote_k0_msk0 : 1;
+        unsigned int freq_vote_k_channel1 : 15;
+        unsigned int freq_vote_k0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_K0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K0_freq_vote_k_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K0_freq_vote_k_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K0_freq_vote_k0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K0_freq_vote_k0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K0_freq_vote_k_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K0_freq_vote_k_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K0_freq_vote_k0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K0_freq_vote_k0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_k_channel2 : 15;
+        unsigned int freq_vote_k1_msk0 : 1;
+        unsigned int freq_vote_k_channel3 : 15;
+        unsigned int freq_vote_k1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_K1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K1_freq_vote_k_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K1_freq_vote_k_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K1_freq_vote_k1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K1_freq_vote_k1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K1_freq_vote_k_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K1_freq_vote_k_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K1_freq_vote_k1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_K1_freq_vote_k1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_l_channel0 : 15;
+        unsigned int freq_vote_l0_msk0 : 1;
+        unsigned int freq_vote_l_channel1 : 15;
+        unsigned int freq_vote_l0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_L0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L0_freq_vote_l_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L0_freq_vote_l_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L0_freq_vote_l0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L0_freq_vote_l0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L0_freq_vote_l_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L0_freq_vote_l_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L0_freq_vote_l0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L0_freq_vote_l0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_l_channel2 : 15;
+        unsigned int freq_vote_l1_msk0 : 1;
+        unsigned int freq_vote_l_channel3 : 15;
+        unsigned int freq_vote_l1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_L1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L1_freq_vote_l_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L1_freq_vote_l_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L1_freq_vote_l1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L1_freq_vote_l1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L1_freq_vote_l_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L1_freq_vote_l_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L1_freq_vote_l1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_L1_freq_vote_l1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_m_channel0 : 15;
+        unsigned int freq_vote_m0_msk0 : 1;
+        unsigned int freq_vote_m_channel1 : 15;
+        unsigned int freq_vote_m0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_M0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M0_freq_vote_m_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M0_freq_vote_m_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M0_freq_vote_m0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M0_freq_vote_m0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M0_freq_vote_m_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M0_freq_vote_m_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M0_freq_vote_m0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M0_freq_vote_m0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_m_channel2 : 15;
+        unsigned int freq_vote_m1_msk0 : 1;
+        unsigned int freq_vote_m_channel3 : 15;
+        unsigned int freq_vote_m1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_M1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M1_freq_vote_m_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M1_freq_vote_m_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M1_freq_vote_m1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M1_freq_vote_m1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M1_freq_vote_m_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M1_freq_vote_m_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M1_freq_vote_m1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_M1_freq_vote_m1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_n_channel0 : 15;
+        unsigned int freq_vote_n0_msk0 : 1;
+        unsigned int freq_vote_n_channel1 : 15;
+        unsigned int freq_vote_n0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_N0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N0_freq_vote_n_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N0_freq_vote_n_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N0_freq_vote_n0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N0_freq_vote_n0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N0_freq_vote_n_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N0_freq_vote_n_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N0_freq_vote_n0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N0_freq_vote_n0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_n_channel2 : 15;
+        unsigned int freq_vote_n1_msk0 : 1;
+        unsigned int freq_vote_n_channel3 : 15;
+        unsigned int freq_vote_n1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_N1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N1_freq_vote_n_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N1_freq_vote_n_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N1_freq_vote_n1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N1_freq_vote_n1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N1_freq_vote_n_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N1_freq_vote_n_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N1_freq_vote_n1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N1_freq_vote_n1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_n_channel4 : 15;
+        unsigned int freq_vote_n2_msk0 : 1;
+        unsigned int freq_vote_n_channel5 : 15;
+        unsigned int freq_vote_n2_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_N2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N2_freq_vote_n_channel4_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N2_freq_vote_n_channel4_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N2_freq_vote_n2_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N2_freq_vote_n2_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N2_freq_vote_n_channel5_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N2_freq_vote_n_channel5_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N2_freq_vote_n2_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N2_freq_vote_n2_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_n_channel6 : 15;
+        unsigned int freq_vote_n3_msk0 : 1;
+        unsigned int freq_vote_n_channel7 : 15;
+        unsigned int freq_vote_n3_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_N3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N3_freq_vote_n_channel6_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N3_freq_vote_n_channel6_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N3_freq_vote_n3_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N3_freq_vote_n3_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N3_freq_vote_n_channel7_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N3_freq_vote_n_channel7_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N3_freq_vote_n3_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_N3_freq_vote_n3_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_o_channel0 : 15;
+        unsigned int freq_vote_o0_msk0 : 1;
+        unsigned int freq_vote_o_channel1 : 15;
+        unsigned int freq_vote_o0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_O0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O0_freq_vote_o_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O0_freq_vote_o_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O0_freq_vote_o0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O0_freq_vote_o0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O0_freq_vote_o_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O0_freq_vote_o_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O0_freq_vote_o0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O0_freq_vote_o0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_o_channel2 : 15;
+        unsigned int freq_vote_o1_msk0 : 1;
+        unsigned int freq_vote_o_channel3 : 15;
+        unsigned int freq_vote_o1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_O1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O1_freq_vote_o_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O1_freq_vote_o_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O1_freq_vote_o1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O1_freq_vote_o1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O1_freq_vote_o_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O1_freq_vote_o_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O1_freq_vote_o1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O1_freq_vote_o1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_o_channel4 : 15;
+        unsigned int freq_vote_o2_msk0 : 1;
+        unsigned int freq_vote_o_channel5 : 15;
+        unsigned int freq_vote_o2_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_O2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O2_freq_vote_o_channel4_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O2_freq_vote_o_channel4_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O2_freq_vote_o2_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O2_freq_vote_o2_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O2_freq_vote_o_channel5_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O2_freq_vote_o_channel5_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O2_freq_vote_o2_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O2_freq_vote_o2_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_o_channel6 : 15;
+        unsigned int freq_vote_o3_msk0 : 1;
+        unsigned int freq_vote_o_channel7 : 15;
+        unsigned int freq_vote_o3_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_O3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O3_freq_vote_o_channel6_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O3_freq_vote_o_channel6_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O3_freq_vote_o3_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O3_freq_vote_o3_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O3_freq_vote_o_channel7_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O3_freq_vote_o_channel7_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O3_freq_vote_o3_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_O3_freq_vote_o3_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_p_channel0 : 15;
+        unsigned int freq_vote_p0_msk0 : 1;
+        unsigned int freq_vote_p_channel1 : 15;
+        unsigned int freq_vote_p0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_P0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P0_freq_vote_p_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P0_freq_vote_p_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P0_freq_vote_p0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P0_freq_vote_p0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P0_freq_vote_p_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P0_freq_vote_p_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P0_freq_vote_p0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P0_freq_vote_p0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_p_channel2 : 15;
+        unsigned int freq_vote_p1_msk0 : 1;
+        unsigned int freq_vote_p_channel3 : 15;
+        unsigned int freq_vote_p1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_P1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P1_freq_vote_p_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P1_freq_vote_p_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P1_freq_vote_p1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P1_freq_vote_p1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P1_freq_vote_p_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P1_freq_vote_p_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P1_freq_vote_p1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P1_freq_vote_p1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_p_channel4 : 15;
+        unsigned int freq_vote_p2_msk0 : 1;
+        unsigned int freq_vote_p_channel5 : 15;
+        unsigned int freq_vote_p2_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_P2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P2_freq_vote_p_channel4_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P2_freq_vote_p_channel4_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P2_freq_vote_p2_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P2_freq_vote_p2_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P2_freq_vote_p_channel5_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P2_freq_vote_p_channel5_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P2_freq_vote_p2_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P2_freq_vote_p2_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_p_channel6 : 15;
+        unsigned int freq_vote_p3_msk0 : 1;
+        unsigned int freq_vote_p_channel7 : 15;
+        unsigned int freq_vote_p3_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_P3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P3_freq_vote_p_channel6_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P3_freq_vote_p_channel6_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P3_freq_vote_p3_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P3_freq_vote_p3_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P3_freq_vote_p_channel7_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P3_freq_vote_p_channel7_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P3_freq_vote_p3_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_P3_freq_vote_p3_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_q_channel0 : 15;
+        unsigned int freq_vote_q0_msk0 : 1;
+        unsigned int freq_vote_q_channel1 : 15;
+        unsigned int freq_vote_q0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_Q0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q0_freq_vote_q_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q0_freq_vote_q_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q0_freq_vote_q0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q0_freq_vote_q0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q0_freq_vote_q_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q0_freq_vote_q_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q0_freq_vote_q0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q0_freq_vote_q0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_q_channel2 : 15;
+        unsigned int freq_vote_q1_msk0 : 1;
+        unsigned int freq_vote_q_channel3 : 15;
+        unsigned int freq_vote_q1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_Q1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q1_freq_vote_q_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q1_freq_vote_q_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q1_freq_vote_q1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q1_freq_vote_q1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q1_freq_vote_q_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q1_freq_vote_q_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q1_freq_vote_q1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q1_freq_vote_q1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_q_channel4 : 15;
+        unsigned int freq_vote_q2_msk0 : 1;
+        unsigned int freq_vote_q_channel5 : 15;
+        unsigned int freq_vote_q2_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_Q2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q2_freq_vote_q_channel4_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q2_freq_vote_q_channel4_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q2_freq_vote_q2_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q2_freq_vote_q2_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q2_freq_vote_q_channel5_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q2_freq_vote_q_channel5_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q2_freq_vote_q2_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q2_freq_vote_q2_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_q_channel6 : 15;
+        unsigned int freq_vote_q3_msk0 : 1;
+        unsigned int freq_vote_q_channel7 : 15;
+        unsigned int freq_vote_q3_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_Q3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q3_freq_vote_q_channel6_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q3_freq_vote_q_channel6_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q3_freq_vote_q3_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q3_freq_vote_q3_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q3_freq_vote_q_channel7_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q3_freq_vote_q_channel7_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q3_freq_vote_q3_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q3_freq_vote_q3_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_q_channel8 : 15;
+        unsigned int freq_vote_q4_msk0 : 1;
+        unsigned int freq_vote_q_channel9 : 15;
+        unsigned int freq_vote_q4_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_Q4_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q4_freq_vote_q_channel8_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q4_freq_vote_q_channel8_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q4_freq_vote_q4_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q4_freq_vote_q4_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q4_freq_vote_q_channel9_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q4_freq_vote_q_channel9_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q4_freq_vote_q4_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q4_freq_vote_q4_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_q_channel10 : 15;
+        unsigned int freq_vote_q5_msk0 : 1;
+        unsigned int freq_vote_q_channel11 : 15;
+        unsigned int freq_vote_q5_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_Q5_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q5_freq_vote_q_channel10_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q5_freq_vote_q_channel10_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q5_freq_vote_q5_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q5_freq_vote_q5_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q5_freq_vote_q_channel11_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q5_freq_vote_q_channel11_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q5_freq_vote_q5_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q5_freq_vote_q5_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_q_channel12 : 15;
+        unsigned int freq_vote_q6_msk0 : 1;
+        unsigned int freq_vote_q_channel13 : 15;
+        unsigned int freq_vote_q6_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_Q6_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q6_freq_vote_q_channel12_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q6_freq_vote_q_channel12_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q6_freq_vote_q6_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q6_freq_vote_q6_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q6_freq_vote_q_channel13_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q6_freq_vote_q_channel13_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q6_freq_vote_q6_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q6_freq_vote_q6_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_q_channel14 : 15;
+        unsigned int freq_vote_q7_msk0 : 1;
+        unsigned int freq_vote_q_channel15 : 15;
+        unsigned int freq_vote_q7_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_Q7_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q7_freq_vote_q_channel14_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q7_freq_vote_q_channel14_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q7_freq_vote_q7_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q7_freq_vote_q7_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q7_freq_vote_q_channel15_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q7_freq_vote_q_channel15_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q7_freq_vote_q7_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_Q7_freq_vote_q7_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_r_channel0 : 15;
+        unsigned int freq_vote_r0_msk0 : 1;
+        unsigned int freq_vote_r_channel1 : 15;
+        unsigned int freq_vote_r0_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_R0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R0_freq_vote_r_channel0_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R0_freq_vote_r_channel0_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R0_freq_vote_r0_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R0_freq_vote_r0_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R0_freq_vote_r_channel1_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R0_freq_vote_r_channel1_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R0_freq_vote_r0_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R0_freq_vote_r0_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_r_channel2 : 15;
+        unsigned int freq_vote_r1_msk0 : 1;
+        unsigned int freq_vote_r_channel3 : 15;
+        unsigned int freq_vote_r1_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_R1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R1_freq_vote_r_channel2_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R1_freq_vote_r_channel2_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R1_freq_vote_r1_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R1_freq_vote_r1_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R1_freq_vote_r_channel3_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R1_freq_vote_r_channel3_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R1_freq_vote_r1_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R1_freq_vote_r1_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_r_channel4 : 15;
+        unsigned int freq_vote_r2_msk0 : 1;
+        unsigned int freq_vote_r_channel5 : 15;
+        unsigned int freq_vote_r2_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_R2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R2_freq_vote_r_channel4_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R2_freq_vote_r_channel4_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R2_freq_vote_r2_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R2_freq_vote_r2_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R2_freq_vote_r_channel5_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R2_freq_vote_r_channel5_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R2_freq_vote_r2_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R2_freq_vote_r2_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_r_channel6 : 15;
+        unsigned int freq_vote_r3_msk0 : 1;
+        unsigned int freq_vote_r_channel7 : 15;
+        unsigned int freq_vote_r3_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_R3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R3_freq_vote_r_channel6_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R3_freq_vote_r_channel6_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R3_freq_vote_r3_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R3_freq_vote_r3_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R3_freq_vote_r_channel7_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R3_freq_vote_r_channel7_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R3_freq_vote_r3_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R3_freq_vote_r3_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_r_channel8 : 15;
+        unsigned int freq_vote_r4_msk0 : 1;
+        unsigned int freq_vote_r_channel9 : 15;
+        unsigned int freq_vote_r4_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_R4_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R4_freq_vote_r_channel8_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R4_freq_vote_r_channel8_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R4_freq_vote_r4_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R4_freq_vote_r4_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R4_freq_vote_r_channel9_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R4_freq_vote_r_channel9_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R4_freq_vote_r4_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R4_freq_vote_r4_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_r_channel10 : 15;
+        unsigned int freq_vote_r5_msk0 : 1;
+        unsigned int freq_vote_r_channel11 : 15;
+        unsigned int freq_vote_r5_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_R5_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R5_freq_vote_r_channel10_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R5_freq_vote_r_channel10_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R5_freq_vote_r5_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R5_freq_vote_r5_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R5_freq_vote_r_channel11_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R5_freq_vote_r_channel11_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R5_freq_vote_r5_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R5_freq_vote_r5_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_r_channel12 : 15;
+        unsigned int freq_vote_r6_msk0 : 1;
+        unsigned int freq_vote_r_channel13 : 15;
+        unsigned int freq_vote_r6_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_R6_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R6_freq_vote_r_channel12_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R6_freq_vote_r_channel12_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R6_freq_vote_r6_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R6_freq_vote_r6_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R6_freq_vote_r_channel13_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R6_freq_vote_r_channel13_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R6_freq_vote_r6_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R6_freq_vote_r6_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_r_channel14 : 15;
+        unsigned int freq_vote_r7_msk0 : 1;
+        unsigned int freq_vote_r_channel15 : 15;
+        unsigned int freq_vote_r7_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_FREQ_VOTE_R7_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R7_freq_vote_r_channel14_START (0)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R7_freq_vote_r_channel14_END (14)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R7_freq_vote_r7_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R7_freq_vote_r7_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R7_freq_vote_r_channel15_START (16)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R7_freq_vote_r_channel15_END (30)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R7_freq_vote_r7_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_FREQ_VOTE_R7_freq_vote_r7_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_mask_to_lpmcu_j_r : 9;
+        unsigned int reserved : 7;
+        unsigned int intr_mask_to_lpmcu_j_r_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_J_R_intr_mask_to_lpmcu_j_r_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_J_R_intr_mask_to_lpmcu_j_r_END (8)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_J_R_intr_mask_to_lpmcu_j_r_msk_START (16)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_LPMCU_J_R_intr_mask_to_lpmcu_j_r_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_mask_to_cpu_lp_ctrl_j_r : 9;
+        unsigned int reserved : 7;
+        unsigned int intr_mask_to_cpu_lp_ctrl_j_r_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_J_R_intr_mask_to_cpu_lp_ctrl_j_r_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_J_R_intr_mask_to_cpu_lp_ctrl_j_r_END (8)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_J_R_intr_mask_to_cpu_lp_ctrl_j_r_msk_START (16)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_CPU_LP_CTRL_J_R_intr_mask_to_cpu_lp_ctrl_j_r_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_mask_to_gpu_lp_ctrl_j_r : 9;
+        unsigned int reserved : 7;
+        unsigned int intr_mask_to_gpu_lp_ctrl_j_r_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_J_R_intr_mask_to_gpu_lp_ctrl_j_r_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_J_R_intr_mask_to_gpu_lp_ctrl_j_r_END (8)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_J_R_intr_mask_to_gpu_lp_ctrl_j_r_msk_START (16)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_GPU_LP_CTRL_J_R_intr_mask_to_gpu_lp_ctrl_j_r_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_mask_to_ddr_lp_ctrl_j_r : 9;
+        unsigned int reserved : 7;
+        unsigned int intr_mask_to_ddr_lp_ctrl_j_r_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_J_R_intr_mask_to_ddr_lp_ctrl_j_r_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_J_R_intr_mask_to_ddr_lp_ctrl_j_r_END (8)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_J_R_intr_mask_to_ddr_lp_ctrl_j_r_msk_START (16)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_DDR_LP_CTRL_J_R_intr_mask_to_ddr_lp_ctrl_j_r_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_mask_to_media_lp_ctrl : 9;
+        unsigned int reserved : 7;
+        unsigned int intr_mask_to_media_lp_ctrl_j_r_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_J_R_intr_mask_to_media_lp_ctrl_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_J_R_intr_mask_to_media_lp_ctrl_END (8)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_J_R_intr_mask_to_media_lp_ctrl_j_r_msk_START (16)
+#define SOC_MEDIA_PMCTRL_INTR_MASK_TO_MEDIA_LP_CTRL_J_R_intr_mask_to_media_lp_ctrl_j_r_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_channel_num_j : 2;
+        unsigned int freq_vote_channel_num_k : 2;
+        unsigned int freq_vote_channel_num_l : 2;
+        unsigned int freq_vote_channel_num_m : 2;
+        unsigned int freq_vote_channel_num_n : 2;
+        unsigned int freq_vote_channel_num_o : 2;
+        unsigned int freq_vote_channel_num_p : 2;
+        unsigned int freq_vote_channel_num_q : 2;
+        unsigned int freq_vote_channel_num_r : 2;
+        unsigned int reserved : 14;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_j_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_j_END (1)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_k_START (2)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_k_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_l_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_l_END (5)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_m_START (6)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_m_END (7)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_n_START (8)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_n_END (9)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_o_START (10)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_o_END (11)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_p_START (12)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_p_END (13)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_q_START (14)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_q_END (15)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_r_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_CHANNEL_CFG_J_R_freq_vote_channel_num_r_END (17)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_j_type : 2;
+        unsigned int freq_vote_k_type : 2;
+        unsigned int freq_vote_l_type : 2;
+        unsigned int freq_vote_m_type : 2;
+        unsigned int freq_vote_n_type : 2;
+        unsigned int freq_vote_o_type : 2;
+        unsigned int freq_vote_p_type : 2;
+        unsigned int freq_vote_q_type : 2;
+        unsigned int vote_mode_cfg_0_j_r_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_j_type_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_j_type_END (1)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_k_type_START (2)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_k_type_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_l_type_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_l_type_END (5)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_m_type_START (6)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_m_type_END (7)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_n_type_START (8)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_n_type_END (9)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_o_type_START (10)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_o_type_END (11)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_p_type_START (12)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_p_type_END (13)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_q_type_START (14)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_freq_vote_q_type_END (15)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_vote_mode_cfg_0_j_r_msk_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_0_J_R_vote_mode_cfg_0_j_r_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_r_type : 2;
+        unsigned int reserved_0 : 2;
+        unsigned int reserved_1 : 2;
+        unsigned int reserved_2 : 2;
+        unsigned int reserved_3 : 2;
+        unsigned int reserved_4 : 2;
+        unsigned int reserved_5 : 2;
+        unsigned int reserved_6 : 2;
+        unsigned int vote_mode_cfg_1_j_r_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_J_R_freq_vote_r_type_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_J_R_freq_vote_r_type_END (1)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_J_R_vote_mode_cfg_1_j_r_msk_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_MODE_CFG_1_J_R_vote_mode_cfg_1_j_r_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_j_start_en : 1;
+        unsigned int freq_vote_k_start_en : 1;
+        unsigned int freq_vote_l_start_en : 1;
+        unsigned int freq_vote_m_start_en : 1;
+        unsigned int freq_vote_n_start_en : 1;
+        unsigned int freq_vote_o_start_en : 1;
+        unsigned int freq_vote_p_start_en : 1;
+        unsigned int freq_vote_q_start_en : 1;
+        unsigned int freq_vote_r_start_en : 1;
+        unsigned int reserved : 7;
+        unsigned int vote_start_en_j_r_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_j_start_en_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_j_start_en_END (0)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_k_start_en_START (1)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_k_start_en_END (1)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_l_start_en_START (2)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_l_start_en_END (2)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_m_start_en_START (3)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_m_start_en_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_n_start_en_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_n_start_en_END (4)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_o_start_en_START (5)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_o_start_en_END (5)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_p_start_en_START (6)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_p_start_en_END (6)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_q_start_en_START (7)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_q_start_en_END (7)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_r_start_en_START (8)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_freq_vote_r_start_en_END (8)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_vote_start_en_j_r_msk_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_START_EN_J_R_vote_start_en_j_r_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int int_freq_vote_en_j : 1;
+        unsigned int int_freq_vote_en_k : 1;
+        unsigned int int_freq_vote_en_l : 1;
+        unsigned int int_freq_vote_en_m : 1;
+        unsigned int int_freq_vote_en_n : 1;
+        unsigned int int_freq_vote_en_o : 1;
+        unsigned int int_freq_vote_en_p : 1;
+        unsigned int int_freq_vote_en_q : 1;
+        unsigned int int_freq_vote_en_r : 1;
+        unsigned int reserved : 7;
+        unsigned int int_vote_en_j_r_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_j_START (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_j_END (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_k_START (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_k_END (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_l_START (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_l_END (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_m_START (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_m_END (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_n_START (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_n_END (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_o_START (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_o_END (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_p_START (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_p_END (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_q_START (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_q_END (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_r_START (8)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_freq_vote_en_r_END (8)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_vote_en_j_r_msk_START (16)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_EN_J_R_int_vote_en_j_r_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int int_freq_vote_j_clr : 1;
+        unsigned int int_freq_vote_k_clr : 1;
+        unsigned int int_freq_vote_l_clr : 1;
+        unsigned int int_freq_vote_m_clr : 1;
+        unsigned int int_freq_vote_n_clr : 1;
+        unsigned int int_freq_vote_o_clr : 1;
+        unsigned int int_freq_vote_p_clr : 1;
+        unsigned int int_freq_vote_q_clr : 1;
+        unsigned int int_freq_vote_r_clr : 1;
+        unsigned int reserved_0 : 7;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_j_clr_START (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_j_clr_END (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_k_clr_START (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_k_clr_END (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_l_clr_START (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_l_clr_END (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_m_clr_START (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_m_clr_END (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_n_clr_START (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_n_clr_END (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_o_clr_START (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_o_clr_END (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_p_clr_START (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_p_clr_END (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_q_clr_START (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_q_clr_END (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_r_clr_START (8)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_CLR_J_R_int_freq_vote_r_clr_END (8)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int int_freq_vote_raw_stat_j : 1;
+        unsigned int int_freq_vote_raw_stat_k : 1;
+        unsigned int int_freq_vote_raw_stat_l : 1;
+        unsigned int int_freq_vote_raw_stat_m : 1;
+        unsigned int int_freq_vote_raw_stat_n : 1;
+        unsigned int int_freq_vote_raw_stat_o : 1;
+        unsigned int int_freq_vote_raw_stat_p : 1;
+        unsigned int int_freq_vote_raw_stat_q : 1;
+        unsigned int int_freq_vote_raw_stat_r : 1;
+        unsigned int reserved_0 : 7;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_j_START (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_j_END (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_k_START (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_k_END (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_l_START (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_l_END (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_m_START (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_m_END (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_n_START (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_n_END (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_o_START (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_o_END (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_p_START (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_p_END (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_q_START (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_q_END (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_r_START (8)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_RAW_STAT_J_R_int_freq_vote_raw_stat_r_END (8)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int int_freq_vote_stat_j : 1;
+        unsigned int int_freq_vote_stat_k : 1;
+        unsigned int int_freq_vote_stat_l : 1;
+        unsigned int int_freq_vote_stat_m : 1;
+        unsigned int int_freq_vote_stat_n : 1;
+        unsigned int int_freq_vote_stat_o : 1;
+        unsigned int int_freq_vote_stat_p : 1;
+        unsigned int int_freq_vote_stat_q : 1;
+        unsigned int int_freq_vote_stat_r : 1;
+        unsigned int reserved_0 : 7;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_j_START (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_j_END (0)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_k_START (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_k_END (1)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_l_START (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_l_END (2)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_m_START (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_m_END (3)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_n_START (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_n_END (4)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_o_START (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_o_END (5)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_p_START (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_p_END (6)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_q_START (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_q_END (7)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_r_START (8)
+#define SOC_MEDIA_PMCTRL_INT_VOTE_STAT_J_R_int_freq_vote_stat_r_END (8)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int int_frequency_vote_j_r : 1;
+        unsigned int intr_freq_vote_to_cpu_lp_ctrl_j_r : 1;
+        unsigned int intr_freq_vote_to_gpu_lp_ctrl_j_r : 1;
+        unsigned int intr_freq_vote_to_ddr_lp_ctrl_j_r : 1;
+        unsigned int intr_freq_vote_to_media_lp_ctrl_j_r : 1;
+        unsigned int reserved : 27;
+    } reg;
+} SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_int_frequency_vote_j_r_START (0)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_int_frequency_vote_j_r_END (0)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_intr_freq_vote_to_cpu_lp_ctrl_j_r_START (1)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_intr_freq_vote_to_cpu_lp_ctrl_j_r_END (1)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_intr_freq_vote_to_gpu_lp_ctrl_j_r_START (2)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_intr_freq_vote_to_gpu_lp_ctrl_j_r_END (2)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_intr_freq_vote_to_ddr_lp_ctrl_j_r_START (3)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_intr_freq_vote_to_ddr_lp_ctrl_j_r_END (3)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_intr_freq_vote_to_media_lp_ctrl_j_r_START (4)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_J_R_intr_freq_vote_to_media_lp_ctrl_j_r_END (4)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_j : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_J_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_J_freq_vote_result_j_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_J_freq_vote_result_j_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_k : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_K_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_K_freq_vote_result_k_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_K_freq_vote_result_k_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_l : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_L_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_L_freq_vote_result_l_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_L_freq_vote_result_l_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_m : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_M_freq_vote_result_m_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_M_freq_vote_result_m_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_n : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_N_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_N_freq_vote_result_n_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_N_freq_vote_result_n_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_o : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_O_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_O_freq_vote_result_o_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_O_freq_vote_result_o_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_p : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_P_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_P_freq_vote_result_p_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_P_freq_vote_result_p_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_q : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_Q_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_Q_freq_vote_result_q_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_Q_freq_vote_result_q_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int freq_vote_result_r : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_RESULT_R_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_R_freq_vote_result_r_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_RESULT_R_freq_vote_result_r_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int int_frequency_vote_merged : 1;
+        unsigned int intr_freq_vote_to_cpu_lp_ctrl_merged : 1;
+        unsigned int intr_freq_vote_to_gpu_lp_ctrl_merged : 1;
+        unsigned int intr_freq_vote_to_ddr_lp_ctrl_merged : 1;
+        unsigned int intr_freq_vote_to_media_lp_ctrl_merged : 1;
+        unsigned int reserved : 27;
+    } reg;
+} SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_int_frequency_vote_merged_START (0)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_int_frequency_vote_merged_END (0)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_intr_freq_vote_to_cpu_lp_ctrl_merged_START (1)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_intr_freq_vote_to_cpu_lp_ctrl_merged_END (1)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_intr_freq_vote_to_gpu_lp_ctrl_merged_START (2)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_intr_freq_vote_to_gpu_lp_ctrl_merged_END (2)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_intr_freq_vote_to_ddr_lp_ctrl_merged_START (3)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_intr_freq_vote_to_ddr_lp_ctrl_merged_END (3)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_intr_freq_vote_to_media_lp_ctrl_merged_START (4)
+#define SOC_MEDIA_PMCTRL_INT_FREQUENCY_VOTE_MERGED_intr_freq_vote_to_media_lp_ctrl_merged_END (4)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int reserved_0: 1;
+        unsigned int reserved_1: 1;
+        unsigned int reserved_2: 1;
+        unsigned int reserved_3: 1;
+        unsigned int reserved_4: 1;
+        unsigned int reserved_5: 1;
+        unsigned int reserved_6: 1;
+        unsigned int reserved_7: 1;
+        unsigned int reserved_8: 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_CTRL0_UNION;
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int reserved_0: 16;
+        unsigned int reserved_1: 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_CTRL4_UNION;
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int reserved : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_CTRL5_UNION;
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int reserved_0: 1;
+        unsigned int reserved_1: 31;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_CTRL7_UNION;
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch0_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH0_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH0_IDX_0_peri_m1_vote_vol_ch0_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH0_IDX_0_peri_m1_vote_vol_ch0_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch0_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH0_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH0_IDX_1_peri_m1_vote_vol_ch0_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH0_IDX_1_peri_m1_vote_vol_ch0_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch1_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH1_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH1_IDX_0_peri_m1_vote_vol_ch1_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH1_IDX_0_peri_m1_vote_vol_ch1_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch1_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH1_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH1_IDX_1_peri_m1_vote_vol_ch1_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH1_IDX_1_peri_m1_vote_vol_ch1_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch2_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH2_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH2_IDX_0_peri_m1_vote_vol_ch2_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH2_IDX_0_peri_m1_vote_vol_ch2_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch2_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH2_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH2_IDX_1_peri_m1_vote_vol_ch2_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH2_IDX_1_peri_m1_vote_vol_ch2_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch3_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH3_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH3_IDX_0_peri_m1_vote_vol_ch3_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH3_IDX_0_peri_m1_vote_vol_ch3_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch3_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH3_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH3_IDX_1_peri_m1_vote_vol_ch3_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH3_IDX_1_peri_m1_vote_vol_ch3_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch4_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH4_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH4_IDX_0_peri_m1_vote_vol_ch4_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH4_IDX_0_peri_m1_vote_vol_ch4_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch4_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH4_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH4_IDX_1_peri_m1_vote_vol_ch4_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH4_IDX_1_peri_m1_vote_vol_ch4_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch5_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH5_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH5_IDX_0_peri_m1_vote_vol_ch5_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH5_IDX_0_peri_m1_vote_vol_ch5_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch5_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH5_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH5_IDX_1_peri_m1_vote_vol_ch5_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH5_IDX_1_peri_m1_vote_vol_ch5_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch6_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH6_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH6_IDX_0_peri_m1_vote_vol_ch6_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH6_IDX_0_peri_m1_vote_vol_ch6_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch6_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH6_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH6_IDX_1_peri_m1_vote_vol_ch6_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH6_IDX_1_peri_m1_vote_vol_ch6_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch7_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH7_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH7_IDX_0_peri_m1_vote_vol_ch7_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH7_IDX_0_peri_m1_vote_vol_ch7_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch7_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH7_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH7_IDX_1_peri_m1_vote_vol_ch7_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH7_IDX_1_peri_m1_vote_vol_ch7_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch8_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH8_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH8_IDX_0_peri_m1_vote_vol_ch8_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH8_IDX_0_peri_m1_vote_vol_ch8_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch8_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH8_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH8_IDX_1_peri_m1_vote_vol_ch8_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH8_IDX_1_peri_m1_vote_vol_ch8_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch9_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH9_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH9_IDX_0_peri_m1_vote_vol_ch9_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH9_IDX_0_peri_m1_vote_vol_ch9_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch9_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH9_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH9_IDX_1_peri_m1_vote_vol_ch9_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH9_IDX_1_peri_m1_vote_vol_ch9_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch10_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH10_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH10_IDX_0_peri_m1_vote_vol_ch10_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH10_IDX_0_peri_m1_vote_vol_ch10_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch10_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH10_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH10_IDX_1_peri_m1_vote_vol_ch10_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH10_IDX_1_peri_m1_vote_vol_ch10_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch11_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH11_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH11_IDX_0_peri_m1_vote_vol_ch11_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH11_IDX_0_peri_m1_vote_vol_ch11_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch11_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH11_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH11_IDX_1_peri_m1_vote_vol_ch11_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH11_IDX_1_peri_m1_vote_vol_ch11_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch12_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH12_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH12_IDX_0_peri_m1_vote_vol_ch12_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH12_IDX_0_peri_m1_vote_vol_ch12_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch12_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH12_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH12_IDX_1_peri_m1_vote_vol_ch12_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH12_IDX_1_peri_m1_vote_vol_ch12_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch13_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH13_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH13_IDX_0_peri_m1_vote_vol_ch13_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH13_IDX_0_peri_m1_vote_vol_ch13_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch13_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH13_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH13_IDX_1_peri_m1_vote_vol_ch13_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH13_IDX_1_peri_m1_vote_vol_ch13_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch14_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH14_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH14_IDX_0_peri_m1_vote_vol_ch14_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH14_IDX_0_peri_m1_vote_vol_ch14_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch14_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH14_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH14_IDX_1_peri_m1_vote_vol_ch14_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH14_IDX_1_peri_m1_vote_vol_ch14_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch15_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH15_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH15_IDX_0_peri_m1_vote_vol_ch15_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH15_IDX_0_peri_m1_vote_vol_ch15_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_ch15_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH15_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH15_IDX_1_peri_m1_vote_vol_ch15_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_CH15_IDX_1_peri_m1_vote_vol_ch15_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_rank_0 : 3;
+        unsigned int peri_m1_vote_vol_rank_1 : 3;
+        unsigned int peri_m1_vote_vol_rank_2 : 3;
+        unsigned int peri_m1_vote_vol_rank_3 : 3;
+        unsigned int peri_m1_vote_vol_rank_4 : 3;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_peri_m1_vote_vol_rank_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_peri_m1_vote_vol_rank_0_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_peri_m1_vote_vol_rank_1_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_peri_m1_vote_vol_rank_1_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_peri_m1_vote_vol_rank_2_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_peri_m1_vote_vol_rank_2_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_peri_m1_vote_vol_rank_3_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_peri_m1_vote_vol_rank_3_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_peri_m1_vote_vol_rank_4_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_0_peri_m1_vote_vol_rank_4_END (14)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_rank_5 : 3;
+        unsigned int peri_m1_vote_vol_rank_6 : 3;
+        unsigned int peri_m1_vote_vol_rank_7 : 3;
+        unsigned int peri_m1_vote_vol_rank_8 : 3;
+        unsigned int peri_m1_vote_vol_rank_9 : 3;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_peri_m1_vote_vol_rank_5_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_peri_m1_vote_vol_rank_5_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_peri_m1_vote_vol_rank_6_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_peri_m1_vote_vol_rank_6_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_peri_m1_vote_vol_rank_7_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_peri_m1_vote_vol_rank_7_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_peri_m1_vote_vol_rank_8_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_peri_m1_vote_vol_rank_8_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_peri_m1_vote_vol_rank_9_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_1_peri_m1_vote_vol_rank_9_END (14)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_rank_10 : 3;
+        unsigned int peri_m1_vote_vol_rank_11 : 3;
+        unsigned int peri_m1_vote_vol_rank_12 : 3;
+        unsigned int peri_m1_vote_vol_rank_13 : 3;
+        unsigned int peri_m1_vote_vol_rank_14 : 3;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_peri_m1_vote_vol_rank_10_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_peri_m1_vote_vol_rank_10_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_peri_m1_vote_vol_rank_11_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_peri_m1_vote_vol_rank_11_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_peri_m1_vote_vol_rank_12_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_peri_m1_vote_vol_rank_12_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_peri_m1_vote_vol_rank_13_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_peri_m1_vote_vol_rank_13_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_peri_m1_vote_vol_rank_14_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_2_peri_m1_vote_vol_rank_14_END (14)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_rank_15 : 3;
+        unsigned int reserved_0 : 3;
+        unsigned int reserved_1 : 3;
+        unsigned int reserved_2 : 3;
+        unsigned int reserved_3 : 3;
+        unsigned int reserved_4 : 1;
+        unsigned int reserved_5 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_3_peri_m1_vote_vol_rank_15_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_RANK_SFT_3_peri_m1_vote_vol_rank_15_END (2)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_vol_valid_0 : 1;
+        unsigned int peri_m1_vote_vol_valid_1 : 1;
+        unsigned int peri_m1_vote_vol_valid_2 : 1;
+        unsigned int peri_m1_vote_vol_valid_3 : 1;
+        unsigned int peri_m1_vote_vol_valid_4 : 1;
+        unsigned int peri_m1_vote_vol_valid_5 : 1;
+        unsigned int peri_m1_vote_vol_valid_6 : 1;
+        unsigned int peri_m1_vote_vol_valid_7 : 1;
+        unsigned int peri_m1_vote_vol_valid_8 : 1;
+        unsigned int peri_m1_vote_vol_valid_9 : 1;
+        unsigned int peri_m1_vote_vol_valid_10 : 1;
+        unsigned int peri_m1_vote_vol_valid_11 : 1;
+        unsigned int peri_m1_vote_vol_valid_12 : 1;
+        unsigned int peri_m1_vote_vol_valid_13 : 1;
+        unsigned int peri_m1_vote_vol_valid_14 : 1;
+        unsigned int peri_m1_vote_vol_valid_15 : 1;
+        unsigned int reserved : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_0_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_1_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_2_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_2_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_3_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_3_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_4_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_4_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_5_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_5_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_6_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_6_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_7_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_7_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_8_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_8_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_9_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_9_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_10_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_10_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_11_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_11_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_12_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_12_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_13_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_13_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_14_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_14_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_15_START (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_VOL_VALID_peri_m1_vote_vol_valid_15_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_sft_chg_0 : 1;
+        unsigned int peri_m1_vote_sft_chg_1 : 1;
+        unsigned int peri_m1_vote_sft_chg_2 : 1;
+        unsigned int peri_m1_vote_sft_chg_3 : 1;
+        unsigned int peri_m1_vote_sft_chg_4 : 1;
+        unsigned int peri_m1_vote_sft_chg_5 : 1;
+        unsigned int peri_m1_vote_sft_chg_6 : 1;
+        unsigned int peri_m1_vote_sft_chg_7 : 1;
+        unsigned int peri_m1_vote_sft_chg_8 : 1;
+        unsigned int peri_m1_vote_sft_chg_9 : 1;
+        unsigned int peri_m1_vote_sft_chg_10 : 1;
+        unsigned int peri_m1_vote_sft_chg_11 : 1;
+        unsigned int peri_m1_vote_sft_chg_12 : 1;
+        unsigned int peri_m1_vote_sft_chg_13 : 1;
+        unsigned int peri_m1_vote_sft_chg_14 : 1;
+        unsigned int peri_m1_vote_sft_chg_15 : 1;
+        unsigned int peri_m1_vote_sft_chg_0_vau_4to1 : 1;
+        unsigned int peri_m1_vote_sft_chg_1_vau_4to1 : 1;
+        unsigned int peri_m1_vote_sft_chg_2_vau_4to1 : 1;
+        unsigned int peri_m1_vote_sft_chg_3_vau_4to1 : 1;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_0_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_1_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_2_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_2_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_3_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_3_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_4_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_4_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_5_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_5_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_6_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_6_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_7_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_7_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_8_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_8_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_9_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_9_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_10_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_10_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_11_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_11_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_12_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_12_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_13_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_13_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_14_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_14_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_15_START (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_15_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_0_vau_4to1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_0_vau_4to1_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_1_vau_4to1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_1_vau_4to1_END (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_2_vau_4to1_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_2_vau_4to1_END (18)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_3_vau_4to1_START (19)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_peri_m1_vote_sft_chg_3_vau_4to1_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_soft_vol_vote_en_0 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_1 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_2 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_3 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_4 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_5 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_6 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_7 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_8 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_9 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_10 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_11 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_12 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_13 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_14 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_15 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_0_vau_4to1 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_1_vau_4to1 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_2_vau_4to1 : 1;
+        unsigned int peri_m1_soft_vol_vote_en_3_vau_4to1 : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 1;
+        unsigned int reserved_2 : 1;
+        unsigned int reserved_3 : 1;
+        unsigned int reserved_4 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_0_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_1_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_2_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_2_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_3_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_3_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_4_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_4_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_5_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_5_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_6_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_6_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_7_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_7_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_8_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_8_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_9_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_9_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_10_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_10_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_11_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_11_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_12_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_12_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_13_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_13_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_14_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_14_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_15_START (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_15_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_0_vau_4to1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_0_vau_4to1_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_1_vau_4to1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_1_vau_4to1_END (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_2_vau_4to1_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_2_vau_4to1_END (18)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_3_vau_4to1_START (19)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_CHG_BYPASS_peri_m1_soft_vol_vote_en_3_vau_4to1_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_pmu_up_hold_time : 20;
+        unsigned int peri_m1_pmu_up_step_time : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_UP_TIME_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_UP_TIME_peri_m1_pmu_up_hold_time_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_UP_TIME_peri_m1_pmu_up_hold_time_END (19)
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_UP_TIME_peri_m1_pmu_up_step_time_START (20)
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_UP_TIME_peri_m1_pmu_up_step_time_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_pmu_dn_hold_time : 20;
+        unsigned int peri_m1_pmu_dn_step_time : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_DN_TTME_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_DN_TTME_peri_m1_pmu_dn_hold_time_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_DN_TTME_peri_m1_pmu_dn_hold_time_END (19)
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_DN_TTME_peri_m1_pmu_dn_step_time_START (20)
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_TRIM_DN_TTME_peri_m1_pmu_dn_step_time_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_pmu_buck_on_time : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_PMU_BUCK_ON_TIME_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_BUCK_ON_TIME_peri_m1_pmu_buck_on_time_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_BUCK_ON_TIME_peri_m1_pmu_buck_on_time_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_pmu_buck_off_time : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_PMU_BUCK_OFF_TIME_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_BUCK_OFF_TIME_peri_m1_pmu_buck_off_time_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_PMU_BUCK_OFF_TIME_peri_m1_pmu_buck_off_time_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vol_sft_clr_0 : 1;
+        unsigned int peri_m1_vol_sft_clr_1 : 1;
+        unsigned int peri_m1_vol_sft_clr_2 : 1;
+        unsigned int peri_m1_vol_sft_clr_3 : 1;
+        unsigned int peri_m1_vol_sft_clr_4 : 1;
+        unsigned int peri_m1_vol_sft_clr_5 : 1;
+        unsigned int peri_m1_vol_sft_clr_6 : 1;
+        unsigned int peri_m1_vol_sft_clr_7 : 1;
+        unsigned int peri_m1_vol_sft_clr_8 : 1;
+        unsigned int peri_m1_vol_sft_clr_9 : 1;
+        unsigned int peri_m1_vol_sft_clr_10 : 1;
+        unsigned int peri_m1_vol_sft_clr_11 : 1;
+        unsigned int peri_m1_vol_sft_clr_12 : 1;
+        unsigned int peri_m1_vol_sft_clr_13 : 1;
+        unsigned int peri_m1_vol_sft_clr_14 : 1;
+        unsigned int peri_m1_vol_sft_clr_15 : 1;
+        unsigned int peri_m1_vol_sft_clr_0_vau_4to1 : 1;
+        unsigned int peri_m1_vol_sft_clr_1_vau_4to1 : 1;
+        unsigned int peri_m1_vol_sft_clr_2_vau_4to1 : 1;
+        unsigned int peri_m1_vol_sft_clr_3_vau_4to1 : 1;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_0_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_1_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_2_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_2_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_3_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_3_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_4_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_4_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_5_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_5_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_6_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_6_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_7_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_7_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_8_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_8_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_9_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_9_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_10_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_10_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_11_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_11_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_12_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_12_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_13_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_13_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_14_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_14_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_15_START (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_15_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_0_vau_4to1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_0_vau_4to1_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_1_vau_4to1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_1_vau_4to1_END (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_2_vau_4to1_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_2_vau_4to1_END (18)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_3_vau_4to1_START (19)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_SFT_CLR_peri_m1_vol_sft_clr_3_vau_4to1_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vol_stable_0 : 1;
+        unsigned int peri_m1_vol_stable_1 : 1;
+        unsigned int peri_m1_vol_stable_2 : 1;
+        unsigned int peri_m1_vol_stable_3 : 1;
+        unsigned int peri_m1_vol_stable_4 : 1;
+        unsigned int peri_m1_vol_stable_5 : 1;
+        unsigned int peri_m1_vol_stable_6 : 1;
+        unsigned int peri_m1_vol_stable_7 : 1;
+        unsigned int peri_m1_vol_stable_8 : 1;
+        unsigned int peri_m1_vol_stable_9 : 1;
+        unsigned int peri_m1_vol_stable_10 : 1;
+        unsigned int peri_m1_vol_stable_11 : 1;
+        unsigned int peri_m1_vol_stable_12 : 1;
+        unsigned int peri_m1_vol_stable_13 : 1;
+        unsigned int peri_m1_vol_stable_14 : 1;
+        unsigned int peri_m1_vol_stable_15 : 1;
+        unsigned int peri_m1_vol_stable_vau_0 : 1;
+        unsigned int peri_m1_vol_stable_vau_1 : 1;
+        unsigned int peri_m1_vol_stable_vau_2 : 1;
+        unsigned int peri_m1_vol_stable_vau_3 : 1;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_0_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_1_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_2_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_2_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_3_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_3_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_4_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_4_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_5_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_5_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_6_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_6_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_7_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_7_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_8_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_8_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_9_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_9_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_10_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_10_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_11_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_11_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_12_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_12_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_13_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_13_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_14_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_14_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_15_START (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_15_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_vau_0_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_vau_0_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_vau_1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_vau_1_END (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_vau_2_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_vau_2_END (18)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_vau_3_START (19)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_STABLE_peri_m1_vol_stable_vau_3_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_init_vol_idx_vau_0 : 8;
+        unsigned int peri_m1_init_vol_req_vau_0 : 1;
+        unsigned int peri_m1_init_vol_idx_vau_1 : 8;
+        unsigned int peri_m1_init_vol_req_vau_1 : 1;
+        unsigned int peri_m1_init_vol_idx_vau_2 : 8;
+        unsigned int peri_m1_init_vol_req_vau_2 : 1;
+        unsigned int reserved : 5;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_peri_m1_init_vol_idx_vau_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_peri_m1_init_vol_idx_vau_0_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_peri_m1_init_vol_req_vau_0_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_peri_m1_init_vol_req_vau_0_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_peri_m1_init_vol_idx_vau_1_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_peri_m1_init_vol_idx_vau_1_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_peri_m1_init_vol_req_vau_1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_peri_m1_init_vol_req_vau_1_END (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_peri_m1_init_vol_idx_vau_2_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_peri_m1_init_vol_idx_vau_2_END (25)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_peri_m1_init_vol_req_vau_2_START (26)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG0_peri_m1_init_vol_req_vau_2_END (26)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_init_vol_idx_vau_3 : 8;
+        unsigned int peri_m1_init_vol_req_vau_3 : 1;
+        unsigned int peri_m1_init_vol_idx_vau_4to1 : 8;
+        unsigned int peri_m1_init_vol_req_vau_4to1 : 1;
+        unsigned int peri_m1_sft_buck_vol_idx : 8;
+        unsigned int peri_m1_sft_buck_on_req : 1;
+        unsigned int peri_m1_sft_buck_off_req : 1;
+        unsigned int peri_m1_sft_buck_onoff_req_en : 1;
+        unsigned int reserved : 3;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_init_vol_idx_vau_3_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_init_vol_idx_vau_3_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_init_vol_req_vau_3_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_init_vol_req_vau_3_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_init_vol_idx_vau_4to1_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_init_vol_idx_vau_4to1_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_init_vol_req_vau_4to1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_init_vol_req_vau_4to1_END (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_sft_buck_vol_idx_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_sft_buck_vol_idx_END (25)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_sft_buck_on_req_START (26)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_sft_buck_on_req_END (26)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_sft_buck_off_req_START (27)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_sft_buck_off_req_END (27)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_sft_buck_onoff_req_en_START (28)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INIT_VOL_CONFIG1_peri_m1_sft_buck_onoff_req_en_END (28)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_sft_fix_vol_idx : 8;
+        unsigned int peri_m1_sft_fix_vol : 1;
+        unsigned int peri_m1_sft_fix_vol_req : 1;
+        unsigned int reserved : 22;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_FIX_VOL_CONFIG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_FIX_VOL_CONFIG_peri_m1_sft_fix_vol_idx_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_FIX_VOL_CONFIG_peri_m1_sft_fix_vol_idx_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_FIX_VOL_CONFIG_peri_m1_sft_fix_vol_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_FIX_VOL_CONFIG_peri_m1_sft_fix_vol_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_FIX_VOL_CONFIG_peri_m1_sft_fix_vol_req_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_FIX_VOL_CONFIG_peri_m1_sft_fix_vol_req_END (9)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_intr_lpm3_msk : 16;
+        unsigned int peri_m1_intr_cpu_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_INTR_M3ORCPU_MSK_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_M3ORCPU_MSK_peri_m1_intr_lpm3_msk_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_M3ORCPU_MSK_peri_m1_intr_lpm3_msk_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_M3ORCPU_MSK_peri_m1_intr_cpu_msk_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_M3ORCPU_MSK_peri_m1_intr_cpu_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_cur_max_vol : 8;
+        unsigned int peri_m1_nxt_max_vol : 8;
+        unsigned int reserved_0 : 8;
+        unsigned int reserved_1 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOL_READ_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_READ_peri_m1_cur_max_vol_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_READ_peri_m1_cur_max_vol_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_READ_peri_m1_nxt_max_vol_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_READ_peri_m1_nxt_max_vol_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_pmu_vol_idx_spmi : 8;
+        unsigned int peri_m1_pmu_vol_chg_spmi : 1;
+        unsigned int intr_peri_m1_dvs_stat_pmc2lpm3 : 1;
+        unsigned int intr_peri_m1_dvs_stat_pmc2acpu : 1;
+        unsigned int peri_m1_pmu_vol_ack_spmi : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 1;
+        unsigned int peri_m1_buck_on_off_stable : 1;
+        unsigned int reserved_2 : 3;
+        unsigned int peri_m1_buck_ctrl_cur_stat : 3;
+        unsigned int reserved_3 : 11;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_peri_m1_pmu_vol_idx_spmi_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_peri_m1_pmu_vol_idx_spmi_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_peri_m1_pmu_vol_chg_spmi_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_peri_m1_pmu_vol_chg_spmi_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_intr_peri_m1_dvs_stat_pmc2lpm3_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_intr_peri_m1_dvs_stat_pmc2lpm3_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_intr_peri_m1_dvs_stat_pmc2acpu_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_intr_peri_m1_dvs_stat_pmc2acpu_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_peri_m1_pmu_vol_ack_spmi_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_peri_m1_pmu_vol_ack_spmi_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_peri_m1_buck_on_off_stable_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_peri_m1_buck_on_off_stable_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_peri_m1_buck_ctrl_cur_stat_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_OUTPUT_READ_peri_m1_buck_ctrl_cur_stat_END (20)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vote_sft_vol_idx_0_vau_4to1 : 8;
+        unsigned int peri_m1_vote_sft_vol_idx_1_vau_4to1 : 8;
+        unsigned int peri_m1_vote_sft_vol_idx_2_vau_4to1 : 8;
+        unsigned int peri_m1_vote_sft_vol_idx_3_vau_4to1 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_HRD_VOL_IDX_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_HRD_VOL_IDX_peri_m1_vote_sft_vol_idx_0_vau_4to1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_HRD_VOL_IDX_peri_m1_vote_sft_vol_idx_0_vau_4to1_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_HRD_VOL_IDX_peri_m1_vote_sft_vol_idx_1_vau_4to1_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_HRD_VOL_IDX_peri_m1_vote_sft_vol_idx_1_vau_4to1_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_HRD_VOL_IDX_peri_m1_vote_sft_vol_idx_2_vau_4to1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_HRD_VOL_IDX_peri_m1_vote_sft_vol_idx_2_vau_4to1_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_HRD_VOL_IDX_peri_m1_vote_sft_vol_idx_3_vau_4to1_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOTE_SFT_HRD_VOL_IDX_peri_m1_vote_sft_vol_idx_3_vau_4to1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_stat_time_hold : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_STAT_TIME_HOLD_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_STAT_TIME_HOLD_peri_m1_stat_time_hold_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_STAT_TIME_HOLD_peri_m1_stat_time_hold_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_intr_bypass_0 : 1;
+        unsigned int peri_m1_intr_bypass_1 : 1;
+        unsigned int peri_m1_intr_bypass_2 : 1;
+        unsigned int peri_m1_intr_bypass_3 : 1;
+        unsigned int peri_m1_intr_bypass_4 : 1;
+        unsigned int peri_m1_intr_bypass_5 : 1;
+        unsigned int peri_m1_intr_bypass_6 : 1;
+        unsigned int peri_m1_intr_bypass_7 : 1;
+        unsigned int peri_m1_intr_bypass_8 : 1;
+        unsigned int peri_m1_intr_bypass_9 : 1;
+        unsigned int peri_m1_intr_bypass_10 : 1;
+        unsigned int peri_m1_intr_bypass_11 : 1;
+        unsigned int peri_m1_intr_bypass_12 : 1;
+        unsigned int peri_m1_intr_bypass_13 : 1;
+        unsigned int peri_m1_intr_bypass_14 : 1;
+        unsigned int peri_m1_intr_bypass_15 : 1;
+        unsigned int reserved : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_0_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_1_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_2_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_2_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_3_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_3_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_4_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_4_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_5_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_5_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_6_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_6_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_7_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_7_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_8_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_8_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_9_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_9_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_10_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_10_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_11_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_11_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_12_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_12_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_13_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_13_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_14_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_14_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_15_START (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_SFT_peri_m1_intr_bypass_15_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_intr_bypass_16 : 1;
+        unsigned int peri_m1_intr_bypass_17 : 1;
+        unsigned int peri_m1_intr_bypass_18 : 1;
+        unsigned int peri_m1_intr_bypass_19 : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 3;
+        unsigned int reserved_2 : 1;
+        unsigned int reserved_3 : 1;
+        unsigned int reserved_4 : 1;
+        unsigned int reserved_5 : 1;
+        unsigned int reserved_6 : 1;
+        unsigned int reserved_7 : 1;
+        unsigned int reserved_8 : 1;
+        unsigned int reserved_9 : 1;
+        unsigned int reserved_10 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_HRD_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_HRD_peri_m1_intr_bypass_16_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_HRD_peri_m1_intr_bypass_16_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_HRD_peri_m1_intr_bypass_17_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_HRD_peri_m1_intr_bypass_17_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_HRD_peri_m1_intr_bypass_18_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_HRD_peri_m1_intr_bypass_18_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_HRD_peri_m1_intr_bypass_19_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_BYPASS_HRD_peri_m1_intr_bypass_19_END (3)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vol_chg_flag : 21;
+        unsigned int peri_m1_separate_vset_ven_ctrl_bypass : 1;
+        unsigned int peri_m1_fer_buck_pg_bypass : 1;
+        unsigned int peri_m1_fer_buck_vok_bypass : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 7;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOL_CHG_FLAG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_CHG_FLAG_peri_m1_vol_chg_flag_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_CHG_FLAG_peri_m1_vol_chg_flag_END (20)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_CHG_FLAG_peri_m1_separate_vset_ven_ctrl_bypass_START (21)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_CHG_FLAG_peri_m1_separate_vset_ven_ctrl_bypass_END (21)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_CHG_FLAG_peri_m1_fer_buck_pg_bypass_START (22)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_CHG_FLAG_peri_m1_fer_buck_pg_bypass_END (22)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_CHG_FLAG_peri_m1_fer_buck_vok_bypass_START (23)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_CHG_FLAG_peri_m1_fer_buck_vok_bypass_END (23)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_spmi_hold_time : 20;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 11;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_SPM1_HOLD_TIME_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_SPM1_HOLD_TIME_peri_m1_spmi_hold_time_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_SPM1_HOLD_TIME_peri_m1_spmi_hold_time_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int fer_buck_pgvok_req_peri_m1 : 1;
+        unsigned int fer_buck_pgvok_ack_peri_m1 : 1;
+        unsigned int reserved : 30;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_FER_REQ_ACK_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_FER_REQ_ACK_fer_buck_pgvok_req_peri_m1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_FER_REQ_ACK_fer_buck_pgvok_req_peri_m1_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_FER_REQ_ACK_fer_buck_pgvok_ack_peri_m1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_FER_REQ_ACK_fer_buck_pgvok_ack_peri_m1_END (1)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_vol_profile_rank_idx : 8;
+        unsigned int reserved_0 : 8;
+        unsigned int peri_m1_dvs_profile_status : 1;
+        unsigned int reserved_1 : 1;
+        unsigned int reserved_2 : 14;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_VOL_DOZE_VOTE_CTRL_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_DOZE_VOTE_CTRL_peri_m1_vol_profile_rank_idx_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_DOZE_VOTE_CTRL_peri_m1_vol_profile_rank_idx_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_DOZE_VOTE_CTRL_peri_m1_dvs_profile_status_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_VOL_DOZE_VOTE_CTRL_peri_m1_dvs_profile_status_END (16)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_dvs_spmi_hold_timeout_flag : 1;
+        unsigned int peri_m1_dvs_buck_onoff_timeout_flag : 1;
+        unsigned int peri_m1_dvs_fer_err_flag : 1;
+        unsigned int peri_m1_dvs_timeout_flag_clr : 1;
+        unsigned int peri_m1_vau_vol_equal_flag_vau_0 : 1;
+        unsigned int peri_m1_vau_vol_equal_flag_clr_vau_0 : 1;
+        unsigned int peri_m1_vau_vol_equal_flag_vau_1 : 1;
+        unsigned int peri_m1_vau_vol_equal_flag_clr_vau_1 : 1;
+        unsigned int peri_m1_vau_vol_equal_flag_vau_2 : 1;
+        unsigned int peri_m1_vau_vol_equal_flag_clr_vau_2 : 1;
+        unsigned int peri_m1_vau_vol_equal_flag_vau_3 : 1;
+        unsigned int peri_m1_vau_vol_equal_flag_clr_vau_3 : 1;
+        unsigned int peri_m1_vau_vol_equal_flag_vau_4to1 : 1;
+        unsigned int peri_m1_vau_vol_equal_flag_clr_vau_4to1 : 1;
+        unsigned int peri_m1_vau_cur_stat_vau_0 : 3;
+        unsigned int peri_m1_vau_cur_stat_vau_1 : 3;
+        unsigned int peri_m1_vau_cur_stat_vau_2 : 3;
+        unsigned int peri_m1_vau_cur_stat_vau_3 : 3;
+        unsigned int peri_m1_vau_cur_stat_vau_4to1 : 3;
+        unsigned int reserved : 3;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_dvs_spmi_hold_timeout_flag_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_dvs_spmi_hold_timeout_flag_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_dvs_buck_onoff_timeout_flag_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_dvs_buck_onoff_timeout_flag_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_dvs_fer_err_flag_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_dvs_fer_err_flag_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_dvs_timeout_flag_clr_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_dvs_timeout_flag_clr_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_vau_0_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_vau_0_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_clr_vau_0_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_clr_vau_0_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_vau_1_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_vau_1_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_clr_vau_1_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_clr_vau_1_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_vau_2_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_vau_2_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_clr_vau_2_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_clr_vau_2_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_vau_3_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_vau_3_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_clr_vau_3_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_clr_vau_3_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_vau_4to1_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_vau_4to1_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_clr_vau_4to1_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_vol_equal_flag_clr_vau_4to1_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_cur_stat_vau_0_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_cur_stat_vau_0_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_cur_stat_vau_1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_cur_stat_vau_1_END (19)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_cur_stat_vau_2_START (20)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_cur_stat_vau_2_END (22)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_cur_stat_vau_3_START (23)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_cur_stat_vau_3_END (25)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_cur_stat_vau_4to1_START (26)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT0_peri_m1_vau_cur_stat_vau_4to1_END (28)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_cur_max_vol_vau_0 : 8;
+        unsigned int peri_m1_nxt_max_vol_vau_0 : 8;
+        unsigned int peri_m1_cur_max_vol_vau_1 : 8;
+        unsigned int peri_m1_nxt_max_vol_vau_1 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT1_peri_m1_cur_max_vol_vau_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT1_peri_m1_cur_max_vol_vau_0_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT1_peri_m1_nxt_max_vol_vau_0_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT1_peri_m1_nxt_max_vol_vau_0_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT1_peri_m1_cur_max_vol_vau_1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT1_peri_m1_cur_max_vol_vau_1_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT1_peri_m1_nxt_max_vol_vau_1_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT1_peri_m1_nxt_max_vol_vau_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_cur_max_vol_vau_2 : 8;
+        unsigned int peri_m1_nxt_max_vol_vau_2 : 8;
+        unsigned int peri_m1_cur_max_vol_vau_3 : 8;
+        unsigned int peri_m1_nxt_max_vol_vau_3 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT2_peri_m1_cur_max_vol_vau_2_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT2_peri_m1_cur_max_vol_vau_2_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT2_peri_m1_nxt_max_vol_vau_2_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT2_peri_m1_nxt_max_vol_vau_2_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT2_peri_m1_cur_max_vol_vau_3_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT2_peri_m1_cur_max_vol_vau_3_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT2_peri_m1_nxt_max_vol_vau_3_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT2_peri_m1_nxt_max_vol_vau_3_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_buck_ctrl_cur_vol_idx : 8;
+        unsigned int peri_m1_buck_ctrl_nxt_vol_idx : 8;
+        unsigned int reserved_0 : 8;
+        unsigned int reserved_1 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT3_peri_m1_buck_ctrl_cur_vol_idx_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT3_peri_m1_buck_ctrl_cur_vol_idx_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT3_peri_m1_buck_ctrl_nxt_vol_idx_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT3_peri_m1_buck_ctrl_nxt_vol_idx_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_valid_vol_vote_idx_0_vau_0 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_1_vau_0 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_2_vau_0 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_3_vau_0 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT4_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT4_peri_m1_valid_vol_vote_idx_0_vau_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT4_peri_m1_valid_vol_vote_idx_0_vau_0_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT4_peri_m1_valid_vol_vote_idx_1_vau_0_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT4_peri_m1_valid_vol_vote_idx_1_vau_0_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT4_peri_m1_valid_vol_vote_idx_2_vau_0_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT4_peri_m1_valid_vol_vote_idx_2_vau_0_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT4_peri_m1_valid_vol_vote_idx_3_vau_0_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT4_peri_m1_valid_vol_vote_idx_3_vau_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_valid_vol_vote_idx_4_vau_1 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_5_vau_1 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_6_vau_1 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_7_vau_1 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT5_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT5_peri_m1_valid_vol_vote_idx_4_vau_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT5_peri_m1_valid_vol_vote_idx_4_vau_1_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT5_peri_m1_valid_vol_vote_idx_5_vau_1_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT5_peri_m1_valid_vol_vote_idx_5_vau_1_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT5_peri_m1_valid_vol_vote_idx_6_vau_1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT5_peri_m1_valid_vol_vote_idx_6_vau_1_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT5_peri_m1_valid_vol_vote_idx_7_vau_1_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT5_peri_m1_valid_vol_vote_idx_7_vau_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_valid_vol_vote_idx_8_vau_2 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_9_vau_2 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_10_vau_2 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_11_vau_2 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT6_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT6_peri_m1_valid_vol_vote_idx_8_vau_2_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT6_peri_m1_valid_vol_vote_idx_8_vau_2_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT6_peri_m1_valid_vol_vote_idx_9_vau_2_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT6_peri_m1_valid_vol_vote_idx_9_vau_2_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT6_peri_m1_valid_vol_vote_idx_10_vau_2_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT6_peri_m1_valid_vol_vote_idx_10_vau_2_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT6_peri_m1_valid_vol_vote_idx_11_vau_2_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT6_peri_m1_valid_vol_vote_idx_11_vau_2_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_valid_vol_vote_idx_12_vau_3 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_13_vau_3 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_14_vau_3 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_15_vau_3 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT7_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT7_peri_m1_valid_vol_vote_idx_12_vau_3_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT7_peri_m1_valid_vol_vote_idx_12_vau_3_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT7_peri_m1_valid_vol_vote_idx_13_vau_3_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT7_peri_m1_valid_vol_vote_idx_13_vau_3_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT7_peri_m1_valid_vol_vote_idx_14_vau_3_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT7_peri_m1_valid_vol_vote_idx_14_vau_3_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT7_peri_m1_valid_vol_vote_idx_15_vau_3_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT7_peri_m1_valid_vol_vote_idx_15_vau_3_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_valid_vol_vote_idx_0_vau_4to1 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_1_vau_4to1 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_2_vau_4to1 : 8;
+        unsigned int peri_m1_valid_vol_vote_idx_3_vau_4to1 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT8_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT8_peri_m1_valid_vol_vote_idx_0_vau_4to1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT8_peri_m1_valid_vol_vote_idx_0_vau_4to1_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT8_peri_m1_valid_vol_vote_idx_1_vau_4to1_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT8_peri_m1_valid_vol_vote_idx_1_vau_4to1_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT8_peri_m1_valid_vol_vote_idx_2_vau_4to1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT8_peri_m1_valid_vol_vote_idx_2_vau_4to1_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT8_peri_m1_valid_vol_vote_idx_3_vau_4to1_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M1_DVS_STAT8_peri_m1_valid_vol_vote_idx_3_vau_4to1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m1_intr_mediaxpu_msk : 16;
+        unsigned int reserved : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M1_INTR_MEDIAXPU_MSK_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_MEDIAXPU_MSK_peri_m1_intr_mediaxpu_msk_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M1_INTR_MEDIAXPU_MSK_peri_m1_intr_mediaxpu_msk_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch0_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH0_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH0_IDX_0_peri_m2_vote_vol_ch0_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH0_IDX_0_peri_m2_vote_vol_ch0_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch0_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH0_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH0_IDX_1_peri_m2_vote_vol_ch0_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH0_IDX_1_peri_m2_vote_vol_ch0_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch1_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH1_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH1_IDX_0_peri_m2_vote_vol_ch1_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH1_IDX_0_peri_m2_vote_vol_ch1_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch1_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH1_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH1_IDX_1_peri_m2_vote_vol_ch1_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH1_IDX_1_peri_m2_vote_vol_ch1_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch2_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH2_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH2_IDX_0_peri_m2_vote_vol_ch2_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH2_IDX_0_peri_m2_vote_vol_ch2_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch2_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH2_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH2_IDX_1_peri_m2_vote_vol_ch2_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH2_IDX_1_peri_m2_vote_vol_ch2_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch3_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH3_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH3_IDX_0_peri_m2_vote_vol_ch3_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH3_IDX_0_peri_m2_vote_vol_ch3_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch3_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH3_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH3_IDX_1_peri_m2_vote_vol_ch3_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH3_IDX_1_peri_m2_vote_vol_ch3_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch4_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH4_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH4_IDX_0_peri_m2_vote_vol_ch4_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH4_IDX_0_peri_m2_vote_vol_ch4_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch4_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH4_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH4_IDX_1_peri_m2_vote_vol_ch4_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH4_IDX_1_peri_m2_vote_vol_ch4_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch5_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH5_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH5_IDX_0_peri_m2_vote_vol_ch5_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH5_IDX_0_peri_m2_vote_vol_ch5_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch5_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH5_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH5_IDX_1_peri_m2_vote_vol_ch5_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH5_IDX_1_peri_m2_vote_vol_ch5_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch6_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH6_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH6_IDX_0_peri_m2_vote_vol_ch6_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH6_IDX_0_peri_m2_vote_vol_ch6_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch6_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH6_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH6_IDX_1_peri_m2_vote_vol_ch6_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH6_IDX_1_peri_m2_vote_vol_ch6_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch7_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH7_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH7_IDX_0_peri_m2_vote_vol_ch7_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH7_IDX_0_peri_m2_vote_vol_ch7_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch7_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH7_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH7_IDX_1_peri_m2_vote_vol_ch7_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH7_IDX_1_peri_m2_vote_vol_ch7_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch8_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH8_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH8_IDX_0_peri_m2_vote_vol_ch8_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH8_IDX_0_peri_m2_vote_vol_ch8_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch8_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH8_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH8_IDX_1_peri_m2_vote_vol_ch8_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH8_IDX_1_peri_m2_vote_vol_ch8_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch9_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH9_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH9_IDX_0_peri_m2_vote_vol_ch9_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH9_IDX_0_peri_m2_vote_vol_ch9_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch9_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH9_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH9_IDX_1_peri_m2_vote_vol_ch9_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH9_IDX_1_peri_m2_vote_vol_ch9_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch10_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH10_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH10_IDX_0_peri_m2_vote_vol_ch10_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH10_IDX_0_peri_m2_vote_vol_ch10_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch10_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH10_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH10_IDX_1_peri_m2_vote_vol_ch10_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH10_IDX_1_peri_m2_vote_vol_ch10_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch11_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH11_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH11_IDX_0_peri_m2_vote_vol_ch11_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH11_IDX_0_peri_m2_vote_vol_ch11_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch11_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH11_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH11_IDX_1_peri_m2_vote_vol_ch11_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH11_IDX_1_peri_m2_vote_vol_ch11_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch12_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH12_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH12_IDX_0_peri_m2_vote_vol_ch12_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH12_IDX_0_peri_m2_vote_vol_ch12_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch12_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH12_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH12_IDX_1_peri_m2_vote_vol_ch12_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH12_IDX_1_peri_m2_vote_vol_ch12_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch13_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH13_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH13_IDX_0_peri_m2_vote_vol_ch13_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH13_IDX_0_peri_m2_vote_vol_ch13_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch13_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH13_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH13_IDX_1_peri_m2_vote_vol_ch13_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH13_IDX_1_peri_m2_vote_vol_ch13_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch14_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH14_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH14_IDX_0_peri_m2_vote_vol_ch14_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH14_IDX_0_peri_m2_vote_vol_ch14_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch14_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH14_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH14_IDX_1_peri_m2_vote_vol_ch14_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH14_IDX_1_peri_m2_vote_vol_ch14_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch15_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH15_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH15_IDX_0_peri_m2_vote_vol_ch15_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH15_IDX_0_peri_m2_vote_vol_ch15_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_ch15_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH15_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH15_IDX_1_peri_m2_vote_vol_ch15_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_CH15_IDX_1_peri_m2_vote_vol_ch15_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_rank_0 : 3;
+        unsigned int peri_m2_vote_vol_rank_1 : 3;
+        unsigned int peri_m2_vote_vol_rank_2 : 3;
+        unsigned int peri_m2_vote_vol_rank_3 : 3;
+        unsigned int peri_m2_vote_vol_rank_4 : 3;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_peri_m2_vote_vol_rank_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_peri_m2_vote_vol_rank_0_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_peri_m2_vote_vol_rank_1_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_peri_m2_vote_vol_rank_1_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_peri_m2_vote_vol_rank_2_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_peri_m2_vote_vol_rank_2_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_peri_m2_vote_vol_rank_3_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_peri_m2_vote_vol_rank_3_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_peri_m2_vote_vol_rank_4_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_0_peri_m2_vote_vol_rank_4_END (14)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_rank_5 : 3;
+        unsigned int peri_m2_vote_vol_rank_6 : 3;
+        unsigned int peri_m2_vote_vol_rank_7 : 3;
+        unsigned int peri_m2_vote_vol_rank_8 : 3;
+        unsigned int peri_m2_vote_vol_rank_9 : 3;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_peri_m2_vote_vol_rank_5_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_peri_m2_vote_vol_rank_5_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_peri_m2_vote_vol_rank_6_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_peri_m2_vote_vol_rank_6_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_peri_m2_vote_vol_rank_7_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_peri_m2_vote_vol_rank_7_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_peri_m2_vote_vol_rank_8_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_peri_m2_vote_vol_rank_8_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_peri_m2_vote_vol_rank_9_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_1_peri_m2_vote_vol_rank_9_END (14)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_rank_10 : 3;
+        unsigned int peri_m2_vote_vol_rank_11 : 3;
+        unsigned int peri_m2_vote_vol_rank_12 : 3;
+        unsigned int peri_m2_vote_vol_rank_13 : 3;
+        unsigned int peri_m2_vote_vol_rank_14 : 3;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_peri_m2_vote_vol_rank_10_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_peri_m2_vote_vol_rank_10_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_peri_m2_vote_vol_rank_11_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_peri_m2_vote_vol_rank_11_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_peri_m2_vote_vol_rank_12_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_peri_m2_vote_vol_rank_12_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_peri_m2_vote_vol_rank_13_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_peri_m2_vote_vol_rank_13_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_peri_m2_vote_vol_rank_14_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_2_peri_m2_vote_vol_rank_14_END (14)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_rank_15 : 3;
+        unsigned int reserved_0 : 3;
+        unsigned int reserved_1 : 3;
+        unsigned int reserved_2 : 3;
+        unsigned int reserved_3 : 3;
+        unsigned int reserved_4 : 1;
+        unsigned int reserved_5 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_3_peri_m2_vote_vol_rank_15_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_RANK_SFT_3_peri_m2_vote_vol_rank_15_END (2)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_vol_valid_0 : 1;
+        unsigned int peri_m2_vote_vol_valid_1 : 1;
+        unsigned int peri_m2_vote_vol_valid_2 : 1;
+        unsigned int peri_m2_vote_vol_valid_3 : 1;
+        unsigned int peri_m2_vote_vol_valid_4 : 1;
+        unsigned int peri_m2_vote_vol_valid_5 : 1;
+        unsigned int peri_m2_vote_vol_valid_6 : 1;
+        unsigned int peri_m2_vote_vol_valid_7 : 1;
+        unsigned int peri_m2_vote_vol_valid_8 : 1;
+        unsigned int peri_m2_vote_vol_valid_9 : 1;
+        unsigned int peri_m2_vote_vol_valid_10 : 1;
+        unsigned int peri_m2_vote_vol_valid_11 : 1;
+        unsigned int peri_m2_vote_vol_valid_12 : 1;
+        unsigned int peri_m2_vote_vol_valid_13 : 1;
+        unsigned int peri_m2_vote_vol_valid_14 : 1;
+        unsigned int peri_m2_vote_vol_valid_15 : 1;
+        unsigned int reserved : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_0_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_1_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_2_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_2_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_3_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_3_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_4_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_4_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_5_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_5_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_6_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_6_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_7_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_7_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_8_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_8_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_9_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_9_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_10_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_10_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_11_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_11_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_12_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_12_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_13_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_13_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_14_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_14_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_15_START (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_VOL_VALID_peri_m2_vote_vol_valid_15_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_sft_chg_0 : 1;
+        unsigned int peri_m2_vote_sft_chg_1 : 1;
+        unsigned int peri_m2_vote_sft_chg_2 : 1;
+        unsigned int peri_m2_vote_sft_chg_3 : 1;
+        unsigned int peri_m2_vote_sft_chg_4 : 1;
+        unsigned int peri_m2_vote_sft_chg_5 : 1;
+        unsigned int peri_m2_vote_sft_chg_6 : 1;
+        unsigned int peri_m2_vote_sft_chg_7 : 1;
+        unsigned int peri_m2_vote_sft_chg_8 : 1;
+        unsigned int peri_m2_vote_sft_chg_9 : 1;
+        unsigned int peri_m2_vote_sft_chg_10 : 1;
+        unsigned int peri_m2_vote_sft_chg_11 : 1;
+        unsigned int peri_m2_vote_sft_chg_12 : 1;
+        unsigned int peri_m2_vote_sft_chg_13 : 1;
+        unsigned int peri_m2_vote_sft_chg_14 : 1;
+        unsigned int peri_m2_vote_sft_chg_15 : 1;
+        unsigned int peri_m2_vote_sft_chg_0_vau_4to1 : 1;
+        unsigned int peri_m2_vote_sft_chg_1_vau_4to1 : 1;
+        unsigned int peri_m2_vote_sft_chg_2_vau_4to1 : 1;
+        unsigned int peri_m2_vote_sft_chg_3_vau_4to1 : 1;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_0_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_1_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_2_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_2_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_3_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_3_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_4_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_4_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_5_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_5_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_6_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_6_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_7_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_7_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_8_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_8_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_9_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_9_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_10_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_10_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_11_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_11_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_12_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_12_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_13_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_13_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_14_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_14_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_15_START (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_15_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_0_vau_4to1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_0_vau_4to1_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_1_vau_4to1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_1_vau_4to1_END (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_2_vau_4to1_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_2_vau_4to1_END (18)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_3_vau_4to1_START (19)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_peri_m2_vote_sft_chg_3_vau_4to1_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_soft_vol_vote_en_0 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_1 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_2 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_3 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_4 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_5 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_6 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_7 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_8 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_9 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_10 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_11 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_12 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_13 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_14 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_15 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_0_vau_4to1 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_1_vau_4to1 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_2_vau_4to1 : 1;
+        unsigned int peri_m2_soft_vol_vote_en_3_vau_4to1 : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 1;
+        unsigned int reserved_2 : 1;
+        unsigned int reserved_3 : 1;
+        unsigned int reserved_4 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_0_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_1_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_2_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_2_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_3_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_3_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_4_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_4_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_5_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_5_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_6_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_6_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_7_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_7_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_8_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_8_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_9_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_9_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_10_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_10_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_11_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_11_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_12_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_12_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_13_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_13_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_14_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_14_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_15_START (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_15_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_0_vau_4to1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_0_vau_4to1_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_1_vau_4to1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_1_vau_4to1_END (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_2_vau_4to1_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_2_vau_4to1_END (18)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_3_vau_4to1_START (19)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_CHG_BYPASS_peri_m2_soft_vol_vote_en_3_vau_4to1_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_pmu_up_hold_time : 20;
+        unsigned int peri_m2_pmu_up_step_time : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_UP_TIME_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_UP_TIME_peri_m2_pmu_up_hold_time_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_UP_TIME_peri_m2_pmu_up_hold_time_END (19)
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_UP_TIME_peri_m2_pmu_up_step_time_START (20)
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_UP_TIME_peri_m2_pmu_up_step_time_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_pmu_dn_hold_time : 20;
+        unsigned int peri_m2_pmu_dn_step_time : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_DN_TTME_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_DN_TTME_peri_m2_pmu_dn_hold_time_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_DN_TTME_peri_m2_pmu_dn_hold_time_END (19)
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_DN_TTME_peri_m2_pmu_dn_step_time_START (20)
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_TRIM_DN_TTME_peri_m2_pmu_dn_step_time_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_pmu_buck_on_time : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_PMU_BUCK_ON_TIME_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_BUCK_ON_TIME_peri_m2_pmu_buck_on_time_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_BUCK_ON_TIME_peri_m2_pmu_buck_on_time_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_pmu_buck_off_time : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_PMU_BUCK_OFF_TIME_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_BUCK_OFF_TIME_peri_m2_pmu_buck_off_time_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_PMU_BUCK_OFF_TIME_peri_m2_pmu_buck_off_time_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vol_sft_clr_0 : 1;
+        unsigned int peri_m2_vol_sft_clr_1 : 1;
+        unsigned int peri_m2_vol_sft_clr_2 : 1;
+        unsigned int peri_m2_vol_sft_clr_3 : 1;
+        unsigned int peri_m2_vol_sft_clr_4 : 1;
+        unsigned int peri_m2_vol_sft_clr_5 : 1;
+        unsigned int peri_m2_vol_sft_clr_6 : 1;
+        unsigned int peri_m2_vol_sft_clr_7 : 1;
+        unsigned int peri_m2_vol_sft_clr_8 : 1;
+        unsigned int peri_m2_vol_sft_clr_9 : 1;
+        unsigned int peri_m2_vol_sft_clr_10 : 1;
+        unsigned int peri_m2_vol_sft_clr_11 : 1;
+        unsigned int peri_m2_vol_sft_clr_12 : 1;
+        unsigned int peri_m2_vol_sft_clr_13 : 1;
+        unsigned int peri_m2_vol_sft_clr_14 : 1;
+        unsigned int peri_m2_vol_sft_clr_15 : 1;
+        unsigned int peri_m2_vol_sft_clr_0_vau_4to1 : 1;
+        unsigned int peri_m2_vol_sft_clr_1_vau_4to1 : 1;
+        unsigned int peri_m2_vol_sft_clr_2_vau_4to1 : 1;
+        unsigned int peri_m2_vol_sft_clr_3_vau_4to1 : 1;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_0_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_1_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_2_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_2_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_3_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_3_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_4_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_4_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_5_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_5_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_6_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_6_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_7_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_7_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_8_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_8_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_9_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_9_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_10_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_10_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_11_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_11_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_12_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_12_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_13_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_13_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_14_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_14_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_15_START (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_15_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_0_vau_4to1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_0_vau_4to1_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_1_vau_4to1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_1_vau_4to1_END (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_2_vau_4to1_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_2_vau_4to1_END (18)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_3_vau_4to1_START (19)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_SFT_CLR_peri_m2_vol_sft_clr_3_vau_4to1_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vol_stable_0 : 1;
+        unsigned int peri_m2_vol_stable_1 : 1;
+        unsigned int peri_m2_vol_stable_2 : 1;
+        unsigned int peri_m2_vol_stable_3 : 1;
+        unsigned int peri_m2_vol_stable_4 : 1;
+        unsigned int peri_m2_vol_stable_5 : 1;
+        unsigned int peri_m2_vol_stable_6 : 1;
+        unsigned int peri_m2_vol_stable_7 : 1;
+        unsigned int peri_m2_vol_stable_8 : 1;
+        unsigned int peri_m2_vol_stable_9 : 1;
+        unsigned int peri_m2_vol_stable_10 : 1;
+        unsigned int peri_m2_vol_stable_11 : 1;
+        unsigned int peri_m2_vol_stable_12 : 1;
+        unsigned int peri_m2_vol_stable_13 : 1;
+        unsigned int peri_m2_vol_stable_14 : 1;
+        unsigned int peri_m2_vol_stable_15 : 1;
+        unsigned int peri_m2_vol_stable_vau_0 : 1;
+        unsigned int peri_m2_vol_stable_vau_1 : 1;
+        unsigned int peri_m2_vol_stable_vau_2 : 1;
+        unsigned int peri_m2_vol_stable_vau_3 : 1;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_0_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_1_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_2_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_2_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_3_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_3_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_4_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_4_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_5_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_5_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_6_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_6_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_7_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_7_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_8_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_8_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_9_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_9_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_10_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_10_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_11_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_11_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_12_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_12_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_13_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_13_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_14_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_14_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_15_START (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_15_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_vau_0_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_vau_0_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_vau_1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_vau_1_END (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_vau_2_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_vau_2_END (18)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_vau_3_START (19)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_STABLE_peri_m2_vol_stable_vau_3_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_init_vol_idx_vau_0 : 8;
+        unsigned int peri_m2_init_vol_req_vau_0 : 1;
+        unsigned int peri_m2_init_vol_idx_vau_1 : 8;
+        unsigned int peri_m2_init_vol_req_vau_1 : 1;
+        unsigned int peri_m2_init_vol_idx_vau_2 : 8;
+        unsigned int peri_m2_init_vol_req_vau_2 : 1;
+        unsigned int reserved : 5;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_peri_m2_init_vol_idx_vau_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_peri_m2_init_vol_idx_vau_0_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_peri_m2_init_vol_req_vau_0_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_peri_m2_init_vol_req_vau_0_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_peri_m2_init_vol_idx_vau_1_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_peri_m2_init_vol_idx_vau_1_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_peri_m2_init_vol_req_vau_1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_peri_m2_init_vol_req_vau_1_END (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_peri_m2_init_vol_idx_vau_2_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_peri_m2_init_vol_idx_vau_2_END (25)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_peri_m2_init_vol_req_vau_2_START (26)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG0_peri_m2_init_vol_req_vau_2_END (26)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_init_vol_idx_vau_3 : 8;
+        unsigned int peri_m2_init_vol_req_vau_3 : 1;
+        unsigned int peri_m2_init_vol_idx_vau_4to1 : 8;
+        unsigned int peri_m2_init_vol_req_vau_4to1 : 1;
+        unsigned int peri_m2_sft_buck_vol_idx : 8;
+        unsigned int peri_m2_sft_buck_on_req : 1;
+        unsigned int peri_m2_sft_buck_off_req : 1;
+        unsigned int peri_m2_sft_buck_onoff_req_en : 1;
+        unsigned int reserved : 3;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_init_vol_idx_vau_3_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_init_vol_idx_vau_3_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_init_vol_req_vau_3_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_init_vol_req_vau_3_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_init_vol_idx_vau_4to1_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_init_vol_idx_vau_4to1_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_init_vol_req_vau_4to1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_init_vol_req_vau_4to1_END (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_sft_buck_vol_idx_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_sft_buck_vol_idx_END (25)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_sft_buck_on_req_START (26)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_sft_buck_on_req_END (26)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_sft_buck_off_req_START (27)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_sft_buck_off_req_END (27)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_sft_buck_onoff_req_en_START (28)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INIT_VOL_CONFIG1_peri_m2_sft_buck_onoff_req_en_END (28)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_sft_fix_vol_idx : 8;
+        unsigned int peri_m2_sft_fix_vol : 1;
+        unsigned int peri_m2_sft_fix_vol_req : 1;
+        unsigned int reserved : 22;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_FIX_VOL_CONFIG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_FIX_VOL_CONFIG_peri_m2_sft_fix_vol_idx_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_FIX_VOL_CONFIG_peri_m2_sft_fix_vol_idx_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_FIX_VOL_CONFIG_peri_m2_sft_fix_vol_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_FIX_VOL_CONFIG_peri_m2_sft_fix_vol_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_FIX_VOL_CONFIG_peri_m2_sft_fix_vol_req_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_FIX_VOL_CONFIG_peri_m2_sft_fix_vol_req_END (9)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_intr_lpm3_msk : 16;
+        unsigned int peri_m2_intr_cpu_msk : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_INTR_M3ORCPU_MSK_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_M3ORCPU_MSK_peri_m2_intr_lpm3_msk_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_M3ORCPU_MSK_peri_m2_intr_lpm3_msk_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_M3ORCPU_MSK_peri_m2_intr_cpu_msk_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_M3ORCPU_MSK_peri_m2_intr_cpu_msk_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_cur_max_vol : 8;
+        unsigned int peri_m2_nxt_max_vol : 8;
+        unsigned int reserved_0 : 8;
+        unsigned int reserved_1 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOL_READ_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_READ_peri_m2_cur_max_vol_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_READ_peri_m2_cur_max_vol_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_READ_peri_m2_nxt_max_vol_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_READ_peri_m2_nxt_max_vol_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_pmu_vol_idx_spmi : 8;
+        unsigned int peri_m2_pmu_vol_chg_spmi : 1;
+        unsigned int intr_peri_m2_dvs_stat_pmc2lpm3 : 1;
+        unsigned int intr_peri_m2_dvs_stat_pmc2acpu : 1;
+        unsigned int peri_m2_pmu_vol_ack_spmi : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 1;
+        unsigned int peri_m2_buck_on_off_stable : 1;
+        unsigned int reserved_2 : 3;
+        unsigned int peri_m2_buck_ctrl_cur_stat : 3;
+        unsigned int reserved_3 : 11;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_peri_m2_pmu_vol_idx_spmi_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_peri_m2_pmu_vol_idx_spmi_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_peri_m2_pmu_vol_chg_spmi_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_peri_m2_pmu_vol_chg_spmi_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_intr_peri_m2_dvs_stat_pmc2lpm3_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_intr_peri_m2_dvs_stat_pmc2lpm3_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_intr_peri_m2_dvs_stat_pmc2acpu_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_intr_peri_m2_dvs_stat_pmc2acpu_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_peri_m2_pmu_vol_ack_spmi_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_peri_m2_pmu_vol_ack_spmi_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_peri_m2_buck_on_off_stable_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_peri_m2_buck_on_off_stable_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_peri_m2_buck_ctrl_cur_stat_START (18)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_OUTPUT_READ_peri_m2_buck_ctrl_cur_stat_END (20)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vote_sft_vol_idx_0_vau_4to1 : 8;
+        unsigned int peri_m2_vote_sft_vol_idx_1_vau_4to1 : 8;
+        unsigned int peri_m2_vote_sft_vol_idx_2_vau_4to1 : 8;
+        unsigned int peri_m2_vote_sft_vol_idx_3_vau_4to1 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_HRD_VOL_IDX_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_HRD_VOL_IDX_peri_m2_vote_sft_vol_idx_0_vau_4to1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_HRD_VOL_IDX_peri_m2_vote_sft_vol_idx_0_vau_4to1_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_HRD_VOL_IDX_peri_m2_vote_sft_vol_idx_1_vau_4to1_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_HRD_VOL_IDX_peri_m2_vote_sft_vol_idx_1_vau_4to1_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_HRD_VOL_IDX_peri_m2_vote_sft_vol_idx_2_vau_4to1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_HRD_VOL_IDX_peri_m2_vote_sft_vol_idx_2_vau_4to1_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_HRD_VOL_IDX_peri_m2_vote_sft_vol_idx_3_vau_4to1_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOTE_SFT_HRD_VOL_IDX_peri_m2_vote_sft_vol_idx_3_vau_4to1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_stat_time_hold : 20;
+        unsigned int reserved : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_STAT_TIME_HOLD_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_STAT_TIME_HOLD_peri_m2_stat_time_hold_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_STAT_TIME_HOLD_peri_m2_stat_time_hold_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_intr_bypass_0 : 1;
+        unsigned int peri_m2_intr_bypass_1 : 1;
+        unsigned int peri_m2_intr_bypass_2 : 1;
+        unsigned int peri_m2_intr_bypass_3 : 1;
+        unsigned int peri_m2_intr_bypass_4 : 1;
+        unsigned int peri_m2_intr_bypass_5 : 1;
+        unsigned int peri_m2_intr_bypass_6 : 1;
+        unsigned int peri_m2_intr_bypass_7 : 1;
+        unsigned int peri_m2_intr_bypass_8 : 1;
+        unsigned int peri_m2_intr_bypass_9 : 1;
+        unsigned int peri_m2_intr_bypass_10 : 1;
+        unsigned int peri_m2_intr_bypass_11 : 1;
+        unsigned int peri_m2_intr_bypass_12 : 1;
+        unsigned int peri_m2_intr_bypass_13 : 1;
+        unsigned int peri_m2_intr_bypass_14 : 1;
+        unsigned int peri_m2_intr_bypass_15 : 1;
+        unsigned int reserved : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_0_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_1_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_1_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_2_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_2_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_3_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_3_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_4_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_4_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_5_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_5_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_6_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_6_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_7_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_7_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_8_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_8_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_9_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_9_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_10_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_10_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_11_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_11_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_12_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_12_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_13_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_13_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_14_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_14_END (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_15_START (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_SFT_peri_m2_intr_bypass_15_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_intr_bypass_16 : 1;
+        unsigned int peri_m2_intr_bypass_17 : 1;
+        unsigned int peri_m2_intr_bypass_18 : 1;
+        unsigned int peri_m2_intr_bypass_19 : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 3;
+        unsigned int reserved_2 : 1;
+        unsigned int reserved_3 : 1;
+        unsigned int reserved_4 : 1;
+        unsigned int reserved_5 : 1;
+        unsigned int reserved_6 : 1;
+        unsigned int reserved_7 : 1;
+        unsigned int reserved_8 : 1;
+        unsigned int reserved_9 : 1;
+        unsigned int reserved_10 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_HRD_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_HRD_peri_m2_intr_bypass_16_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_HRD_peri_m2_intr_bypass_16_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_HRD_peri_m2_intr_bypass_17_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_HRD_peri_m2_intr_bypass_17_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_HRD_peri_m2_intr_bypass_18_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_HRD_peri_m2_intr_bypass_18_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_HRD_peri_m2_intr_bypass_19_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_BYPASS_HRD_peri_m2_intr_bypass_19_END (3)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vol_chg_flag : 21;
+        unsigned int peri_m2_separate_vset_ven_ctrl_bypass : 1;
+        unsigned int peri_m2_fer_buck_pg_bypass : 1;
+        unsigned int peri_m2_fer_buck_vok_bypass : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 7;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOL_CHG_FLAG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_CHG_FLAG_peri_m2_vol_chg_flag_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_CHG_FLAG_peri_m2_vol_chg_flag_END (20)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_CHG_FLAG_peri_m2_separate_vset_ven_ctrl_bypass_START (21)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_CHG_FLAG_peri_m2_separate_vset_ven_ctrl_bypass_END (21)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_CHG_FLAG_peri_m2_fer_buck_pg_bypass_START (22)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_CHG_FLAG_peri_m2_fer_buck_pg_bypass_END (22)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_CHG_FLAG_peri_m2_fer_buck_vok_bypass_START (23)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_CHG_FLAG_peri_m2_fer_buck_vok_bypass_END (23)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_spmi_hold_time : 20;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 11;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_SPMI_HOLD_TIME_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_SPMI_HOLD_TIME_peri_m2_spmi_hold_time_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_SPMI_HOLD_TIME_peri_m2_spmi_hold_time_END (19)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int fer_buck_pgvok_req_peri_m2 : 1;
+        unsigned int fer_buck_pgvok_ack_peri_m2 : 1;
+        unsigned int reserved : 30;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_FER_REQ_ACK_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_FER_REQ_ACK_fer_buck_pgvok_req_peri_m2_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_FER_REQ_ACK_fer_buck_pgvok_req_peri_m2_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_FER_REQ_ACK_fer_buck_pgvok_ack_peri_m2_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_FER_REQ_ACK_fer_buck_pgvok_ack_peri_m2_END (1)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_vol_profile_rank_idx : 8;
+        unsigned int reserved_0 : 8;
+        unsigned int peri_m2_dvs_profile_status : 1;
+        unsigned int reserved_1 : 1;
+        unsigned int reserved_2 : 14;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_VOL_DOZE_VOTE_CTRL_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_DOZE_VOTE_CTRL_peri_m2_vol_profile_rank_idx_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_DOZE_VOTE_CTRL_peri_m2_vol_profile_rank_idx_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_DOZE_VOTE_CTRL_peri_m2_dvs_profile_status_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_VOL_DOZE_VOTE_CTRL_peri_m2_dvs_profile_status_END (16)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_dvs_spmi_hold_timeout_flag : 1;
+        unsigned int peri_m2_dvs_buck_onoff_timeout_flag : 1;
+        unsigned int peri_m2_dvs_fer_err_flag : 1;
+        unsigned int peri_m2_dvs_timeout_flag_clr : 1;
+        unsigned int peri_m2_vau_vol_equal_flag_vau_0 : 1;
+        unsigned int peri_m2_vau_vol_equal_flag_clr_vau_0 : 1;
+        unsigned int peri_m2_vau_vol_equal_flag_vau_1 : 1;
+        unsigned int peri_m2_vau_vol_equal_flag_clr_vau_1 : 1;
+        unsigned int peri_m2_vau_vol_equal_flag_vau_2 : 1;
+        unsigned int peri_m2_vau_vol_equal_flag_clr_vau_2 : 1;
+        unsigned int peri_m2_vau_vol_equal_flag_vau_3 : 1;
+        unsigned int peri_m2_vau_vol_equal_flag_clr_vau_3 : 1;
+        unsigned int peri_m2_vau_vol_equal_flag_vau_4to1 : 1;
+        unsigned int peri_m2_vau_vol_equal_flag_clr_vau_4to1 : 1;
+        unsigned int peri_m2_vau_cur_stat_vau_0 : 3;
+        unsigned int peri_m2_vau_cur_stat_vau_1 : 3;
+        unsigned int peri_m2_vau_cur_stat_vau_2 : 3;
+        unsigned int peri_m2_vau_cur_stat_vau_3 : 3;
+        unsigned int peri_m2_vau_cur_stat_vau_4to1 : 3;
+        unsigned int reserved : 3;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_dvs_spmi_hold_timeout_flag_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_dvs_spmi_hold_timeout_flag_END (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_dvs_buck_onoff_timeout_flag_START (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_dvs_buck_onoff_timeout_flag_END (1)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_dvs_fer_err_flag_START (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_dvs_fer_err_flag_END (2)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_dvs_timeout_flag_clr_START (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_dvs_timeout_flag_clr_END (3)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_vau_0_START (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_vau_0_END (4)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_clr_vau_0_START (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_clr_vau_0_END (5)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_vau_1_START (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_vau_1_END (6)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_clr_vau_1_START (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_clr_vau_1_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_vau_2_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_vau_2_END (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_clr_vau_2_START (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_clr_vau_2_END (9)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_vau_3_START (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_vau_3_END (10)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_clr_vau_3_START (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_clr_vau_3_END (11)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_vau_4to1_START (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_vau_4to1_END (12)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_clr_vau_4to1_START (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_vol_equal_flag_clr_vau_4to1_END (13)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_cur_stat_vau_0_START (14)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_cur_stat_vau_0_END (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_cur_stat_vau_1_START (17)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_cur_stat_vau_1_END (19)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_cur_stat_vau_2_START (20)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_cur_stat_vau_2_END (22)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_cur_stat_vau_3_START (23)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_cur_stat_vau_3_END (25)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_cur_stat_vau_4to1_START (26)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT0_peri_m2_vau_cur_stat_vau_4to1_END (28)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_cur_max_vol_vau_0 : 8;
+        unsigned int peri_m2_nxt_max_vol_vau_0 : 8;
+        unsigned int peri_m2_cur_max_vol_vau_1 : 8;
+        unsigned int peri_m2_nxt_max_vol_vau_1 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT1_peri_m2_cur_max_vol_vau_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT1_peri_m2_cur_max_vol_vau_0_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT1_peri_m2_nxt_max_vol_vau_0_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT1_peri_m2_nxt_max_vol_vau_0_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT1_peri_m2_cur_max_vol_vau_1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT1_peri_m2_cur_max_vol_vau_1_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT1_peri_m2_nxt_max_vol_vau_1_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT1_peri_m2_nxt_max_vol_vau_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_cur_max_vol_vau_2 : 8;
+        unsigned int peri_m2_nxt_max_vol_vau_2 : 8;
+        unsigned int peri_m2_cur_max_vol_vau_3 : 8;
+        unsigned int peri_m2_nxt_max_vol_vau_3 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT2_peri_m2_cur_max_vol_vau_2_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT2_peri_m2_cur_max_vol_vau_2_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT2_peri_m2_nxt_max_vol_vau_2_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT2_peri_m2_nxt_max_vol_vau_2_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT2_peri_m2_cur_max_vol_vau_3_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT2_peri_m2_cur_max_vol_vau_3_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT2_peri_m2_nxt_max_vol_vau_3_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT2_peri_m2_nxt_max_vol_vau_3_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_buck_ctrl_cur_vol_idx : 8;
+        unsigned int peri_m2_buck_ctrl_nxt_vol_idx : 8;
+        unsigned int reserved_0 : 8;
+        unsigned int reserved_1 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT3_peri_m2_buck_ctrl_cur_vol_idx_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT3_peri_m2_buck_ctrl_cur_vol_idx_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT3_peri_m2_buck_ctrl_nxt_vol_idx_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT3_peri_m2_buck_ctrl_nxt_vol_idx_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_valid_vol_vote_idx_0_vau_0 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_1_vau_0 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_2_vau_0 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_3_vau_0 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT4_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT4_peri_m2_valid_vol_vote_idx_0_vau_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT4_peri_m2_valid_vol_vote_idx_0_vau_0_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT4_peri_m2_valid_vol_vote_idx_1_vau_0_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT4_peri_m2_valid_vol_vote_idx_1_vau_0_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT4_peri_m2_valid_vol_vote_idx_2_vau_0_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT4_peri_m2_valid_vol_vote_idx_2_vau_0_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT4_peri_m2_valid_vol_vote_idx_3_vau_0_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT4_peri_m2_valid_vol_vote_idx_3_vau_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_valid_vol_vote_idx_4_vau_1 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_5_vau_1 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_6_vau_1 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_7_vau_1 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT5_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT5_peri_m2_valid_vol_vote_idx_4_vau_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT5_peri_m2_valid_vol_vote_idx_4_vau_1_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT5_peri_m2_valid_vol_vote_idx_5_vau_1_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT5_peri_m2_valid_vol_vote_idx_5_vau_1_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT5_peri_m2_valid_vol_vote_idx_6_vau_1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT5_peri_m2_valid_vol_vote_idx_6_vau_1_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT5_peri_m2_valid_vol_vote_idx_7_vau_1_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT5_peri_m2_valid_vol_vote_idx_7_vau_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_valid_vol_vote_idx_8_vau_2 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_9_vau_2 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_10_vau_2 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_11_vau_2 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT6_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT6_peri_m2_valid_vol_vote_idx_8_vau_2_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT6_peri_m2_valid_vol_vote_idx_8_vau_2_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT6_peri_m2_valid_vol_vote_idx_9_vau_2_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT6_peri_m2_valid_vol_vote_idx_9_vau_2_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT6_peri_m2_valid_vol_vote_idx_10_vau_2_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT6_peri_m2_valid_vol_vote_idx_10_vau_2_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT6_peri_m2_valid_vol_vote_idx_11_vau_2_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT6_peri_m2_valid_vol_vote_idx_11_vau_2_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_valid_vol_vote_idx_12_vau_3 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_13_vau_3 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_14_vau_3 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_15_vau_3 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT7_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT7_peri_m2_valid_vol_vote_idx_12_vau_3_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT7_peri_m2_valid_vol_vote_idx_12_vau_3_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT7_peri_m2_valid_vol_vote_idx_13_vau_3_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT7_peri_m2_valid_vol_vote_idx_13_vau_3_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT7_peri_m2_valid_vol_vote_idx_14_vau_3_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT7_peri_m2_valid_vol_vote_idx_14_vau_3_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT7_peri_m2_valid_vol_vote_idx_15_vau_3_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT7_peri_m2_valid_vol_vote_idx_15_vau_3_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_valid_vol_vote_idx_0_vau_4to1 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_1_vau_4to1 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_2_vau_4to1 : 8;
+        unsigned int peri_m2_valid_vol_vote_idx_3_vau_4to1 : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT8_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT8_peri_m2_valid_vol_vote_idx_0_vau_4to1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT8_peri_m2_valid_vol_vote_idx_0_vau_4to1_END (7)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT8_peri_m2_valid_vol_vote_idx_1_vau_4to1_START (8)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT8_peri_m2_valid_vol_vote_idx_1_vau_4to1_END (15)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT8_peri_m2_valid_vol_vote_idx_2_vau_4to1_START (16)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT8_peri_m2_valid_vol_vote_idx_2_vau_4to1_END (23)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT8_peri_m2_valid_vol_vote_idx_3_vau_4to1_START (24)
+#define SOC_MEDIA_PMCTRL_PERI_M2_DVS_STAT8_peri_m2_valid_vol_vote_idx_3_vau_4to1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_m2_intr_mediaxpu_msk : 16;
+        unsigned int reserved : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_M2_INTR_MEDIAXPU_MSK_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_MEDIAXPU_MSK_peri_m2_intr_mediaxpu_msk_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_M2_INTR_MEDIAXPU_MSK_peri_m2_intr_mediaxpu_msk_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_sw : 4;
+        unsigned int apb_sw_init : 1;
+        unsigned int reserved : 27;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_SW_CFG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_SW_CFG_apb_sw_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_SW_CFG_apb_sw_END (3)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_SW_CFG_apb_sw_init_START (4)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_SW_CFG_apb_sw_init_END (4)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_div : 6;
+        unsigned int apb_div_init : 1;
+        unsigned int reserved : 25;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_DIV_CFG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_DIV_CFG_apb_div_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_DIV_CFG_apb_div_END (5)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_DIV_CFG_apb_div_init_START (6)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_DIV_CFG_apb_div_init_END (6)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_pll_en0 : 1;
+        unsigned int apb_pll_en1 : 1;
+        unsigned int apb_pll_en2 : 1;
+        unsigned int apb_pll_en3 : 1;
+        unsigned int apb_pll_gt0 : 1;
+        unsigned int apb_pll_gt1 : 1;
+        unsigned int apb_pll_gt2 : 1;
+        unsigned int apb_pll_gt3 : 1;
+        unsigned int reserved_0 : 8;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_en0_START (0)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_en0_END (0)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_en1_START (1)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_en1_END (1)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_en2_START (2)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_en2_END (2)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_en3_START (3)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_en3_END (3)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_gt0_START (4)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_gt0_END (4)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_gt1_START (5)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_gt1_END (5)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_gt2_START (6)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_gt2_END (6)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_gt3_START (7)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_PLL_CFG_apb_pll_gt3_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_vol_idx : 8;
+        unsigned int apb_vol_init : 1;
+        unsigned int reserved : 23;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VOL_CFG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VOL_CFG_apb_vol_idx_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VOL_CFG_apb_vol_idx_END (7)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VOL_CFG_apb_vol_init_START (8)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VOL_CFG_apb_vol_init_END (8)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_vol_chg_init_pulse : 1;
+        unsigned int apb_div_chg_init_pulse : 1;
+        unsigned int apb_sw_chg_init_pulse : 1;
+        unsigned int apb_pll_en3_init : 1;
+        unsigned int apb_pll_en2_init : 1;
+        unsigned int apb_pll_en1_init : 1;
+        unsigned int apb_pll_en0_init : 1;
+        unsigned int apb_pll_gt3_init : 1;
+        unsigned int apb_pll_gt2_init : 1;
+        unsigned int apb_pll_gt1_init : 1;
+        unsigned int apb_pll_gt0_init : 1;
+        unsigned int reserved : 21;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_vol_chg_init_pulse_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_vol_chg_init_pulse_END (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_div_chg_init_pulse_START (1)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_div_chg_init_pulse_END (1)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_sw_chg_init_pulse_START (2)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_sw_chg_init_pulse_END (2)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_en3_init_START (3)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_en3_init_END (3)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_en2_init_START (4)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_en2_init_END (4)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_en1_init_START (5)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_en1_init_END (5)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_en0_init_START (6)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_en0_init_END (6)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_gt3_init_START (7)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_gt3_init_END (7)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_gt2_init_START (8)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_gt2_init_END (8)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_gt1_init_START (9)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_gt1_init_END (9)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_gt0_init_START (10)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_APB_VF_CFG_apb_pll_gt0_init_END (10)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int reserved : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_APB_SF_INSTR_LIST_UNION;
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int reserved : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_APB_HW_INSTR_LIST_UNION;
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_pclk_cnt_us : 10;
+        unsigned int apb_vol_stable_cnt : 4;
+        unsigned int apb_sw_stable_cnt : 4;
+        unsigned int apb_sw_ack_cnt : 8;
+        unsigned int apb_div_stable_cnt : 4;
+        unsigned int reserved : 2;
+    } reg;
+} SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_apb_pclk_cnt_us_START (0)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_apb_pclk_cnt_us_END (9)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_apb_vol_stable_cnt_START (10)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_apb_vol_stable_cnt_END (13)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_apb_sw_stable_cnt_START (14)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_apb_sw_stable_cnt_END (17)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_apb_sw_ack_cnt_START (18)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_apb_sw_ack_cnt_END (25)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_apb_div_stable_cnt_START (26)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG1_apb_div_stable_cnt_END (29)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_div_ack_cnt : 8;
+        unsigned int apb_pll_lock_mode : 1;
+        unsigned int apb_lock_time : 13;
+        unsigned int apb_pll_gt_stable_cnt : 4;
+        unsigned int reserved_0 : 4;
+        unsigned int reserved_1 : 2;
+    } reg;
+} SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG2_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG2_apb_div_ack_cnt_START (0)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG2_apb_div_ack_cnt_END (7)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG2_apb_pll_lock_mode_START (8)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG2_apb_pll_lock_mode_END (8)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG2_apb_lock_time_START (9)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG2_apb_lock_time_END (21)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG2_apb_pll_gt_stable_cnt_START (22)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG2_apb_pll_gt_stable_cnt_END (25)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_reload_instr_stable_cnt : 16;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 1;
+        unsigned int reserved_2 : 1;
+        unsigned int reserved_3 : 1;
+        unsigned int reserved_4 : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG3_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG3_apb_reload_instr_stable_cnt_START (0)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_CNT_CFG3_apb_reload_instr_stable_cnt_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_intr_sf_dvfs_bypass : 1;
+        unsigned int apb_intr_sf_dvfs_m3orcpu_msk : 1;
+        unsigned int apb_intr_hw_dvfs_bypass : 1;
+        unsigned int apb_intr_hw_dvfs_m3orcpu_msk : 1;
+        unsigned int apb_inter_instr_bypass : 1;
+        unsigned int reserved : 27;
+    } reg;
+} SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_apb_intr_sf_dvfs_bypass_START (0)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_apb_intr_sf_dvfs_bypass_END (0)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_apb_intr_sf_dvfs_m3orcpu_msk_START (1)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_apb_intr_sf_dvfs_m3orcpu_msk_END (1)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_apb_intr_hw_dvfs_bypass_START (2)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_apb_intr_hw_dvfs_bypass_END (2)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_apb_intr_hw_dvfs_m3orcpu_msk_START (3)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_apb_intr_hw_dvfs_m3orcpu_msk_END (3)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_apb_inter_instr_bypass_START (4)
+#define SOC_MEDIA_PMCTRL_DSS_DVFS_INTR_CFG_apb_inter_instr_bypass_END (4)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_intr_sf_dvfs_clr : 1;
+        unsigned int apb_sf_escape : 1;
+        unsigned int apb_sf_next_step : 1;
+        unsigned int apb_sf_dvfs_en : 1;
+        unsigned int apb_sf_instr_clr : 1;
+        unsigned int reserved : 27;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_apb_intr_sf_dvfs_clr_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_apb_intr_sf_dvfs_clr_END (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_apb_sf_escape_START (1)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_apb_sf_escape_END (1)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_apb_sf_next_step_START (2)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_apb_sf_next_step_END (2)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_apb_sf_dvfs_en_START (3)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_apb_sf_dvfs_en_END (3)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_apb_sf_instr_clr_START (4)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_CH_apb_sf_instr_clr_END (4)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_rd_sf_cur_instr_num : 4;
+        unsigned int apb_rd_sf_cur_stat : 4;
+        unsigned int apb_rd_sf_ch_vol_idx : 8;
+        unsigned int apb_rd_intr_sf_dvfs_raw_stat : 1;
+        unsigned int apb_rd_intr_sf_dvfs_stat : 1;
+        unsigned int apb_rd_sf_ch_dvfs_busy : 1;
+        unsigned int reserved : 13;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_apb_rd_sf_cur_instr_num_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_apb_rd_sf_cur_instr_num_END (3)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_apb_rd_sf_cur_stat_START (4)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_apb_rd_sf_cur_stat_END (7)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_apb_rd_sf_ch_vol_idx_START (8)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_apb_rd_sf_ch_vol_idx_END (15)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_apb_rd_intr_sf_dvfs_raw_stat_START (16)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_apb_rd_intr_sf_dvfs_raw_stat_END (16)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_apb_rd_intr_sf_dvfs_stat_START (17)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_apb_rd_intr_sf_dvfs_stat_END (17)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_apb_rd_sf_ch_dvfs_busy_START (18)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_SF_RD_apb_rd_sf_ch_dvfs_busy_END (18)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_intr_hw_dvfs_clr : 1;
+        unsigned int apb_hw_escape : 1;
+        unsigned int apb_hw_next_step : 1;
+        unsigned int apb_hw_flush_pls_init : 1;
+        unsigned int apb_hw_instr_clr : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int apb_hw_dss2ddr_dfs_intr_clr : 1;
+        unsigned int apb_hw_dss2ddr_escape : 1;
+        unsigned int apb_hw_dss2ddr_next_step : 1;
+        unsigned int apb_hw_dss2ddr_flush_pls_init : 1;
+        unsigned int apb_dss2ddr_instr_clr : 1;
+        unsigned int reserved_1 : 1;
+        unsigned int apb_hw_dss2qice_dfs_intr_clr : 1;
+        unsigned int apb_hw_dss2qice_escape : 1;
+        unsigned int apb_hw_dss2qice_next_step : 1;
+        unsigned int apb_hw_dss2qice_flush_pls_init : 1;
+        unsigned int apb_dss2qice_instr_clr : 1;
+        unsigned int reserved_2 : 1;
+        unsigned int reserved_3 : 1;
+        unsigned int reserved_4 : 1;
+        unsigned int reserved_5 : 12;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_intr_hw_dvfs_clr_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_intr_hw_dvfs_clr_END (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_escape_START (1)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_escape_END (1)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_next_step_START (2)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_next_step_END (2)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_flush_pls_init_START (3)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_flush_pls_init_END (3)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_instr_clr_START (4)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_instr_clr_END (4)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2ddr_dfs_intr_clr_START (6)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2ddr_dfs_intr_clr_END (6)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2ddr_escape_START (7)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2ddr_escape_END (7)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2ddr_next_step_START (8)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2ddr_next_step_END (8)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2ddr_flush_pls_init_START (9)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2ddr_flush_pls_init_END (9)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_dss2ddr_instr_clr_START (10)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_dss2ddr_instr_clr_END (10)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2qice_dfs_intr_clr_START (12)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2qice_dfs_intr_clr_END (12)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2qice_escape_START (13)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2qice_escape_END (13)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2qice_next_step_START (14)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2qice_next_step_END (14)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2qice_flush_pls_init_START (15)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_hw_dss2qice_flush_pls_init_END (15)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_dss2qice_instr_clr_START (16)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_CH_apb_dss2qice_instr_clr_END (16)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_rd_hw_cur_instr_num : 6;
+        unsigned int apb_rd_hw_cur_stat : 4;
+        unsigned int apb_rd_hw_ch_vol_idx : 8;
+        unsigned int apb_rd_intr_hw_dvfs_raw_stat : 1;
+        unsigned int apb_rd_intr_hw_dvfs_stat : 1;
+        unsigned int apb_rd_hw_ch_dvfs_busy : 1;
+        unsigned int apb_rd_inter_instr_raw_stat : 1;
+        unsigned int apb_rd_inter_instr_stat : 1;
+        unsigned int reserved : 9;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_hw_cur_instr_num_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_hw_cur_instr_num_END (5)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_hw_cur_stat_START (6)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_hw_cur_stat_END (9)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_hw_ch_vol_idx_START (10)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_hw_ch_vol_idx_END (17)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_intr_hw_dvfs_raw_stat_START (18)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_intr_hw_dvfs_raw_stat_END (18)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_intr_hw_dvfs_stat_START (19)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_intr_hw_dvfs_stat_END (19)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_hw_ch_dvfs_busy_START (20)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_hw_ch_dvfs_busy_END (20)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_inter_instr_raw_stat_START (21)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_inter_instr_raw_stat_END (21)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_inter_instr_stat_START (22)
+#define SOC_MEDIA_PMCTRL_HW_DSS_DVFS_HW_RD_apb_rd_inter_instr_stat_END (22)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_hw_dvfs_enable : 1;
+        unsigned int apb_hw_instr_lock : 1;
+        unsigned int flush_pls_bypass : 1;
+        unsigned int apb_hw_dss2ddr_dfs_enable : 1;
+        unsigned int apb_dss2ddr_instr_lock : 1;
+        unsigned int vsync_pls_bypass : 1;
+        unsigned int apb_hw_dss2qice_dfs_enable : 1;
+        unsigned int apb_dss2qice_instr_lock : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int apb_hw_ch_fps_cnt : 3;
+        unsigned int apb_hw_ch_fps_cnt_dss_bypass : 1;
+        unsigned int apb_hw_ch_fps_cnt_dss2qice_bypass : 1;
+        unsigned int apb_hw_ch_fps_cnt_dss2ddr_bypass : 1;
+        unsigned int reserved_1 : 1;
+        unsigned int reserved_2 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_dvfs_enable_START (0)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_dvfs_enable_END (0)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_instr_lock_START (1)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_instr_lock_END (1)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_flush_pls_bypass_START (2)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_flush_pls_bypass_END (2)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_dss2ddr_dfs_enable_START (3)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_dss2ddr_dfs_enable_END (3)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_dss2ddr_instr_lock_START (4)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_dss2ddr_instr_lock_END (4)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_vsync_pls_bypass_START (5)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_vsync_pls_bypass_END (5)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_dss2qice_dfs_enable_START (6)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_dss2qice_dfs_enable_END (6)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_dss2qice_instr_lock_START (7)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_dss2qice_instr_lock_END (7)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_ch_fps_cnt_START (9)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_ch_fps_cnt_END (11)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_ch_fps_cnt_dss_bypass_START (12)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_ch_fps_cnt_dss_bypass_END (12)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_ch_fps_cnt_dss2qice_bypass_START (13)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_ch_fps_cnt_dss2qice_bypass_END (13)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_ch_fps_cnt_dss2ddr_bypass_START (14)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_HW_EN_apb_hw_ch_fps_cnt_dss2ddr_bypass_END (14)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_sf_instr_lock : 1;
+        unsigned int reserved_0 : 15;
+        unsigned int reserved_1 : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_APB_DSS_DVFS_SF_EN_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_SF_EN_apb_sf_instr_lock_START (0)
+#define SOC_MEDIA_PMCTRL_APB_DSS_DVFS_SF_EN_apb_sf_instr_lock_END (0)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_dss_avs_vol_idx_0 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_DSS_AVS_VOL_IDX_0_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_DSS_AVS_VOL_IDX_0_peri_dss_avs_vol_idx_0_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_DSS_AVS_VOL_IDX_0_peri_dss_avs_vol_idx_0_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int peri_dss_avs_vol_idx_1 : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_PERI_DSS_AVS_VOL_IDX_1_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PERI_DSS_AVS_VOL_IDX_1_peri_dss_avs_vol_idx_1_START (0)
+#define SOC_MEDIA_PMCTRL_PERI_DSS_AVS_VOL_IDX_1_peri_dss_avs_vol_idx_1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int reserved : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_APB_DSS2DDR_INSTR_LIST_UNION;
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int reserved : 32;
+    } reg;
+} SOC_MEDIA_PMCTRL_APB_DSS2QICE_INSTR_LIST_UNION;
+#endif
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_sf_dss2ddr_freq_idx : 15;
+        unsigned int apb_sf_dss2ddr_freq_chg : 1;
+        unsigned int apb_sf_dss2ddr_freq_up : 1;
+        unsigned int reserved : 15;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_SF_CFG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_SF_CFG_apb_sf_dss2ddr_freq_idx_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_SF_CFG_apb_sf_dss2ddr_freq_idx_END (14)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_SF_CFG_apb_sf_dss2ddr_freq_chg_START (15)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_SF_CFG_apb_sf_dss2ddr_freq_chg_END (15)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_SF_CFG_apb_sf_dss2ddr_freq_up_START (16)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_SF_CFG_apb_sf_dss2ddr_freq_up_END (16)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_sf_dss2qice_freq_idx : 15;
+        unsigned int apb_sf_dss2qice_freq_chg : 1;
+        unsigned int apb_sf_dss2qice_freq_up : 1;
+        unsigned int reserved : 15;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_SF_CFG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_SF_CFG_apb_sf_dss2qice_freq_idx_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_SF_CFG_apb_sf_dss2qice_freq_idx_END (14)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_SF_CFG_apb_sf_dss2qice_freq_chg_START (15)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_SF_CFG_apb_sf_dss2qice_freq_chg_END (15)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_SF_CFG_apb_sf_dss2qice_freq_up_START (16)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_SF_CFG_apb_sf_dss2qice_freq_up_END (16)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_rd_hw_dss2ddr_freq_up_flag : 1;
+        unsigned int apb_rd_sf_dss2ddr_freq_up_flag : 1;
+        unsigned int apb_hw_dss2ddr_freq_up_flag_clr : 1;
+        unsigned int apb_sf_dss2ddr_freq_up_flag_clr : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int apb_rd_hw_dss2qice_freq_up_flag : 1;
+        unsigned int apb_rd_sf_dss2qice_freq_up_flag : 1;
+        unsigned int apb_hw_dss2qice_freq_up_flag_clr : 1;
+        unsigned int apb_sf_dss2qice_freq_up_flag_clr : 1;
+        unsigned int reserved_1 : 1;
+        unsigned int reserved_2 : 22;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_rd_hw_dss2ddr_freq_up_flag_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_rd_hw_dss2ddr_freq_up_flag_END (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_rd_sf_dss2ddr_freq_up_flag_START (1)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_rd_sf_dss2ddr_freq_up_flag_END (1)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_hw_dss2ddr_freq_up_flag_clr_START (2)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_hw_dss2ddr_freq_up_flag_clr_END (2)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_sf_dss2ddr_freq_up_flag_clr_START (3)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_sf_dss2ddr_freq_up_flag_clr_END (3)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_rd_hw_dss2qice_freq_up_flag_START (5)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_rd_hw_dss2qice_freq_up_flag_END (5)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_rd_sf_dss2qice_freq_up_flag_START (6)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_rd_sf_dss2qice_freq_up_flag_END (6)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_hw_dss2qice_freq_up_flag_clr_START (7)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_hw_dss2qice_freq_up_flag_clr_END (7)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_sf_dss2qice_freq_up_flag_clr_START (8)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR2QICE_DFS_UP_FLAG_apb_sf_dss2qice_freq_up_flag_clr_END (8)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_rd_hw_dss2ddr_dfs_cur_instr_num : 5;
+        unsigned int apb_rd_hw_dss2ddr_dfs_cur_stat : 4;
+        unsigned int apb_rd_dss2ddr_freq_idx : 15;
+        unsigned int apb_rd_hw_dss2ddr_dfs_intr_raw_stat : 1;
+        unsigned int apb_rd_ddr_cur_freq_max_flag : 1;
+        unsigned int reserved : 6;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_apb_rd_hw_dss2ddr_dfs_cur_instr_num_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_apb_rd_hw_dss2ddr_dfs_cur_instr_num_END (4)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_apb_rd_hw_dss2ddr_dfs_cur_stat_START (5)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_apb_rd_hw_dss2ddr_dfs_cur_stat_END (8)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_apb_rd_dss2ddr_freq_idx_START (9)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_apb_rd_dss2ddr_freq_idx_END (23)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_apb_rd_hw_dss2ddr_dfs_intr_raw_stat_START (24)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_apb_rd_hw_dss2ddr_dfs_intr_raw_stat_END (24)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_apb_rd_ddr_cur_freq_max_flag_START (25)
+#define SOC_MEDIA_PMCTRL_HW_DSS2DDR_DFS_RD_apb_rd_ddr_cur_freq_max_flag_END (25)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_rd_hw_dss2qice_dfs_cur_instr_num : 5;
+        unsigned int apb_rd_hw_dss2qice_dfs_cur_stat : 4;
+        unsigned int apb_rd_dss2qice_freq_idx : 15;
+        unsigned int apb_rd_hw_dss2qice_dfs_intr_raw_stat : 1;
+        unsigned int apb_rd_qice_cur_freq_max_flag : 1;
+        unsigned int reserved : 6;
+    } reg;
+} SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_apb_rd_hw_dss2qice_dfs_cur_instr_num_START (0)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_apb_rd_hw_dss2qice_dfs_cur_instr_num_END (4)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_apb_rd_hw_dss2qice_dfs_cur_stat_START (5)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_apb_rd_hw_dss2qice_dfs_cur_stat_END (8)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_apb_rd_dss2qice_freq_idx_START (9)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_apb_rd_dss2qice_freq_idx_END (23)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_apb_rd_hw_dss2qice_dfs_intr_raw_stat_START (24)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_apb_rd_hw_dss2qice_dfs_intr_raw_stat_END (24)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_apb_rd_qice_cur_freq_max_flag_START (25)
+#define SOC_MEDIA_PMCTRL_HW_DSS2QICE_DFS_RD_apb_rd_qice_cur_freq_max_flag_END (25)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_ddr_cur_freq_idx : 15;
+        unsigned int apb_ddr_qice_cur_freq_msk0 : 1;
+        unsigned int apb_qice_cur_freq_idx : 15;
+        unsigned int apb_ddr_qice_cur_freq_msk1 : 1;
+    } reg;
+} SOC_MEDIA_PMCTRL_APB_DDR_QICE_CUR_FREQ_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_APB_DDR_QICE_CUR_FREQ_apb_ddr_cur_freq_idx_START (0)
+#define SOC_MEDIA_PMCTRL_APB_DDR_QICE_CUR_FREQ_apb_ddr_cur_freq_idx_END (14)
+#define SOC_MEDIA_PMCTRL_APB_DDR_QICE_CUR_FREQ_apb_ddr_qice_cur_freq_msk0_START (15)
+#define SOC_MEDIA_PMCTRL_APB_DDR_QICE_CUR_FREQ_apb_ddr_qice_cur_freq_msk0_END (15)
+#define SOC_MEDIA_PMCTRL_APB_DDR_QICE_CUR_FREQ_apb_qice_cur_freq_idx_START (16)
+#define SOC_MEDIA_PMCTRL_APB_DDR_QICE_CUR_FREQ_apb_qice_cur_freq_idx_END (30)
+#define SOC_MEDIA_PMCTRL_APB_DDR_QICE_CUR_FREQ_apb_ddr_qice_cur_freq_msk1_START (31)
+#define SOC_MEDIA_PMCTRL_APB_DDR_QICE_CUR_FREQ_apb_ddr_qice_cur_freq_msk1_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int pmc_hw_dss_dvfs_vsync_sync : 1;
+        unsigned int pmc_hw_dss_dvfs_flush_en_sync : 1;
+        unsigned int pmc_hw_dss2ddr_dfs_chg_sync : 1;
+        unsigned int pmc_hw_dss2ddr_dfs_chg_valid_sync : 1;
+        unsigned int dss2dq_valid_cnt : 4;
+        unsigned int dss2dq_chg_cnt : 8;
+        unsigned int flush_cnt : 8;
+        unsigned int vsync_cnt : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_pmc_hw_dss_dvfs_vsync_sync_START (0)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_pmc_hw_dss_dvfs_vsync_sync_END (0)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_pmc_hw_dss_dvfs_flush_en_sync_START (1)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_pmc_hw_dss_dvfs_flush_en_sync_END (1)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_pmc_hw_dss2ddr_dfs_chg_sync_START (2)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_pmc_hw_dss2ddr_dfs_chg_sync_END (2)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_pmc_hw_dss2ddr_dfs_chg_valid_sync_START (3)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_pmc_hw_dss2ddr_dfs_chg_valid_sync_END (3)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_dss2dq_valid_cnt_START (4)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_dss2dq_valid_cnt_END (7)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_dss2dq_chg_cnt_START (8)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_dss2dq_chg_cnt_END (15)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_flush_cnt_START (16)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_flush_cnt_END (23)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_vsync_cnt_START (24)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS2DQ_DEBUG_vsync_cnt_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int inter_cnt : 4;
+        unsigned int dss_dvfs_valid_cnt : 4;
+        unsigned int dss_dvfs_chg_cnt : 8;
+        unsigned int dss_doze1_enter_chg_cnt : 8;
+        unsigned int dss_doze1_wake_chg_cnt : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_inter_cnt_START (0)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_inter_cnt_END (3)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_dss_dvfs_valid_cnt_START (4)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_dss_dvfs_valid_cnt_END (7)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_dss_dvfs_chg_cnt_START (8)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_dss_dvfs_chg_cnt_END (15)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_dss_doze1_enter_chg_cnt_START (16)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_dss_doze1_enter_chg_cnt_END (23)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_dss_doze1_wake_chg_cnt_START (24)
+#define SOC_MEDIA_PMCTRL_APB_RD_DSS_DVFS_DEBUG_dss_doze1_wake_chg_cnt_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int apb_dss2dq_debug_en : 1;
+        unsigned int apb_dss2dq_valid_cnt_clr : 1;
+        unsigned int apb_dss2dq_chg_cnt_clr : 1;
+        unsigned int apb_flush_cnt_clr : 1;
+        unsigned int apb_vsync_cnt_clr : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int apb_dss_dvfs_debug_en : 1;
+        unsigned int apb_dss_dvfs_valid_cnt_clr : 1;
+        unsigned int apb_dss_dvfs_chg_cnt_clr : 1;
+        unsigned int apb_dss_doze1_wake_chg_cnt_clr : 1;
+        unsigned int apb_dss_doze1_enter_chg_cnt_clr : 1;
+        unsigned int apb_inter_instr_clr : 1;
+        unsigned int reserved_1 : 20;
+    } reg;
+} SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss2dq_debug_en_START (0)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss2dq_debug_en_END (0)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss2dq_valid_cnt_clr_START (1)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss2dq_valid_cnt_clr_END (1)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss2dq_chg_cnt_clr_START (2)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss2dq_chg_cnt_clr_END (2)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_flush_cnt_clr_START (3)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_flush_cnt_clr_END (3)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_vsync_cnt_clr_START (4)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_vsync_cnt_clr_END (4)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss_dvfs_debug_en_START (6)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss_dvfs_debug_en_END (6)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss_dvfs_valid_cnt_clr_START (7)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss_dvfs_valid_cnt_clr_END (7)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss_dvfs_chg_cnt_clr_START (8)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss_dvfs_chg_cnt_clr_END (8)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss_doze1_wake_chg_cnt_clr_START (9)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss_doze1_wake_chg_cnt_clr_END (9)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss_doze1_enter_chg_cnt_clr_START (10)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_dss_doze1_enter_chg_cnt_clr_END (10)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_inter_instr_clr_START (11)
+#define SOC_MEDIA_PMCTRL_APB_DEBUG_CFG_apb_inter_instr_clr_END (11)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int dss_dfs_ok : 1;
+        unsigned int dss1_dfs_ok : 1;
+        unsigned int dss2_dfs_ok : 1;
+        unsigned int reserved : 29;
+    } reg;
+} SOC_MEDIA_PMCTRL_DSS_DFS_OK_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_DSS_DFS_OK_dss_dfs_ok_START (0)
+#define SOC_MEDIA_PMCTRL_DSS_DFS_OK_dss_dfs_ok_END (0)
+#define SOC_MEDIA_PMCTRL_DSS_DFS_OK_dss1_dfs_ok_START (1)
+#define SOC_MEDIA_PMCTRL_DSS_DFS_OK_dss1_dfs_ok_END (1)
+#define SOC_MEDIA_PMCTRL_DSS_DFS_OK_dss2_dfs_ok_START (2)
+#define SOC_MEDIA_PMCTRL_DSS_DFS_OK_dss2_dfs_ok_END (2)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int pmc2lpm3_hw_dss_msk : 1;
+        unsigned int pmc2media_xpu_hw_dss_msk : 1;
+        unsigned int reserved_0 : 1;
+        unsigned int reserved_1 : 29;
+    } reg;
+} SOC_MEDIA_PMCTRL_DSS2LPMCU_MXPU_DVS_MSK_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_DSS2LPMCU_MXPU_DVS_MSK_pmc2lpm3_hw_dss_msk_START (0)
+#define SOC_MEDIA_PMCTRL_DSS2LPMCU_MXPU_DVS_MSK_pmc2lpm3_hw_dss_msk_END (0)
+#define SOC_MEDIA_PMCTRL_DSS2LPMCU_MXPU_DVS_MSK_pmc2media_xpu_hw_dss_msk_START (1)
+#define SOC_MEDIA_PMCTRL_DSS2LPMCU_MXPU_DVS_MSK_pmc2media_xpu_hw_dss_msk_END (1)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int ffts_req_bypass : 1;
+        unsigned int ffts_power_flag_ff : 1;
+        unsigned int reserved : 30;
+    } reg;
+} SOC_MEDIA_PMCTRL_FFTS_REQ_INFO_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_FFTS_REQ_INFO_ffts_req_bypass_START (0)
+#define SOC_MEDIA_PMCTRL_FFTS_REQ_INFO_ffts_req_bypass_END (0)
+#define SOC_MEDIA_PMCTRL_FFTS_REQ_INFO_ffts_power_flag_ff_START (1)
+#define SOC_MEDIA_PMCTRL_FFTS_REQ_INFO_ffts_power_flag_ff_END (1)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int media_pmc_vote_power_00 : 4;
+        unsigned int media_pmc_vote_power_01 : 4;
+        unsigned int media_pmc_vote_power_02 : 4;
+        unsigned int media_pmc_vote_power_03 : 4;
+        unsigned int media_pmc_vote_power_04 : 4;
+        unsigned int media_pmc_vote_power_05 : 4;
+        unsigned int media_pmc_vote_power_06 : 4;
+        unsigned int media_pmc_vote_power_07 : 4;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_POWER_EN_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_00_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_00_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_01_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_01_END (7)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_02_START (8)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_02_END (11)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_03_START (12)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_03_END (15)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_04_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_04_END (19)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_05_START (20)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_05_END (23)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_06_START (24)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_06_END (27)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_07_START (28)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_media_pmc_vote_power_07_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int media_pmc_vote_power_00 : 4;
+        unsigned int media_pmc_vote_power_01 : 4;
+        unsigned int media_pmc_vote_power_02 : 4;
+        unsigned int media_pmc_vote_power_03 : 4;
+        unsigned int media_pmc_vote_power_04 : 4;
+        unsigned int media_pmc_vote_power_05 : 4;
+        unsigned int media_pmc_vote_power_06 : 4;
+        unsigned int media_pmc_vote_power_07 : 4;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_00_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_00_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_01_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_01_END (7)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_02_START (8)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_02_END (11)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_03_START (12)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_03_END (15)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_04_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_04_END (19)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_05_START (20)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_05_END (23)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_06_START (24)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_06_END (27)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_07_START (28)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_media_pmc_vote_power_07_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int media_pmc_vote_power_00 : 4;
+        unsigned int media_pmc_vote_power_01 : 4;
+        unsigned int media_pmc_vote_power_02 : 4;
+        unsigned int media_pmc_vote_power_03 : 4;
+        unsigned int media_pmc_vote_power_04 : 4;
+        unsigned int media_pmc_vote_power_05 : 4;
+        unsigned int media_pmc_vote_power_06 : 4;
+        unsigned int media_pmc_vote_power_07 : 4;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_00_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_00_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_01_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_01_END (7)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_02_START (8)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_02_END (11)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_03_START (12)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_03_END (15)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_04_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_04_END (19)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_05_START (20)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_05_END (23)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_06_START (24)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_06_END (27)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_07_START (28)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_media_pmc_vote_power_07_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int vote_power_req_stat_00 : 1;
+        unsigned int vote_power_req_stat_01 : 1;
+        unsigned int vote_power_req_stat_02 : 1;
+        unsigned int vote_power_req_stat_03 : 1;
+        unsigned int vote_power_req_stat_04 : 1;
+        unsigned int vote_power_req_stat_05 : 1;
+        unsigned int vote_power_req_stat_06 : 1;
+        unsigned int vote_power_req_stat_07 : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_00_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_00_END (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_01_START (1)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_01_END (1)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_02_START (2)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_02_END (2)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_03_START (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_03_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_04_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_04_END (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_05_START (5)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_05_END (5)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_06_START (6)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_06_END (6)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_07_START (7)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_vote_power_req_stat_07_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int pwrstat_sw2on_req_pls_00 : 1;
+        unsigned int pwrstat_sw2on_req_pls_01 : 1;
+        unsigned int pwrstat_sw2on_req_pls_02 : 1;
+        unsigned int pwrstat_sw2on_req_pls_03 : 1;
+        unsigned int pwrstat_sw2on_req_pls_04 : 1;
+        unsigned int pwrstat_sw2on_req_pls_05 : 1;
+        unsigned int pwrstat_sw2on_req_pls_06 : 1;
+        unsigned int pwrstat_sw2on_req_pls_07 : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_00_START (0)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_00_END (0)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_01_START (1)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_01_END (1)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_02_START (2)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_02_END (2)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_03_START (3)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_03_END (3)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_04_START (4)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_04_END (4)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_05_START (5)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_05_END (5)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_06_START (6)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_06_END (6)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_07_START (7)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_pwrstat_sw2on_req_pls_07_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int pwrstat_sw2off_req_pls_00 : 1;
+        unsigned int pwrstat_sw2off_req_pls_01 : 1;
+        unsigned int pwrstat_sw2off_req_pls_02 : 1;
+        unsigned int pwrstat_sw2off_req_pls_03 : 1;
+        unsigned int pwrstat_sw2off_req_pls_04 : 1;
+        unsigned int pwrstat_sw2off_req_pls_05 : 1;
+        unsigned int pwrstat_sw2off_req_pls_06 : 1;
+        unsigned int pwrstat_sw2off_req_pls_07 : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_00_START (0)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_00_END (0)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_01_START (1)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_01_END (1)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_02_START (2)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_02_END (2)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_03_START (3)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_03_END (3)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_04_START (4)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_04_END (4)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_05_START (5)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_05_END (5)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_06_START (6)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_06_END (6)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_07_START (7)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_pwrstat_sw2off_req_pls_07_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int vote_power_onoff_enable_00 : 1;
+        unsigned int vote_power_onoff_enable_01 : 1;
+        unsigned int vote_power_onoff_enable_02 : 1;
+        unsigned int vote_power_onoff_enable_03 : 1;
+        unsigned int vote_power_onoff_enable_04 : 1;
+        unsigned int vote_power_onoff_enable_05 : 1;
+        unsigned int vote_power_onoff_enable_06 : 1;
+        unsigned int vote_power_onoff_enable_07 : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_00_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_00_END (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_01_START (1)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_01_END (1)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_02_START (2)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_02_END (2)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_03_START (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_03_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_04_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_04_END (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_05_START (5)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_05_END (5)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_06_START (6)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_06_END (6)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_07_START (7)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_vote_power_onoff_enable_07_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_vote_power_on_00 : 1;
+        unsigned int intr_vote_power_on_01 : 1;
+        unsigned int intr_vote_power_on_02 : 1;
+        unsigned int intr_vote_power_on_03 : 1;
+        unsigned int intr_vote_power_on_04 : 1;
+        unsigned int intr_vote_power_on_05 : 1;
+        unsigned int intr_vote_power_on_06 : 1;
+        unsigned int intr_vote_power_on_07 : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_00_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_00_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_01_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_01_END (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_02_START (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_02_END (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_03_START (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_03_END (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_04_START (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_04_END (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_05_START (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_05_END (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_06_START (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_06_END (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_07_START (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_intr_vote_power_on_07_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_vote_power_off_00 : 1;
+        unsigned int intr_vote_power_off_01 : 1;
+        unsigned int intr_vote_power_off_02 : 1;
+        unsigned int intr_vote_power_off_03 : 1;
+        unsigned int intr_vote_power_off_04 : 1;
+        unsigned int intr_vote_power_off_05 : 1;
+        unsigned int intr_vote_power_off_06 : 1;
+        unsigned int intr_vote_power_off_07 : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_00_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_00_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_01_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_01_END (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_02_START (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_02_END (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_03_START (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_03_END (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_04_START (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_04_END (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_05_START (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_05_END (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_06_START (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_06_END (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_07_START (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_intr_vote_power_off_07_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_vote_power_on_raw_00 : 1;
+        unsigned int intr_vote_power_on_raw_01 : 1;
+        unsigned int intr_vote_power_on_raw_02 : 1;
+        unsigned int intr_vote_power_on_raw_03 : 1;
+        unsigned int intr_vote_power_on_raw_04 : 1;
+        unsigned int intr_vote_power_on_raw_05 : 1;
+        unsigned int intr_vote_power_on_raw_06 : 1;
+        unsigned int intr_vote_power_on_raw_07 : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_00_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_00_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_01_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_01_END (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_02_START (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_02_END (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_03_START (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_03_END (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_04_START (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_04_END (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_05_START (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_05_END (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_06_START (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_06_END (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_07_START (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_intr_vote_power_on_raw_07_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_vote_power_off_raw_00 : 1;
+        unsigned int intr_vote_power_off_raw_01 : 1;
+        unsigned int intr_vote_power_off_raw_02 : 1;
+        unsigned int intr_vote_power_off_raw_03 : 1;
+        unsigned int intr_vote_power_off_raw_04 : 1;
+        unsigned int intr_vote_power_off_raw_05 : 1;
+        unsigned int intr_vote_power_off_raw_06 : 1;
+        unsigned int intr_vote_power_off_raw_07 : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_00_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_00_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_01_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_01_END (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_02_START (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_02_END (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_03_START (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_03_END (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_04_START (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_04_END (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_05_START (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_05_END (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_06_START (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_06_END (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_07_START (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_intr_vote_power_off_raw_07_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_power_on_clr_00 : 1;
+        unsigned int intr_power_on_clr_01 : 1;
+        unsigned int intr_power_on_clr_02 : 1;
+        unsigned int intr_power_on_clr_03 : 1;
+        unsigned int intr_power_on_clr_04 : 1;
+        unsigned int intr_power_on_clr_05 : 1;
+        unsigned int intr_power_on_clr_06 : 1;
+        unsigned int intr_power_on_clr_07 : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_00_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_00_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_01_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_01_END (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_02_START (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_02_END (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_03_START (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_03_END (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_04_START (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_04_END (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_05_START (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_05_END (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_06_START (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_06_END (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_07_START (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_intr_power_on_clr_07_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_power_off_clr_00 : 1;
+        unsigned int intr_power_off_clr_01 : 1;
+        unsigned int intr_power_off_clr_02 : 1;
+        unsigned int intr_power_off_clr_03 : 1;
+        unsigned int intr_power_off_clr_04 : 1;
+        unsigned int intr_power_off_clr_05 : 1;
+        unsigned int intr_power_off_clr_06 : 1;
+        unsigned int intr_power_off_clr_07 : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_00_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_00_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_01_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_01_END (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_02_START (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_02_END (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_03_START (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_03_END (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_04_START (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_04_END (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_05_START (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_05_END (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_06_START (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_06_END (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_07_START (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_intr_power_off_clr_07_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int curr_vote_power_stat_00 : 2;
+        unsigned int curr_vote_power_stat_01 : 2;
+        unsigned int curr_vote_power_stat_02 : 2;
+        unsigned int curr_vote_power_stat_03 : 2;
+        unsigned int curr_vote_power_stat_04 : 2;
+        unsigned int curr_vote_power_stat_05 : 2;
+        unsigned int curr_vote_power_stat_06 : 2;
+        unsigned int curr_vote_power_stat_07 : 2;
+        unsigned int reserved : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_00_START (0)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_00_END (1)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_01_START (2)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_01_END (3)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_02_START (4)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_02_END (5)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_03_START (6)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_03_END (7)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_04_START (8)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_04_END (9)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_05_START (10)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_05_END (11)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_06_START (12)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_06_END (13)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_07_START (14)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_curr_vote_power_stat_07_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_vote_power_on_mask : 8;
+        unsigned int intr_vote_power_off_mask : 8;
+        unsigned int intr_vote_power_on_aft_msked : 8;
+        unsigned int intr_vote_power_off_aft_msked : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_intr_vote_power_on_mask_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_intr_vote_power_on_mask_END (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_intr_vote_power_off_mask_START (8)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_intr_vote_power_off_mask_END (15)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_intr_vote_power_on_aft_msked_START (16)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_intr_vote_power_on_aft_msked_END (23)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_intr_vote_power_off_aft_msked_START (24)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_intr_vote_power_off_aft_msked_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_vote_power_on : 1;
+        unsigned int intr_vote_power_off : 1;
+        unsigned int reserved : 30;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_intr_vote_power_on_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_intr_vote_power_on_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_intr_vote_power_off_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_intr_vote_power_off_END (1)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int media_pmc_vote_power_00_m : 4;
+        unsigned int media_pmc_vote_power_01_m : 4;
+        unsigned int media_pmc_vote_power_02_m : 4;
+        unsigned int media_pmc_vote_power_03_m : 4;
+        unsigned int media_pmc_vote_power_04_m : 4;
+        unsigned int media_pmc_vote_power_05_m : 4;
+        unsigned int media_pmc_vote_power_06_m : 4;
+        unsigned int media_pmc_vote_power_07_m : 4;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_00_m_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_01_m_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_01_m_END (7)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_02_m_START (8)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_02_m_END (11)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_03_m_START (12)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_03_m_END (15)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_04_m_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_04_m_END (19)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_05_m_START (20)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_05_m_END (23)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_06_m_START (24)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_06_m_END (27)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_07_m_START (28)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_EN_M_media_pmc_vote_power_07_m_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int media_pmc_vote_power_00_m : 4;
+        unsigned int media_pmc_vote_power_01_m : 4;
+        unsigned int media_pmc_vote_power_02_m : 4;
+        unsigned int media_pmc_vote_power_03_m : 4;
+        unsigned int media_pmc_vote_power_04_m : 4;
+        unsigned int media_pmc_vote_power_05_m : 4;
+        unsigned int media_pmc_vote_power_06_m : 4;
+        unsigned int media_pmc_vote_power_07_m : 4;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_00_m_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_01_m_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_01_m_END (7)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_02_m_START (8)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_02_m_END (11)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_03_m_START (12)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_03_m_END (15)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_04_m_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_04_m_END (19)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_05_m_START (20)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_05_m_END (23)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_06_m_START (24)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_06_m_END (27)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_07_m_START (28)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_DIS_M_media_pmc_vote_power_07_m_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int media_pmc_vote_power_00_m : 4;
+        unsigned int media_pmc_vote_power_01_m : 4;
+        unsigned int media_pmc_vote_power_02_m : 4;
+        unsigned int media_pmc_vote_power_03_m : 4;
+        unsigned int media_pmc_vote_power_04_m : 4;
+        unsigned int media_pmc_vote_power_05_m : 4;
+        unsigned int media_pmc_vote_power_06_m : 4;
+        unsigned int media_pmc_vote_power_07_m : 4;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_00_m_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_01_m_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_01_m_END (7)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_02_m_START (8)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_02_m_END (11)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_03_m_START (12)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_03_m_END (15)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_04_m_START (16)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_04_m_END (19)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_05_m_START (20)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_05_m_END (23)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_06_m_START (24)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_06_m_END (27)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_07_m_START (28)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_M_media_pmc_vote_power_07_m_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int vote_power_req_stat_00_m : 1;
+        unsigned int vote_power_req_stat_01_m : 1;
+        unsigned int vote_power_req_stat_02_m : 1;
+        unsigned int vote_power_req_stat_03_m : 1;
+        unsigned int vote_power_req_stat_04_m : 1;
+        unsigned int vote_power_req_stat_05_m : 1;
+        unsigned int vote_power_req_stat_06_m : 1;
+        unsigned int vote_power_req_stat_07_m : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_00_m_END (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_01_m_START (1)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_01_m_END (1)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_02_m_START (2)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_02_m_END (2)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_03_m_START (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_03_m_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_04_m_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_04_m_END (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_05_m_START (5)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_05_m_END (5)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_06_m_START (6)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_06_m_END (6)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_07_m_START (7)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_REQ_STAT_M_vote_power_req_stat_07_m_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int pwrstat_sw2on_req_pls_00_m : 1;
+        unsigned int pwrstat_sw2on_req_pls_01_m : 1;
+        unsigned int pwrstat_sw2on_req_pls_02_m : 1;
+        unsigned int pwrstat_sw2on_req_pls_03_m : 1;
+        unsigned int pwrstat_sw2on_req_pls_04_m : 1;
+        unsigned int pwrstat_sw2on_req_pls_05_m : 1;
+        unsigned int pwrstat_sw2on_req_pls_06_m : 1;
+        unsigned int pwrstat_sw2on_req_pls_07_m : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_00_m_END (0)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_01_m_START (1)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_01_m_END (1)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_02_m_START (2)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_02_m_END (2)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_03_m_START (3)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_03_m_END (3)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_04_m_START (4)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_04_m_END (4)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_05_m_START (5)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_05_m_END (5)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_06_m_START (6)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_06_m_END (6)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_07_m_START (7)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2ON_REQ_M_pwrstat_sw2on_req_pls_07_m_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int pwrstat_sw2off_req_pls_00_m : 1;
+        unsigned int pwrstat_sw2off_req_pls_01_m : 1;
+        unsigned int pwrstat_sw2off_req_pls_02_m : 1;
+        unsigned int pwrstat_sw2off_req_pls_03_m : 1;
+        unsigned int pwrstat_sw2off_req_pls_04_m : 1;
+        unsigned int pwrstat_sw2off_req_pls_05_m : 1;
+        unsigned int pwrstat_sw2off_req_pls_06_m : 1;
+        unsigned int pwrstat_sw2off_req_pls_07_m : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_00_m_END (0)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_01_m_START (1)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_01_m_END (1)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_02_m_START (2)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_02_m_END (2)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_03_m_START (3)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_03_m_END (3)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_04_m_START (4)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_04_m_END (4)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_05_m_START (5)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_05_m_END (5)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_06_m_START (6)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_06_m_END (6)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_07_m_START (7)
+#define SOC_MEDIA_PMCTRL_PWRSTAT_SW2OFF_REQ_M_pwrstat_sw2off_req_pls_07_m_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int vote_power_onoff_enable_00_m : 1;
+        unsigned int vote_power_onoff_enable_01_m : 1;
+        unsigned int vote_power_onoff_enable_02_m : 1;
+        unsigned int vote_power_onoff_enable_03_m : 1;
+        unsigned int vote_power_onoff_enable_04_m : 1;
+        unsigned int vote_power_onoff_enable_05_m : 1;
+        unsigned int vote_power_onoff_enable_06_m : 1;
+        unsigned int vote_power_onoff_enable_07_m : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_00_m_END (0)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_01_m_START (1)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_01_m_END (1)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_02_m_START (2)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_02_m_END (2)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_03_m_START (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_03_m_END (3)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_04_m_START (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_04_m_END (4)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_05_m_START (5)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_05_m_END (5)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_06_m_START (6)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_06_m_END (6)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_07_m_START (7)
+#define SOC_MEDIA_PMCTRL_VOTE_POWER_ONOFF_EN_M_vote_power_onoff_enable_07_m_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_vote_power_on_00_m : 1;
+        unsigned int intr_vote_power_on_01_m : 1;
+        unsigned int intr_vote_power_on_02_m : 1;
+        unsigned int intr_vote_power_on_03_m : 1;
+        unsigned int intr_vote_power_on_04_m : 1;
+        unsigned int intr_vote_power_on_05_m : 1;
+        unsigned int intr_vote_power_on_06_m : 1;
+        unsigned int intr_vote_power_on_07_m : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_00_m_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_01_m_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_01_m_END (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_02_m_START (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_02_m_END (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_03_m_START (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_03_m_END (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_04_m_START (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_04_m_END (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_05_m_START (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_05_m_END (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_06_m_START (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_06_m_END (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_07_m_START (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_M_intr_vote_power_on_07_m_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_vote_power_off_00_m : 1;
+        unsigned int intr_vote_power_off_01_m : 1;
+        unsigned int intr_vote_power_off_02_m : 1;
+        unsigned int intr_vote_power_off_03_m : 1;
+        unsigned int intr_vote_power_off_04_m : 1;
+        unsigned int intr_vote_power_off_05_m : 1;
+        unsigned int intr_vote_power_off_06_m : 1;
+        unsigned int intr_vote_power_off_07_m : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_00_m_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_01_m_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_01_m_END (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_02_m_START (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_02_m_END (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_03_m_START (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_03_m_END (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_04_m_START (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_04_m_END (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_05_m_START (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_05_m_END (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_06_m_START (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_06_m_END (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_07_m_START (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_M_intr_vote_power_off_07_m_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_vote_power_on_raw_00_m : 1;
+        unsigned int intr_vote_power_on_raw_01_m : 1;
+        unsigned int intr_vote_power_on_raw_02_m : 1;
+        unsigned int intr_vote_power_on_raw_03_m : 1;
+        unsigned int intr_vote_power_on_raw_04_m : 1;
+        unsigned int intr_vote_power_on_raw_05_m : 1;
+        unsigned int intr_vote_power_on_raw_06_m : 1;
+        unsigned int intr_vote_power_on_raw_07_m : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_00_m_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_01_m_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_01_m_END (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_02_m_START (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_02_m_END (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_03_m_START (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_03_m_END (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_04_m_START (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_04_m_END (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_05_m_START (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_05_m_END (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_06_m_START (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_06_m_END (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_07_m_START (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_RAW_M_intr_vote_power_on_raw_07_m_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_vote_power_off_raw_00_m : 1;
+        unsigned int intr_vote_power_off_raw_01_m : 1;
+        unsigned int intr_vote_power_off_raw_02_m : 1;
+        unsigned int intr_vote_power_off_raw_03_m : 1;
+        unsigned int intr_vote_power_off_raw_04_m : 1;
+        unsigned int intr_vote_power_off_raw_05_m : 1;
+        unsigned int intr_vote_power_off_raw_06_m : 1;
+        unsigned int intr_vote_power_off_raw_07_m : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_00_m_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_01_m_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_01_m_END (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_02_m_START (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_02_m_END (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_03_m_START (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_03_m_END (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_04_m_START (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_04_m_END (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_05_m_START (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_05_m_END (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_06_m_START (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_06_m_END (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_07_m_START (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_RAW_M_intr_vote_power_off_raw_07_m_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_power_on_clr_00_m : 1;
+        unsigned int intr_power_on_clr_01_m : 1;
+        unsigned int intr_power_on_clr_02_m : 1;
+        unsigned int intr_power_on_clr_03_m : 1;
+        unsigned int intr_power_on_clr_04_m : 1;
+        unsigned int intr_power_on_clr_05_m : 1;
+        unsigned int intr_power_on_clr_06_m : 1;
+        unsigned int intr_power_on_clr_07_m : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_00_m_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_01_m_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_01_m_END (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_02_m_START (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_02_m_END (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_03_m_START (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_03_m_END (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_04_m_START (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_04_m_END (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_05_m_START (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_05_m_END (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_06_m_START (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_06_m_END (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_07_m_START (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ON_CLR_M_intr_power_on_clr_07_m_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_power_off_clr_00_m : 1;
+        unsigned int intr_power_off_clr_01_m : 1;
+        unsigned int intr_power_off_clr_02_m : 1;
+        unsigned int intr_power_off_clr_03_m : 1;
+        unsigned int intr_power_off_clr_04_m : 1;
+        unsigned int intr_power_off_clr_05_m : 1;
+        unsigned int intr_power_off_clr_06_m : 1;
+        unsigned int intr_power_off_clr_07_m : 1;
+        unsigned int reserved : 24;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_00_m_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_01_m_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_01_m_END (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_02_m_START (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_02_m_END (2)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_03_m_START (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_03_m_END (3)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_04_m_START (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_04_m_END (4)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_05_m_START (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_05_m_END (5)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_06_m_START (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_06_m_END (6)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_07_m_START (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_OFF_CLR_M_intr_power_off_clr_07_m_END (7)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int curr_vote_power_stat_00_m : 2;
+        unsigned int curr_vote_power_stat_01_m : 2;
+        unsigned int curr_vote_power_stat_02_m : 2;
+        unsigned int curr_vote_power_stat_03_m : 2;
+        unsigned int curr_vote_power_stat_04_m : 2;
+        unsigned int curr_vote_power_stat_05_m : 2;
+        unsigned int curr_vote_power_stat_06_m : 2;
+        unsigned int curr_vote_power_stat_07_m : 2;
+        unsigned int reserved : 16;
+    } reg;
+} SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_00_m_START (0)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_00_m_END (1)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_01_m_START (2)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_01_m_END (3)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_02_m_START (4)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_02_m_END (5)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_03_m_START (6)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_03_m_END (7)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_04_m_START (8)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_04_m_END (9)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_05_m_START (10)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_05_m_END (11)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_06_m_START (12)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_06_m_END (13)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_07_m_START (14)
+#define SOC_MEDIA_PMCTRL_CURR_VOTE_POWER_STAT_M_curr_vote_power_stat_07_m_END (15)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_vote_power_on_mask_m : 8;
+        unsigned int intr_vote_power_off_mask_m : 8;
+        unsigned int intr_vote_power_on_aft_m_msked : 8;
+        unsigned int intr_vote_power_off_aft_m_msked : 8;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_M_intr_vote_power_on_mask_m_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_M_intr_vote_power_on_mask_m_END (7)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_M_intr_vote_power_off_mask_m_START (8)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_M_intr_vote_power_off_mask_m_END (15)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_M_intr_vote_power_on_aft_m_msked_START (16)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_M_intr_vote_power_on_aft_m_msked_END (23)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_M_intr_vote_power_off_aft_m_msked_START (24)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_MASK_M_intr_vote_power_off_aft_m_msked_END (31)
+#ifndef __SOC_H_FOR_ASM__
+typedef union
+{
+    unsigned int value;
+    struct
+    {
+        unsigned int intr_vote_power_on_m : 1;
+        unsigned int intr_vote_power_off_m : 1;
+        unsigned int reserved : 30;
+    } reg;
+} SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_M_UNION;
+#endif
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_M_intr_vote_power_on_m_START (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_M_intr_vote_power_on_m_END (0)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_M_intr_vote_power_off_m_START (1)
+#define SOC_MEDIA_PMCTRL_INTR_VOTE_POWER_ONOFF_M_intr_vote_power_off_m_END (1)
+#ifdef __cplusplus
+    #if __cplusplus
+        }
+    #endif
+#endif
+#endif

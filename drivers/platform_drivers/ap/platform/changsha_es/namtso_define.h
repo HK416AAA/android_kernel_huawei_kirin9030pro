@@ -1,0 +1,13 @@
+#ifndef __NAMTSO_DEFINE_H__
+#define __NAMTSO_DEFINE_H__ 
+#include <soc_fcm_namtso_interface.h>
+#include <soc_acpu_baseaddr_interface.h>
+#define NAMTSO_BASEADDR SOC_ACPU_namtso_cfg_BASE_ADDR
+#define NAMTSO_PWRDN_OFFSET SOC_FCM_NAMTSO_PWRDN_ADDR(0)
+#define NAMTSO_ACTLR5_OFFSET SOC_FCM_NAMTSO_ACTLR5_ADDR(0)
+#define NAMTSO_CMO0_OFFSET SOC_FCM_NAMTSO_CMO0_ADDR(0)
+#define CLUSTER_RETENTION SOC_FCM_NAMTSO_CLUSTERRETCTLR_ADDR(SOC_ACPU_namtso_cfg_BASE_ADDR)
+#define CLUSTER_PWRDN 0xFFFFFFFF
+#define PWRDN_BIT SOC_FCM_NAMTSO_PWRDN_cluster_power_required_START
+#define NAMTSO_CMO_FINISHED SOC_FCM_NAMTSO_ACTLR5_wns_cluster_vld_START
+#endif

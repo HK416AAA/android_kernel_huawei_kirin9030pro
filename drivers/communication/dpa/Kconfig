@@ -1,0 +1,21 @@
+menu "DPA"
+
+config DPA_DRIVERS
+	tristate "support dpa drivers"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'm', it will be compiled as a module.
+		If you choose 'n', it will not be compiled.
+source "drivers/communication/dpa/compile_demo/Kconfig"
+source "drivers/communication/dpa/proto/Kconfig"
+source "drivers/communication/dpa/proto_om/Kconfig"
+source "drivers/communication/dpa/remoteproc/Kconfig"
+source "drivers/communication/dpa/traffic_control/Kconfig"
+source "drivers/communication/dpa/mntn/Kconfig"
+source "drivers/communication/dpa/sms/Kconfig"
+source "drivers/communication/dpa/udx/Kconfig"
+source "drivers/communication/dpa/chr/Kconfig"
+source "drivers/communication/dpa/booster/Kconfig"
+source "drivers/communication/dpa/pm_agent/Kconfig"
+endmenu

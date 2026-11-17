@@ -1,0 +1,12 @@
+#
+# dpa booster configuration
+#
+ 
+comment "dpa booster"
+ 
+config DPA_BOOSTER
+	bool "support dpa booster"
+	depends on DPA_DRIVERS
+	default n
+	help
+		This is dpa booster

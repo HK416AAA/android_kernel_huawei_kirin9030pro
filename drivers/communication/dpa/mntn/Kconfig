@@ -1,0 +1,51 @@
+menu "DPA MNTN"
+
+config DPA_FULL_DUMP
+	tristate "support dpa full dump"
+	default n
+	help
+		If you enable this option and choose 'y', dpa full ram dump and other dump functions will be force enable.
+		If you choose 'n', fulldump depends on beta status, if not beta version, no dpa ram dump will saved.
+
+config ACPU_RDR_DPA_FEATURE_ON
+	tristate "support use RDR_DPA to reset and dump dpa"
+	default n
+	help
+		If you enable this option and choose 'y', will use RDR_DPA to dump and reset dpa. note rdr in ap must support RDR_DPA before enable this config.
+		If you choose 'n', will use RDR_MODEMAP to dump and reset dpa.
+
+config MDMPERI_QIC
+	tristate "support dpa and mdmperi qic dump"
+	default n
+	help
+		If you enable this option and choose 'y', support qic process.
+		If you choose 'n', no err report when dpa and mdmperi qic trigger bus err
+
+config DPA_SYSLOG
+	tristate "support dpa syslog"
+	default n
+	help
+		If you enable this option and choose 'y', support syslog process.
+		If you choose 'n', no syslog record
+
+config DPA_WDT
+	tristate "support dpa wdt"
+	default n
+	help
+		If you enable this option and choose 'y', support watchdog.
+		If you choose 'n', no watchdog
+
+config DPA_OCD
+	tristate "support dpa ocd"
+	default n
+	help
+		If you enable this option and choose 'y', support ocd.
+		If you choose 'n', no ltrace record
+
+config DPA_HOST_DIAG
+	tristate "support dpa diag"
+	default n
+	help
+		If you enable this option and choose 'y', it will be compiled in.
+		If you choose 'n', it will not be compiled.
+endmenu

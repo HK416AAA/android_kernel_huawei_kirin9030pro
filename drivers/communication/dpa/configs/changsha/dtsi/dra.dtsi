@@ -1,0 +1,37 @@
+dra {
+    compatible = "dra31303061";
+    reg = <0xe6910000 0x10000>;
+    interrupts = <0 516 4>, <0 517 4>;
+    dra_hwirq = <548>;
+    interrupt-names = "opipe_dnirq","ipipe0_upirq";
+    #address-cells = <1>;
+    #size-cells = <0>;
+    dra-opipe-level-used = <0 1 2 3 4 5 6 7 8 9 10>;
+    dra-opipe-level-gid  = <0 0 0 0 0 0 0 21 0 0 0>;
+    dra-opipe-tab-used =   <1 0 1 0 0 0 0 1 0 1 1>; /* 1:use tab; 0:use list */
+    dra-opipe-levels-depth = <0 0x1000 0x400 0x140 0 0 0 0x1000 0x1000 0x400 0x1000>;
+    dra-ddr-buf-depth =      <0 0xFF00 0x800 0x140 0 0 0 0x2200 0xd000 0x2800 0x1D000>;
+    dra-opipe-from = <0 0 0 0>;
+    dra-opipe-tab-size =     <0x10000 0xFF00 0x800 0x100 0 0 0 0x2200 0xd000 0x2800 0x1D000>;
+    dra-opipe-disable_irq = <1 0 0 1 1 1 1 1 0 1 0>;
+    dra-release-poll-depth = <0x10200 0x0>;
+
+    dra-alloc-ch = <0 0 0 0 0 0 0 0 25 26 27>;
+    dra-alloc-ch-depth = <0 0x100 0 0 0 0 0 0 0x100 0x100 0x40>;
+
+    dra-rls-ch = <0 12 0 0 0 0 0 0 13 14 0>;
+    dra-rls-ch-depth = <0 0x100 0 0 0 0 0 0 0x100 0x100 0>;
+    dra-rls-dbgcnt-idx = <0 8 0 0 0 0 0 0 0 0 0>;
+    dra-ipipe-for-pfa-2k  = <4 8>;
+    status = "disabled";
+
+    dra_mdm_peri_crg = <0xe6800000>;
+    dra_mdm_peri_crg_clk_en = <0>;
+    dra_mdm_peri_crg_val = <0x1000>;
+
+    dra-opipe-dbgcnt-idx = <0 1 2 3>;
+    dra-ddrbuf-dbgcnt-idx = <0 4 5 6>;
+    dra-ipipe-dbgcnt-idx = <7>;
+
+    dra-sc-mode = <1>;
+};

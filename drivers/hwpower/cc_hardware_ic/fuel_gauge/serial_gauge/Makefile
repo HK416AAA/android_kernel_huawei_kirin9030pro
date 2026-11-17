@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: GPL-2.0
+obj-$(CONFIG_BQ40Z50_FUEL_GAUGE) += serial_gauge_base.o
+obj-$(CONFIG_BQ40Z50_FUEL_GAUGE) += serial_gauge.o
+obj-$(CONFIG_BQ40Z50_FUEL_GAUGE) += serial_gauge_debug_sysfs.o
+obj-$(CONFIG_BQ40Z50_FUEL_GAUGE) += serial_gauge_power_saving.o
+obj-$(CONFIG_BQ40Z50_FUEL_GAUGE) += serial_gauge_logs.o
+obj-$(CONFIG_BQ40Z50_FUEL_GAUGE) += serial_gauge_data.o
+obj-$(CONFIG_BQ40Z50_FUEL_GAUGE) += serial_gauge_mf_data.o
+obj-$(CONFIG_BQ40Z50_FUEL_GAUGE) += serial_gauge_upgrade/

@@ -1,0 +1,6 @@
+set(chr_build_tool.dir ${GBB_TOOLS_DIR}/modem/chr_msg_define/build)
+set(chr_build_tool.stage STAGE_COMPILE)
+set(chr_build_tool.release_libs_dir ${release_libs_dir})
+set(chr_build_tool.release_mode "libs")
+set(chr_build_tool.out tool_chrcfg)
+set(chr_build_tool.warning_allowed true)

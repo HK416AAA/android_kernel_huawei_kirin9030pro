@@ -1,0 +1,4 @@
+switch,comment,group,es_eng,es_rtt,es_asan:es_eng,es_user
+CFG_FEATURE_TAS,,,FEATURE_ON,FEATURE_ON,,FEATURE_ON
+CFG_PHY_CBT_ENABLED,,,YES,YES,,NO
+CFG_UPHY_NSCS_CTRL,,,YES,YES,,NO

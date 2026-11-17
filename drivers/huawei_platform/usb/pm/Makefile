@@ -1,0 +1,1 @@
+obj-$(CONFIG_HW_USB_PM) += usb_pm.o

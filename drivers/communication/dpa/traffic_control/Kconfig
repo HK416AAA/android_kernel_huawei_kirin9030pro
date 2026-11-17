@@ -1,0 +1,12 @@
+#
+# dpa proto tc configuration
+#
+
+comment "dpa traffic-control"
+
+config DPA_TC
+	bool "support dpa traffic-control"
+	depends on DPA_DRIVERS
+	default n
+	help
+		This is dpa traffic control

@@ -1,0 +1,22 @@
+/*
+ * Hisilicon Ltd Balong SOC
+ */
+
+
+dpa_ipc_device {
+	compatible = "modem,dpa_ipc_device";
+	#address-cells = <1>;
+	#size-cells = <1>;
+	version = <0x1>;
+	reg = <0xFF2E0000 0x10000>;
+	local_id = <0x1>; /* acore id */
+	remote_id = <0x20>; /* dpa id */
+	dpa_ipc_device_name = "dpa_ipc_dev0";
+	interrupts = <0 519 4>;
+	hwirq = <551>;
+	send_mailbox = <0x35>;
+	recv_mailbox = <0x34>;
+};/* dpa_ipc_device */
+
+
+

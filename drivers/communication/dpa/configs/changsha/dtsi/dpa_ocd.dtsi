@@ -1,0 +1,21 @@
+/*
+ * Hisilicon Ltd Balong SOC
+ */
+dpa_ocd_base {
+    compatible = "ocd,ltrace,dpa";
+    ltrace_disable_cfg = <0x0>; /* OCD_LTRACE_CTL[bit31] = 0 */
+    ltrace_version = <2>; /* tspv150: 0, tspv200: 1, tspv300: 2 */
+    ltrace_buf_len = <0x1000>; /* tspv150:0x800, tspv300:0x1000 */
+    /*ocd core 0 thread 0*/
+    ocd_core0_t0 {
+        thread_index = <0>;
+        phy_index = <0>;
+        cpu_index = <0>;
+    };
+    /*ocd core 0 thread 2*/
+    ocd_core0_t2 {
+        thread_index = <1>;
+        phy_index = <2>;
+        cpu_index = <0>;
+    };
+};

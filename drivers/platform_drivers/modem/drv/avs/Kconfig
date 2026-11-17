@@ -1,0 +1,11 @@
+config AVS_PERCHIP_UPDATE
+    tristate "support avs perchip"
+	default n
+	help
+	support for avs perchip
+
+config AVS_COLL_TEST
+	tristate "support avs coll test"
+	default n
+	help
+	support for avs coll test

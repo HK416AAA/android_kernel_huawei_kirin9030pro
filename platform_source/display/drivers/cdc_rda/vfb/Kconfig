@@ -1,0 +1,10 @@
+config VFB_BE
+	bool "backend of vfb"
+	help
+	  Say Y here, if you want to have backend support of vfb.
+
+config DISPLAY_ENG
+        bool "display eng support"
+        default n
+        help
+          Say yes here to support the display eng

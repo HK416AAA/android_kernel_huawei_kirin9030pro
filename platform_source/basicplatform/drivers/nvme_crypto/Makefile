@@ -1,0 +1,1 @@
+obj-$(CONFIG_NVME_CRYPTO)	+= nvme_crypto_core.o nvme_crypto_host.o

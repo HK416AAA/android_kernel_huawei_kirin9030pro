@@ -1,0 +1,35 @@
+{
+    "call_chain": "ps_nll2_nr_uldl_hotfunc.txt",
+    "hot_data": "hot_data.txt",
+    "image_path": "",
+    "ld_file": "",
+    "readelf": "",
+    "func_deploy": [{
+        "seg": "*(.text.hot)",
+        "size": -1,
+        "images": ["nlxwl2.o", "l2base.o", "cds.o"]
+    }, {
+        "seg": "*(.sys.pl1.text)",
+        "size": 160000,
+        "images": ["nlxwl2.o", "l2base.o", "cds.o"]
+    }],
+    "data_deploy": [{
+        "seg": "*(.data.*)",
+        "size": -1,
+        "images": ["nlxwl2.o", "l2base.o", "cds.o"]
+    }, {
+        "seg": "*(.bss.*)",
+        "size": -1,
+        "is_bss": 1,
+        "images": ["nlxwl2.o", "l2base.o", "cds.o"]
+    }, {
+        "seg": "*(.sys.pl1.data)",
+        "size": 0,
+        "images": ["nlxwl2.o", "l2base.o", "cds.o"]
+    }, {
+        "seg": "*(.sys.pl1.bss)",
+        "size": 0,
+        "is_bss": 1,
+        "images": ["nlxwl2.o", "l2base.o", "cds.o"]
+    }]
+}

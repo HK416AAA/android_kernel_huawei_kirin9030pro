@@ -1,0 +1,12 @@
+#
+# dpa booster configuration
+#
+ 
+comment "dpa pm mntn"
+ 
+config DPA_PM_MNTN
+	bool "support dpa pm mntn"
+	depends on DPA_DRIVERS
+	default y
+	help
+		This is dpa pm mntn

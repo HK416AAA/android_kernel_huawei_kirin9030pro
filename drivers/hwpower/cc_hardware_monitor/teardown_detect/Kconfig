@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: GPL-2.0
+#
+# huawei teardown detect drivers
+#
+
+config HUAWEI_TEARDOWN_DETECT
+	bool "huawei teardown detect"
+	default n
+	help
+	  Say Y here to enable huawei teardown detect driver.

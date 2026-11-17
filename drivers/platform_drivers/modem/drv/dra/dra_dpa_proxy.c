@@ -1,0 +1,105 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2024-2025. All rights reserved.
+ * foss@huawei.com
+ *
+ * If distributed as part of the Linux kernel, the following license terms
+ * apply:
+ *
+ * * This program is free software; you can redistribute it and/or modify
+ * * it under the terms of the GNU General Public License version 2 and
+ * * only version 2 as published by the Free Software Foundation.
+ * *
+ * * This program is distributed in the hope that it will be useful,
+ * * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * * GNU General Public License for more details.
+ * *
+ * * You should have received a copy of the GNU General Public License
+ * * along with this program; if not, write to the Free Software
+ * * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA
+ *
+ * Otherwise, the following license terms apply:
+ *
+ * * Redistribution and use in source and binary forms, with or without
+ * * modification, are permitted provided that the following conditions
+ * * are met:
+ * * 1) Redistributions of source code must retain the above copyright
+ * *    notice, this list of conditions and the following disclaimer.
+ * * 2) Redistributions in binary form must reproduce the above copyright
+ * *    notice, this list of conditions and the following disclaimer in the
+ * *    documentation and/or other materials provided with the distribution.
+ * * 3) Neither the name of Huawei nor the names of its contributors may
+ * *    be used to endorse or promote products derived from this software
+ * *    without specific prior written permission.
+ *
+ * * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
+ *
+ */
+
+#include <bsp_reset.h>
+#include "mdrv_reset.h"
+#include <bsp_net_om.h>
+#include <bsp_print.h>
+
+#define THIS_MODU mod_dra
+struct dra_dpa_ctx {
+    struct net_om_info report_info;
+} g_dra_dpa_ctx;
+
+extern void dra_hds_transreport(void);
+extern int dra_deinit(void);
+extern int dra_get_om_info(char **buf, unsigned int *size);
+
+int dra_mdmreset_cb(drv_reset_cb_moment_e eparam, int userdata)
+{
+    if (eparam == MDRV_RESET_CB_BEFORE) {
+        dra_deinit();
+    }
+    return 0;
+}
+
+void dra_trans_report_register(void)
+{
+    struct net_om_info *info = &g_dra_dpa_ctx.report_info;
+    int ret;
+    char *om_base = NULL;
+    unsigned int size;
+
+    ret = dra_get_om_info(&om_base, &size);
+    if (ret) {
+        bsp_err("get om info fail\n");
+        return;
+    }
+
+    info->ul_msg_id = NET_OM_MSGID_DRA;
+    info->data = (void *)om_base;
+    info->size = size;
+    info->func_cb = dra_hds_transreport;
+    INIT_LIST_HEAD(&info->list);
+
+    ret = bsp_net_report_register(info);
+    if (ret) {
+        bsp_err("trans report register fail\n");
+    }
+}
+
+int dra_dpa_proxy_init(void)
+{
+    dra_trans_report_register();
+
+    if (bsp_reset_cb_func_register("DRA", dra_mdmreset_cb, 0, MDRV_RESET_CB_PIOR_DRA)) {
+        bsp_err("set modem reset call back func failed\n");
+    }
+
+    return 0;
+}

@@ -1,0 +1,7 @@
+dpa_nmi{
+    compatible = "dpa,nmi";
+    /* sysctrl_peri: nmi0_en nmi0_dis nmi0_stat */
+    sysctrl_flag = <0x1>; /* trigger source flag: 0: peri_sysctrl; 1: modem_peri_sysctrl */
+    sysctrl_nmi = <0x110 0x114 0x118 0x0 0x0 0x0>;
+    core_mask = <0x0005>;
+};

@@ -1,0 +1,30 @@
+config THERMAL_OFFLOADING
+	bool "enable thermal offloading"
+	depends on IPA_THERMAL
+	depends on THERMAL_SHELL
+	default n
+	help
+	  Enable thermal offloading
+
+config THERMAL_GOV_MARGIN_CTRL
+	bool "enable margin thermal"
+	depends on IPA_THERMAL
+	depends on THERMAL_SHELL
+	default n
+	help
+	  Enable margin thermal
+
+config THERMAL_POWER_QUOTA
+	bool "enable power quota"
+	depends on THERMAL_GOV_MARGIN_CTRL
+	depends on THERMAL_OFFLOADING
+	default n
+	help
+	  Enable power quota
+
+config OPT_POWER_MODEL
+	bool "enable opt power model"
+	depends on THERMAL_POWER_QUOTA
+	default n
+	help
+	  Enable opt power model

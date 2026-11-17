@@ -1,0 +1,13 @@
+-source "drivers/communication/dpa/Kconfig"
+
+config DPA_PROTO
+	bool "support dpa proto"
+	default n
+	help
+		This is dpa proto
+
+config DPA_API
+	bool "support dpa API"
+	default n
+	help
+		This is dpa API

@@ -1,0 +1,5 @@
+on fs
+	insmod /vendor/communication/dpa/module/dpa.ko
+	wait /sys/class/remoteproc/remoteproc_dpa/state 30
+	write /sys/class/remoteproc/remoteproc_dpa/state start
+

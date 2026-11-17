@@ -1,0 +1,179 @@
+/*
+ * Company Ltd SOC
+ *
+ * save_file_enum :
+ * DUMP_SAVE_DPA_DUMP = 0,
+ * DUMP_SAVE_RESET_LOG, // 1
+ * DUMP_SAVE_DPA_DUMP_BACKUP, // 2
+ * DUMP_SAVE_DPA_KO, // 3
+ * DUMP_SAVE_DPA_DTCM, // 4
+ * DUMP_SAVE_DPA_ITCM, // 5
+ * DUMP_SAVE_DPA_DDR, // 6
+ *
+ * sec_file_attribute:
+ * bit 0	:default 	:can access without check power status; usually used for ddr; build bd_info when modem startup, no use in dpa
+ * bit 1	:extra_mdm	:saved in phone_extra_mdm;
+ * bit 2	:soc_mdm	:saved in mbb_mdm;
+ * bit 3	:phone_mdm	:saved in phone_mdm;
+ * bit 4	:mini_dump	:saved when mini_dump is on
+ * bit 5	:full_dump	:saved when full_dump is on
+ * bit 28	:dpa host log :@see dump_subsys.h dump_subusys enum
+ * bit 29	:dpa fw log
+ * bit 30	:resv
+ * bit 31	:resv log
+ * bit 28-31:comm log
+ */
+
+/* mntn area id: @see bsp_dump_mem.h
+ * typedef enum {
+ *     DUMP_AREA_HOST = 0,
+ *     DUMP_AREA_FW = 1,
+ *     DUMP_AREA_BUTT
+ * } dump_area_id_e;
+ */
+
+dpa_dump {
+	compatible = "driver,dpa_dump";
+	dpa_mntn_ddr_layout {
+		compatible = "driver,dpa_mntn_interface";
+		/* mntn total size 512KB, head 0x200, tail 0x100 */
+		baseinfo_size = <0x200>;
+		/* resv_addr_start = last_area_end + offset(sysboot size) */
+		resv_offset = <0>;
+		area_host {
+			id = <0>;
+			size = <0x20000>;
+		};
+		area_fw {
+			id = <1>;
+			size = <0x5FD00>;
+		};
+	};
+
+	dump_file_cfg{
+		compatible = "driver,dpa_dump_file_cfg";
+		dpa_dump {
+			file_id = <0>;
+			save_flag = <1>;
+			file_name = "dpa_dump.bin";
+			attribute = <0xF000003A>;
+			/* extra/phone/minidump/fulldump/comm log */
+		};
+		reset_log {
+			file_id = <1>;
+			save_flag = <1>;
+			file_name = "reset.log";
+			attribute = <0xF000003A>;
+			/* extra/phone/fulldump/mnidump/comm log */
+		};
+		dpa_dump_backup {
+			file_id = <2>;
+			save_flag = <1>;
+			file_name = "dpa_dump_backup.bin";
+			attribute = <0xF000003A>;
+			/* extra/phone/minidump/fulldump/comm log */
+		};
+		dpa_ko {
+			file_id = <3>;
+			save_flag = <1>;
+			file_name = "dpa_ko.bin";
+			attribute = <0xF000002A>;
+			/* extra/phone/fulldump/comm log */
+		};
+		dpa_dtcm {
+			file_id = <4>;
+			save_flag = <1>;
+			file_name = "dpa_dtcm.bin";
+			attribute = <0xF000002A>;
+			/* extra/phone/fulldump/comm log */
+		};
+		dpa_itcm {
+			file_id = <5>;
+			save_flag = <1>;
+			file_name = "dpa_itcm.bin";
+			attribute = <0xF000002A>;
+			/* extra/phone/fulldump/comm log */
+		};
+		dpa_ddr {
+			file_id = <6>;
+			save_flag = <1>;
+			file_name = "dpa_ddr.bin";
+			attribute = <0xF000002A>;
+			/* extra/phone/fulldump/comm log */
+		};
+		kmsg {
+			file_id = <7>;
+			save_flag = <1>;
+			file_name = "dpa_lastkmsg";
+			attribute = <0xF000003A>;
+			/* extra/phone/minidump/fulldump/comm log */
+		};
+		dra_cma {
+			file_id = <8>;
+			save_flag = <1>;
+			file_name = "dra_cma.bin";
+			attribute = <0xF000002A>;
+			/* extra/phone/fulldump/comm log */
+		};
+	};
+	/* dump log strategy
+	 *  link_enable :  是否进行文件拼接，1拼接，0不拼接
+	*/
+	dump_log_strategy@0{
+		compatible = "driver,dpa_dump_log_strategy";
+		link_enable =<1>;
+	};
+	/*
+	 * <压缩 拼接 目标文件>
+	 *  1:拼接，0:不拼接
+	 *  1:压缩，0:不压缩
+	 *  目标文件：dump_dst_name是拼接后的文件名称，从中选择，从1开始
+	*/
+	dump_link {
+		compatible = "driver,dpa_dump_linkup_list";
+		srclistsize =<11>;
+		dump_src_name = "reset.log","dpa_dump.bin","dpa_ko.bin","dpa_ddr.bin","dpa_itcm.bin","dpa_dtcm.bin","dpa_cma_img.bin","dpa_cma_cache.bin",
+		                "dpa_cma_uncache.bin","dra_shm.bin","dra_tab.bin";
+		dump_src_attr = <0 0 0>,<0 1 1>,<0 1 1>,<0 1 1>,<0 1 1>,<0 1 1>,<0 1 1>,<0 1 1>,<0 1 1>,<0 1 1>,<0 1 1>;
+		dstlistsize =<1>;
+		dump_dst_name = "dpa_dump.bin";
+	};
+
+    apr_config {
+        compatible = "driver,dpa_apr_config";
+        drv_info {
+            module_name = "DRV";
+            modid_sum = <1>;
+            modid_range = <0x00000000 0x0000ffff>;
+            task_sum = <0>;
+            int_sum = <0>;
+        };
+        wlan_info {
+            module_name = "WLAN";
+            modid_sum = <1>;
+            modid_range = <0x10000 0x1ffff>;
+            task_sum = <0>;
+            int_sum = <0>;
+        };
+        nstack_info {
+            module_name = "NSTACK";
+            modid_sum = <1>;
+            modid_range = <0x20000 0x2ffff>;
+            task_sum = <0>;
+            int_sum = <0>;
+        };
+        booster_info {
+            module_name = "BOOSTER";
+            modid_sum = <1>;
+            modid_range = <0x30000 0x3ffff>;
+            task_sum = <0>;
+            int_sum = <0>;
+        };
+    };
+    // 日志限额，beta版本每周最多存6份fulldump
+    mdm_dump_cut_cfg{
+        compatible = "driver,dpa_dump_cut_cfg";
+        time_th = <604800>;
+        max_save_cnt = <6>;
+    };
+};

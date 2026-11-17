@@ -1,0 +1,22 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2024-2024. All rights reserved.
+ */
+#ifndef SPL_NEIGHBOUR_H
+#define SPL_NEIGHBOUR_H
+
+#define NUD_INCOMPLETE 0x01
+#define NUD_REACHABLE 0x02
+#define NUD_STALE 0x04
+#define NUD_DELAY 0x08
+#define NUD_PROBE 0x10
+#define NUD_FAILED 0x20
+
+/* Dummy states */
+#define NUD_NOARP 0x40
+#define NUD_PERMANENT 0x80
+#define NUD_NONE 0x00
+
+#define NUD_IN_TIMER (NUD_INCOMPLETE|NUD_REACHABLE|NUD_DELAY|NUD_PROBE)
+#define NUD_VALID (NUD_PERMANENT|NUD_NOARP|NUD_REACHABLE|NUD_PROBE|NUD_STALE|NUD_DELAY)
+#define NUD_CONNECTED (NUD_PERMANENT|NUD_NOARP|NUD_REACHABLE)
+#endif

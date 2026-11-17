@@ -1,0 +1,2 @@
+source "$(RDA_AUDIO_SRC_PATH)/hifi_mailbox/ipcm/Kconfig"
+source "$(RDA_AUDIO_SRC_PATH)/hifi_mailbox/mailbox/Kconfig"

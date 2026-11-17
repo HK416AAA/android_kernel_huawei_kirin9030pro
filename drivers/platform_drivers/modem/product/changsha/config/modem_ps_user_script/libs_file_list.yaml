@@ -1,0 +1,7 @@
+source_path:
+    bin/himodemapr: null
+    lib64/libhmi_driver_core.z.so: null
+    lib64/libhmi_logcat.z.so: null
+    lib64/libhmi_chr.z.so: null
+    lib64/libhmi_analysis.z.so: null
+    lib64/libhmi_qoe.z.so: null

@@ -1,0 +1,45 @@
+GCOV_PROFILE := $(CONFIG_GCOV_KERNEL)
+EXTRA_CFLAGS += -I$(srctree)/drivers/devkit/audiokit
+EXTRA_CFLAGS += -I$(srctree)/include/platform_include/audio/platform_drivers/da_combine/
+EXTRA_CFLAGS += -I$(srctree)/platform_source/audio/sound/soc/platforms/common_image/
+EXTRA_CFLAGS += -I$(srctree)/platform_source/audio/include
+
+ifeq ($(CONFIG_SND_SOC_ARMPC_CUSTOM),y)
+EXTRA_CFLAGS += -I$(srctree)/platform_source/audio/sound/soc/codecs/vendor/asp_codec_codecless/store
+endif
+
+ifeq ($(CONFIG_PLATFORM_SLIMBUS),y)
+EXTRA_CFLAGS += -I$(srctree)/platform_source/audio/drivers/codec_bus
+EXTRA_CFLAGS += -I$(srctree)/include/platform_include/audio/platform_drivers/codec_bus
+EXTRA_CFLAGS += -I$(srctree)/platform_source/audio/drivers/codec_bus/slimbus
+endif
+
+ifeq ($(CONFIG_CHAR_IP_PLATFORM),y)
+ccflags-y += -DPLATFORM_IO_CONFIG_GETFUN_ENABLE
+snd-soc-platform-io-config-objs := clt/platform_io_config.o
+endif
+
+LP_SOC_CHIP_NAME := $(strip $(subst ", ,$(CONFIG_VENDOR_CHIP_PREFIX)))
+ifeq ($(LP_SOC_CHIP_NAME),nashville)
+ccflags-y += -DPLATFORM_IO_CONFIG_GETFUN_ENABLE
+snd-soc-platform-io-config-objs := nsv/platform_io_config.o
+endif
+
+snd-soc-format-objs := format.o
+snd-soc-platform-io-objs := platform_io.o
+snd-soc-pcm-codec-objs := pcm_codec.o
+snd-soc-cdc-custom-objs := cdc_custom.o
+snd-soc-armpc-custom-objs := armpc_custom.o
+
+ifeq ($(CONFIG_DFX_DEBUG_FS),y)
+EXTRA_CFLAGS += -DAUDIO_PCM_CODEC_DEBUG
+snd-soc-om-objs := om.o
+obj-$(CONFIG_SND_SOC_PCM_CODECS) += snd-soc-om.o
+endif
+
+obj-$(CONFIG_SND_SOC_PCM_CODECS) += snd-soc-format.o
+obj-$(CONFIG_SND_SOC_ARMPC_CUSTOM) += snd-soc-platform-io-config.o
+obj-$(CONFIG_SND_SOC_PCM_CODECS) += snd-soc-platform-io.o
+obj-$(CONFIG_SND_SOC_PCM_CODECS) += snd-soc-pcm-codec.o
+obj-$(CONFIG_SND_SOC_CDC_CUSTOM) += snd-soc-cdc-custom.o
+obj-$(CONFIG_SND_SOC_ARMPC_CUSTOM) += snd-soc-armpc-custom.o
